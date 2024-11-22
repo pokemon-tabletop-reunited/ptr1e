@@ -2,7 +2,7 @@ import { RuleElementPTU, isBracketedValue } from "./base.js";
 
 export class TokenImageRuleElement extends RuleElementPTU {
     constructor(data, item, options = {}) {
-        const { value, scale, tint, alpha } = data;
+        const { value, scale, tint, alpha, size, sizeClass } = data;
         super(data, item, options);
 
         if (typeof value === "string" || isBracketedValue(value)) {
@@ -21,6 +21,24 @@ export class TokenImageRuleElement extends RuleElementPTU {
 
         if (typeof alpha === "number") {
             this.alpha = alpha;
+        }
+
+        if (typeof size === "number") {
+            this.size = size;
+        }
+        
+        if (typeof sizeClass === "string") {
+            this.size ??= (() => {;
+                switch (sizeClass) {
+                    case "Small": return 1;
+                    case "Medium": return 1;
+                    case "Large": return 2;
+                    case "Huge": return 3;
+                    case "Gigantic": return 4;
+                    default: return null;
+                }
+            })();
+            this.scale ??= sizeClass === "Small" ? 0.6 : 1;
         }
     }
 
@@ -46,6 +64,11 @@ export class TokenImageRuleElement extends RuleElementPTU {
 
         if (typeof this.alpha === "number") {
             this.actor.synthetics.tokenOverrides.alpha = this.alpha;
+        }
+
+        if (typeof this.size === "number") {
+            this.actor.synthetics.tokenOverrides.width = this.size;
+            this.actor.synthetics.tokenOverrides.height = this.size;
         }
 
         this.actor.synthetics.tokenOverrides.texture = texture;
