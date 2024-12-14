@@ -579,7 +579,7 @@ class PTUPokemonActor extends PTUActor {
                 tokenUpdates["height"] = update["prototypeToken.height"];
             }
 
-            if (Object.keys(update).length > 0) await this.update(update);
+            if (Object.keys(update).length > 0) await this.updateSource(update);
             if (Object.keys(tokenUpdates).length > 0) {
                 for (const token of this.getActiveTokens()) {
                     await token.document.update(tokenUpdates);
