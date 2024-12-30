@@ -28,7 +28,7 @@ Please note that this branch is no longer receiving updates and is only compatib
 
 ## Links & Recommendations
 - [Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert) is an amazing addon that allows you to drag & drop all over the place even more easily. We 1000% recommend using their module in conjuncture with our system!
-- [Wiki](https://1e.ptr.wiki.com)
+- [Wiki](https://1e.ptr.wiki)
 
 ## Special Thanks
 * [cswendrowski](https://github.com/cswendrowski) for starting this project!
