@@ -48,6 +48,11 @@
 
             <label>{{localize "PTU.NpcQuickBuild.Classes"}}</label>
             <input class="ptu-tagify trainer-classes" name="trainer.classes.selected" data-filter-name="classes" value="{{json data.trainer.classes.selected}}" data-dtype="JSON" />
+
+            {{#if data.didSelectClassesManually}}
+            <label>{{localize "PTU.NpcQuickBuild.ClassesRestricted"}}</label>
+            <input type="checkbox" name="trainer.classes.restricted" {{#if data.trainer.classes.restricted}}checked{{/if}} />
+            {{/if}}
         </div>
         {{/if}}
 

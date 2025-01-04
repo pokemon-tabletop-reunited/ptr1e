@@ -78,7 +78,7 @@ export class NpcQuickBuildData {
             partySize: 6,
             classes: {
                 selected: [],
-                restricted: true,
+                restricted: false,
             },
             features: {
                 selected: [],
@@ -278,6 +278,10 @@ export class NpcQuickBuildData {
         return Math.sqrt(average(playerLevelsSquared)) || 1;
     }
 
+    get didSelectClassesManually() {
+        return this.manuallyUpdatedFields?.has("trainer.classes.selected") ?? false;
+    }
+
     setProperty(key, value) {
         const originalProperty = foundry.utils.getProperty(this, key);
         foundry.utils.setProperty(this, key, value);
@@ -437,7 +441,9 @@ export class NpcQuickBuildData {
             const chosen = chooseFrom(this.multiselects.features.options);
 
             const { allNewFeatures, allNewUnmet } = await this.allItemPrereqs(chosen.prerequisites, { level: this.trainer.level, allComputed, skillsComputed })
-            if (allNewUnmet.length == 0 && numChosen + 1 + allNewFeatures.length <= N) {
+            // check if there are any new classes in there, and we're not allowed to add new classes
+            const isRestricted = this.trainer.classes.restricted && allNewFeatures.some(f=>f?.system?.keywords?.includes("Class"));
+            if (!isRestricted && allNewUnmet.length == 0 && numChosen + 1 + allNewFeatures.length <= N) {
                 newFeatures.push(chosen);
                 numChosen += 1 + allNewFeatures.length;
             }
@@ -472,8 +478,9 @@ export class NpcQuickBuildData {
         for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
             const chosen = chooseFrom(curatedOptions);
 
-            const { allNewEdges, allNewUnmet } = await this.allItemPrereqs(chosen.prerequisites, { level: this.trainer.level, allComputed, skillsComputed })
-            if (allNewUnmet.length == 0 && numChosen + 1 + allNewEdges.length <= N) {
+            const { allNewFeatures, allNewEdges, allNewUnmet } = await this.allItemPrereqs(chosen.prerequisites, { level: this.trainer.level, allComputed, skillsComputed })
+            const isRestricted = this.trainer.classes.restricted && allNewFeatures.some(f=>f?.system?.keywords?.includes("Class"));
+            if (!isRestricted && allNewUnmet.length == 0 && numChosen + 1 + allNewEdges.length <= N) {
                 newEdges.push(chosen);
                 numChosen += 1 + allNewEdges.length;
             }
