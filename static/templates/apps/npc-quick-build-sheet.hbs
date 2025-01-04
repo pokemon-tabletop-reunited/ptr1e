@@ -29,6 +29,9 @@
 
         {{#if (eq data.page 1)}}
         <div class="trainer-info">
+            <label class="profile-img-label">{{localize "PTU.NpcQuickBuild.Image"}}</label>
+            <img class="profile-img fb-40" src="{{data.trainer.img}}" data-edit="trainer.img" title="Trainer Image" />
+
             <label>{{localize "PTU.NpcQuickBuild.Alliance"}}</label>
             <select name="alliance">
                 {{selectOptions allianceOptions selected=data.alliance localize=true}}

@@ -7,7 +7,7 @@ export class PTUNpcQuickBuild extends FormApplication {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ["ptu", "pokemon", "npc-quick-build"],
             template: "systems/ptu/static/templates/apps/npc-quick-build-sheet.hbs",
-            width: 550,
+            width: 660,
             height: "auto",
             title: "NPC Quick Build",
             submitOnChange: true,
@@ -154,6 +154,26 @@ export class PTUNpcQuickBuild extends FormApplication {
                 }
             });
         }
+
+        // "trainer image" button
+        $html.find('img[data-edit]').on('click', async function (event) {
+            event.preventDefault();
+            const attr = event.currentTarget.dataset.edit;
+            const current = foundry.utils.getProperty(globalThis.data, attr);
+            const fp = new FilePicker({
+                current,
+                type: "image",
+                redirectToRoot: current ? [current] : [],
+                callback: path => {
+                    globalThis.data.setProperty(attr, path);
+                    globalThis.render(true);
+                    console.log(globalThis.data, attr, path);
+                },
+                top: globalThis?.position?.top + 40,
+                left: globalThis?.position?.left + 10
+            });
+            return fp.browse();
+        });
 
         // "remove pokemon" button
         $html.find('.pokemon-remove').on('click', function (event) {

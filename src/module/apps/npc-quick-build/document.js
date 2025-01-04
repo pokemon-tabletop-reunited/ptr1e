@@ -73,6 +73,7 @@ export class NpcQuickBuildData {
         this.alliance = CONFIG.PTU.data.alliances.includes("opposition") ? "opposition" : CONFIG.PTU.data.alliances[0];
         this.trainer = {
             name: "",
+            img: "icons/svg/mystery-man.svg",
             sex: [],
             level: Math.floor(this.estimatedAppropriateLevel),
             partySize: 6,
@@ -1429,7 +1430,7 @@ export class NpcQuickBuildData {
 
         const trainerData = {
             name: this.trainer.name || "Unnamed Trainer",
-            img: "icons/svg/mystery-man.svg",
+            img: this.trainer.img,
             type: "character",
             system: {
                 age: `${5 + Math.floor(this.trainer.level / 2) + Math.floor(Math.random() * (this.trainer.level + 10))}`,
@@ -1448,6 +1449,8 @@ export class NpcQuickBuildData {
             items: [trainingItem],
             folder: mainFolder?._id ?? null,
         };
+
+        Hooks.callAll("ptu.preTrainerGenerated", trainerData, this);
 
         // create trainer
         const createdTrainer = (await CONFIG.PTU.Actor.documentClasses.character.createDocuments([trainerData]))?.[0];
@@ -1493,6 +1496,8 @@ export class NpcQuickBuildData {
                 trainer: createdTrainer._id,
                 boxed: false,
             }
+
+            Hooks.callAll("ptu.preTrainerPokemonGenerated", actor, mon, this);
 
             monActorsToGenerate.push(actorData);
         }
