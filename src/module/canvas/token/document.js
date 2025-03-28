@@ -66,9 +66,17 @@ class PTUTokenDocument extends TokenDocument {
         }
 
         PTUTokenDocument.prepareSize(this, this.actor, changedScale);
+
+        if(tokenOverrides.width) {
+            this.width = tokenOverrides.width;
+        }
+
+        if(tokenOverrides.height) {
+            this.height = tokenOverrides.height;
+        }
     }
 
-    static prepareSize(tokenDocument, actor, overriden = false) {
+    static prepareSize(tokenDocument, actor, scaleOverridden = false) {
         if(!(actor && tokenDocument.flags.ptu.linkToActorSize)) return;
         
         const {width, height} = ((sizeClass) => {;
@@ -85,7 +93,7 @@ class PTUTokenDocument extends TokenDocument {
         tokenDocument.width = width;
         tokenDocument.height = height;
 
-        if(game.settings.get("ptu", "tokens.autoscale") && !overriden && tokenDocument.flags?.ptu?.autoscale !== false) {
+        if(game.settings.get("ptu", "tokens.autoscale") && !scaleOverridden && tokenDocument.flags?.ptu?.autoscale !== false) {
             const absoluteScale = actor.sizeClass === "Small" ? 0.6 : 1;
             const mirrorX = tokenDocument.texture.scaleX < 0 ? -1 : 1;
             const mirrorY = tokenDocument.texture.scaleY < 0 ? -1 : 1;
