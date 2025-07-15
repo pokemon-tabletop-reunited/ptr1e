@@ -1,9 +1,9 @@
 function registerSheets() {
     // Register sheet application classes
-    Actors.unregisterSheet("core", ActorSheet);
+    Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
     Actors.registerSheet("ptu", CONFIG.PTU.Actor.sheetClasses.character, { types: ["character"], makeDefault: true });
     Actors.registerSheet("ptu", CONFIG.PTU.Actor.sheetClasses.pokemon, { types: ["pokemon"], makeDefault: true });
-    Items.unregisterSheet("core", ItemSheet);
+    Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
     Items.registerSheet("ptu", CONFIG.PTU.Item.sheetClasses.item, { types: ["item", "ability", "capability", "pokeedge", "dexentry", "condition", "reference", "spiritaction"], makeDefault: true });
     Items.registerSheet("ptu", CONFIG.PTU.Item.sheetClasses.move, { types: ["move"], makeDefault: true });
     Items.registerSheet("ptu", CONFIG.PTU.Item.sheetClasses.contestmove, { types: ["contestmove"], makeDefault: true });

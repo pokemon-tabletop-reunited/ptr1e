@@ -1,6 +1,6 @@
 import { ActorConfig } from "./sheet/actor-config.js";
 
-class PTUActorSheet extends ActorSheet {
+class PTUActorSheet extends foundry.appv1.sheets.ActorSheet {
     /** @override */
     _getHeaderButtons() {
         const buttons = super._getHeaderButtons();

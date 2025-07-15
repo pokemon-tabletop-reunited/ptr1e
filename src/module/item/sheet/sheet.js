@@ -2,7 +2,7 @@ import { sluggify, sortStringRecord } from "../../../util/misc.js";
 import { RuleElements } from "../../rules/index.js";
 import { RULE_ELEMENT_FORMS, RuleElementForm } from "./rule-elements/index.js";
 
-class PTUItemSheet extends ItemSheet {
+class PTUItemSheet extends foundry.appv1.sheets.ItemSheet {
     /** @override */
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
