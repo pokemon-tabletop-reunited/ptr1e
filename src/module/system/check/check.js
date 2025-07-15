@@ -207,7 +207,7 @@ class PTUDiceCheck {
         options.modifierPart = totalModifiersPart;
 
         const roll = new this.rollCls(`${dice}${isInfinity ? "" : totalModifiersPart}`, {}, options);
-        const rollResult = await roll.evaluate({ async: true });
+        const rollResult = await roll.evaluate();
 
         const result =
             (rollResult.isDeterministic
@@ -562,7 +562,7 @@ class PTUCheck {
             options.checkModifier = totalModifiersPart;
         }
 
-        const roll = await new RollCls(`${dice}${isInfinity ? "" : totalModifiersPart}`, {}, options).evaluate({ async: true });
+        const roll = await new RollCls(`${dice}${isInfinity ? "" : totalModifiersPart}`, {}, options).evaluate();
 
         for (const target of context.targets ?? []) {
             const [success, degree] = target.dc ? (() => {

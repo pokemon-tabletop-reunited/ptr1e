@@ -600,7 +600,7 @@ export class PTUCharacterSheet extends PTUActorSheet {
 					yes: async (html) => {
 						const bonusTxt = html.find('input[name="accuracy-modifier"]').val()
 
-						const bonus = !isNaN(Number(bonusTxt)) ? Number(bonusTxt) : parseInt((await (new Roll(bonusTxt)).roll({ async: true })).total);
+						const bonus = !isNaN(Number(bonusTxt)) ? Number(bonusTxt) : parseInt((await (new Roll(bonusTxt)).roll()).total);
 						if (!isNaN(bonus)) {
 							return resolve(bonus);
 						}

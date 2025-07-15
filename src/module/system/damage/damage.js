@@ -70,7 +70,7 @@ class PTUDamage {
         const dice = data.damage.dice;
 
         const totalModifiersPart = check.totalModifier?.signedString() ?? "";
-        const roll = await new DamageRoll(`${dice}${totalModifiersPart}`, {}, options).evaluate({ async: true });
+        const roll = await new DamageRoll(`${dice}${totalModifiersPart}`, {}, options).evaluate();
 
         const critDice = `${dice}+${dice}`;
         const totalModifiersPartCrit = ((check.totalModifier ?? 0) + damageBaseModifier)?.signedString() ?? "";
@@ -81,7 +81,7 @@ class PTUDamage {
 
         const hasCrit = Object.values(outcomes).some(o => o == "crit-hit")
 
-        const critRoll = await new DamageRoll(`${critDice}${totalModifiersPartCrit}`, {}, {...options, crit: {hit: true, show: hasCrit, nonCritValue: roll.total}, fudges}).evaluate({ async: true });
+        const critRoll = await new DamageRoll(`${critDice}${totalModifiersPartCrit}`, {}, {...options, crit: {hit: true, show: hasCrit, nonCritValue: roll.total}, fudges}).evaluate();
 
         const flavor = await (async () => {
             const result = undefined;// await this.createResultFlavor({ dc: context.dc, success, target: context.targets ?? null });

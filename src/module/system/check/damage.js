@@ -201,7 +201,7 @@ class PTUDamageCheck extends PTUDiceCheck {
                 const otherModifiers = this.damageBaseModifiers.filter(m => m.slug != "damage-base");
 
                 const newBaseDb = await (async () => {
-                    const fiveStrikeRoll = await new Roll("1d8").evaluate({ async: true });
+                    const fiveStrikeRoll = await new Roll("1d8").evaluate();
                     switch (fiveStrikeRoll.total) {
                         case 1: {
                             this.fiveStrikeResult = 1;
@@ -344,7 +344,7 @@ class PTUDamageCheck extends PTUDiceCheck {
         options.diceModifiers = diceModifiers;
 
         const roll = new this.rollCls(`${diceString}${totalModifiersPart}${diceModifiers}`, {}, options);
-        const rollResult = await roll.evaluate({ async: true });
+        const rollResult = await roll.evaluate();
 
         const critDice = `${diceString}+${diceString}`;
         const totalModifiersPartCrit = ((this.statistic.totalModifier ?? 0) + diceModifier).signedString() ?? "";
@@ -355,7 +355,7 @@ class PTUDamageCheck extends PTUDiceCheck {
 
         const hasCrit = Object.values(this.outcomes).some(o => o == "crit-hit")
         const critRoll = new this.rollCls(`${critDice}${totalModifiersPartCrit}${diceModifiers}`, {}, { ...options, crit: { hit: true, show: hasCrit, nonCritValue: rollResult.total }, fudges });
-        const critRollResult = await critRoll.evaluate({ async: true });
+        const critRollResult = await critRoll.evaluate();
 
         const flags = {
             core: {

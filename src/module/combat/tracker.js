@@ -30,14 +30,20 @@ class PTUCombatTracker extends CombatTracker {
     async _onCombatantControl(event) {
         event.preventDefault();
         event.stopPropagation();
-        const btn = event.currentTarget;
+        
+        // Find the actual button that was clicked
+        // Note: Foundry v13 converts data-control to data-action in rendered HTML
+        const btn = event.target.closest("[data-action]");
+        
+        // Find the combatant list item
         const li = btn.closest(".combatant");
+        
         const combat = this.viewed;
         /** @type {PTUCombatant} */
         const c = combat.combatants.get(li.dataset.combatantId);
         
-        // Switch control action
-        switch (btn.dataset.control) {
+        // Switch control action (using data-action since Foundry v13 converts data-control)
+        switch (btn.dataset.action) {
 
             // Toggle combatant visibility
             case "toggleHidden":

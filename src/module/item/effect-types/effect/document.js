@@ -87,7 +87,7 @@ class PTUEffect extends BaseEffectPTU {
     async _preCreate( data, options, user ) {
         const badge = data.system?.badge;
         if(this.actor && badge?.type === "formula" && badge.evaluate) {
-            const roll = await new Roll(badge.value, this.getRollData()).evaluate({ async: true });
+            const roll = await new Roll(badge.value, this.getRollData()).evaluate();
             this._source.system.badge = { type: "value", value: roll.total };
             const speaker = ChatMessage.getSpeaker({ actor: this.actor, token: this.actor.token });
             roll.toMessage({ flavor: this.name, speaker });

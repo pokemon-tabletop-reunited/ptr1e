@@ -5,7 +5,7 @@ export class AttackRoll extends CheckRoll {
 
     /** @override */
     async render(options = {}) {
-        if(!this._evaluated) await this.evaluate({async: true});
+        if(!this._evaluated) await this.evaluate();
         const { isPrivate, flavor, template } = options;
 
         const attack = this.options.attack ?? options.attack ?? null;

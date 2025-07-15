@@ -28,7 +28,7 @@ class DamageRoll extends Roll {
 
     /** @override */
     async render(options = {}) {
-        if (!this._evaluated) await this.evaluate({ async: true });
+        if (!this._evaluated) await this.evaluate();
         const { isPrivate, template } = options;
 
         const attack = this.options.attack ?? options.attack ?? null;
@@ -115,7 +115,7 @@ class DamageRoll extends Roll {
                 throw new Error("Roll evaluation encountered an invalid term which was not a RollTerm instance");
             }
             if (term.isIntermediate) {
-                await term.evaluate({ minimize, maximize, async: true });
+                await term.evaluate({ minimize, maximize });
                 this._dice = this._dice.concat(term.dice);
                 term = new NumericTerm({ number: term.total, options: term.options });
             }
@@ -141,7 +141,7 @@ class DamageRoll extends Roll {
 
         // Step 3 - Evaluate remaining terms
         for (let term of this.terms) {
-            if (!term._evaluated) await term.evaluate({ minimize, maximize, async: true });
+            if (!term._evaluated) await term.evaluate({ minimize, maximize });
         }
 
         // Step 4 - Evaluate the final expression

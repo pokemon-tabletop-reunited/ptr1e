@@ -13,7 +13,7 @@ class CheckRoll extends Roll {
     }
 
     async render(options = {}) {
-        if(!this._evaluated) await this.evaluate({async: true});
+        if(!this._evaluated) await this.evaluate();
 
         const { isPrivate, flavor, template } = options;
         let containsPrivate = isPrivate ?? this.options.isPrivate ?? false;

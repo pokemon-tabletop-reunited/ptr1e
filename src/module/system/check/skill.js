@@ -176,7 +176,7 @@ class PTUSkillCheck extends PTUDiceCheck {
         options.modifierPart = totalModifiersPart;
 
         const roll = new this.rollCls(`${dice}${isInfinity ? "" : totalModifiersPart}`, {}, options);
-        const rollResult = await roll.evaluate({ async: true });
+        const rollResult = await roll.evaluate();
 
         const targets = []
         if (options.dc) {
