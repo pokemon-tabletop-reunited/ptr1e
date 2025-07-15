@@ -11,7 +11,9 @@ class DamageMessagePTU extends ChatMessagePTU {
 
     /** @override */
     async getHTML() {
-        const $html = await super.getHTML();
+        // Use renderHTML() instead of deprecated getHTML()
+        const html = await super.renderHTML();
+        const $html = $(html);
 
         const outcomes = this.outcomes;
         if (!outcomes) return await this._renderNoneTargetDamage($html);
@@ -73,7 +75,7 @@ class DamageMessagePTU extends ChatMessagePTU {
 
         this.targetsData ??= this.targets;
 
-        const damageHTML = await renderTemplate("systems/ptu/static/templates/chat/damage/damage-selector.hbs", { targets: this.targetsData });
+        const damageHTML = await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/damage/damage-selector.hbs", { targets: this.targetsData });
 
         const $headerSpan = $("<span></span>")
             .addClass("flavor-text")
@@ -102,7 +104,7 @@ class DamageMessagePTU extends ChatMessagePTU {
 
     async _updateSelectors() {
         const $damageContent = this.element.find(".damage-content");
-        const damageHTML = await renderTemplate("systems/ptu/static/templates/chat/damage/damage-selector.hbs", { targets: this.targetsData });
+        const damageHTML = await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/damage/damage-selector.hbs", { targets: this.targetsData });
         $damageContent.html(damageHTML);
 
         this._applyListeners($damageContent);
@@ -280,7 +282,7 @@ async function applyDamageFromMessage({ message, targets, mode = "full", addend 
             const newItems = await contextClone.createEmbeddedDocuments("Item", applyEffectsTarget);
             if (newItems.length > 0)
                 await ChatMessage.create({
-                    content: await renderTemplate("systems/ptu/static/templates/chat/damage/effects-applied.hbs", { target: contextClone, effects: newItems }),
+                    content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/damage/effects-applied.hbs", { target: contextClone, effects: newItems }),
                     speaker: ChatMessage.getSpeaker({ actor: contextClone }),
                     whisper: ChatMessage.getWhisperRecipients("GM")
                 })
@@ -306,7 +308,7 @@ async function applyDamageFromMessage({ message, targets, mode = "full", addend 
         const newItems = await message.actor.createEmbeddedDocuments("Item", applyEffectsOrigin);
         if (newItems.length > 0)
             await ChatMessage.create({
-                content: await renderTemplate("systems/ptu/static/templates/chat/damage/effects-applied.hbs", { target: message.actor, effects: newItems }),
+                content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/damage/effects-applied.hbs", { target: message.actor, effects: newItems }),
                 speaker: ChatMessage.getSpeaker({ actor: message.actor }),
                 whisper: ChatMessage.getWhisperRecipients("GM")
             })

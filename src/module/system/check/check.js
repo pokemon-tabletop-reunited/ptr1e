@@ -770,7 +770,7 @@ class PTUCheck {
             markup: `<result>${success}</result>`
         }
 
-        return await renderTemplate("systems/ptu/static/templates/chat/check/target-dc-result.hbs", {
+        return await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/check/target-dc-result.hbs", {
             target: targetData,
             dc: dcData,
             result: resultData

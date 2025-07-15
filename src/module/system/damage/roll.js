@@ -93,7 +93,7 @@ class DamageRoll extends Roll {
             chatData.crit.show = true;
         }
 
-        return renderTemplate(template ?? DamageRoll.CHAT_TEMPLATE, chatData);
+        return foundry.applications.handlebars.renderTemplate(template ?? DamageRoll.CHAT_TEMPLATE, chatData);
     }
 
     /** @override */

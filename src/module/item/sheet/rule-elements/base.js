@@ -30,7 +30,7 @@ class RuleElementForm {
 
     async render() {
         const data = await this.getData();
-        return renderTemplate(this.template, data);
+        return foundry.applications.handlebars.renderTemplate(this.template, data);
     }
 
     updateItem(updates) {

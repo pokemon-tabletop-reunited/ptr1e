@@ -67,7 +67,7 @@ export class AttackRoll extends CheckRoll {
             tags
         }
 
-        const content = await renderTemplate(template ?? AttackRoll.CHAT_TEMPLATE, chatData);
+        const content = await foundry.applications.handlebars.renderTemplate(template ?? AttackRoll.CHAT_TEMPLATE, chatData);
         return TextEditor.enrichHTML(content, {async: true})
     }
 }

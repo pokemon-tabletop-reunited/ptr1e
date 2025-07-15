@@ -241,7 +241,7 @@ export class TypeSettings extends PTUSettingsMenu {
         }
         return new Dialog({
             title: exists ? game.i18n.localize("PTU.Settings.AddType.ExistsLabel") : game.i18n.localize("PTU.Settings.AddType.Label"),
-            content: await renderTemplate("systems/ptu/static/templates/config/settings/add-type.hbs", { ...typeData, exists }),
+            content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/config/settings/add-type.hbs", { ...typeData, exists }),
             buttons,
             render: html => {
                 const buttons = $(html).find("button.file-picker");

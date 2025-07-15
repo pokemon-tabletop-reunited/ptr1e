@@ -102,7 +102,9 @@ class ChatMessagePTU extends ChatMessage {
 
     /** @override */
     async getHTML() {
-        const $html = await super.getHTML();
+        // Use renderHTML() instead of deprecated getHTML()
+        const html = await super.renderHTML();
+        const $html = $(html);
 
         const message = this;
 
@@ -190,7 +192,7 @@ class ChatMessagePTU extends ChatMessage {
                     $(iwrInfo).tooltipster({
                         theme: "crb-hover",
                         maxWidth: 400,
-                        content: await renderTemplate("systems/ptu/static/templates/chat/iwr-breakdown.hbs", {
+                        content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/iwr-breakdown.hbs", {
                             applications: iwrApplications,
                         }),
                         contentAsHTML: true,
@@ -213,7 +215,6 @@ class ChatMessagePTU extends ChatMessage {
 
             await item?.use();
         });
-        console.log('Apply Capture Hook')
         $html.find("button.apply-capture").on("click", async event => {
             event.preventDefault();
             event.stopImmediatePropagation();
@@ -238,7 +239,7 @@ class ChatMessagePTU extends ChatMessage {
 
             const dialog = new Dialog({
                 title: game.i18n.format("PTU.Dialog.ContestedCheck.Title", {name: target.actor.name, skill: game.i18n.localize(`PTU.Skills.${skill}`)}),
-                content: await renderTemplate("systems/ptu/static/templates/apps/contested-check.hbs", {
+                content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/apps/contested-check.hbs", {
                     skill,
                     skillOptions,
                 }),

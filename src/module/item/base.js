@@ -458,7 +458,7 @@ class PTUItem extends Item {
             referenceEffect
         }
 
-        ChatMessage.create({ content: await renderTemplate(`/systems/ptu/static/templates/chat/chat-items.hbs`, chatData), flavor, flags: { ptu: { origin: { item: this.uuid } } } })
+        ChatMessage.create({ content: await foundry.applications.handlebars.renderTemplate(`/systems/ptu/static/templates/chat/chat-items.hbs`, chatData), flavor, flags: { ptu: { origin: { item: this.uuid } } } })
     }
 }
 

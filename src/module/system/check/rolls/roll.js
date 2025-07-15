@@ -64,7 +64,7 @@ class CheckRoll extends Roll {
             })()
         }
 
-        return renderTemplate(template ?? this.template, chatData);
+        return foundry.applications.handlebars.renderTemplate(template ?? this.template, chatData);
     }
 }
 

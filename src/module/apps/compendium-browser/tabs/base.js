@@ -143,7 +143,7 @@ export class CompendiumBrowserTab {
         const indexData = this.getIndexData(start);
         const liElements = [];
         for (const entry of indexData) {
-            const htmlString = await renderTemplate(this.templatePath, {
+            const htmlString = await foundry.applications.handlebars.renderTemplate(this.templatePath, {
                 entry,
                 filterData: this.filterData,
             });

@@ -672,7 +672,7 @@ class PTUActor extends Actor {
         const enrichedHtml = await TextEditor.enrichHTML(statements, { async: true })
         const canUndoDamage = !!hpDamage
 
-        const content = await renderTemplate("systems/ptu/static/templates/chat/damage/damage-taken.hbs", {
+        const content = await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/damage/damage-taken.hbs", {
             statements: enrichedHtml,
             iwr: {
                 applications,
@@ -683,7 +683,7 @@ class PTUActor extends Actor {
 
         const flavor = await (async () => {
             if (breakdown.length || notes.length) {
-                return renderTemplate("systems/ptu/static/templates/chat/damage/damage-taken-flavor.hbs", { breakdown, notes });
+                return foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/damage/damage-taken-flavor.hbs", { breakdown, notes });
             }
             return;
         })();

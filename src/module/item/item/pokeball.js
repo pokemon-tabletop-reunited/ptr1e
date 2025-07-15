@@ -393,7 +393,7 @@ class PokeballItem extends PTUItemItem {
 
         const dialog = new Dialog({
             title: game.i18n.localize("PTU.Dialog.CaptureSuccess.Title"),
-            content: await renderTemplate("systems/ptu/static/templates/apps/capture-success.hbs", {
+                            content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/apps/capture-success.hbs", {
                 trainers,
                 locationOptions: CONFIG.PTU.data.capture.locationOptions,
                 location: game.settings.get("ptu", "captureDefaultPartyState") || "party"
