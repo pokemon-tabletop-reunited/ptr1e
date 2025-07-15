@@ -348,7 +348,7 @@ class PTUDamageCheck extends PTUDiceCheck {
 
         const critDice = `${diceString}+${diceString}`;
         const totalModifiersPartCrit = ((this.statistic.totalModifier ?? 0) + diceModifier).signedString() ?? "";
-        const diceResult = rollResult.terms.find(t => t instanceof DiceTerm);
+        const diceResult = rollResult.terms.find(t => t instanceof foundry.dice.terms.DiceTerm);
         const fudges = {
             [`${diceResult.number}d${diceResult.faces}`]: diceResult.results,
         }

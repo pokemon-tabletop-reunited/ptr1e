@@ -211,8 +211,8 @@ class PTUDiceCheck {
 
         const result =
             (rollResult.isDeterministic
-                ? rollResult.terms.find(t => t instanceof NumericTerm)
-                : rollResult.dice.find(d => d instanceof Die && d.faces === diceSize
+                ? rollResult.terms.find(t => t instanceof foundry.dice.terms.NumericTerm)
+                : rollResult.dice.find(d => d instanceof foundry.dice.terms.Die && d.faces === diceSize
                 ))?.total ?? 1;
 
         options.rollResult = result;
@@ -575,8 +575,8 @@ class PTUCheck {
 
                 const result =
                     (roll.isDeterministic
-                        ? roll.terms.find(t => t instanceof NumericTerm)
-                        : roll.dice.find(d => d instanceof Die && (d.faces === 20 || d.faces === 100))
+                        ? roll.terms.find(t => t instanceof foundry.dice.terms.NumericTerm)
+                        : roll.dice.find(d => d instanceof foundry.dice.terms.Die && (d.faces === 20 || d.faces === 100))
                     )?.total ?? 1;
                 const total = roll.total;
                 const dc = target.dc;

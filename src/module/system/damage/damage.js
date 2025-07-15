@@ -74,7 +74,7 @@ class PTUDamage {
 
         const critDice = `${dice}+${dice}`;
         const totalModifiersPartCrit = ((check.totalModifier ?? 0) + damageBaseModifier)?.signedString() ?? "";
-        const rollResult = roll.terms.find(t => t instanceof DiceTerm);
+        const rollResult = roll.terms.find(t => t instanceof foundry.dice.terms.DiceTerm);
         const fudges = {
             [`${rollResult.number}d${rollResult.faces}`]: rollResult.results,
         }
