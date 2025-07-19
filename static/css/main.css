@@ -133,10 +133,10 @@
 }
 .tagify {
   --tag-inset-shadow-size: 5em !important;
-  --tags-border-color: #AED3A2 !important;
+  --tags-border-color: #aed3a2 !important;
   --tags-hover-border-color: #82bc51 !important;
   --tags-focus-border-color: #82bc51 !important;
-  --tag-bg: #AED3A2 !important;
+  --tag-bg: #aed3a2 !important;
   --tag-hover: #82bc51 !important;
   text-decoration: none;
 }
@@ -144,7 +144,7 @@
   display: none;
 }
 #compendium-browser section.window-content {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE);
+  background: linear-gradient(45deg, #ecdbeb, #dffffe);
   padding: unset;
   overflow: hidden;
 }
@@ -161,7 +161,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background: #C42835;
+  background: #c42835;
 }
 #compendium-browser section.window-content .content-box nav a {
   color: #222224;
@@ -185,30 +185,64 @@
 #compendium-browser section.window-content .content-box section.content {
   height: calc(100% - 50px);
 }
-#compendium-browser section.window-content .content-box section.content .tab.active {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active {
   height: 100%;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings form {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings
+  form {
   display: flex;
   height: 88%;
   flex-direction: column;
   margin-bottom: 10px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings button.save-settings {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings
+  button.save-settings {
   margin-top: auto;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings .settings-container {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings
+  .settings-container {
   overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings .settings-container .setting-section {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings
+  .settings-container
+  .setting-section {
   width: 365px;
   margin-right: 1em;
   border: 1px solid #bbb;
@@ -216,29 +250,85 @@
   margin-top: 5px;
   padding: 2px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings .settings-container .setting-section h3 {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings
+  .settings-container
+  .setting-section
+  h3 {
   margin: 0;
   cursor: pointer;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings .settings-container .setting-section dl {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings
+  .settings-container
+  .setting-section
+  dl {
   margin: 5px 0;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings .settings-container .setting-section dl label {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings
+  .settings-container
+  .setting-section
+  dl
+  label {
   display: flex;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings .settings-container .setting-section dl label dt {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings
+  .settings-container
+  .setting-section
+  dl
+  label
+  dt {
   flex: 0 0 30px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .compendium-browser-settings .settings-container .setting-section dl label dd {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .compendium-browser-settings
+  .settings-container
+  .setting-section
+  dl
+  label
+  dd {
   flex: 1;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid {
   display: grid;
   grid-template-columns: 320px auto;
   min-height: 100px;
   height: 100%;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area {
   grid-column-start: 1;
   position: sticky;
   display: block;
@@ -247,127 +337,435 @@
   padding-left: 0.5rem;
   overflow: auto;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .sortcontainer,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .sortcontainer,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer {
   border: 1px solid #bbb;
   border-radius: 5px;
   margin-top: 5px;
   padding: 2px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .slidercontainer-flex {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .slidercontainer-flex {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .slidercontainer-flex label {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .slidercontainer-flex
+  label {
   width: 10px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area input {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  input {
   width: 100%;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl {
   margin: 5px 0;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl dt {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl
+  dt {
   display: inline-block;
   padding-left: 5px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl dd {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl
+  dd {
   display: inline-block;
   padding-left: 5px;
   margin: 3px 0;
   text-transform: capitalize;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.type,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.types,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.category,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.sort {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.type,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.types,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.category,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.sort {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.type dd,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.types dd,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.category dd,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.sort dd {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.type
+  dd,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.types
+  dd,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.category
+  dd,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.sort
+  dd {
   padding-left: 0;
   margin: 0;
   flex: 0 0 auto;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.type dd select,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.types dd select,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.category dd select,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.sort dd select {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.type
+  dd
+  select,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.types
+  dd
+  select,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.category
+  dd
+  select,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.sort
+  dd
+  select {
   width: 150px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.type dd select.order,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.types dd select.order,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.category dd select.order,
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area dl.sort dd select.order {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.type
+  dd
+  select.order,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.types
+  dd
+  select.order,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.category
+  dd
+  select.order,
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  dl.sort
+  dd
+  select.order {
   width: 131px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer .title {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 22px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer .title h3 {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  .title
+  h3 {
   border-bottom: unset;
   margin: 0;
   cursor: pointer;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer .title button {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  .title
+  button {
   width: fit-content;
   line-height: 22px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer tags {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  tags {
   width: 100%;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer .filter-conjunction {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  .filter-conjunction {
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin-top: 0.25rem;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer .filter-conjunction label {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  .filter-conjunction
+  label {
   flex: 0 0 110px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer .filter-conjunction label input {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  .filter-conjunction
+  label
+  input {
   flex: 0 0 20px;
   top: auto;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer .filter-conjunction label span {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  .filter-conjunction
+  label
+  span {
   flex: 1;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer label {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  label {
   font-size: 14px;
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 5px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer label dt {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  label
+  dt {
   width: 10%;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .filtercontainer label dd {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .filtercontainer
+  label
+  dd {
   width: 82%;
   align-self: center;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid .control-area .clear-filters {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  .control-area
+  .clear-filters {
   margin-bottom: 5px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list {
   grid-column-start: 2;
   overflow: visible scroll;
   padding: 0;
   margin: 0;
   margin-left: 0.5rem;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -376,48 +774,141 @@
   flex-wrap: nowrap;
   overflow: hidden;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item:nth-child(odd) {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.07);
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .db {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .db {
   flex: 0 0 40px;
   margin-right: 5px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .db .tag {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .db
+  .tag {
   display: flex;
   align-items: center;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .db .tag span {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .db
+  .tag
+  span {
   flex: 1;
   text-align: center;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .cost {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .cost {
   flex: 0 0 auto;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .cost .tag {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .cost
+  .tag {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .cost .dollar-svg {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .cost
+  .dollar-svg {
   width: 10px;
   height: 17px;
   margin: 0 5px;
   border: unset;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .image {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .image {
   flex: 0 0 40px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .image img {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .image
+  img {
   border: unset;
   margin-top: 4px;
   object-fit: scale-down;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .name {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .name {
   margin-left: 5px;
   min-width: 150px;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags {
   flex: 0 1 auto;
   padding: 0 5px;
   display: flex;
@@ -425,7 +916,16 @@
   gap: 3px;
   overflow: hidden;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag {
   font-size: 13px;
   padding: 3px 3px;
   background-color: #ff6a77;
@@ -436,45 +936,135 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.class {
-  color: #FFE471;
-  background-color: #2E3337;
-  border-color: #FFE471;
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.class {
+  color: #ffe471;
+  background-color: #2e3337;
+  border-color: #ffe471;
   flex: 1 0 auto;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.feat {
-  background-color: #D5B896;
-  border-color: #D5B896;
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.feat {
+  background-color: #d5b896;
+  border-color: #d5b896;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.skill-pathetic {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.skill-pathetic {
   background-color: #cfe2f3;
   border-color: #cfe2f3;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.skill-untrained {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.skill-untrained {
   background-color: #9fc5e8;
   border-color: #9fc5e8;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.skill-novice {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.skill-novice {
   background-color: #6fa8dc;
   border-color: #6fa8dc;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.skill-adept {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.skill-adept {
   background-color: #3d85c6;
   border-color: #3d85c6;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.skill-expert {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.skill-expert {
   background-color: #0b5394;
   border-color: #0b5394;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.skill-master {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.skill-master {
   background-color: #073763;
   border-color: #073763;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.skill-virtuoso {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.skill-virtuoso {
   background-color: #e9be25;
   border-color: #e9be25;
 }
-#compendium-browser section.window-content .content-box section.content .tab.active .content-grid ul.item-list li.item .tags .tag.skill-invalid {
+#compendium-browser
+  section.window-content
+  .content-box
+  section.content
+  .tab.active
+  .content-grid
+  ul.item-list
+  li.item
+  .tags
+  .tag.skill-invalid {
   background-color: #ff0f0faa;
   border-color: #ff0f0faa;
 }
@@ -500,7 +1090,8 @@ a.pokedollar.cost {
   color: #ff5a68;
 }
 a.pokedollar.cost span::before {
-  filter: invert(46%) sepia(46%) saturate(1698%) hue-rotate(321deg) brightness(102%) contrast(101%);
+  filter: invert(46%) sepia(46%) saturate(1698%) hue-rotate(321deg)
+    brightness(102%) contrast(101%);
 }
 a.pokedollar span {
   position: relative;
@@ -516,10 +1107,11 @@ a.pokedollar span::before {
   width: 8px;
   bottom: 3px;
   left: 1px;
-  filter: invert(28%) sepia(2%) saturate(3040%) hue-rotate(14deg) brightness(78%) contrast(75%);
+  filter: invert(28%) sepia(2%) saturate(3040%) hue-rotate(14deg)
+    brightness(78%) contrast(75%);
 }
 .ptu.rulebook {
-  background: linear-gradient(45deg, #ECDBEBfa, #DFFFFEa3);
+  background: linear-gradient(45deg, #ecdbebfa, #dffffea3);
 }
 .ptu.rulebook ::-webkit-scrollbar-thumb {
   outline: none;
@@ -601,13 +1193,25 @@ a.pokedollar span::before {
   color: black;
   text-overflow: ellipsis;
 }
-.ptu.rulebook.journal-entry-page .editable .journal-page-content.editor-content figure.head img {
+.ptu.rulebook.journal-entry-page
+  .editable
+  .journal-page-content.editor-content
+  figure.head
+  img {
   max-width: 700px;
 }
-.ptu.rulebook.journal-entry-page .editable .journal-page-content.editor-content figure img {
+.ptu.rulebook.journal-entry-page
+  .editable
+  .journal-page-content.editor-content
+  figure
+  img {
   max-width: 300px;
 }
-.ptu.rulebook.journal-entry-page .editable .journal-page-content.editor-content aside img {
+.ptu.rulebook.journal-entry-page
+  .editable
+  .journal-page-content.editor-content
+  aside
+  img {
   max-width: 128px;
 }
 .ptu.rulebook.journal-entry-page,
@@ -624,11 +1228,22 @@ a.pokedollar span::before {
   scrollbar-gutter: stable both-edges;
 }
 .ptu.rulebook.journal-entry-page div.editable div.scrollable div.edit-container,
-.ptu.rulebook section.journal-entry-content div.editable div.scrollable div.edit-container {
+.ptu.rulebook
+  section.journal-entry-content
+  div.editable
+  div.scrollable
+  div.edit-container {
   z-index: 5;
 }
-.ptu.rulebook.journal-entry-page div.editable div.scrollable section.journal-page-content,
-.ptu.rulebook section.journal-entry-content div.editable div.scrollable section.journal-page-content {
+.ptu.rulebook.journal-entry-page
+  div.editable
+  div.scrollable
+  section.journal-page-content,
+.ptu.rulebook
+  section.journal-entry-content
+  div.editable
+  div.scrollable
+  section.journal-page-content {
   padding: 0 1rem;
   margin: 0.5rem 0;
 }
@@ -687,20 +1302,54 @@ a.pokedollar span::before {
   color: white;
   border: unset;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  div.action-buttons,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  header.directory-header {
   z-index: 2;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons button.next,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header button.next,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons button.previous,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header button.previous,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons a.action-button,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header a.action-button,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons input,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header input,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons button.create,
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header button.create {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  div.action-buttons
+  button.next,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  header.directory-header
+  button.next,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  div.action-buttons
+  button.previous,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  header.directory-header
+  button.previous,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  div.action-buttons
+  a.action-button,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  header.directory-header
+  a.action-button,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  div.action-buttons
+  input,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  header.directory-header
+  input,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  div.action-buttons
+  button.create,
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  header.directory-header
+  button.create {
   margin: 0.25rem;
   border: unset;
   background: rgba(255, 255, 245, 0.75);
@@ -709,24 +1358,45 @@ a.pokedollar span::before {
   height: 28px;
   color: black;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  ol.directory-list
+  li.directory-item {
   line-height: 30px;
   border: unset;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item.active::after {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  ol.directory-list
+  li.directory-item.active::after {
   border: unset;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item span.page-title {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  ol.directory-list
+  li.directory-item
+  span.page-title {
   text-overflow: ellipsis;
   font-size: 0.9rem;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item ol.headings {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  ol.directory-list
+  li.directory-item
+  ol.headings {
   display: none;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item .page-heading {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  ol.directory-list
+  li.directory-item
+  .page-heading {
   color: black;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item.level1::before {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  ol.directory-list
+  li.directory-item.level1::before {
   content: "";
   background-color: #ff6a77;
   background-size: contain;
@@ -737,25 +1407,43 @@ a.pokedollar span::before {
   margin: 0.25rem 0;
   border-radius: 5px;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item.level1 span.page-title {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  ol.directory-list
+  li.directory-item.level1
+  span.page-title {
   font-size: 1.1rem;
   font-weight: bold;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item.level2 span.page-title {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  ol.directory-list
+  li.directory-item.level2
+  span.page-title {
   text-indent: 0rem;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item.level3 span.page-title {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar
+  ol.directory-list
+  li.directory-item.level3
+  span.page-title {
   text-indent: 0.5rem;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed) {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed) {
   flex-basis: 16rem;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed) span.page-number {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed)
+  span.page-number {
   color: transparent;
   width: 24px;
   margin-right: 2px;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed) .active span.page-number {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed)
+  .active
+  span.page-number {
   background-image: url(/icons/svg/downgrade.svg);
   filter: brightness(0);
   rotate: 270deg;
@@ -763,21 +1451,33 @@ a.pokedollar span::before {
   background-position: center;
   background-repeat: no-repeat;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed) .active + .active span.page-number {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed)
+  .active
+  + .active
+  span.page-number {
   background-image: unset;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar.collapsed {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar.collapsed {
   padding: 0 0 0 0.1rem;
   flex-basis: 2.5rem;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar.collapsed .active {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar.collapsed
+  .active {
   font-weight: bold;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar.collapsed .active div.page-heading {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar.collapsed
+  .active
+  div.page-heading {
   background-color: #22222442;
   border-radius: 8px;
 }
-.ptu.rulebook.journal-entry aside.sidebar.flexcol.directory.journal-sidebar.collapsed .page-number {
+.ptu.rulebook.journal-entry
+  aside.sidebar.flexcol.directory.journal-sidebar.collapsed
+  .page-number {
   color: black;
 }
 .ptu.rulebook:not(.minimized) header.window-header {
@@ -794,8 +1494,8 @@ a.pokedollar span::before {
 .token-panel {
   pointer-events: initial;
   position: absolute;
-  bottom: 65px;
-  right: -5px;
+  top: 25px;
+  right: 45px;
 }
 @media (max-width: 1120px) {
   .token-panel {
@@ -843,7 +1543,7 @@ a.pokedollar span::before {
 }
 .token-panel .main-panel .header-toggle {
   color: black;
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE);
+  background: linear-gradient(45deg, #ecdbeb, #dffffe);
 }
 .token-panel .main-panel .header-toggle:hover,
 .token-panel .main-panel .header-toggle.shown-actions:hover {
@@ -857,7 +1557,7 @@ a.pokedollar span::before {
   flex-direction: row;
   align-items: center;
   min-width: 85px;
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE) !important;
+  background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
 }
 .token-panel .main-panel .avatar img {
   object-fit: cover;
@@ -986,7 +1686,7 @@ a.pokedollar span::before {
   overflow: hidden;
   gap: 3px;
   border-radius: 5px 5px 5px 5px;
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE) !important;
+  background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
 }
 .token-panel .main-panel .actions-accordion .action .icon,
 .token-panel .main-panel .items-accordion .action .icon {
@@ -1058,8 +1758,18 @@ a.pokedollar span::before {
   width: 22px;
   flex: 0 0 22px;
 }
-.token-panel .main-panel .actions-accordion .action .icon.with-category img.category,
-.token-panel .main-panel .items-accordion .action .icon.with-category img.category {
+.token-panel
+  .main-panel
+  .actions-accordion
+  .action
+  .icon.with-category
+  img.category,
+.token-panel
+  .main-panel
+  .items-accordion
+  .action
+  .icon.with-category
+  img.category {
   border-radius: 0 5px 5px 0;
 }
 .token-panel .main-panel .actions-accordion .action .icon img,
@@ -1138,7 +1848,7 @@ a.pokedollar span::before {
   overflow: hidden;
   gap: 3px;
   border-radius: 5px 5px 5px 5px;
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE) !important;
+  background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
 }
 .token-panel .main-panel .feats .action .icon,
 .token-panel .main-panel .abilities .action .icon {
@@ -1478,7 +2188,7 @@ a.content-link img {
   border: unset;
 }
 .dice-checks.dialog section {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE);
+  background: linear-gradient(45deg, #ecdbeb, #dffffe);
 }
 .dice-checks.dialog .dialog-row {
   display: flex;
@@ -1498,10 +2208,13 @@ a.content-link img {
 .dice-checks.dialog .dialog-row .exclude {
   text-align: center;
 }
-#combat-tracker .combatant.actor.acted:not(#combat-tracker .combatant.actor.defeated) {
+#combat-tracker
+  .combatant.actor.acted:not(#combat-tracker .combatant.actor.defeated) {
   color: #999;
 }
-#combat-tracker .combatant.actor.acted:not(#combat-tracker .combatant.actor.defeated) img {
+#combat-tracker
+  .combatant.actor.acted:not(#combat-tracker .combatant.actor.defeated)
+  img {
   transform: scale(0.75);
   opacity: 0.75;
 }
@@ -1532,7 +2245,9 @@ a.content-link img {
 .chat-message.message:not(.attack-roll, .attack-selector) .flavor-text {
   z-index: 10;
 }
-.chat-message.message:not(.attack-roll, .attack-selector) .flavor-text p.action {
+.chat-message.message:not(.attack-roll, .attack-selector)
+  .flavor-text
+  p.action {
   font-size: 15px;
   line-height: 17px;
 }
@@ -1573,11 +2288,17 @@ a.content-link img {
   font-size: 14px;
   font-weight: bold;
 }
-.chat-message.message .flavor-text .header-bar.title-bar .roll-type.attack-roll {
+.chat-message.message
+  .flavor-text
+  .header-bar.title-bar
+  .roll-type.attack-roll {
   background: linear-gradient(45deg, #d8d8f1, #c2cdff);
   color: black;
 }
-.chat-message.message .flavor-text .header-bar.title-bar .roll-type.damage-roll {
+.chat-message.message
+  .flavor-text
+  .header-bar.title-bar
+  .roll-type.damage-roll {
   background: linear-gradient(45deg, #ecdbdb, #ffdfdf);
   color: black;
 }
@@ -1663,7 +2384,8 @@ a.content-link img {
   white-space: nowrap;
   flex: 0 0 auto;
   border: none;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2001,7 +2723,7 @@ a.content-link img {
   margin: unset;
 }
 .ptu.pokemon.drag-in section {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE);
+  background: linear-gradient(45deg, #ecdbeb, #dffffe);
 }
 .ptu.pokemon.drag-in section form h3 {
   border-bottom: unset;
@@ -2010,8 +2732,14 @@ a.content-link img {
   -moz-appearance: auto;
   max-width: 69%;
 }
-.ptu.pokemon.drag-in section form input[type="number"]::-webkit-inner-spin-button,
-.ptu.pokemon.drag-in section form input[type="number"]::-webkit-outer-spin-button {
+.ptu.pokemon.drag-in
+  section
+  form
+  input[type="number"]::-webkit-inner-spin-button,
+.ptu.pokemon.drag-in
+  section
+  form
+  input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: auto;
   opacity: 1;
 }
@@ -2019,7 +2747,7 @@ a.content-link img {
   max-width: 30%;
 }
 .ptu.pokemon.generator section {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE);
+  background: linear-gradient(45deg, #ecdbeb, #dffffe);
   padding: unset;
 }
 .ptu.pokemon.generator form h3 {
@@ -2046,7 +2774,7 @@ a.content-link img {
   text-align: center;
 }
 .ptu.pokemon.generator form .tab-button {
-  border: 2px groove #C42835;
+  border: 2px groove #c42835;
   background: #ffffff25;
 }
 .ptu.pokemon.generator form input[type="text"]::placeholder {
@@ -2155,14 +2883,54 @@ a.content-link img {
   border-radius: 0.4em;
   position: relative;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-prev-rank-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-prev-rank-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-prev-rank-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-prev-rank-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-prev-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-prev-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-prev-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-prev-clickarea {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-prev-rank-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-prev-rank-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-prev-rank-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-prev-rank-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-prev-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-prev-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-prev-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-prev-clickarea {
   position: absolute;
   top: 0;
   left: 0;
@@ -2171,45 +2939,217 @@ a.content-link img {
   border-top-left-radius: 0.4em;
   border-bottom-left-radius: 0.4em;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-prev-rank-clickarea:not(.disabled),
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-prev-rank-clickarea:not(.disabled),
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-prev-rank-clickarea:not(.disabled),
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-prev-rank-clickarea:not(.disabled),
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-prev-clickarea:not(.disabled),
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-prev-clickarea:not(.disabled),
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-prev-clickarea:not(.disabled),
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-prev-clickarea:not(.disabled) {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-prev-rank-clickarea:not(.disabled),
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-prev-rank-clickarea:not(.disabled),
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-prev-rank-clickarea:not(.disabled),
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-prev-rank-clickarea:not(.disabled),
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-prev-clickarea:not(.disabled),
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-prev-clickarea:not(.disabled),
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-prev-clickarea:not(.disabled),
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-prev-clickarea:not(.disabled) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-prev-rank-clickarea:not(.disabled):hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-prev-rank-clickarea:not(.disabled):hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-prev-rank-clickarea:not(.disabled):hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-prev-rank-clickarea:not(.disabled):hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-prev-clickarea:not(.disabled):hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-prev-clickarea:not(.disabled):hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-prev-clickarea:not(.disabled):hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-prev-clickarea:not(.disabled):hover {
-  background: linear-gradient(90deg, rgba(120, 120, 120, 0.25) 0%, rgba(120, 120, 120, 0) 100%);
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-prev-rank-clickarea:not(.disabled):hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-prev-rank-clickarea:not(.disabled):hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-prev-rank-clickarea:not(.disabled):hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-prev-rank-clickarea:not(.disabled):hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-prev-clickarea:not(.disabled):hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-prev-clickarea:not(.disabled):hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-prev-clickarea:not(.disabled):hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-prev-clickarea:not(.disabled):hover {
+  background: linear-gradient(
+    90deg,
+    rgba(120, 120, 120, 0.25) 0%,
+    rgba(120, 120, 120, 0) 100%
+  );
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-prev-rank-clickarea.disabled:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-prev-rank-clickarea.disabled:hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-prev-rank-clickarea.disabled:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-prev-rank-clickarea.disabled:hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-prev-clickarea.disabled:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-prev-clickarea.disabled:hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-prev-clickarea.disabled:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-prev-clickarea.disabled:hover {
-  background: linear-gradient(90deg, rgba(120, 60, 60, 0.25) 0%, rgba(120, 60, 60, 0) 100%);
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-prev-rank-clickarea.disabled:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-prev-rank-clickarea.disabled:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-prev-rank-clickarea.disabled:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-prev-rank-clickarea.disabled:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-prev-clickarea.disabled:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-prev-clickarea.disabled:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-prev-clickarea.disabled:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-prev-clickarea.disabled:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(120, 60, 60, 0.25) 0%,
+    rgba(120, 60, 60, 0) 100%
+  );
   cursor: not-allowed;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-next-rank-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-next-rank-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-next-rank-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-next-rank-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-next-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-next-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-next-clickarea,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-next-clickarea {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-next-rank-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-next-rank-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-next-rank-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-next-rank-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-next-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-next-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-next-clickarea,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-next-clickarea {
   position: absolute;
   top: 0;
   right: 0;
@@ -2217,17 +3157,65 @@ a.content-link img {
   height: 100%;
   border-top-right-radius: 0.4em;
   border-bottom-right-radius: 0.4em;
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-next-rank-clickarea:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-next-rank-clickarea:hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-next-rank-clickarea:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-next-rank-clickarea:hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-next-clickarea:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-next-clickarea:hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-next-clickarea:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-next-clickarea:hover {
-  background: linear-gradient(270deg, rgba(120, 120, 120, 0.25) 0%, rgba(120, 120, 120, 0) 100%);
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-next-rank-clickarea:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-next-rank-clickarea:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-next-rank-clickarea:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-next-rank-clickarea:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-next-clickarea:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-next-clickarea:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-next-clickarea:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-next-clickarea:hover {
+  background: linear-gradient(
+    270deg,
+    rgba(120, 120, 120, 0.25) 0%,
+    rgba(120, 120, 120, 0) 100%
+  );
 }
 .ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill *,
 .ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill *,
@@ -2235,47 +3223,207 @@ a.content-link img {
 .ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat * {
   text-align: center;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-prev-rank,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-prev-rank,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-prev-rank,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-prev-rank,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-prev,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-prev,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-prev,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-prev {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-prev-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-prev-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-prev-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-prev-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-prev,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-prev,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-prev,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-prev {
   grid-column: 1;
   grid-row: 1 / 3;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-next-rank,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-next-rank,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-next-rank,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-next-rank,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-next,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-next,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-next,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-next {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-next-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-next-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-next-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-next-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-next,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-next,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-next,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-next {
   grid-column: 3;
   grid-row: 1 / 3;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-name,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-name,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-name,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-name,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-name,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-name,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-name,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-name {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-name,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-name,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-name,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-name,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-name,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-name,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-name,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-name {
   grid-column: 2;
   grid-row: 1;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .skill-rank,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .skill-rank,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .skill-rank,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .skill-rank,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill .stat-value,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill .stat-value,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat .stat-value,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat .stat-value {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .skill-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .skill-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .skill-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .skill-rank,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  .stat-value,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  .stat-value,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  .stat-value,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  .stat-value {
   grid-column: 2;
   grid-row: 2;
 }
@@ -2286,53 +3434,125 @@ a.content-link img {
   background: unset;
   border: unset;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill input:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill input:hover,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat input:hover,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat input:hover {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill
+  input:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill
+  input:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat
+  input:hover,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat
+  input:hover {
   border: 1px solid gray;
   padding: 0px 2px;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill-points-remaining,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .skill-points-remaining,
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .stat-points-remaining,
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat-points-remaining {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill-points-remaining,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .skill-points-remaining,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .stat-points-remaining,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat-points-remaining {
   text-align: center;
   font-style: italic;
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill.skill-pathetic {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill.skill-pathetic {
   background-color: var(--skillBkgColor--pathetic);
   color: var(--skillFgColor--pathetic);
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill.skill-untrained {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill.skill-untrained {
   background-color: var(--skillBkgColor--untrained);
   color: var(--skillFgColor--untrained);
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill.skill-novice {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill.skill-novice {
   background-color: var(--skillBkgColor--novice);
   color: var(--skillFgColor--novice);
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill.skill-adept {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill.skill-adept {
   background-color: var(--skillBkgColor--adept);
   color: var(--skillFgColor--adept);
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill.skill-expert {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill.skill-expert {
   background-color: var(--skillBkgColor--expert);
   color: var(--skillFgColor--expert);
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill.skill-master {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill.skill-master {
   background-color: var(--skillBkgColor--master);
   color: var(--skillFgColor--master);
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill.skill-virtuoso {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill.skill-virtuoso {
   background-color: var(--skillBkgColor--virtuoso);
   color: var(--skillFgColor--virtuoso);
 }
-.ptu.pokemon.npc-quick-build .window-content .skills-box .skills .skill.skill-invalid {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .skills-box
+  .skills
+  .skill.skill-invalid {
   background-color: var(--skillBkgColor--invalid);
   color: var(--skillFgColor--invalid);
 }
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat.stat-pathetic {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat.stat-pathetic {
   background-color: #990000;
   color: white;
 }
@@ -2340,7 +3560,11 @@ a.content-link img {
   background-color: #e08a8a;
   color: black;
 }
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat.stat-average {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat.stat-average {
   background-color: #d6d6d6;
   color: black;
 }
@@ -2348,21 +3572,37 @@ a.content-link img {
   background-color: #85ca7e;
   color: black;
 }
-.ptu.pokemon.npc-quick-build .window-content .stats-box .stats .stat.stat-extreme {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .stats-box
+  .stats
+  .stat.stat-extreme {
   background-color: #19850d;
   color: white;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .pokemon-party-settings {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .pokemon-party-settings {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 1em;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .pokemon-party-settings .pokemon-party-size {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .pokemon-party-settings
+  .pokemon-party-size {
   display: flex;
   align-items: baseline;
   gap: 1em;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .pokemon-party-settings .pokemon-party-size input {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .pokemon-party-settings
+  .pokemon-party-size
+  input {
   flex: 0.25;
 }
 .ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon {
@@ -2371,14 +3611,26 @@ a.content-link img {
   gap: 0.5em;
   padding-bottom: 15px;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon {
   position: relative;
   display: grid;
   grid-template-columns: 70px 1fr 2fr 1fr;
   grid-template-rows: 35px 35px 25px;
   align-items: center;
   justify-items: center;
-  background: linear-gradient(180deg, #006820 0%, #006820 48%, #047e24 49%, #047e24 51%, #00812f 52%, #009038 100%);
+  background: linear-gradient(
+    180deg,
+    #006820 0%,
+    #006820 48%,
+    #047e24 49%,
+    #047e24 51%,
+    #00812f 52%,
+    #009038 100%
+  );
   border-radius: 10px;
   border-top-left-radius: 50px;
   border: 3px solid #6bd771;
@@ -2386,46 +3638,91 @@ a.content-link img {
   text-shadow: 2px 2px black;
   font-size: large;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon:nth-child(even) {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon:nth-child(even) {
   top: 15px;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon input {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  input {
   color: white;
   text-shadow: 2px 2px black;
   background: unset;
   border: unset;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon input::placeholder {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  input::placeholder {
   color: white;
   text-shadow: 2px 2px black;
   opacity: 1;
   /* for Firefox */
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon input:hover {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  input:hover {
   border: 1px solid gray;
   padding: 0px 2px;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-species {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-species {
   grid-column: 1 / 4;
   grid-row: 2;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-img {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-img {
   grid-column: 1;
   grid-row: 1 / 3;
   padding-left: 5px;
   padding-top: 5px;
   border: unset;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-name {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-name {
   grid-column: 2 / 4;
   grid-row: 1;
   display: flex;
   font-size: larger;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-name label {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-name
+  label {
   display: none;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender {
   grid-column: 4;
   grid-row: 1;
   font-size: medium;
@@ -2433,42 +3730,111 @@ a.content-link img {
   justify-content: flex-end;
   align-items: baseline;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender label {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender
+  label {
   display: none;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender.gender-Genderless {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender.gender-Genderless {
   display: none;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender.gender-Male i {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender.gender-Male
+  i {
   color: #046dda;
   text-shadow: 1px 1px #70baff;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender.gender-Male select,
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender.gender-Male div {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender.gender-Male
+  select,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender.gender-Male
+  div {
   display: none;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender.gender-Male:hover select {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender.gender-Male:hover
+  select {
   display: inline-block;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender.gender-Female i {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender.gender-Female
+  i {
   color: #ee2617;
   text-shadow: 1px 1px #ff9ca7;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender.gender-Female select,
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender.gender-Female div {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender.gender-Female
+  select,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender.gender-Female
+  div {
   display: none;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-gender.gender-Female:hover select {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-gender.gender-Female:hover
+  select {
   display: inline-block;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-level {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-level {
   grid-column: 1;
   grid-row: 3;
   display: flex;
   align-items: baseline;
   padding-left: 5px;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-shiny {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-shiny {
   grid-column: 2;
   grid-row: 2 / 4;
   justify-self: left;
@@ -2478,23 +3844,47 @@ a.content-link img {
   display: flex;
   opacity: 0.2;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-shiny input {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-shiny
+  input {
   display: none;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-shiny.checked {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-shiny.checked {
   opacity: 1;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-remove {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-remove {
   grid-column: 4;
   grid-row: 3;
   justify-self: end;
   padding-right: 5px;
 }
-.ptu.pokemon.npc-quick-build .window-content .pokemon-box .all-party-pokemon .party-pokemon .pokemon-randomize {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .pokemon-box
+  .all-party-pokemon
+  .party-pokemon
+  .pokemon-randomize {
   grid-column: 4;
   grid-row: 2;
 }
-.ptu.pokemon.npc-quick-build .window-content .tagify.one-entry [role="textbox"]:not(:first-child) {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .tagify.one-entry
+  [role="textbox"]:not(:first-child) {
   display: none;
 }
 .ptu.pokemon.npc-quick-build .window-content .computed-links {
@@ -2526,17 +3916,38 @@ a.content-link img {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 }
-.ptu.pokemon.npc-quick-build .window-content .sub-choices .options .sub-choice input[type="radio"] {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .sub-choices
+  .options
+  .sub-choice
+  input[type="radio"] {
   display: none;
 }
-.ptu.pokemon.npc-quick-build .window-content .sub-choices .options .sub-choice.checked,
-.ptu.pokemon.npc-quick-build .window-content .sub-choices .options .sub-choice:not(.disabled):hover {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .sub-choices
+  .options
+  .sub-choice.checked,
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .sub-choices
+  .options
+  .sub-choice:not(.disabled):hover {
   background-color: #b0fdfd;
 }
-.ptu.pokemon.npc-quick-build .window-content .sub-choices .options .sub-choice:not(.checked):not(.disabled) {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .sub-choices
+  .options
+  .sub-choice:not(.checked):not(.disabled) {
   cursor: pointer;
 }
-.ptu.pokemon.npc-quick-build .window-content .sub-choices .options .sub-choice.disabled {
+.ptu.pokemon.npc-quick-build
+  .window-content
+  .sub-choices
+  .options
+  .sub-choice.disabled {
   background-color: #cce4e4;
   cursor: not-allowed;
   opacity: 0.6;
@@ -2713,28 +4124,64 @@ a.content-link img {
 .ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box {
   overflow: unset;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box .stats {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .stats
+  .swsh-box.stats-box
+  .stats {
   text-align: center;
   place-self: center;
   margin: 3px;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box .stats.key {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .stats
+  .swsh-box.stats-box
+  .stats.key {
   font-weight: bold;
   text-transform: uppercase;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box .swsh-header {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .stats
+  .swsh-box.stats-box
+  .swsh-header {
   background: #e1ecf2;
   font-weight: bold;
   text-align: center;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box .flex-row.hp,
-.ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box .flex-row.def,
-.ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box .flex-row.spdef {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .stats
+  .swsh-box.stats-box
+  .flex-row.hp,
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .stats
+  .swsh-box.stats-box
+  .flex-row.def,
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .stats
+  .swsh-box.stats-box
+  .flex-row.spdef {
   background: #fefefe;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box .flex-row.atk,
-.ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box .flex-row.spatk,
-.ptu.sheet.gen8.actor.compact main.sheet-body .stats .swsh-box.stats-box .flex-row.spd {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .stats
+  .swsh-box.stats-box
+  .flex-row.atk,
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .stats
+  .swsh-box.stats-box
+  .flex-row.spatk,
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .stats
+  .swsh-box.stats-box
+  .flex-row.spd {
   background: #e1ecf2;
 }
 .ptu.sheet.gen8.actor.compact main.sheet-body .stats .other {
@@ -2751,23 +4198,46 @@ a.content-link img {
 .ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .rollable {
   position: relative;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .rollable .fa-dice-d20 {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .rollable
+  .fa-dice-d20 {
   position: absolute;
   left: 3px;
   top: 50%;
   transform: translate(0, -50%);
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .rollable .resource-label {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .rollable
+  .resource-label {
   padding-left: 4px;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .rollable:hover {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .rollable:hover {
   text-shadow: 0 0 10px #ff0000a0;
   cursor: pointer;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .rollable label:hover {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .rollable
+  label:hover {
   cursor: pointer;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .skill.bgcolor {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .skill.bgcolor {
   padding: 8px 5px;
 }
 .ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .type--body {
@@ -2776,33 +4246,69 @@ a.content-link img {
 .ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .type--mind {
   background-color: #ffe599aa;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .type--spirit {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .type--spirit {
   background-color: #93c47daa;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .skill--pathetic {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .skill--pathetic {
   background: #cfe2f3;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .skill--untrained {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .skill--untrained {
   background: #9fc5e8;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .skill--novice {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .skill--novice {
   background: #6fa8dc;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .skill--adept {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .skill--adept {
   background: #3d85c6;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .skill--expert {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .skill--expert {
   background: #0b5394;
   color: #cfe2f3;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .skill--master {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .skill--master {
   background: #073763;
   color: #cfe2f3;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .skill--virtuoso {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .skill--virtuoso {
   background: #e9be25;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .capability .skills .skill--invalid {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .capability
+  .skills
+  .skill--invalid {
   background: #ff0f0faa;
 }
 .ptu.sheet.gen8.actor.compact main.sheet-body .extra .flex-row.hp,
@@ -2829,7 +4335,11 @@ a.content-link img {
 .ptu.sheet.gen8.actor.compact main.sheet-body .extra .swsh-body.bio .editor {
   min-height: 35px;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .extra .swsh-body.bio .tox.tox-tinymce {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .extra
+  .swsh-body.bio
+  .tox.tox-tinymce {
   min-height: 160px;
 }
 .ptu.sheet.gen8.actor.compact main.sheet-body .effects .swsh-body {
@@ -2853,17 +4363,30 @@ a.content-link img {
   grid-template-rows: repeat(6, 33px);
   padding: 0;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .contests .contest-dice-grid .item {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .contests
+  .contest-dice-grid
+  .item {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   padding: 1px;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .contests .contest-dice-grid .item.header-item {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .contests
+  .contest-dice-grid
+  .item.header-item {
   font-weight: bold;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .contests .contest-dice-grid .item .mod-input {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .contests
+  .contest-dice-grid
+  .item
+  .mod-input {
   flex: 0 0 auto;
   max-width: 80px;
 }
@@ -2881,13 +4404,21 @@ a.content-link img {
   grid-template-columns: 45px auto;
   grid-auto-rows: auto;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .spirit .spirit-grid .item-header {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .spirit
+  .spirit-grid
+  .item-header {
   border: 1px solid #222224;
   word-break: break-word;
   display: flex;
   padding: 4px;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .spirit .spirit-grid .item-header.header {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .spirit
+  .spirit-grid
+  .item-header.header {
   justify-content: center;
   align-items: center;
 }
@@ -2898,7 +4429,11 @@ a.content-link img {
   padding: 4px;
   color: #22222488;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .spirit .spirit-grid .item.active {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .spirit
+  .spirit-grid
+  .item.active {
   color: #222224;
   background: #22222422;
 }
@@ -2907,7 +4442,11 @@ a.content-link img {
   align-self: center;
   color: #222224cc;
 }
-.ptu.sheet.gen8.actor.compact main.sheet-body .spirit .spirit-grid .item.header {
+.ptu.sheet.gen8.actor.compact
+  main.sheet-body
+  .spirit
+  .spirit-grid
+  .item.header {
   justify-content: center;
   align-items: center;
 }
@@ -2982,19 +4521,32 @@ a.content-link img {
 .ptu.sheet.gen8.actor main.sheet-body .combat .swsh-box .flex-row.spd {
   background: #e1ecf2;
 }
-.ptu.sheet.gen8.actor main.sheet-body .combat .swsh-box.effectiveness .type-image {
+.ptu.sheet.gen8.actor
+  main.sheet-body
+  .combat
+  .swsh-box.effectiveness
+  .type-image {
   flex: 0 1 130px;
   max-height: 30px;
   width: auto;
 }
-.ptu.sheet.gen8.actor main.sheet-body .combat .swsh-box.effectiveness .type-image-effectiveness {
+.ptu.sheet.gen8.actor
+  main.sheet-body
+  .combat
+  .swsh-box.effectiveness
+  .type-image-effectiveness {
   flex: 0 0 48%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.ptu.sheet.gen8.actor main.sheet-body .combat .swsh-box.effectiveness .type-image-effectiveness span {
+.ptu.sheet.gen8.actor
+  main.sheet-body
+  .combat
+  .swsh-box.effectiveness
+  .type-image-effectiveness
+  span {
   flex: 0 0 35px;
   text-align: left;
   font-size: 15px;
@@ -3002,7 +4554,11 @@ a.content-link img {
 .ptu.sheet.gen8.actor main.sheet-body .inventory .swsh-body .color-wrapper {
   padding: 2px 5px;
 }
-.ptu.sheet.gen8.actor main.sheet-body .inventory .swsh-body .color-wrapper:nth-child(odd) {
+.ptu.sheet.gen8.actor
+  main.sheet-body
+  .inventory
+  .swsh-body
+  .color-wrapper:nth-child(odd) {
   background: #dddddda6;
 }
 .ptu.sheet.gen8.actor main.sheet-body .stats .rollable {
@@ -3132,7 +4688,10 @@ a.content-link img {
   flex-wrap: wrap;
   align-self: center;
 }
-.ptu.sheet.gen8.actor .item-list-header .item-controls .item-control.item-create,
+.ptu.sheet.gen8.actor
+  .item-list-header
+  .item-controls
+  .item-control.item-create,
 .ptu.sheet.gen8.dex .item-list-header .item-controls .item-control.item-create {
   background: #ffffffa6;
   border-radius: 5px;
@@ -3144,17 +4703,37 @@ a.content-link img {
   font-size: 12px;
   text-align: center;
 }
-.ptu.sheet.gen8.actor .item-list-header .item-controls .item-control.item-create:hover,
-.ptu.sheet.gen8.dex .item-list-header .item-controls .item-control.item-create:hover {
+.ptu.sheet.gen8.actor
+  .item-list-header
+  .item-controls
+  .item-control.item-create:hover,
+.ptu.sheet.gen8.dex
+  .item-list-header
+  .item-controls
+  .item-control.item-create:hover {
   background: #788898cc;
   text-shadow: unset;
 }
-.ptu.sheet.gen8.actor .item-list-header .item-controls .item-control.item-create span,
-.ptu.sheet.gen8.dex .item-list-header .item-controls .item-control.item-create span {
+.ptu.sheet.gen8.actor
+  .item-list-header
+  .item-controls
+  .item-control.item-create
+  span,
+.ptu.sheet.gen8.dex
+  .item-list-header
+  .item-controls
+  .item-control.item-create
+  span {
   white-space: nowrap;
 }
-.ptu.sheet.gen8.actor .item-list-header .item-controls .item-control.item-settings,
-.ptu.sheet.gen8.dex .item-list-header .item-controls .item-control.item-settings {
+.ptu.sheet.gen8.actor
+  .item-list-header
+  .item-controls
+  .item-control.item-settings,
+.ptu.sheet.gen8.dex
+  .item-list-header
+  .item-controls
+  .item-control.item-settings {
   flex: 0 0 18px;
   font-size: 12px;
   text-align: center;
@@ -3162,8 +4741,14 @@ a.content-link img {
   color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
 }
-.ptu.sheet.gen8.actor .item-list-header .item-controls .item-control.item-settings:hover,
-.ptu.sheet.gen8.dex .item-list-header .item-controls .item-control.item-settings:hover {
+.ptu.sheet.gen8.actor
+  .item-list-header
+  .item-controls
+  .item-control.item-settings:hover,
+.ptu.sheet.gen8.dex
+  .item-list-header
+  .item-controls
+  .item-control.item-settings:hover {
   background: #788898cc;
   text-shadow: unset;
 }
@@ -3193,12 +4778,28 @@ a.content-link img {
   display: none;
   background: lightslategray;
 }
-.ptu.sheet.gen8.actor .item-list.move-list .item .item-icon.rollable:hover > .icon,
-.ptu.sheet.gen8.dex .item-list.move-list .item .item-icon.rollable:hover > .icon {
+.ptu.sheet.gen8.actor
+  .item-list.move-list
+  .item
+  .item-icon.rollable:hover
+  > .icon,
+.ptu.sheet.gen8.dex
+  .item-list.move-list
+  .item
+  .item-icon.rollable:hover
+  > .icon {
   display: none;
 }
-.ptu.sheet.gen8.actor .item-list.move-list .item .item-icon.rollable:hover > .dice,
-.ptu.sheet.gen8.dex .item-list.move-list .item .item-icon.rollable:hover > .dice {
+.ptu.sheet.gen8.actor
+  .item-list.move-list
+  .item
+  .item-icon.rollable:hover
+  > .dice,
+.ptu.sheet.gen8.dex
+  .item-list.move-list
+  .item
+  .item-icon.rollable:hover
+  > .dice {
   display: block;
   cursor: pointer;
 }
@@ -3229,14 +4830,25 @@ a.content-link img {
   white-space: nowrap;
   flex: 0 0 auto;
   border: none;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 4px;
 }
-.ptu.sheet.gen8.actor .item-list.move-list .item .move-info .item-tags .tag.shadowless,
-.ptu.sheet.gen8.dex .item-list.move-list .item .move-info .item-tags .tag.shadowless {
+.ptu.sheet.gen8.actor
+  .item-list.move-list
+  .item
+  .move-info
+  .item-tags
+  .tag.shadowless,
+.ptu.sheet.gen8.dex
+  .item-list.move-list
+  .item
+  .move-info
+  .item-tags
+  .tag.shadowless {
   box-shadow: unset;
 }
 .ptu.sheet.gen8.actor .item-list.move-list .item .move-info .item-tags .tag img,
@@ -3248,7 +4860,13 @@ a.content-link img {
   padding-left: 1px;
   border-radius: unset;
 }
-.ptu.sheet.gen8.actor .item-list.move-list .item .move-info .item-tags .tag span,
+.ptu.sheet.gen8.actor
+  .item-list.move-list
+  .item
+  .move-info
+  .item-tags
+  .tag
+  span,
 .ptu.sheet.gen8.dex .item-list.move-list .item .move-info .item-tags .tag span {
   padding-left: 3px;
   padding-right: 3px;
@@ -3270,15 +4888,26 @@ a.content-link img {
   white-space: nowrap;
   flex: 0 0 auto;
   border: none;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 4px;
 }
-.ptu.sheet.gen8.actor .item-list.move-list .item .move-info .move-tags .tag.gradient,
-.ptu.sheet.gen8.dex .item-list.move-list .item .move-info .move-tags .tag.gradient {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE);
+.ptu.sheet.gen8.actor
+  .item-list.move-list
+  .item
+  .move-info
+  .move-tags
+  .tag.gradient,
+.ptu.sheet.gen8.dex
+  .item-list.move-list
+  .item
+  .move-info
+  .move-tags
+  .tag.gradient {
+  background: linear-gradient(45deg, #ecdbeb, #dffffe);
 }
 .ptu.sheet.gen8.actor .item-list.move-list .item .move-info .move-tags .tag img,
 .ptu.sheet.gen8.dex .item-list.move-list .item .move-info .move-tags .tag img {
@@ -3289,7 +4918,13 @@ a.content-link img {
   padding-left: 1px;
   border-radius: unset;
 }
-.ptu.sheet.gen8.actor .item-list.move-list .item .move-info .move-tags .tag span,
+.ptu.sheet.gen8.actor
+  .item-list.move-list
+  .item
+  .move-info
+  .move-tags
+  .tag
+  span,
 .ptu.sheet.gen8.dex .item-list.move-list .item .move-info .move-tags .tag span {
   padding-left: 3px;
   padding-right: 3px;
@@ -3372,7 +5007,8 @@ a.content-link img {
   white-space: nowrap;
   flex: 0 0 auto;
   border: none;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3429,10 +5065,26 @@ a.content-link img {
 .ptu.sheet.gen8.dex .item-list .item .item-quantity input[type="number"] {
   -moz-appearance: auto;
 }
-.ptu.sheet.gen8.actor .item-list .item .item-quantity input[type="number"]::-webkit-inner-spin-button,
-.ptu.sheet.gen8.dex .item-list .item .item-quantity input[type="number"]::-webkit-inner-spin-button,
-.ptu.sheet.gen8.actor .item-list .item .item-quantity input[type="number"]::-webkit-outer-spin-button,
-.ptu.sheet.gen8.dex .item-list .item .item-quantity input[type="number"]::-webkit-outer-spin-button {
+.ptu.sheet.gen8.actor
+  .item-list
+  .item
+  .item-quantity
+  input[type="number"]::-webkit-inner-spin-button,
+.ptu.sheet.gen8.dex
+  .item-list
+  .item
+  .item-quantity
+  input[type="number"]::-webkit-inner-spin-button,
+.ptu.sheet.gen8.actor
+  .item-list
+  .item
+  .item-quantity
+  input[type="number"]::-webkit-outer-spin-button,
+.ptu.sheet.gen8.dex
+  .item-list
+  .item
+  .item-quantity
+  input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: auto;
   opacity: 1;
 }
@@ -3505,16 +5157,70 @@ a.content-link img {
 .ptu.sheet.gen8.dex .item-list .item .nested-items .item .item-controls {
   margin-right: calc(0.25rem - 4px);
 }
-.ptu.sheet.gen8.actor .item-list .item .nested-items .item .nested-items .item .item-controls,
-.ptu.sheet.gen8.dex .item-list .item .nested-items .item .nested-items .item .item-controls {
+.ptu.sheet.gen8.actor
+  .item-list
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .item-controls,
+.ptu.sheet.gen8.dex
+  .item-list
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .item-controls {
   margin-right: calc(0.25rem - 8px);
 }
-.ptu.sheet.gen8.actor .item-list .item .nested-items .item .nested-items .item .nested-items .item .item-controls,
-.ptu.sheet.gen8.dex .item-list .item .nested-items .item .nested-items .item .nested-items .item .item-controls {
+.ptu.sheet.gen8.actor
+  .item-list
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .item-controls,
+.ptu.sheet.gen8.dex
+  .item-list
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .item-controls {
   margin-right: calc(0.25rem - 12px);
 }
-.ptu.sheet.gen8.actor .item-list .item .nested-items .item .nested-items .item .nested-items .item .nested-items .item .item-controls,
-.ptu.sheet.gen8.dex .item-list .item .nested-items .item .nested-items .item .nested-items .item .nested-items .item .item-controls {
+.ptu.sheet.gen8.actor
+  .item-list
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .item-controls,
+.ptu.sheet.gen8.dex
+  .item-list
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .nested-items
+  .item
+  .item-controls {
   margin-right: calc(0.25rem - 16px);
 }
 .ptu.sheet.gen8.actor .item-list .item .nested-items.transitioning,
@@ -3551,7 +5257,7 @@ a.content-link img {
   margin: 0.25rem;
 }
 .ptu.sheet.gen8.dex .header .swsh-header {
-  background-color: #AED3A2;
+  background-color: #aed3a2;
 }
 .ptu.sheet.gen8.dex .header .header-label {
   font-weight: bold;
@@ -3614,7 +5320,7 @@ a.content-link img {
   width: calc(100% - 17px);
   height: calc(100% - 17px);
   align-self: center;
-  background: #AED3A2a6;
+  background: #aed3a2a6;
   border-radius: 50%;
 }
 .ptu.sheet.gen8.dex .dex-item-img img {
@@ -3716,13 +5422,13 @@ a.content-link img {
 /*  Item Sheet                                  */
 /* -------------------------------------------- */
 .sheet.item section {
-  border: 5px solid #AED3A2;
+  border: 5px solid #aed3a2;
   border-left: unset;
   padding: 0;
   overflow: hidden;
 }
 .sheet.item section form.item-sheet {
-  background-color: #D1FED4;
+  background-color: #d1fed4;
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -3818,7 +5524,14 @@ a.content-link img {
   flex: 1 0 0;
   padding-left: 0.25rem;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .details .item .item-controls {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .details
+  .item
+  .item-controls {
   flex: 0 0 20px;
   justify-content: end;
   display: flex;
@@ -3826,7 +5539,15 @@ a.content-link img {
   flex-wrap: wrap;
   align-self: center;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .details .item .item-controls .item-control {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .details
+  .item
+  .item-controls
+  .item-control {
   flex: 0 0 20px;
   font-size: 14px;
   text-align: center;
@@ -3835,15 +5556,38 @@ a.content-link img {
   padding: 0.5rem;
   overflow-y: auto;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-header {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-header {
   display: flex;
   justify-content: space-between;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-header h3 {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-header
+  h3 {
   padding: unset;
   border-bottom: unset;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-header .item-controls {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-header
+  .item-controls {
   flex: 0 0 20px;
   justify-content: end;
   display: flex;
@@ -3851,46 +5595,165 @@ a.content-link img {
   flex-wrap: wrap;
   align-self: center;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-header .item-controls .item-control {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-header
+  .item-controls
+  .item-control {
   flex: 0 0 20px;
   font-size: 14px;
   text-align: center;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body textarea {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  textarea {
   min-height: 72px;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body label,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .labelled-element {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  label,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .labelled-element {
   display: flex;
   align-items: center;
   gap: 4px;
   flex: 0 0 20%;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body label input,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .labelled-element input,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body label tags,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .labelled-element tags {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  label
+  input,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .labelled-element
+  input,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  label
+  tags,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .labelled-element
+  tags {
   flex: 0;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body label.fill,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .labelled-element.fill {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  label.fill,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .labelled-element.fill {
   flex-grow: 1;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .range {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .range {
   display: flex;
   gap: 3px;
   align-items: center;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .range input {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .range
+  input {
   width: 40px;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .attached-input {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .attached-input {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .attached-input .attachment {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .attached-input
+  .attachment {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3905,55 +5768,190 @@ a.content-link img {
   border-right: none;
   border-radius: 3px 0 0 3px;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .attached-input input,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .attached-input tags {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .attached-input
+  input,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .attached-input
+  tags {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   margin: 0;
   flex: 1;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .attached-input select {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .attached-input
+  select {
   flex: 1;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .spaced-fields {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .spaced-fields {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .spaced-fields label {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .spaced-fields
+  label {
   font-weight: 500;
   font-size: 12px;
   padding-right: 2px;
   flex: 0 0 135px;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .spaced-fields label:not(:first-child) {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .spaced-fields
+  label:not(:first-child) {
   padding-left: 2px;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .spaced-fields.bracket {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .spaced-fields.bracket {
   padding-left: 22%;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body .spaced-fields.bracket label {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body
+  .spaced-fields.bracket
+  label {
   flex: 0;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body[data-key="FlatModifier"] .type-input {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body[data-key="FlatModifier"]
+  .type-input {
   flex: 0;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body[data-key="GrantItem"] a.granted,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body[data-key="EphemeralEffect"] a.granted,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body[data-key="ApplyEffect"] a.granted {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body[data-key="GrantItem"]
+  a.granted,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body[data-key="EphemeralEffect"]
+  a.granted,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body[data-key="ApplyEffect"]
+  a.granted {
   display: flex;
   flex: 0 0 auto;
   flex-direction: row;
   align-items: center;
   gap: 3px;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body[data-key="GrantItem"] a.granted img,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body[data-key="EphemeralEffect"] a.granted img,
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .rule-element .rule-body[data-key="ApplyEffect"] a.granted img {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body[data-key="GrantItem"]
+  a.granted
+  img,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body[data-key="EphemeralEffect"]
+  a.granted
+  img,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .rule-element
+  .rule-body[data-key="ApplyEffect"]
+  a.granted
+  img {
   width: 16px;
   height: 16px;
 }
-.sheet.item section form.item-sheet .sheet-body .rules .rules-list .create-rule-element {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .rules
+  .rules-list
+  .create-rule-element {
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -3985,7 +5983,13 @@ a.content-link img {
   padding-left: 0.25rem;
   margin: 0 0.25rem;
 }
-.sheet.item section form.item-sheet .sheet-body .details .item-row input[type="checkbox"] {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .details
+  .item-row
+  input[type="checkbox"] {
   flex: 0 0 20px;
 }
 .sheet.item section form.item-sheet .sheet-body .details .item-row select {
@@ -4004,7 +6008,13 @@ a.content-link img {
   resize: none;
   min-height: 132px;
 }
-.sheet.item section form.item-sheet .sheet-body .details .item-row .type-select {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .details
+  .item-row
+  .type-select {
   height: 34px;
   width: 165px;
   background-size: contain !important;
@@ -4012,20 +6022,45 @@ a.content-link img {
   padding: 0.25rem;
   color: rgba(0, 0, 0, 0);
 }
-.sheet.item section form.item-sheet .sheet-body .details .item-row .type-select option {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .details
+  .item-row
+  .type-select
+  option {
   color: black;
 }
-.sheet.item section form.item-sheet .sheet-body .details .item-row .type-select:focus {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .details
+  .item-row
+  .type-select:focus {
   box-shadow: unset;
 }
-.sheet.item section form.item-sheet .sheet-body .details .item-row .type-select.selected {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .details
+  .item-row
+  .type-select.selected {
   color: #000000;
 }
 .sheet.item section form.item-sheet .sheet-body .details .item-row .arrow-box {
   position: relative;
   width: fit-content;
 }
-.sheet.item section form.item-sheet .sheet-body .details .item-row .arrow-box:after {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .details
+  .item-row
+  .arrow-box:after {
   content: ">";
   font: 17px monospace;
   color: #191813;
@@ -4054,7 +6089,7 @@ a.content-link img {
   flex-direction: column;
 }
 .sheet.item section form.item-sheet .sheet-body .origin-box {
-  background-color: #9FCB94;
+  background-color: #9fcb94;
   width: 100%;
   height: 40px;
   padding: 0.5rem;
@@ -4088,7 +6123,12 @@ a.content-link img {
   object-fit: contain;
   border: unset;
 }
-.sheet.item section form.item-sheet .sheet-body .avatar img[src$=".svg"]:not([src*="conditions"]) {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .avatar
+  img[src$=".svg"]:not([src*="conditions"]) {
   filter: invert(1);
 }
 .sheet.item section form.item-sheet .sheet-body .move-info {
@@ -4098,7 +6138,7 @@ a.content-link img {
   font-weight: bold;
   text-align: center;
   border-radius: 13px 0 0 13px;
-  background-color: #FFFFC4;
+  background-color: #ffffc4;
   position: relative;
   right: -1rem;
   margin-left: -1rem;
@@ -4120,7 +6160,13 @@ a.content-link img {
   flex-direction: row;
   margin: 0.5rem 0;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-origin {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-origin {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4131,9 +6177,16 @@ a.content-link img {
   background-color: #fff;
   padding: 0.25rem;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px #8CC3F0, 0 0 0 10px #B6EFF8, 0 0 0 13px #8CC3F0;
+  box-shadow: 0 0 0 3px #8cc3f0, 0 0 0 10px #b6eff8, 0 0 0 13px #8cc3f0;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-origin .move-origin-select {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-origin
+  .move-origin-select {
   height: 28px;
   width: 85px;
   background-size: contain !important;
@@ -4144,13 +6197,34 @@ a.content-link img {
   cursor: pointer;
   color: rgba(0, 0, 0, 0);
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-origin .move-origin-select:focus {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-origin
+  .move-origin-select:focus {
   box-shadow: unset;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-origin .move-origin-select.selected {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-origin
+  .move-origin-select.selected {
   color: #000000;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-origin .move-origin-select:after {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-origin
+  .move-origin-select:after {
   content: "►";
   position: absolute;
   top: 2px;
@@ -4159,7 +6233,13 @@ a.content-link img {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -4168,21 +6248,73 @@ a.content-link img {
   flex-grow: 1;
   margin: 0 0.5rem;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-type-row {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-type-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-type,
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-category,
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .item-row {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-type,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-category,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .item-row {
   position: relative;
   width: fit-content;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-type .type-select,
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-category .type-select,
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .item-row .type-select {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-type
+  .type-select,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-category
+  .type-select,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .item-row
+  .type-select {
   height: 34px;
   width: 165px;
   background-size: contain !important;
@@ -4190,18 +6322,80 @@ a.content-link img {
   padding: 0.25rem;
   color: rgba(0, 0, 0, 0);
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-type .type-select:focus,
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-category .type-select:focus,
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .item-row .type-select:focus {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-type
+  .type-select:focus,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-category
+  .type-select:focus,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .item-row
+  .type-select:focus {
   box-shadow: unset;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-type .type-select.selected,
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-category .type-select.selected,
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .item-row .type-select.selected {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-type
+  .type-select.selected,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-category
+  .type-select.selected,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .item-row
+  .type-select.selected {
   color: #000000;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col select.move-type:after,
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col select.move-category:after {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  select.move-type:after,
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  select.move-category:after {
   content: ">";
   font: 17px "Pokemon GB", monospace;
   color: #191813;
@@ -4215,28 +6409,72 @@ a.content-link img {
   position: absolute;
   pointer-events: none;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-other-info {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-other-info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   font-weight: bold;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-other-info > span {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-other-info
+  > span {
   display: flex;
   align-items: center;
   flex: 0 0 165px;
   padding: 0.25rem;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-other-info > span input {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-other-info
+  > span
+  input {
   border: unset;
   text-overflow: ellipsis;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-other-info > span tags {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-other-info
+  > span
+  tags {
   flex: 1 0 0;
   margin-left: 0.5rem;
 }
-.sheet.item section form.item-sheet .sheet-body .move-info .move-info-row .move-info-col .move-other-info > span tags.tagify[disabled] > .tagify__tag > div::before {
+.sheet.item
+  section
+  form.item-sheet
+  .sheet-body
+  .move-info
+  .move-info-row
+  .move-info-col
+  .move-other-info
+  > span
+  tags.tagify[disabled]
+  > .tagify__tag
+  > div::before {
   animation: unset;
 }
 .sheet.item section form.item-sheet .sheet-body .overview .move-effect {
@@ -4244,7 +6482,7 @@ a.content-link img {
 }
 .sheet.item section form.item-sheet .sheet-body .move-effect {
   background-color: white;
-  box-shadow: 0 0 0 5px #5899D1, 0 0 0 10px #73AEFA, 0 0 0 15px #5899D1;
+  box-shadow: 0 0 0 5px #5899d1, 0 0 0 10px #73aefa, 0 0 0 15px #5899d1;
   width: 100%;
   height: 100%;
   flex-grow: 1;
@@ -4397,14 +6635,24 @@ a.content-link img {
   font-size: 12px;
   text-align: center;
 }
-.sheet.item.species .item-list-header .item-controls .item-control.item-create:hover {
+.sheet.item.species
+  .item-list-header
+  .item-controls
+  .item-control.item-create:hover {
   background: #788898cc;
   text-shadow: unset;
 }
-.sheet.item.species .item-list-header .item-controls .item-control.item-create span {
+.sheet.item.species
+  .item-list-header
+  .item-controls
+  .item-control.item-create
+  span {
   white-space: nowrap;
 }
-.sheet.item.species .item-list-header .item-controls .item-control.item-settings {
+.sheet.item.species
+  .item-list-header
+  .item-controls
+  .item-control.item-settings {
   flex: 0 0 18px;
   font-size: 12px;
   text-align: center;
@@ -4412,7 +6660,10 @@ a.content-link img {
   color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
 }
-.sheet.item.species .item-list-header .item-controls .item-control.item-settings:hover {
+.sheet.item.species
+  .item-list-header
+  .item-controls
+  .item-control.item-settings:hover {
   background: #788898cc;
   text-shadow: unset;
 }
@@ -4436,7 +6687,7 @@ a.content-link img {
   background: #bde7c0a6;
 }
 .sheet.item.species .item-list .item:nth-child(even) {
-  background: #AED3A2a6;
+  background: #aed3a2a6;
 }
 .sheet.item.species .item-list .item.empty {
   height: 100px;
@@ -4566,13 +6817,13 @@ a.content-link img {
 /*  Party Sheet                                 */
 /* -------------------------------------------- */
 .sheet.party .window-content {
-  background: #D1FED4;
+  background: #d1fed4;
 }
 .sheet.party .trainer .party-list {
   min-height: unset;
 }
 .sheet.party .trainer .party-list .party-item:hover {
-  background: #AED3A2a6;
+  background: #aed3a2a6;
 }
 .sheet.party .party-list {
   min-height: 100px;
@@ -4591,7 +6842,7 @@ a.content-link img {
   flex: 0 0 150px;
   padding: 0.25rem;
   border-radius: 10px;
-  background: #AED3A2a6;
+  background: #aed3a2a6;
   overflow: hidden;
   height: fit-content;
 }
@@ -4630,10 +6881,10 @@ a.content-link img {
   height: auto;
 }
 .sheet.party .party-list .party-item.empty:hover {
-  background: #AED3A2a6;
+  background: #aed3a2a6;
 }
 .sheet.dex .window-content {
-  background: #D1FED4;
+  background: #d1fed4;
 }
 .sheet.token-sheet .form-fields select {
   max-width: 278px;
@@ -4657,20 +6908,22 @@ a.content-link img {
 .sheet.token-sheet input[type="range"]:disabled::-webkit-slider-thumb {
   background: var(--color-text-light-1);
   border: var(--color-text-light-1);
-  box-shadow: 1px 1px 1px var(--color-text-light-1), 0px 0px 1px var(--color-text-light-1);
+  box-shadow: 1px 1px 1px var(--color-text-light-1),
+    0px 0px 1px var(--color-text-light-1);
   cursor: default;
 }
 .sheet.token-sheet input[type="range"]:disabled::-moz-range-thumb {
   background: var(--color-text-light-1);
   border: var(--color-text-light-1);
-  box-shadow: 1px 1px 1px var(--color-text-light-1), 0px 0px 1px var(--color-text-light-1);
+  box-shadow: 1px 1px 1px var(--color-text-light-1),
+    0px 0px 1px var(--color-text-light-1);
   cursor: default;
 }
 .app.choice-set-prompt {
   min-width: 250px;
 }
 .app.choice-set-prompt section.window-content {
-  background: #AED3A2;
+  background: #aed3a2;
 }
 .app.choice-set-prompt section.window-content h3 {
   display: flex;
@@ -4696,7 +6949,10 @@ a.content-link img {
   max-width: 100%;
 }
 .app.choice-set-prompt section.window-content .choices button:not(.with-image),
-.app.choice-set-prompt section.window-content .choices .drop-zone:not(.with-image) {
+.app.choice-set-prompt
+  section.window-content
+  .choices
+  .drop-zone:not(.with-image) {
   min-width: 120px;
   justify-content: center;
 }
@@ -4705,7 +6961,11 @@ a.content-link img {
   align-items: center;
 }
 .app.choice-set-prompt section.window-content .choices button.with-image img,
-.app.choice-set-prompt section.window-content .choices .drop-zone.with-image img {
+.app.choice-set-prompt
+  section.window-content
+  .choices
+  .drop-zone.with-image
+  img {
   border: 1px solid #444;
   height: 1.6em;
   margin-right: 0.5em;
@@ -4722,7 +6982,7 @@ a.content-link img {
   line-height: 28px;
 }
 .app.choice-set-prompt section.window-content .choices .drop-zone i.fas {
-  border: 1px solid #BBB;
+  border: 1px solid #bbb;
   border-radius: 2px;
   align-items: center;
   display: flex;
@@ -4839,13 +7099,13 @@ a.content-link img {
 }
 /* Theme Colors */
 .ball-themes.default.background {
-  background: #C42835 !important;
+  background: #c42835 !important;
 }
 .ball-themes.default.gradient {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE) !important;
+  background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
 }
 .ball-themes.default.light-color {
-  background: #E33242 !important;
+  background: #e33242 !important;
 }
 .ball-themes.default.band {
   background: #222224 !important;
@@ -4870,33 +7130,33 @@ a.content-link img {
   /* .tooltipster-content {color: color} for text color of tooltip */
 }
 .ball-themes.air.background {
-  background: #44899F !important;
+  background: #44899f !important;
 }
 .ball-themes.air.gradient {
-  background: linear-gradient(45deg, #f1ffff, #DFFFFE) !important;
+  background: linear-gradient(45deg, #f1ffff, #dffffe) !important;
 }
 .ball-themes.air.light-color {
-  background: #6EB6CB !important;
+  background: #6eb6cb !important;
 }
 .ball-themes.air.band {
   background: #222224 !important;
 }
 .ball-themes.air.highlight {
-  background: #44899F !important;
+  background: #44899f !important;
 }
 .ball-themes.air.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #44879E;
+  text-shadow: 0 0 8px #44879e;
 }
 .ball-themes.air.item.active {
   text-shadow: unset;
-  background: #6FB4CA !important;
+  background: #6fb4ca !important;
 }
 .ball-themes.great.background {
   background: #0040a1 !important;
 }
 .ball-themes.great.gradient {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE) !important;
+  background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
 }
 .ball-themes.great.light-color {
   background: #0175c9 !important;
@@ -4913,13 +7173,13 @@ a.content-link img {
 }
 .ball-themes.great.item.active {
   text-shadow: unset;
-  background: #B03023 !important;
+  background: #b03023 !important;
 }
 .ball-themes.ultra.background {
   background: #333437 !important;
 }
 .ball-themes.ultra.gradient {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE) !important;
+  background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
 }
 .ball-themes.ultra.light-color {
   background: #424447 !important;
@@ -4942,7 +7202,7 @@ a.content-link img {
   background: #37195e !important;
 }
 .ball-themes.master.gradient {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE) !important;
+  background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
 }
 .ball-themes.master.light-color {
   background: #46256d !important;
@@ -4971,79 +7231,85 @@ a.content-link img {
   background: #fdfdfd !important;
 }
 .ball-themes.premier.band {
-  background: #C42835 !important;
+  background: #c42835 !important;
 }
 .ball-themes.premier.highlight {
-  background: #C42835 !important;
+  background: #c42835 !important;
 }
 .ball-themes.premier.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #AE574d;
+  text-shadow: 0 0 8px #ae574d;
 }
 .ball-themes.premier.item.active {
   text-shadow: unset;
-  background: #C42835 !important;
+  background: #c42835 !important;
 }
 .ball-themes.cherish.background {
-  background: #E94737 !important;
+  background: #e94737 !important;
 }
 .ball-themes.cherish.gradient {
-  background: linear-gradient(45deg, #F37B73, #ffa698, #fdd2cb) !important;
+  background: linear-gradient(45deg, #f37b73, #ffa698, #fdd2cb) !important;
 }
 .ball-themes.cherish.light-color {
-  background: #F37B73 !important;
+  background: #f37b73 !important;
 }
 .ball-themes.cherish.band {
   background: #ff9d9d !important;
 }
 .ball-themes.cherish.highlight {
-  background: #F37B73 !important;
+  background: #f37b73 !important;
 }
 .ball-themes.cherish.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #F37B73;
+  text-shadow: 0 0 8px #f37b73;
 }
 .ball-themes.cherish.item.active {
   text-shadow: unset;
-  background: #F37B73 !important;
+  background: #f37b73 !important;
 }
 .ball-themes.dive.background {
-  background: #6499C3 !important;
+  background: #6499c3 !important;
 }
 .ball-themes.dive.gradient {
-  background: linear-gradient(45deg, #6499C3, #7FCAEF, #a5d7f0) !important;
+  background: linear-gradient(45deg, #6499c3, #7fcaef, #a5d7f0) !important;
 }
 .ball-themes.dive.light-color {
-  background: #7FCAEF !important;
+  background: #7fcaef !important;
 }
 .ball-themes.dive.band {
-  background: #FFFBF6 !important;
+  background: #fffbf6 !important;
 }
 .ball-themes.dive.highlight {
-  background: #FFFBF6 !important;
+  background: #fffbf6 !important;
 }
 .ball-themes.dive.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #7FCAEF;
+  text-shadow: 0 0 8px #7fcaef;
 }
 .ball-themes.dive.item.active {
   text-shadow: unset;
-  background: #7FCAEF !important;
+  background: #7fcaef !important;
 }
 .ball-themes.dusk.background {
   background: #524746 !important;
 }
 .ball-themes.dusk.gradient {
-  background: linear-gradient(45deg, #6b5f5c, #443a39, #4d4240, #8b7b78) !important;
+  background: linear-gradient(
+    45deg,
+    #6b5f5c,
+    #443a39,
+    #4d4240,
+    #8b7b78
+  ) !important;
 }
 .ball-themes.dusk.light-color {
   background: #635755 !important;
 }
 .ball-themes.dusk.band {
-  background: #ED6E19 !important;
+  background: #ed6e19 !important;
 }
 .ball-themes.dusk.highlight {
-  background: #35A03D !important;
+  background: #35a03d !important;
 }
 .ball-themes.dusk.item:hover {
   text-shadow: unset;
@@ -5054,42 +7320,42 @@ a.content-link img {
   background: #5fcf66 !important;
 }
 .ball-themes.earth.background {
-  background: #676F24 !important;
+  background: #676f24 !important;
 }
 .ball-themes.earth.gradient {
-  background: linear-gradient(45deg, #e7eccf, #DFFFFE) !important;
+  background: linear-gradient(45deg, #e7eccf, #dffffe) !important;
 }
 .ball-themes.earth.light-color {
-  background: #788B20 !important;
+  background: #788b20 !important;
 }
 .ball-themes.earth.band {
   background: #222224 !important;
 }
 .ball-themes.earth.highlight {
-  background: #788B20 !important;
+  background: #788b20 !important;
 }
 .ball-themes.earth.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #788B20;
+  text-shadow: 0 0 8px #788b20;
 }
 .ball-themes.earth.item.active {
   text-shadow: unset;
-  background: #788B20 !important;
+  background: #788b20 !important;
 }
 .ball-themes.fabulous.background {
   background: #9642b8 !important;
 }
 .ball-themes.fabulous.gradient {
-  background: linear-gradient(45deg, #AC5DF3, #DEC3FF, #f8f1ff) !important;
+  background: linear-gradient(45deg, #ac5df3, #dec3ff, #f8f1ff) !important;
 }
 .ball-themes.fabulous.light-color {
-  background: #9749C9 !important;
+  background: #9749c9 !important;
 }
 .ball-themes.fabulous.band {
   background: #8db3ff !important;
 }
 .ball-themes.fabulous.highlight {
-  background: #DEC3FF !important;
+  background: #dec3ff !important;
 }
 .ball-themes.fabulous.item:hover {
   text-shadow: unset;
@@ -5100,36 +7366,36 @@ a.content-link img {
   background: #d6b4ff !important;
 }
 .ball-themes.fast.background {
-  background: #C56121 !important;
+  background: #c56121 !important;
 }
 .ball-themes.fast.gradient {
   background: linear-gradient(45deg, #f5d5bd, #ffe9b3) !important;
 }
 .ball-themes.fast.light-color {
-  background: #EA8E49 !important;
+  background: #ea8e49 !important;
 }
 .ball-themes.fast.band {
   background: #222224 !important;
 }
 .ball-themes.fast.highlight {
-  background: #F9C642 !important;
+  background: #f9c642 !important;
 }
 .ball-themes.fast.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #F9C642;
+  text-shadow: 0 0 8px #f9c642;
 }
 .ball-themes.fast.item.active {
   text-shadow: unset;
-  background: #F9C642 !important;
+  background: #f9c642 !important;
 }
 .ball-themes.friend.background {
-  background: #6A963E !important;
+  background: #6a963e !important;
 }
 .ball-themes.friend.gradient {
   background: linear-gradient(45deg, #a4cf79, #acd484, #d5ffaa) !important;
 }
 .ball-themes.friend.light-color {
-  background: #7FBA43 !important;
+  background: #7fba43 !important;
 }
 .ball-themes.friend.band {
   background: #222224 !important;
@@ -5146,7 +7412,7 @@ a.content-link img {
   background: #db664c !important;
 }
 .ball-themes.gossamer.background {
-  background: #E9CFE1 !important;
+  background: #e9cfe1 !important;
 }
 .ball-themes.gossamer.gradient {
   background: linear-gradient(45deg, #f1dbe5, #fff9fd) !important;
@@ -5158,7 +7424,7 @@ a.content-link img {
   background: #222224 !important;
 }
 .ball-themes.gossamer.highlight {
-  background: #FDECF4 !important;
+  background: #fdecf4 !important;
 }
 .ball-themes.gossamer.item:hover {
   text-shadow: unset;
@@ -5169,96 +7435,96 @@ a.content-link img {
   background: #f3b7d4 !important;
 }
 .ball-themes.hail.background {
-  background: #DBE0E0 !important;
+  background: #dbe0e0 !important;
 }
 .ball-themes.hail.gradient {
-  background: linear-gradient(45deg, #dbebec, #DFFFFE) !important;
+  background: linear-gradient(45deg, #dbebec, #dffffe) !important;
 }
 .ball-themes.hail.light-color {
-  background: #C4F4FF !important;
+  background: #c4f4ff !important;
 }
 .ball-themes.hail.band {
   background: #222224 !important;
 }
 .ball-themes.hail.highlight {
-  background: #DBE0E0 !important;
+  background: #dbe0e0 !important;
 }
 .ball-themes.hail.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #C4F4FF;
+  text-shadow: 0 0 8px #c4f4ff;
 }
 .ball-themes.hail.item.active {
   text-shadow: unset;
-  background: #C4F4FF !important;
+  background: #c4f4ff !important;
 }
 .ball-themes.heal.background {
   background: #d63a8d !important;
 }
 .ball-themes.heal.gradient {
-  background: linear-gradient(45deg, #fcc3a6, #FFF2CD, #fff7e2) !important;
+  background: linear-gradient(45deg, #fcc3a6, #fff2cd, #fff7e2) !important;
 }
 .ball-themes.heal.light-color {
-  background: #E8529B !important;
+  background: #e8529b !important;
 }
 .ball-themes.heal.band {
-  background: #7C97CE !important;
+  background: #7c97ce !important;
 }
 .ball-themes.heal.highlight {
   background: #fdc89d !important;
 }
 .ball-themes.heal.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #FFF4DC;
+  text-shadow: 0 0 8px #fff4dc;
 }
 .ball-themes.heal.item.active {
   text-shadow: unset;
-  background: #FFF4DC !important;
+  background: #fff4dc !important;
 }
 .ball-themes.heavy.background {
-  background: #797C86 !important;
+  background: #797c86 !important;
 }
 .ball-themes.heavy.gradient {
-  background: linear-gradient(45deg, #dbebec, #DFFFFE) !important;
+  background: linear-gradient(45deg, #dbebec, #dffffe) !important;
 }
 .ball-themes.heavy.light-color {
-  background: #9B9FA4 !important;
+  background: #9b9fa4 !important;
 }
 .ball-themes.heavy.band {
   background: #222224 !important;
 }
 .ball-themes.heavy.highlight {
-  background: #5B7AB9 !important;
+  background: #5b7ab9 !important;
 }
 .ball-themes.heavy.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #5B7AB9;
+  text-shadow: 0 0 8px #5b7ab9;
 }
 .ball-themes.heavy.item.active {
   text-shadow: unset;
-  background: #5B7AB9 !important;
+  background: #5b7ab9 !important;
 }
 .ball-themes.park.background {
-  background: #DA9C22 !important;
+  background: #da9c22 !important;
 }
 .ball-themes.park.gradient {
   background: linear-gradient(45deg, #f7e4a2, #fffcee) !important;
 }
 .ball-themes.park.light-color {
-  background: #F5D152 !important;
+  background: #f5d152 !important;
 }
 .ball-themes.park.band {
-  background: #2F6DB7 !important;
+  background: #2f6db7 !important;
 }
 .ball-themes.park.highlight {
-  background: #F5D152 !important;
+  background: #f5d152 !important;
 }
 .ball-themes.park.item:hover {
   text-shadow: unset;
-  text-shadow: 0 0 8px #F5D152;
+  text-shadow: 0 0 8px #f5d152;
 }
 .ball-themes.park.item.active {
   text-shadow: unset;
-  background: #F5D152 !important;
+  background: #f5d152 !important;
 }
 .ball-themes.level.background {
   background: #ecb90d !important;
@@ -5287,7 +7553,7 @@ a.content-link img {
   background: #aa5286 !important;
 }
 .ball-themes.love.gradient {
-  background: linear-gradient(45deg, #ECDBEB, #fff6fd) !important;
+  background: linear-gradient(45deg, #ecdbeb, #fff6fd) !important;
 }
 .ball-themes.love.light-color {
   background: #c580a8 !important;
@@ -5310,7 +7576,7 @@ a.content-link img {
   background: #269eb0 !important;
 }
 .ball-themes.lure.gradient {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE) !important;
+  background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
 }
 .ball-themes.lure.light-color {
   background: #50b2c1 !important;
@@ -5385,7 +7651,7 @@ a.content-link img {
   background: #2f322f !important;
 }
 .ball-themes.moon.gradient {
-  background: linear-gradient(45deg, #dbeaec, #DFFFFE) !important;
+  background: linear-gradient(45deg, #dbeaec, #dffffe) !important;
 }
 .ball-themes.moon.light-color {
   background: #465152 !important;
@@ -5411,7 +7677,7 @@ a.content-link img {
   background: #e3e174 !important;
 }
 .ball-themes.nest.gradient {
-  background: linear-gradient(45deg, #dbecdb, #DFFFFE) !important;
+  background: linear-gradient(45deg, #dbecdb, #dffffe) !important;
 }
 .ball-themes.nest.light-color {
   background: #82bc51 !important;
@@ -5437,7 +7703,7 @@ a.content-link img {
   background: #465152 !important;
 }
 .ball-themes.net.gradient {
-  background: linear-gradient(45deg, #87a1aa, #DFFFFE) !important;
+  background: linear-gradient(45deg, #87a1aa, #dffffe) !important;
 }
 .ball-themes.net.light-color {
   background: #259da4 !important;
@@ -5486,10 +7752,10 @@ a.content-link img {
   background: #ff9206 !important;
 }
 .ball-themes.quick.background {
-  background: #3984CA !important;
+  background: #3984ca !important;
 }
 .ball-themes.quick.gradient {
-  background: linear-gradient(45deg, #3984CA, #9ed2fa) !important;
+  background: linear-gradient(45deg, #3984ca, #9ed2fa) !important;
 }
 .ball-themes.quick.light-color {
   background: #73b4e5 !important;
@@ -5538,13 +7804,13 @@ a.content-link img {
   background: #2959fb !important;
 }
 .ball-themes.repeat.background {
-  background: #C42835 !important;
+  background: #c42835 !important;
 }
 .ball-themes.repeat.gradient {
   background: linear-gradient(45deg, #ffefef, #fffef2) !important;
 }
 .ball-themes.repeat.light-color {
-  background: #E33242 !important;
+  background: #e33242 !important;
 }
 .ball-themes.repeat.band {
   background: #222224 !important;
@@ -5642,13 +7908,13 @@ a.content-link img {
   background: #89773b !important;
 }
 .ball-themes.sport.background {
-  background: #C42835 !important;
+  background: #c42835 !important;
 }
 .ball-themes.sport.gradient {
-  background: linear-gradient(45deg, #ECDBEB, #DFFFFE) !important;
+  background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
 }
 .ball-themes.sport.light-color {
-  background: #E33242 !important;
+  background: #e33242 !important;
 }
 .ball-themes.sport.band {
   background: #222224 !important;
@@ -5706,7 +7972,7 @@ a.content-link img {
   background: #222224 !important;
 }
 .ball-themes.timer.highlight {
-  background: #E98C45 !important;
+  background: #e98c45 !important;
 }
 .ball-themes.timer.item {
   color: #222224 !important;
@@ -5776,7 +8042,9 @@ a.content-link img {
 .splitter_container.splitter-fixed > .splitter_bar {
   cursor: default;
 }
-.splitter_container.splitter-handle-disabled > .splitter_bar > .splitter_handle {
+.splitter_container.splitter-handle-disabled
+  > .splitter_bar
+  > .splitter_handle {
   cursor: inherit;
 }
 .splitter_bar {
@@ -5830,12 +8098,20 @@ a.content-link img {
   border-right: 1px solid #999999;
   background-color: transparent;
 }
-.splitter-vertical > .splitter_bar.splitter-handle-default > .splitter_handle:hover,
-.splitter-vertical > .splitter_bar.splitter-handle-stripes > .splitter_handle:hover {
+.splitter-vertical
+  > .splitter_bar.splitter-handle-default
+  > .splitter_handle:hover,
+.splitter-vertical
+  > .splitter_bar.splitter-handle-stripes
+  > .splitter_handle:hover {
   border-color: #666666;
 }
-.splitter-vertical > .splitter_bar.splitter-handle-default > .splitter_handle:active,
-.splitter-vertical > .splitter_bar.splitter-handle-stripes > .splitter_handle:active {
+.splitter-vertical
+  > .splitter_bar.splitter-handle-default
+  > .splitter_handle:active,
+.splitter-vertical
+  > .splitter_bar.splitter-handle-stripes
+  > .splitter_handle:active {
   border-color: #000000;
 }
 .splitter-vertical > .splitter_bar.splitter-handle-bar > .splitter_handle {
@@ -5847,21 +8123,69 @@ a.content-link img {
 .splitter-vertical > .splitter_bar.splitter-handle-dots > .splitter_handle {
   margin-left: -1px;
   background-color: transparent;
-  background-image: radial-gradient(circle 3px at 50% 10%, #666666 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 30%, #666666 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 50%, #666666 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 70%, #666666 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 90%, #666666 1.5px, transparent 2px);
+  background-image: radial-gradient(
+      circle 3px at 50% 10%,
+      #666666 1.5px,
+      transparent 2px
+    ),
+    radial-gradient(circle 3px at 50% 30%, #666666 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 50%, #666666 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 70%, #666666 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 90%, #666666 1.5px, transparent 2px);
 }
-.splitter-vertical > .splitter_bar.splitter-handle-dots > .splitter_handle:hover,
-.splitter-vertical > .splitter_bar.splitter-handle-dots > .splitter_handle:active {
-  background-image: radial-gradient(circle 3px at 50% 10%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 30%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 70%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 90%, #000000 1.5px, transparent 2px);
+.splitter-vertical
+  > .splitter_bar.splitter-handle-dots
+  > .splitter_handle:hover,
+.splitter-vertical
+  > .splitter_bar.splitter-handle-dots
+  > .splitter_handle:active {
+  background-image: radial-gradient(
+      circle 3px at 50% 10%,
+      #000000 1.5px,
+      transparent 2px
+    ),
+    radial-gradient(circle 3px at 50% 30%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 50%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 70%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 90%, #000000 1.5px, transparent 2px);
 }
-.splitter-vertical > .splitter_bar.splitter-handle-lotsofdots > .splitter_handle {
+.splitter-vertical
+  > .splitter_bar.splitter-handle-lotsofdots
+  > .splitter_handle {
   height: 100px;
   margin-top: -50px;
   margin-left: -1px;
   background-color: transparent;
-  background-image: radial-gradient(circle 1px at 50% 5%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 10%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 15%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 20%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 25%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 30%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 35%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 40%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 45%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 55%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 60%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 65%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 70%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 75%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 80%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 85%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 90%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 95%, #666666 1.5px, transparent 1.5px);
+  background-image: radial-gradient(
+      circle 1px at 50% 5%,
+      #666666 1.5px,
+      transparent 1.5px
+    ),
+    radial-gradient(circle 1px at 50% 10%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 15%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 20%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 25%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 30%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 35%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 40%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 45%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 55%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 60%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 65%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 70%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 75%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 80%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 85%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 90%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 95%, #666666 1.5px, transparent 1.5px);
 }
-.splitter-vertical > .splitter_bar.splitter-handle-lotsofdots > .splitter_handle:hover,
-.splitter-vertical > .splitter_bar.splitter-handle-lotsofdots > .splitter_handle:active {
+.splitter-vertical
+  > .splitter_bar.splitter-handle-lotsofdots
+  > .splitter_handle:hover,
+.splitter-vertical
+  > .splitter_bar.splitter-handle-lotsofdots
+  > .splitter_handle:active {
   background-color: #f0f0f0;
 }
 .splitter-horizontal > .splitter_bar {
@@ -5876,19 +8200,29 @@ a.content-link img {
   width: 50px;
 }
 .splitter-horizontal > .splitter_bar.splitter-handle-default > .splitter_handle,
-.splitter-horizontal > .splitter_bar.splitter-handle-stripes > .splitter_handle {
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-stripes
+  > .splitter_handle {
   height: 3px;
   margin-top: 1px;
   border-top: 1px solid #999999;
   border-bottom: 1px solid #999999;
   background-color: transparent;
 }
-.splitter-horizontal > .splitter_bar.splitter-handle-default > .splitter_handle:hover,
-.splitter-horizontal > .splitter_bar.splitter-handle-stripes > .splitter_handle:hover {
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-default
+  > .splitter_handle:hover,
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-stripes
+  > .splitter_handle:hover {
   border-color: #666666;
 }
-.splitter-horizontal > .splitter_bar.splitter-handle-default > .splitter_handle:active,
-.splitter-horizontal > .splitter_bar.splitter-handle-stripes > .splitter_handle:active {
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-default
+  > .splitter_handle:active,
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-stripes
+  > .splitter_handle:active {
   border-color: #000000;
 }
 .splitter-horizontal > .splitter_bar.splitter-handle-bar > .splitter_handle {
@@ -5903,20 +8237,68 @@ a.content-link img {
   height: 100%;
   margin-top: -1px;
   background-color: transparent;
-  background-image: radial-gradient(circle 3px at 10% 50%, #666666 1.5px, transparent 2px), radial-gradient(circle 3px at 30% 50%, #666666 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 50%, #666666 1.5px, transparent 2px), radial-gradient(circle 3px at 70% 50%, #666666 1.5px, transparent 2px), radial-gradient(circle 3px at 90% 50%, #666666 1.5px, transparent 2px);
+  background-image: radial-gradient(
+      circle 3px at 10% 50%,
+      #666666 1.5px,
+      transparent 2px
+    ),
+    radial-gradient(circle 3px at 30% 50%, #666666 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 50%, #666666 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 70% 50%, #666666 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 90% 50%, #666666 1.5px, transparent 2px);
 }
-.splitter-horizontal > .splitter_bar.splitter-handle-dots > .splitter_handle:hover,
-.splitter-horizontal > .splitter_bar.splitter-handle-dots > .splitter_handle:active {
-  background-image: radial-gradient(circle 3px at 10% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 30% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 70% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 90% 50%, #000000 1.5px, transparent 2px);
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-dots
+  > .splitter_handle:hover,
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-dots
+  > .splitter_handle:active {
+  background-image: radial-gradient(
+      circle 3px at 10% 50%,
+      #000000 1.5px,
+      transparent 2px
+    ),
+    radial-gradient(circle 3px at 30% 50%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 50%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 70% 50%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 90% 50%, #000000 1.5px, transparent 2px);
 }
-.splitter-horizontal > .splitter_bar.splitter-handle-lotsofdots > .splitter_handle {
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-lotsofdots
+  > .splitter_handle {
   height: 100%;
   width: 100px;
   background-color: transparent;
-  background-image: radial-gradient(circle 1px at 5% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 10% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 15% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 20% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 25% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 30% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 35% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 40% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 45% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 50% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 55% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 60% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 65% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 70% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 75% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 80% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 85% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 90% 50%, #666666 1.5px, transparent 1.5px), radial-gradient(circle 1px at 95% 50%, #666666 1.5px, transparent 1.5px);
+  background-image: radial-gradient(
+      circle 1px at 5% 50%,
+      #666666 1.5px,
+      transparent 1.5px
+    ),
+    radial-gradient(circle 1px at 10% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 15% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 20% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 25% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 30% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 35% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 40% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 45% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 50% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 55% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 60% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 65% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 70% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 75% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 80% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 85% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 90% 50%, #666666 1.5px, transparent 1.5px),
+    radial-gradient(circle 1px at 95% 50%, #666666 1.5px, transparent 1.5px);
 }
-.splitter-horizontal > .splitter_bar.splitter-handle-lotsofdots > .splitter_handle:hover,
-.splitter-horizontal > .splitter_bar.splitter-handle-lotsofdots > .splitter_handle:active {
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-lotsofdots
+  > .splitter_handle:hover,
+.splitter-horizontal
+  > .splitter_bar.splitter-handle-lotsofdots
+  > .splitter_handle:active {
   background-color: #f0f0f0;
 }
 .splitter_container.splitter-active > .splitter_bar {
@@ -5927,17 +8309,43 @@ a.content-link img {
   border-color: #000000;
   cursor: inherit;
 }
-.splitter_container.splitter-active > .splitter_bar.splitter-handle-bar > .splitter_handle,
-.splitter_container.splitter-active > .splitter_bar.splitter-handle-block > .splitter_handle {
+.splitter_container.splitter-active
+  > .splitter_bar.splitter-handle-bar
+  > .splitter_handle,
+.splitter_container.splitter-active
+  > .splitter_bar.splitter-handle-block
+  > .splitter_handle {
   background-color: #000000;
 }
-.splitter_container.splitter-active.splitter-vertical > .splitter_bar.splitter-handle-dots > .splitter_handle {
-  background-image: radial-gradient(circle 3px at 50% 10%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 30%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 70%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 90%, #000000 1.5px, transparent 2px);
+.splitter_container.splitter-active.splitter-vertical
+  > .splitter_bar.splitter-handle-dots
+  > .splitter_handle {
+  background-image: radial-gradient(
+      circle 3px at 50% 10%,
+      #000000 1.5px,
+      transparent 2px
+    ),
+    radial-gradient(circle 3px at 50% 30%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 50%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 70%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 90%, #000000 1.5px, transparent 2px);
 }
-.splitter_container.splitter-active.splitter-horizontal > .splitter_bar.splitter-handle-dots > .splitter_handle {
-  background-image: radial-gradient(circle 3px at 10% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 30% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 50% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 70% 50%, #000000 1.5px, transparent 2px), radial-gradient(circle 3px at 90% 50%, #000000 1.5px, transparent 2px);
+.splitter_container.splitter-active.splitter-horizontal
+  > .splitter_bar.splitter-handle-dots
+  > .splitter_handle {
+  background-image: radial-gradient(
+      circle 3px at 10% 50%,
+      #000000 1.5px,
+      transparent 2px
+    ),
+    radial-gradient(circle 3px at 30% 50%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 50% 50%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 70% 50%, #000000 1.5px, transparent 2px),
+    radial-gradient(circle 3px at 90% 50%, #000000 1.5px, transparent 2px);
 }
-.splitter_container.splitter-active.splitter-vertical > .splitter_bar.splitter-handle-lotsofdots > .splitter_handle {
+.splitter_container.splitter-active.splitter-vertical
+  > .splitter_bar.splitter-handle-lotsofdots
+  > .splitter_handle {
   background-color: #f0f0f0;
 }
 .splitter_mask {
