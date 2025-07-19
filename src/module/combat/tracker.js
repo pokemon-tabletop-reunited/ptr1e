@@ -1,6 +1,6 @@
 import { PTUCombatant } from "./combatant.js";
 
-class PTUCombatTracker extends CombatTracker {
+class PTUCombatTracker extends foundry.applications.sidebar.tabs.CombatTracker {
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {

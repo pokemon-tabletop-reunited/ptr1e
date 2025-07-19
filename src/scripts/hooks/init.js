@@ -88,7 +88,7 @@ export const Init = {
         })
         Hooks.on("canvasInit", function () {
             // Extend Diagonal Measurement
-            SquareGrid.prototype.measureDistances = measureDistances;
+            foundry.grid.SquareGrid.prototype.measureDistances = measureDistances;
         });
     }
 }

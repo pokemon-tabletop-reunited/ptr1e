@@ -42,7 +42,7 @@ export class TokenPanel extends Application {
                 frequency: attack.item?.system.frequency ?? "At-Will",
                 id,
                 rollable: !!attack.roll,
-                effect: attack.item?.system.effect ? await TextEditor.enrichHTML(foundry.utils.duplicate(attack.item.system.effect), {async: true}) : "",
+                effect: attack.item?.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(attack.item.system.effect), {async: true}) : "",
                 range: attack.item?.system.range ?? "",
                 keywords: attack.item?.system.keywords ?? [],
                 sort: attack.item?.sort ?? 0,
@@ -67,7 +67,7 @@ export class TokenPanel extends Application {
                 name: feat.name,
                 img: feat.img,
                 id: feat.id,
-                effect: feat.system.effect ? await TextEditor.enrichHTML(foundry.utils.duplicate(feat.system.effect), {async: true}) : "",
+                effect: feat.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(feat.system.effect), {async: true}) : "",
                 frequency: feat.system.frequency,
                 rollable: !!feat.roll,
                 keywords: feat.system.keywords,
@@ -81,7 +81,7 @@ export class TokenPanel extends Application {
                 name: ability.name,
                 img: ability.img,
                 id: ability.id,
-                effect: ability.system.effect ? await TextEditor.enrichHTML(foundry.utils.duplicate(ability.system.effect), {async: true}) : "",
+                effect: ability.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(ability.system.effect), {async: true}) : "",
                 frequency: ability.system.frequency,
                 rollable: !!ability.roll,
             })
@@ -95,7 +95,7 @@ export class TokenPanel extends Application {
                 parent: effect.parent.id,
                 name: effect.name,
                 img: effect.img,
-                effect: effect.system.effect ? await TextEditor.enrichHTML(foundry.utils.duplicate(effect.system.effect), {async: true}) : "",
+                effect: effect.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(effect.system.effect), {async: true}) : "",
             });
         }
 

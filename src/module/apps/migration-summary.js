@@ -53,7 +53,7 @@ class MigrationSummary extends Application {
         const canRemigrate =
             this.options.troubleshoot || actors.successful < actors.total || items.successful < items.total;
 
-        const helpResourcesText = await TextEditor.enrichHTML(
+        const helpResourcesText = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
             game.i18n.localize("PTU.Migrations.Summary.HelpResources"),
             { async: true }
         );

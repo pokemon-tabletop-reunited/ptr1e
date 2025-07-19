@@ -2,7 +2,7 @@
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {FormApplication}
  */
- export class PTUCombatTrackerConfig extends CombatTrackerConfig {
+ export class PTUCombatTrackerConfig extends foundry.applications.apps.CombatTrackerConfig {
 
   /** @override */
   static get defaultOptions() {
@@ -25,5 +25,3 @@
     });
   }
 }
-
-CombatTrackerConfig = PTUCombatTrackerConfig;

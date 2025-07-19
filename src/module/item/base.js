@@ -138,7 +138,7 @@ class PTUItem extends Item {
             embeds = options.embeds
         } = config;
         foundry.utils.mergeObject(options, { secrets, documents, links, rolls, embeds });
-        const enrichedPage = await TextEditor.enrichHTML(this.system.effect, options);
+        const enrichedPage = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.system.effect, options);
         const container = document.createElement("div");
         container.innerHTML = enrichedPage;
         return container;
@@ -449,7 +449,7 @@ class PTUItem extends Item {
                 .join("");
         })();
 
-        const referenceEffect = this.referenceEffect ? await TextEditor.enrichHTML(`@UUID[${foundry.utils.duplicate(this.referenceEffect)}]`, { async: true }) : null;
+        const referenceEffect = this.referenceEffect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(`@UUID[${foundry.utils.duplicate(this.referenceEffect)}]`, { async: true }) : null;
 
         const chatData = {
             user: game.user._id,

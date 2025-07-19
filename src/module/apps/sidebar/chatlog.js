@@ -1,4 +1,4 @@
-class PTUChatLog extends ChatLog {
+class PTUChatLog extends foundry.applications.sidebar.tabs.ChatLog {
     /** @override */
     activateListeners($html) {
         super.activateListeners($html);

@@ -451,7 +451,7 @@ class PokeballItem extends PTUItemItem {
 
                         await Actor.updateDocuments([pokemonUpdateData, trainerUpdateData]);
                         await ChatMessage.create({
-                            content: `<span class="statements">${await TextEditor.enrichHTML(game.i18n.format("PTU.Dialog.CaptureSuccess.ChatMessage", { pokemon: pokemon.link, trainer: trainer.link, location: (party.folders?.[location === "available" ? "root" : location]?.link ?? location) }), { async: true })}</span>`,
+                            content: `<span class="statements">${await foundry.applications.ux.TextEditor.implementation.enrichHTML(game.i18n.format("PTU.Dialog.CaptureSuccess.ChatMessage", { pokemon: pokemon.link, trainer: trainer.link, location: (party.folders?.[location === "available" ? "root" : location]?.link ?? location) }), { async: true })}</span>`,
                             speaker: ChatMessage.getSpeaker({ actor: trainer }),
                         })
                     }

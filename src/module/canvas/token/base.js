@@ -1,7 +1,7 @@
 import { BaseEffectPTU } from '../../item/effect-types/base.js';
 import { measureDistanceCuboid } from '../helpers.js';
 
-class PTUToken extends Token {
+class PTUToken extends foundry.canvas.placeables.Token {
 
     /** @override _drawBar(k) to also draw PTR variants of normal resource bars (such as temp health) */
     _drawBar(number, bar, data) {

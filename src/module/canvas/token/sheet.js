@@ -1,4 +1,4 @@
-class PTUTokenConfig extends TokenConfig {
+class PTUTokenConfig extends foundry.applications.sheets.TokenConfig {
     /** @override */
     get template() {
         return "systems/ptu/static/templates/config/token/token-config.hbs";

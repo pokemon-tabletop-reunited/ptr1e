@@ -1,9 +1,7 @@
 export const GetSceneControlButtons = {
     listen: () => {
         Hooks.on('getSceneControlButtons', function (hudButtons) {
-            console.log('hudButtons ===>', hudButtons);
             const hud = hudButtons.tokens;
-            console.log('hud ===>', hud);
             if (hud) {
               hud.tools["dexButton"] = {
                 name: "dexButton",

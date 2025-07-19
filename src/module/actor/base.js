@@ -669,7 +669,7 @@ class PTUActor extends Actor {
             : null;
 
         const statements = [hpStatement, tempHpStatement, bossStatement, ...injuryStatements].filter(s => s).join("<br>");
-        const enrichedHtml = await TextEditor.enrichHTML(statements, { async: true })
+        const enrichedHtml = await foundry.applications.ux.TextEditor.implementation.enrichHTML(statements, { async: true })
         const canUndoDamage = !!hpDamage
 
         const content = await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/damage/damage-taken.hbs", {
