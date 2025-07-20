@@ -65,15 +65,38 @@ class PTUTokenDocument extends TokenDocument {
             this.light = new foundry.data.LightData(tokenOverrides.light, {parent: this});
         }
 
-        PTUTokenDocument.prepareSize(this, this.actor, changedScale);
+        // V13 Compatibility: Only apply auto-sizing if not manually resized
+        if (this._shouldApplyAutoSizing()) {
+            PTUTokenDocument.prepareSize(this, this.actor, changedScale);
+        }
+    }
+
+    /**
+     * Determine whether auto-sizing should be applied to this token
+     * V13 Compatibility: Only block auto-sizing during explicit manual resize operations
+     * @returns {boolean}
+     * @private
+     */
+    _shouldApplyAutoSizing() {
+        // Skip if not linked to actor size
+        if (!this.flags.ptu?.linkToActorSize) return false;
+        
+        // Skip if we don't have an actor
+        if (!this.actor) return false;
+
+        // V13 Compatibility: Only skip if token was manually resized recently via user interaction
+        // This allows initial sizing and actor-based resizing while preventing conflicts with manual resizing
+        if (this._manuallyResized) return false;
+
+        return true;
     }
 
     static prepareSize(tokenDocument, actor, overriden = false) {
-        if(!(actor && tokenDocument.flags.ptu.linkToActorSize)) return;
+        if(!(actor && tokenDocument.flags.ptu?.linkToActorSize)) return;
         
-        const {width, height} = ((sizeClass) => {;
+        const {width, height} = ((sizeClass) => {
             switch (sizeClass) {
-                case "Small": return { width: 1, height: 1 };
+                case "Small": return { width: 0.5, height: 0.5 };
                 case "Medium": return { width: 1, height: 1 };
                 case "Large": return { width: 2, height: 2 };
                 case "Huge": return { width: 3, height: 3 };
@@ -82,15 +105,34 @@ class PTUTokenDocument extends TokenDocument {
             }
         })(actor.sizeClass);
 
-        tokenDocument.width = width;
-        tokenDocument.height = height;
+        // V13 Compatibility: Use safer property assignment that respects Foundry's internal tracking
+        const currentWidth = tokenDocument.width;
+        const currentHeight = tokenDocument.height;
+        
+        // Only update dimensions if they actually changed to avoid triggering unnecessary updates
+        if (currentWidth !== width || currentHeight !== height) {
+            // Mark that we're doing auto-sizing to prevent it being flagged as manual
+            tokenDocument._autoSizing = true;
+            tokenDocument.width = width;
+            tokenDocument.height = height;
+            // Clear the flag after assignment
+            delete tokenDocument._autoSizing;
+        }
 
+        // Handle texture scaling
         if(game.settings.get("ptu", "tokens.autoscale") && !overriden && tokenDocument.flags?.ptu?.autoscale !== false) {
             const absoluteScale = actor.sizeClass === "Small" ? 0.6 : 1;
             const mirrorX = tokenDocument.texture.scaleX < 0 ? -1 : 1;
             const mirrorY = tokenDocument.texture.scaleY < 0 ? -1 : 1;
-            tokenDocument.texture.scaleX = absoluteScale * mirrorX;
-            tokenDocument.texture.scaleY = absoluteScale * mirrorY;
+            const newScaleX = absoluteScale * mirrorX;
+            const newScaleY = absoluteScale * mirrorY;
+            
+            // V13 Compatibility: Only update scale if it actually changed
+            if (Math.abs(tokenDocument.texture.scaleX - newScaleX) > 0.001 || 
+                Math.abs(tokenDocument.texture.scaleY - newScaleY) > 0.001) {
+                tokenDocument.texture.scaleX = newScaleX;
+                tokenDocument.texture.scaleY = newScaleY;
+            }
         }
     }
 
@@ -115,6 +157,30 @@ class PTUTokenDocument extends TokenDocument {
 
     isFlanked() {
         return this.object?.isFlanked() ?? null;
+    }
+
+
+
+    /** @override */
+    _onUpdate(changed, options, userId) {
+        super._onUpdate(changed, options, userId);
+        
+        // V13 Compatibility: Only block auto-sizing for explicit manual resize operations
+        // Check if this is a manual resize from token config or drag handles (not auto-sizing)
+        if (('width' in changed || 'height' in changed) && 
+            !options.autoResize && 
+            !options.fromActorSize && 
+            !this._autoSizing &&
+            userId === game.user.id) {
+            
+            // Mark that this was a manual resize to prevent auto-sizing conflicts
+            this._manuallyResized = true;
+            
+            // Clear the flag after a short delay to allow future auto-sizing
+            setTimeout(() => {
+                delete this._manuallyResized;
+            }, 2000);
+        }
     }
 }
 
