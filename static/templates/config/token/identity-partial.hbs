@@ -49,9 +49,9 @@
         <label>{{localize "TOKEN.Coordinates"}} <span class="units">({{localize "Pixels"}})</span></label>
         <div class="form-fields">
             <label>X</label>
-            {{numberInput object.x name="x" step=1 disabled=(not isGM) placeholder=(localize "Pixels")}}
+            {{numberInput object.x name="x" step=1 disabled=(notEqual isGM) placeholder=(localize "Pixels")}}
             <label>Y</label>
-            {{numberInput object.y name="y" step=1 disabled=(not isGM) placeholder=(localize "Pixels")}}
+            {{numberInput object.y name="y" step=1 disabled=(notEqual isGM) placeholder=(localize "Pixels")}}
         </div>
     </div>
 

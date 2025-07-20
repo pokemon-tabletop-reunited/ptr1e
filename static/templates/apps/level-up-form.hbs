@@ -8,7 +8,7 @@
             <div class="avatar fb-30">
                 <img src="{{data.pokemon.img}}" alt="">
             </div>
-            {{#if (not data.evolutions.current.slug data.pokemon.species.slug)}}
+            {{#if (notEqual data.evolutions.current.slug data.pokemon.species.slug)}}
                 <div class="image-divider"></div>
                 <div class="avatar fb-30">
                     <img src="{{data.evolutions.current.image}}" alt="">
@@ -33,7 +33,7 @@
 
         <div class="stats-bar d-flex flex-row justify-content-evenly mt-2 center-text header-bar ball-themes {{data.ballStyle}} highlight">
             <span class="fb-25">{{localize "PTU.LevelUpForm.Stats"}}</span>
-            {{#if (not data.evolutions.current.slug data.pokemon.species.slug)}}
+            {{#if (notEqual data.evolutions.current.slug data.pokemon.species.slug)}}
                 <span class="fb-20">{{localize "PTU.LevelUpForm.Base"}}</span>
             {{else}}
                 <span class="fb-20">{{localize "PTU.LevelUpForm.Current"}}</span>
@@ -45,7 +45,7 @@
         {{#each data.pokemon.system.stats as | value key |}}
             <div class="d-flex flex-row {{key}} stats justify-content-evenly mt-2 center-text header-bar ball-themes {{data.ballStyle}} highlight">
                 <span class="stats-keys {{key}} key {{natureCheck ../data.pokemon.system.nature.value key}} fb-25">{{localize (concat "PTU.Stats." key)}}</span>
-                {{#if (not ../data.evolutions.current.slug ../data.pokemon.species.slug)}}
+                {{#if (notEqual ../data.evolutions.current.slug ../data.pokemon.species.slug)}}
                     <span class="fb-20">{{value.value}}</span>
                 {{else}}
                     <span class="fb-20">{{value.total}}</span>

@@ -12,7 +12,7 @@
                         <span class="mod">{{sub.label}}</span>
                         <span class="type">{{sub.value}}</span>
                         <label class="exclude toggle">
-                            <input type="checkbox" id="{{@root.appId}}-sub-{{idx}}" data-sub-index="{{idx}}" {{checked (not sub.ignored true)}} />
+                            <input type="checkbox" id="{{@root.appId}}-sub-{{idx}}" data-sub-index="{{idx}}" {{checked (notEqual sub.ignored true)}} />
                             <label for="{{@root.appId}}-sub-{{idx}}"></label>
                         </label>
                     </div>
@@ -31,7 +31,7 @@
                     <span class="mod fb-45">{{modifier.label}}</span>
                     <span class="value fb-25">{{numberFormat modifier.modifier decimals=0 sign=true}}</span>
                     <label class="exclude toggle fb-20">
-                        <input type="checkbox" id="{{@root.appId}}-modifier-{{idx}}" data-modifier-index="{{idx}}" {{checked (not modifier.ignored true)}} />
+                        <input type="checkbox" id="{{@root.appId}}-modifier-{{idx}}" data-modifier-index="{{idx}}" {{checked (notEqual modifier.ignored true)}} />
                         <label for="{{@root.appId}}-modifier-{{idx}}"></label>
                     </label>
                 </div>

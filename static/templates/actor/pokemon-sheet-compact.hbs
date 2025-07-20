@@ -549,7 +549,7 @@
                         </div>
                         <div class="swsh-body flex-row w-100 align-items-center" style="white-space: nowrap;">
                             {{#each actor.system.capabilities as |capability key|}}
-                            {{#if (and (not key "Other") (not key "other"))}}
+                                                            {{#if (and (notEqual key "Other") (notEqual key "other"))}}
                             {{#unless (or (is key "Naturewalk") (is key "naturewalk"))}}
                             {{#unless (is capability 0)}}
                             <div class="fb-35">
@@ -809,7 +809,7 @@
                                         {{#if (and (is true actor.system.modifiers.hardened) (biggerOrEqual
                                         actor.system.health.injuries 5))}}<li>{{localize "PTU.HardenedEffect3"}}</li>
                                         {{/if}}
-                                        {{#if (and (not true actor.system.modifiers.hardened) (biggerOrEqual
+                                        {{#if (and (notEqual true actor.system.modifiers.hardened) (biggerOrEqual
                                         actor.system.health.injuries 5))}}<li>{{localize "PTU.InjuryEffect2" (ld
                                             "injuries"
                                             actor.system.health.injuries)}}</li>{{/if}}
@@ -819,7 +819,7 @@
                                         {{#if (and (is true actor.system.modifiers.hardened) (biggerOrEqual
                                         actor.system.health.injuries 9))}}<li>{{localize "PTU.HardenedEffect5"}}</li>
                                         {{/if}}
-                                        {{#if (and (not true actor.system.modifiers.hardened) (biggerOrEqual
+                                        {{#if (and (notEqual true actor.system.modifiers.hardened) (biggerOrEqual
                                         actor.system.health.injuries 10))}}<li><b>{{localize "PTU.InjuryEffect3"}}</b>
                                         </li>
                                         {{/if}}
