@@ -899,7 +899,7 @@
   .name {
   margin-left: 5px;
   min-width: 150px;
-  color: #222224
+  color: #222224;
 }
 #compendium-browser
   section.window-content
@@ -1495,7 +1495,7 @@ a.pokedollar span::before {
 .token-panel {
   pointer-events: initial;
   position: absolute;
-  top: 25px;
+  top: 45px;
   right: 45px;
 }
 @media (max-width: 1120px) {
@@ -1505,8 +1505,8 @@ a.pokedollar span::before {
 }
 .token-panel .main-panel {
   min-width: 300px;
-  max-height: 150px;
-  height: 150px;
+  max-height: 160px;
+  height: 160px;
   background: url(/ui/denim075.png) repeat;
   max-width: calc(100vw - 320px - 205px);
   display: flex;
@@ -1666,7 +1666,7 @@ a.pokedollar span::before {
   overflow-y: hidden;
   overflow-x: auto;
   flex: 1;
-  height: 150px;
+  height: 160px;
 }
 .token-panel .main-panel .actions-accordion .resizer,
 .token-panel .main-panel .items-accordion .resizer {
@@ -1930,6 +1930,7 @@ a.pokedollar span::before {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #222224;
 }
 .token-panel .main-panel .feats .action .tags,
 .token-panel .main-panel .abilities .action .tags {
@@ -2594,6 +2595,7 @@ a.content-link img {
   border-bottom: unset;
   font-weight: bold;
   color: black;
+  font-size: 16px;
 }
 .chat-message.message .mon-list .mon-list-item {
   display: flex;
