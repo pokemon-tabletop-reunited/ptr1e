@@ -2506,6 +2506,79 @@ a.content-link img {
 .chat-message.message .attack-selector .dice-result {
   padding: 5px;
 }
+/* Foundry v13 Dice Tooltip - Hide by default, show when expanded */
+.dice-tooltip {
+  display: none;
+  margin-top: 5px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dice-tooltip.expanded-roll {
+  display: block !important;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+/* Style the dice-rolls within the tooltip */
+.chat-message.message .dice-tooltip .dice-rolls {
+  display: block;
+  margin-top: 5px;
+  padding: 2px 0;
+  list-style: none;
+}
+
+/* Style individual dice in the breakdown */
+.chat-message.message .dice-tooltip .dice-rolls .roll {
+  display: inline-block;
+  margin: 2px;
+  padding: 3px 6px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Style the part headers */
+.chat-message.message .dice-tooltip .part-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 4px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 2px;
+  border-radius: 2px;
+  font-size: 11px;
+}
+
+.chat-message.message .dice-tooltip .part-formula {
+  font-weight: bold;
+  color: #333;
+}
+
+.chat-message.message .dice-tooltip .part-total {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Make dice-formula clickable with visual indicator */
+.chat-message.message .dice-formula {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 2px 4px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.chat-message.message .dice-formula:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .chat-message.message .attack-roll .dice-result .type-img img.blocked,
 .chat-message.message .attack-selector .dice-result .type-img img.blocked {
   filter: hue-rotate(90deg);

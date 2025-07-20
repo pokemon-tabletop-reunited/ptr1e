@@ -1,4 +1,4 @@
-class CheckRoll extends Roll {
+class CheckRoll extends foundry.dice.Roll {
     get template() {
         return "systems/ptu/static/templates/chat/check/check-roll.hbs";
     }

@@ -108,10 +108,12 @@ class ChatMessagePTU extends ChatMessage {
 
         const message = this;
 
-        $html.find('.tag.tooltip').tooltipster({
+                $html.find('.tag.tooltip').tooltipster({
 			theme: `tooltipster-shadow ball-themes default`,
 			position: 'top'
 		});
+
+
 
         $html.find(".buttons .button[data-action]").on("click", async event => {
             event.preventDefault();
@@ -207,6 +209,28 @@ class ChatMessagePTU extends ChatMessage {
     }
 
     activateListeners($html) {
+        // Add click handler for dice formula to toggle dice tooltip in Foundry v13
+        const $diceFormulas = $html.find('.dice-formula');
+        
+        $diceFormulas.off('click').on('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            event.stopImmediatePropagation();
+            
+            // Debounce - prevent rapid clicks and turning off the tooltip right away
+            if ($(this).data('clicking')) return;
+            $(this).data('clicking', true);
+            setTimeout(() => $(this).data('clicking', false), 200);
+            
+            // Find the dice-tooltip in the same dice-result
+            const $tooltip = $(this).siblings('.dice-tooltip');
+            
+            if ($tooltip.length > 0) {
+                $tooltip.toggleClass('expanded-roll');
+                console.log('Toggled dice tooltip, now expanded:', $tooltip.hasClass('expanded-roll'));
+            }
+        });
+
         $html.find("button.use").on("click", async event => {
             event.preventDefault();
             event.stopImmediatePropagation();

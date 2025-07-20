@@ -1,6 +1,6 @@
 /** @typedef {import('../../actor').PTUActor} PTUActor */
 
-class DamageRoll extends Roll {
+class DamageRoll extends foundry.dice.Roll {
     /**
      * @param {string} formula
      * @param {PTUActor} actor
