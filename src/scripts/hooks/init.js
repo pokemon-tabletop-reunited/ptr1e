@@ -57,12 +57,12 @@ export const Init = {
             CONFIG.ui.hotbar = PTUCONFIG.ui.hotbar.documentClass;
 
             // Insert templates into DOM tree so Applications can render into
-            if (document.querySelector("#ui-top") !== null) {
+            if (document.querySelector("#ui-right") !== null) {
                 // Template element for effects-panel
-                const uiTop = document.querySelector("#ui-top");
+                const uiRight = document.querySelector("#ui-right");
                 const template = document.createElement("template");
                 template.setAttribute("id", "ptu-token-panel");
-                uiTop?.insertAdjacentElement("afterend", template);
+                uiRight?.insertAdjacentElement("afterbegin", template);
             }
 
             // Register stuff with the Foundry client

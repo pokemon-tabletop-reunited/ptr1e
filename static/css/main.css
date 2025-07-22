@@ -1494,9 +1494,9 @@ a.pokedollar span::before {
 }
 .token-panel {
   pointer-events: initial;
-  position: absolute;
-  top: 45px;
-  right: 45px;
+  position: relative;
+  top: 15px;
+  left: 370px;
 }
 @media (max-width: 1120px) {
   .token-panel {
@@ -1982,11 +1982,10 @@ a.pokedollar span::before {
 }
 .token-panel .top-panel {
   position: absolute;
-  border-radius: 15px 15px 0 0;
+  border-radius: 0 0 15px 15px;
   background: url(/ui/denim075.png) repeat;
-  right: 10px;
+  left: 10px;
   width: 172px;
-  bottom: 150px;
   padding: 5px 5px 0.5rem 5px;
 }
 .token-panel .top-panel .header {
