@@ -9,12 +9,7 @@ class DamageMessagePTU extends ChatMessagePTU {
         return this.flags?.ptu?.context?.outcomes ?? null;
     }
 
-    /** @override */
-    async getHTML() {
-        // Use renderHTML() instead of deprecated getHTML()
-        const html = await super.renderHTML();
-        const $html = $(html);
-
+    async renderDamageHTML($html) {
         const outcomes = this.outcomes;
         if (!outcomes) return await this._renderNoneTargetDamage($html);
 

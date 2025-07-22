@@ -1,12 +1,7 @@
 import { ChatMessagePTU } from "./base.js";
 
 class AttackMessagePTU extends ChatMessagePTU {
-    /** @override */
-    async getHTML() {
-        // Use renderHTML() instead of deprecated getHTML()
-        const html = await super.renderHTML();
-        const $html = $(html);
-
+    async renderAttackHTML($html) {
         const resolved = this.flags?.ptu?.resolved ?? null;
         if(!resolved) return await this._renderButton($html);
 

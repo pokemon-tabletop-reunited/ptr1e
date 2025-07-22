@@ -14,7 +14,7 @@ function measureDistanceCuboid(r0, r1, {
         return canvas.grid.measureDistance(r0, r1);
     }
 
-    const gridWidth = canvas.grid.grid.sizeX ?? canvas.grid.grid.w;
+    const gridWidth = canvas.grid.sizeX ?? canvas.grid.w;
 
     const distance = {
         dx: 0,

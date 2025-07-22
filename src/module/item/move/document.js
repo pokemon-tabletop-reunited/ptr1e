@@ -124,7 +124,7 @@ class PTUMove extends PTUItem {
                     user: game.user.id,
                     speaker: ChatMessage.getSpeaker({ actor: this.actor }),
                     content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/effect-applied.hbs", { statements: enrichedHtml }),
-                    type: CONST.CHAT_MESSAGE_TYPES.OTHER,
+                    type: CONST.CHAT_MESSAGE_STYLES.OTHER,
                     whisper: this.actor.hasPlayerOwner ? [game.user.id] : game.users.filter(u => u.isGM).map(u => u.id),
                 };
                 await ChatMessage.create(chatData);

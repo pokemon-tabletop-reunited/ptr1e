@@ -176,6 +176,33 @@ class PTUActorSheet extends foundry.appv1.sheets.ActorSheet {
             });
             return ui.notifications.info(`${actor.name} Gained ${amount} Poké (New Total: ${actor.system.money})`);
         }
+        // Case 2 - Items (including effects and conditions)
+        else if (data.type === "Item" && data.uuid) {
+            const item = await fromUuid(data.uuid);
+            if (!item) return ui.notifications.error("Invalid item dropped");
+
+            // Special handling for effects and conditions
+            if (item.type === "effect" || item.type === "condition") {
+                try {
+                    // Check if the item has an apply method (for effects/conditions)
+                    if (typeof item.apply === "function") {
+                        await item.apply([actor]);
+                        return ui.notifications.info(`Applied ${item.name} to ${actor.name}`);
+                    } else {
+                        // Fallback: create the item on the actor
+                        await actor.createEmbeddedDocuments("Item", [item.toObject()]);
+                        return ui.notifications.info(`Added ${item.name} to ${actor.name}`);
+                    }
+                } catch (error) {
+                    console.error("PTU | Error applying effect/condition:", error);
+                    ui.notifications.error(`Failed to apply ${item.name} to ${actor.name}`);
+                    return false;
+                }
+            }
+            
+            // For other items, use the standard drop handling
+            return super._onDrop(event);
+        }
         else {
             return super._onDrop(event);
         }
