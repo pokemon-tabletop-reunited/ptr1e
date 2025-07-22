@@ -1036,8 +1036,7 @@ a.pokedollar {
             align-items: center;
 
             max-width: calc(100vw - 100px - 130px - 320px - 205px);
-            overflow-y: hidden;
-            overflow-x: auto;
+            overflow: auto;
         }
 
         .name-tag,
@@ -1195,10 +1194,10 @@ a.pokedollar {
                 grid-auto-columns: 150px;
                 gap: 3px;
 
-                overflow-y: hidden;
-                overflow-x: auto;
+                overflow: auto;
                 flex: 1;
-                height: @overview-height;
+                height: 100%;
+                min-height: 48px;
             }
 
             .resizer {
@@ -1583,6 +1582,20 @@ a.pokedollar {
                     margin-left: 5px;
                     font-size: 12px;
                 }
+            }
+        }
+
+        .top-panel-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 2px 0;
+            color: whitesmoke;
+            font-size: 10px;
+            
+            &:hover {
+                color: #ddd;
             }
         }
 

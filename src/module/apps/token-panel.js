@@ -121,7 +121,10 @@ export class TokenPanel extends Application {
             }
         }
 
-        const show = game.user.getFlag("ptu", "TokenPanel.show") ?? {};
+        const show = {
+            party: true, // Default to expanded
+            ...game.user.getFlag("ptu", "TokenPanel.show") ?? {}
+        };
 
         return {
             ...(await super.getData(options)),
@@ -162,7 +165,7 @@ export class TokenPanel extends Application {
             });
         }
 
-        for (const toggle of $html.find(".toggle-bar .action")) {
+        for (const toggle of $html.find(".toggle-bar .action, .top-panel-toggle")) {
             toggle.addEventListener("click", (event) => {
                 const target = event.currentTarget.dataset.target;
                 const isShown = game.user.getFlag("ptu", `TokenPanel.show.${target}`);

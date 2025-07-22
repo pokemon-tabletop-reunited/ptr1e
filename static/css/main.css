@@ -1518,16 +1518,15 @@ a.pokedollar span::before {
 }
 .token-panel .main-panel .items-body {
   min-width: 182px;
-  max-height: 150px;
-  height: 150px;
+  max-height: 160px;
+  height: 160px;
   display: flex;
   flex-direction: row;
   flex: 1;
   justify-content: start;
   align-items: center;
   max-width: calc(100vw - 100px - 130px - 320px - 205px);
-  overflow-y: hidden;
-  overflow-x: auto;
+  overflow: auto;
 }
 .token-panel .main-panel .name-tag,
 .token-panel .main-panel .header-toggle {
@@ -1663,10 +1662,10 @@ a.pokedollar span::before {
   grid-auto-flow: column;
   grid-auto-columns: 150px;
   gap: 3px;
-  overflow-y: hidden;
-  overflow-x: auto;
+  overflow: auto;
   flex: 1;
-  height: 160px;
+  height: 100%;
+  min-height: 48px;
 }
 .token-panel .main-panel .actions-accordion .resizer,
 .token-panel .main-panel .items-accordion .resizer {
@@ -2032,6 +2031,18 @@ a.pokedollar span::before {
   color: whitesmoke;
   margin-left: 5px;
   font-size: 12px;
+}
+.token-panel .top-panel .top-panel-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px 0;
+  color: whitesmoke;
+  font-size: 10px;
+}
+.token-panel .top-panel .top-panel-toggle:hover {
+  color: #ddd;
 }
 .token-panel .top-panel .party-overview .party-header {
   display: flex;
