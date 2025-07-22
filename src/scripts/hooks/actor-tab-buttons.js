@@ -40,8 +40,8 @@ export const ActorButtons = {
             if (footer.find(".compendium-browser-btn").length > 0) return;
 
             footer.append(`<button type="button" class="compendium-browser-btn"><i class="fa-solid fa-magnifying-glass"></i> Compendium Browser</button>`);
-            footer.find(".compendium-browser-btn").on("click", () => {
-                game.ptu.compendiumBrowser.render(true)
+            footer.find(".compendium-browser-btn").on("click", async () => {
+                await game.ptu.compendiumBrowser.loadTab("items")
             });
         });
 
