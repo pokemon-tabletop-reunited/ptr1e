@@ -8433,3 +8433,34 @@ a.content-link img {
   bottom: 0;
   z-index: 999;
 }
+#sidebar #actors .directory-header .action-buttons .ptu-button-row {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+#sidebar
+  #actors
+  .directory-header
+  .action-buttons
+  .ptu-button-row.ptu-button-row-secondary
+  button {
+  flex: 1;
+  min-width: 0;
+}
+#sidebar
+  #actors
+  .directory-header
+  .action-buttons
+  .ptu-button-row.ptu-button-row-tertiary
+  button {
+  width: 100%;
+}
+#sidebar #actors .directory-header .action-buttons .ptu-button-row button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#sidebar #actors .directory-header .action-buttons .ptu-button-row button i {
+  margin-right: 4px;
+}

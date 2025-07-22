@@ -1,4 +1,3 @@
-
 /* Define Colors as variables at root */
 
 
@@ -7359,4 +7358,39 @@ a.content-link {
     right: 0;
     bottom: 0;
     z-index: 999;
+}
+
+// PTU Actor Sidebar Button Layout
+#sidebar #actors .directory-header .action-buttons {
+    .ptu-button-row {
+        display: flex;
+        width: 100%;
+        gap: 4px;
+        margin-bottom: 4px;
+        
+        &.ptu-button-row-secondary {
+            // Second row with Import Party and Pkmn Generator
+            button {
+                flex: 1;
+                min-width: 0;
+            }
+        }
+        
+        &.ptu-button-row-tertiary {
+            // Third row with NPC Quick Build
+            button {
+                width: 100%;
+            }
+        }
+        
+        button {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+            i {
+                margin-right: 4px;
+            }
+        }
+    }
 }
