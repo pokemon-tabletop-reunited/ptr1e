@@ -145,7 +145,7 @@ class PTUSkillCheck extends PTUDiceCheck {
         })();
         if (!diceDialogContext) return null;
 
-        const dice = `${diceDialogContext.statistic.totalModifier}`
+        const dice = this.diceModifiers.map(mod => `${mod.diceNumber}d${mod.dieSize}`).join(" + ");
 
         const options = {
             origin: {
@@ -172,10 +172,12 @@ class PTUSkillCheck extends PTUDiceCheck {
         }
 
         const isInfinity = this.statistic.totalModifier === Infinity;
-        const totalModifiersPart = this.statistic.totalModifier?.signedString() ?? "";
+        const total = this.statistic.totalModifier ?? 0;
+        const totalModifiersPart = (total === Infinity) ? "" : (total >= 0 ? `+${total}` : `${total}`);
         options.modifierPart = totalModifiersPart;
 
-        const roll = new this.rollCls(`${dice}${isInfinity ? "" : totalModifiersPart}`, {}, options);
+        const rollFormula = `${dice}${isInfinity ? "" : totalModifiersPart}`;
+        const roll = new this.rollCls(rollFormula, {}, options);
         const rollResult = await roll.evaluate();
 
         const targets = []
