@@ -2221,6 +2221,17 @@ a.content-link img {
 .dice-checks.dialog .dialog-row .exclude {
   text-align: center;
 }
+
+/* Ensure modifier checkboxes remain clickable even when parent is disabled */
+.dice-checks.dialog .dialog-row.disabled .modifier-checkbox {
+  pointer-events: auto !important;
+  opacity: 1 !important;
+}
+
+.dice-checks.dialog .dialog-row.disabled .modifier-checkbox:not(:disabled) {
+  cursor: pointer !important;
+}
+
 #combat-tracker
   .combatant.actor.acted:not(#combat-tracker .combatant.actor.defeated) {
   color: #999;
@@ -2317,13 +2328,6 @@ a.content-link img {
 }
 .chat-message.message .flavor-text .header-bar.title-bar .action {
   padding: 0.25rem 0;
-}
-.chat-message.message .flavor-text .header-bar:has(.item-icon) .action {
-  text-align: left;
-}
-.chat-message.message .flavor-text .header-bar .action {
-  flex-grow: 1;
-  padding: 0.5rem 0;
   margin: 0;
   font-size: 28px;
   font-weight: bolder;
@@ -2334,7 +2338,7 @@ a.content-link img {
   text-align: center;
   line-height: 31px;
 }
-.chat-message.message .flavor-text .header-bar .action.sub-action {
+.chat-message.message .flavor-text .header-bar.title-bar .action.sub-action {
   font-size: 22px;
   padding: unset;
 }
