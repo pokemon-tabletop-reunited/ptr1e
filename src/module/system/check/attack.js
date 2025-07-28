@@ -43,24 +43,21 @@ class PTUAttackCheck extends PTUDiceCheck {
     prepareModifiers() {
         super.prepareModifiers();
 
-        const modifiers = [
-            new PTUModifier({
-                slug: "accuracy-check",
-                label: "Accuracy Check",
-                modifier: isNaN(Number(this.item.system.ac)) ? Infinity : -Number(this.item.system.ac)
-            }),
-            ...this.modifiers
-        ]
+        // Add accuracy check modifier to the existing modifiers
+        this.modifiers.unshift(new PTUModifier({
+            slug: "accuracy-check",
+            label: "Accuracy Check",
+            modifier: isNaN(Number(this.item.system.ac)) ? Infinity : -Number(this.item.system.ac)
+        }));
 
+        // Add accuracy bonus modifier if it exists
         if (this.actor.system.modifiers.acBonus.total != 0) {
-            modifiers.push(new PTUModifier({
+            this.modifiers.push(new PTUModifier({
                 slug: "accuracy-bonus",
                 label: "Accuracy Bonus",
                 modifier: this.actor.system.modifiers.acBonus.total
             }));
         }
-
-        this.modifiers = modifiers;
 
         const critRangeModifiers = [
             new PTUModifier({

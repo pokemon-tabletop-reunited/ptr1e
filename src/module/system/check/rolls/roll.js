@@ -3,6 +3,12 @@ class CheckRoll extends foundry.dice.Roll {
         return "systems/ptu/static/templates/chat/check/check-roll.hbs";
     }
 
+    get total() {
+        const baseTotal = super.total;
+        const modifierValue = this.options.modifierValue ?? 0;
+        return baseTotal + modifierValue;
+    }
+
     constructor(formula, data, options) {
         super(formula, data, options);
 

@@ -176,7 +176,15 @@ class PTUSkillCheck extends PTUDiceCheck {
         const totalModifiersPart = (total === Infinity) ? "" : (total >= 0 ? `+${total}` : `${total}`);
         options.modifierPart = totalModifiersPart;
 
-        const rollFormula = `${dice}${isInfinity ? "" : totalModifiersPart}`;
+        // Fix for +0 modifier concatenation issue
+        let rollFormula;
+        if (isInfinity) {
+            rollFormula = dice;
+        } else if (total === 0) {
+            rollFormula = dice;
+        } else {
+            rollFormula = `${dice}${totalModifiersPart}`;
+        }
         const roll = new this.rollCls(rollFormula, {}, options);
         const rollResult = await roll.evaluate();
 

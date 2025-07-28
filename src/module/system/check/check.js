@@ -206,9 +206,18 @@ class PTUDiceCheck {
         const totalModifiersPart = this.statistic.totalModifier?.signedString() ?? "";
         options.modifierPart = totalModifiersPart;
 
-        const roll = new this.rollCls(`${dice}${isInfinity ? "" : totalModifiersPart}`, {}, options);
+        let rollFormula;
+        if (isInfinity) {
+            rollFormula = dice;
+        } else if (totalModifiersPart === "+0" || totalModifiersPart === "0") {
+            rollFormula = dice;
+        } else {
+            rollFormula = dice;
+            options.modifierValue = this.statistic.totalModifier;
+        }
+        const roll = new this.rollCls(rollFormula, {}, options);
         const rollResult = await roll.evaluate();
-
+        
         const result =
             (rollResult.isDeterministic
                 ? rollResult.terms.find(t => t instanceof foundry.dice.terms.NumericTerm)
@@ -562,7 +571,17 @@ class PTUCheck {
             options.checkModifier = totalModifiersPart;
         }
 
-        const roll = await new RollCls(`${dice}${isInfinity ? "" : totalModifiersPart}`, {}, options).evaluate();
+        // Fix for +0 modifier concatenation issue
+        let rollFormula;
+        if (isInfinity) {
+            rollFormula = dice;
+        } else if (totalModifiersPart === "+0" || totalModifiersPart === "0") {
+            // Handle +0 case properly to avoid concatenation issues
+            rollFormula = dice;
+        } else {
+            rollFormula = `${dice}${totalModifiersPart}`;
+        }
+        const roll = await new RollCls(rollFormula, {}, options).evaluate();
 
         for (const target of context.targets ?? []) {
             const [success, degree] = target.dc ? (() => {

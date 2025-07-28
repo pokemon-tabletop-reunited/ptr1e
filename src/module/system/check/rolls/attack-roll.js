@@ -53,7 +53,7 @@ export class AttackRoll extends CheckRoll {
         })();
 
         const chatData = {
-            formula: isPrivate ? "???" : this.formula,
+            formula: isPrivate ? "???" : (this.options.modifierValue ? `${this.formula}${this.options.modifierValue > 0 ? '+' : ''}${this.options.modifierValue}` : this.formula),
             user: game.user.id,
             tooltip: isPrivate ? "" : await this.getTooltip(),
             total: isPrivate ? "?" : Math.round(this.total * 100) / 100,
