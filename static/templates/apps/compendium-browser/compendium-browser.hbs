@@ -10,6 +10,7 @@
         <a data-tab="moves" class="{{#if (is tab "moves")}}active{{/if}}">{{localize "PTU.CompendiumBrowser.Tabs.Moves"}}</a>
         <a data-tab="pokeEdges" class="{{#if (is tab "pokeEdges")}}active{{/if}}">{{localize "PTU.CompendiumBrowser.Tabs.PokeEdges"}}</a>
         <a data-tab="species" class="{{#if (is tab "species")}}active{{/if}}">{{localize "PTU.CompendiumBrowser.Tabs.Species"}}</a>
+        <a data-tab="effects" class="{{#if (is tab "effects")}}active{{/if}}">{{localize "PTU.CompendiumBrowser.Tabs.Effects"}}</a>
         {{#if user.isGM}}
             <a data-tab="settings" class="{{#if (is tab "settings")}}active{{/if}}">{{localize "PTU.CompendiumBrowser.Tabs.Settings"}}</a>
         {{/if}}
@@ -75,6 +76,15 @@
 
         {{#with species}}
             <div class="tab browser" data-group="primary" data-tab="species">
+                <div class="content-grid"> 
+                    {{> "systems/ptu/static/templates/apps/compendium-browser/filters.hbs"}}
+                    <ul class="item-list result-list"></ul>
+                </div>
+            </div>
+        {{/with}}
+
+        {{#with effects}}
+            <div class="tab browser" data-group="primary" data-tab="effects">
                 <div class="content-grid"> 
                     {{> "systems/ptu/static/templates/apps/compendium-browser/filters.hbs"}}
                     <ul class="item-list result-list"></ul>

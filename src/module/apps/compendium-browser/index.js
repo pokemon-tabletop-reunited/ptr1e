@@ -199,6 +199,7 @@ class CompendiumBrowser extends Application {
             moves: new browserTabs.Moves(this),
             pokeEdges: new browserTabs.PokeEdges(this),
             species: new browserTabs.Species(this),
+            effects: new browserTabs.Effects(this),
         }
         this.dataTabsList = Object.keys(this.tabs);
 
@@ -265,7 +266,7 @@ class CompendiumBrowser extends Application {
             "ptu.abilities": true,
             "ptu.capabilities": false,
             "ptu.edges": true,
-            "ptu.effects": false,
+            "ptu.effects": true,
             "ptu.feats": true,
             "ptu.items": true,
             "ptu.moves": true,
