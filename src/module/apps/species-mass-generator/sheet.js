@@ -156,16 +156,36 @@ export class PTUSpeciesMassGenerator extends FormApplication {
         else if (table) {
             const { results } = await table.drawMany(amount, { displayChat: false });
             for (const result of results) {
-                const species = await (() => {
+                let species = null;
+                
+                // Handle Foundry VTT v13 table result structure
+                if (result.type === "document" || result.type === "compendium") {
+                    // Use documentUuid for both document and compendium types in v13
+                    if (result.documentUuid) {
+                        species = await fromUuid(result.documentUuid);
+                    }
+                }
+                
+                // Fallback for older table result structures
+                if (!species) {
                     switch (result.type) {
-                        case CONST.TABLE_RESULT_TYPES.DOCUMENT: {
-                            return game.items.get(result.documentId)
+                        case CONST.TABLE_RESULT_TYPES?.DOCUMENT: {
+                            species = game.items.get(result.documentId);
+                            break;
                         }
-                        case CONST.TABLE_RESULT_TYPES.COMPENDIUM: {
-                            return game.packs.get(result.documentCollection).getDocument(result.documentId)
+                        case CONST.TABLE_RESULT_TYPES?.COMPENDIUM: {
+                            species = await game.packs.get(result.documentCollection).getDocument(result.documentId);
+                            break;
                         }
                     }
-                })();
+                }
+                
+                // Check if species was found
+                if (!species) {
+                    console.error("Species not found for result:", result);
+                    continue;
+                }
+                
                 const mon = {
                     species,
                     level: level.min == level.max ? level.min : Math.floor(Math.random() * (level.max - level.min + 1)) + level.min,
