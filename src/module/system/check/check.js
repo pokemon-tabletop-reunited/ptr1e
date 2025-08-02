@@ -496,6 +496,9 @@ class PTUCheck {
             else if (context.rollTwice === "keep-lower") {
                 return ["2d20kl", ["PTU.Trait.Misfortune"]]
             }
+            else if (context.type === "capture-calculation") {
+                return ["1d100", []];
+            }
             else {
                 return ["1d20", []];
             }
@@ -579,7 +582,8 @@ class PTUCheck {
             // Handle +0 case properly to avoid concatenation issues
             rollFormula = dice;
         } else {
-            rollFormula = `${dice}${totalModifiersPart}`;
+            rollFormula = dice;
+            options.modifierValue = check.totalModifier;
         }
         const roll = await new RollCls(rollFormula, {}, options).evaluate();
 
