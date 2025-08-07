@@ -83,6 +83,7 @@ class DamageMessagePTU extends ChatMessagePTU {
                         $("<h3></h3>")
                             .addClass("action sub-action")
                             .text(game.i18n.localize("PTU.Action.DamageSelector"))
+                            .css("color", "white")
                     )
             )
 
