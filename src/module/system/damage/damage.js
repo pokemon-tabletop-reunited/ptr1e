@@ -80,7 +80,14 @@ class PTUDamage {
         const roll = await new DamageRoll(rollFormula, {}, options).evaluate();
 
         const critDice = `${dice}+${dice}`;
-        const totalModifiersPartCrit = ((check.totalModifier ?? 0) + damageBaseModifier)?.signedString() ?? "";
+        
+        // Use the original damageBaseModifier value for critical hit calculation
+        // This represents the damage base modifier that should be doubled
+        const otherModifiersTotal = (check.totalModifier ?? 0) - damageBaseModifier;
+        
+        // For critical hits, double the damage base modifier
+        const totalModifiersPartCrit = (otherModifiersTotal + (damageBaseModifier * 2))?.signedString() ?? "";
+        
         // Fix for +0 modifier concatenation issue in crit roll
         let critRollFormula;
         if (totalModifiersPartCrit === "+0" || totalModifiersPartCrit === "0") {
