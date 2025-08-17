@@ -72,7 +72,7 @@ class PTUCombatTracker extends foundry.applications.sidebar.tabs.CombatTracker {
         switch (target.dataset.action) {
             case "toggleHidden": return combatant.toggleVisibility();
             case "toggleDefeated": return this._onToggleDefeatedStatus(combatant);
-            case "rollInitiative": return combat.rollInitiative([combatant]);
+            case "rollInitiative": return combat.rollInitiative([combatant.id]);
             case "pingCombatant": return this._onPingCombatant(combatant);
             case "toggleActed": return combatant.toggleActed({multi: event.shiftKey});
         }
