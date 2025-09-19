@@ -1,35 +1,40 @@
-name: Release Build
+name: PTR 1e CD
 
-on: 
-  push:
+on:
+  workflow_run:
+    workflows: ["PTR 1e CI"]
+    types:
+        - completed
     branches:
-      - master
+        - master
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
+    release:
+        if: github.event.workflow_run.conclusion == 'success' && github.event.repository.fork == false
+        runs-on: ubuntu-latest
 
-    # create a zip file with all files required by the system to add to the release
-    - name: Zip Files
-      working-directory: ./
-      run: zip -r ./system.zip ./*
+        steps:
+            - uses: actions/checkout@v4
 
-    # Get the version from 'system.json'
-    - name: Get Version
-      shell: bash
-      id: get-version
-      run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
+            - name: Update Manifest
+              run: |
+                  SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' dist/system.json | tr -d '\n')
+                  perl -pi -E "s|latest/download/ptr2e\\.zip|download/$SYSTEM_VERSION/ptr2e.zip|" dist/system.json
+                  echo "systemVersion=$SYSTEM_VERSION" >> $GITHUB_ENV
 
-    # Create a release for this specific version
-    - name: Create Release
-      id: create_version_release
-      uses: ncipollo/release-action@v1
-      with:
-        allowUpdates: true # set this to false if you want to prevent updating existing releases
-        name: Release ${{ steps.get-version.outputs.version }}
-        draft: false
-        prerelease: false
-        token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './system.json,./system.zip'
-        tag: ${{ steps.get-version.outputs.version }}
+            - name: Zip Files
+              working-directory: .
+              run: |
+                  7z a -tzip system.zip ./*
+
+            - name: Create Version Release
+              id: create_version_release
+              uses: ncipollo/release-action@v1
+              with:
+                  name: ${{ env.systemVersion }}
+                  allowUpdates: false
+                  draft: false
+                  prerelease: false
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  artifacts: "./system.json,./system.zip"
+                  tag: ${{ env.systemVersion }}
