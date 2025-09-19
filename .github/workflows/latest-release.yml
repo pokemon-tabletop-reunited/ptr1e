@@ -20,8 +20,8 @@ jobs:
 
             - name: Update Manifest
               run: |
-                  SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' dist/system.json | tr -d '\n')
-                  perl -pi -E "s|latest/download/ptr2e\\.zip|download/$SYSTEM_VERSION/ptr2e.zip|" dist/system.json
+                  SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' system.json | tr -d '\n')
+                  perl -pi -E "s|latest/download/system\\.zip|download/$SYSTEM_VERSION/system.zip|" system.json
                   echo "systemVersion=$SYSTEM_VERSION" >> $GITHUB_ENV
 
             - name: Zip Files
