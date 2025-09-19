@@ -12,18 +12,13 @@ The Pokemon Tabletop Reunited system for FoundryVTT is a continuiation of the Po
 Feel free to open an issue or join our [Discord Server](https://discord.gg/ptrfvtt) for any questions & feedback.
 
 ## How to Install
-#### Release Build (V12)
+#### Release Build (V13)
 If you would like to use the latest stable build, just import the following manifest into foundry: 
 ```
-https://github.com/dylanpiera/Foundry-Pokemon-Tabletop-United-System/releases/latest/download/system.json
-```
-#### Legacy Build (V11)
-If you're unable to update to v12 as of now, you can update to the latest version of PTR compatible with V11 using this manifest url:
-```
-https://github.com/dylanpiera/Foundry-Pokemon-Tabletop-United-System/releases/download/4.2.7/system.json
+https://github.com/pokemon-tabletop-reunited/ptr1e/releases/latest/download/system.json
 ```
 ### PTU 1.05 (V10 - Not Recommended)
-If you're looking for the Non-PTR version you can install the [PTU Branch](https://github.com/dylanpiera/Foundry-Pokemon-Tabletop-United-System/tree/PTU-1.05)
+If you're looking for the Non-PTR version you can install the [PTU Branch](https://github.com/pokemon-tabletop-reunited/ptr1e/tree/PTU-1.05)
 Please note that this branch is no longer receiving updates and is only compatible with Foundry v10.
 
 ## Links & Recommendations
@@ -39,7 +34,7 @@ Please note that this branch is no longer receiving updates and is only compatib
 Pokémon © 2002-2023 Pokémon. © 1995-2023 Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.
 No copyright or trademark infringement is intended in using Pokémon content for the PTU for FoundryVTT System.
 
-[foundry-shield]: https://img.shields.io/badge/Foundry-v12.330-success
+[foundry-shield]: https://img.shields.io/badge/Foundry-v13.348-success
 [foundry-shield-old]: https://img.shields.io/badge/Foundry-v11.314-success
 [foundry-url]: https://foundryvtt.com/
 [forks-shield]: https://img.shields.io/github/forks/dylanpiera/Foundry-Pokemon-Tabletop-United-System.svg
