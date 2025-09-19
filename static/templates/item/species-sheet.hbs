@@ -82,7 +82,7 @@
                                             {{selectOptions ../types selected=type valueAttr="label"}}
                                         </select>
                                     </li>
-                                    {{#if (and @last (not type "Untyped"))}}
+                                    {{#if (and @last (notEqual type "Untyped"))}}
                                         <li class="item pb-1 arrow-box optional">
                                             <select name="system.type.{{inc @index}}" class="type-select" style="background: url('{{loadTypeImageBar "Untyped"}}')">
                                                 {{selectOptions ../types selected="Untyped" valueAttr="label"}}

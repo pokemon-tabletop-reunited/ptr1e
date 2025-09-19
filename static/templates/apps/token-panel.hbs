@@ -1,56 +1,4 @@
 <section class="token-panel" {{#unless actor}}style="display: none;" {{/unless}}>
-    <div class="top-panel">
-        {{#if party.trainer}}
-            <div class="party-overview">
-                <div class="party-header">
-                    <img class="trainer icon" data-id="{{party.trainer.id}}" src="{{party.trainer.img}}" alt="{{party.trainer.name}}" draggable="true">
-                    <span class="header">{{party.trainer.name}}'s Party</span>
-                </div>
-                {{#if (gt party.pokemon.length 0)}}
-                    <div class="party-pokemon">
-                        {{#each party.pokemon as |pokemon|}}
-                            <div class="pokemon" data-id="{{pokemon.id}}" style="--health-percent: {{calcHeight pokemon.system.health.percent}}px;">
-                                <img class="{{#if (lte pokemon.system.health.percent 0)}}black{{else}}{{#if (lt pokemon.system.health.percent 25)}}darkred{{else}}{{#if (lt pokemon.system.health.percent 50)}}red{{else}}{{#if (lt pokemon.system.health.percent 75)}}orange{{else}}{{#if (is pokemon.system.health.percent 100)}}green{{else}}lime{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}"
-                                    src="{{pokemon.img}}" 
-                                    alt="{{pokemon.name}}"
-                                    draggable="true"
-                                    data-id="{{pokemon.id}}">
-                            </div>
-                        {{/each}}
-                    </div>
-                {{/if}}
-            </div>
-        {{/if}}
-        {{#if (gt conditions.length 0)}}
-            <div class="header mt-1">
-                Conditions
-            </div>
-            <div class="conditions">
-                {{#each conditions as |condition|}}
-                    <div class="condition" data-actor-id="{{condition.parent.id}}" data-item-id="{{condition.id}}" {{#if condition.system.effect}}title="{{condition.system.effect}}"{{/if}}>
-                        <img class="icon" src="{{condition.img}}" alt="{{condition.name}}">
-                        <span class="name">{{condition.name}}</span>
-                    </div>
-                {{/each}}
-            </div>
-        {{/if}}
-        {{#if (and (gt conditions.length 0) (gt effects.length 0))}}
-            <hr>
-        {{/if}}
-        {{#if (gt effects.length 0)}}
-            <div class="header mt-1">
-                Effects
-            </div>
-            <div class="effects">
-                {{#each effects as |effect|}}
-                    <div class="effect" data-actor-id="{{effect.parent}}" data-item-id="{{effect.id}}" {{#if effect.effect}}title="{{effect.effect}}"{{/if}}>
-                        <img class="icon" src="{{effect.img}}" alt="{{effect.name}}">
-                        <span class="name">{{effect.name}}</span>
-                    </div>
-                {{/each}}
-            </div>
-        {{/if}}
-    </div>
     <div class="main-panel">
         <div class="name-tag">
             {{actor.name}}
@@ -264,6 +212,65 @@
                 </div>
             {{/if}}
         </div>
+    </div>
+    <div class="top-panel">
+        {{#if (or party.trainer (gt conditions.length 0) (gt effects.length 0))}}
+            <div class="top-panel-toggle" data-target="party">
+                <i class="fas {{#if show.party}}fa-chevron-up{{else}}fa-chevron-down{{/if}}"></i>
+            </div>
+        {{/if}}
+        {{#if show.party}}
+            {{#if party.trainer}}
+                <div class="party-overview">
+                    <div class="party-header">
+                        <img class="trainer icon" data-id="{{party.trainer.id}}" src="{{party.trainer.img}}" alt="{{party.trainer.name}}" draggable="true">
+                        <span class="header">{{party.trainer.name}}'s Party</span>
+                    </div>
+                    {{#if (gt party.pokemon.length 0)}}
+                        <div class="party-pokemon">
+                            {{#each party.pokemon as |pokemon|}}
+                                <div class="pokemon" data-id="{{pokemon.id}}" style="--health-percent: {{calcHeight pokemon.system.health.percent}}px;">
+                                    <img class="{{#if (lte pokemon.system.health.percent 0)}}black{{else}}{{#if (lt pokemon.system.health.percent 25)}}darkred{{else}}{{#if (lt pokemon.system.health.percent 50)}}red{{else}}{{#if (lt pokemon.system.health.percent 75)}}orange{{else}}{{#if (is pokemon.system.health.percent 100)}}green{{else}}lime{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}"
+                                        src="{{pokemon.img}}" 
+                                        alt="{{pokemon.name}}"
+                                        draggable="true"
+                                        data-id="{{pokemon.id}}">
+                                </div>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                </div>
+            {{/if}}
+            {{#if (gt conditions.length 0)}}
+                <div class="header mt-1">
+                    Conditions
+                </div>
+                <div class="conditions">
+                    {{#each conditions as |condition|}}
+                        <div class="condition" data-actor-id="{{condition.parent.id}}" data-item-id="{{condition.id}}" {{#if condition.system.effect}}title="{{condition.system.effect}}"{{/if}}>
+                            <img class="icon" src="{{condition.img}}" alt="{{condition.name}}">
+                            <span class="name">{{condition.name}}</span>
+                        </div>
+                    {{/each}}
+                </div>
+            {{/if}}
+            {{#if (and (gt conditions.length 0) (gt effects.length 0))}}
+                <hr>
+            {{/if}}
+            {{#if (gt effects.length 0)}}
+                <div class="header mt-1">
+                    Effects
+                </div>
+                <div class="effects">
+                    {{#each effects as |effect|}}
+                        <div class="effect" data-actor-id="{{effect.parent}}" data-item-id="{{effect.id}}" {{#if effect.effect}}title="{{effect.effect}}"{{/if}}>
+                            <img class="icon" src="{{effect.img}}" alt="{{effect.name}}">
+                            <span class="name">{{effect.name}}</span>
+                        </div>
+                    {{/each}}
+                </div>
+            {{/if}}
+        {{/if}}
     </div>
 </section>
 

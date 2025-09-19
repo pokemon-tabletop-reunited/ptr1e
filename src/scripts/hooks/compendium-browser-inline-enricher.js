@@ -268,12 +268,12 @@ export const CompendiumBrowserInlineEnricher = {
             activateCompendiumEnricherListener(journalHtmlElement)
 
         });
-        Hooks.on("renderChatMessage", (message, $html) => {
+        Hooks.on("renderChatMessageHTML", (message, html) => {
             // maybe related to why this does not need a filter? https://github.com/foundryvtt/foundryvtt/issues/3088
-            const messageHtmlElement = $html.get(0);
+            const messageHtmlElement = html;
             activateCompendiumEnricherListener(messageHtmlElement)
 
-            message.activateListeners($html)
+            message.activateListeners($(html))
         });
         Hooks.on("renderPTUItemSheet", (itemSheet, $html) => {
             // maybe related to why this does not need a filter? https://github.com/foundryvtt/foundryvtt/issues/3088

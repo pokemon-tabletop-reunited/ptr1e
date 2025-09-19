@@ -29,14 +29,14 @@
                 </dl>
             </div>
 
-            {{!-- <div class="setting-section">
+            <div class="setting-section">
                 <h3>{{localize "PTU.CompendiumBrowser.Tabs.Effects"}}</h3>
                 <dl>
                     {{#each settings.effects as |conf pack|}}
-                        <label><dt><input type="checkbox" name="effects-{{pack}}" {{checked conf.load}}></dt><dd>{{conf.name}}</dd></label>
+                        <label><dt><input type="checkbox" name="{{pack}}" {{checked conf.load}}></dt><dd>{{conf.name}}</dd></label>
                     {{/each}}
                 </dl>
-            </div> --}}
+            </div>
 
             <div class="setting-section">
                 <h3>{{localize "PTU.CompendiumBrowser.Tabs.Feats"}}</h3>

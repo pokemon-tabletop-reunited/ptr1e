@@ -1,4 +1,3 @@
-
 /* Define Colors as variables at root */
 
 
@@ -996,8 +995,8 @@ a.pokedollar {
 .token-panel {
     pointer-events: initial;
     position: absolute;
-    bottom: 65px;
-    right: -5px;
+    top: 15px;
+    left: 370px;
 
     @media (max-width: 1120px) {
         bottom: 114px;
@@ -1037,8 +1036,7 @@ a.pokedollar {
             align-items: center;
 
             max-width: calc(100vw - 100px - 130px - 320px - 205px);
-            overflow-y: hidden;
-            overflow-x: auto;
+            overflow: auto;
         }
 
         .name-tag,
@@ -1196,10 +1194,10 @@ a.pokedollar {
                 grid-auto-columns: 150px;
                 gap: 3px;
 
-                overflow-y: hidden;
-                overflow-x: auto;
+                overflow: auto;
                 flex: 1;
-                height: @overview-height;
+                height: 100%;
+                min-height: 48px;
             }
 
             .resizer {
@@ -1532,12 +1530,11 @@ a.pokedollar {
 
     .top-panel {
         position: absolute;
-        border-radius: 15px 15px 0 0;
+        border-radius: 0 0 15px 15px;
         background: url(/ui/denim075.png) repeat;
 
-        right: 10px;
+        left: 10px;
         width: 172px;
-        bottom: @overview-height;
         padding: 5px 5px 0.5rem 5px;
 
         .header {
@@ -1585,6 +1582,20 @@ a.pokedollar {
                     margin-left: 5px;
                     font-size: 12px;
                 }
+            }
+        }
+
+        .top-panel-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 2px 0;
+            color: whitesmoke;
+            font-size: 10px;
+            
+            &:hover {
+                color: #ddd;
             }
         }
 
@@ -7359,4 +7370,39 @@ a.content-link {
     right: 0;
     bottom: 0;
     z-index: 999;
+}
+
+// PTU Actor Sidebar Button Layout
+#sidebar #actors .directory-header .action-buttons {
+    .ptu-button-row {
+        display: flex;
+        width: 100%;
+        gap: 4px;
+        margin-bottom: 4px;
+        
+        &.ptu-button-row-secondary {
+            // Second row with Import Party and Pkmn Generator
+            button {
+                flex: 1;
+                min-width: 0;
+            }
+        }
+        
+        &.ptu-button-row-tertiary {
+            // Third row with NPC Quick Build
+            button {
+                width: 100%;
+            }
+        }
+        
+        button {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+            i {
+                margin-right: 4px;
+            }
+        }
+    }
 }

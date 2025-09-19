@@ -35,7 +35,8 @@ export class PokemonGenerator {
         this.size = (() => {
             const size = this.species.system.size.sizeClass;
             switch (size) {
-                case "Small": return { width: 0.5, height: 0.5 };
+                case "Tiny": return { width: 0.5, height: 0.5 };
+                case "Small": return { width: 1, height: 1 };
                 case "Medium": return { width: 1, height: 1 };
                 case "Large": return { width: 2, height: 2 };
                 case "Huge": return { width: 3, height: 3 };
@@ -83,7 +84,36 @@ export class PokemonGenerator {
             }
         }
 
-        const foundryDefaultSettings = {...game.settings.get("core", "defaultToken")} ?? {};
+        const foundryDefaultSettings = (() => {
+            try {
+                // Try to get the core default token settings (pre-v13)
+                return {...game.settings.get("core", "defaultToken")} ?? {};
+            } catch (error) {
+                // Fallback for v13+ where this setting may not exist
+                return {
+                    displayBars: CONST.TOKEN_DISPLAY_MODES.OWNER_HOVER,
+                    displayName: CONST.TOKEN_DISPLAY_MODES.OWNER,
+                    bar1: { attribute: "health" },
+                    disposition: CONST.TOKEN_DISPOSITIONS.NEUTRAL,
+                    alpha: 1,
+                    scale: 1,
+                    mirrorX: false,
+                    mirrorY: false,
+                    lockRotation: false,
+                    rotation: 0,
+                    vision: false,
+                    dimSight: 0,
+                    brightSight: 0,
+                    dimLight: 0,
+                    brightLight: 0,
+                    lightAnimation: {},
+                    lightColor: null,
+                    lightAlpha: 0.5,
+                    lightAngle: 360,
+                    sightAngle: 360
+                };
+            }
+        })();
 
         const prototypeToken = foundry.utils.mergeObject(foundryDefaultSettings, {
             width: this.size.width,

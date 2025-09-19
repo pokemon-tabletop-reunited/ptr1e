@@ -206,13 +206,22 @@ class PTUDiceCheck {
         const totalModifiersPart = this.statistic.totalModifier?.signedString() ?? "";
         options.modifierPart = totalModifiersPart;
 
-        const roll = new this.rollCls(`${dice}${isInfinity ? "" : totalModifiersPart}`, {}, options);
-        const rollResult = await roll.evaluate({ async: true });
-
+        let rollFormula;
+        if (isInfinity) {
+            rollFormula = dice;
+        } else if (totalModifiersPart === "+0" || totalModifiersPart === "0") {
+            rollFormula = dice;
+        } else {
+            rollFormula = dice;
+            options.modifierValue = this.statistic.totalModifier;
+        }
+        const roll = new this.rollCls(rollFormula, {}, options);
+        const rollResult = await roll.evaluate();
+        
         const result =
             (rollResult.isDeterministic
-                ? rollResult.terms.find(t => t instanceof NumericTerm)
-                : rollResult.dice.find(d => d instanceof Die && d.faces === diceSize
+                ? rollResult.terms.find(t => t instanceof foundry.dice.terms.NumericTerm)
+                : rollResult.dice.find(d => d instanceof foundry.dice.terms.Die && d.faces === diceSize
                 ))?.total ?? 1;
 
         options.rollResult = result;
@@ -487,6 +496,9 @@ class PTUCheck {
             else if (context.rollTwice === "keep-lower") {
                 return ["2d20kl", ["PTU.Trait.Misfortune"]]
             }
+            else if (context.type === "capture-calculation") {
+                return ["1d100", []];
+            }
             else {
                 return ["1d20", []];
             }
@@ -562,7 +574,18 @@ class PTUCheck {
             options.checkModifier = totalModifiersPart;
         }
 
-        const roll = await new RollCls(`${dice}${isInfinity ? "" : totalModifiersPart}`, {}, options).evaluate({ async: true });
+        // Fix for +0 modifier concatenation issue
+        let rollFormula;
+        if (isInfinity) {
+            rollFormula = dice;
+        } else if (totalModifiersPart === "+0" || totalModifiersPart === "0") {
+            // Handle +0 case properly to avoid concatenation issues
+            rollFormula = dice;
+        } else {
+            rollFormula = dice;
+            options.modifierValue = check.totalModifier;
+        }
+        const roll = await new RollCls(rollFormula, {}, options).evaluate();
 
         for (const target of context.targets ?? []) {
             const [success, degree] = target.dc ? (() => {
@@ -575,8 +598,8 @@ class PTUCheck {
 
                 const result =
                     (roll.isDeterministic
-                        ? roll.terms.find(t => t instanceof NumericTerm)
-                        : roll.dice.find(d => d instanceof Die && (d.faces === 20 || d.faces === 100))
+                        ? roll.terms.find(t => t instanceof foundry.dice.terms.NumericTerm)
+                        : roll.dice.find(d => d instanceof foundry.dice.terms.Die && (d.faces === 20 || d.faces === 100))
                     )?.total ?? 1;
                 const total = roll.total;
                 const dc = target.dc;
@@ -770,7 +793,7 @@ class PTUCheck {
             markup: `<result>${success}</result>`
         }
 
-        return await renderTemplate("systems/ptu/static/templates/chat/check/target-dc-result.hbs", {
+        return await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/check/target-dc-result.hbs", {
             target: targetData,
             dc: dcData,
             result: resultData

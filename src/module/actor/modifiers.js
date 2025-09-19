@@ -2,6 +2,14 @@ import { sluggify } from "../../util/misc.js";
 import { extractModifierAdjustments } from "../rules/helpers.js";
 import { PTUPredicate } from "../system/predication.js";
 
+// Add signedString method to Number prototype for Foundry VTT v13 compatibility
+if (!Number.prototype.signedString) {
+    Number.prototype.signedString = function() {
+        if (this === 0) return "0";
+        return this > 0 ? `+${this}` : `${this}`;
+    };
+}
+
 /**
  * @typedef {Object} BaseRawModifier
  * @property {string?} slug An identifier for this modifier; should generally be a localization key (see en.json).

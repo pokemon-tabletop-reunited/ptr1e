@@ -680,14 +680,14 @@
                                             "PTU.InjuryEffect1"}}</li>{{/if}}
                                         {{#if (and (is "true" data.modifiers.hardened) (biggerOrEqual
                                         data.health.injuries 5))}}<li>{{localize "PTU.HardenedEffect3"}}</li>{{/if}}
-                                        {{#if (and (not "true" data.modifiers.hardened) (biggerOrEqual
+                                        {{#if (and (notEqual "true" data.modifiers.hardened) (biggerOrEqual
                                         data.health.injuries 5))}}<li>{{localize "PTU.InjuryEffect2" (ld "injuries"
                                             data.health.injuries)}}</li>{{/if}}
                                         {{#if (and (is "true" data.modifiers.hardened) (biggerOrEqual
                                         data.health.injuries 7))}}<li>{{localize "PTU.HardenedEffect4"}}</li>{{/if}}
                                         {{#if (and (is "true" data.modifiers.hardened) (biggerOrEqual
                                         data.health.injuries 9))}}<li>{{localize "PTU.HardenedEffect5"}}</li>{{/if}}
-                                        {{#if (and (not "true" data.modifiers.hardened) (biggerOrEqual
+                                        {{#if (and (notEqual "true" data.modifiers.hardened) (biggerOrEqual
                                         data.health.injuries 10))}}<li><b>{{localize "PTU.InjuryEffect3"}}</b></li>
                                         {{/if}}
                                     </ul>
@@ -703,7 +703,7 @@
                             </div>
                             <div class="swsh-body readable w-100 align-items-center" style="white-space: nowrap;">
                                 {{#each data.capabilities as |capability key|}}
-                                {{#if (not key "Other")}}
+                                {{#if (notEqual key "Other")}}
                                 <div class="col-sm-4 p11 mb-1">
                                     <label for="system.capabilities.{{key}}">{{key}}</label>
                                 </div>

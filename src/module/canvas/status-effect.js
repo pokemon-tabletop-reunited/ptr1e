@@ -6,8 +6,12 @@ export class StatusEffects {
         const token = canvas.tokens.get(tokenData._id);
         if (!token) return;
 
-        const iconGrid = html.querySelector(".status-effects");
-        if (!iconGrid) throw new Error("PTU | Could not find status effect icon grid");
+        let iconGrid = html.querySelector(".status-effects");
+        
+        if (!iconGrid) {
+            console.warn("PTU | Could not find status effect icon grid in TokenHUD - skipping status effect enhancement");
+            return;
+        }
 
         const affectingConditions = token.actor?.conditions.filter(c => c.isInHUD) ?? [];
 
@@ -22,7 +26,7 @@ export class StatusEffects {
             const picture = document.createElement("picture");
             picture.classList.add("effect-control");
             picture.dataset.statusId = icon.dataset.statusId;
-            picture.title = icon.dataset.tooltip;
+            picture.title = icon.dataset.tooltip || icon.title;
             const iconSrc = icon.getAttribute("src")
             picture.setAttribute("src", iconSrc);
             const newIcon = document.createElement("img");
@@ -86,7 +90,7 @@ export class StatusEffects {
     }
 
     static #showStatusLabel(control) {
-        const titleBar = control.closest(".status-effects")?.querySelector(".title-bar");
+        const titleBar = control.closest(".status-effects, .effects, .status-icons, .token-effects")?.querySelector(".title-bar");
         if (titleBar && control.title) {
             const $titleBar = $(titleBar);
             // if(control.title?.length > 11) $titleBar.css("top", "-65.42px");

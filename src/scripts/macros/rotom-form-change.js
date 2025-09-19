@@ -21,7 +21,8 @@ export function changeRotomForm() {
         const newSize = (() => {
             const size = species.system.size.sizeClass;
             switch (size) {
-                case "Small": return { width: 0.5, height: 0.5 };
+                case "Tiny": return { width: 0.5, height: 0.5 };
+                case "Small": return { width: 1, height: 1 };
                 case "Medium": return { width: 1, height: 1 };
                 case "Large": return { width: 2, height: 2 };
                 case "Huge": return { width: 3, height: 3 };

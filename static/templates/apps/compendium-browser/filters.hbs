@@ -40,10 +40,10 @@
             <div class="title">
                 <h3>{{localize checkbox.label}}</h3>
                 {{#if checkbox.selected.length}}
-                    <button type="button" data-action="clear-filter" {{#if (not checkbox.isExpanded true)}}style="display: none;"{{/if}}>{{localize "PTU.CompendiumBrowser.Filter.ClearFilters"}}</button>
+                    <button type="button" data-action="clear-filter" {{#if (notEqual checkbox.isExpanded true)}}style="display: none;"{{/if}}>{{localize "PTU.CompendiumBrowser.Filter.ClearFilters"}}</button>
                 {{/if}}
             </div>
-            <dl {{#if (not checkbox.isExpanded true)}}style="display: none;"{{/if}}>
+            <dl {{#if (notEqual checkbox.isExpanded true)}}style="display: none;"{{/if}}>
                 {{#each checkbox.options as |option type|}}
                     <label>
                         <dt><input type="checkbox" name="{{type}}" {{checked option.selected}} /></dt>
@@ -68,10 +68,10 @@
             <div class="title">
                 <h3>{{localize range.label}}</h3>
                 {{#if range.changed}}
-                    <button type="button" data-action="clear-filter" {{#if (not range.isExpanded true)}}style="display: none;"{{/if}}>{{localize "PTU.CompendiumBrowser.Filter.ClearFilters"}}</button>
+                    <button type="button" data-action="clear-filter" {{#if (notEqual range.isExpanded true)}}style="display: none;"{{/if}}>{{localize "PTU.CompendiumBrowser.Filter.ClearFilters"}}</button>
                 {{/if}}
             </div>
-            <div {{#if (not range.isExpanded true)}}style="display: none;"{{/if}}>
+            <div {{#if (notEqual range.isExpanded true)}}style="display: none;"{{/if}}>
                 <input type="search" name="lowerBound-level" value="{{range.values.inputMin}}" placeholder="0cp">
                 -
                 <input type="search" name="upperBound-level" value="{{range.values.inputMax}}" placeholder="200,000gp">
@@ -83,7 +83,7 @@
             <div class="title">
                 <h3>{{localize slider.label}}</h3>
                 {{#if slider.changed}}
-                    <button type="button" data-action="clear-filter" {{#if (not slider.isExpanded true)}}style="display: none;"{{/if}}>{{localize "PTU.CompendiumBrowser.Filter.ClearFilters"}}</button>
+                    <button type="button" data-action="clear-filter" {{#if (notEqual slider.isExpanded true)}}style="display: none;"{{/if}}>{{localize "PTU.CompendiumBrowser.Filter.ClearFilters"}}</button>
                 {{/if}}
             </div>
             <div class="slidercontainer-flex">

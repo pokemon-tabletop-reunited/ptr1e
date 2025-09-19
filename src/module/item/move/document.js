@@ -119,12 +119,12 @@ class PTUMove extends PTUItem {
                 const statements = results.map((effect) =>
                     game.i18n.format("PTU.Broadcast.ApplyEffect", { actor: effect.actor.link, effect: effect.link, source: this.actor.link })
                 ).filter(s => s).join("<br/>")
-                const enrichedHtml = await TextEditor.enrichHTML(statements, { async: true })
+                const enrichedHtml = await foundry.applications.ux.TextEditor.implementation.enrichHTML(statements, { async: true })
                 const chatData = {
                     user: game.user.id,
                     speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-                    content: await renderTemplate("systems/ptu/static/templates/chat/effect-applied.hbs", { statements: enrichedHtml }),
-                    type: CONST.CHAT_MESSAGE_TYPES.OTHER,
+                    content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/chat/effect-applied.hbs", { statements: enrichedHtml }),
+                    type: CONST.CHAT_MESSAGE_STYLES.OTHER,
                     whisper: this.actor.hasPlayerOwner ? [game.user.id] : game.users.filter(u => u.isGM).map(u => u.id),
                 };
                 await ChatMessage.create(chatData);

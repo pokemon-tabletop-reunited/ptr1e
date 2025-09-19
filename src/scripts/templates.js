@@ -1,5 +1,5 @@
 export function registerTemplates() {
-    return loadTemplates([
+    return foundry.applications.handlebars.loadTemplates([
 
         // Actor Sheet Partials
         // "systems/ptu/templates/partials/active-effects.hbs",

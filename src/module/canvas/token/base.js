@@ -1,7 +1,7 @@
 import { BaseEffectPTU } from '../../item/effect-types/base.js';
 import { measureDistanceCuboid } from '../helpers.js';
 
-class PTUToken extends Token {
+class PTUToken extends foundry.canvas.placeables.Token {
 
     /** @override _drawBar(k) to also draw PTR variants of normal resource bars (such as temp health) */
     _drawBar(number, bar, data) {
@@ -103,19 +103,18 @@ class PTUToken extends Token {
         this.effects.bg.visible = false;
         this.effects.overlay = null;
 
-        // Categorize new effects
-        const tokenEffects = this.document.effects;
+        // Get actor effects (token effects are deprecated in favor of actor effects)
         const actorEffects = this.actor?.conditions.active.filter(c => c.isInHUD) ?? [];
         let overlay = {
-            src: this.document.overlayEffect,
+            src: null,
             tint: null
         };
 
         // Draw status effects
-        if (tokenEffects.length || actorEffects.length) {
+        if (actorEffects.length) {
             const promises = [];
 
-            // Draw actor effects first
+            // Draw actor effects
             for (let f of actorEffects) {
                 f.icon ??= f.img;
                 if (!f.icon) continue;
@@ -128,8 +127,6 @@ class PTUToken extends Token {
                 promises.push(this._drawEffect(f.icon, tint));
             }
 
-            // Next draw token effects
-            for (let f of tokenEffects) promises.push(this._drawEffect(f, null));
             await Promise.all(promises);
         }
 

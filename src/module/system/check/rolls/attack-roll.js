@@ -5,7 +5,7 @@ export class AttackRoll extends CheckRoll {
 
     /** @override */
     async render(options = {}) {
-        if(!this._evaluated) await this.evaluate({async: true});
+        if(!this._evaluated) await this.evaluate();
         const { isPrivate, flavor, template } = options;
 
         const attack = this.options.attack ?? options.attack ?? null;
@@ -53,7 +53,7 @@ export class AttackRoll extends CheckRoll {
         })();
 
         const chatData = {
-            formula: isPrivate ? "???" : this.formula,
+            formula: isPrivate ? "???" : (this.options.modifierValue ? `${this.formula}${this.options.modifierValue > 0 ? '+' : ''}${this.options.modifierValue}` : this.formula),
             user: game.user.id,
             tooltip: isPrivate ? "" : await this.getTooltip(),
             total: isPrivate ? "?" : Math.round(this.total * 100) / 100,
@@ -67,7 +67,7 @@ export class AttackRoll extends CheckRoll {
             tags
         }
 
-        const content = await renderTemplate(template ?? AttackRoll.CHAT_TEMPLATE, chatData);
-        return TextEditor.enrichHTML(content, {async: true})
+        const content = await foundry.applications.handlebars.renderTemplate(template ?? AttackRoll.CHAT_TEMPLATE, chatData);
+        return foundry.applications.ux.TextEditor.implementation.enrichHTML(content, {async: true})
     }
 }

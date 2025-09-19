@@ -11,10 +11,23 @@ foundry.js
 system.zip
 foundry-0.8.3.js
 
+# FoundryVTT Packs - ignore database files but keep source
 /packs/**/_source/*
 /packs/*.json
 /packs/.gitignore
 /packs/README.md
+
+# FoundryVTT Pack Database Files
+/packs/**/*.ldb
+/packs/**/*.log
+/packs/**/LOG
+/packs/**/LOG.old
+/packs/**/CURRENT
+/packs/**/LOCK
+/packs/**/MANIFEST-*
+/packs/**/lost/
+/packs/**/*.old
+
 app/
 client
 common

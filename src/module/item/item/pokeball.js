@@ -393,7 +393,7 @@ class PokeballItem extends PTUItemItem {
 
         const dialog = new Dialog({
             title: game.i18n.localize("PTU.Dialog.CaptureSuccess.Title"),
-            content: await renderTemplate("systems/ptu/static/templates/apps/capture-success.hbs", {
+                            content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/apps/capture-success.hbs", {
                 trainers,
                 locationOptions: CONFIG.PTU.data.capture.locationOptions,
                 location: game.settings.get("ptu", "captureDefaultPartyState") || "party"
@@ -451,7 +451,7 @@ class PokeballItem extends PTUItemItem {
 
                         await Actor.updateDocuments([pokemonUpdateData, trainerUpdateData]);
                         await ChatMessage.create({
-                            content: `<span class="statements">${await TextEditor.enrichHTML(game.i18n.format("PTU.Dialog.CaptureSuccess.ChatMessage", { pokemon: pokemon.link, trainer: trainer.link, location: (party.folders?.[location === "available" ? "root" : location]?.link ?? location) }), { async: true })}</span>`,
+                            content: `<span class="statements">${await foundry.applications.ux.TextEditor.implementation.enrichHTML(game.i18n.format("PTU.Dialog.CaptureSuccess.ChatMessage", { pokemon: pokemon.link, trainer: trainer.link, location: (party.folders?.[location === "available" ? "root" : location]?.link ?? location) }), { async: true })}</span>`,
                             speaker: ChatMessage.getSpeaker({ actor: trainer }),
                         })
                     }

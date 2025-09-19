@@ -82,7 +82,7 @@ class PTUCondition extends BaseEffectPTU {
             const autoRollRecovery = true ? true : false;
 
             if (this.system.persistent.formula) {
-                const roll = await this.system.persistent.damage().evaluate({ async: true });
+                const roll = await this.system.persistent.damage().evaluate();
                 const message = await roll.toMessage(
                     {
                         speaker: ChatMessage.getSpeaker({ actor: actor, token }),
@@ -320,7 +320,7 @@ class PTUCondition extends BaseEffectPTU {
      */
     static async HandleConfusion(move, actor) {
 
-        const coinFlip = await new Roll(`1dcc1`).evaluate({ async: true })
+                    const coinFlip = await new Roll(`1dcc1`).evaluate()
         await coinFlip.toMessage({ flavor: `<div class="header-bar"><p class="action">${actor.name} attempts a Confusion Check to use ${move.name}</p></div>`, speaker: ChatMessage.getSpeaker({ actor }) });
         const success = coinFlip.total === 1;
         if (!success) {

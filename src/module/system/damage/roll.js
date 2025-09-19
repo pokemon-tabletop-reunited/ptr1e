@@ -1,6 +1,6 @@
 /** @typedef {import('../../actor').PTUActor} PTUActor */
 
-class DamageRoll extends Roll {
+class DamageRoll extends foundry.dice.Roll {
     /**
      * @param {string} formula
      * @param {PTUActor} actor
@@ -28,7 +28,7 @@ class DamageRoll extends Roll {
 
     /** @override */
     async render(options = {}) {
-        if (!this._evaluated) await this.evaluate({ async: true });
+        if (!this._evaluated) await this.evaluate();
         const { isPrivate, template } = options;
 
         const attack = this.options.attack ?? options.attack ?? null;
@@ -93,7 +93,7 @@ class DamageRoll extends Roll {
             chatData.crit.show = true;
         }
 
-        return renderTemplate(template ?? DamageRoll.CHAT_TEMPLATE, chatData);
+        return foundry.applications.handlebars.renderTemplate(template ?? DamageRoll.CHAT_TEMPLATE, chatData);
     }
 
     /** @override */
@@ -111,13 +111,13 @@ class DamageRoll extends Roll {
         // Step 1 - Replace intermediate terms with evaluated numbers
         const intermediate = [];
         for (let term of this.terms) {
-            if (!(term instanceof RollTerm)) {
+            if (!(term instanceof foundry.dice.terms.RollTerm)) {
                 throw new Error("Roll evaluation encountered an invalid term which was not a RollTerm instance");
             }
             if (term.isIntermediate) {
-                await term.evaluate({ minimize, maximize, async: true });
+                await term.evaluate({ minimize, maximize });
                 this._dice = this._dice.concat(term.dice);
-                term = new NumericTerm({ number: term.total, options: term.options });
+                term = new foundry.dice.terms.NumericTerm({ number: term.total, options: term.options });
             }
             intermediate.push(term);
         }
@@ -128,7 +128,7 @@ class DamageRoll extends Roll {
 
         const fudges = this.options.fudges ?? [];
         if (fudges) {
-            for (const term of this.terms.filter(t => t instanceof DiceTerm)) {
+            for (const term of this.terms.filter(t => t instanceof foundry.dice.terms.DiceTerm)) {
                 const fudge = `${term.number}d${term.faces}`;
                 if (fudges[fudge]?.length > 0) {
                     term._evaluated = true;
@@ -141,7 +141,7 @@ class DamageRoll extends Roll {
 
         // Step 3 - Evaluate remaining terms
         for (let term of this.terms) {
-            if (!term._evaluated) await term.evaluate({ minimize, maximize, async: true });
+            if (!term._evaluated) await term.evaluate({ minimize, maximize });
         }
 
         // Step 4 - Evaluate the final expression

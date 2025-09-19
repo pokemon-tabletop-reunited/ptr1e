@@ -2,7 +2,7 @@ import { sluggify, sortStringRecord } from "../../../util/misc.js";
 import { RuleElements } from "../../rules/index.js";
 import { RULE_ELEMENT_FORMS, RuleElementForm } from "./rule-elements/index.js";
 
-class PTUItemSheet extends ItemSheet {
+class PTUItemSheet extends foundry.appv1.sheets.ItemSheet {
     /** @override */
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
@@ -33,13 +33,13 @@ class PTUItemSheet extends ItemSheet {
 
         this.object._updateIcon({update: true});
 
-        data.referenceEffect = this.item.referenceEffect ? await TextEditor.enrichHTML(`@UUID[${foundry.utils.duplicate(this.item.referenceEffect)}]`, {async: true}) : null;
-        data.itemEffect = this.item.system.effect ? await TextEditor.enrichHTML(foundry.utils.duplicate(this.item.system.effect), {async: true}) : this.item.system.effect;
+        data.referenceEffect = this.item.referenceEffect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(`@UUID[${foundry.utils.duplicate(this.item.referenceEffect)}]`, {async: true}) : null;
+        data.itemEffect = this.item.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(this.item.system.effect), {async: true}) : this.item.system.effect;
         data.itemCost = await (async () => {
             const cost = parseInt(this.item.system.cost);
             if(!cost) return this.item.system.cost || "-";
 
-            return TextEditor.enrichHTML(`@Poke[${this.item.uuid} noname]`, {async: true})
+            return foundry.applications.ux.TextEditor.implementation.enrichHTML(`@Poke[${this.item.uuid} noname]`, {async: true})
         })();
 
         const rules = this.item.toObject().system.rules ?? [];

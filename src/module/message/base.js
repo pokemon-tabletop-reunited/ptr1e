@@ -100,111 +100,29 @@ class ChatMessagePTU extends ChatMessage {
         return { ...actor?.getRollData(), ...item?.getRollData() };
     }
 
-    /** @override */
-    async getHTML() {
-        const $html = await super.getHTML();
-
-        const message = this;
-
-        $html.find('.tag.tooltip').tooltipster({
-			theme: `tooltipster-shadow ball-themes default`,
-			position: 'top'
-		});
-
-        $html.find(".buttons .button[data-action]").on("click", async event => {
-            event.preventDefault();
-
-            const $button = $(event.currentTarget);
-            const action = $button.data("action");
-
-            switch (action) {
-                case "damage": {
-                    const { actor } = this;
-                    if (!actor) return;
-                    if (!game.user.isGM && !actor.isOwner) return;
-
-                    const attack = message.attack;
-                    if (!attack) return;
-
-                    const options = actor.getRollOptions(["all", "attack-roll"]);
-
-                    const rollArgs = { event, options, rollResult: this.context.rollResult ?? null, };
-
-                    return attack.damage?.(rollArgs);
-                }
-                case "revert-damage": {
-                    const appliedDamageFlag = message.flags.ptu?.appliedDamage;
-                    if (!appliedDamageFlag) return;
-
-                    const actorOrToken = await fromUuid(appliedDamageFlag.uuid);
-                    const actor = actorOrToken.actor ?? (actorOrToken instanceof Actor) ? actorOrToken : null;
-                    if (!actor) return;
-                    await actor.undoDamage(appliedDamageFlag)
-
-                    $html.find("span.statements").addClass("reverted");
-                    $html.find(".buttons .button[data-action='revert-damage']").remove();
-                    return await message.update({ "flags.ptu.appliedDamage.isReverted": true });
-                }
-            }
-        })
-
-        if (this.flags.ptu?.appliedDamage && this.flags.ptu.appliedDamage?.isReverted) {
-            $html.find("span.statements").addClass("reverted");
-            $html.find(".buttons .button[data-action='revert-damage']").remove();
-        }
-
-        if (this.flags.ptu?.appliedDamage) {
-            const iwrInfo = $html.find(".iwr")[0];
-            if (iwrInfo) {
-                const iwrApplications = (() => {
-                    try {
-                        const parsed = JSON.parse(iwrInfo?.dataset.applications ?? "null");
-                        return Array.isArray(parsed) &&
-                            parsed.every(
-                                (a) =>
-                                    a instanceof Object &&
-                                    "category" in a &&
-                                    typeof a.category === "string" &&
-                                    "type" in a &&
-                                    typeof a.type === "string" &&
-                                    (
-                                        (
-                                            "adjustment" in a &&
-                                            typeof a.adjustment === "number"
-                                        )
-                                        ||
-                                        (
-                                            "modifier" in a &&
-                                            typeof a.modifier === "number"
-                                        )
-                                    )
-                            )
-                            ? parsed
-                            : null;
-                    } catch {
-                        return null;
-                    }
-                })();
-    
-                if (iwrApplications) {
-                    $(iwrInfo).tooltipster({
-                        theme: "crb-hover",
-                        maxWidth: 400,
-                        content: await renderTemplate("systems/ptu/static/templates/chat/iwr-breakdown.hbs", {
-                            applications: iwrApplications,
-                        }),
-                        contentAsHTML: true,
-                    });
-                }
-            }
-        }
-
-        this.activateListeners($html);
-
-        return $html;
-    }
-
     activateListeners($html) {
+        // Add click handler for dice formula to toggle dice tooltip in Foundry v13
+        const $diceFormulas = $html.find('.dice-formula');
+        
+        $diceFormulas.off('click').on('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            event.stopImmediatePropagation();
+            
+            // Debounce - prevent rapid clicks and turning off the tooltip right away
+            if ($(this).data('clicking')) return;
+            $(this).data('clicking', true);
+            setTimeout(() => $(this).data('clicking', false), 200);
+            
+            // Find the dice-tooltip in the same dice-result
+            const $tooltip = $(this).siblings('.dice-tooltip');
+            
+            if ($tooltip.length > 0) {
+                $tooltip.toggleClass('expanded-roll');
+                console.log('Toggled dice tooltip, now expanded:', $tooltip.hasClass('expanded-roll'));
+            }
+        });
+
         $html.find("button.use").on("click", async event => {
             event.preventDefault();
             event.stopImmediatePropagation();
@@ -213,7 +131,6 @@ class ChatMessagePTU extends ChatMessage {
 
             await item?.use();
         });
-        console.log('Apply Capture Hook')
         $html.find("button.apply-capture").on("click", async event => {
             event.preventDefault();
             event.stopImmediatePropagation();
@@ -238,7 +155,7 @@ class ChatMessagePTU extends ChatMessage {
 
             const dialog = new Dialog({
                 title: game.i18n.format("PTU.Dialog.ContestedCheck.Title", {name: target.actor.name, skill: game.i18n.localize(`PTU.Skills.${skill}`)}),
-                content: await renderTemplate("systems/ptu/static/templates/apps/contested-check.hbs", {
+                content: await foundry.applications.handlebars.renderTemplate("systems/ptu/static/templates/apps/contested-check.hbs", {
                     skill,
                     skillOptions,
                 }),

@@ -565,7 +565,8 @@ class PTUPokemonActor extends PTUActor {
                 const newSize = (() => {
                     const size = result.evolution.system.size.sizeClass;
                     switch (size) {
-                        case "Small": return { width: 0.5, height: 0.5 };
+                        case "Tiny": return { width: 0.5, height: 0.5 };
+                        case "Small": return { width: 1, height: 1 };
                         case "Medium": return { width: 1, height: 1 };
                         case "Large": return { width: 2, height: 2 };
                         case "Huge": return { width: 3, height: 3 };
@@ -579,7 +580,9 @@ class PTUPokemonActor extends PTUActor {
                 tokenUpdates["height"] = update["prototypeToken.height"];
             }
 
-            if (Object.keys(update).length > 0) await this.update(update);
+            if (Object.keys(update).length > 0) {
+                foundry.utils.mergeObject(changed, foundry.utils.expandObject(update));
+            }
             if (Object.keys(tokenUpdates).length > 0) {
                 for (const token of this.getActiveTokens()) {
                     await token.document.update(tokenUpdates);

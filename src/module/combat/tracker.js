@@ -1,63 +1,80 @@
 import { PTUCombatant } from "./combatant.js";
 
-class PTUCombatTracker extends CombatTracker {
+class PTUCombatTracker extends foundry.applications.sidebar.tabs.CombatTracker {
 
-    static get defaultOptions() {
-        return foundry.utils.mergeObject(super.defaultOptions, {
-            template: "systems/ptu/static/templates/sidebar/combat-tracker.hbs",
-        });
+    /** @inheritDoc */
+    static DEFAULT_OPTIONS = {
+        ...super.DEFAULT_OPTIONS,
+        actions: {
+            ...super.DEFAULT_OPTIONS.actions,
+            toggleActed: PTUCombatTracker.#onCombatantControl,
+        }
+    };
+
+    /** @override */
+    static PARTS = {
+        header: {
+            template: "systems/ptu/static/templates/sidebar/combat-tracker/header.hbs",
+        },
+        tracker: {
+            template: "systems/ptu/static/templates/sidebar/combat-tracker/tracker.hbs",
+        },
+        footer: super.PARTS.footer,
+    }
+
+    /** @inheritDoc */
+    async _preparePartContext(partId, context, options) {
+        context = await super._preparePartContext(partId, context, options);
+        switch ( partId ) {
+        case "header": await this._prepareHeaderContext(context, options); break;
+        }
+        return context;
+    }
+
+    /**
+     * Prepares the context for the header part of the combat tracker.
+     * @param {*} context 
+     * @param {*} options 
+     * @returns 
+     */
+    async _prepareHeaderContext(context, options) {
+        context.expBudget = context.combat?.expBudget;
+        return context;
     }
 
     /** @override */
-    async getData(options={}) {
-        const data = await super.getData(options);
-        data.turns = data.turns.map(t => {
-            const turn = {...t};
-            const combatant = this.viewed?.combatants.get(turn.id); 
-            if(combatant) {
-                turn.hasActed = combatant.hasActed;
-            }
-            return turn;
-        });
-        data.expBudget = data.combat?.expBudget;
-        return data;
+    async _prepareTurnContext(combat, combatant, index) {
+        const turn = await super._prepareTurnContext(combat, combatant, index);
+        turn.hasActed = combatant?.hasActed ?? false;
+        return turn;
     }
+
+    /**
+     * Handle performing some action for an individual combatant.
+     * @this {CombatTracker}
+     * @param {...any} args
+     */
+    static #onCombatantControl(...args) {
+        return this._onCombatantControl(...args);
+    }
+
 
     /** 
      * @override 
      * @param {PointerEvent} event
     */
-    async _onCombatantControl(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        const btn = event.currentTarget;
-        const li = btn.closest(".combatant");
+    async _onCombatantControl(event, target) {
+        const { combatantId } = target.closest("[data-combatant-id]")?.dataset ?? {};
         const combat = this.viewed;
-        /** @type {PTUCombatant} */
-        const c = combat.combatants.get(li.dataset.combatantId);
+        const combatant = combat?.combatants.get(combatantId);
+        if ( !combatant ) return;
         
-        // Switch control action
-        switch (btn.dataset.control) {
-
-            // Toggle combatant visibility
-            case "toggleHidden":
-                return c.toggleVisibility();
-
-            // Toggle combatant defeated flag
-            case "toggleDefeated":
-                return this._onToggleDefeatedStatus(c);
-
-            // Roll combatant initiative
-            case "rollInitiative":
-                return combat.rollInitiative([c.id]);
-
-            // Actively ping the Combatant
-            case "pingCombatant":
-                return this._onPingCombatant(c);
-
-            // Toggle acted state for the combatant
-            case "toggleActed":
-                return c.toggleActed({multi: event.shiftKey});
+        switch (target.dataset.action) {
+            case "toggleHidden": return combatant.toggleVisibility();
+            case "toggleDefeated": return this._onToggleDefeatedStatus(combatant);
+            case "rollInitiative": return combat.rollInitiative([combatant.id]);
+            case "pingCombatant": return this._onPingCombatant(combatant);
+            case "toggleActed": return combatant.toggleActed({multi: event.shiftKey});
         }
     }
 

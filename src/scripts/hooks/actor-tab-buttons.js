@@ -1,13 +1,24 @@
 export const ActorButtons = {
     listen() {
-        Hooks.on("renderSidebarTab", () => {
+        Hooks.on("renderAbstractSidebarTab", () => {
             if (!game.user.isGM) return;
             const sidebarButtons = $("#sidebar #actors .directory-header .action-buttons");
 
             if (sidebarButtons.find(".import-party").length > 0) return;
-            sidebarButtons.append(`<button class="import-party"><i class="fas fa-upload"></i>Import Party</button>`)
-            sidebarButtons.append(`<button class="mass-generator"><i class="fas fa-users"></i>Pkmn Generator</button>`)
-            sidebarButtons.append(`<button class="quick-build"><i class="fas fa-users"></i>NPC Quick Build</button>`)
+            
+            // Create grouped button rows for better layout
+            const secondRowDiv = $('<div class="ptu-button-row ptu-button-row-secondary"></div>');
+            const thirdRowDiv = $('<div class="ptu-button-row ptu-button-row-tertiary"></div>');
+            
+            // Add buttons to appropriate rows
+            secondRowDiv.append(`<button class="import-party"><i class="fas fa-upload"></i>Import Party</button>`);
+            secondRowDiv.append(`<button class="mass-generator"><i class="fas fa-users"></i>Pkmn Generator</button>`);
+            
+            thirdRowDiv.append(`<button class="quick-build"><i class="fas fa-users"></i>NPC Quick Build</button>`);
+            
+            // Append the new rows to the action buttons container
+            sidebarButtons.append(secondRowDiv);
+            sidebarButtons.append(thirdRowDiv);
 
             $("#sidebar #actors .directory-header .action-buttons .import-party").on("click", async (event) => {
                 await CONFIG.PTU.ui.party.sheetClass.importParty();
@@ -24,17 +35,17 @@ export const ActorButtons = {
             });
         });
 
-        Hooks.on("renderSidebarTab", () => {
+        Hooks.on("renderAbstractSidebarTab", () => {
             const footer = $(".compendium-sidebar .directory-footer");
             if (footer.find(".compendium-browser-btn").length > 0) return;
 
             footer.append(`<button type="button" class="compendium-browser-btn"><i class="fa-solid fa-magnifying-glass"></i> Compendium Browser</button>`);
-            footer.find(".compendium-browser-btn").on("click", () => {
-                game.ptu.compendiumBrowser.render(true)
+            footer.find(".compendium-browser-btn").on("click", async () => {
+                await game.ptu.compendiumBrowser.loadTab("items")
             });
         });
 
-        Hooks.on("renderSidebarTab", () => {
+        Hooks.on("renderAbstractSidebarTab", () => {
             if (!game.user.isGM) return;
             const sidebarButtons = $("#sidebar #items .directory-header .action-buttons");
 

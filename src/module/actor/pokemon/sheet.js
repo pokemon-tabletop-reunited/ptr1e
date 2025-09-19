@@ -292,7 +292,10 @@ export class PTUPokemonSheet extends PTUActorSheet {
 	}
 
 	_contextMenu(html) {
-		ContextMenu.create(this, html, ".move-item", [
+		// Convert jQuery object to HTMLElement for v13 compatibility
+		const htmlElement = html instanceof jQuery ? html[0] : html;
+		
+		foundry.applications.ux.ContextMenu.implementation.create(this, htmlElement, ".move-item", [
 			{
 				name: "Roll",
 				icon: '<i class="fas fa-dice"></i>',
@@ -302,8 +305,9 @@ export class PTUPokemonSheet extends PTUActorSheet {
 				name: "Send to Chat",
 				icon: '<i class="fas fa-comment"></i>',
 				callback: (ev) => {
-					const li = $(ev.currentTarget).parents('.item');
-					const item = this.actor.items.get(li.data('itemId'));
+					const li = ev.closest('.item');
+					const itemId = li.dataset.itemId;
+					const item = this.actor.items.get(itemId);
 					return item?.sendToChat?.();
 				}
 			},
@@ -311,8 +315,9 @@ export class PTUPokemonSheet extends PTUActorSheet {
 				name: "Edit",
 				icon: '<i class="fas fa-edit"></i>',
 				callback: (ev) => {
-					const li = $(ev.currentTarget).parents('.item');
-					const item = this.actor.items.get(li.data('itemId'));
+					const li = ev.closest('.item');
+					const itemId = li.dataset.itemId;
+					const item = this.actor.items.get(itemId);
 					item.sheet.render(true);
 				}
 			},
@@ -321,7 +326,7 @@ export class PTUPokemonSheet extends PTUActorSheet {
 				icon: '<i class="fas fa-trash"></i>',
 				callback: this._onItemDelete.bind(this),
 			},
-		], {})
+		], { jQuery: false })
 	}
 
 	/**
@@ -461,7 +466,7 @@ export class PTUPokemonSheet extends PTUActorSheet {
 					yes: async (html) => {
 						const bonusTxt = html.find('input[name="accuracy-modifier"]').val()
 
-						const bonus = !isNaN(Number(bonusTxt)) ? Number(bonusTxt) : parseInt((await (new Roll(bonusTxt)).roll({ async: true })).total);
+						const bonus = !isNaN(Number(bonusTxt)) ? Number(bonusTxt) : parseInt((await (new Roll(bonusTxt)).roll()).total);
 						if (!isNaN(bonus)) {
 							return resolve(bonus);
 						}

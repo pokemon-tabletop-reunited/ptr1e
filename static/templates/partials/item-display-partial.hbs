@@ -125,8 +125,8 @@
 {{else}}
     <ol class="item-list pl-1" {{#if category}}data-category="{{category}}"{{/if}}>
         {{#each items as | item |}}
-            {{#unless (and item.grantedBySameType (not type "condition"))}}
-                <li class="item {{item.type}}-item {{#if (is item.active false)}}disabled{{/if}}" data-item-id="{{item._id}}">
+            {{#unless (and item.grantedBySameType (notEqual type "condition"))}}
+        <li class="item {{item.type}}-item {{#if (is item.active false)}}disabled{{/if}}" data-item-id="{{item._id}}">
                     {{#if item.rollable}}
                         <div class="item-icon rollable">
                             <img class="icon" src="{{item.img}}" title="{{item.name}} ({{item.type}})"/>
@@ -199,7 +199,7 @@
     <ol class="nested-items show">
         {{#each parent.grants as |item|}}
             <li class="item {{item.type}}-item" data-item-id="{{item._id}}">
-                {{#if (and system.frequency (not system.frequency "Static"))}}
+                {{#if (and system.frequency (notEqual system.frequency "Static"))}}
                     <div class="item-icon rollable">
                         <img class="icon" src="{{item.img}}" title="{{item.name}} ({{item.type}})"/>
                         <img class="dice" src="/icons/svg/d20.svg" title="Roll {{item.name}}">

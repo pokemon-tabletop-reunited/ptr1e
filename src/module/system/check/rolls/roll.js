@@ -1,6 +1,12 @@
-class CheckRoll extends Roll {
+class CheckRoll extends foundry.dice.Roll {
     get template() {
         return "systems/ptu/static/templates/chat/check/check-roll.hbs";
+    }
+
+    get total() {
+        const baseTotal = super.total;
+        const modifierValue = this.options.modifierValue ?? 0;
+        return baseTotal + modifierValue;
     }
 
     constructor(formula, data, options) {
@@ -13,7 +19,7 @@ class CheckRoll extends Roll {
     }
 
     async render(options = {}) {
-        if(!this._evaluated) await this.evaluate({async: true});
+        if(!this._evaluated) await this.evaluate();
 
         const { isPrivate, flavor, template } = options;
         let containsPrivate = isPrivate ?? this.options.isPrivate ?? false;
@@ -64,7 +70,7 @@ class CheckRoll extends Roll {
             })()
         }
 
-        return renderTemplate(template ?? this.template, chatData);
+        return foundry.applications.handlebars.renderTemplate(template ?? this.template, chatData);
     }
 }
 

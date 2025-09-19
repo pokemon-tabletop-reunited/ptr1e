@@ -201,7 +201,7 @@ class PTUDamageCheck extends PTUDiceCheck {
                 const otherModifiers = this.damageBaseModifiers.filter(m => m.slug != "damage-base");
 
                 const newBaseDb = await (async () => {
-                    const fiveStrikeRoll = await new Roll("1d8").evaluate({ async: true });
+                    const fiveStrikeRoll = await new Roll("1d8").evaluate();
                     switch (fiveStrikeRoll.total) {
                         case 1: {
                             this.fiveStrikeResult = 1;
@@ -336,26 +336,43 @@ class PTUDamageCheck extends PTUDiceCheck {
             return a;
         }, {});
 
-        if (this.options.has("charge:bonus") && this.options.has("move:type:electric")) {
-            diceModifierParts["charge"] = `${diceString}+${diceModifier}`;
+        const diceModifierTotal = Object.values(diceModifierParts).reduce((a, b) => a + b, 0);
+        const totalModifier = (this.statistic.totalModifier ?? 0) + diceModifierTotal;
+
+        // Fix for +0 modifier concatenation issue
+        let rollFormula;
+        if (totalModifier === 0) {
+            rollFormula = diceString;
+        } else {
+            const signedModifier = totalModifier > 0 ? `+${totalModifier}` : `${totalModifier}`;
+            rollFormula = `${diceString}${signedModifier}`;
         }
-
-        const diceModifiers = Object.values(diceModifierParts).reduce((a, b) => `${a} + ${b}`, "");
-        options.diceModifiers = diceModifiers;
-
-        const roll = new this.rollCls(`${diceString}${totalModifiersPart}${diceModifiers}`, {}, options);
-        const rollResult = await roll.evaluate({ async: true });
+        const roll = await new DamageRoll(rollFormula, {}, options).evaluate();
 
         const critDice = `${diceString}+${diceString}`;
-        const totalModifiersPartCrit = ((this.statistic.totalModifier ?? 0) + diceModifier).signedString() ?? "";
-        const diceResult = rollResult.terms.find(t => t instanceof DiceTerm);
+        
+        // Use the original damageBaseModifier value for critical hit calculation
+        // This represents the damage base modifier that should be doubled
+        const otherModifiersTotal = (this.statistic.totalModifier ?? 0) - diceModifier;
+        
+        // For critical hits, double the damage base modifier
+        const totalModifiersPartCrit = (otherModifiersTotal + (diceModifier * 2))?.signedString() ?? "";
+        
+        // Fix for +0 modifier concatenation issue in crit roll
+        let critRollFormula;
+        if (totalModifiersPartCrit === "+0" || totalModifiersPartCrit === "0") {
+            critRollFormula = critDice;
+        } else {
+            critRollFormula = `${critDice}${totalModifiersPartCrit}`;
+        }
+
+        const diceResult = roll.terms.find(t => t instanceof foundry.dice.terms.DiceTerm);
         const fudges = {
             [`${diceResult.number}d${diceResult.faces}`]: diceResult.results,
         }
 
         const hasCrit = Object.values(this.outcomes).some(o => o == "crit-hit")
-        const critRoll = new this.rollCls(`${critDice}${totalModifiersPartCrit}${diceModifiers}`, {}, { ...options, crit: { hit: true, show: hasCrit, nonCritValue: rollResult.total }, fudges });
-        const critRollResult = await critRoll.evaluate({ async: true });
+        const critRoll = await new DamageRoll(critRollFormula, {}, { ...options, crit: { hit: true, show: hasCrit, nonCritValue: roll.total }, fudges }).evaluate();
 
         const flags = {
             core: {

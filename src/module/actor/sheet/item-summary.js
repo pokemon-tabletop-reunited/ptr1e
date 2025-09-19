@@ -98,7 +98,7 @@ class ItemSummaryRenderer {
         const content = "<p>" + (slice > 0 ? textContent.slice(0, slice) + "</p><hr><p>" + textContent.slice(slice) : textContent) + "</p>"
             + (item.referenceEffect ? `<hr><p>@UUID[${item.referenceEffect}]</p>` : "");
 
-        element.innerHTML = await TextEditor.enrichHTML(content, {async: true})
+        element.innerHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(content, {async: true})
         return element;
     }
 

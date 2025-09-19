@@ -7,7 +7,7 @@
 
         </div>
         {{#each types as |type|}}
-            {{#unless (or (and (is type "Nuclear") (not (getGameSetting "homebrew.nuclearType") true)) (and (is type "Shadow") (not (getGameSetting "homebrew.shadowType") true)))}}
+            {{#unless (or (and (is type "Nuclear") (notEqual (getGameSetting "homebrew.nuclearType") true)) (and (is type "Shadow") (notEqual (getGameSetting "homebrew.shadowType") true)))}}
                 <div class="type" data-defensive="{{type}}" data-type="{{type}}">
                     <img src="{{lookup (lookup (lookup @root/typeEffectiveness type) "images") "icon"}}" />
                 </div>
@@ -15,12 +15,12 @@
         {{/each}} 
 
         {{#each typeEffectiveness as |types key|}}
-            {{#unless (or (and (is key "Nuclear") (not (getGameSetting "homebrew.nuclearType") true)) (and (is key "Shadow") (not (getGameSetting "homebrew.shadowType") true)))}}
+                            {{#unless (or (and (is key "Nuclear") (notEqual (getGameSetting "homebrew.nuclearType") true)) (and (is key "Shadow") (notEqual (getGameSetting "homebrew.shadowType") true)))}}
                 <div class="type" data-offensive="{{key}}" data-type="{{key}}">
                     <img src="{{types.images.icon}}" />
                 </div>
                 {{#each types.effectiveness as |type key2|}}
-                    {{#unless (or (and (is key2 "Nuclear") (not (getGameSetting "homebrew.nuclearType") true)) (and (is key2 "Shadow") (not (getGameSetting "homebrew.shadowType") true)))}}
+                    {{#unless (or (and (is key2 "Nuclear") (notEqual (getGameSetting "homebrew.nuclearType") true)) (and (is key2 "Shadow") (notEqual (getGameSetting "homebrew.shadowType") true)))}}
                         {{#with (lookup (lookup (lookup @root/typeEffectiveness key2) "effectiveness") key) as |value|}}
                             <div class="type" data-offensive="{{key}}" data-defensive="{{key2}}" data-modifier="{{value}}">
                                 <span>{{value}}</span>
