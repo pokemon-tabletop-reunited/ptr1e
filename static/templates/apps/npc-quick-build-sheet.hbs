@@ -29,6 +29,9 @@
 
         {{#if (eq data.page 1)}}
         <div class="trainer-info">
+            <label class="profile-img-label">{{localize "PTU.NpcQuickBuild.Image"}}</label>
+            <img class="profile-img fb-40" src="{{data.trainer.img}}" data-edit="trainer.img" title="Trainer Image" />
+
             <label>{{localize "PTU.NpcQuickBuild.Alliance"}}</label>
             <select name="alliance">
                 {{selectOptions allianceOptions selected=data.alliance localize=true}}
@@ -48,6 +51,11 @@
 
             <label>{{localize "PTU.NpcQuickBuild.Classes"}}</label>
             <input class="ptu-tagify trainer-classes" name="trainer.classes.selected" data-filter-name="classes" value="{{json data.trainer.classes.selected}}" data-dtype="JSON" />
+
+            {{#if data.didSelectClassesManually}}
+            <label>{{localize "PTU.NpcQuickBuild.ClassesRestricted"}}</label>
+            <input type="checkbox" name="trainer.classes.restricted" {{#if data.trainer.classes.restricted}}checked{{/if}} />
+            {{/if}}
         </div>
         {{/if}}
 
