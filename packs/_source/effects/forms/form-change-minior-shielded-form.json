@@ -4,7 +4,7 @@
   "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
   "system": {
     "origin": "",
-    "effect": "This effect will encase your Minior Core in it's shielded form. See the Shields Down ability.",
+    "effect": "This effect will encase your Minior Core in it's shielded form.\n\n@Embed[Compendium.ptu.abilities.Item.seegKFqAxL83s210]",
     "snippet": "",
     "rules": [
       {
@@ -47,7 +47,7 @@
     "duration": {
       "value": -1,
       "unit": "unlimited",
-      "expiry": "turn-start"
+      "expiry": null
     },
     "start": {
       "value": 0,
@@ -62,20 +62,25 @@
   },
   "effects": [],
   "folder": "DJzDYBNllxgyeiok",
-  "ownership": {
-    "default": 0
+  "flags": {
+    "core": {},
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "testing",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.0.12",
-    "coreVersion": "13.350",
-    "createdTime": 1696275453322,
-    "modifiedTime": 1706024522433,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
+    "systemVersion": "4.3.7",
+    "createdTime": 1751140492835,
+    "modifiedTime": 1751140527555,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
   },
-  "_id": "fLquWNOauJ0Ko131",
-  "sort": 700000
+  "_id": "fLquWNOauJ0Ko131"
 }

@@ -6,9 +6,22 @@
     "origin": "",
     "effect": "The user resists Ground-Type and Water-Type attacks one step further. Defensive.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "Effectiveness",
+        "predicate": [],
+        "type": "ground",
+        "value": 0.5
+      },
+      {
+        "key": "Effectiveness",
+        "predicate": [],
+        "type": "water",
+        "value": 0.5
+      }
+    ],
     "enabled": true,
-    "slug": null,
+    "slug": "mud-dweller",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -23,22 +36,38 @@
     "tier": "",
     "automation": []
   },
-  "_id": "kmiVtixIr3OaG1py",
   "effects": [],
-  "folder": null,
-  "sort": 40000000,
-  "ownership": {
-    "default": 0
+  "folder": "5zbgfZnpuwCCtiL7",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.kmiVtixIr3OaG1py"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1748550097878,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "kmiVtixIr3OaG1py"
 }

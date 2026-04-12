@@ -6,9 +6,16 @@
     "origin": "",
     "effect": "Connection - Lock On. By activating this Ability the target may use Lock-On as a Rapid Action.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.4JCuFulwE1TXGhPW"
+      }
+    ],
     "enabled": true,
-    "slug": null,
+    "slug": "targeting-system",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -23,22 +30,39 @@
     "tier": "",
     "automation": []
   },
-  "_id": "91x5a2EES67f8P8A",
   "effects": [],
-  "folder": null,
-  "sort": 9400000,
-  "ownership": {
-    "default": 0
+  "folder": "DYj3F5ErpWYb6bsV",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.91x5a2EES67f8P8A"
+    },
+    "ptu": {
+      "abilityChosen": "high",
+      "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
-    "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.v12-beta.1",
+    "createdTime": 1718705813446,
+    "modifiedTime": 1748550833300,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "91x5a2EES67f8P8A"
 }

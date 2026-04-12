@@ -4,16 +4,24 @@
   "img": "/systems/ptu/css/images/icons/ability_icon.png",
   "system": {
     "origin": "",
-    "effect": "Connection - Sandstorm. The user uses Sandstorm, ignoring Frequency. The user can choose to consume an additional use of this Ability as a Free Action to have Sandstorm instead set @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.EsuHFXwpAtJdxs0Q].\nBonus: The user is immune to Hit Point loss from @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.rMX0Jwj508pAaIWZ] Weathers.",
+    "effect": "Connection - Sandstorm. The user uses Sandstorm, ignoring Frequency. The user can choose to consume an additional use of this Ability as a Free Action to have Sandstorm instead set @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.EsuHFXwpAtJdxs0Q].\nBonus: The user is immune to Hit Point loss from @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.rMX0Jwj508pAaIWZ] Weathers.\n\n@UUID[Compendium.ptu.effects.Item.DkBFKH0w90KHOHYf]",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Item.PmkORTpsLEJlxWjb",
+        "flag": "sandstorm-weather-playtest"
+      }
+    ],
     "enabled": true,
     "slug": "sand-stream-weather-playtest",
     "schema": {
       "version": 0.11,
       "lastMigration": null
     },
-    "referenceEffect": "Compendium.ptu.effects.Item.DkBFKH0w90KHOHYf",
+    "referenceEffect": "",
     "source": {
       "value": "PTR Compendiums"
     },
@@ -27,26 +35,44 @@
     "tier": "",
     "automation": []
   },
-  "_id": "GyEo7TjIdteGHK8W",
   "effects": [],
   "folder": "MsdL8dYgE7JbY1ya",
-  "sort": 1900000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.dNI65Cb2U5AKUhmu"
+    },
     "ptu": {
-      "showInTokenPanel": true
+      "showInTokenPanel": true,
+      "itemGrants": {
+        "sandstorm-weather-playtest": {
+          "id": "Cm7QXGmiv4FWNjwp",
+          "onDelete": "detach"
+        }
+      }
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
-    "coreVersion": "13.350",
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.3.0",
+    "systemVersion": "4.3.v12-beta.1",
     "createdTime": 1707854107379,
-    "modifiedTime": 1718112886250,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1736349898742,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "GyEo7TjIdteGHK8W"
 }

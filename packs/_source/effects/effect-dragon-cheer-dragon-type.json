@@ -1,0 +1,89 @@
+{
+  "name": "Effect: Dragon Cheer: Dragon Type",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.critRange.mod",
+        "phase": "applyAEs",
+        "value": 4,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-dragon-cheer-dragon-type",
+    "schema": {
+      "version": 0.115,
+      "lastMigration": {
+        "datetime": "2024-03-19T17:05:42.931Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.2.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "jEUxga7myk5tT1v8",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
+    "createdTime": 1710126979111,
+    "modifiedTime": 1739707512616,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "n9OtXvRaxOgx1dQc"
+}

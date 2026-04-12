@@ -1,77 +1,67 @@
 {
+  "folder": "yvW9o33qyYDEIMRA",
   "name": "Rock Climb",
-  "type": "move",
-  "img": "/systems/ptu/css/images/types2/NormalIC_Icon.png",
-  "folder": "lWQOqDm2AOGwGM16",
+  "type": "item",
+  "img": "/systems/ptu/static/css/images/icons/item_icon.png",
   "system": {
     "origin": "",
-    "effect": "Rock Climb Confuses the target on 17+.",
+    "effect": "",
     "snippet": "",
     "rules": [
       {
-        "key": "ApplyEffect",
+        "key": "GrantItem",
         "predicate": [],
-        "selectors": "{item|id}-damage-received",
-        "uuid": "Compendium.ptu.effects.Item.pLKjxFPUOZQHAcXH",
-        "range": "17",
-        "value": "",
-        "affects": "target"
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.uomsKYZy3Di509MG"
       }
     ],
     "enabled": true,
     "slug": "rock-climb",
     "schema": {
-      "version": 0.11,
+      "version": null,
       "lastMigration": null
     },
-    "referenceEffect": "Compendium.ptu.effects.Item.pLKjxFPUOZQHAcXH",
+    "referenceEffect": "",
     "source": {
-      "value": "PTR Compendiums"
+      "value": "Homebrew"
     },
     "stackSlugs": false,
-    "keywords": [
-      "Dash",
-      "Target 1"
-    ],
-    "sheerForce": false,
-    "toughClaws": false,
-    "technician": false,
-    "reckless": false,
-    "ironFist": false,
-    "megaLauncher": false,
-    "punkRock": false,
-    "strongJaw": false,
-    "type": "Normal",
-    "category": "Physical",
-    "damageBase": "8",
-    "frequency": "At-Will",
-    "ac": "5",
-    "range": "Melee",
-    "contestType": "Cool - Desperation",
-    "stab": false,
-    "damageBonus": 0,
-    "isStruggle": false,
-    "automation": []
+    "keywords": [],
+    "quantity": "1",
+    "category": "",
+    "cost": "0",
+    "consumable": 0,
+    "subtype": "",
+    "container": false
   },
-  "_id": "uomsKYZy3Di509MG",
   "effects": [],
-  "sort": 82000000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
     "ptu": {
-      "showInTokenPanel": true
+      "showInTokenPanel": false
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.2.6",
-    "coreVersion": "13.350",
-    "createdTime": 1692963260348,
-    "modifiedTime": 1712495134029,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.7",
+    "createdTime": 1749994132740,
+    "modifiedTime": 1749994213987,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "uomsKYZy3Di509MG"
 }

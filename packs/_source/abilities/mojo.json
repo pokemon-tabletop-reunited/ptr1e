@@ -6,7 +6,15 @@
     "origin": "",
     "effect": "Normal Types are not immune to the user's Ghost Type Moves.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [],
+        "selectors": "damage-received",
+        "affects": "target",
+        "uuid": "Item.DZ4TrvuMEHEsStlP"
+      }
+    ],
     "enabled": true,
     "slug": "mojo",
     "schema": {
@@ -23,26 +31,39 @@
     "tier": "",
     "automation": []
   },
-  "_id": "BIZSAi0aii3iYkee",
   "effects": [],
-  "folder": null,
-  "sort": 11600000,
-  "ownership": {
-    "default": 0
-  },
+  "folder": "5zbgfZnpuwCCtiL7",
   "flags": {
     "ptu": {
+      "abilityChosen": "high",
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.BIZSAi0aii3iYkee"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
-    "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.7",
+    "createdTime": 1739184072410,
+    "modifiedTime": 1739184072410,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "BIZSAi0aii3iYkee"
 }

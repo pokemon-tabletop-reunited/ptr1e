@@ -1,76 +1,67 @@
 {
+  "folder": "yvW9o33qyYDEIMRA",
   "name": "Whirlpool",
-  "type": "move",
-  "img": "/systems/ptu/css/images/types2/WaterIC_Icon.png",
-  "folder": "lWQOqDm2AOGwGM16",
+  "type": "item",
+  "img": "/systems/ptu/static/css/images/icons/item_icon.png",
   "system": {
     "origin": "",
-    "effect": "The target is put in a Vortex.",
+    "effect": "",
     "snippet": "",
     "rules": [
       {
-        "key": "ApplyEffect",
+        "key": "GrantItem",
         "predicate": [],
-        "selectors": "{item|id}-damage-received",
-        "uuid": "Compendium.ptu.effects.Item.BuK1xNKNhBn1DZDu",
-        "range": "1",
-        "value": "",
-        "affects": "target"
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.DUWjQv05jUb2p6gj"
       }
     ],
     "enabled": true,
     "slug": "whirlpool",
     "schema": {
-      "version": 0.11,
+      "version": null,
       "lastMigration": null
     },
     "referenceEffect": "",
     "source": {
-      "value": "PTR Compendiums"
+      "value": "Homebrew"
     },
     "stackSlugs": false,
-    "keywords": [
-      "Target 1"
-    ],
-    "sheerForce": false,
-    "toughClaws": false,
-    "technician": false,
-    "reckless": false,
-    "ironFist": false,
-    "megaLauncher": false,
-    "punkRock": false,
-    "strongJaw": false,
-    "type": "Water",
-    "category": "Special",
-    "damageBase": "4",
-    "frequency": "Scene x2",
-    "ac": "4",
-    "range": "Range 3",
-    "contestType": "Beauty - Safe Option",
-    "stab": false,
-    "damageBonus": 0,
-    "isStruggle": false,
-    "automation": []
+    "keywords": [],
+    "quantity": "1",
+    "category": "",
+    "cost": "0",
+    "consumable": 0,
+    "subtype": "",
+    "container": false
   },
-  "_id": "DUWjQv05jUb2p6gj",
   "effects": [],
-  "sort": 17500000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
     "ptu": {
-      "showInTokenPanel": true
+      "showInTokenPanel": false
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.2.2",
-    "coreVersion": "13.350",
-    "createdTime": 1692963260348,
-    "modifiedTime": 1710781921901,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.7",
+    "createdTime": 1749994039260,
+    "modifiedTime": 1749994120546,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "DUWjQv05jUb2p6gj"
 }

@@ -1,0 +1,71 @@
+{
+  "name": "Effect: Rainbow Light",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Effects: You create a Rainbow lasting one full round. While this Rainbow persists, the Effect Range of all Allies is increased by +3.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "effect-range",
+        "value": 3
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-rainbow-light",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "vnVIDDp4I8voMJGY",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.327",
+    "createdTime": 1715903952620,
+    "modifiedTime": 1715904119600,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "h7nk12FMn7QlkLuJ"
+}

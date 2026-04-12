@@ -1,0 +1,80 @@
+{
+  "name": "Effect: Steadfast",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spd.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "initiative",
+        "value": 5
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-steadfast",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "xqvAUwE5uJFqu1hr",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.2",
+    "coreVersion": "12.327",
+    "createdTime": 1713701384922,
+    "modifiedTime": 1718708845356,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "HZfLOqAt876WknD7"
+}

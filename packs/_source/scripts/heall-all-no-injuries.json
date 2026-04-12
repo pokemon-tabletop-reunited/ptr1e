@@ -1,0 +1,30 @@
+{
+  "name": "Heall All - No Injuries",
+  "type": "script",
+  "scope": "global",
+  "author": "dgZ5HZCH2iuaMd7q",
+  "img": "https://assets.forge-vtt.com/bazaar/core/icons/svg/aura.svg",
+  "command": "// Heal all selected actors excluding injuries to injured max health:\ncanvas.tokens.controlled.forEach(async (token) => {\n    await token.actor.update({\"data.health.value\": token.actor.system.health.max});\n})",
+  "folder": null,
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.6",
+    "coreVersion": "12.327",
+    "createdTime": 1683463830735,
+    "modifiedTime": 1702607836306,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "CHzaIs7kt5MCDQPO"
+}

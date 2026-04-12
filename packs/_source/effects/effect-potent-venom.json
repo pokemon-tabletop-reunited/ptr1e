@@ -1,0 +1,85 @@
+{
+  "folder": "PYV1oTT1agJnu0Uf",
+  "name": "Effect: Potent Venom",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "the Effect Range of your Poison-Type Pokémon's Moves increases by +2.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.effectRange.mod",
+        "value": 2,
+        "predicate": [
+          "move:poison"
+        ],
+        "phase": "applyAEs",
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-potent-venom",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-16T22:16:23.548Z",
+        "version": {
+          "schema": 0.11,
+          "foundry": "11.315",
+          "system": "4.0.13"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.effects.Item.JctiLYILspKPR8eF"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
+    "createdTime": 1694203308552,
+    "modifiedTime": 1722708201650,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "LkI7Vir2615KgjK4"
+}

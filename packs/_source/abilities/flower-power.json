@@ -6,9 +6,36 @@
     "origin": "",
     "effect": "The user may perform damaging Grass Type Moves as if they were their choice of either Physical or Special.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "gte": [
+            "{actor|system.stats.atk.total}",
+            "{actor|system.stats.spatk.total}"
+          ],
+          "and": "move:type:grass"
+        },
+        "hideIfDisabled": false,
+        "selectors": "special-damage",
+        "value": "@actor.system.stats.atk.total - @actor.system.stats.spatk.total"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "gte": [
+            "{actor|system.stats.spatk.total}",
+            "{actor|system.stats.atk.total}"
+          ],
+          "and": "move:type:grass"
+        },
+        "hideIfDisabled": false,
+        "selectors": "physical-damage",
+        "value": "@actor.system.stats.spatk.total - @actor.system.stats.atk.total"
+      }
+    ],
     "enabled": true,
-    "slug": null,
+    "slug": "flower-power",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -23,22 +50,29 @@
     "tier": "",
     "automation": []
   },
-  "_id": "4h8a0iPSmxjNPhuG",
   "effects": [],
-  "folder": null,
-  "sort": 6000000,
-  "ownership": {
-    "default": 0
+  "folder": "30TzXWWKs7oiTVXe",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.4h8a0iPSmxjNPhuG"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1714337692946,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "4h8a0iPSmxjNPhuG"
 }

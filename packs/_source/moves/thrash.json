@@ -2,12 +2,31 @@
   "name": "Thrash",
   "type": "move",
   "img": "/systems/ptu/css/images/types2/NormalIC_Icon.png",
-  "folder": "lWQOqDm2AOGwGM16",
+  "folder": "rLhNf1PHSvJJoR3F",
   "system": {
     "origin": "",
     "effect": "After damage is dealt, the user becomes Enraged and Confused.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "origin",
+        "selectors": "{item|id}-damage-dealt",
+        "uuid": "Compendium.ptu.effects.Item.pLKjxFPUOZQHAcXH",
+        "range": "1",
+        "value": ""
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-dealt",
+        "uuid": "Compendium.ptu.effects.Item.XWqLLq9Vb9h0eZwh",
+        "range": "1",
+        "value": "",
+        "affects": "origin"
+      }
+    ],
     "enabled": true,
     "slug": "thrash",
     "schema": {
@@ -43,25 +62,37 @@
     "isStruggle": false,
     "automation": []
   },
-  "_id": "czDZWjn9TbP9ON4q",
   "effects": [],
-  "sort": 56300000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.moves.Item.czDZWjn9TbP9ON4q"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.7",
+    "coreVersion": "12.331",
     "createdTime": 1692963260348,
-    "modifiedTime": 1707815126463,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1738617415751,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "czDZWjn9TbP9ON4q"
 }

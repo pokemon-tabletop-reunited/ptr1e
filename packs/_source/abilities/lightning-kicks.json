@@ -6,9 +6,20 @@
     "origin": "",
     "effect": "The user may activate this Ability to use any Move with “Kick” in the name as a Priority Move, and gain a +4 Bonus to the attack’s Accuracy Roll.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "manual"
+        ],
+        "label": "(Lightning Kicks) Priority Kick Move?",
+        "hideIfDisabled": false,
+        "selectors": "attack-roll",
+        "value": 4
+      }
+    ],
     "enabled": true,
-    "slug": null,
+    "slug": "lightning-kicks",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -23,22 +34,30 @@
     "tier": "",
     "automation": []
   },
-  "_id": "U1njFt3YcwCL0dNr",
   "effects": [],
-  "folder": null,
-  "sort": 26400000,
-  "ownership": {
-    "default": 0
+  "folder": "yqQWkp0qleAyLIDc",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.U1njFt3YcwCL0dNr"
+    },
+    "ptu": {
+      "abilityChosen": "high",
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1713714676291,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "U1njFt3YcwCL0dNr"
 }

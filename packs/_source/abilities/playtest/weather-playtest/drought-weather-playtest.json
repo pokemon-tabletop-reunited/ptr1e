@@ -6,7 +6,14 @@
     "origin": "",
     "effect": "Effect: Connection - Sunny Day. The user uses Sunny Day, ignoring Frequency. The user can choose to consume an additional use of this Ability as a Free Action to have Sunny Day instead set @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.YBWVC5IMxZYqnabl].",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Item.vy5jfG8kq8bhKlrr"
+      }
+    ],
     "enabled": true,
     "slug": "drought",
     "schema": {
@@ -27,26 +34,38 @@
     "tier": "",
     "automation": []
   },
-  "_id": "YVneyZuvSHsIo0bu",
   "effects": [],
   "folder": "MsdL8dYgE7JbY1ya",
-  "sort": 1800000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.BRUgqjGF8THEEA7W"
+    },
     "ptu": {
       "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
-    "coreVersion": "13.350",
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.3.0",
+    "systemVersion": "4.3.v12-beta.1",
     "createdTime": 1707854107379,
-    "modifiedTime": 1718112859048,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1736345582230,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "YVneyZuvSHsIo0bu"
 }

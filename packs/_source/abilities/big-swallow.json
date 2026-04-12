@@ -6,7 +6,14 @@
     "origin": "",
     "effect": "Connection - Stockpile. Whenever the user uses Swallow or Spit Up, it may treat the Stockpile Count as if it was one higher. This Ability has no effect if the Stockpile Counter is already 3.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.VTgi7fLjJYUtu8GT"
+      }
+    ],
     "enabled": true,
     "slug": "big-swallow",
     "schema": {
@@ -23,26 +30,29 @@
     "tier": "",
     "automation": []
   },
-  "_id": "WLrVaLfnMOk0th5t",
   "effects": [],
-  "folder": null,
-  "sort": 28200000,
-  "ownership": {
-    "default": 0
-  },
+  "folder": "A0qKc2rzyt8w6lqB",
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.WLrVaLfnMOk0th5t"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1712518692270,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "WLrVaLfnMOk0th5t"
 }

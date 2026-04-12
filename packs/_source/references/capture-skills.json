@@ -1,14 +1,59 @@
 {
   "name": "Capture Skills",
-  "type": "reference",
-  "img": "/systems/ptu/static/css/images/icons/reference_icon.png",
+  "type": "capability",
+  "img": "/systems/ptu/static/css/images/icons/capability_icon.png",
   "system": {
-    "origin": "Capture Techniques",
-    "effect": "Static Effect: You gain a Skill Edge for which you qualify. It must be applied to Acrobatics, Athletics, Stealth, Survival, Guile, or Perception. You may take Capture Skills up to two times",
+    "origin": "",
+    "effect": "You gain a Skill Edge for which you qualify. It must be applied to Acrobatics, Athletics, Stealth, Survival, Guile, or Perception. You may take Capture Skills up to two times.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": false,
+        "label": "Capture Skills",
+        "prompt": "Choose a Skill Edge.",
+        "flag": "captureskill",
+        "rollOption": "capture-skill",
+        "choices": [
+          {
+            "label": "Basic Skills",
+            "value": "Compendium.ptu.edges.Item.HSJnMW0wcFNtbhp7"
+          },
+          {
+            "label": "Adept Skills",
+            "value": "Compendium.ptu.edges.Item.w2e269IE7eNm8oBc"
+          },
+          {
+            "label": "Expert Skills",
+            "value": "Compendium.ptu.edges.Item.fNh3bjUEhWFdW9FE"
+          },
+          {
+            "label": "Master Skills",
+            "value": "Compendium.ptu.edges.Item.JzVNlI5Mdq3kbmG9"
+          },
+          {
+            "label": "Virtuoso",
+            "value": "Compendium.ptu.edges.Item.6QbP4LOoyEMgerm6"
+          },
+          {
+            "label": "Skill Enhancement",
+            "value": "Compendium.ptu.edges.Item.EQgpwUEg5apFH5rE"
+          },
+          {
+            "label": "Skill Stunt",
+            "value": "Compendium.ptu.edges.Item.eg9RIJE6jQbM96Ti"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.captureskill}"
+      }
+    ],
     "enabled": true,
-    "slug": null,
+    "slug": "capture-skills",
     "schema": {
       "version": null,
       "lastMigration": null
@@ -17,25 +62,29 @@
     "source": {
       "value": "Homebrew"
     },
-    "stackSlugs": false,
-    "keywords": []
+    "stackSlugs": true,
+    "keywords": [
+      "Capture Technique"
+    ]
   },
-  "_id": "tdhGpjXjYnFGsg5r",
   "effects": [],
-  "folder": null,
-  "sort": 28600000,
-  "ownership": {
-    "default": 0
+  "folder": "jpLcXij2i9NorfO0",
+  "flags": {
+    "core": {},
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "11.315",
+      "systemVersion": "4.3.v12-beta.1"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.0.12",
-    "coreVersion": "13.350",
-    "createdTime": 1693518703759,
-    "modifiedTime": 1706021187919,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "11.315",
+    "createdTime": 1717962453169,
+    "modifiedTime": 1717964506956,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "tdhGpjXjYnFGsg5r"
 }

@@ -9,15 +9,29 @@
     "rules": [
       {
         "key": "FlatModifier",
-        "predicate": [
-          "melee-attack"
-        ],
-        "selectors": [
-          "damage-roll"
-        ],
+        "predicate": [],
+        "selectors": "melee-damage",
         "hideIfDisabled": false,
         "value": 8,
         "label": "Reckless Advance"
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "damage-received",
+        "uuid": "Compendium.ptu.effects.Item.4lqKV4CxikZxxNWJ",
+        "range": "18",
+        "value": "",
+        "affects": "target"
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "damage-dealt",
+        "uuid": "Compendium.ptu.effects.Item.wqzPWKMbwvOWLVoI",
+        "range": "1",
+        "value": "",
+        "affects": "origin"
       }
     ],
     "enabled": true,
@@ -60,24 +74,27 @@
   },
   "effects": [],
   "folder": "UjuxQCHI76TeZxb7",
-  "ownership": {
-    "default": 0
-  },
   "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.effects.Item.FMhkR9rKCkyJTOVo"
+    },
     "ptu": {
       "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.2.2",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
     "createdTime": 1696541770749,
-    "modifiedTime": 1710853989325,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
+    "modifiedTime": 1723714206768,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
   },
-  "_id": "FMhkR9rKCkyJTOVo",
-  "sort": 600000
+  "_id": "FMhkR9rKCkyJTOVo"
 }

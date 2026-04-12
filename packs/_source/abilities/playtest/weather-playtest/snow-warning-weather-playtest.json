@@ -6,7 +6,14 @@
     "origin": "",
     "effect": "Connection - Hail. The user uses Hail, ignoring Frequency. The user can choose to consume an additional use of this Ability as a Free Action to have Hail instead set @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.FTqtnKvnn0QYJjHC].\nBonus: The user is immune to Hit Point loss from @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.dQEKXsTMNe7jOaqH] Weathers.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Item.3MSAGVuriGjyZS37"
+      }
+    ],
     "enabled": true,
     "slug": "snow-warning-weather-playtest",
     "schema": {
@@ -27,26 +34,29 @@
     "tier": "",
     "automation": []
   },
-  "_id": "8ir445iJCuUzYicQ",
   "effects": [],
   "folder": "MsdL8dYgE7JbY1ya",
-  "sort": 2100000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.pMmuDPGNNg6E1equ"
+    },
     "ptu": {
       "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
-    "coreVersion": "13.350",
+    "coreVersion": "12.327",
     "systemId": "ptu",
-    "systemVersion": "4.3.0",
+    "systemVersion": "4.3.v12-beta.1",
     "createdTime": 1707854107379,
-    "modifiedTime": 1718112889670,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1717180208742,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "8ir445iJCuUzYicQ"
 }

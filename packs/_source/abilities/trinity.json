@@ -6,9 +6,16 @@
     "origin": "",
     "effect": "Connection - Tri Attack. You may use Tri Attack as if it had a range of “Melee, 3 Targets”. Make a different attack roll for each target. If Tri-Attack’s effect range is activated, do not roll for the effect; the first target can only be Frozen, the second can only be Burned, and the third can only be Paralyzed. Additionally, you may use Tri-Attack as a Physical Attack if you wish.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.IWDclyABMiQ3puo0"
+      }
+    ],
     "enabled": true,
-    "slug": null,
+    "slug": "trinity",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -23,22 +30,30 @@
     "tier": "",
     "automation": []
   },
-  "_id": "gjBuKZIXrPPPYlAp",
   "effects": [],
-  "folder": null,
-  "sort": 37700000,
-  "ownership": {
-    "default": 0
+  "folder": "DYj3F5ErpWYb6bsV",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.gjBuKZIXrPPPYlAp"
+    },
+    "ptu": {
+      "abilityChosen": "advanced",
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1713709688816,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "gjBuKZIXrPPPYlAp"
 }

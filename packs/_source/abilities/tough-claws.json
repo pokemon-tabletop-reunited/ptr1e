@@ -9,9 +9,11 @@
     "rules": [
       {
         "key": "FlatModifier",
-        "predicate": [],
+        "predicate": [
+          "move:range:melee"
+        ],
         "hideIfDisabled": false,
-        "selectors": "melee-damage-base",
+        "selectors": "damage-base",
         "value": 2
       }
     ],
@@ -31,26 +33,29 @@
     "tier": "",
     "automation": []
   },
-  "_id": "iWuCTYkVJZ0cqVjl",
   "effects": [],
-  "folder": null,
-  "sort": 38800000,
-  "ownership": {
-    "default": 0
-  },
+  "folder": "DYj3F5ErpWYb6bsV",
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.iWuCTYkVJZ0cqVjl"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707829505237,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1726489422845,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "iWuCTYkVJZ0cqVjl"
 }

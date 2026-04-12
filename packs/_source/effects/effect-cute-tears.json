@@ -1,0 +1,90 @@
+{
+  "folder": "FUe0anCATLQvSKVs",
+  "name": "Effect: Cute Tears",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "cutetears",
+        "adjustName": false,
+        "label": "{actor|name} was hit by an attack",
+        "prompt": "What kind of move was used?",
+        "choices": [
+          {
+            "label": "Physical",
+            "value": "atk"
+          },
+          {
+            "label": "Special",
+            "value": "spatk"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.stats.{item|flags.ptu.rulesSelections.cutetears}.stage.mod",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-cute-tears",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 0,
+      "unit": "encounter",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
+    "createdTime": 1712524423510,
+    "modifiedTime": 1712524892233,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "8dHb5BWU3tGz7Wtz"
+}

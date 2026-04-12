@@ -6,9 +6,16 @@
     "origin": "",
     "effect": "Connection - Rapid Spin. The user may activate this Ability to user Rapid Spin as a Rapid Action.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.dvjTasujiwEqMKec"
+      }
+    ],
     "enabled": true,
-    "slug": null,
+    "slug": "starswirl",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -23,22 +30,39 @@
     "tier": "",
     "automation": []
   },
-  "_id": "x5Ifm5IHmYf0jtsq",
   "effects": [],
-  "folder": null,
-  "sort": 51800000,
-  "ownership": {
-    "default": 0
+  "folder": "dtMhzIEpFpyhJSOM",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.x5Ifm5IHmYf0jtsq"
+    },
+    "ptu": {
+      "abilityChosen": "advanced",
+      "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1748550729338,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "x5Ifm5IHmYf0jtsq"
 }

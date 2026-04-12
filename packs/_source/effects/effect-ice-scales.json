@@ -1,0 +1,76 @@
+{
+  "folder": "PusyX5sf1apVBH1i",
+  "name": "Effect: Ice Scales",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.resistanceSteps.mod",
+        "phase": "applyAEs",
+        "value": 0.5,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-ice-scales",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.world.effects.Item.E7iLROcAPJhevO3V"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.327",
+    "createdTime": 1706569402130,
+    "modifiedTime": 1716880907407,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "IJNgdZifFM6F1cOT"
+}

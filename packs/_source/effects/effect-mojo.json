@@ -1,0 +1,87 @@
+{
+  "folder": "thHLfBBKIxs2bumt",
+  "name": "Effect: Mojo",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Normal Types are not immune to the user's Ghost Type Moves.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:ghost"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-mojo",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-16T22:16:23.546Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.13"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.effects.Item.DPNrJia61YZEPPwJ"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "ptu",
+    "systemVersion": "4.3.7",
+    "createdTime": 1739184012287,
+    "modifiedTime": 1739184045362,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "DZ4TrvuMEHEsStlP"
+}

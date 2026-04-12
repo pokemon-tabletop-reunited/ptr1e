@@ -6,7 +6,26 @@
     "origin": "",
     "effect": "This Pokemon's Melee attacks cause a burn on an 18+. If the attack already burns, increase the range by +2. This Pokemon's ranged attacks apply the effects of Leech Seed on the target on 18+.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "melee-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.NA1Vn8A2h6JIIUhj",
+        "range": "18",
+        "value": ""
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "ranged-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.h3mI5ak5eazEafbP",
+        "range": "18",
+        "value": ""
+      }
+    ],
     "enabled": true,
     "slug": "capsicum",
     "schema": {
@@ -23,26 +42,29 @@
     "tier": "",
     "automation": []
   },
-  "_id": "px0Ph9hc3PjA3D5H",
   "effects": [],
   "folder": null,
-  "sort": 45900000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.px0Ph9hc3PjA3D5H"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1713717021591,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "px0Ph9hc3PjA3D5H"
 }

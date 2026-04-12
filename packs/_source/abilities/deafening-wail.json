@@ -6,7 +6,28 @@
     "origin": "",
     "effect": "Whenever the user uses a Move with the Sonic keyword, they may increase that Move’s Damage Base by +2 (if it has a Damage Base) and that Move Flinches on a roll of 19+. Any targets hit by a Move you have changed in this way are treated as if they have the Ability Soundproof until the end of your next turn.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:sonic"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "damage-base",
+        "value": 2
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [
+          "move:sonic"
+        ],
+        "affects": "target",
+        "selectors": "damage-received",
+        "uuid": "Compendium.ptu.effects.Item.xE6uIFWZoYXAZQxA",
+        "range": "19",
+        "value": ""
+      }
+    ],
     "enabled": true,
     "slug": "deafening-wail",
     "schema": {
@@ -23,26 +44,29 @@
     "tier": "",
     "automation": []
   },
-  "_id": "Zhi5GqsYAdHaG8pn",
   "effects": [],
-  "folder": null,
-  "sort": 31200000,
-  "ownership": {
-    "default": 0
-  },
+  "folder": "V0UOlIuCzlpuaONb",
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.Zhi5GqsYAdHaG8pn"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1712525217313,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "Zhi5GqsYAdHaG8pn"
 }

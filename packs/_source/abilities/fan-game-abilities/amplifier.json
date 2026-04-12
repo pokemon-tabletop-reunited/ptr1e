@@ -7,7 +7,17 @@
     "origin": "",
     "effect": "The user’s damaging Sonic moves gain a +10 Bonus to Damage.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:sonic"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "damage-roll",
+        "value": 10
+      }
+    ],
     "enabled": true,
     "slug": "amplifier",
     "schema": {
@@ -24,24 +34,27 @@
     "tier": ""
   },
   "effects": [],
-  "ownership": {
-    "default": 0
-  },
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.PGoLGF0O3D9uOsi5"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1696781028319,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
+    "modifiedTime": 1712521408814,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
   },
-  "_id": "PGoLGF0O3D9uOsi5",
-  "sort": 1600000
+  "_id": "PGoLGF0O3D9uOsi5"
 }

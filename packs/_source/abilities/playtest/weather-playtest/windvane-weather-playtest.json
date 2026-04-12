@@ -6,7 +6,14 @@
     "origin": "",
     "effect": "Connection - Wind Dance. The user uses Wind Dance, ignoring Frequency. The user can choose to consume an additional use of this Ability as a Free Action to have Wind Dance instead set @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.HdTyaqw3uARLJjZf].",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.wgBDKe1PWLYIoe9W"
+      }
+    ],
     "enabled": true,
     "slug": "windvane-weather-playtest",
     "schema": {
@@ -29,24 +36,28 @@
   },
   "effects": [],
   "folder": "MsdL8dYgE7JbY1ya",
-  "sort": 700000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.Snr6DXwf2rBfkLvz"
+    },
     "ptu": {
+      "abilityChosen": "advanced",
       "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
-    "coreVersion": "13.350",
+    "coreVersion": "12.327",
     "systemId": "ptu",
-    "systemVersion": "4.3.0",
+    "systemVersion": "4.2.6",
     "createdTime": 1707854107379,
-    "modifiedTime": 1718112892998,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
+    "modifiedTime": 1713703445426,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
   },
   "_id": "Snr6DXwf2rBfkLvz"
 }

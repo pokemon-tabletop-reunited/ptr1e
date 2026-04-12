@@ -1,0 +1,87 @@
+{
+  "folder": "Z7hO7c3BPfwCSMT5",
+  "name": "Effect: Dust Devil",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "When calculating Weakness and Resistance for Dust Devil, Flying-Typed targets calculate damage as if Flying was neutral to Ground. Dust Devil ignores the Levitate ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:ground"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-dust-devil",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-16T22:16:23.546Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.13"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.effects.Item.OG1a1uZlWaHbc5zx"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
+    "createdTime": 1703967350930,
+    "modifiedTime": 1748549484067,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "6W29WessrK19XYWt"
+}

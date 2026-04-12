@@ -9,11 +9,198 @@
         "key": "ActiveEffectLike",
         "mode": "add",
         "path": "system.modifiers.baseStats.spd.mod",
-        "value": 1
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
+      },
+      {
+        "key": "ChoiceSet",
+        "adjustName": false,
+        "label": "Advanced Capture Techniques Rank 4",
+        "prompt": "Choose two Capture Techniques.",
+        "flag": "advancedcapture4-1",
+        "rollOption": "capture",
+        "choices": [
+          {
+            "label": "Capture Skills",
+            "value": "Item.JqZRtIEdnOtSZKxx"
+          },
+          {
+            "label": "Catch Combo",
+            "value": "Item.PcbjVB0csoyS9GkG",
+            "predicate": [
+              {
+                "not": "capability:catch-combo"
+              }
+            ]
+          },
+          {
+            "label": "Curve Ball",
+            "value": "Item.EK0CFoez5qOoQXtF",
+            "predicate": [
+              {
+                "not": "capability:curve-ball"
+              }
+            ]
+          },
+          {
+            "label": "Devitalizing Throw",
+            "value": "Item.j4W1xdKJ6T6yP7DD",
+            "predicate": [
+              {
+                "not": "capability:devitalizing-throw"
+              }
+            ]
+          },
+          {
+            "label": "False Strike",
+            "value": "Item.0w5nwGJZ5t8963ho",
+            "predicate": [
+              {
+                "not": "capability:false-strike"
+              }
+            ]
+          },
+          {
+            "label": "Fast Pitch",
+            "value": "Item.v3XNoYN0EJOquOQD",
+            "predicate": [
+              {
+                "not": "capability:fast-pitch"
+              }
+            ]
+          },
+          {
+            "label": "Relentless Pursuit",
+            "value": "Item.Bbf0NOpLg9v3oOmS",
+            "predicate": [
+              {
+                "not": "capability:relentless-pursuit"
+              }
+            ]
+          },
+          {
+            "label": "Snare",
+            "value": "Item.XjOYK3FmwmFcvSJ3",
+            "predicate": [
+              {
+                "not": "capability:snare"
+              }
+            ]
+          },
+          {
+            "label": "Tools of the Trade",
+            "value": "Item.BF66Z8cf7LD5Wlxs",
+            "predicate": [
+              {
+                "not": "capability:tools-of-the-trade"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.advancedcapture4-1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "adjustName": false,
+        "label": "Advanced Capture Techniques Rank 4",
+        "prompt": "Choose two Capture Techniques.",
+        "flag": "advancedcapture4-2",
+        "rollOption": "capture",
+        "choices": [
+          {
+            "label": "Capture Skills",
+            "value": "Item.JqZRtIEdnOtSZKxx"
+          },
+          {
+            "label": "Catch Combo",
+            "value": "Item.PcbjVB0csoyS9GkG",
+            "predicate": [
+              {
+                "not": "capability:catch-combo"
+              }
+            ]
+          },
+          {
+            "label": "Curve Ball",
+            "value": "Item.EK0CFoez5qOoQXtF",
+            "predicate": [
+              {
+                "not": "capability:curve-ball"
+              }
+            ]
+          },
+          {
+            "label": "Devitalizing Throw",
+            "value": "Item.j4W1xdKJ6T6yP7DD",
+            "predicate": [
+              {
+                "not": "capability:devitalizing-throw"
+              }
+            ]
+          },
+          {
+            "label": "False Strike",
+            "value": "Item.0w5nwGJZ5t8963ho",
+            "predicate": [
+              {
+                "not": "capability:false-strike"
+              }
+            ]
+          },
+          {
+            "label": "Fast Pitch",
+            "value": "Item.v3XNoYN0EJOquOQD",
+            "predicate": [
+              {
+                "not": "capability:fast-pitch"
+              }
+            ]
+          },
+          {
+            "label": "Relentless Pursuit",
+            "value": "Item.Bbf0NOpLg9v3oOmS",
+            "predicate": [
+              {
+                "not": "capability:relentless-pursuit"
+              }
+            ]
+          },
+          {
+            "label": "Snare",
+            "value": "Item.XjOYK3FmwmFcvSJ3",
+            "predicate": [
+              {
+                "not": "capability:snare"
+              }
+            ]
+          },
+          {
+            "label": "Tools of the Trade",
+            "value": "Item.BF66Z8cf7LD5Wlxs",
+            "predicate": [
+              {
+                "not": "capability:tools-of-the-trade"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.advancedcapture4-2}"
       }
     ],
     "enabled": true,
-    "slug": null,
+    "slug": "advanced-capture-techniques-rank-4",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -42,25 +229,27 @@
   "type": "feat",
   "img": "/systems/ptu/css/images/icons/feat_icon.png",
   "effects": [],
-  "ownership": {
-    "default": 0
-  },
   "flags": {
+    "core": {},
     "ptu": {
-      "prereqBackup": "Capture Specialist, any 3 Skills at Expert Rank"
+      "prereqBackup": "Capture Specialist, any 3 Skills at Expert Rank",
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "11.315",
+      "systemVersion": "4.3.v12-beta.1"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "11.315",
     "createdTime": 1683368081669,
-    "modifiedTime": 1707818613949,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
+    "modifiedTime": 1717966460429,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
   },
-  "folder": null,
-  "sort": 28000000,
+  "folder": "jpLcXij2i9NorfO0",
   "_id": "Pl5ZJkgux6OKyvXB"
 }

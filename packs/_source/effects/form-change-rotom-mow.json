@@ -1,0 +1,88 @@
+{
+  "folder": "lcwa3tYlnxL9oyZA",
+  "name": "Form Change: Rotom Mow",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "value": "/systems/ptu/static/images/sprites/479_Mow.webp",
+        "predicate": {
+          "not": "self:pokemon:shiny"
+        }
+      },
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/479s_Mow.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:rotom-mow"
+        ],
+        "uuid": "Compendium.ptu.species.Item.m1nka8C8Tu30gLON"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-rotom-heat",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Item.eeC8wsUA1YuBURj5"
+    },
+    "exportSource": {
+      "world": "testing",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.5",
+    "coreVersion": "12.327",
+    "createdTime": 1711652559242,
+    "modifiedTime": 1711652783768,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
+  },
+  "_id": "AHteXL0S3gE4YVFu"
+}

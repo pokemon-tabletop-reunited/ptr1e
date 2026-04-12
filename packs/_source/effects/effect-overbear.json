@@ -1,0 +1,155 @@
+{
+  "folder": "u4WtglexFUSL1ywz",
+  "name": "Effect: Overbear",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This Pokemon ignores all immunities to damage it would deal. Immune attacks instead deal normal damage",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:normal"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:fighting"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:flying"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:poison"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:ground"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:rock"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:bug"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:ghost"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:steel"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:fire"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:water"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:grass"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:electric"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:psychic"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:ice"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:dragon"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:dark"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:fairy"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-overbear",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-16T22:16:23.546Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.13"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.effects.Item.OG1a1uZlWaHbc5zx"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
+    "createdTime": 1703967350930,
+    "modifiedTime": 1739704640082,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "xfOHJb7AV0wXVUOm"
+}

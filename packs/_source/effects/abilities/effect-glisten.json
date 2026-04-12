@@ -1,4 +1,5 @@
 {
+  "folder": "HTNFGIxy9zsCONjI",
   "name": "Effect: Glisten",
   "type": "effect",
   "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
@@ -9,7 +10,7 @@
     "rules": [
       {
         "key": "ChoiceSet",
-        "flag": "darkshroud",
+        "flag": "glisten",
         "choices": [
           {
             "label": "Defense",
@@ -25,7 +26,7 @@
         "key": "ActiveEffectLike",
         "predicate": [],
         "mode": "add",
-        "path": "system.stats.{item|flags.ptu.rulesSelections.darkshroud}.stage.mod",
+        "path": "system.stats.{item|flags.ptu.rulesSelections.glisten}.stage.mod",
         "phase": "applyAEs",
         "value": 1,
         "priority": null
@@ -49,7 +50,7 @@
     "duration": {
       "value": -1,
       "unit": "unlimited",
-      "expiry": "turn-start"
+      "expiry": null
     },
     "start": {
       "value": 0,
@@ -63,31 +64,34 @@
     "context": null
   },
   "effects": [],
-  "folder": "HTNFGIxy9zsCONjI",
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {},
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.2.6",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.7",
+    "coreVersion": "12.331",
     "createdTime": 1711638633514,
-    "modifiedTime": 1712499651437,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": {
-      "worldId": "kanto-adventures",
-      "uuid": null,
-      "coreVersion": "11.315",
-      "systemId": "ptu",
-      "systemVersion": "4.2.5"
-    }
+    "modifiedTime": 1737552227310,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
   },
-  "ownership": {
-    "default": 0
-  },
-  "_id": "E13uQmGpA3YVRpaP",
-  "sort": 1400000
+  "_id": "E13uQmGpA3YVRpaP"
 }

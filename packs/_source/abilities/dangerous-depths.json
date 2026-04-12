@@ -6,7 +6,14 @@
     "origin": "",
     "effect": "Connection - Drag Under. When hit by a move, this Pokemon may activate this Ability to use Drag Under, frequency allowing, as an interrupt to avoid the attack and shift underground/underwater immediately (ignoring Drag Unders water requirement). This consumed a command as normal. Drag Unders damage base is always treated as 12.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.Reejmjxb6kzYeqB9"
+      }
+    ],
     "enabled": true,
     "slug": "dangerous-depths",
     "schema": {
@@ -23,26 +30,29 @@
     "tier": "",
     "automation": []
   },
-  "_id": "vhULiHH0WQfL41bi",
   "effects": [],
-  "folder": null,
-  "sort": 50700000,
-  "ownership": {
-    "default": 0
-  },
+  "folder": "V0UOlIuCzlpuaONb",
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.vhULiHH0WQfL41bi"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1712524965063,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "vhULiHH0WQfL41bi"
 }

@@ -1,14 +1,14 @@
 {
   "name": "Curve Ball",
-  "type": "reference",
-  "img": "/systems/ptu/static/css/images/icons/reference_icon.png",
+  "type": "move",
+  "img": "/systems/ptu/static/images/item_icons/basic%20ball.webp",
   "system": {
-    "origin": "Capture Techniques",
-    "effect": "Static Effect: Whenever you hit a target with a Poké Ball, you may deal damage as if you had hit them with a Struggle Attack. This damage triggers before any of the Poké Ball’s functions (such as making a Capture Check, releasing a Pokémon, etc.).",
+    "origin": "",
+    "effect": "Whenever you hit a target with a Poké Ball, you may deal damage as if you had hit them with a Struggle Attack. This damage triggers before any of the Poké Ball’s functions (such as making a Capture Check, releasing a Pokémon, etc.).",
     "snippet": "",
     "rules": [],
     "enabled": true,
-    "slug": null,
+    "slug": "curve-ball",
     "schema": {
       "version": null,
       "lastMigration": null
@@ -18,24 +18,49 @@
       "value": "Homebrew"
     },
     "stackSlugs": false,
-    "keywords": []
+    "keywords": [
+      "Capture Technique"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Untyped",
+    "category": "Physical",
+    "damageBase": "4",
+    "frequency": "At-Will",
+    "ac": "4",
+    "range": "Throwing Range",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
   },
-  "_id": "oCbNYdXL9EM5YyXo",
   "effects": [],
-  "folder": null,
-  "sort": 26400000,
-  "ownership": {
-    "default": 0
+  "folder": "jpLcXij2i9NorfO0",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {},
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "11.315",
+      "systemVersion": "4.3.v12-beta.1"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.0.12",
-    "coreVersion": "13.350",
-    "createdTime": 1693518703759,
-    "modifiedTime": 1706021187919,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "11.315",
+    "createdTime": 1717961443869,
+    "modifiedTime": 1717964902094,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "oCbNYdXL9EM5YyXo"
 }

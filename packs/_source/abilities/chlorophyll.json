@@ -10,7 +10,11 @@
       {
         "key": "ActiveEffectLike",
         "predicate": {
-          "not": "effect:sunny"
+          "nor": [
+            "effect:sunny",
+            "effect:blistering-heat",
+            "effect:desiccating-heat"
+          ]
         },
         "mode": "add",
         "path": "system.modifiers.initiative.mod",
@@ -34,9 +38,13 @@
       },
       {
         "key": "FlatModifier",
-        "predicate": [
-          "effect:sunny"
-        ],
+        "predicate": {
+          "or": [
+            "effect:sunny",
+            "effect:blistering-heat",
+            "effect:desiccating-heat"
+          ]
+        },
         "hideIfDisabled": false,
         "selectors": "initiative",
         "value": "@actor.system.initiative.value"
@@ -60,26 +68,35 @@
     "tier": "",
     "automation": []
   },
-  "_id": "ZiTUZHmZaIq0K2na",
   "effects": [],
   "folder": null,
-  "sort": 31300000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.2.6",
-    "coreVersion": "13.350",
-    "createdTime": 1692968394056,
-    "modifiedTime": 1712494785372,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.7",
+    "createdTime": 1736349967519,
+    "modifiedTime": 1736349967519,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "ZiTUZHmZaIq0K2na"
 }

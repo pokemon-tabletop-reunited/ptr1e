@@ -1,0 +1,92 @@
+{
+  "folder": "Z7hO7c3BPfwCSMT5",
+  "name": "Effect: Download",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "download",
+        "adjustName": true,
+        "prompt": "What is the targets lowest stat?",
+        "choices": [
+          {
+            "label": "Defense",
+            "value": "atk"
+          },
+          {
+            "label": "Special Defense",
+            "value": "spatk"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.{item|flags.ptu.rulesSelections.download}.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-download",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 0,
+      "unit": "encounter",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Item.8dHb5BWU3tGz7Wtz"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
+    "createdTime": 1712524423510,
+    "modifiedTime": 1725456756212,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "jhb0LQOl8lkh0EJT"
+}

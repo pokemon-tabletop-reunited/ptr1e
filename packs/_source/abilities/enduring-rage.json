@@ -32,6 +32,17 @@
         "phase": "applyAEs",
         "value": 5,
         "priority": null
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "and": [
+            "condition:rage"
+          ]
+        },
+        "hideIfDisabled": false,
+        "selectors": "save-check",
+        "value": -21
       }
     ],
     "enabled": true,
@@ -50,26 +61,39 @@
     "tier": "",
     "automation": []
   },
-  "_id": "SPD8UhzfdpeeTrCS",
   "effects": [],
-  "folder": null,
-  "sort": 24900000,
-  "ownership": {
-    "default": 0
-  },
+  "folder": "tTEKmUGjpYYdsHvJ",
   "flags": {
     "ptu": {
+      "abilityChosen": "high",
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.SPD8UhzfdpeeTrCS"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.2.6",
-    "coreVersion": "13.350",
-    "createdTime": 1692968394056,
-    "modifiedTime": 1712497827369,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.7",
+    "createdTime": 1735221433998,
+    "modifiedTime": 1741898055301,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "SPD8UhzfdpeeTrCS"
 }

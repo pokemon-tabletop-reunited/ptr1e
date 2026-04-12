@@ -2,23 +2,22 @@
   "folder": "Q0mf1Ijbk809XxYT",
   "name": "Dragon Cheer",
   "type": "move",
-  "_id": "ocMZ5Ntq5UZkCUHI",
-  "img": "https://assets.forge-vtt.com/6464e7dd7cb6da75187d728c/systems/ptu/css/images/types2/DragonIC_Icon.png",
+  "img": "/systems/ptu/css/images/types2/DragonIC_Icon.png",
   "system": {
     "origin": "",
-    "effect": "The user and allies within range become Pumped. While Pumped, the user's Critical Range is extended by 2, or 18+ if the Critical Range is not otherwise extended. Being switched will cause this effect to end.\n\nDragon-Types instead gain the Dragon Cheer effect, extending their Critical Range by 4, or 16+ if the Critical Range is not otherwise extended. Being switched will cause this effect to end.",
+    "effect": "The user and allies within range become Pumped. While Pumped, the user's Critical Range is extended by 2, or 18+ if the Critical Range is not otherwise extended. Being switched will cause this effect to end. @UUID[Compendium.ptu.effects.Item.GGzbwfYV5wqMIF9u]{Dragon Cheer}\n\n\nDragon-Types instead gain the Dragon Cheer effect, extending their Critical Range by 4, or 16+ if the Critical Range is not otherwise extended. Being switched will cause this effect to end. @UUID[Item.n9OtXvRaxOgx1dQc]{Dragon Cheer: Dragon Type}",
     "snippet": "",
     "rules": [],
     "enabled": true,
     "slug": "dragon-cheer",
     "schema": {
-      "version": 0.112,
+      "version": 0.115,
       "lastMigration": {
-        "datetime": "2024-01-15T01:45:48.312Z",
+        "datetime": "2024-03-19T17:05:37.504Z",
         "version": {
-          "schema": null,
+          "schema": 0.112,
           "foundry": "11.315",
-          "system": "4.0.9"
+          "system": "4.2.4"
         }
       }
     },
@@ -48,23 +47,36 @@
     "isStruggle": false
   },
   "effects": [],
-  "sort": 150000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.moves.Item.ocMZ5Ntq5UZkCUHI"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
-    "createdTime": 1705059664387,
-    "modifiedTime": 1707761817661,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.v12-beta.1",
+    "createdTime": 1721747226102,
+    "modifiedTime": 1739706804005,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "ocMZ5Ntq5UZkCUHI"
 }

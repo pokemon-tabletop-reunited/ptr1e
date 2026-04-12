@@ -6,7 +6,14 @@
     "origin": "",
     "effect": "Connection - Acid Rain. The user uses Acid Rain, ignoring Frequency. The user can choose to consume an additional use of this Ability as a Free Action to have Acid Rain instead set @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.gkgZ3BYSGis8Uhxi].\nBonus: The user is immune to Hit Point loss from @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.HbRNv8tVlPEqWEIc] Weathers.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Item.VJxRCN6HUXtINrVz"
+      }
+    ],
     "enabled": true,
     "slug": "pollution-weather-playtest",
     "schema": {
@@ -18,35 +25,35 @@
       "value": "PTR Compendiums"
     },
     "stackSlugs": false,
-    "keywords": [
-      "Weather",
-      "Playtest",
-      "Connection"
-    ],
+    "keywords": [],
     "frequency": "Scene x3 - Rapid Action",
     "tier": "",
     "automation": []
   },
   "effects": [],
   "folder": "MsdL8dYgE7JbY1ya",
-  "sort": 2000000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.dxYIaMNxoXRM61cj"
+    },
     "ptu": {
+      "abilityChosen": "advanced",
       "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
-    "coreVersion": "13.350",
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.3.0",
+    "systemVersion": "4.3.v12-beta.1",
     "createdTime": 1707854107379,
-    "modifiedTime": 1718112870876,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
+    "modifiedTime": 1721749905262,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
   },
   "_id": "dxYIaMNxoXRM61cj"
 }

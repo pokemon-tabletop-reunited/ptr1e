@@ -2,19 +2,19 @@
   "name": "Aqua Ring",
   "type": "move",
   "img": "/systems/ptu/css/images/types2/WaterIC_Icon.png",
-  "folder": "lWQOqDm2AOGwGM16",
+  "folder": "QUBRPKWoQJ9is4iN",
   "system": {
     "origin": "",
     "effect": "Aqua Ring covers the user in a Coat that heals the user at the beginning of their turn. The user is healed a Tick of Hit Points each turn.",
     "snippet": "",
     "rules": [],
     "enabled": true,
-    "slug": null,
+    "slug": "aqua-ring",
     "schema": {
       "version": 0.11,
       "lastMigration": null
     },
-    "referenceEffect": "",
+    "referenceEffect": "Compendium.ptu.effects.Item.JeNFraeC1trGyFBm",
     "source": {
       "value": "PTR Compendiums"
     },
@@ -42,21 +42,37 @@
     "isStruggle": false,
     "automation": []
   },
-  "_id": "ywYeIhxlrHb9gOP1",
   "effects": [],
-  "sort": 87300000,
-  "ownership": {
-    "default": 0
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.moves.Item.ywYeIhxlrHb9gOP1"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
     "createdTime": 1692963260348,
-    "modifiedTime": 1707815126463,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1749987872747,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "ywYeIhxlrHb9gOP1"
 }

@@ -6,7 +6,14 @@
     "origin": "",
     "effect": "Connection - Stealth Rock. Stealth Rock’s frequency is Scene x2, and the user’s Stealth Rocks can be treated as dealing Rock-Type or Fairy-Type Damage, whichever is more effective.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.XklsarNBfkknbU8O"
+      }
+    ],
     "enabled": true,
     "slug": "diamond-defense",
     "schema": {
@@ -23,26 +30,29 @@
     "tier": "",
     "automation": []
   },
-  "_id": "BnRIxMozsS1iKefU",
   "effects": [],
-  "folder": null,
-  "sort": 12100000,
-  "ownership": {
-    "default": 0
-  },
+  "folder": "V0UOlIuCzlpuaONb",
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.BnRIxMozsS1iKefU"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1712525291355,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "BnRIxMozsS1iKefU"
 }

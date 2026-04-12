@@ -1,0 +1,88 @@
+{
+  "name": "Form Change: Zygarde 50%",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "value": "/systems/ptu/static/images/sprites/718.webp",
+        "predicate": {
+          "not": "self:pokemon:shiny"
+        }
+      },
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/718s.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:zygarde-50%"
+        ],
+        "uuid": "Compendium.ptu.species.Item.iqz4Z0oq6I3ZMEzu"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-zygarde-50",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "fdOH9cTcaWxfpaSZ",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Item.m7wXp5tZYJlVVSbb"
+    },
+    "exportSource": {
+      "world": "testing",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
+    "createdTime": 1711653143321,
+    "modifiedTime": 1712502927518,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
+  },
+  "_id": "zQFVPMs7gwnB6MwG"
+}

@@ -1,0 +1,104 @@
+{
+  "folder": "FUe0anCATLQvSKVs",
+  "name": "Effect: Copy Master",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "stat-copymaster",
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "Attack",
+            "value": "atk"
+          },
+          {
+            "label": "Defense",
+            "value": "def"
+          },
+          {
+            "label": "HP",
+            "value": "hp"
+          },
+          {
+            "label": "Special Attack",
+            "value": "spatk"
+          },
+          {
+            "label": "Special Defense",
+            "value": "spdef"
+          },
+          {
+            "label": "Speed",
+            "value": "spd"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.{item|flags.ptu.rulesSelections.copymaster}.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-copy-master",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
+    "createdTime": 1712521243152,
+    "modifiedTime": 1712521304732,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "iLjPfwV3QBGDq2A2"
+}

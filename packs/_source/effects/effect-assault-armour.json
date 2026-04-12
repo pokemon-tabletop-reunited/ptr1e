@@ -1,0 +1,94 @@
+{
+  "name": "Effect: Assault Armour",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "While this Feature is Bound, when the target uses a Steel-Type attack, it may use its Defense for their Damage Roll in place of the attack’s normal offensive stat.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "gte": [
+            "{actor|system.stats.def.total}",
+            "{actor|system.stats.spatk.total}"
+          ],
+          "and": "move:type:steel"
+        },
+        "hideIfDisabled": false,
+        "selectors": "special-damage",
+        "value": "@actor.system.stats.def.total - @actor.system.stats.spatk.total"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "gte": [
+            "{actor|system.stats.def.total}",
+            "{actor|system.stats.atk.total}"
+          ],
+          "and": "move:type:steel"
+        },
+        "hideIfDisabled": false,
+        "selectors": "physical-damage",
+        "value": "@actor.system.stats.def.total - @actor.system.stats.atk.total"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-assault-armour",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null,
+      "round": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "4nwbdfjztaUgcVw8",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Item.mTNoXR6VmJwnyOuz"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
+    "createdTime": 1714253056945,
+    "modifiedTime": 1714662841708,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "xyvgdG4xqWrAAPHV"
+}

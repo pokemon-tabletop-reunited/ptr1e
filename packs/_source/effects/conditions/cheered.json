@@ -1,24 +1,18 @@
 {
+  "folder": "rPNjp26cMp3XQ6aC",
   "name": "Cheered",
-  "type": "condition",
-  "img": "systems/ptu/static/images/conditions/Cheered.svg",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
   "system": {
-    "origin": "No Automation",
-    "effect": "",
+    "origin": "",
+    "effect": "Roll a save check with advantage",
     "snippet": "",
     "rules": [],
     "enabled": true,
     "slug": "cheered",
     "schema": {
-      "version": 0.11,
-      "lastMigration": {
-        "datetime": "2023-09-18T08:52:04.637Z",
-        "version": {
-          "schema": null,
-          "foundry": "11.308",
-          "system": "4.0.0.beta.3"
-        }
-      }
+      "version": null,
+      "lastMigration": null
     },
     "referenceEffect": "",
     "source": {
@@ -26,44 +20,44 @@
     },
     "stackSlugs": false,
     "keywords": [],
+    "level": {
+      "value": 1
+    },
     "duration": {
-      "value": 0,
+      "value": -1,
       "unit": "unlimited",
-      "expiry": "turn-start"
+      "expiry": null
     },
-    "value": {
-      "isValued": false,
-      "value": 1,
-      "autoIncrement": false
+    "start": {
+      "value": 0,
+      "initiative": null
     },
-    "references": {
-      "children": [],
-      "overrides": [],
-      "overriddenBy": []
-    },
-    "overrides": [],
-    "persistent": null,
-    "name": "",
+    "target": null,
     "tokenIcon": {
       "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "testing",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
-  "folder": "rPNjp26cMp3XQ6aC",
-  "_id": "pZO043r8mNBFfbCD",
-  "effects": [],
-  "sort": 600000,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.0.0.beta.3",
-    "coreVersion": "13.350",
-    "createdTime": 1691878068601,
-    "modifiedTime": 1695027124661,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "systemVersion": "4.3.5",
+    "createdTime": 1728099703898,
+    "modifiedTime": 1728099728263,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
+  },
+  "_id": "pZO043r8mNBFfbCD"
 }

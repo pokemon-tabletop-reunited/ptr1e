@@ -1,0 +1,105 @@
+{
+  "name": "Effect: Sunlight Within",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [
+          "effect:sunny"
+        ],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.physical.mod",
+        "phase": "applyAEs",
+        "value": 10,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [
+          "effect:sunny"
+        ],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.special.mod",
+        "phase": "applyAEs",
+        "value": 10,
+        "priority": null
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "effect:sunny"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "damage-roll",
+        "value": 10
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-sunlight-within",
+    "schema": {
+      "version": 0.111,
+      "lastMigration": {
+        "datetime": "2023-10-08T13:36:44.558Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.311",
+          "system": "4.0.0.beta.11"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "xqvAUwE5uJFqu1hr",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.world.effects.Item.X7WsS1SPqNDZ2CTe"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.327",
+    "createdTime": 1696532561216,
+    "modifiedTime": 1715271398005,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "uevjQdd2997Nm6I6"
+}

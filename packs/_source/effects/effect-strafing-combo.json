@@ -1,0 +1,73 @@
+{
+  "name": "Effect: Strafing Combo",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Delete this effect when Rollout Misses!\n\n@Embed[Compendium.ptu.moves.Item.He1H4l9py8OcGKHs]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "flags.ptu.strafing",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-strafing-combo",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "FUe0anCATLQvSKVs",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "testing",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "ptu",
+    "systemVersion": "4.3.7",
+    "createdTime": 1732498790793,
+    "modifiedTime": 1751140042484,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
+  },
+  "_id": "Vvj5cQerDBPZYnbX"
+}

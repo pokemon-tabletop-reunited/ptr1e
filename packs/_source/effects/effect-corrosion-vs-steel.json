@@ -1,0 +1,88 @@
+{
+  "folder": "FUe0anCATLQvSKVs",
+  "name": "Effect: Corrosion vs steel",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:poison"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.modifiers.resistanceSteps.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "Effectiveness",
+        "predicate": [
+          "self:types:steel"
+        ],
+        "type": "poison",
+        "value": 0.25
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-corrosion",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.effects.Item.s326whCdbxxGAr61"
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.7",
+    "coreVersion": "12.331",
+    "createdTime": 1706569402130,
+    "modifiedTime": 1734624056774,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "qIMPhb4JY5XMJKVJ"
+}

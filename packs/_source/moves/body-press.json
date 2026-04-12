@@ -2,12 +2,25 @@
   "name": "Body Press",
   "type": "move",
   "img": "/systems/ptu/css/images/types2/FightingIC_Icon.png",
-  "folder": "lWQOqDm2AOGwGM16",
+  "folder": "GoEUfOf3y8kkX6aj",
   "system": {
     "origin": "",
     "effect": "The user's Defense Stat is added to the damage roll instead of the Attack Stat.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "gte": [
+            "{actor|system.stats.def.total}",
+            "{actor|system.stats.atk.total}"
+          ]
+        },
+        "hideIfDisabled": false,
+        "selectors": "{item|id}-damage",
+        "value": "@actor.system.stats.def.total - @actor.system.stats.atk.total"
+      }
+    ],
     "enabled": true,
     "slug": "body-press",
     "schema": {
@@ -42,25 +55,37 @@
     "isStruggle": false,
     "automation": []
   },
-  "_id": "FLwCZdF58DeyPcpS",
   "effects": [],
-  "sort": 19500000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.moves.Item.FLwCZdF58DeyPcpS"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.331",
     "createdTime": 1692963260348,
-    "modifiedTime": 1707815182675,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1749987888049,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "FLwCZdF58DeyPcpS"
 }

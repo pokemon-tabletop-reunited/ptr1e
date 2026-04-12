@@ -6,9 +6,16 @@
     "origin": "",
     "effect": "Connection - Heal Bell. Whenever the user uses a Move that targets allies, those allies gain temporary Hit Points equal to the user’s Special Attack. This may affect a specific ally only once per Scene.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.v8vXs3oV4YimX2AZ"
+      }
+    ],
     "enabled": true,
-    "slug": null,
+    "slug": "soothing-tone",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -23,22 +30,29 @@
     "tier": "",
     "automation": []
   },
-  "_id": "Fe2BUKq87beswtZ7",
   "effects": [],
-  "folder": null,
-  "sort": 14500000,
-  "ownership": {
-    "default": 0
+  "folder": "dtMhzIEpFpyhJSOM",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.Fe2BUKq87beswtZ7"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.2.6",
+    "coreVersion": "12.327",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1712846496466,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "Fe2BUKq87beswtZ7"
 }

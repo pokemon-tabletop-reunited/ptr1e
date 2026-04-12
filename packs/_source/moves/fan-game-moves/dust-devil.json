@@ -4,15 +4,40 @@
   "flags": {
     "ptu": {
       "showInTokenPanel": true
+    },
+    "core": {
+      "sourceId": "Compendium.ptu.moves.Item.JrbJIPPdAPE52yp2"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "effects": [],
-  "_id": "JrbJIPPdAPE52yp2",
   "system": {
     "origin": "",
     "effect": "When calculating Weakness and Resistance for Dust Devil, Flying-Typed targets calculate damage as if Flying was neutral to Ground. Dust Devil ignores the Levitate ability.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [],
+        "selectors": "damage-received",
+        "uuid": "Item.6W29WessrK19XYWt",
+        "affects": "target"
+      }
+    ],
     "enabled": true,
     "slug": "dust-devil",
     "schema": {
@@ -49,20 +74,15 @@
     "automation": [],
     "useCount": 0
   },
-  "ownership": {
-    "default": 0
-  },
   "img": "/systems/ptu/css/images/types2/GroundIC_Icon.png",
   "folder": "CKiVqPT3ASdUeaM0",
-  "sort": 1700000,
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.2.2",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
     "createdTime": 1689606523899,
-    "modifiedTime": 1710852603764,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1748549487147,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "JrbJIPPdAPE52yp2"
 }

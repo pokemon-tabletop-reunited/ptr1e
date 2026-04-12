@@ -2,19 +2,19 @@
   "name": "Fell Stinger",
   "type": "move",
   "img": "/systems/ptu/css/images/types2/BugIC_Icon.png",
-  "folder": "lWQOqDm2AOGwGM16",
+  "folder": "15Q3AhBTZ2qx24UK",
   "system": {
     "origin": "",
     "effect": "If the user successfully knocks out the target with Fell Stinger, raise the user's Attack by 2 Combat Stages.",
     "snippet": "",
     "rules": [],
     "enabled": true,
-    "slug": null,
+    "slug": "fell-stinger",
     "schema": {
       "version": 0.11,
       "lastMigration": null
     },
-    "referenceEffect": "",
+    "referenceEffect": "Compendium.ptu.effects..tgoGmaZFPyvTUZiv",
     "source": {
       "value": "PTR Compendiums"
     },
@@ -32,9 +32,9 @@
     "strongJaw": false,
     "type": "Bug",
     "category": "Physical",
-    "damageBase": 5,
+    "damageBase": "5",
     "frequency": "At-Will",
-    "ac": 2,
+    "ac": "2",
     "range": "Melee",
     "contestType": "Smart - Desperation",
     "stab": false,
@@ -42,21 +42,37 @@
     "isStruggle": false,
     "automation": []
   },
-  "_id": "RjTMjxxZSdIu2xZL",
   "effects": [],
-  "sort": 37800000,
-  "ownership": {
-    "default": 0
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.moves.Item.RjTMjxxZSdIu2xZL"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
+    }
   },
-  "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
     "createdTime": 1692963260348,
-    "modifiedTime": 1707823304602,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
-  }
+    "modifiedTime": 1748549522934,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
+  },
+  "_id": "RjTMjxxZSdIu2xZL"
 }

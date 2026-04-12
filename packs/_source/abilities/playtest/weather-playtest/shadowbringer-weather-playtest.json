@@ -6,7 +6,14 @@
     "origin": "",
     "effect": "Connection - Shadow Sky. The user uses Shadow Sky, ignoring Frequency. The user can choose to consume an additional use of this Ability as a Free Action to have Shadow Sky instead set @UUID[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.o2sGLH6NV9dXHcfT].",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Item.b14lmbRCauVOCubn"
+      }
+    ],
     "enabled": true,
     "slug": "shadowbringer-weather-playtest",
     "schema": {
@@ -29,24 +36,27 @@
   },
   "effects": [],
   "folder": "MsdL8dYgE7JbY1ya",
-  "sort": 1300000,
-  "ownership": {
-    "default": 0
-  },
   "flags": {
+    "core": {
+      "sourceId": "Compendium.ptu.abilities.Item.r8QALyZIZbX2XI2q"
+    },
     "ptu": {
       "showInTokenPanel": true
+    },
+    "exportSource": {
+      "world": "kanto-adventures",
+      "system": "ptu",
+      "coreVersion": "12.331",
+      "systemVersion": "4.3.7"
     }
   },
   "_stats": {
-    "coreVersion": "13.350",
+    "coreVersion": "12.331",
     "systemId": "ptu",
-    "systemVersion": "4.3.0",
+    "systemVersion": "4.3.v12-beta.1",
     "createdTime": 1707854107379,
-    "modifiedTime": 1718112874459,
-    "lastModifiedBy": "ptubuilder000000",
-    "duplicateSource": null,
-    "exportSource": null
+    "modifiedTime": 1721749892264,
+    "lastModifiedBy": "TbGIaTsufvM0rJ9I"
   },
   "_id": "laew8qsCh1MC89KG"
 }
