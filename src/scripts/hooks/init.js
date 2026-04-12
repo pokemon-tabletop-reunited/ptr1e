@@ -80,7 +80,7 @@ export const Init = {
             // GitHub Sync — in-app commit/PR workflow for content contributors
             registerGithubSync({
                 systemId: "ptu",
-                apiUrl: "https://1e.ptr.wiki/foundry",
+                apiUrl: "https://vecna.ddns.net/ptr1e-github-foundry-sync",
                 documentTypes: {
                     move:        "ptu.moves",
                     ability:     "ptu.abilities",
