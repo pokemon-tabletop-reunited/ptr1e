@@ -108,9 +108,20 @@ function cleanPackEntry(data, { clearSourceId=true, ownership=0 }={}) {
     data.prototypeToken.texture.src = "";
   }
 
+  // Deduplicate embedded arrays by _key to fix doubled-entry issues.
+  for ( const key of ["effects", "items", "pages", "results"] ) {
+    if ( data[key] ) {
+      const seen = new Set();
+      data[key] = data[key].filter(e => {
+        if ( !e._key || !seen.has(e._key) ) { seen.add(e._key); return true; }
+        return false;
+      });
+    }
+  }
   if ( data.effects ) data.effects.forEach(i => cleanPackEntry(i, { clearSourceId: false }));
   if ( data.items ) data.items.forEach(i => cleanPackEntry(i, { clearSourceId: false }));
   if ( data.pages ) data.pages.forEach(i => cleanPackEntry(i, { ownership: -1 }));
+  if ( data.results ) data.results.forEach(i => cleanPackEntry(i, { clearSourceId: false }));
   if ( data.system?.description?.value ) data.system.description.value = cleanString(data.system.description.value);
   if ( data.label ) data.label = cleanString(data.label);
   if ( data.name ) data.name = cleanString(data.name);
@@ -253,7 +264,7 @@ async function extractPacks(packName, entryName) {
     });
 
     await extractPack(packPath, dest, {
-      log: true, transformEntry: entry => {
+      log: true, clean: true, transformEntry: entry => {
         if ( entryName && (entryName !== entry.name.toLowerCase()) ) return false;
         cleanPackEntry(entry);
       }, transformName: entry => {
