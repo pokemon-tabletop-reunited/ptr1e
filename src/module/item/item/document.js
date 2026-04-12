@@ -79,11 +79,11 @@ class PTUItemItem extends PTUItem {
         });
 
         // If duplicate item gets added instead increase the quantity
-		const existingItem = actor.items.getName(this.name);
-		if (existingItem && existingItem.system.quantity) {
-			const quantity = foundry.utils.duplicate(existingItem.system.quantity);
-			await existingItem.update({ "system.quantity": Number(quantity) + (this.system.quantity > 0 ? Number(this.system.quantity) : 1) });
-		}
+        const existingItem = actor.items.get(this._id) ?? actor.items.getName(this.name);
+        if (existingItem && existingItem.system.quantity !== undefined) {
+            const quantity = Math.ceil(Number(foundry.utils.duplicate(existingItem.system.quantity)) || 0, 0);
+            await existingItem.update({ "system.quantity": quantity + 1 });
+        }
         else {
             await Item.create(this.toObject(), {parent: actor});
         }
