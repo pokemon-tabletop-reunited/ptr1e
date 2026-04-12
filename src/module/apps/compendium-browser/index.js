@@ -184,6 +184,10 @@ class PackLoader {
 }
 
 class CompendiumBrowser extends Application {
+    #renderInFlight = false;
+    #pendingReplace = false;
+    #searchDebounceTimer = null;
+
     constructor(options = {}) {
         super(options);
 
@@ -345,6 +349,7 @@ class CompendiumBrowser extends Application {
 
         if (tabName === "settings") {
             await this.packLoader.updateSources(this.loadedPacksAll());
+            if (this.activeTab !== tabName) return;
             return await this.render(true);
         }
 
@@ -356,6 +361,7 @@ class CompendiumBrowser extends Application {
 
         if (!currentTab.isInitialized) {
             await currentTab.init();
+            if (this.activeTab !== tabName) return;
         }
 
         await this.render(true, { focus: true });
@@ -464,7 +470,10 @@ class CompendiumBrowser extends Application {
             search.addEventListener("input", () => {
                 currentTab.filterData.search.text = search.value;
                 this.#clearScrollLimit();
-                this.#renderResultList({ replace: true });
+                clearTimeout(this.#searchDebounceTimer);
+                this.#searchDebounceTimer = setTimeout(() => {
+                    this.#renderResultList({ replace: true });
+                }, 250);
             });
         }
 
@@ -756,31 +765,46 @@ class CompendiumBrowser extends Application {
     }
 
     async #renderResultList({ list, start = 0, replace = false } = {}) {
-        /** @type {import('./tabs/base.js').CompendiumBrowserTab} */
-        const currentTab = this.activeTab !== "settings" ? this.tabs[this.activeTab] : null;
-        const html = this.element[0]
-        if (!currentTab) return;
-
-        if (!list) {
-            const listElement = html.querySelector(".tab.active ul.item-list");
-            if (!listElement) return;
-            list = listElement;
+        // Guard against concurrent renders: skip scroll appends while one is in flight;
+        // for replace (search/filter), flag it so we re-run once the current render finishes.
+        if (this.#renderInFlight) {
+            if (replace) this.#pendingReplace = true;
+            return;
         }
+        this.#renderInFlight = true;
 
-        const newResults = await currentTab.renderResult(start);
-        this.#activateResultListeners(newResults);
+        try {
+            /** @type {import('./tabs/base.js').CompendiumBrowserTab} */
+            const currentTab = this.activeTab !== "settings" ? this.tabs[this.activeTab] : null;
+            const html = this.element[0];
+            if (!currentTab) return;
 
-        const fragment = document.createDocumentFragment();
-        fragment.append(...newResults);
-        if (replace) {
-            list.replaceChildren(fragment);
-        }
-        else {
-            list.append(fragment);
-        }
+            if (!list) {
+                const listElement = html.querySelector(".tab.active ul.item-list");
+                if (!listElement) return;
+                list = listElement;
+            }
 
-        for (const dragDropHandler of this._dragDrop) {
-            dragDropHandler.bind(html);
+            const newResults = await currentTab.renderResult(start);
+            this.#activateResultListeners(newResults);
+
+            const fragment = document.createDocumentFragment();
+            fragment.append(...newResults);
+            if (replace) {
+                list.replaceChildren(fragment);
+            } else {
+                list.append(fragment);
+            }
+
+            for (const dragDropHandler of this._dragDrop) {
+                dragDropHandler.bind(html);
+            }
+        } finally {
+            this.#renderInFlight = false;
+            if (this.#pendingReplace) {
+                this.#pendingReplace = false;
+                this.#renderResultList({ replace: true });
+            }
         }
     }
 
@@ -821,7 +845,17 @@ class CompendiumBrowser extends Application {
                 uuid: item.dataset.entryUuid,
             })
         );
-        item.addEventListener(
+        // Disable pointer events once the drag is in motion so drops can pass
+        // through the browser to the canvas or windows underneath it.
+        // Using the first window dragover means we wait until the drag is genuinely
+        // established rather than relying on timing.
+        window.addEventListener("dragover", () => {
+            this.element.css({ pointerEvents: "none" });
+        }, { once: true });
+
+        // Listen on window so dragend is always caught, even if the dragged element
+        // gets replaced by a re-render or the drag ends outside the browser.
+        window.addEventListener(
             "dragend",
             () => {
                 window.setTimeout(() => {
@@ -832,11 +866,6 @@ class CompendiumBrowser extends Application {
             },
             { once: true }
         );
-    }
-
-    _onDragOver(event) {
-        super._onDragOver(event);
-        this.element.css({ pointerEvents: "none" });
     }
 
     async #resetInitializedTabs() {
