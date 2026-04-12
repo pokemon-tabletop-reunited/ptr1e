@@ -1,0 +1,19 @@
+{
+  "name": "Remove all conditions",
+  "type": "script",
+  "scope": "global",
+  "author": "TbGIaTsufvM0rJ9I",
+  "img": "icons/magic/life/cross-area-circle-green-white.webp",
+  "command": "actor.deleteEmbeddedDocuments(\"Item\", actor.items.filter(i=>i.type === \"condition\" && !i.isGranted).map(i => i.id))",
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.v12-beta.1",
+    "coreVersion": "12.331",
+    "createdTime": 1731268046739,
+    "modifiedTime": 1731618729207,
+    "lastModifiedBy": "ptubuilder000000"
+  },
+  "_id": "N0PEWvwwvnOGxCLC"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Pokemon Center Heal",
+  "type": "script",
+  "scope": "global",
+  "author": "dgZ5HZCH2iuaMd7q",
+  "img": "https://assets.forge-vtt.com/bazaar/core/icons/svg/angel.svg",
+  "command": "// Heal all selected actors reduce Injuries by 3\ncanvas.tokens.controlled.forEach(async (token) => {\nif(token.actor.system.health.injuries <999)\n{\n await token.actor.update({\"system.health.value\": token.actor.system.health.total, \"system.health.injuries\": 0});\n}else{\n  await token.actor.update({\"system.health.value\": token.actor.system.health.total, \"system.health.injuries\": token.actor.system.health.injuries-999});\n}  \n// Heal all selected actors including Injuries\n //await token.actor.effects.forEach(x => x.delete())\n})",
+  "folder": null,
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": true,
+      "runForSpecificUser": ""
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "12.327",
+    "createdTime": 1680360335133,
+    "modifiedTime": 1708651852607,
+    "lastModifiedBy": "ptubuilder000000"
+  },
+  "_id": "tPSoYO1eoKbgqjkR"
+}
