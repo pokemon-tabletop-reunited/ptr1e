@@ -1,0 +1,75 @@
+{
+  "name": "Submission",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FightingIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "On an Accuracy roll of 15+, the target is Tripped.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.4lqKV4CxikZxxNWJ",
+        "range": "15",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "submission",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fighting",
+    "category": "Physical",
+    "damageBase": "8",
+    "frequency": "At-Will",
+    "ac": "6",
+    "range": "Melee",
+    "contestType": "Cool - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "sjlli6A6inP600kw",
+  "effects": [],
+  "sort": 78900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710789410676,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!sjlli6A6inP600kw"
+}

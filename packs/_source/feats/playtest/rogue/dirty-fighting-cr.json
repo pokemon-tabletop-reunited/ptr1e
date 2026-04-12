@@ -1,0 +1,65 @@
+{
+  "name": "Dirty Fighting [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You hit a foe with Weapon Attack\nEffect: After the attack is Resolved, you may immediately use the Dirty Trick Maneuver if the target is within range. You automatically hit with Dirty Trick, but must still make an Opposed Roll.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Rogue",
+      "a Rogue Skill at Adept Rank"
+    ],
+    "frequency": "1 AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Rogue [CR]",
+    "name": "Dirty Fighting [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "O8uiNyzyRLx7VuWt",
+  "_id": "6OdLwtPLorBCtkWa",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!6OdLwtPLorBCtkWa"
+}

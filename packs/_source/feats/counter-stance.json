@@ -1,0 +1,65 @@
+{
+  "name": "Counter Stance",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - An adjacent foe misses you with an attack\nEffect: You perform an Attack of Opportunity against them.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Skirmisher"
+    ],
+    "frequency": "At-Will - Free Action - Interrupt",
+    "notes": "",
+    "free": false,
+    "class": "Skirmisher",
+    "automation": [],
+    "name": "Counter Stance",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Skirmisher"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078985,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 44100000,
+  "_id": "dpAXPMK8GrJSJnYR",
+  "_key": "!items!dpAXPMK8GrJSJnYR"
+}

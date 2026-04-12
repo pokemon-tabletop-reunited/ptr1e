@@ -1,0 +1,96 @@
+{
+  "folder": "TuFJ2nmx9i2k6KYk",
+  "name": "Mega Evolve: Charizard Y",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This will mega-evolve your Charizard into it's Y-Form.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:charizard",
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/006s_MEGA_Y.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            "species:charizard",
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/006_MEGA_Y.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:charizard"
+        ],
+        "uuid": "Compendium.ptu.species.Item.FShKe55sheGWkSvQ"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "species:charizard"
+        ],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.BRUgqjGF8THEEA7W"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.11",
+    "coreVersion": "13.350",
+    "createdTime": 1695739871368,
+    "modifiedTime": 1696772778689,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "kMT6Lk9Jrj1npFlB",
+  "sort": 3300000,
+  "_key": "!items!kMT6Lk9Jrj1npFlB"
+}

@@ -1,0 +1,108 @@
+{
+  "folder": "mPgTCXDywTV4kW8J",
+  "name": "Effect: Shadow Meld",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Gengar receives a +4 Bonus to Stealth rolls and +1 to its Evasion",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "path": "system.modifiers.evasion.physical.mod",
+        "predicate": [
+          "species:gengar"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "path": "system.modifiers.evasion.special.mod",
+        "predicate": [
+          "species:gengar"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "path": "system.modifiers.evasion.speed.mod",
+        "predicate": [
+          "species:gengar"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 4,
+        "path": "system.skills.stealth.modifier.mod",
+        "predicate": [
+          "species:gengar"
+        ]
+      },
+      {
+        "key": "TokenImage",
+        "tint": "#222224"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.636Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.3",
+    "coreVersion": "13.350",
+    "createdTime": 1694687746582,
+    "modifiedTime": 1695027124661,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "WhF3JNuRUGCCx4Xt",
+  "sort": 0,
+  "_key": "!items!WhF3JNuRUGCCx4Xt"
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Corrode",
+  "type": "move",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "effects": [],
+  "system": {
+    "origin": "",
+    "effect": "When calculating Weakness and Resistance for Corrode, Steel-Typed targets calculate damage as if Steel was weak to Poison.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "target:types:steel"
+        ],
+        "selectors": "{item|id}-damage-received",
+        "affects": "target",
+        "uuid": "Compendium.ptu.effects.Item.FMZFXJBX6AehlKhS"
+      }
+    ],
+    "enabled": true,
+    "slug": "corrode",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Poison",
+    "category": "Special",
+    "damageBase": "7",
+    "frequency": "Scene",
+    "ac": "2",
+    "range": "Range 6",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "name": "",
+    "automation": [],
+    "useCount": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "img": "/systems/ptu/css/images/types2/PoisonIC_Icon.png",
+  "folder": "CKiVqPT3ASdUeaM0",
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1689606523899,
+    "modifiedTime": 1710852510203,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "hoz6ge2Cbtr6wwF1",
+  "sort": 0,
+  "_key": "!items!hoz6ge2Cbtr6wwF1"
+}

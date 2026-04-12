@@ -1,0 +1,65 @@
+{
+  "name": "Surprise! [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You make an attack against a foe while Hidden, or is adjacent to your Pokémon with Pack Hunt or Teamwork\nEffect: Make two attack rolls for the triggering action, and use the better result to finalize the attack. If both attacks would hit, the target is Flinched. Surprise! may be used only once per Scene per target. If the triggering attack was a Poké Ball, Hand Net, Weighted Net, Glue Cannon, or Struggle Attack, Surprise! costs 1 AP to activate; otherwise, it costs 2 AP.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Hunter",
+      "Adept Stealth or Survival"
+    ],
+    "frequency": "X AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Hunter [CR]",
+    "name": "Surprise! [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "P0AeQaWQCaUDnVuY",
+  "_id": "YegKOBMHuxDERn6E",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!YegKOBMHuxDERn6E"
+}

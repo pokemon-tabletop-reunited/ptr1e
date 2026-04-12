@@ -1,0 +1,67 @@
+{
+  "name": "Wilderness Guide",
+  "system": {
+    "origin": "",
+    "effect": "Wilderness Guide’s effect depends on your current terrain.\n»» Grassland or Forest: All allies gain the Stealth Capability and a +2 bonus to their Overland Speed for one full round.\n»» Ocean or Wetlands: All allies gain 5 Damage Reduction and a +2 bonus to their Swim Speed for one full round.\n»» Desert or Tundra: All allies do not lose Hit Points from Weather and ignore the effects of foes’ Sand Veil and Snow Cloak Abilities for one full round.\n»» Mountain or Cave: All allies do not trigger Hazards and are not Blinded in Low-Light conditions for one full round.\n»» Urban: All allies gain +1 Evasion and a +2 bonus on Accuracy Rolls and Skill Checks to perform the Dirty Trick and Manipulate Combat Maneuvers for one full round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Orders"
+    ],
+    "prerequisites": [
+      "Survivalist",
+      "Expert Survival"
+    ],
+    "frequency": "Scene x3 - Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Survivalist",
+    "automation": [],
+    "name": "Wilderness Guide",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Survivalist, Expert Survival"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079266,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 23300000,
+  "_id": "Lx9xuIEpuM60pfnS",
+  "_key": "!items!Lx9xuIEpuM60pfnS"
+}

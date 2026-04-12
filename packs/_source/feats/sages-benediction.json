@@ -1,0 +1,66 @@
+{
+  "name": "Sage's Benediction",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - An ally activates one of your Moves with the Blessing Keyword.\nEffect: The triggering ally gains an additional benefit as follows, depending on the Move used. The benefit takes effect after the Blessing and the attack that triggered it are resolved.\n»» Reflect: +1 Defense Combat Stage\n»» Light Screen: +1 Sp. Defense Combat Stage\n»» Safeguard: +1 Evasion\n»» Lucky Chant: +1 Accuracy",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP"
+    ],
+    "prerequisites": [
+      "Sacred Shield or Mystic Defense",
+      "Adept Occult Education"
+    ],
+    "frequency": "1 AP - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Sage",
+    "automation": [],
+    "name": "Sage's Benediction",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Sacred Shield or Mystic Defense, Adept Occult Education"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078867,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 10000000,
+  "_id": "92g4skr8aaxHnWv6",
+  "_key": "!items!92g4skr8aaxHnWv6"
+}

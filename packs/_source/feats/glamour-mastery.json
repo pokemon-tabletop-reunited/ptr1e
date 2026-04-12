@@ -1,0 +1,87 @@
+{
+  "name": "Glamour Mastery",
+  "system": {
+    "origin": "",
+    "effect": "Choose Magic Guard or Magic Bounce. You gain the Chosen Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.abilities.Item.3zEQl6AsWskjTjQy"
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.yjMXQVY5eXWyrlzG"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": "glamour-mastery",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "4 Glamour Weaver Features"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Glamour Weaver",
+    "automation": [],
+    "name": "Glamour Mastery",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "4 Glamour Weaver Features",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079017,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 63800000,
+  "_id": "vbSu6hw6cgGB0foc",
+  "_key": "!items!vbSu6hw6cgGB0foc"
+}

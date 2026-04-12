@@ -1,0 +1,68 @@
+{
+  "name": "Training Regime [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain additional static bonuses based on your Trained Stats.\n- Attack: You gain a +2 Bonus on Accuracy Checks to hit with Combat Maneuvers.\n- Defense: You gain 5 Damage Reduction when Intercepting attacks.\n- Special Attack: Your Damaging Athlete Moves may be your choice of Physical or Special, adding the appropriate Attack stat.\n- Special Defense: You gain a +2 Bonus to Opposed Checks to resist Combat Maneuvers.\n- Speed: When you Sprint, you double your Movement Capability instead of increasing by 50%.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "training-regime-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Athlete"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Athlete [CR]",
+    "name": "Training Regime [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "VZSMHMJcCWCVyQIC",
+  "_id": "oBhimy016qlTAwDB",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!oBhimy016qlTAwDB"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Cutthroat [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You may use Rogue Moves as Weapon Moves when wielding Small Melee Weapons or Short Ranged Weapons. If you do, Rogue Moves instead have the same Range as your Weapon. Additionally, you may qualify for Weapon Moves for Small Melee or Short Ranged Weapons and resist Disarm Maneuvers when wielding such Weapons using any Rogue Skill.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Rogue"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Rogue [CR]",
+    "name": "Cutthroat [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "O8uiNyzyRLx7VuWt",
+  "_id": "oYso3v26HPNqRdgk",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!oYso3v26HPNqRdgk"
+}

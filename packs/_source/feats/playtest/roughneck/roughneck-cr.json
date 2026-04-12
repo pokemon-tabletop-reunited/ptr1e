@@ -1,0 +1,65 @@
+{
+  "name": "Roughneck [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You hit a foe with an Attack\nEffect: The foe loses a Combat Stage in the Stat of your choice.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Novice Athletics or Intimidating Presence"
+    ],
+    "frequency": "1 AP – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Roughneck [CR]",
+    "name": "Roughneck [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "UjDP0F2khMUTsYeP",
+  "_id": "ol8egvNeXzLicjy4",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ol8egvNeXzLicjy4"
+}

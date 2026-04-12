@@ -1,0 +1,92 @@
+{
+  "name": "Warping Ground [Nomad]",
+  "system": {
+    "origin": "",
+    "effect": "You learn the Moves Gravity and Trick Room.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.IuGk58XiaSA0Gypi"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.Uut6FpUzRObtZvBm"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-15T22:09:46.290Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Nomad",
+      "Adept Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Nomad",
+    "automation": [],
+    "name": "Warping Ground",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "https://assets.forge-vtt.com/6464e7dd7cb6da75187d728c/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "grantedBy": {
+        "id": "gmV1mYAtE9PJ62Sp",
+        "onDelete": "detach"
+      },
+      "showInTokenPanel": true,
+      "prereqBackup": "Nomad, Adept Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079166,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "SMepfD0qveoA3YvU",
+  "_id": "zCNuz1d7RDw6jdVv",
+  "sort": 0,
+  "_key": "!items!zCNuz1d7RDw6jdVv"
+}

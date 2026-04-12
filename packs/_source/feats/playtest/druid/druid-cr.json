@@ -1,0 +1,89 @@
+{
+  "name": "Druid [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Your powers begin to take after either Flowers, Fungi, or Trees. Depending on your oath, you gain an Ability and Stat Tags. Whenever you gain a Druid Feature, you gain the same Stat Tags.\nFlower Oath -> Aroma Veil -> [+Special Attack]\nFungal Oath -> Effect Spore -> [+Special Defense]\nWood Oath -> Effect Spore -> [+Attack]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "druid",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          },
+          {
+            "value": "spdef",
+            "label": "Special Defense"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.druid}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "druid-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "Special",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Grass)",
+      "Novice Survival or Novice General Education"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Druid [CR]",
+    "name": "Druid [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "O6BHcXeqEGOHzHQw",
+  "_id": "0OU4Rxiew8jWfPvq",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0OU4Rxiew8jWfPvq"
+}

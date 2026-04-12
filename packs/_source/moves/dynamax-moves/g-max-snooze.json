@@ -1,0 +1,74 @@
+{
+  "folder": "8tcCd3dOnqridsEG",
+  "name": "G-Max Snooze",
+  "type": "move",
+  "_id": "4mewzSlEJPzBUX9b",
+  "img": "systems/ptu/static/css/images/types2/DarkIC_Icon.png",
+  "system": {
+    "origin": "Regional Phenomena",
+    "effect": "All Targets fall Asleep at the end of their next turn.\nRequirement: Grimmsnarl is Gigantamaxed and has a Dark Type Move.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.RekZDOcIsADhrfH3",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "g-max-snooze",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Dark",
+    "category": "Physical",
+    "damageBase": "12",
+    "frequency": "At-Will",
+    "ac": "0",
+    "range": "Range 9, Ranged Blast 6",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 2000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1705336006392,
+    "modifiedTime": 1710789348242,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!4mewzSlEJPzBUX9b"
+}

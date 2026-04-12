@@ -1,0 +1,77 @@
+{
+  "name": "Rare Leek",
+  "system": {
+    "origin": "",
+    "effect": "When held by a Farfetch’d, this rare Leek increase the holder’s critical range by 2. Rare Leeks are Wielded. Cannot be used by Trainers.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "or": [
+            "species:farfetchd",
+            "species:sirfetchd"
+          ]
+        },
+        "hideIfDisabled": false,
+        "selectors": "crit-range",
+        "value": 2
+      }
+    ],
+    "enabled": true,
+    "slug": "rare-leek",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.459Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Held Item"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Rare Leek",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "systems/ptu/images/item_icons/rare leek.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368789200,
+    "modifiedTime": 1712494296744,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 51100000,
+  "_id": "horp5SPziquIVMF5",
+  "_key": "!items!horp5SPziquIVMF5"
+}

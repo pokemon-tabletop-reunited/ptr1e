@@ -1,0 +1,81 @@
+{
+  "folder": "7YqKhwjbTBoIpy5X",
+  "name": "Stoked Sparksurfer",
+  "type": "move",
+  "_id": "k2JKIlehFnlz2KvA",
+  "img": "https://assets.forge-vtt.com/6464e7dd7cb6da75187d728c/worlds/Pokemon%20The%20Chosen/Dream_Aloraichium_Z_Sprite.png",
+  "system": {
+    "origin": "Z Moves",
+    "effect": "The target is Paralyzed.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.bzZaLfYxVyKbJOCo",
+        "range": "1",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "stoked-sparksurfer",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T14:33:35.380Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Electric",
+    "category": "Special",
+    "damageBase": "17",
+    "frequency": "Daily",
+    "ac": "2",
+    "range": "Range 4",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 168678,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1704885687186,
+    "modifiedTime": 1710789422709,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!k2JKIlehFnlz2KvA"
+}

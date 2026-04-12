@@ -1,0 +1,90 @@
+{
+  "name": "Effect: Empathy Pulse (Eph Effect)",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Shadow types take damage from this move as if it is super-effective.",
+    "snippet": "Shadow types take 1.5x damage from this move.",
+    "rules": [
+      {
+        "key": "Effectiveness",
+        "predicate": [],
+        "type": "fighting",
+        "value": 2
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-empathy-pulse-eph-effect",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "fxR7gYSzdO2ZAQya",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "scene-packer": {
+      "hash": "11aa3cd3b07ee41ab67bc295b76ea42b7ae5256a",
+      "sourceId": "Item.p1vD5ob0ct6WPXJY"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1709371138249,
+    "modifiedTime": 1710789533971,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_id": "kPy5nQeKyYsCBrZv",
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kPy5nQeKyYsCBrZv"
+}

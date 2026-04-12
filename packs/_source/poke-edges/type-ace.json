@@ -1,0 +1,75 @@
+{
+  "folder": null,
+  "name": "Type Ace",
+  "type": "pokeedge",
+  "img": "/systems/ptu/static/css/images/icons/pokeedge_icon.png",
+  "system": {
+    "origin": "Type Ace",
+    "effect": "Target: Your Pokémon with at least 1 Tutor Slot remaining.\nEffect: The target loses 1 Tutor Slot and learns the @UUID[Compendium.ptu.abilities.Item.jhOa5RNWvY7t958b] or @UUID[Compendium.ptu.abilities.Item.Rp2iYtEMxDsbRm0g] Ability for your Chosen Type. You may target a Pokémon only once with Type Ace.\n<blockquote>This is automation for the Type Ace Class and not a generally available Poke Edge</blockquote>",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "typeaceability",
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "Last Chance",
+            "value": "Compendium.ptu.abilities.Item.jhOa5RNWvY7t958b"
+          },
+          {
+            "label": "Type Strategist",
+            "value": "Compendium.ptu.abilities.Item.Rp2iYtEMxDsbRm0g"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.typeaceability}"
+      }
+    ],
+    "enabled": true,
+    "slug": "type-ace",
+    "schema": {
+      "version": 0.114,
+      "lastMigration": {
+        "datetime": "2024-02-17T16:51:19.243Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.2.0"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Type Ace Class"
+    ],
+    "cost": 0
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "bN0Xus6P47NEP1ME",
+  "sort": 200000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "createdTime": 1710770928825,
+    "modifiedTime": 1712493035929,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!bN0Xus6P47NEP1ME"
+}

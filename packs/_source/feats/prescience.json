@@ -1,0 +1,66 @@
+{
+  "name": "Prescience",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You are hit by an attack\nEffect: The attack instead misses.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense"
+    ],
+    "prerequisites": [
+      "Unveiled Sight",
+      "Master Perception"
+    ],
+    "frequency": "Scene - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Oracle",
+    "automation": [],
+    "name": "Prescience",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Unveiled Sight, Master Perception"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078869,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 18500000,
+  "_id": "HnXMWoRrGD7qA0ta",
+  "_key": "!items!HnXMWoRrGD7qA0ta"
+}

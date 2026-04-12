@@ -1,0 +1,100 @@
+{
+  "folder": "DJzDYBNllxgyeiok",
+  "name": "Terapagos: Stellar Forme",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will change Terapagos's Forme.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/1025s_2.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/1025_1.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "uuid": "Compendium.ptu.species.Item.eSkv7LB0cQ4zYLpM"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.mfD1Ga7xMCBqOk5H"
+      }
+    ],
+    "enabled": true,
+    "slug": "terapagos-stellar-forme",
+    "schema": {
+      "version": 0.111,
+      "lastMigration": {
+        "datetime": "2023-10-08T13:36:44.683Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.311",
+          "system": "4.0.0.beta.11"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.1",
+    "coreVersion": "13.350",
+    "createdTime": 1696236636263,
+    "modifiedTime": 1706125942953,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "e6eWrcu5JugErmjT",
+  "sort": 300000,
+  "_key": "!items!e6eWrcu5JugErmjT"
+}

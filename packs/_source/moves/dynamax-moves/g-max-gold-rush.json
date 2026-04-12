@@ -1,0 +1,76 @@
+{
+  "folder": "8tcCd3dOnqridsEG",
+  "name": "G-Max Gold Rush",
+  "type": "move",
+  "_id": "wwUrPk5W3ZGe7fYX",
+  "img": "systems/ptu/static/css/images/types2/NormalIC_Icon.png",
+  "system": {
+    "origin": "Regional Phenomena",
+    "effect": "All Targets are Confused. This Move scatters coins as per Pay Day, but the value is equal to 6d8 times the user’s level.\nRequirement: Meowth is Gigantamaxed and has a Normal Type Move.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.pLKjxFPUOZQHAcXH",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "g-max-gold-rush",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Max"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Normal",
+    "category": "Physical",
+    "damageBase": "14",
+    "frequency": "At-Will",
+    "ac": "0",
+    "range": "Range 12, Ranged Blast 4",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1705335684583,
+    "modifiedTime": 1710850482910,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!wwUrPk5W3ZGe7fYX"
+}

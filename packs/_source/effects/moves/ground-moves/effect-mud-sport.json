@@ -1,0 +1,90 @@
+{
+  "name": "Effect: Mud Sport",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This creature takes .5 damage from Electric-Type moves, this effect is used up after being hit by an Electric-type move.",
+    "snippet": "Take half damage from Electric attacks, once.",
+    "rules": [
+      {
+        "key": "Effectiveness",
+        "predicate": [],
+        "type": "electric",
+        "value": 0.5
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-mud-sport",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "ZpbS9qRMsxQD9lBn",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "scene-packer": {
+      "hash": "e2a6d4cb60318904bb57470d586b600d180888b3",
+      "sourceId": "Item.BQzzqLg5aoBp7YN6"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1709371138249,
+    "modifiedTime": 1710787984992,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_id": "4YyFAI0B3xYo315b",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4YyFAI0B3xYo315b"
+}

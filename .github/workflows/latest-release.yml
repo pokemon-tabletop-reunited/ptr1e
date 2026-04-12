@@ -18,6 +18,20 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
+            - name: Use Node.js 24.x
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 24.x
+
+            - name: Install 7-Zip
+              run: sudo apt-get install -y p7zip-full
+
+            - name: Build
+              run: |
+                  npm ci
+                  npm run build
+                  npm run build:packs
+
             - name: Update Manifest
               run: |
                   SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' system.json | tr -d '\n')
@@ -27,7 +41,7 @@ jobs:
             - name: Zip Files
               working-directory: .
               run: |
-                  7z a -tzip system.zip ./*
+                  7z a -tzip system.zip ./* -x!packs/_source -x!.github -x!.vscode -x!node_modules -x!package.json -x!package-lock.json
 
             - name: Create Version Release
               id: create_version_release

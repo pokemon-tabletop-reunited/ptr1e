@@ -1,0 +1,77 @@
+{
+  "name": "Ephemeral Effect: Hyper Mode IWR",
+  "type": "effect",
+  "img": "systems/ptu/static/css/images/types2/ShadowIC_Icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "Effectiveness",
+        "predicate": {
+          "and": [
+            {
+              "eq": [
+                "{actor|types.length}",
+                1
+              ]
+            },
+            "self:types:untyped"
+          ]
+        },
+        "type": "Shadow",
+        "value": 2
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-hyper-mode-iwr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "dDpOEXjREUS6rAWH",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.3",
+    "coreVersion": "13.350",
+    "createdTime": 1699893305338,
+    "modifiedTime": 1699893953676,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "tCWGZzg8ULG353Dw",
+  "sort": 100000,
+  "_key": "!items!tCWGZzg8ULG353Dw"
+}

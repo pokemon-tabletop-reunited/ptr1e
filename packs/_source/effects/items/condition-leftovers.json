@@ -1,0 +1,79 @@
+{
+  "name": "Condition: Leftovers",
+  "type": "condition",
+  "img": "systems/ptu/images/item_icons/leftovers.webp",
+  "system": {
+    "origin": "Automated",
+    "effect": "Snack. When their Food Buff is traded in, the user recovers 1/16th of their max Hit Points at the beginning of each turn for the rest of the encounter.\n<blockquote>Automated healing condition for Leftovers</blockquote>",
+    "snippet": "",
+    "rules": [],
+    "enabled": true,
+    "slug": "leftovers",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.635Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": {
+      "formula": "-floor(@actor.system.health.total / 16)",
+      "type": "persistent"
+    },
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "effects": [],
+  "folder": "YOFSDHg7L2IrQsvT",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "e6wwb737Gl54C8oG",
+  "sort": 400000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "createdTime": 1709369990548,
+    "modifiedTime": 1712495333375,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "a-brave-new-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.1"
+    }
+  },
+  "_key": "!items!e6wwb737Gl54C8oG"
+}

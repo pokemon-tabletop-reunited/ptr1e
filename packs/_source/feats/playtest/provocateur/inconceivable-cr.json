@@ -1,0 +1,74 @@
+{
+  "folder": "mS7fmuAZxBzZ1J7B",
+  "name": "Inconceivable [CR]",
+  "type": "feat",
+  "img": "/systems/ptu/static/css/images/icons/feat_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Trigger: You hit an opponent with a status class Provocateur moves\nEffect: The target becomes vulnerable and takes bonus damage equal to your Provocateur skill rank from your next attack for 1 round. Use the highest rank of one of your Provocateur skills for this bonus.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": 20
+      }
+    ],
+    "enabled": true,
+    "slug": "inconceivable-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "One of the Classic Blunders [CR]",
+      "a Provocateur Skill at Expert Rank"
+    ],
+    "frequency": "2AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Provocateur [CR]"
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "UyPcqsZm6We3cGLU",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710765910487,
+    "modifiedTime": 1710765910487,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-chosen",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_key": "!items!UyPcqsZm6We3cGLU"
+}

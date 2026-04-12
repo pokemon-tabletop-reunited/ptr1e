@@ -1,0 +1,66 @@
+{
+  "name": "Prismatic Alignment",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You use a Prism Move\nEffect: The effect of this Feature depends on the Triggering Move. You may only use Prismatic Alignment with each Move once per Scene.\n\n»» Flash: Flash also Blinds all targets it hits until the end of their next turn.\n»» Swift: Swift instead has a range of 8, 3 Targets.\n»» Tri Attack: Roll twice for Tri Attack’s Accuracy Roll and take the better result. If you trigger its Effect Range, you may choose the effect instead of rolling for it.\n»» Weather Ball: You use Weather Ball as if you were in the Weather of your choice.\n»» Hyper Beam: Hyper Beam instead has a Range of Burst 2, Smite or 10, Ranged Blast 3, Smite.\n»» Morning Sun: You use Morning Sun as if you were in Sunny Weather, and you may cure yourself of one Status Affliction.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "4 Prism Features",
+      "Master Charm or General Education"
+    ],
+    "frequency": "2 AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Prism",
+    "automation": [],
+    "name": "Prismatic Alignment",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "4 Prism Features, Master Charm or General Education"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079318,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 26700000,
+  "_id": "OgMbScUX6iFtKH9U",
+  "_key": "!items!OgMbScUX6iFtKH9U"
+}

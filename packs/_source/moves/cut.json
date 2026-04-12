@@ -1,0 +1,76 @@
+{
+  "name": "Cut",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/NormalIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Cut ignores up to 5 Damage Reduction (Defenses are not Damage Reduction.)",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "affects": "target",
+        "uuid": "Compendium.ptu.effects.Item.aVm0441s0adbinyC"
+      }
+    ],
+    "enabled": true,
+    "slug": "cut",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.aVm0441s0adbinyC",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Pass",
+      "Slice"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Normal",
+    "category": "Physical",
+    "damageBase": "5",
+    "frequency": "At-Will",
+    "ac": "3",
+    "range": "Melee",
+    "contestType": "Cool - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "UkCThqEzC82ABM7h",
+  "effects": [],
+  "sort": 43300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710852539635,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UkCThqEzC82ABM7h"
+}

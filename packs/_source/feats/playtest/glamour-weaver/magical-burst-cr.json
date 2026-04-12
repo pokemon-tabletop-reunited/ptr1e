@@ -1,0 +1,69 @@
+{
+  "name": "Magical Burst [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Condition: You must have Enchanting Transformation Bound to use Magical Burst\nEffect: Use a Glamour Weaver Move as if it had the range \"Burst 3, Friendly, Exhaust.\" If this Move is a Damaging Move, it also gains the \"Smite\" keyword. Every ally within the area-of-effect chooses to either gain a Tick of Temporary Hit Points or cure themselves of one Volatile Affliction. Enchanting Transformation immediately becomes Unbound, and the AP used to bind it becomes spent instead of becoming available again.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "magical-burst-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Enchanting Transformation",
+      "Passionato Harmony"
+    ],
+    "frequency": "Scene – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Glamour Weaver [CR]",
+    "name": "Magical Burst [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "V3fgrSa9KTcwmesO",
+  "_id": "0CJ1UaFdviUQlEVO",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0CJ1UaFdviUQlEVO"
+}

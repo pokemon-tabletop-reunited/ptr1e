@@ -1,0 +1,111 @@
+{
+  "name": "Effect: Type Strategist",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Whenever the user uses a Move of the Type associated with Type Strategist, they gain +5 Damage Reduction for one full round. If they are under 1/3rd of their Maximum Hit Points, they instead gain +10 Damage Reduction. Defensive.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.physical.mod",
+        "phase": "afterDerived",
+        "value": {
+          "brackets": [
+            {
+              "start": -100,
+              "end": 33,
+              "value": 10
+            },
+            {
+              "start": 34,
+              "end": 100,
+              "value": 5
+            }
+          ],
+          "field": "actor|system.health.percent"
+        },
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.special.mod",
+        "phase": "afterDerived",
+        "value": {
+          "brackets": [
+            {
+              "start": -100,
+              "end": 33,
+              "value": 10
+            },
+            {
+              "start": 34,
+              "end": 100,
+              "value": 5
+            }
+          ],
+          "field": "actor|system.health.percent"
+        },
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-type-strategist",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "HTNFGIxy9zsCONjI",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_id": "DlVJLO2Cd61pB3Xc",
+  "sort": 4400000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "createdTime": 1709367234852,
+    "modifiedTime": 1712499651437,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!DlVJLO2Cd61pB3Xc"
+}

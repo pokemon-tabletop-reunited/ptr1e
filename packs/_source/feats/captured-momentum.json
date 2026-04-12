@@ -1,0 +1,68 @@
+{
+  "name": "Captured Momentum",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You successfully Capture a Pokémon\nChoose One Effect:\n»You or your Pokémon gain a +2 bonus to their next Accuracy Roll during this combat.\n»You subtract your highest Skill Rank out of Acrobatics, Athletics, Stealth, Survival, Guile, or Perception from your next Capture Roll during this combat.\n»You gain 1 Temporary Action Point that disappears after one full round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "captured-momentum",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Advanced Capture Techniques Rank 2"
+    ],
+    "frequency": "At-Will - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Capture Specialist",
+    "automation": [],
+    "name": "Captured Momentum",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Advanced Capture Techniques Rank 2",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081756,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 5900000,
+  "_id": "59YR4zQr6EDY1s6B",
+  "_key": "!items!59YR4zQr6EDY1s6B"
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Earth Mother's Blessing Rank 1 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Each Rank, choose Mud Dweller, Arena Trap, or Lightning Rod. You gain the chosen Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "earth-mothers-blessing-rank-1-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Adept Focus or Intuition"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Earth Shaker [CR]",
+    "name": "Earth Mother’s Blessing [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "d3NxFgIfiV3ERXZj",
+  "_id": "YU2xsVUxHfrSCklV",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!YU2xsVUxHfrSCklV"
+}

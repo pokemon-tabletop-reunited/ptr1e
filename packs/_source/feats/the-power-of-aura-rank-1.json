@@ -1,0 +1,79 @@
+{
+  "name": "The Power of Aura Rank 1",
+  "system": {
+    "origin": "",
+    "effect": "Choose Scrappy or Aura Storm. You gain the Chosen Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.abilities.Item.LVKN9UuObrFnBbxc"
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.Id9Q9nTyuepCBG8Y"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack or Special Attack",
+      "Ranked 2"
+    ],
+    "prerequisites": [
+      "Aura Guardian"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Aura Guardian",
+    "name": "The Power of Aura Rank 1",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Aura Guardian"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079272,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 57100000,
+  "_id": "o2DnZBraOmga3KYh",
+  "_key": "!items!o2DnZBraOmga3KYh"
+}

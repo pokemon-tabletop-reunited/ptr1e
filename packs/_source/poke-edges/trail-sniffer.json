@@ -1,0 +1,63 @@
+{
+  "name": "Trail Sniffer",
+  "system": {
+    "origin": "",
+    "effect": "The user gets a bonus to all Perception Rolls to use the Tracker Capability equal to their Focus Rank.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "tracking"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "skill-perception",
+        "value": "@actor.system.skills.focus.value.total"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Level 20",
+      "Tracker Capability"
+    ],
+    "cost": "1 TP",
+    "name": "Trail Sniffer",
+    "useCount": 0
+  },
+  "type": "pokeedge",
+  "img": "/systems/ptu/css/images/icons/poke_edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Level 20, Tracker Capability"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683369202729,
+    "modifiedTime": 1712493035929,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 800000,
+  "_id": "9H5bRyrOeb5PyIHR",
+  "_key": "!items!9H5bRyrOeb5PyIHR"
+}

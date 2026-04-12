@@ -1,0 +1,99 @@
+{
+  "name": "Flinch",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Flinched.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "Flinch lasts for 1 full round. While Flinched, the target is Vulnerable. In addition, the target takes  a -5 penalty to initiative for the rest of the Scene, or until recalled, which may stack. Effects that remove a target's Flinched Status will also remove the initiative penalty, and may be triggered to do so.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "priority": 10,
+        "mode": "add",
+        "path": "system.modifiers.initiative.mod",
+        "value": "-(5 * @item.system.value.value)",
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.ptu.effects.Item.wqzPWKMbwvOWLVoI",
+        "onDeleteActions": {
+          "grantee": "detach",
+          "granter": "cascade"
+        },
+        "overwrites": {
+          "system": {
+            "duration": {
+              "value": 1,
+              "unit": "rounds",
+              "expiry": "full-round"
+            }
+          }
+        },
+        "predicate": [],
+        "allowDuplicate": false
+      }
+    ],
+    "enabled": true,
+    "slug": "flinch",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.637Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "encounter",
+      "expiry": "turn-start"
+    },
+    "value": {
+      "isValued": true,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": null,
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "rPNjp26cMp3XQ6aC",
+  "_id": "xE6uIFWZoYXAZQxA",
+  "effects": [],
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1708099237487,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!xE6uIFWZoYXAZQxA"
+}

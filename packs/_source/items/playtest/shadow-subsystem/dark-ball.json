@@ -1,0 +1,65 @@
+{
+  "folder": "lpdptis936rBZFDU",
+  "name": "Dark Ball",
+  "type": "item",
+  "_id": "8bxLUIfAAdhrwPlv",
+  "img": "systems/ptu/static/images/item_icons/dark_ball.webp",
+  "system": {
+    "origin": "",
+    "effect": "Effect: -20 Modifier, if the target is Shadow Type.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "target:types:shadow"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "{item|id}-capture-roll",
+        "value": -20
+      }
+    ],
+    "enabled": true,
+    "slug": "dark-ball",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Poke Ball"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "1500",
+    "consumable": 0,
+    "subtype": "pokeball",
+    "container": false,
+    "modifier": 0
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1697671845000,
+    "modifiedTime": 1714850639401,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8bxLUIfAAdhrwPlv"
+}

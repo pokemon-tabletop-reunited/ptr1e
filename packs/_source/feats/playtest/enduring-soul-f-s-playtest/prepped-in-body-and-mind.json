@@ -1,0 +1,74 @@
+{
+  "name": "Prepped in Body and Mind",
+  "system": {
+    "origin": "[F&S Playtest]",
+    "effect": "Your Pokémon with Spirit gain the following bonuses based on your Focus Rank.\n»» Adept: When your Pokémon starts the day with 2 Spirit or more, that Pokémon gains double the base benefits of the Enduring Soul Class for that day. (not the +HP)\n»» Expert: Your Pokémon who went under training today, with Spirit, gain 1 Temporary Spirit at the beginning of each Scene that disappears at the end of the Scene if not used. \n»» Master: Each time your Pokémon gain a Status Effect, Injury, take a Critical Hit, or Double-Super Effective Attack each scene. It gains 1 Spirit. ",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "prepped-in-body-and-mind",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP"
+    ],
+    "prerequisites": [
+      "3 Enduring Soul Features"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Enduring Soul [F&S Playtest]",
+    "name": "Shrug Off",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "3 Enduring Soul Features"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078992,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "tohou-the-wilderness",
+      "uuid": null,
+      "coreVersion": "11.308",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.alpha.25"
+    }
+  },
+  "folder": "UVQvHiZHa8JnNuHJ",
+  "_id": "7JkfxBoKcIMe2P0q",
+  "sort": 50000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7JkfxBoKcIMe2P0q"
+}

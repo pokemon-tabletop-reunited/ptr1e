@@ -1,0 +1,65 @@
+{
+  "name": "Passing Waltz [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You or one of your Pokémon with Own Tempo or Spinning Dance uses a Dance Move\nEffect: Choose an ally within 3 meters of the triggering target. That ally gains Combat Stages from the triggering Move instead of the user.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Dance Practice",
+      "Master Acrobatics or Athletics or Charm"
+    ],
+    "frequency": "1 AP – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Dancer [CR]",
+    "name": "Passing Waltz [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "5JFKPKlyJEga6GKY",
+  "_id": "fJ9NkyMsmNIPyulk",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fJ9NkyMsmNIPyulk"
+}

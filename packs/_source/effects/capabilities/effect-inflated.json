@@ -1,0 +1,90 @@
+{
+  "folder": "mPgTCXDywTV4kW8J",
+  "name": "Effect: Inflated",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "When Inflated, Pokémon gain a -1 Penalty to Evasion, but become Blocking Terrain; you may not target through an Inflated Pokemon",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "subtract",
+        "value": 1,
+        "path": "system.modifiers.evasion.physical.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "subtract",
+        "value": 1,
+        "path": "system.modifiers.evasion.special.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "subtract",
+        "value": 1,
+        "path": "system.modifiers.evasion.speed.mod"
+      },
+      {
+        "key": "TokenImage",
+        "scale": 1.25
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.636Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.3",
+    "coreVersion": "13.350",
+    "createdTime": 1694684915041,
+    "modifiedTime": 1695027124661,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "dyk9GIGBhVo3NGGZ",
+  "sort": 300000,
+  "_key": "!items!dyk9GIGBhVo3NGGZ"
+}

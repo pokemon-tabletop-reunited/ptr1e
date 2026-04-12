@@ -1,0 +1,26 @@
+{
+  "name": "Update Tokens to Default Sprite",
+  "type": "script",
+  "scope": "global",
+  "author": "ODt7FhFvbVjW9f1k",
+  "img": "icons/svg/mystery-man.svg",
+  "command": "// If your token art didn't properly update to the new standard\n// And you are using the default art with no custom path\n// You can use this macro to update your Token's Art\n\n// UPDATE TOKENS TO NEW DEFAULT\n// WILL OVERRIDE AND WON'T CHECK OLD IMAGES\n// IF YOU HAVE CUSTOM IMAGES DON'T RUN THIS\nconst pokemon = game.actors.filter(a => a.type === \"pokemon\");\nfor(const mon of pokemon) {\n  const match = /(\\d+.+).(webp|png)/.exec(mon.prototypeToken.texture.src);\n  if(!match) continue;\n\n  const[_, name, ext] = match;\n  const newUrl = `/systems/ptu/static/images/sprites/`;\n\n  mon.update({\"prototypeToken.texture.src\":  `${newUrl}${name}.webp`});\n  for(const token of mon.getActiveTokens()) {\n    token.document.update({\"texture.src\": `${newUrl}${name}.webp`});\n  }\n}",
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.release-candidate.1",
+    "coreVersion": "13.350",
+    "createdTime": 1694777638990,
+    "modifiedTime": 1699269015548,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "HAtYcPnHQzB8JzY8",
+  "sort": 200000,
+  "_key": "!macros!HAtYcPnHQzB8JzY8"
+}

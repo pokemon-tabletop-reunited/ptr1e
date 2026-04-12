@@ -1,0 +1,66 @@
+{
+  "name": "Authentic Thaumaturgy",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You use a Special Move \nEffect: You may apply a Rank 2 Power Manipulation to your attack.\nRank 2 Power Manipulations are: Berserk Blow, Energy Link, Enlarged Power, Lock of Fate",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "Arcanist",
+      "Expert Occult Education"
+    ],
+    "frequency": "Scene x2 - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Arcanist",
+    "automation": [],
+    "name": "Authentic Thaumaturgy",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Arcanist, Expert Occult Education"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081760,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 32500000,
+  "_id": "TvUVAxx5fNNRPmIA",
+  "_key": "!items!TvUVAxx5fNNRPmIA"
+}

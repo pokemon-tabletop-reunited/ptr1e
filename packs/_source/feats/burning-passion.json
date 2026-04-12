@@ -1,0 +1,79 @@
+{
+  "name": "Burning Passion",
+  "system": {
+    "origin": "",
+    "effect": "Choose Flash Fire or Flame Body. You gain the chosen Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.abilities.Item.ZtDz88aFEkBCL83y"
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.vF0vjHMDikFAthFY"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack or Attack"
+    ],
+    "prerequisites": [
+      "Fire Bringer",
+      "Expert Focus or Combat"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Fire Bringer",
+    "name": "Burning Passion",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Fire Bringer, Expert Focus or Combat"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081699,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 35700000,
+  "_id": "WgD7TS3QIIG1OFEO",
+  "_key": "!items!WgD7TS3QIIG1OFEO"
+}

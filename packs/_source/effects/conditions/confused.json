@@ -1,0 +1,75 @@
+{
+  "name": "Confused",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Confused.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "Confused targets cannot take Attacks of Opportunity. If a Confused target makes and Attack (even attacks without rolls), roll 1d2. On a 1, after the attack is resolved, the Confused Pokémon loses Hit Points equal to half their Attack Stat if the Move was Physical, half their Special Attack Stat if the move was Special, or two Ticks of Hit Points if the Move was a Status Move. The target is cured of Confusion with a Save of 16+ made at end of turn.",
+    "snippet": "",
+    "rules": [],
+    "enabled": true,
+    "slug": "confused",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.637Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "encounter",
+      "expiry": ""
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": {
+      "formula": "",
+      "type": "save",
+      "dc": 16,
+      "decrease": false
+    },
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "rPNjp26cMp3XQ6aC",
+  "_id": "pLKjxFPUOZQHAcXH",
+  "effects": [],
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1708098748925,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!pLKjxFPUOZQHAcXH"
+}

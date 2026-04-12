@@ -1,0 +1,269 @@
+{
+  "name": "Athletic Moves Rank 2",
+  "system": {
+    "origin": "",
+    "effect": "You learn two Athlete Moves marked Rank 2 or lower.\nRank 2: Body Slam, Take Down, Extreme Speed",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "athleticMovesRank2Feat1",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Bind",
+            "value": "Compendium.ptu.moves.Item.nzd3auiq1JwJFmCb",
+            "predicate": {
+              "not": "move:bind"
+            }
+          },
+          {
+            "label": "Block",
+            "value": "Compendium.ptu.moves.Item.PvmLk3AU04nOjH4x",
+            "predicate": {
+              "not": "move:block"
+            }
+          },
+          {
+            "label": "Slam",
+            "value": "Compendium.ptu.moves.Item.B6mHk3zIO3QaXnIQ",
+            "predicate": {
+              "not": "move:slam"
+            }
+          },
+          {
+            "label": "Strength",
+            "value": "Compendium.ptu.moves.Item.v7BArKd17sdkD59s",
+            "predicate": {
+              "not": "move:strength"
+            }
+          },
+          {
+            "label": "Body Slam",
+            "value": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+            "predicate": {
+              "not": "move:body-slam"
+            }
+          },
+          {
+            "label": "Take Down",
+            "value": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+            "predicate": {
+              "not": "move:take-down"
+            }
+          },
+          {
+            "label": "Extreme Speed",
+            "value": "Compendium.ptu.moves.Item.d4ZmIYX6ghY0hw7p",
+            "predicate": {
+              "not": "move:extreme-speed"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.ptu.rulesSelections.athleticMovesRank2Feat1}",
+        "onDeleteActions": {
+          "grantee": "restrict",
+          "granter": "cascade"
+        },
+        "predicate": [],
+        "allowDuplicate": false
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "athleticMovesRank2Feat2",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Bind",
+            "value": "Compendium.ptu.moves.Item.nzd3auiq1JwJFmCb",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.athleticMovesRank2Feat1}",
+                    "Compendium.ptu.moves.Item.nzd3auiq1JwJFmCb"
+                  ]
+                }
+              },
+              {
+                "not": "move:bind"
+              }
+            ]
+          },
+          {
+            "label": "Block",
+            "value": "Compendium.ptu.moves.Item.PvmLk3AU04nOjH4x",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.athleticMovesRank2Feat1}",
+                    "Compendium.ptu.moves.Item.PvmLk3AU04nOjH4x"
+                  ]
+                }
+              },
+              {
+                "not": "move:block"
+              }
+            ]
+          },
+          {
+            "label": "Slam",
+            "value": "Compendium.ptu.moves.Item.B6mHk3zIO3QaXnIQ",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.athleticMovesRank2Feat1}",
+                    "Compendium.ptu.moves.Item.B6mHk3zIO3QaXnIQ"
+                  ]
+                }
+              },
+              {
+                "not": "move:slam"
+              }
+            ]
+          },
+          {
+            "label": "Strength",
+            "value": "Compendium.ptu.moves.Item.v7BArKd17sdkD59s",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.athleticMovesRank2Feat1}",
+                    "Compendium.ptu.moves.Item.v7BArKd17sdkD59s"
+                  ]
+                }
+              },
+              {
+                "not": "move:strength"
+              }
+            ]
+          },
+          {
+            "label": "Body Slam",
+            "value": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+            "predicate": [
+              {
+                "not": "move:body-slam"
+              },
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.athleticMovesRank2Feat1}",
+                    "Compendium.ptu.moves.Item.DzD1pun72sIQFQle"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "Take Down",
+            "value": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+            "predicate": [
+              {
+                "not": "move:take-down"
+              },
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.athleticMovesRank2Feat1}",
+                    "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "Extreme Speed",
+            "value": "Compendium.ptu.moves.Item.d4ZmIYX6ghY0hw7p",
+            "predicate": [
+              {
+                "not": "move:extreme-speed"
+              },
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.athleticMovesRank2Feat1}",
+                    "Compendium.ptu.moves.Item.d4ZmIYX6ghY0hw7p"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.ptu.rulesSelections.athleticMovesRank2Feat2}",
+        "onDeleteActions": {
+          "grantee": "restrict",
+          "granter": "cascade"
+        },
+        "predicate": [],
+        "allowDuplicate": false
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Ranked 3"
+    ],
+    "prerequisites": [
+      "Athlete",
+      "Expert Athletics"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Athlete",
+    "automation": [],
+    "name": "Athletic Moves Rank 2",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Athlete, Expert Athletics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079149,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 16300000,
+  "_id": "G14cBIcwZkRHyFtZ",
+  "_key": "!items!G14cBIcwZkRHyFtZ"
+}

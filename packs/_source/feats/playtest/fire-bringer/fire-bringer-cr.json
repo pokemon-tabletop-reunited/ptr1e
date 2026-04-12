@@ -1,0 +1,210 @@
+{
+  "name": "Fire Bringer [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Choose three of Flame Burst, Flame Charge, Flame Wheel, Sunny Day, or Will-O-Wisp. You learn the chosen Moves.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "firebringer",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.firebringer}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.JV9D80kHWzifgoYH",
+            "predicate": {
+              "not": "move:flame-burst"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV",
+            "predicate": {
+              "not": "move:flame-charge"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.cDe2PIlHkOV2msto",
+            "predicate": {
+              "not": "move:flame-wheel"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+            "predicate": {
+              "not": "move:sunny-day"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+            "predicate": {
+              "not": "move:will-o-wisp"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.JV9D80kHWzifgoYH",
+            "predicate": {
+              "not": "move:flame-burst"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV",
+            "predicate": {
+              "not": "move:flame-charge"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.cDe2PIlHkOV2msto",
+            "predicate": {
+              "not": "move:flame-wheel"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+            "predicate": {
+              "not": "move:sunny-day"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+            "predicate": {
+              "not": "move:will-o-wisp"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move3",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.JV9D80kHWzifgoYH",
+            "predicate": {
+              "not": "move:flame-burst"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV",
+            "predicate": {
+              "not": "move:flame-charge"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.cDe2PIlHkOV2msto",
+            "predicate": {
+              "not": "move:flame-wheel"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+            "predicate": {
+              "not": "move:sunny-day"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+            "predicate": {
+              "not": "move:will-o-wisp"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move3}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Attack or Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Fire)",
+      "Novice Combat"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Fire Bringer [CR]",
+    "name": "Fire Bringer [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "FeVAuZAxeshdeg9p",
+  "_id": "eaqZ2wDscc9lYKke",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!eaqZ2wDscc9lYKke"
+}

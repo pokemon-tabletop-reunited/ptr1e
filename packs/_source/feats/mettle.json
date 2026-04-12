@@ -1,0 +1,65 @@
+{
+  "name": "Mettle",
+  "system": {
+    "origin": "",
+    "effect": "Target: You take Massive Damage or Intercept a Damaging Attack.\nEffect: Resolve Damage as if the triggering attack was resisted one step. The triggering foe then loses 2 Combat Stages in the Attack Stat used by the triggering Attack.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Roughneck"
+    ],
+    "frequency": "Scene x2 - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Roughneck",
+    "automation": [],
+    "name": "Mettle",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Roughneck"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078849,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 57200000,
+  "_id": "oBkfk18l03BhRezD",
+  "_key": "!items!oBkfk18l03BhRezD"
+}

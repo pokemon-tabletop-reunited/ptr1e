@@ -1,0 +1,56 @@
+{
+  "name": "Bone Lord",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You hit with Bone Club, Bonemerang, or Bone Rush\nConnection - Bonemerang. \n\nOnce per Scene per Move, the following Moves may be used as if they had the following bonuses:\n- Bone Club: Bone Club’s target loses 1 Defense and Special Attack CS.\n- Bonemerang: Has a Range of Line 6 but loses the Double Strike keyword\n- Bone Rush: Bone Rush automatically ‘hits’ four times (as per the Five Strike keyword).",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.Wl0TsRshICE0ZX9P"
+      }
+    ],
+    "enabled": true,
+    "slug": "bone-lord",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "At-Will - Free Action",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "ExijklqIzfEgOWYz",
+  "effects": [],
+  "folder": null,
+  "sort": 14000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1712497314096,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ExijklqIzfEgOWYz"
+}

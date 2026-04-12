@@ -1,0 +1,65 @@
+{
+  "name": "Genjutsu [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You form an Illusion around yourself. This Illusion conceals you, allowing you to use the Hide Manuever as if you were in Obscurring Terrain. This Illusiuon can look like a cloud of darkness, or disguise you as a mundane, inanimate object. The Illusion can even fool Aura, concealing you from Aura Sight for its duration. However, the Illusion requires complete concentration, and is broken if you take any actions at all. Anyone that interacts with the Illusion directly may make an Occult Education or Intuition Check with a DC equal to 10 plus your Stealth Rank; if they succeed, the Illusion is broken, and you are no longer Hidden.\nBonus: You gain the Blender Capability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Ninja",
+      "Adept Stealth"
+    ],
+    "frequency": "At-Will – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Ninja [CR]",
+    "name": "Genjutsu [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "Oh9iNhjBAL6rHEpw",
+  "_id": "uDOEW8x6gNxw5rLf",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!uDOEW8x6gNxw5rLf"
+}

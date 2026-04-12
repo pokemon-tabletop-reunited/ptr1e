@@ -1,0 +1,86 @@
+{
+  "name": "Amber Wave",
+  "type": "move",
+  "img": "systems/ptu/static/css/images/types2/RockIC_Icon.png",
+  "system": {
+    "origin": "",
+    "effect": "All legal targets become Stuck and have their Speed CS lowered by 1.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": {
+          "not": "target:types:ghost"
+        },
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.OzGm9ZwyLd8yEhCK",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.T2n07CO2M82Er8Sz",
+        "range": "1",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "amber-wave",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.T2n07CO2M82Er8Sz",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Rock",
+    "category": "Special",
+    "damageBase": "8",
+    "frequency": "Scene x2",
+    "ac": "5",
+    "range": "Cone 3",
+    "contestType": "Tough - Catching Up",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "CO3NXf29h9urtwId",
+  "effects": [],
+  "folder": null,
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1693119119587,
+    "modifiedTime": 1710783053734,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!CO3NXf29h9urtwId"
+}

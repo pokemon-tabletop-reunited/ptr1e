@@ -1,0 +1,80 @@
+{
+  "name": "Blazing Inferno [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You becoming Blazing. While you are Blazing, whenever your Fire-Type Moves Inflict Burn, the Burned target immediately loses a Tick of Hit Points, and loses an additional Combat Stage in Defense. While Blazing, when you hit a foe with a damaging Fire-Type Move, you may choose to automatically burn one target of the Move. If you do, you lose the Blazing Condition after the Move’s effects are resolved.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "blazinginferno",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.blazinginferno}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack or Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Fire Breather Rank 2",
+      "Master Focus or Combat"
+    ],
+    "frequency": "2 AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Fire Bringer [CR]",
+    "name": "Blazing Inferno [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "FeVAuZAxeshdeg9p",
+  "_id": "R2M3UqimraEOpgAO",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!R2M3UqimraEOpgAO"
+}

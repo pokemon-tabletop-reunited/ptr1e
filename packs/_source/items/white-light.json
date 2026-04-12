@@ -1,0 +1,92 @@
+{
+  "name": "White Light",
+  "system": {
+    "origin": "",
+    "effect": "So named for the soft white glow the liquid gives off, White Light is a crude “truth serum”. It is slow-acting, taking upwards of an hour to take full effect on a victim. The victim becomes more suggestible and gullible. All of their Guile, Intuition, and Focus Checks made during an interrogation are subject to a -5 penalty.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.skills.guile.modifier.mod",
+        "phase": "applyAEs",
+        "value": 5,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.skills.intuition.modifier.mod",
+        "phase": "applyAEs",
+        "value": 5,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.skills.focus.modifier.mod",
+        "phase": "applyAEs",
+        "value": 5,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "white-light",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.370Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Sci-Fi Drug"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "800",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "White Light",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368783709,
+    "modifiedTime": 1712495572650,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 29200000,
+  "_id": "O7n5R8eqPbjSzAor",
+  "_key": "!items!O7n5R8eqPbjSzAor"
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Throwing Masteries",
+  "system": {
+    "origin": "",
+    "effect": "Increase the Throwing Range of your Poké Balls, Ranged Weapons, and other small items by +2.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.capabilities.throwingRange",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "throwing-masteries",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Adept Acrobatics"
+    ],
+    "notes": "",
+    "free": false,
+    "name": "Throwing Masteries",
+    "useCount": 0
+  },
+  "type": "edge",
+  "img": "/systems/ptu/css/images/icons/edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Adept Acrobatics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683367953807,
+    "modifiedTime": 1712495284250,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "8eoPOpv2Si3F64tt",
+  "_key": "!items!8eoPOpv2Si3F64tt"
+}

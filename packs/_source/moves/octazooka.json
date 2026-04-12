@@ -1,0 +1,78 @@
+{
+  "name": "Octazooka",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/WaterIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Octazooka lowers the target's Accuracy by 1 on an Even-Numbered Roll.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.nDEV77l0d4x7pnIz",
+        "range": "even",
+        "value": "",
+        "even": true,
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "octazooka",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.nDEV77l0d4x7pnIz",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Water",
+    "category": "Special",
+    "damageBase": "7",
+    "frequency": "At-Will",
+    "ac": "3",
+    "range": "Range 6",
+    "contestType": "Tough - Incentives",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "9hmezFkIqkSZCqd3",
+  "effects": [],
+  "sort": 12900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710782245635,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!9hmezFkIqkSZCqd3"
+}

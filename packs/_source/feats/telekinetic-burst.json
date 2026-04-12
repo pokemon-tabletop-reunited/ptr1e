@@ -1,0 +1,66 @@
+{
+  "name": "Telekinetic Burst",
+  "system": {
+    "origin": "",
+    "effect": "You perform a Disarm, Trip, or Push Maneuver using your Telekinetic Capability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "PK Omega",
+      "Master Focus"
+    ],
+    "frequency": "2 AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Telekinetic",
+    "automation": [],
+    "name": "Telekinetic Burst",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "PK Omega, Master Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081746,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 1800000,
+  "_id": "1Kjd396RbZJt9uxT",
+  "_key": "!items!1Kjd396RbZJt9uxT"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Enchanting Gaze [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Choose a Manipulate Maneuver effect; apply that Effect to all foes in a Cone 2. This ignores Frequency Limitations with that Maneuver and automatically succeeds against all targets without an opposed roll.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Quick Wit",
+      "two Provocateur Skills at Expert Rank."
+    ],
+    "frequency": "2 AP – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Provocateur [CR]",
+    "name": "Enchanting Gaze [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "mS7fmuAZxBzZ1J7B",
+  "_id": "bZjZbiikrymEjsvm",
+  "effects": [],
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1710765909004,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!bZjZbiikrymEjsvm"
+}

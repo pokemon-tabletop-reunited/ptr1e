@@ -1,0 +1,65 @@
+{
+  "name": "Presentation! [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You release a Pokémon from its Poké Ball\nEffect: You may immediately have your Pokémon undergo a Phenomena (Mega Evolution, Dynamax, Gigantamax, Eternamax, Terrastalization) or Forme Change (ignoring location or item dependencies).",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Tag Out or Tag In",
+      "Master Acrobatics or Guile"
+    ],
+    "frequency": "Scene – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Juggler [CR]",
+    "name": "Presentation! [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "u4sxjQFNU2N2zGmv",
+  "_id": "9DbOKHzEcGZQjZnr",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!9DbOKHzEcGZQjZnr"
+}

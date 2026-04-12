@@ -1,0 +1,75 @@
+{
+  "name": "Shadow Bone",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/GhostIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Lower the target's Defense by 1 Combat Stage on a 17+. Counts as a Bone Move for Cubone/Marowak's Abilities, etc.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.cu9YXnbzXCyrAjyc",
+        "range": "17",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "shadow-bone",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.cu9YXnbzXCyrAjyc",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Ghost",
+    "category": "Physical",
+    "damageBase": "9",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "Melee",
+    "contestType": "Tough - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "SfzNA4iRWJQ71BjE",
+  "effects": [],
+  "sort": 39700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710788897672,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!SfzNA4iRWJQ71BjE"
+}

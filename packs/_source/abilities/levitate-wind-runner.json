@@ -1,0 +1,71 @@
+{
+  "name": "Levitate (Wind Runner)",
+  "type": "ability",
+  "img": "https://assets.forge-vtt.com/6464e7dd7cb6da75187d728c/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "The Pokémon is immune to the damage and effects of Ground Type Moves, and gains a Levitate Speed of 4, or has existing Levitate Speeds increased by +2. Defensive.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.capabilities.levitate",
+        "phase": "afterDerived",
+        "value": "4 + floor(max(@actor.system.skills.acrobatics.value.total/2,@actor.system.skills.perception.value.total/2))"
+      },
+      {
+        "key": "Effectiveness",
+        "predicate": [],
+        "type": "ground",
+        "value": 0
+      }
+    ],
+    "enabled": true,
+    "slug": "levitate",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T01:45:48.453Z",
+        "version": {
+          "schema": 0.11,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1707761783909,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "SKJicSWmXBMtgNpo",
+  "sort": 0,
+  "_key": "!items!SKJicSWmXBMtgNpo"
+}

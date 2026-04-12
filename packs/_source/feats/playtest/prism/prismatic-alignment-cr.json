@@ -1,0 +1,65 @@
+{
+  "name": "Prismatic Alignment [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You use a Prism Move\nEffect: The effect of this Feature depends on the Triggering Move. You may only use Prismatic Alignment with each Move once per Scene.\n- Flash: Flash also Blinds all targets it hits until the end of their next turn.\n- Swift: Swift instead has a range of 8, 3 Targets.\n- Tri-Attack: Roll twice for Tri-Attack’s Accuracy Roll and take the better result. If you trigger its Effect Range, you may choose the effect instead of rolling for it.\n- Weather Ball: You use Weather Ball as if you were in the Weather of your choice.\n- Hyper Beam: Hyper Beam instead has a Range of Burst 2, Smite or 10, Ranged Blast 3, Smite.\n- Morning Sun: You use Morning Sun as if you were in Sunny Weather, and you may cure yourself of one Status Affliction.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "4 Prism Features",
+      "Master Charm or General Education"
+    ],
+    "frequency": "2 AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Prism [CR]",
+    "name": "Prismatic Alignment [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "GiGB2asXGrFmHgVZ",
+  "_id": "7zcPROmKCWjm7wFI",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7zcPROmKCWjm7wFI"
+}

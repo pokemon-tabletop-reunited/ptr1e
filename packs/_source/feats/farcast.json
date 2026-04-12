@@ -1,0 +1,66 @@
+{
+  "name": "Farcast",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You use the Move Teleport or activate the Teleporter Capability \nChoose One Effect: You activate Teleporter as if your Teleporter value were three times its normal value or you may take one willing Pokémon or Trainer along with you as you teleport so long as you are touching them when you activate Farcast. You may expend two uses of Farcast at once to choose both effects.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Space Distortion",
+      "Expert Guile"
+    ],
+    "frequency": "Daily x3 - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Warper",
+    "automation": [],
+    "name": "Farcast",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Space Distortion, Expert Guile"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081743,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 8300000,
+  "_id": "79HuRl4kE2pafojG",
+  "_key": "!items!79HuRl4kE2pafojG"
+}

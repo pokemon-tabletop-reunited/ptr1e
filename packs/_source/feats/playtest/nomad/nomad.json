@@ -1,0 +1,80 @@
+{
+  "folder": "SMepfD0qveoA3YvU",
+  "name": "Nomad",
+  "type": "feat",
+  "img": "systems/ptu/static/css/images/icons/class_feat_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Effect: You gain the Moves Ally Switch and Teleport.\nBonus: For every 2 Nomad class features you possess (beyond Nomad), you gain +1 to to your Teleporter Speed.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.RJi8fqc4Kx3yZnVJ"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.BFyiKFMmD0rwvIl7"
+      }
+    ],
+    "enabled": true,
+    "slug": "nomad",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Psychic)",
+      "Novice Focus"
+    ],
+    "frequency": "At Will - Standard Action",
+    "notes": "",
+    "free": false,
+    "class": ""
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "Elemental Connection (Psychic), Novice Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "13.350",
+    "createdTime": 1695152947504,
+    "modifiedTime": 1709366299668,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "mHufrikSlUHSjjt7",
+  "sort": 600000,
+  "_key": "!items!mHufrikSlUHSjjt7"
+}

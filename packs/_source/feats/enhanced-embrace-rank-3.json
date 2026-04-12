@@ -1,0 +1,427 @@
+{
+  "name": "Enhanced Embrace Rank 3",
+  "system": {
+    "origin": "",
+    "effect": "Learn two Moves from the list below at the Rank of Enhanced Embrace you are taking or lower. Moves marked with an Embrace require that Embrace to be chosen.\nRank 3 Moves: Bug Buzz, Mega Horn, Quiver Dance(Monarch), Spider Web(Arachnid)",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "feat",
+        "adjustName": false,
+        "prompt": "Choose which stat to increase.",
+        "choices": [
+          {
+            "label": "ATK (Arachnid's Embrace)",
+            "value": "system.modifiers.baseStats.atk.mod"
+          },
+          {
+            "label": "SPATK (Monarch's Embrace)",
+            "value": "system.modifiers.baseStats.spatk.mod"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "{item|flags.ptu.rulesSelections.feat}",
+        "mode": "add",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.7hrNCJ06sxq0OB9q",
+            "predicate": {
+              "not": "move:defend-order"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.4W8tzNRKdmn0WRYd",
+            "predicate": {
+              "not": "move:fury-cutter"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.RjTMjxxZSdIu2xZL",
+            "predicate": {
+              "not": "move:fell-stinger"
+            }
+          },
+          {
+            "label": "Struggle Bug (Monarch)",
+            "value": "Compendium.ptu.moves.Item.Hm5nTF5Wh5UusvYM",
+            "predicate": {
+              "not": "move:struggle-bug"
+            }
+          },
+          {
+            "label": "Sticky Web (Arachnid)",
+            "value": "Compendium.ptu.moves.Item.vOj9bt7G9I4GixBZ",
+            "predicate": {
+              "not": "move:sticky-web"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0",
+            "predicate": {
+              "not": "move:infestation"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+            "predicate": {
+              "not": "move:signal-beam"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.z3qJIXk0WLYv9NqA",
+            "predicate": {
+              "not": "move:steamroller"
+            }
+          },
+          {
+            "label": "Powder (Monarch)",
+            "value": "Compendium.ptu.moves.Item.oY92cZyfclUEtNVa",
+            "predicate": {
+              "not": "move:powder"
+            }
+          },
+          {
+            "label": "Attack Order (Arachnid)",
+            "value": "Compendium.ptu.moves.Item.Vw24aXumiUVNg0CF",
+            "predicate": {
+              "not": "move:attack-order"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.e6iWUraE813j6eXu",
+            "predicate": {
+              "not": "move:bug-buzz"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.StGpIzCBfyxbhlSv",
+            "predicate": {
+              "not": "move:megahorn"
+            }
+          },
+          {
+            "label": "Quiver Dance (Monarch)",
+            "value": "Compendium.ptu.moves.Item.pn6JmfHRLpLv3rMe",
+            "predicate": {
+              "not": "move:quiver-dance"
+            }
+          },
+          {
+            "label": "Spider Web (Arachnid)",
+            "value": "Compendium.ptu.moves.Item.cVvKcL3mPp6NRRPG",
+            "predicate": {
+              "not": "move:spider-web"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.7hrNCJ06sxq0OB9q",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.7hrNCJ06sxq0OB9q"
+                  ]
+                }
+              },
+              {
+                "not": "move:defend-order"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.4W8tzNRKdmn0WRYd",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.4W8tzNRKdmn0WRYd"
+                  ]
+                }
+              },
+              {
+                "not": "move:fury-cutter"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.RjTMjxxZSdIu2xZL",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.RjTMjxxZSdIu2xZL"
+                  ]
+                }
+              },
+              {
+                "not": "move:fell-stinger"
+              }
+            ]
+          },
+          {
+            "label": "Struggle Bug (Monarch)",
+            "value": "Compendium.ptu.moves.Item.Hm5nTF5Wh5UusvYM",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.Hm5nTF5Wh5UusvYM"
+                  ]
+                }
+              },
+              {
+                "not": "move:struggle-bug"
+              }
+            ]
+          },
+          {
+            "label": "Sticky Web (Arachnid)",
+            "value": "Compendium.ptu.moves.Item.vOj9bt7G9I4GixBZ",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.vOj9bt7G9I4GixBZ"
+                  ]
+                }
+              },
+              {
+                "not": "move:sticky-web"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0"
+                  ]
+                }
+              },
+              {
+                "not": "move:infestation"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP"
+                  ]
+                }
+              },
+              {
+                "not": "move:signal-beam"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.z3qJIXk0WLYv9NqA",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.z3qJIXk0WLYv9NqA"
+                  ]
+                }
+              },
+              {
+                "not": "move:steamroller"
+              }
+            ]
+          },
+          {
+            "label": "Powder (Monarch)",
+            "value": "Compendium.ptu.moves.Item.oY92cZyfclUEtNVa",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.oY92cZyfclUEtNVa"
+                  ]
+                }
+              },
+              {
+                "not": "move:powder"
+              }
+            ]
+          },
+          {
+            "label": "Attack Order (Arachnid)",
+            "value": "Compendium.ptu.moves.Item.Vw24aXumiUVNg0CF",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.Vw24aXumiUVNg0CF"
+                  ]
+                }
+              },
+              {
+                "not": "move:attack-order"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.e6iWUraE813j6eXu",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.e6iWUraE813j6eXu"
+                  ]
+                }
+              },
+              {
+                "not": "move:bug-buzz"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.StGpIzCBfyxbhlSv",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.StGpIzCBfyxbhlSv"
+                  ]
+                }
+              },
+              {
+                "not": "move:megahorn"
+              }
+            ]
+          },
+          {
+            "label": "Quiver Dance (Monarch)",
+            "value": "Compendium.ptu.moves.Item.pn6JmfHRLpLv3rMe",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.pn6JmfHRLpLv3rMe"
+                  ]
+                }
+              },
+              {
+                "not": "move:quiver-dance"
+              }
+            ]
+          },
+          {
+            "label": "Spider Web (Arachnid)",
+            "value": "Compendium.ptu.moves.Item.cVvKcL3mPp6NRRPG",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.cVvKcL3mPp6NRRPG"
+                  ]
+                }
+              },
+              {
+                "not": "move:spider-web"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 3"
+    ],
+    "prerequisites": [
+      "Expert Command or Survival"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Swarmlord",
+    "name": "Enhanced Embrace Rank 3",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Expert Command or Survival"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078992,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 15300000,
+  "_id": "ETOXEWSRxhwrs9VR",
+  "_key": "!items!ETOXEWSRxhwrs9VR"
+}

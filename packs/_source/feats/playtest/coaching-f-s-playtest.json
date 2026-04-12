@@ -1,0 +1,76 @@
+{
+  "name": "Coaching [F&S Playtest]",
+  "system": {
+    "origin": "[F&S Playtest]",
+    "effect": "Trigger - Your Pokémon makes a Combat Maneuver\nEffect: Your Pokémon gains a bonus based on the type of Combat maneuver they are making. This Feature may be triggered once per Scene per Pokémon.\n»» Your Pokémon gains a +1d6 bonus to Opposed Acrobatics, Athletics, Combat, or Stealth Skill Checks.\n»» If your Pokémon was Sprinting, they double their Movement Capabilities instead of increasing by 50%.\n»» If your Pokémon was making an Attack of Opportunity, they automatically hit.\n»» You may also activate this Feature to let them Intercept for any Ally regardless of Loyalty, and they automatically succeed on the Skill Check to do so.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Playtest",
+      "F&S"
+    ],
+    "prerequisites": [
+      "Training Regime"
+    ],
+    "frequency": "1 AP - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Athlete",
+    "automation": [],
+    "name": "Coaching",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "Training Regime"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079063,
+    "modifiedTime": 1707827204534,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "tohou-the-wilderness",
+      "uuid": null,
+      "coreVersion": "11.308",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.alpha.25"
+    }
+  },
+  "folder": "NlEB7XJnDWyGbZnQ",
+  "_id": "iu5YCy5v6F3PWyj9",
+  "sort": 3800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iu5YCy5v6F3PWyj9"
+}

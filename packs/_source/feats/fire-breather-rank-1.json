@@ -1,0 +1,196 @@
+{
+  "name": "Fire Breather Rank 1",
+  "system": {
+    "origin": "",
+    "effect": "Learn two Fire Breather Moves from the list below.\nRank 1 Moves: Flamethrower, Fire Punch, Fire Spin, Sunny Day",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "feat",
+        "adjustName": false,
+        "prompt": "Choose which stat to increase.",
+        "choices": [
+          {
+            "label": "ATK",
+            "value": "system.modifiers.baseStats.atk.mod"
+          },
+          {
+            "label": "SPATK",
+            "value": "system.modifiers.baseStats.spatk.mod"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "{item|flags.ptu.rulesSelections.feat}",
+        "mode": "add",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "rank1move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+            "predicate": {
+              "not": "move:flamethrower"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+            "predicate": {
+              "not": "move:fire-punch"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+            "predicate": {
+              "not": "move:sunny-day"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ",
+            "predicate": {
+              "not": "move:fire-spin"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.rank1move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "rank1move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn"
+                  ]
+                }
+              },
+              {
+                "not": "move:flamethrower"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf"
+                  ]
+                }
+              },
+              {
+                "not": "move:fire-punch"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+                  ]
+                }
+              },
+              {
+                "not": "move:sunny-day"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ"
+                  ]
+                }
+              },
+              {
+                "not": "move:fire-spin"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.rank1move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+Special Attack or Attack"
+    ],
+    "prerequisites": [
+      "Expert Focus or Combat"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Fire Bringer",
+    "name": "Fire Breather Rank 1",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Expert Focus or Combat"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081687,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 47700000,
+  "_id": "hBQHK4IXxIRrpxV9",
+  "_key": "!items!hBQHK4IXxIRrpxV9"
+}

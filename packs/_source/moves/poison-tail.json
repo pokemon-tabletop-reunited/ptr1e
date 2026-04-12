@@ -1,0 +1,86 @@
+{
+  "name": "Poison Tail",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/PoisonIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Poison Tail is a Critical Hit on 18+ and Poisons the target on 19+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": {
+          "not": "target:types:poison"
+        },
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.299X6pActAV8ITz7",
+        "range": "19",
+        "value": ""
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "{item|id}-crit-range",
+        "value": 2
+      }
+    ],
+    "enabled": true,
+    "slug": "poison-tail",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Poison",
+    "category": "Physical",
+    "damageBase": "5",
+    "frequency": "At-Will",
+    "ac": "2",
+    "range": "Melee",
+    "contestType": "Smart - Incentives",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "MTBLJx5OwpfGk4xx",
+  "effects": [],
+  "sort": 29600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710852089595,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MTBLJx5OwpfGk4xx"
+}

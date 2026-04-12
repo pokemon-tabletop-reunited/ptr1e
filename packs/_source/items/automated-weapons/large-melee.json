@@ -1,0 +1,82 @@
+{
+  "folder": "dFIH3ZVcIQRJGnr8",
+  "name": "Large Melee",
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Two-handed weapon raise the AC of the Attack by +1,\nand raise the Damage Base by +2.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:weapon"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "damage-base",
+        "value": 2,
+        "label": "large-melee"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:weapon"
+        ],
+        "label": "large-melee",
+        "hideIfDisabled": false,
+        "selectors": "attack-roll",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "large-melee",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "quantity": "1",
+    "category": "Equipment",
+    "cost": "0",
+    "consumable": 0,
+    "subtype": "",
+    "container": false
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "wvMbVsGQoKsRWXn6",
+  "sort": 200000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.3.0",
+    "createdTime": 1710773277198,
+    "modifiedTime": 1718112655335,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!wvMbVsGQoKsRWXn6"
+}

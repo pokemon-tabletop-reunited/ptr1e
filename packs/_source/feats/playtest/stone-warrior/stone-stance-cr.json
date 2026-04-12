@@ -1,0 +1,64 @@
+{
+  "name": "Stone Stance [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You adopt one of the stances below, gaining the effects of the stance while this Feature remains bound. You may switch your active Stance as a Standard Action without rebinding your AP. The benefits from this Feature do not apply if you are not standing on a solid surface, such as deep mud or snow, or if you are outright swimming or even flying.\n- Falling Boulder Stance: You gain a +1 bonus to Accuracy with Rock-type attacks and a +5 bonus to all Damage Rolls, but lose 5 HP from Recoil whenever you hit with an attack.\n- Moon Mountain Stance: Your initiative is lowered by -5, but you gain 5 Damage Reduction and are immune to Push or Pull effects.\n- Roiling Earth Stance: After a successful Intercept action, you may make a Struggle Attack against a foe within range.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Stone Warrior"
+    ],
+    "frequency": "Bind 2 AP – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Stone Warrior [CR]",
+    "name": "Stone Stance [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "nC4MYGyp8GMoMBLk",
+  "_id": "J2h70bqRIHR8ZGdy",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!J2h70bqRIHR8ZGdy"
+}

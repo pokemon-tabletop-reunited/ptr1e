@@ -1,0 +1,209 @@
+{
+  "folder": "fTnXg4Xmuu6z14TV",
+  "name": "Effect: Surge of Spirit",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "<blockquote>Effect functions however you should make a local copy and edit the first 5 rules changing the value from 0 to your Intuition Rank.</blockquote>\nThe target receives +X to Bonus Damage to its Damage Rolls, Damage Reduction and Initiative Modifiers, with X being equal to Lan's Intuition Rank.\nBonus: When bound, the target gains double the effects of Spirit.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageBonus.physical.mod",
+        "phase": "applyAEs",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageBonus.special.mod",
+        "phase": "applyAEs",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.physical.mod",
+        "phase": "applyAEs",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.special.mod",
+        "phase": "applyAEs",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.initiative.mod",
+        "phase": "applyAEs",
+        "value": 0
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "gte": [
+            "{actor|system.spirit.value}",
+            1
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.skillBonus.mod",
+        "phase": "applyAEs",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "gte": [
+            "{actor|system.spirit.value}",
+            2
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.saveChecks.mod",
+        "phase": "applyAEs",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "gte": [
+            "{actor|system.spirit.value}",
+            3
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.acBonus.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "gte": [
+            "{actor|system.spirit.value}",
+            3
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.critRange.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "gte": [
+            "{actor|system.spirit.value}",
+            3
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.evasion.physical.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "gte": [
+            "{actor|system.spirit.value}",
+            3
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.evasion.special.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "gte": [
+            "{actor|system.spirit.value}",
+            3
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.evasion.speed.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-surge-of-spirit",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-14T21:44:47.537Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.1.1",
+    "createdTime": 1706452720619,
+    "modifiedTime": 1706452720619,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "marth-ptr",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.1.0"
+    }
+  },
+  "_id": "d8214x5aNOxtEyxX",
+  "sort": 0,
+  "_key": "!items!d8214x5aNOxtEyxX"
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Awareness",
+  "system": {
+    "origin": "",
+    "effect": "Your Pokémon add +2 to all Save Checks. Whenever your Pokémon would lose a Tick of Hit Points, reduce the amount of Hit Points lost by the higher of your Athletics or Focus Ranks, to a minimum of 1.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "awareness",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP"
+    ],
+    "prerequisites": [
+      "Enduring Soul",
+      "3 Pokémon with a Defensive Ability"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Enduring Soul",
+    "name": "Awareness",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Enduring Soul, 3 Pokémon with a\nDefensive Ability*",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081688,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 54800000,
+  "_id": "m7d9oVpUXxXjO4so",
+  "_key": "!items!m7d9oVpUXxXjO4so"
+}

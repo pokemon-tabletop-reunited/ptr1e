@@ -1,0 +1,86 @@
+{
+  "name": "Form Change: Zamazenta Crowned Form",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will change your Zamazenta to it's Crowned Form.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:zamazenta-hero"
+        ],
+        "value": "/systems/ptu/static/images/sprites/889_Crowned.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:zamazenta-hero"
+        ],
+        "uuid": "Compendium.ptu.species.Item.y8Bq6nvALxaAdkYJ"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-zacian-crowned-form",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T01:45:48.388Z",
+        "version": {
+          "schema": 0.111,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "DJzDYBNllxgyeiok",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.1",
+    "coreVersion": "13.350",
+    "createdTime": 1696275453322,
+    "modifiedTime": 1706451514727,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "ps8s1W8PSTTlVDzg",
+  "sort": 0,
+  "_key": "!items!ps8s1W8PSTTlVDzg"
+}

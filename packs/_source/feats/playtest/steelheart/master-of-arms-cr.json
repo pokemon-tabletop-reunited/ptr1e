@@ -1,0 +1,66 @@
+{
+  "name": "Master of Arms [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You learn the Call to Arms and Unlimited Steel Works Talents.\n### Call to Arms\nAt-Will – Extended Action\nTarget: A Metal Weapon\nEffect: You create a Steelheart Bond with the target Weapon. You may only have one Steelheart Bond at a time; if you create a new Bond, all old Bonds are lost. As a Shift Action, you may beckon your Steelheart Bonded Weapon to your hands if it is within 10 meters. If it is being held by someone else who does not want to let go of the weapon, make an Athletics or Focus vs Athletics Opposed Check. If you win, they their lose grip on your Weapon and it flies to your hand as normal.\n### Unlimited Steel Works\nAt-Will – Extended Action\nTarget: Your Steelheart Bond Weapon\nEffect: You may replace the Move(s) granted by the target Weapon with any other standard Weapon Moves, within Limitations. Weapons may still only grant one Adept and one Master Move at a maximum.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Steelheart",
+      "Expert Athletics or Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Steelheart [CR]",
+    "name": "Master of Arms [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "ragCbmOsDCUz60wA",
+  "_id": "npzBvLZE0YTCVkdm",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!npzBvLZE0YTCVkdm"
+}

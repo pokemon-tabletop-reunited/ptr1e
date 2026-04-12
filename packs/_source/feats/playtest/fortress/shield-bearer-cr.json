@@ -1,0 +1,83 @@
+{
+  "name": "Shield Bearer [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect:  You may immediately ready a Shield, and do not become Slowed as a result. You may choose to grant an adjacent Ally the Evasion and Damage Reduction bonuses from your shield instead of gaining them yourself, but these bonuses only apply as long as the ally remains adjacent to you. If you do and the ally Shifts, you may Shift alongside your ally as a Shift Action Interrupt. This cannot cause you to shift more than your normal Movement.\nYou can spend 1 AP to activate this Feature as a Free Action.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "shieldbearer",
+        "choices": [
+          {
+            "value": "def",
+            "label": "Defense"
+          },
+          {
+            "value": "spdef",
+            "label": "Special Defense"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.shieldbearer}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "shield-bearer-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense or Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Stalwart Bastion"
+    ],
+    "frequency": "At-Will – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Fortress [CR]",
+    "name": "Shield Bearer [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "ZBJ3dlw6Ug7RBgxO",
+  "_id": "20FOWQhTJMzXYue0",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!20FOWQhTJMzXYue0"
+}

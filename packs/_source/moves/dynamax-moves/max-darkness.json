@@ -1,0 +1,81 @@
+{
+  "folder": "8tcCd3dOnqridsEG",
+  "name": "Max Darkness",
+  "type": "move",
+  "_id": "gveuFziR9VC8Q87S",
+  "img": "systems/ptu/static/css/images/types2/DarkIC_Icon.png",
+  "system": {
+    "origin": "Regional Phenomena",
+    "effect": "Targets hit by the move have their Special Defense lowered 1 CS.\nRequirement: User is Dynamaxed and has a Dark Type Move",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.GGoNoatav2SwzPCe",
+        "range": "1",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "max-darkness",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T14:33:35.248Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.GGoNoatav2SwzPCe",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Dark",
+    "category": "Physical",
+    "damageBase": "12",
+    "frequency": "At-Will",
+    "ac": "0",
+    "range": "Range 12, Ranged Blast 4",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 136036,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1705025106987,
+    "modifiedTime": 1710789673401,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!gveuFziR9VC8Q87S"
+}

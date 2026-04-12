@@ -1,0 +1,91 @@
+{
+  "name": "Effect: Battery",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "not": "move:type:electric"
+        },
+        "label": "Battery",
+        "hideIfDisabled": false,
+        "selectors": "special-damage-dice",
+        "value": "2d6+4"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:type:electric"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "special-damage-dice",
+        "value": "3d6+6"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-battery",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null,
+      "round": 0
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "HTNFGIxy9zsCONjI",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1711822677602,
+    "modifiedTime": 1712499651437,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "kanto-adventures",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "MBT9OVsk9pyQZGKO",
+  "sort": 3000000,
+  "_key": "!items!MBT9OVsk9pyQZGKO"
+}

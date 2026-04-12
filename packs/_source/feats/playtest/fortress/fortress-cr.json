@@ -1,0 +1,85 @@
+{
+  "name": "Fortress [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Target: X creatures within 6m\nEffect: Until the end of your next turn, X targets within 6 meters are Challenged, where X is the higher of your Combat and Focus Skill Ranks. Challenged creatures may only make attacks that can target you, and must include you as a target when doing so. Challenged creatures may still make Attacks of Opportunity, but must target you with the attack instead of the triggering target when possible.\nThis Feature's frequency is equal to Scene xY, where Y equals the higher of your Combat and Focus Ranks minus 2.\nBonus: You gain Damage Resistance against Physical Attacks from Challenged creatures equal to your Combat Rank. Conversely, you gain Damage Resistance against Special Attacks from these creatures equal to your Focus Rank.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "fortress",
+        "choices": [
+          {
+            "value": "def",
+            "label": "Defense"
+          },
+          {
+            "value": "spdef",
+            "label": "Special Defense"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.fortress}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "fortress-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Defense or Special Defense",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Novice Combat or Novice Focus"
+    ],
+    "frequency": "Special - Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Fortress [CR]",
+    "name": "Fortress [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "ZBJ3dlw6Ug7RBgxO",
+  "_id": "KpLNFPm4asFl2GVK",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!KpLNFPm4asFl2GVK"
+}

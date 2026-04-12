@@ -1,0 +1,76 @@
+{
+  "folder": "8tcCd3dOnqridsEG",
+  "name": "G-Max Tartness",
+  "type": "move",
+  "_id": "5U5f7Ub6vnUdCfM0",
+  "img": "systems/ptu/static/css/images/types2/GrassIC_Icon.png",
+  "system": {
+    "origin": "Regional Phenomena",
+    "effect": "Targets hit by the move have their Evasion lowered 1 CS.\nRequirement: Flapple is Gigantamaxed and has a Grass Type Move.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.R0EiIRvMNmY77vhW",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "g-max-tartness",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.R0EiIRvMNmY77vhW",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Max"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Grass",
+    "category": "Physical",
+    "damageBase": "12",
+    "frequency": "At-Will",
+    "ac": "0",
+    "range": "Range 9, Ranged Blast 6",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 2400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1705335930345,
+    "modifiedTime": 1710788451029,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5U5f7Ub6vnUdCfM0"
+}

@@ -1,0 +1,94 @@
+{
+  "folder": "mPgTCXDywTV4kW8J",
+  "name": "Effect: Invisible",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "While Invisible, you gain a +4 to Evasion and may not perform Attacks. ",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "RollOption",
+        "option": "condition:cannot-attack"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 4,
+        "path": "system.modifiers.evasion.physical.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 4,
+        "path": "system.modifiers.evasion.special.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 4,
+        "path": "system.modifiers.evasion.speed.mod"
+      },
+      {
+        "key": "TokenImage",
+        "alpha": 0.3
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.636Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.3",
+    "coreVersion": "13.350",
+    "createdTime": 1694686032375,
+    "modifiedTime": 1695027124661,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "NLLlGOUIm42a4Ifr",
+  "sort": 200000,
+  "_key": "!items!NLLlGOUIm42a4Ifr"
+}

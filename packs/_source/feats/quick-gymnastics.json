@@ -1,0 +1,65 @@
+{
+  "name": "Quick Gymnastics",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You hit with an Attack; you make a Jump; or you stand up from being Tripped\nEffect: You may may Shift 2 Meters. You don’t count as Flanked or trigger Attacks of Opportunity until the end of your next turn. Additionally, if you activate this Feature, the triggering action does not provoke Attacks of Opportunity.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Tumbler"
+    ],
+    "frequency": "1 AP - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Tumbler",
+    "automation": [],
+    "name": "Quick Gymnastics",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Tumbler"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078997,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 66000000,
+  "_id": "xsI3BsDP2nFytADl",
+  "_key": "!items!xsI3BsDP2nFytADl"
+}

@@ -1,0 +1,64 @@
+{
+  "folder": "SMepfD0qveoA3YvU",
+  "name": "Instant Transmission",
+  "type": "feat",
+  "img": "/systems/ptu/static/css/images/icons/feat_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "You designate an unobstructed 3m x 3m area within vision as a Warp Point. This area must be clear of any Blocking Terrain when creating the Warp Point. You may freely maintain a number of Warp Points up to half your Focus Skill Rank. Creating a new Warp Point past this number causes the oldest Warp Point to disappear. You can maintain additional Warp Points, Binding 2 AP for each additional Warp Point beyond half your Focus Skill Rank.\n\nBy taking a Full Action, you can Warp to any Warp Point you have created, travelling instantaneously to one of the squares within the Warp Point. Additionally, you can designate any number of allies within your Teleporter Capability range to Warp with you. You can only Warp once per day. If attempting to Warp in combat, you must roll a DC 18 Focus check. On a failure, you may Warp to an unintended location up to your GM's discretion.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Speed"
+    ],
+    "prerequisites": [
+      "Space Distortion",
+      "Master Focus"
+    ],
+    "frequency": "At Will - Extended Action*",
+    "notes": "",
+    "free": false,
+    "class": "Nomad"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "Space Distortion, Master Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1695644698597,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "p2nrtTfx5KXMGKjd",
+  "sort": 400000,
+  "_key": "!items!p2nrtTfx5KXMGKjd"
+}

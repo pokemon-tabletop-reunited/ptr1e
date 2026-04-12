@@ -1,0 +1,75 @@
+{
+  "name": "Leaf Tornado",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/GrassIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Small or Medium targets in the central square of the blast are not hit. On 15+, all legal targets have their Accuracy lowered by 1.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.RzJizJiENgnmhr5x",
+        "range": "15",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "leaf-tornado",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.RzJizJiENgnmhr5x",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Grass",
+    "category": "Special",
+    "damageBase": "7",
+    "frequency": "EOT",
+    "ac": "4",
+    "range": "Range 6, Ranged Blast 3",
+    "contestType": "Beauty - Good Show!",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "XKnzCG5ZGzGWMl5n",
+  "effects": [],
+  "sort": 48200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710788499748,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!XKnzCG5ZGzGWMl5n"
+}

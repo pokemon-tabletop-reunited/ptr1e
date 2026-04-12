@@ -1,0 +1,79 @@
+{
+  "name": "Broodlord",
+  "system": {
+    "origin": "",
+    "effect": "You gain the following Ability based on your Embrace.\nArachnid’s Embrace: Tinted Lens\nMonarch’s Embrace: Compound Eyes",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "Arachnid's Embrace: Tinted Lens",
+            "value": "Compendium.ptu.abilities.Item.cdumkKxEQ2R7sNiG"
+          },
+          {
+            "label": "Monarch's Embrace: Compound Eyes",
+            "value": "Compendium.ptu.abilities.Item.25NJNoqly3Vx4LiD"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Enhanced Embrace Rank 2",
+      "Expert Command or Survival"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Swarmlord",
+    "name": "Broodlord",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Enhanced Embrace Rank 2, Expert Command or Survival"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078802,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 26800000,
+  "_id": "OiDUiucWovLF8sfp",
+  "_key": "!items!OiDUiucWovLF8sfp"
+}

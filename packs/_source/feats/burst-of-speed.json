@@ -1,0 +1,66 @@
+{
+  "name": "Burst of Speed",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You end your turn\nEffect: Select an Initiative Count equal to half of your own Initiative or less; you may take an extra turn at that point in the round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "5 Tumbler Features",
+      "Master Acrobatics"
+    ],
+    "frequency": "Scene - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Tumbler",
+    "automation": [],
+    "name": "Burst of Speed",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "5 Tumbler Features, Master Acrobatics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079344,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 59600000,
+  "_id": "qdvGkgSQhDN7Ql0X",
+  "_key": "!items!qdvGkgSQhDN7Ql0X"
+}

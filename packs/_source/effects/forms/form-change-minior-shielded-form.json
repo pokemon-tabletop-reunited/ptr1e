@@ -1,0 +1,82 @@
+{
+  "name": "Form Change: Minior Shielded Form",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will encase your Minior Core in it's shielded form. See the Shields Down ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:minior-core"
+        ],
+        "value": "/systems/ptu/static/images/sprites/774_Meteor.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:minior-core"
+        ],
+        "uuid": "Compendium.ptu.species.Item.oZCbFCHWBCOE7n3J"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-minior-shielded-form",
+    "schema": {
+      "version": 0.111,
+      "lastMigration": {
+        "datetime": "2023-10-08T13:36:44.559Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.311",
+          "system": "4.0.0.beta.11"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "DJzDYBNllxgyeiok",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.12",
+    "coreVersion": "13.350",
+    "createdTime": 1696275453322,
+    "modifiedTime": 1706024522433,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "fLquWNOauJ0Ko131",
+  "sort": 700000,
+  "_key": "!items!fLquWNOauJ0Ko131"
+}

@@ -1,0 +1,149 @@
+{
+  "name": "Effect: Adrenaline Rush",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "From @UUID[Compendium.ptu.feats.Item.xdpnroki9dAARIRb]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.stats.atk.stage.mod",
+        "value": 1,
+        "priority": 20,
+        "phase": "applyAEs",
+        "predicate": {
+          "or": [
+            "athlete-training:selection1:atk",
+            "athlete-training:selection2:atk"
+          ]
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.stats.def.stage.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": {
+          "or": [
+            "athlete-training:selection1:def",
+            "athlete-training:selection2:def"
+          ]
+        },
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "or": [
+            "athlete-training:selection1:spatk",
+            "athlete-training:selection2:spatk"
+          ]
+        },
+        "mode": "add",
+        "path": "system.stats.spatk.stage.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "or": [
+            "athlete-training:selection1:spdef",
+            "athlete-training:selection2:spdef"
+          ]
+        },
+        "mode": "add",
+        "path": "system.stats.spdef.stage.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "or": [
+            "athlete-training:selection1:spd",
+            "athlete-training:selection2:spd"
+          ]
+        },
+        "mode": "add",
+        "path": "system.stats.spd.stage.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "TempHP",
+        "value": "@actor.system.health.tick"
+      }
+    ],
+    "enabled": true,
+    "slug": "adrinaline-rush",
+    "schema": {
+      "version": 0.111,
+      "lastMigration": {
+        "datetime": "2023-10-14T18:00:15.511Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.13"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "R64IoNmDlvVPJZF1",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.1",
+    "coreVersion": "13.350",
+    "createdTime": 1694889689813,
+    "modifiedTime": 1706453156811,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "new-floriana",
+      "uuid": null,
+      "coreVersion": "11.308",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.beta.13"
+    }
+  },
+  "_id": "gsePGwVgjU3VgjIK",
+  "sort": 0,
+  "_key": "!items!gsePGwVgjU3VgjIK"
+}

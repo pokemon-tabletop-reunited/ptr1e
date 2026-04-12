@@ -1,0 +1,81 @@
+{
+  "name": "Tripped",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Tripped.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "A Pokémon or Trainer has been Tripped needs to spend a Shift Action getting up before they can take further actions. The target also becomes Vulnerable.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.ptu.effects.Item.wqzPWKMbwvOWLVoI",
+        "onDeleteActions": {
+          "grantee": "restrict",
+          "granter": "cascade"
+        },
+        "predicate": [],
+        "allowDuplicate": false
+      }
+    ],
+    "enabled": true,
+    "slug": "tripped",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.635Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": null,
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "rPNjp26cMp3XQ6aC",
+  "_id": "4lqKV4CxikZxxNWJ",
+  "effects": [],
+  "sort": 2500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1710852466251,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!4lqKV4CxikZxxNWJ"
+}

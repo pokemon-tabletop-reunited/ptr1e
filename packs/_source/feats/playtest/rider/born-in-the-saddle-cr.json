@@ -1,0 +1,65 @@
+{
+  "name": "Born In The Saddle [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: Your Mount with Run Up makes a Damage Roll for a Dash or Pass Move OR Your Mount with Run Away is hit with a damaging attack.\nEffect: The target receives the following effects based on which Ability it possesses.\n- Run Up: Your Pokémon adds their Speed Stat in addition to their normal attacking Stat to their Damage Roll. The target gains Damage Reduction against this attack equal to their own Speed Stat.\n- Run Away: Your pokemon gains Damage Reduction against this attack equal to the difference between their own Speed Stat and the attacker's Speed Stat.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Conqueror’s March",
+      "Expert Acrobatics or Athletics"
+    ],
+    "frequency": "Scene x2 – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Rider [CR]",
+    "name": "Born In The Saddle [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "3tqdXgsWtyq6Ai5Q",
+  "_id": "XIgtbkh9qaFtrsos",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!XIgtbkh9qaFtrsos"
+}

@@ -1,0 +1,95 @@
+{
+  "folder": "DJzDYBNllxgyeiok",
+  "name": "Form Change: Necrozma Ultra Burst",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/800s_Ultra.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/800_Ultra.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "uuid": "Compendium.ptu.species.Item.DUMMY"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.8nPRICsIbi4fpoya"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.3Nfs8PnPBHaTiUfU"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-necrozma-ultra-burst",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.12",
+    "coreVersion": "13.350",
+    "createdTime": 1695895372865,
+    "modifiedTime": 1706024522433,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "bfCbAohvde5wKBZB",
+  "sort": 600000,
+  "_key": "!items!bfCbAohvde5wKBZB"
+}

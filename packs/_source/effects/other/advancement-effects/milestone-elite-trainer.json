@@ -1,0 +1,114 @@
+{
+  "folder": "6LF9mRkPhnqCGVub",
+  "name": "Milestone: Elite Trainer",
+  "type": "effect",
+  "_id": "8qW7U9dHnhjiaHdX",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "<b>This effect is only meant for people using the PTR Standard Progression Track</b>\n\nLevel 30 Milestone\n\nYou gain one Feature or two Edges for which you qualify. You also gain the Feature Lifelong Learning, ignoring prerequisites.",
+    "snippet": "Level 30 Milestone\n\nYou gain one Feature or two Edges for which you qualify. You also gain the Feature Lifelong Learning, ignoring prerequisites.",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.feats.Item.pXC58ggNIX6QFb5s"
+      },
+      {
+        "key": "ChoiceSet",
+        "choices": [
+          {
+            "label": "1 Feature",
+            "icon": "/systems/ptu/static/css/images/icons/feat_icon.png",
+            "value": "feat"
+          },
+          {
+            "label": "2 Edges",
+            "icon": "/systems/ptu/static/css/images/icons/edge_icon.png",
+            "value": "edge"
+          }
+        ],
+        "prompt": "Gain one Feature or two Edges?",
+        "flag": "milestone-elite-trainer"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "eq": [
+            "{item|flags.ptu.rulesSelections.milestone-elite-trainer}",
+            "feat"
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.featPoints.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "eq": [
+            "{item|flags.ptu.rulesSelections.milestone-elite-trainer}",
+            "edge"
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.edgePoints.mod",
+        "phase": "applyAEs",
+        "value": 2
+      }
+    ],
+    "enabled": true,
+    "slug": "milestone-elite-trainer",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.7",
+    "coreVersion": "13.350",
+    "createdTime": 1704199714816,
+    "modifiedTime": 1704200592446,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8qW7U9dHnhjiaHdX"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Clear Shot [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You make a ranged Weapon Attack against a target with no other combatants or Rough or Blocking Terrain within 2 meters\nEffect: The target is considered Vulnerable against this attack, and you increase your Critical Hit range by +4 for this attack.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Marksman",
+      "Expert Perception or Combat"
+    ],
+    "frequency": "Scene x2 – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Marksman [CR]",
+    "name": "Clear Shot [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "TTdZunMgErcrbby5",
+  "_id": "SmwZohrM7ZWnr9Uo",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!SmwZohrM7ZWnr9Uo"
+}

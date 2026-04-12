@@ -1,0 +1,85 @@
+{
+  "name": "Total Blindness",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Total-Blindness.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "Total Blindness is more than just obscured vision; it’s total and complete sightlessness, such as experienced in a completely dark cave or building interior. Total Blindness has the same disadvantages as Blindness, and more. Totally Blinded Pokémon or Trainers have no awareness of the map, and must declare any shifts as distance relative to them. Totally Blinded targets receive a -10 total Penalty to Accuracy Rolls, and cannot use Moves with Priority or as Interrupts. When making a Shift action, they must declare if they are moving Slowly or Quickly; moving Slowly restricts Movement as if Slowed. Moving Quickly has no Movement Penalty, but if the user attempts to Shift into Blocking Terrain, Rough Terrain, or Slow Terrain, they become Tripped. Pokémon or Trainers with Blindesense cannot be Totally Blinded.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selectors": [
+          "attack-roll"
+        ],
+        "value": -10,
+        "predicate": [
+          {
+            "not": "capability:blindsense"
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "slug": "total-blindness",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.636Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [
+      "blindness"
+    ],
+    "persistent": null,
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "rPNjp26cMp3XQ6aC",
+  "_id": "bgmIrNI1jJHTVwVN",
+  "effects": [],
+  "sort": 2300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.3",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1695027124661,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!bgmIrNI1jJHTVwVN"
+}

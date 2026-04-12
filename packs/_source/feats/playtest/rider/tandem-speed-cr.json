@@ -1,0 +1,64 @@
+{
+  "name": "Tandem Speed [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Target: Your Pokémon with at least 2 Tutor Points\nEffect: The target loses 2 Tutor Points and gains the Run Up or Run Away Ability.\nRun Up Damage bonus caps at +10.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Rider"
+    ],
+    "frequency": "At-Will – Extended Action",
+    "notes": "",
+    "free": false,
+    "class": "Rider [CR]",
+    "name": "Tandem Speed [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "3tqdXgsWtyq6Ai5Q",
+  "_id": "iEMLO99ntNN3JQ8p",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!iEMLO99ntNN3JQ8p"
+}

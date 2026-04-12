@@ -1,0 +1,65 @@
+{
+  "name": "Code Injection",
+  "system": {
+    "origin": "",
+    "effect": "Target: A Pokémon or Trainer within 5 meters\nEffect: You may use any of the Glitches below. They are treated as a Status-Class attack with an AC of 2. You may only use each Glitch once per Scene, and each target may only be affected by Code Injection once per Scene.\n»» Object Not Found: The target may not benefit from Equipment, Held Items, and consumable Items for one full round.\n»» Access Denied: The target is Slowed and may only take At-Will actions for one full round.\n»» Blue Screen: The target is Blinded and Vulnerable for one full round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense"
+    ],
+    "prerequisites": [
+      "Corrupt Reality"
+    ],
+    "frequency": "1 AP - Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Glitch Bender",
+    "automation": [],
+    "name": "Code Injection",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Corrupt Reality"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081755,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 17100000,
+  "_id": "Ge1U5JZApkLL7sQn",
+  "_key": "!items!Ge1U5JZApkLL7sQn"
+}

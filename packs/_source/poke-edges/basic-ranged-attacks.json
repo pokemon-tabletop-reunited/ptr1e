@@ -1,0 +1,133 @@
+{
+  "name": "Basic Ranged Attacks",
+  "system": {
+    "origin": "",
+    "effect": "Choose one of Firestarter, Fountain, Freezer, Guster, Materializer, or Zapper. Struggle Attacks modified by that Capability may now be made at a range of up to 6 meters. This Poké Edge may be taken multiple times, selecting a different Capability each time.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "bra",
+        "choices": [
+          {
+            "label": "Bug",
+            "value": "bug"
+          },
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Dragon",
+            "value": "dragon"
+          },
+          {
+            "label": "Electric",
+            "value": "electric"
+          },
+          {
+            "label": "Fairy",
+            "value": "fairy"
+          },
+          {
+            "label": "Fighting",
+            "value": "fighting"
+          },
+          {
+            "label": "Fire",
+            "value": "fire"
+          },
+          {
+            "label": "Flying",
+            "value": "flying"
+          },
+          {
+            "label": "Ghost",
+            "value": "ghost"
+          },
+          {
+            "label": "Grass",
+            "value": "grass"
+          },
+          {
+            "label": "Ground",
+            "value": "ground"
+          },
+          {
+            "label": "Ice",
+            "value": "ice"
+          },
+          {
+            "label": "Poison",
+            "value": "poison"
+          },
+          {
+            "label": "Psychic",
+            "value": "psychic"
+          },
+          {
+            "label": "Rock",
+            "value": "rock"
+          },
+          {
+            "label": "Steel",
+            "value": "steel"
+          },
+          {
+            "label": "Water",
+            "value": "water"
+          }
+        ]
+      },
+      {
+        "key": "RollOption",
+        "domain": "struggle",
+        "option": "{item|flags.ptu.rulesSelections.bra}:ranged"
+      }
+    ],
+    "enabled": true,
+    "slug": "basic-ranged-attacks",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Firestarter or Fountain or Freezer or Guster or Materializer or Zapper"
+    ],
+    "cost": "1 TP",
+    "name": "Basic Ranged Attacks",
+    "useCount": 0
+  },
+  "type": "pokeedge",
+  "img": "/systems/ptu/css/images/icons/poke_edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Firestarter, Fountain, Freezer, Guster, Materializer, or Zapper"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683369202718,
+    "modifiedTime": 1712493035929,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 2100000,
+  "_id": "WkzCUjTOCTI60Uwg",
+  "_key": "!items!WkzCUjTOCTI60Uwg"
+}

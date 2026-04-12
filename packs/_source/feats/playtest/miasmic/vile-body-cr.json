@@ -1,0 +1,64 @@
+{
+  "name": "Vile Body [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Choose two of Absorb Force, Poison Point, or Poison Touch. You gain the chosen Abilities.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Adept Guile or Stealth"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Miasmic [CR]",
+    "name": "Vile Body [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "PLpbskog4GyNWGdq",
+  "_id": "kJDTNK8Nrp5H5Z7a",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!kJDTNK8Nrp5H5Z7a"
+}

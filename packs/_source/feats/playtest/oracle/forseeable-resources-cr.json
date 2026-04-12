@@ -1,0 +1,65 @@
+{
+  "name": "Forseeable Resources [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You have just the right item for the moment, because you predicted it would be useful at this time. You create 1 Consumable item (like a Potion or Pokeball) that costs up to $250 times half your Perception Skill rank. You must use the item before the end of your turn or else the item disappears.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Divination",
+      "Adept Perception"
+    ],
+    "frequency": "Drain 2 AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Oracle [CR]",
+    "name": "Forseeable Resources [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "xBwAXgt5P3gmtGcD",
+  "_id": "Qhs5kcvJfXO9qidx",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Qhs5kcvJfXO9qidx"
+}

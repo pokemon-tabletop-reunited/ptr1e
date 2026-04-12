@@ -1,0 +1,66 @@
+{
+  "name": "Outmaneuver",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You use a damaging Attack\nEffect: Add half your Evasion to your Accuracy Roll for the attack, and all foes hit by the attack have their Initiative reduced by your full Evasion value.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Harrier",
+      "Adept Combat or Acrobatics"
+    ],
+    "frequency": "Scene x3 - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Skirmisher",
+    "automation": [],
+    "name": "Outmaneuver",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Harrier, Adept Combat or Acrobatics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081791,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 22300000,
+  "_id": "LRlifwF3OctKadkw",
+  "_key": "!items!LRlifwF3OctKadkw"
+}

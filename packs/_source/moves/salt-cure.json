@@ -1,0 +1,114 @@
+{
+  "name": "Salt Cure",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/RockIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "The target becomes Salt Cured. This attack is one step more effective on Water and Steel types.\n\n@Embed[Compendium.ptu.effects.Item.goLSpno4l7EqYspe]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "target:types:water"
+        ],
+        "selectors": "{item|id}-damage-received",
+        "affects": "target",
+        "uuid": "Compendium.ptu.effects.Item.N5xGMM4iaDJ2UWnn"
+      },
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "target:types:steel"
+        ],
+        "selectors": "{item|id}-damage-received",
+        "affects": "target",
+        "uuid": "Compendium.ptu.effects.Item.rcjxP5up4cCL3Zl2"
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": {
+          "nor": [
+            "target:types:steel",
+            "target:types:water"
+          ]
+        },
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.goLSpno4l7EqYspe",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": {
+          "or": [
+            "target:types:steel",
+            "target:types:water"
+          ]
+        },
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.WSLjThAQLWM1K3Ih",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "salt-cure",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Rock",
+    "category": "Physical",
+    "damageBase": "4",
+    "frequency": "Scene x2",
+    "ac": "2",
+    "range": "Range 2",
+    "contestType": "Tough - Gamble",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "MxvAaajIJfmjUoBB",
+  "effects": [],
+  "sort": 30900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710853657285,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MxvAaajIJfmjUoBB"
+}

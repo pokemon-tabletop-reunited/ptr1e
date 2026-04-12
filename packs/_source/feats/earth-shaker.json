@@ -1,0 +1,160 @@
+{
+  "name": "Earth Shaker",
+  "system": {
+    "origin": "",
+    "effect": "Pick two of Bulldoze, Mud Shot, or Sand-Attack. You learn the chosen Moves.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+            "predicate": {
+              "not": "move:bulldoze"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qBTkrmyYzB0z6MVB",
+            "predicate": {
+              "not": "move:mud-shot"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.IU5XxUVfxPggP6Rx",
+            "predicate": {
+              "not": "move:sand-attack"
+            }
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu"
+                  ]
+                }
+              },
+              {
+                "not": "move:bulldoze"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qBTkrmyYzB0z6MVB",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.qBTkrmyYzB0z6MVB"
+                  ]
+                }
+              },
+              {
+                "not": "move:mud-shot"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.IU5XxUVfxPggP6Rx",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.IU5XxUVfxPggP6Rx"
+                  ]
+                }
+              },
+              {
+                "not": "move:sand-attack"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Ground)",
+      "Novice Intuition",
+      "Novice Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Earth Shaker",
+    "automation": [],
+    "name": "Earth Shaker",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Elemental Connection (Ground), Novice Intuition, Novice Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079220,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 58600000,
+  "_id": "ptrk6GuubzWsyjPq",
+  "_key": "!items!ptrk6GuubzWsyjPq"
+}

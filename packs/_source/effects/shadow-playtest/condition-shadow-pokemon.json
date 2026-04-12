@@ -1,0 +1,141 @@
+{
+  "name": "Condition: Shadow Pokemon",
+  "type": "condition",
+  "img": "systems/ptu/static/css/images/types2/ShadowIC_Icon.png",
+  "system": {
+    "origin": "Shadow Subsytem",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.6XpwCLUT2uMAN0aM"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spd.stage.mod",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      },
+      {
+        "key": "TypeOverwrite",
+        "value": [
+          "{actor|species.system.types}",
+          "Shadow"
+        ]
+      },
+      {
+        "key": "TokenImage",
+        "tint": "#9f9f9f"
+      },
+      {
+        "key": "TokenLight",
+        "value": {
+          "alpha": 1,
+          "angle": 360,
+          "bright": 0,
+          "coloration": 4,
+          "dim": 0.1,
+          "attenuation": 1,
+          "luminosity": 0.5,
+          "saturation": 1,
+          "contrast": 0,
+          "shadows": 1,
+          "animation": {
+            "type": "ghost",
+            "speed": 4,
+            "intensity": 7,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          },
+          "color": "#330000"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.capabilities.Item.0C31b3ZhHHDPkI1A"
+      }
+    ],
+    "enabled": true,
+    "slug": "shadow-pokemon",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "value": {
+      "isValued": false,
+      "value": 0,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": {
+      "dc": 5,
+      "decrease": false,
+      "type": "save"
+    },
+    "level": {
+      "value": 1
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "dDpOEXjREUS6rAWH",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1699753663348,
+    "modifiedTime": 1710763532578,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "ptr-dev-world",
+      "uuid": null,
+      "coreVersion": "11.311",
+      "systemId": "ptu",
+      "systemVersion": "4.0.2"
+    }
+  },
+  "_id": "80KB09PboWA3jxOK",
+  "sort": 200000,
+  "_key": "!items!80KB09PboWA3jxOK"
+}

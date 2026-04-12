@@ -1,0 +1,62 @@
+{
+  "name": "Diamond Cut",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "The user resists Fighting and Steel type moves one step further. Defensive.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": {
+          "or": [
+            "move:type:fighting",
+            "move:type:steel"
+          ]
+        },
+        "selectors": "damage-received",
+        "uuid": "Compendium.ptu.effects.Item.1gINEWTirDjE7LiS",
+        "affects": "origin"
+      }
+    ],
+    "enabled": true,
+    "slug": "diamond-cut",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "ma5jrdnjUlgFQCoa",
+  "effects": [],
+  "folder": null,
+  "sort": 42200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1712497648085,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ma5jrdnjUlgFQCoa"
+}

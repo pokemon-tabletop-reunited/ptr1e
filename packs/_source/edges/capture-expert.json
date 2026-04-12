@@ -1,0 +1,65 @@
+{
+  "folder": "ttfgOnTPuYZGbhRQ",
+  "name": "Capture Expert",
+  "type": "edge",
+  "img": "/systems/ptu/static/css/images/icons/edge_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Lower the AC for throwing a Pokeball from AC 4 to AC 3, as well as increasing your Crit Range by 1 when throwing a Pokeball.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "pokeball-throw",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "capture-expert",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Expert Athletics or Expert Acrobatics"
+    ],
+    "notes": "",
+    "free": false
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Expert Athletics or Expert Acrobatics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1693312299658,
+    "modifiedTime": 1707761797684,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-chosen",
+      "uuid": null,
+      "coreVersion": "11.307",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.alpha.14"
+    }
+  },
+  "_id": "AlaVe40v8FCAz0yc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!AlaVe40v8FCAz0yc"
+}

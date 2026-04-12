@@ -1,0 +1,57 @@
+{
+  "name": "Multiscale",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "While at full Hit Points, all damage taken is resisted one step further. Defensive.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "affects": "origin",
+        "selectors": "damage-received",
+        "uuid": "Compendium.ptu.effects.Item.fEmaSXw3MALAOeLp",
+        "predicate": []
+      }
+    ],
+    "enabled": true,
+    "slug": "multiscale",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "notS9vQ0jOhImwqe",
+  "effects": [],
+  "folder": null,
+  "sort": 43300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1712499001620,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!notS9vQ0jOhImwqe"
+}

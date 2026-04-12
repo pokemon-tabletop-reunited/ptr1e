@@ -1,0 +1,66 @@
+{
+  "name": "Strange Energy",
+  "system": {
+    "origin": "",
+    "effect": "You learn the Moves Heal Block and Magic Coat.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Warping Ground",
+      "Space Distortion"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Warper",
+    "automation": [],
+    "name": "Strange Energy",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Warping Ground, Space Distortion"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079228,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 60300000,
+  "_id": "rlloSmjPbC4tcUiB",
+  "_key": "!items!rlloSmjPbC4tcUiB"
+}

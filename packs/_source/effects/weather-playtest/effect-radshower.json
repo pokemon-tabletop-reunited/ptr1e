@@ -1,0 +1,138 @@
+{
+  "folder": "VXd9n6naiPNthfVe",
+  "name": "Effect: Radshower",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "<span>@Embed[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.KPTl4Ok92yhWblt7 caption=false]</span>\n<blockquote>Due to the nature of global effects, setting expiration on them will not do anything, so please manually track expiration.</blockquote>",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [
+          "self:types:nuclear"
+        ],
+        "mode": "add",
+        "path": "system.modifiers.initiative.mod",
+        "phase": "afterDerived",
+        "value": 10,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [
+          "self:types:nuclear"
+        ],
+        "mode": "add",
+        "path": "system.modifiers.capabilities.all",
+        "phase": "afterDerived",
+        "value": 2,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "nor": [
+            "self:types:nuclear",
+            "self:types:steel"
+          ]
+        },
+        "mode": "subtract",
+        "path": "system.modifiers.damageReduction.physical.mod",
+        "phase": "afterDerived",
+        "value": 10,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "nor": [
+            "self:types:nuclear",
+            "self:types:steel"
+          ]
+        },
+        "mode": "subtract",
+        "path": "system.modifiers.damageReduction.special.mod",
+        "phase": "afterDerived",
+        "value": 10,
+        "priority": null
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "nuclear-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.xE6uIFWZoYXAZQxA",
+        "range": "19",
+        "value": ""
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [
+          "move:category:physical"
+        ],
+        "affects": "target",
+        "selectors": "steel-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.xE6uIFWZoYXAZQxA",
+        "range": "19",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-radshower",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Weather",
+      "Playtest"
+    ],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "createdTime": 1708178841231,
+    "modifiedTime": 1708178841231,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "K3TwnRkMysI9iP29",
+  "_key": "!items!K3TwnRkMysI9iP29"
+}

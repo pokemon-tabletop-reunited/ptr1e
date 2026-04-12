@@ -1,0 +1,213 @@
+{
+  "name": "Dilettante Rank 1",
+  "system": {
+    "origin": "",
+    "effect": "You gain both an Edge and a General Feature from the lists on page 86 of the Core handbook. You may gain the chosen Edge and Feature even if you do not meet the Skill prerequisites. You must meet any other Prerequisites.  Whenever you gain a Feature or Edge this way, change any Skill Rank applications or Skill Checks mandated directly by the Edge or Feature into your choice of General Education or Perception Skill Checks or Rank applications instead.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "dilettanteRank1Feat",
+        "adjustName": false,
+        "allowedDrops": {
+          "label": "Custom General Feat",
+          "predicate": [
+            "item:type:feat"
+          ]
+        },
+        "choices": [
+          {
+            "value": "Compendium.ptu.feats.Item.1otscPPJIq4HWkwD"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.Wvs66BTJ7t6965f2"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.PMI58lLIZJqHwuwW"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.JiO7eCRryFoYiBSe"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.beL0mQ0ddaiE24tt"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.NVnFquC0fdo74toT"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.M028wUlRhCcuOqZ3"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.1DFCJm5rhnTh8pJz"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.UF07jMVuiSeRawZR"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.r1OvX4IECRfZUkwJ"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.2WbLqVLtcQhLOUyi"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.mIqSUpYJRx7QoIWd"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.c2uDrArNVis0yMlT"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.MkkO6bYRLHH2TaZW"
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "dilettanteRank1Edge",
+        "adjustName": false,
+        "allowedDrops": {
+          "label": "Custom General Edge",
+          "predicate": [
+            "item:type:edge"
+          ]
+        },
+        "choices": [
+          {
+            "value": "Compendium.ptu.edges.Item.EUkre7TTFIJ6e9Tn"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.83SDkFFlZImPrJUe"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.PTvClFCXvrCvVIzn"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.Gmg2iQ6uI5EceU6L"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.Pby1ihkgH4vG8XUN"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.6h6WUePk3eR3LM76"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.RcNRBaZ7ZcnhbNza"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.XCYP5vlWl3u3s7LS"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.KjZ1VN3rZpnoSRVk"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.FTh106Tw4v67qQzx"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.b9Y1rKIPqKEWPcrc"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.sTO4hjOM4tcQIqPh"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.7ipgmPobmlKbY65X"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.4hq51JxDQWMVn4BR"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.80LqzME9iDpVQWko"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.EN9bBp3zK0OVe7Yp"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.e5w4Szs2uY8PdgNa"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.2rUgHr7755xzp25k"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.JSOBQlTlh8jXDq1Q"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.BEKoMxGkYLzJyMsG"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.D7YCqoAEVoea5DxA"
+          },
+          {
+            "value": "Compendium.ptu.edges.Item.DxmWdTGKbBORgNLD"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.ptu.rulesSelections.dilettanteRank1Feat}",
+        "onDeleteActions": {
+          "grantee": "restrict",
+          "granter": "cascade"
+        },
+        "predicate": [],
+        "allowDuplicate": false
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.ptu.rulesSelections.dilettanteRank1Edge}",
+        "onDeleteActions": {
+          "grantee": "restrict",
+          "granter": "cascade"
+        },
+        "predicate": [],
+        "allowDuplicate": false
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 4"
+    ],
+    "prerequisites": [
+      "Hobbyist"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Hobbyist",
+    "automation": [],
+    "name": "Dilettante Rank 1",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Hobbyist"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081710,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 62300000,
+  "_id": "ttUnwGNh6FkJcUok",
+  "_key": "!items!ttUnwGNh6FkJcUok"
+}

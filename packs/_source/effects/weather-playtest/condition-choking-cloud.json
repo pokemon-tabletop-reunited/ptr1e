@@ -1,0 +1,83 @@
+{
+  "name": "Condition: Choking Cloud",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Poisoned.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "All non-Poison and Steel-Type creatures lose a Tick of Hit Points at the end of their turn.\n\nWhile a creature is afflicted with Poisoned or Badly Poisoned, they are Vulnerable.\n<blockquote>Add this condition to any non-Poison & non-Steel type to automate Vulnerable on Poison + Tick damage</blockquote>\n<blockquote>You cannot add this as a global effect</blockquote>",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "condition:poisoned"
+        ],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.effects.Item.wqzPWKMbwvOWLVoI",
+        "reevaluateOnUpdate": true
+      }
+    ],
+    "enabled": true,
+    "slug": "choking-cloud",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.635Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": {
+      "formula": "td",
+      "type": "persistent"
+    },
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "VXd9n6naiPNthfVe",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "XbtFo6c8W2cEt7U8",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710770552884,
+    "modifiedTime": 1710770564029,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!XbtFo6c8W2cEt7U8"
+}

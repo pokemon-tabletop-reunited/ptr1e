@@ -1,0 +1,67 @@
+{
+  "name": "Accuracy Training",
+  "system": {
+    "origin": "",
+    "effect": "Pick a Move with an AC of 3 or higher; the AC of the target Move is permanently lowered by 1. This Poké Edge may be taken up to three times, each time selecting a different Move.\n<blockquote>The automation prompt does not check whether a move is a valid target, please be sure to check this yourself!</blockquote>",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "choices": "flags.ptu.disabledOptions",
+        "prompt": "Choose which move to Reduce AC",
+        "adjustName": true,
+        "flag": "accuracyTraining"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "{item|flags.ptu.rulesSelections.accuracyTraining}-attack",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "accuracy-training",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Level 20"
+    ],
+    "cost": "1 TP",
+    "name": "Accuracy Training",
+    "useCount": 0
+  },
+  "type": "pokeedge",
+  "img": "/systems/ptu/css/images/icons/poke_edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Level 20"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683369202696,
+    "modifiedTime": 1712493035929,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 400000,
+  "_id": "0ErdEammXLOX0UpC",
+  "_key": "!items!0ErdEammXLOX0UpC"
+}

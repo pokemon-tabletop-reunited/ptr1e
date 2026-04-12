@@ -1,0 +1,64 @@
+{
+  "name": "Mystical Inhibitor [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain 10 Damage Reduction against Special Psychic-, Ghost-, Dark-, and Fairy-Type damage; and a +3 bonus on checks made to cure Volatile Status Conditions.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Witch Hunter"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Researcher [CR]",
+    "name": "Mystical Inhibitor [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "wKlgeANt8BWt41q1",
+  "_id": "9kHAT3sVzu7bdm21",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!9kHAT3sVzu7bdm21"
+}

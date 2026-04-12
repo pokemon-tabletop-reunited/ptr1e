@@ -1,0 +1,101 @@
+{
+  "folder": "TajSsOGM13zplgIH",
+  "name": "Heartless",
+  "type": "feat",
+  "_id": "UJWQ7wP8OlmMduii",
+  "img": "systems/ptu/static/css/images/icons/class_feat_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "You learn the Moves Shadow Blitz and Shadow Wave.\nBonus: You gain the Closed Heart Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "heartless",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.heartless}.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.tE474QZHhRRPSVzO"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.au5PFBJ4h8dgnxIS"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Item.ZUhv5EO1CITCGnbL"
+      }
+    ],
+    "enabled": true,
+    "slug": "heartless",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Attack or Special Attack"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Shadow)",
+      "Novice Intimidation",
+      "Novice Combat",
+      "GM Permission"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": ""
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1697669676804,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UJWQ7wP8OlmMduii"
+}

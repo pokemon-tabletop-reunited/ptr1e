@@ -1,0 +1,79 @@
+{
+  "name": "Guardian Angel [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: An adjacent Ally takes damage\nEffect: The damage your Ally takes is resisted one step further. The foe whose attack caused your Ally to take damage is Challenged until the end of your next turn.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "guardianangel",
+        "choices": [
+          {
+            "value": "def",
+            "label": "Defense"
+          },
+          {
+            "value": "spdef",
+            "label": "Special Defense"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.guardianangel}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense or Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Shield Bearer"
+    ],
+    "frequency": "Scene x3 – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Fortress [CR]",
+    "name": "Guardian Angel [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "ZBJ3dlw6Ug7RBgxO",
+  "_id": "FLgZ4Q6kNtAI1hs7",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!FLgZ4Q6kNtAI1hs7"
+}

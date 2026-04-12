@@ -1,0 +1,86 @@
+{
+  "name": "Chlorophyll",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "While in Sunny Weather or under 50% Max Hit Points, the user’s Initiative is doubled.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "not": "effect:sunny"
+        },
+        "mode": "add",
+        "path": "system.modifiers.initiative.mod",
+        "phase": "afterDerived",
+        "value": {
+          "brackets": [
+            {
+              "start": 50,
+              "end": 100,
+              "value": 0
+            },
+            {
+              "start": -100,
+              "end": 49,
+              "value": "@actor.system.initiative.value"
+            }
+          ],
+          "field": "actor|system.health.percent"
+        },
+        "priority": null
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "effect:sunny"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "initiative",
+        "value": "@actor.system.initiative.value"
+      }
+    ],
+    "enabled": true,
+    "slug": "chlorophyll",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Weather"
+    ],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "ZiTUZHmZaIq0K2na",
+  "effects": [],
+  "folder": null,
+  "sort": 31300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1712494785372,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ZiTUZHmZaIq0K2na"
+}

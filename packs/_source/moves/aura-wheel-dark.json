@@ -1,0 +1,96 @@
+{
+  "name": "Aura Wheel (Dark)",
+  "type": "move",
+  "img": "systems/ptu/css/images/types2/DarkIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "The user's Speed is increased 1 Combat Stage. \nSpecial - If the user is in Hangry Mode, Aura Wheel is Dark-Typed.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-dealt",
+        "uuid": "Compendium.ptu.effects.Item.BWxLAGwRFTYlb0PN",
+        "range": "1",
+        "value": "",
+        "affects": "origin"
+      }
+    ],
+    "enabled": true,
+    "slug": "aura-wheel-dark",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Dark",
+    "category": "Physical",
+    "damageBase": "11",
+    "frequency": "Scene x2",
+    "ac": "2",
+    "range": "Melee",
+    "contestType": "Cool - Special Attention",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "effects": [],
+  "flags": {
+    "scene-packer": {
+      "hash": "aa27d431127b1b53190979f307461ef712bb8469",
+      "sourceId": "Item.XXf5YBN7PynV5QCG"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "nacJiSMtWKwGk9wf",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "createdTime": 1709370645675,
+    "modifiedTime": 1709370688877,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.1"
+    }
+  },
+  "_key": "!items!nacJiSMtWKwGk9wf"
+}

@@ -1,0 +1,76 @@
+{
+  "folder": "8tcCd3dOnqridsEG",
+  "name": "G-Max Volcalith",
+  "type": "move",
+  "_id": "4KcSs4BEvepNp3cQ",
+  "img": "systems/ptu/static/css/images/types2/RockIC_Icon.png",
+  "system": {
+    "origin": "Regional Phenomena",
+    "effect": "Targets hit by this Move are Slowed until the end of their next turn. For 3 rounds, all non Rock Type Pokémon and Trainers lose a Tick of Hit Points at the end of their turn.\nRequirement: Coalossal is Gigantamaxed and has a Rock Type Move.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.I2nVAxBFKDMe8EQt",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "g-max-volcalith",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Max"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Rock",
+    "category": "Physical",
+    "damageBase": "12",
+    "frequency": "At-Will",
+    "ac": "0",
+    "range": "Close Blast 6",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 2700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1705335895903,
+    "modifiedTime": 1710782983940,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!4KcSs4BEvepNp3cQ"
+}

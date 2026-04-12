@@ -1,0 +1,85 @@
+{
+  "folder": "O2vsL1IY0u9DOERr",
+  "name": "Heartful Embrace",
+  "type": "move",
+  "_id": "GSHZw2lYnynGILPU",
+  "img": "systems/ptu/static/css/images/types2/FairyIC_Icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Heartful Embrace lowers the target’s Attack 1 Combat Stage on 18+, and is a Critical Hit on 19+.\nBonus: Heartful Embrace is treated as being super effective against the Shadow Type.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.XxsE2tDurOsmFpeJ",
+        "range": "18",
+        "value": ""
+      },
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "target:types:shadow"
+        ],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.rRNxbPYAqUwY5x8x"
+      }
+    ],
+    "enabled": true,
+    "slug": "heartful-embrace",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fairy",
+    "category": "Physical",
+    "damageBase": "8",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "Melee",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "13.350",
+    "createdTime": 1697668764147,
+    "modifiedTime": 1709372117014,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!GSHZw2lYnynGILPU"
+}

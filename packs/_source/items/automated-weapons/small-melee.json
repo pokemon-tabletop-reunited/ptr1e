@@ -1,0 +1,63 @@
+{
+  "folder": "dFIH3ZVcIQRJGnr8",
+  "name": "Small Melee",
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "A one-handed Weapon raises the Damage Base of Struggle and Weapon moves by +1.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:weapon"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "damage-base",
+        "value": 1,
+        "label": "small-melee"
+      }
+    ],
+    "enabled": true,
+    "slug": "small-melee",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "quantity": "1",
+    "category": "Equipment",
+    "cost": "0",
+    "consumable": 0,
+    "subtype": "",
+    "container": false
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "JccjfwiMey2O55mx",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.3.0",
+    "createdTime": 1710773281588,
+    "modifiedTime": 1718112667854,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!JccjfwiMey2O55mx"
+}

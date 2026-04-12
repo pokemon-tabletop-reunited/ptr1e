@@ -1,0 +1,90 @@
+{
+  "folder": "O2vsL1IY0u9DOERr",
+  "name": "Empathy Pulse",
+  "type": "move",
+  "_id": "xEwozu4vSNVgqbUm",
+  "img": "systems/ptu/static/css/images/types2/FightingIC_Icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Empathy Pulse lowers the target’s Special Attack 1 Combat Stage on 18+, and is a Critical Hit on 19+.\nBonus: Empathy Pulse is treated as being super effective against the Shadow Type.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.A56F9TJ7SkM5yTl7",
+        "range": "19",
+        "value": "",
+        "affects": "target"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "crit-range",
+        "value": 1
+      },
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "target:types:shadow"
+        ],
+        "selectors": "{item|id}-damage-received",
+        "affects": "target",
+        "uuid": "Compendium.ptu.effects.Item.kPy5nQeKyYsCBrZv"
+      }
+    ],
+    "enabled": true,
+    "slug": "empathy-pulse",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.A56F9TJ7SkM5yTl7",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fighting",
+    "category": "Special",
+    "damageBase": "8",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "Range 4",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1697668842165,
+    "modifiedTime": 1710852645523,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!xEwozu4vSNVgqbUm"
+}

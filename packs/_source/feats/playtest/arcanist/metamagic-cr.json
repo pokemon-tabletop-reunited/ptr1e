@@ -1,0 +1,65 @@
+{
+  "name": "Metamagic [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You use a Special Move\nEffect: You may apply a Rank 1 Power Manipulation to your attack.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Arcanist",
+      "Adept Occult Education"
+    ],
+    "frequency": "1 AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Arcanist [CR]",
+    "name": "Metamagic [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "ArQ1VkEqvLAXjU2D",
+  "_id": "Vl0LyTu4d3spl1ZO",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Vl0LyTu4d3spl1ZO"
+}

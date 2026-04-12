@@ -1,0 +1,192 @@
+{
+  "name": "Street Brawler Rank 1 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You may learn 2 moves per rank from the following list;\nPursuit, Sucker Punch, Assurance, Payback, Spite, Sand Attack, Me First, Throat Chop.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.4zyVHZ1t6PJsYzGX",
+            "predicate": {
+              "not": "move:pursuit"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4",
+            "predicate": {
+              "not": "move:sucker-punch"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.eQqKpKRD5wG1Hg7d",
+            "predicate": {
+              "not": "move:assurance"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+            "predicate": {
+              "not": "move:payback"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+            "predicate": {
+              "not": "move:spite"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.IU5XxUVfxPggP6Rx",
+            "predicate": {
+              "not": "move:sand-attack"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zvyuo4sSpliuYCjX",
+            "predicate": {
+              "not": "move:me-first"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF",
+            "predicate": {
+              "not": "move:throat-chop"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.4zyVHZ1t6PJsYzGX",
+            "predicate": {
+              "not": "move:pursuit"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4",
+            "predicate": {
+              "not": "move:sucker-punch"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.eQqKpKRD5wG1Hg7d",
+            "predicate": {
+              "not": "move:assurance"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+            "predicate": {
+              "not": "move:payback"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+            "predicate": {
+              "not": "move:spite"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.IU5XxUVfxPggP6Rx",
+            "predicate": {
+              "not": "move:sand-attack"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zvyuo4sSpliuYCjX",
+            "predicate": {
+              "not": "move:me-first"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF",
+            "predicate": {
+              "not": "move:throat-chop"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": "street-brawler-rank-1-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack",
+      "Ranked 3",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Rogue",
+      "Adept in 2 Rogue Skills"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Rogue [CR]",
+    "name": "Street Brawler [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "O8uiNyzyRLx7VuWt",
+  "_id": "WkqOl2sOCUZMfZ2y",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1710768882959,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!WkqOl2sOCUZMfZ2y"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "One With the Winds",
+  "system": {
+    "origin": "",
+    "effect": "Effect: You summon a windy breeze that follows you around. Your sense of touch is extended through this wind, and you can guide it by thought, using it to perceive the shape and texture of objects as long as the wind can reach, even through very small cracks and holes. The range of this effect is equal to your Acrobatics Rank plus Perception Rank in meters.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Adept Perception"
+    ],
+    "frequency": "Bind 2 AP - Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Wind Runner",
+    "automation": [],
+    "name": "One With the Winds",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Adept Perception"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081701,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 65900000,
+  "_id": "xqAkkDFLSQYn1dta",
+  "_key": "!items!xqAkkDFLSQYn1dta"
+}

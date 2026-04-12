@@ -1,0 +1,67 @@
+{
+  "name": "Don't Look Away",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You or your Pokémon with Pack Hunt or Teamwork hits with an Attack of Opportunity\nEffect: The hit foe loses a Tick of Hit Points, and is Slowed for 1 round. Don’t Look Away may be triggered once per round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Pack Tactics",
+      "Adept Stealth",
+      "Adept Survival"
+    ],
+    "frequency": "1 AP - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Hunter",
+    "automation": [],
+    "name": "Don't Look Away",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Pack Tactics, Adept Stealth, Adept Survival"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078914,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 66200000,
+  "_id": "y0gkezuGMxvIxffv",
+  "_key": "!items!y0gkezuGMxvIxffv"
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Glitch Shuffle",
+  "system": {
+    "origin": "",
+    "effect": "You learn the Moves Metronome and Topsy-Turvy",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.WTWYhB6hi3Ya4U9i"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.9aU7CnwwaU0FE4tk"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense"
+    ],
+    "prerequisites": [
+      "Glitch Bender",
+      "Expert Focus or Occult Education or Perception"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Glitch Bender",
+    "automation": [],
+    "name": "Glitch Shuffle",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Glitch Bender, Expert Perception, Occult Education, or Focus",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079307,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 62500000,
+  "_id": "u2ASH3v3qeLqCUJY",
+  "_key": "!items!u2ASH3v3qeLqCUJY"
+}

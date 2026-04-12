@@ -1,0 +1,64 @@
+{
+  "name": "Menace [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You hit a foe with the Terrorize Manipulation, or you activate Roughneck\nEffect: Until their next turn, the target has their Initiative lowered to 0. For one full round, attacks against them cause them to lose a Tick of Hit Points and become Vulnerable for one full round on 16+. Menace may only affect each foe once per Scene.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Roughneck"
+    ],
+    "frequency": "At-Will – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Roughneck [CR]",
+    "name": "Menace [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "UjDP0F2khMUTsYeP",
+  "_id": "KflC2q2yyqJ5NJSN",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!KflC2q2yyqJ5NJSN"
+}

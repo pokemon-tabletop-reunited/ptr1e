@@ -1,0 +1,68 @@
+{
+  "name": "Terrain Talent Rank 2",
+  "system": {
+    "origin": "",
+    "effect": "You gain two Terrain Talents, chosen from the Terrains for which you gained Naturewalk from Survivalist.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+HP"
+    ],
+    "prerequisites": [
+      "Survivalist",
+      "Master Survival",
+      "4 Mastered Terrains"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Survivalist",
+    "automation": [],
+    "name": "Terrain Talent Rank 2",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Survivalist, Master Survival, 4 Mastered Terrains"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079282,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 65200000,
+  "_id": "wtGWwtklhWhzDBZs",
+  "_key": "!items!wtGWwtklhWhzDBZs"
+}

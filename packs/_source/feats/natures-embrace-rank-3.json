@@ -1,0 +1,525 @@
+{
+  "name": "Nature's Embrace Rank 3",
+  "system": {
+    "origin": "",
+    "effect": "You learn 2 Moves chosen from the list below, marked with the Rank of this Feature you are gaining or lower.  Moves marked with an Oath require that Oath to be chosen.\nRank 3 Moves: Leech Seed, Petal Blizzard(Wood), Petal Dance(Flower), Power Whip, Solar Beam, Spore(Fungal)",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "feat",
+        "adjustName": false,
+        "prompt": "Choose which stat to increase.",
+        "choices": [
+          {
+            "label": "ATK (Wood Oath)",
+            "value": "system.modifiers.baseStats.atk.mod"
+          },
+          {
+            "label": "SPDEF (Fungal Oath)",
+            "value": "system.modifiers.baseStats.spdef.mod"
+          },
+          {
+            "label": "SPATK (Flower Oath)",
+            "value": "system.modifiers.baseStats.spatk.mod"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "{item|flags.ptu.rulesSelections.feat}",
+        "mode": "add",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.08DZcCU0jqyEQ3jv",
+            "predicate": {
+              "not": "move:cotton-spore"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.9PVNtUbbwbRhZimy",
+            "predicate": {
+              "not": "move:mega-drain"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.wYz4RubDs84tDVul",
+            "predicate": {
+              "not": "move:razor-leaf"
+            }
+          },
+          {
+            "label": "Ingrain (Wood)",
+            "value": "Compendium.ptu.moves.Item.2ky0KrGcz81tQ5X3",
+            "predicate": {
+              "not": "move:ingrain"
+            }
+          },
+          {
+            "label": "Sweet Scent (Flower)",
+            "value": "Compendium.ptu.moves.Item.nJhqaS0PzJJ7w1pS",
+            "predicate": {
+              "not": "move:sweet-scent"
+            }
+          },
+          {
+            "label": "Stun Spore (Fungal)",
+            "value": "Compendium.ptu.moves.Item.XssTGMznjX8N33L7",
+            "predicate": {
+              "not": "move:stun-spore"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup",
+            "predicate": {
+              "not": "move:energy-ball"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU",
+            "predicate": {
+              "not": "move:seed-bomb"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qFkD5vP06XSTPXlE",
+            "predicate": {
+              "not": "move:magical-leaf"
+            }
+          },
+          {
+            "label": "Spiky Shield (Wood)",
+            "value": "Compendium.ptu.moves.Item.FvTnYPJPje5PF7sJ",
+            "predicate": {
+              "not": "move:spiky-shield"
+            }
+          },
+          {
+            "label": "Aromatherapy (Flower)",
+            "value": "Compendium.ptu.moves.Item.QzP3iamQFsN5S4FS",
+            "predicate": {
+              "not": "move:aromatherapy"
+            }
+          },
+          {
+            "label": "Giga Drain (Fungal)",
+            "value": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+            "predicate": {
+              "not": "move:giga-drain"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Jx4TeOVUk1DX8R45",
+            "predicate": {
+              "not": "move:leech-seed"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.6tEUiL2W8EBFwkEU",
+            "predicate": {
+              "not": "move:power-whip"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+            "predicate": {
+              "not": "move:solar-beam"
+            }
+          },
+          {
+            "label": "Petal Blizzard (Wood)",
+            "value": "Compendium.ptu.moves.Item.rlwUWKRTSzWzLfuk",
+            "predicate": {
+              "not": "move:petal-blizzard"
+            }
+          },
+          {
+            "label": "Petal Dance (Flower)",
+            "value": "Compendium.ptu.moves.Item.JEquTUzbVYPNvhNp",
+            "predicate": {
+              "not": "move:petal-dance"
+            }
+          },
+          {
+            "label": "Spore (Fungal)",
+            "value": "Compendium.ptu.moves.Item.soZ40VFFxCDiniJu",
+            "predicate": {
+              "not": "move:spore"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.08DZcCU0jqyEQ3jv",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.08DZcCU0jqyEQ3jv"
+                  ]
+                }
+              },
+              {
+                "not": "move:cotton-spore"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.9PVNtUbbwbRhZimy",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.9PVNtUbbwbRhZimy"
+                  ]
+                }
+              },
+              {
+                "not": "move:mega-drain"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.wYz4RubDs84tDVul",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.wYz4RubDs84tDVul"
+                  ]
+                }
+              },
+              {
+                "not": "move:razor-leaf"
+              }
+            ]
+          },
+          {
+            "label": "Ingrain (Wood)",
+            "value": "Compendium.ptu.moves.Item.2ky0KrGcz81tQ5X3",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.2ky0KrGcz81tQ5X3"
+                  ]
+                }
+              },
+              {
+                "not": "move:ingrain"
+              }
+            ]
+          },
+          {
+            "label": "Sweet Scent (Flower)",
+            "value": "Compendium.ptu.moves.Item.nJhqaS0PzJJ7w1pS",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.nJhqaS0PzJJ7w1pS"
+                  ]
+                }
+              },
+              {
+                "not": "move:sweet-scent"
+              }
+            ]
+          },
+          {
+            "label": "Stun Spore (Fungal)",
+            "value": "Compendium.ptu.moves.Item.XssTGMznjX8N33L7",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.XssTGMznjX8N33L7"
+                  ]
+                }
+              },
+              {
+                "not": "move:stun-spore"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup"
+                  ]
+                }
+              },
+              {
+                "not": "move:energy-ball"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU"
+                  ]
+                }
+              },
+              {
+                "not": "move:seed-bomb"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qFkD5vP06XSTPXlE",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.qFkD5vP06XSTPXlE"
+                  ]
+                }
+              },
+              {
+                "not": "move:magical-leaf"
+              }
+            ]
+          },
+          {
+            "label": "Spiky Shield (Wood)",
+            "value": "Compendium.ptu.moves.Item.FvTnYPJPje5PF7sJ",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.FvTnYPJPje5PF7sJ"
+                  ]
+                }
+              },
+              {
+                "not": "move:spiky-shield"
+              }
+            ]
+          },
+          {
+            "label": "Aromatherapy (Flower)",
+            "value": "Compendium.ptu.moves.Item.QzP3iamQFsN5S4FS",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.QzP3iamQFsN5S4FS"
+                  ]
+                }
+              },
+              {
+                "not": "move:aromatherapy"
+              }
+            ]
+          },
+          {
+            "label": "Giga Drain (Fungal)",
+            "value": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.mGvVlposKAYCa15m"
+                  ]
+                }
+              },
+              {
+                "not": "move:giga-drain"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Jx4TeOVUk1DX8R45",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.Jx4TeOVUk1DX8R45"
+                  ]
+                }
+              },
+              {
+                "not": "move:leech-seed"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.6tEUiL2W8EBFwkEU",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.6tEUiL2W8EBFwkEU"
+                  ]
+                }
+              },
+              {
+                "not": "move:power-whip"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO"
+                  ]
+                }
+              },
+              {
+                "not": "move:solar-beam"
+              }
+            ]
+          },
+          {
+            "label": "Petal Blizzard (Wood)",
+            "value": "Compendium.ptu.moves.Item.rlwUWKRTSzWzLfuk",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.rlwUWKRTSzWzLfuk"
+                  ]
+                }
+              },
+              {
+                "not": "move:petal-blizzard"
+              }
+            ]
+          },
+          {
+            "label": "Petal Dance (Flower)",
+            "value": "Compendium.ptu.moves.Item.JEquTUzbVYPNvhNp",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.JEquTUzbVYPNvhNp"
+                  ]
+                }
+              },
+              {
+                "not": "move:petal-dance"
+              }
+            ]
+          },
+          {
+            "label": "Spore (Fungal)",
+            "value": "Compendium.ptu.moves.Item.soZ40VFFxCDiniJu",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.soZ40VFFxCDiniJu"
+                  ]
+                }
+              },
+              {
+                "not": "move:spore"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 3"
+    ],
+    "prerequisites": [
+      "Expert Survival or General Education"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Druid",
+    "name": "Nature's Embrace Rank 3",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Expert Survival or General Education"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081780,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 62200000,
+  "_id": "tjNPw8gYL0mASimI",
+  "_key": "!items!tjNPw8gYL0mASimI"
+}

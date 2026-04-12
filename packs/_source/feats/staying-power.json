@@ -1,0 +1,68 @@
+{
+  "name": "Staying Power",
+  "system": {
+    "origin": "",
+    "effect": "Trigger: Your Pokémon Takes a Breather\nEffect: Your Pokémon may \"Take a Breather\" even if they are Confused or Enraged, and they do not Trip or have to Shift away from enemies as part of the action. You may choose whether or not your Pokémon resets their Combat Stages to default.\nBonus: Whenever you or your Pokemon Take a Breather, they gain +5 Damage Reduction for 1 full round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "staying-power",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP"
+    ],
+    "prerequisites": [
+      "Enduring Soul"
+    ],
+    "frequency": "Scene - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Enduring Soul",
+    "name": "Staying Power",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Enduring Soul",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081674,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 14000000,
+  "_id": "DFqMWbwE2eUzTSgM",
+  "_key": "!items!DFqMWbwE2eUzTSgM"
+}

@@ -1,0 +1,82 @@
+{
+  "folder": "p9yRJ8QVFrEtl0mK",
+  "name": "Ambient Aura [CR]",
+  "type": "feat",
+  "img": "/systems/ptu/static/css/images/icons/feat_icon.png",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain an Aura Blessing that can be spent any time as a Free Action Interrupt. When you spend an Aura Blessing, you choose one of the effects below. You may only have one Aura Blessing at a time, and you must have the Aura Pulse Capability to use Ambient Aura.\n» You create an energy barrier around you or an ally within 5 meters granting Damage Reduction equal to your Intuition Rank tripled until the end of your next turn.\n» You cure yourself of a Volatile Status Affliction.\n» Gain the Blindsense Capability until the end of the Scene.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "auraguardian",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.auraguardian}.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "ambient-aura-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack or Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Aura Guardian",
+      "Expert Intuition"
+    ],
+    "frequency": "Scene x2 - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Aura Guardian [CR]"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1700000012643,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "mcR05mEDL3RodpxP",
+  "_key": "!items!mcR05mEDL3RodpxP"
+}

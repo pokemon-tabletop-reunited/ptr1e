@@ -1,0 +1,32 @@
+{
+  "name": "Transform (v0.3 by Tinkastrong)",
+  "type": "script",
+  "command": "/*\n   PLEASE NOTE\n   THIS MACRO IS NOT OFFICIALLY PART OF THE SYSTEM AND HAS NOT BEEN CLEANED UP OR CHECKED.\n   IT HAS BEEN INCLUDED FOR YOUR EASE.\n   USE AT YOUR OWN RISK.\n*/\n\nconst I_WANT_TRANSFORM_TO_ALSO_COPY_SKILLS_BASESTATS_AND_PROPER_SIZE = false\n\nlet didSomething = false\nif (game.canvas.tokens.controlled.length == 0){\n  return ui.notifications.error(\"Select token(s) to (un)transform\");\n}\n\n\nfor (const transformerToken of game.canvas.tokens.controlled){\n  const TRANSFORMER = transformerToken.actor\n  TRANSFORMER.items.filter(i => i.type==\"effect\" && i.name.startsWith(\"Transformed into \")).forEach( e => {\n    \n    //console.log(e)\n    e.delete()\n    didSomething = true\n  })\n}\n\n\nconst TRANSFORMEE_TOKEN = game.user.targets.first()\nif (! TRANSFORMEE_TOKEN) {\n  if(didSomething){\n        return ui.notifications.info(\"Untransformed\")\n  } else {\n        return ui.notifications.error(\"Select a target to transform into\");\n  }\n}\n\nconst ORIGINAL_ITEMS = TRANSFORMEE_TOKEN.actor.items.filter(i => i.type==\"move\" || i.type==\"ability\" || i.type==\"capability\")\n\n\nfor (const transformerToken of game.canvas.tokens.controlled){\n  const TRANSFORMER = transformerToken.actor\n  let effectRules = []\n\n  let scale = TRANSFORMEE_TOKEN.document.texture.scaleX\n  if (I_WANT_TRANSFORM_TO_ALSO_COPY_SKILLS_BASESTATS_AND_PROPER_SIZE) {\n    scale = scale * TRANSFORMEE_TOKEN.document.width\n  }\n\n  effectRules.push({\n    key:\"TokenImage\",\n    value: TRANSFORMEE_TOKEN.document.texture.src, \n    scale: scale\n  })\n\n  effectRules.push({\n    key:\"TypeOverwrite\",\n    value: TRANSFORMEE_TOKEN.actor.system.typing\n  })\n\n  if (! I_WANT_TRANSFORM_TO_ALSO_COPY_SKILLS_BASESTATS_AND_PROPER_SIZE) {\n      effectRules.push({\n        key:\"TemporarySpecies\",\n        uuid: TRANSFORMEE_TOKEN.actor.items.filter(i => i.type == \"species\")[0].uuid\n      })\n  }\n\n  for (const item of ORIGINAL_ITEMS){\n    effectRules.push({\n      key: \"GrantItem\",\n      reevaluateOnUpdate: false,\n      allowDuplicate: false,\n      predicate: [],\n      uuid: item.uuid\n    })\n  }\n\n  for (const capName of [\"overland\",\"sky\",\"swim\",\"levitate\",\"burrow\",\"highJump\",\"longJump\",\"power\"]){\n    const cap = TRANSFORMEE_TOKEN.actor.system.capabilities[capName]\n    const capDitto = TRANSFORMER.system.capabilities[capName]\n    effectRules.push({\n      key: \"ActiveEffectLike\",\n      mode: \"add\",\n      predicate: [],\n      phase: \"applyAEs\",\n      path: `system.modifiers.capabilities.${capName}`,\n      value: `${cap} - ${capDitto}`\n    })\n  }\n\n\n  // let eff = (await Item.create([{\n  //   name: `Transform into ${TRANSFORMEE_TOKEN.name}`,\n  //   img: TRANSFORMEE_TOKEN.document.texture.src, \n  //   type:\"effect\",\n  //   system:{\n  //     rules: effectRules\n  //   }\n  // }], {parent: TRANSFORMER}))[0]\n  // \n  // const source = eff.toObject();\n  // source.flags = mergeObject(source.flags ?? {}, { core: { sourceId: eff.uuid } });\n  // \n  \n  await TRANSFORMER.createEmbeddedDocuments(\"Item\", [{\n    name: `Transformed into ${TRANSFORMEE_TOKEN.name}`,\n    img: TRANSFORMEE_TOKEN.document.texture.src, \n    type:\"effect\",\n    system:{\n      rules: effectRules\n    }\n  }]);\n\n}",
+  "img": "icons/creatures/slimes/slime-movement-dripping-purple.webp",
+  "flags": {},
+  "author": "ODt7FhFvbVjW9f1k",
+  "scope": "global",
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.release-candidate.1",
+    "coreVersion": "13.350",
+    "createdTime": 1698183413921,
+    "modifiedTime": 1699269040817,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "rimgate",
+      "uuid": null,
+      "coreVersion": "11.308",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.beta.15"
+    }
+  },
+  "_id": "sYZbyUkyC8f4nCek",
+  "sort": 100000,
+  "_key": "!macros!sYZbyUkyC8f4nCek"
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Fey Law [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You hit a foe with a damaging Fairy attack\nEffect: Choose one of the following: Status-Class, Combat Maneuver, attacks with an unmodified Damage Base 10 or higher, or an Elemental Type. The triggering foe is Bound; they suffer a -X penalty to all rolls made to use attacks with the chosen trait. X is equal to half your Charm or Occult Education Rank. The Bound condition lasts until the end of a Scene. You may unbind someone as a Free Action at any time. A target may not have multiple instances of Bound applied at once.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "fey-law-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Glamour Weaver"
+    ],
+    "frequency": "1 AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Glamour Weaver [CR]",
+    "name": "Fey Law [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "V3fgrSa9KTcwmesO",
+  "_id": "DXT6dZTrZ9J09HZM",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!DXT6dZTrZ9J09HZM"
+}

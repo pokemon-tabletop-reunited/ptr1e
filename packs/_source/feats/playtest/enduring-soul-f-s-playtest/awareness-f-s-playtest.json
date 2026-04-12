@@ -1,0 +1,77 @@
+{
+  "name": "Awareness [F&S Playtest]",
+  "system": {
+    "origin": "[F&S Playtest]",
+    "effect": "Target: Your Pokémon\nEffect: Your Pokémon enters a defensive stance while this is bound. Your Pokémon gains the following benefits while at positive Spirit:\n1 Spirit – Gain DR equal to the Trainers Focus Rank.\n2 Spirit – Intercepting attacks is now a Shift Action.\n3 Spirit – Immunity to Spirit Loss effects.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "awareness-f-s-playtest",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Orders",
+      "Playtest",
+      "F&S"
+    ],
+    "prerequisites": [
+      "2 Enduring Soul Features"
+    ],
+    "frequency": "At-Will - Standard Action, Bind 2 AP",
+    "notes": "",
+    "free": false,
+    "class": "Enduring Soul [F&S Playtest]",
+    "name": "Awareness",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "2 Enduring Soul Features"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081688,
+    "modifiedTime": 1707827204534,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "tohou-the-wilderness",
+      "uuid": null,
+      "coreVersion": "11.308",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.alpha.25"
+    }
+  },
+  "folder": "UVQvHiZHa8JnNuHJ",
+  "_id": "j3sG8XxdGOgFF0nr",
+  "sort": 175000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!j3sG8XxdGOgFF0nr"
+}

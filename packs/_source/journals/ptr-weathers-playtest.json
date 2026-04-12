@@ -1,0 +1,1568 @@
+{
+  "name": "PTR Weathers (Playtest)",
+  "_id": "XaqlAbknAD3Tpx5E",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Introduction",
+      "type": "text",
+      "_id": "7znCkHSW9AWIyFIA",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Howdy howdy! It may seem like this is a project that emerged out of the blue, and it kind of is! A few of us internally randomly got to talking about our distaste for Weather in PTR, and how the Climatology Field of Research is a bit of a wet noodle and only works if the rest of the party follows their specific weather gimmicks.</p><p>So in a flurry of inspiration over the last couple of months, this is the Playtest of our proposal for the overhaul of Weather mechanics!</p><p>Our general design objective for this project is as follows:</p><ol><li><p>Make Weather interesting and impactful, by way of:</p><ul><li><p>Expanding and diversifying the effects beyond raw damage</p></li><li><p>Making the Weathers fit an \"idea\" of a playstyle, beyond just selecting specific Pokémon with specific Types and Abilities</p></li></ul></li><li><p>Develop Weather into an automated form that is unintensive on the GM end to utilize</p></li></ol><p>Please leave any feedback over in the <a href=\"https://discord.gg/ptrfvtt\">discord's</a> <a href=\"https://ptb.discord.com/channels/748601513835888682/1078480391448559718\">#ptr-feedback-and-ideas</a> forum, where we'll have a thread specifically for this Overhaul.</p><p></p><h2>A Little Something Called \"Tiering\"</h2><p>Weather in Pokémon is integral to the series' core identity: mechanically and thematically. Weather in TTRPGs has the potential to incredibly potent in terms of influencing tactics and combat potential.</p><p>However, PTR's initial implementation didn't really get Weather to <em>feel</em> as substantial as it is in the games, nor how it could be in a TTRPG system, especially one that can be <em>automated</em>. To solve both the issues of Weather coming off fairly limp and mostly a nuisance, Weathers are now split into <strong>Tiers</strong>, numbered from 1 to 3.</p><hr /><p><strong>Tier 1 Weather</strong> is much more passive in nature and effects. Sure, the Weather is still provoked by technology, magic, or some other power, but the actual effects are more background in their nature (think increases/decreases in Type damage, and other small changes).</p><p>Tier 1 Weathers provide minor buffs and debuffs, and are cast by the Weather Moves (Sunny Day, Rain Dance, etc.). Tier 1 Weathers are cancelled when another Tier 1 Weather is set, or when a Tier 2 or Tier 3 Weather is set.</p><hr /><p><strong>Tier 2 Weather</strong> is where the proverbial gauntlet is thrown. These are much more active and where the whole \"take damage at the end of your turn\" mechanic comes into play for a number of Weathers.</p><p>Tier 2 Weathers provide major buffs/debuffs (including improvements over the Tier 1 effects) and are where your \"damage over time\" effects start to happen. The weather-setting Abilities (Drought, Drizzle, etc.) are updated to facilitate setting the Tier 1 Weather, *and* to allow the setting of Tier 2 Weathers. Tier 2 Weathers are cancelled when another Tier 2 Weather is set, or when a Tier 3 Weather is set.</p><hr /><p><strong>Tier 3 Weather</strong> is truly substantial - they can shut down a group of enemies with little effort, and one could even say they're \"biblical\" in their effects (think of Primal Groudon's Desolate Land and Primal Kyogre's Primordial Sea).</p><p>Tier 3 Weathers are colossal \"table flips\", and are restricted for good reason. These are tied to the Hoenn Weather Trio's Mega/Mega-equivalent Evolutions, and Abilities that they receive from them. </p><p>Tier 3 Weathers may only be set by specific Abilties or Primal Weather Legendary Auras. The removal of a Pokemon with a Tier 3 Weather Ability or Primal Weather Aura from battle, the activation of another Tier 3 Weather Ability or Primal Weather Aura, or the cancellation of the Primal Weather Aura via another Aura are the only ways that Tier 3 Weathers may be removed.</p><hr /><blockquote><p><strong>Dev Note</strong>: Work is still being done with how to distribute the Tier 3 Abilities, be they through Trainer/Pokémon Progression, or hard-locked to specific Legendary Pokémon and existing or to-be-homebrewed Abilities.</p></blockquote><p>During the Class Rework process, we provided the additional Weather Moves to the appropriate Elementalists.</p><p></p><h2>Updates &amp; Newly added Abilities, Features, Items &amp; Moves</h2><p>@CompSearch[abilities keywords=Weather keywords=Playtest]{Weather Abilities}</p><p>@CompSearch[feats keywords=Weather keywords=Playtest]{Weather Feats}</p><p>@CompSearch[items keywords=Weather keywords=Playtest]{Weather Items}</p><p>@CompSearch[moves keywords=Weather keywords=Playtest]{Weather Moves}</p><p></p><h2>The Weathers</h2><p>All the weathers and their effects can be found on their own pages (or if you have 'View Multiple Pages' enabled; down below!) with the exception of the Clear weather which is as follows:</p><h3>Clear</h3><p>Clear is the general absence of special Weathers. It confers no effects, and exists only at Tier 1.</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707842993473,
+        "modifiedTime": 1707855133395,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.7znCkHSW9AWIyFIA"
+    },
+    {
+      "sort": 200000,
+      "name": "Sun",
+      "type": "text",
+      "_id": "PpVSKNbWaYunSvs7",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>@Embed[.ETqz0t2fRNU5t0Ty caption=false]</p><p></p><p>@Embed[.YBWVC5IMxZYqnabl caption=false]</p><p></p><p>@Embed[.4faymH1bVfUFQiUM caption=false]</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707843029307,
+        "modifiedTime": 1707843591827,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.PpVSKNbWaYunSvs7"
+    },
+    {
+      "sort": 300000,
+      "name": "Sunny (Tier 1)",
+      "type": "text",
+      "_id": "ETqz0t2fRNU5t0Ty",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><span><strong>Fire-Type Attacks gain +2 DB, and Ice-Type Attacks have their DB decreased by 2.</strong></span></p></li><li><p><span><strong>Grass-Types gain +1 to their Movement Capabilities, and their Initiative is increased by +5.</strong></span></p></li></ul>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707843049045,
+        "modifiedTime": 1707847197363,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.ETqz0t2fRNU5t0Ty"
+    },
+    {
+      "sort": 400000,
+      "name": "Blistering Heat (Tier 2)",
+      "type": "text",
+      "_id": "YBWVC5IMxZYqnabl",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><span>Fire-Type Attacks gain +2 DB, and Ice-Type Attacks have their DB decreased by 2.</span></p></li><li><p><span>Grass-Types gain +1 to their Movement Capabilities, and their Initiative is increased by +5.</span></p></li><li><p><span><strong>Fire-Type Attacks are one step more effective on Water-Types (if a Move is Resisted, it is now Neutral).</strong></span></p></li><li><p><span><strong>All non-Fire and Grass Type creatures suffer -2 to their Accuracy and Save rolls.</strong></span></p></li><li><p><span><strong>Fire-Type Moves and Physical Steel-Type Moves now inflict @UUID[Compendium.ptu.effects.NA1Vn8A2h6JIIUhj]{Burn} on 19+. If the Move already Burns, the Effect Range for Burn increases by 2.</strong></span></p></li></ul>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707843061699,
+        "modifiedTime": 1707847388054,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.YBWVC5IMxZYqnabl"
+    },
+    {
+      "sort": 500000,
+      "name": "Desiccating Heat (Tier 3)",
+      "type": "text",
+      "_id": "4faymH1bVfUFQiUM",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Fire-Type Attacks <strong>gain +3 DB</strong>, and <strong>all Ice-Type and Water-Type Attacks fail to activate</strong>.</p></li><li><p><strong>Fire-Type Attacks are one step more super effective on all Types, and are super effective against Water-Types</strong>.</p></li><li><p><strong>All Abilities that trigger off of Sunny Weather have their effect values double</strong>.</p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p>Fire-Type Moves and Physical Steel-Type Moves <strong>now inflict @UUID[Compendium.ptu.effects.NA1Vn8A2h6JIIUhj]{Burn} on 17+.</strong> If the Move already Burns, <strong>the Effect Range for Burn increases by 4</strong>.</p></li></ul>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707843103034,
+        "modifiedTime": 1707847501228,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.4faymH1bVfUFQiUM"
+    },
+    {
+      "sort": 600000,
+      "name": "Rain",
+      "type": "text",
+      "_id": "Qc9bA1Xjk6QTyp3a",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>@Embed[.1BAkTJOr6EgKdt6j caption=false]</p><p></p><p>@Embed[.18guO0fFJfsCaMDp caption=false]</p><p></p><p>@Embed[.P9g71CQGub5KzQHo caption=false]</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707843110381,
+        "modifiedTime": 1707843964209,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.Qc9bA1Xjk6QTyp3a"
+    },
+    {
+      "sort": 700000,
+      "name": "Rainy (Tier 1)",
+      "type": "text",
+      "_id": "1BAkTJOr6EgKdt6j",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><strong>Water-Type Attacks gain +2 DB, and Fire-Type Attacks have their DB decreased by 2.</strong></p></li><li><p><strong>All creatures gain +1 Accuracy with Electric-Type Moves.</strong></p></li></ul>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707843116333,
+        "modifiedTime": 1707843779349,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.1BAkTJOr6EgKdt6j"
+    },
+    {
+      "sort": 800000,
+      "name": "Thunderstorm (Tier 2)",
+      "type": "text",
+      "_id": "18guO0fFJfsCaMDp",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Water-Type Attacks gain +2 DB, and Fire-Type Attacks have their DB decreased by 2.</p></li><li><p>All creatures gain +1 Accuracy with Electric-Type Moves.</p></li><li><p><strong>All Water-Type creatures may utilize their Swim Capability in place of their Overland Capability.</strong></p></li><li><p><strong>Physical Ranged Moves suffer -1 Accuracy versus target(s) 4 or more meters away.</strong></p></li><li><p><strong>At the end of their turn, a creature within a Thunderstorm might be struck by lightning. If they fail a DC 8 Save, they lose 3 Ticks of Hit Points. This effect is considered to be an Electric-Type Ranged Attack originating from the creature’s square; apply Weakness, Resistance, and applicable Abilities.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707843121990,
+        "modifiedTime": 1708170870827,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.18guO0fFJfsCaMDp"
+    },
+    {
+      "sort": 900000,
+      "name": "Deluge (Tier 3)",
+      "type": "text",
+      "_id": "P9g71CQGub5KzQHo",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Water-Type Attacks gain <strong>+3 DB</strong>, <strong>Fire-Type Attacks fail to activate</strong>, and <strong>all creatures on the field are treated as if they have the @UUID[Compendium.ptu.abilities.VeCeKD06r2h3Iuyd]{Damp} Ability</strong>.</p></li><li><p><strong>All creatures</strong> may utilize their Swim Capability in place of their Overland Capability, <strong>and all non-Water Type creatures cannot use the Flying or Levitate Capability</strong>.</p></li><li><p><strong>Physical Ranged Moves suffer -3 Accuracy</strong> versus target(s) 4 or more meters away.</p></li><li><p><strong>When a Damaging Electric Type attack hits any number of targets, all creatures adjacent to the target(s) lose 1 Tick of Hit Points. A creature can only lose 1 Tick of Hit Points from this effect each time this effect resolves (meaning that an AoE doesn’t stack multiple Ticks on bystanders). This effect is considered to be Electric-Type; apply Weakness, Resistance, and applicable Abilities.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707843138271,
+        "modifiedTime": 1708170879367,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.P9g71CQGub5KzQHo"
+    },
+    {
+      "sort": 1000000,
+      "name": "Snow",
+      "type": "text",
+      "_id": "dQEKXsTMNe7jOaqH",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>@Embed[.ZYjNu2vxlx8lAGBt caption=false]</p><p></p><p>@Embed[.FTqtnKvnn0QYJjHC caption=false]</p><p></p><p>@Embed[.2C7HSokfWnJFysjJ caption=false]</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707843959933,
+        "modifiedTime": 1707852341737,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.dQEKXsTMNe7jOaqH"
+    },
+    {
+      "sort": 1100000,
+      "name": "Snowy (Tier 1)",
+      "type": "text",
+      "_id": "ZYjNu2vxlx8lAGBt",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><strong>Ice-Type Moves are Critical Hits on 19-20. If a Move already has an extended Critical Hit range, that range is increased by +2.</strong></p></li><li><p><strong>Ice-Type creatures gain +5 Physical Damage Reduction.</strong></p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.2.0",
+        "createdTime": 1707843970576,
+        "modifiedTime": 1710763764509,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.ZYjNu2vxlx8lAGBt"
+    },
+    {
+      "sort": 1200000,
+      "name": "Hailstorm (Tier 2)",
+      "type": "text",
+      "_id": "FTqtnKvnn0QYJjHC",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Ice-Type Moves are Critical Hits on 19-20. If a Move already has an extended Critical Hit range, that range is increased by +2.</p></li><li><p>Ice-Type creatures gain <strong>+10</strong> Physical Damage Reduction.</p></li><li><p><strong>All non-Ice Type creatures lose a Tick of Hit Points at the end of their turn.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>@UUID[Compendium.ptu.moves.nJnfeqvu1znRWtOl]{Spikes} and @UUID[Compendium.ptu.moves.XklsarNBfkknbU8O]{Stealth Rock} Hazards gain the Ice-Type.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>Ice-Type Moves and Physical Steel-Type Moves now @UUID[Compendium.ptu.effects.7F4dkJoDuD7wNcEK]{Freeze} on 19+. If the Move already Freezes, the Effect Range for Freeze increases by 1.</strong></p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.2.0",
+        "createdTime": 1707844012422,
+        "modifiedTime": 1710763758902,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.FTqtnKvnn0QYJjHC"
+    },
+    {
+      "sort": 1300000,
+      "name": "Whiteout (Tier 3)",
+      "type": "text",
+      "_id": "2C7HSokfWnJFysjJ",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Ice-Type Moves are <strong>Critical Hits on 18-20</strong>. If a Move already has an extended Critical Hit range, <strong>that range is increased by +3</strong>.</p></li><li><p>Ice-Type creatures gain +10 Physical Damage Reduction.</p></li><li><p>All non-Ice Type creatures lose a Tick of Hit Points at the end of their turn, <strong>and are always @UUID[Compendium.ptu.effects.Item.I2nVAxBFKDMe8EQt]{Slowed}</strong>.</p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>Damaging Water-Type Moves deal damage as if they were Ice-Type.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>All Hazards</strong> gain the Ice-Type.</p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p>Ice-Type Moves and Physical Steel-Type Moves <strong>now @UUID[Compendium.ptu.effects.7F4dkJoDuD7wNcEK]{Freeze} on 18+</strong>. If the Move already Freezes, <strong>the Effect Range for Freeze increases by 2</strong>.</p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707844060288,
+        "modifiedTime": 1710763749773,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.2C7HSokfWnJFysjJ"
+    },
+    {
+      "sort": 1400000,
+      "name": "Sand",
+      "type": "text",
+      "_id": "rMX0Jwj508pAaIWZ",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>@Embed[.HDXMSgAoga7IZ5sh caption=false]</p><p></p><p>@Embed[.EsuHFXwpAtJdxs0Q caption=false]</p><p></p><p>@Embed[.y5XB5KR2FF2XysmZ caption=false]</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707844161956,
+        "modifiedTime": 1707844585394,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.rMX0Jwj508pAaIWZ"
+    },
+    {
+      "sort": 1500000,
+      "name": "Dusty (Tier 1)",
+      "type": "text",
+      "_id": "HDXMSgAoga7IZ5sh",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><strong>Fire-Type and Electric-Type Attacks have their DB decreased by 2.</strong></p></li><li><p><strong>Rock-Type and Ground-Type creatures gain +5 Special Damage Reduction.</strong></p></li></ul>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.2.0",
+        "createdTime": 1707844176896,
+        "modifiedTime": 1708344790459,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.HDXMSgAoga7IZ5sh"
+    },
+    {
+      "sort": 1600000,
+      "name": "Duststorm (Tier 2)",
+      "type": "text",
+      "_id": "EsuHFXwpAtJdxs0Q",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Fire-Type and Electric-Type Attacks have their DB decreased by 2.</p></li><li><p>Rock-Type and Ground-Type creatures gain <strong>+10</strong> Special Damage Reduction.</p></li><li><p><strong>All non-Ground, Rock and Steel Type creatures lose a Tick of Hit Points at the end of their turn.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>Special Ranged Moves suffer -1 Accuracy versus target(s) 4 or more meters away.</strong></p></li><li><p><strong>All non-Ground and Rock Type creatures receive a penalty of -3 to their Fly Movement Capability (if applicable) and a penalty of -1 to all of their other Movement Capabilities.</strong></p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.2.0",
+        "createdTime": 1707844211013,
+        "modifiedTime": 1708344815214,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.EsuHFXwpAtJdxs0Q"
+    },
+    {
+      "sort": 1700000,
+      "name": "Dust Bowl (Tier 3)",
+      "type": "text",
+      "_id": "y5XB5KR2FF2XysmZ",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Fire-Type and Electric-Type Attacks have their <strong>DB decreased by 3</strong>.</p></li><li><p>Rock-Type and Ground-Type creatures gain +10 Special Damage Reduction <strong>and +10 to their Initiative</strong>.</p></li><li><p>All non-Ground, Rock and Steel Type creatures <strong>lose two Ticks of Hit Points</strong> at the end of their turn, <strong>and are always considered @UUID[Compendium.ptu.effects.Item.I2nVAxBFKDMe8EQt]{Slowed}</strong>.</p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p>Special Ranged Moves <strong>suffer -3 Accuracy</strong> versus target(s) 4 or more meters away.</p></li><li><p><strong>Rock-Type and Ground-Type creatures heal a Tick of Hit Points at the end of their turn.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.2.0",
+        "createdTime": 1707844248738,
+        "modifiedTime": 1708344977629,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.y5XB5KR2FF2XysmZ"
+    },
+    {
+      "sort": 1800000,
+      "name": "Fog",
+      "type": "text",
+      "_id": "Bx9kAIdxsDdKWl09",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>@Embed[.a6wZkR8rJNlKHrFe caption=false]</p><p></p><p>@Embed[.0GMIk3XYbhKK4xrZ caption=false]</p><p></p><p>@Embed[.6ePgZ3VcQU5qUr65 caption=false]</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707844568360,
+        "modifiedTime": 1707845541090,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.Bx9kAIdxsDdKWl09"
+    },
+    {
+      "sort": 1900000,
+      "name": "Foggy (Tier 1)",
+      "type": "text",
+      "_id": "a6wZkR8rJNlKHrFe",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><strong>Creatures being attacked by other creatures gain +1 Evasion for each size the attacker is larger than them. Bug-Type creatures count as 1 size smaller than usual for this calculation.</strong></p></li><li><p><strong>Creatures can only see clearly in a 4m radius from themselves. Every meter beyond that between a creature and another square imposes a -1 penalty to Accuracy Rolls and Perception Checks regarding that square and its occupants. This does not affect Bug- or Psychic-Type creatures and creatures with @UUID[Compendium.ptu.capabilities.vA7vGdfceeDzi5sc]{Blindsense} or detecting senses other than vision.</strong></p></li></ul><blockquote><p>Fog weather effect is not Automated!</p></blockquote>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707844593476,
+        "modifiedTime": 1708178758848,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.a6wZkR8rJNlKHrFe"
+    },
+    {
+      "sort": 2000000,
+      "name": "Heavy Fog (Tier 2)",
+      "type": "text",
+      "_id": "0GMIk3XYbhKK4xrZ",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Creatures being attacked by other creatures gain +1 Evasion for each size the attacker is larger than them. Bug-Type creatures count as 1 size smaller than usual for this calculation.</p></li><li><p>Creatures can only see clearly in a <strong>2m radius</strong> of themselves. Every meter beyond that between a creature and another square imposes a <strong>-2 penalty to Accuracy Rolls and Perception Checks</strong> regarding that square and its occupants. This does not affect Bug- or Psychic-Type creatures and creatures with @UUID[Compendium.ptu.capabilities.vA7vGdfceeDzi5sc]{Blindsense} or detecting senses other than vision.</p></li><li><p><strong>Flanked creatures take +5 bonus damage from all Damaging Attacks. Psychic-Type creatures cannot be Flanked, and Bug-Type creatures are always considered to be Flanking.</strong></p></li><li><p><strong>Psychic-Type creatures have the Effect Range of their Moves increased by +1, and receive a +2 bonus to all Combat Maneuver rolls.</strong></p></li><li><p><strong>All Stealth checks made to Hide are rolled as if they were 1 Skill Rank higher. Each additional Rank above Master confers an additional +2 to the roll result.</strong></p></li></ul><blockquote><p>Fog weather effect is not Automated!</p></blockquote>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707844618102,
+        "modifiedTime": 1708178764681,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.0GMIk3XYbhKK4xrZ"
+    },
+    {
+      "sort": 2100000,
+      "name": "Tule Fog (Tier 3)",
+      "type": "text",
+      "_id": "6ePgZ3VcQU5qUr65",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Creatures being attacked by other creatures gain +1 Evasion for each size the attacker is larger than them. Bug-Type creatures count as <strong>2 sizes</strong> smaller than usual for this calculation.</p></li><li><p><strong>All creatures are @UUID[Compendium.ptu.effects.g2QutQJutABxFIw6]{Blinded}. Bug- or Psychic-Type creatures and creatures with @UUID[Compendium.ptu.capabilities.vA7vGdfceeDzi5sc]{Blindsense} or other detecting senses other than vision are not Blinded from Tule Fog.</strong></p></li><li><p>Flanked creatures take <strong>+10 bonus damage</strong> from all Damaging Attacks. Psychic-Type creatures cannot be Flanked, and Bug-Type creatures are always considered to be Flanking.</p></li><li><p>Psychic-Type creatures have the Effect Range of their Moves <strong>increased by +2</strong>, and receive a <strong>+5 bonus to all Combat Maneuver rolls</strong>.</p></li><li><p>All Stealth checks made to Hide are rolled as if they were <strong>2 Skill Ranks higher</strong>. Each additional Rank above Master confers an <strong>additional +3 to the roll result</strong>.</p></li></ul><blockquote><p>Fog weather effect is not Automated!</p></blockquote>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707844846571,
+        "modifiedTime": 1708178769207,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.6ePgZ3VcQU5qUr65"
+    },
+    {
+      "sort": 2200000,
+      "name": "Wind",
+      "type": "text",
+      "_id": "mgeqyDD0g79XNU28",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>@Embed[.CvjwDBLUgtnD8ebr caption=false]</p><p></p><p>@Embed[.HdTyaqw3uARLJjZf caption=false]</p><p></p><p>@Embed[.CrZdaAJwy5UHjurj caption=false]</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707845463018,
+        "modifiedTime": 1707845822070,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.mgeqyDD0g79XNU28"
+    },
+    {
+      "sort": 2300000,
+      "name": "Windy (Tier 1)",
+      "type": "text",
+      "_id": "CvjwDBLUgtnD8ebr",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><strong>Flying-Type creatures, creatures with the Fly and/or Levitate Movement Capabilities, and creatures with the @UUID[Compendium.ptu.abilities.Item.C6aRawvdZOrPx2xK]{Wind Rider} Ability gain +5 to their Initiative.</strong></p></li><li><p><strong>Moves with the @CompSearch[moves keywords=Wind]{Wind Keyword} gain +2 DB.</strong></p></li></ul>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707845522146,
+        "modifiedTime": 1707848155274,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.CvjwDBLUgtnD8ebr"
+    },
+    {
+      "sort": 2400000,
+      "name": "Gale (Tier 2)",
+      "type": "text",
+      "_id": "HdTyaqw3uARLJjZf",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Flying-Type creatures, creatures with the Fly and/or Levitate Movement Capabilities, and creatures with the @UUID[Compendium.ptu.abilities.Item.C6aRawvdZOrPx2xK]{Wind Rider} Ability gain +5 to their Initiative.</p></li><li><p>Moves with the @CompSearch[moves keywords=Wind]{Wind Keyword} gain +2 DB.</p></li><li><p><strong>All creatures with the Fly Movement Capability receive a +1 bonus to that Capability.</strong></p></li><li><p><strong>Flying-Type creatures and creatures with the @UUID[Compendium.ptu.abilities.C6aRawvdZOrPx2xK]{Wind Rider} Ability treat their Flying-Type Moves as having the “Priority” Keyword.</strong></p></li><li><p><strong>When Pushed, all creatures are Pushed an additional X meters (minimum of 0), where X is equal to 3 minus their Weight Class. Additionally, all moves with the “Dash”, “Reckless”, and “Smite” Keywords without the “Push” Keyword gain the “Push” Keyword and receive the following effect: “Target(s) hit by this Move are Pushed 1 meter.”</strong></p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707845550452,
+        "modifiedTime": 1707848145300,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.HdTyaqw3uARLJjZf"
+    },
+    {
+      "sort": 2500000,
+      "name": "Cyclone (Tier 3)",
+      "type": "text",
+      "_id": "CrZdaAJwy5UHjurj",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Flying-Type creatures, creatures with the Fly and/or Levitate Movement Capabilities, and creatures with the Wind Rider Ability <strong>gain +10 to their Initiative</strong>.</p></li><li><p>Moves with the @CompSearch[moves keywords=Wind]{Wind Keyword} <strong>gain +3 DB</strong>.</p></li><li><p>All creatures with the Fly Movement Capability receive a +1 bonus to that Capability. <strong>Flying-Type creatures and creatures with the Wind Rider Ability gain an additional +2 bonus to their Fly and/or Levitate Capability, if able.</strong></p></li><li><p><strong>The Flying-Type now resists the Types it is normally weak against. Non-Flying Type creatures with the @UUID[Compendium.ptu.abilities.Item.C6aRawvdZOrPx2xK]{Wind Rider} Ability gain +10 Damage Reduction.</strong></p></li><li><p>When Pushed, all creatures are Pushed an additional X meters (minimum of 0), where X is equal to <strong>6 minus their Weight Class</strong>. Additionally, all moves with the “Dash”, “Reckless”, and “Smite” Keywords without the “Push” Keyword gain the “Push” Keyword and receive the following effect: “Target(s) hit by this Move are Pushed 1 meter.”</p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707845684638,
+        "modifiedTime": 1707848110423,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.CrZdaAJwy5UHjurj"
+    },
+    {
+      "sort": 2600000,
+      "name": "New Moon",
+      "type": "text",
+      "_id": "JpLG9CyiU0Uo7pny",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>@Embed[.6wkggQtDJlMSKDQT caption=false]</p><p></p><p>@Embed[.IbEa7GRGTQS4wjb6 caption=false]</p><p></p><p>@Embed[.JO37oFyHv5GBPjbE caption=false]</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707845818648,
+        "modifiedTime": 1707846385794,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.JpLG9CyiU0Uo7pny"
+    },
+    {
+      "sort": 2700000,
+      "name": "Gloomy (Tier 1)",
+      "type": "text",
+      "_id": "6wkggQtDJlMSKDQT",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><strong>Ghost, Dark, and Fairy-Type Attacks gain +2 DB.</strong></p></li><li><p><strong>The Light Level is treated as @UUID[Compendium.ptu.journals.cP772AChmDjr486z.JournalEntryPage.rzEXd4hoGRL4V2AS]{Darkness} for all non-Ghost, Dark, and Fairy-Type creatures.</strong></p></li></ul><blockquote><p>In Foundry you can turn off Global Illumination to activate this, normal light sources such as Flashlights &amp; the Glow Capability still function, and so would things like Darkvision.</p></blockquote>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707845827377,
+        "modifiedTime": 1708176217990,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.6wkggQtDJlMSKDQT"
+    },
+    {
+      "sort": 2800000,
+      "name": "Umbra (Tier 2)",
+      "type": "text",
+      "_id": "IbEa7GRGTQS4wjb6",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Ghost, Dark, and Fairy-Type Attacks gain +2 DB.</p></li><li><p>The Light Level is treated as @UUID[Compendium.ptu.journals.cP772AChmDjr486z.JournalEntryPage.rzEXd4hoGRL4V2AS]{Darkness} for all non-Ghost, Dark, and Fairy-Type creatures.</p></li></ul><blockquote><p>In Foundry you can turn off Global Illumination to activate this, normal light sources such as Flashlights &amp; the Glow Capability still function, and so would things like Darkvision.</p></blockquote><ul><li><p><strong>When a Ghost, Dark, or Fairy-Type creature inflicts a Persistent or Volatile Status Affliction on a target, that target is also Cursed.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>When used by a creature with the Ghost, Dark, or Fairy-Type, all Moves with the @CompSearch[moves keywords=Hazard]{Hazard Keyword} increase their Range by +2, and the number of Hazards they create is increased by 50% (minimum 1).</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>When a creature comes into contact with or is affected by a @CompSearch[moves keywords=Hazard]{Hazard} created by Ghost, Dark, and Fairy-Type creature, that creature loses a Tick of Hit Points, in addition to the Hazard’s normal effects.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707845971777,
+        "modifiedTime": 1708178580424,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.IbEa7GRGTQS4wjb6"
+    },
+    {
+      "sort": 2900000,
+      "name": "Eclipse (Tier 3)",
+      "type": "text",
+      "_id": "JO37oFyHv5GBPjbE",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Ghost, Dark, and Fairy-Type Attacks <strong>gain +3 DB</strong>.</p></li><li><p>The Light Level is treated as @UUID[Compendium.ptu.journals.cP772AChmDjr486z.JournalEntryPage.rzEXd4hoGRL4V2AS]{Darkness} for all non-Ghost, Dark, and Fairy-Type creatures. <strong>Additionally, all Ghost, Dark, and Fairy-Type creatures gain +1 Evasion and have the Effect Range of their Moves increased by +2.</strong></p></li></ul><blockquote><p>In Foundry you can turn off Global Illumination to activate this, normal light sources such as Flashlights &amp; the Glow Capability still function, and so would things like Darkvision.</p></blockquote><ul><li><p>When a Ghost, Dark, or Fairy-Type creature inflicts a Persistent or Volatile Status Affliction on a target, that target is also Cursed. <strong>The target is also @UUID[Compendium.ptu.effects.Item.uxkB2vhF5HGjQAZY]{Suppressed}.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p>When used by a creature with the Ghost, Dark, or Fairy-Type, Moves with the “Hazard” Keyword increase their Range by +2, and the number of Hazards they create is increased by 50% (minimum 1). <strong>Additionally, any @CompSearch[moves keywords=Blessing]{Blessings} created by the Moves or Abilities of a Ghost, Dark, and Fairy-Type creature receive an additional activation.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p>When a creature comes into contact with or is affected by a @CompSearch[moves keywords=Hazard]{Hazard} created by Ghost, Dark, and Fairy-Type creature, that creature loses a Tick of Hit Points <strong>and becomes @UUID[Compendium.ptu.effects.Item.uxkB2vhF5HGjQAZY]{Suppressed}</strong>, alongside the Hazard’s normal effects. <strong>The creator of the Hazard can choose to make the Hazard deal damage as though it were Ghost, Dark, or Fairy-Type, depending on which of these Types the creator of the Hazards is (so a Grimmsnarl can choose for the Tick to be either Fairy or Dark-Typed). When given a Type, apply Weakness and Resistance for the Hazard's damage dealt and do not apply stats.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846010970,
+        "modifiedTime": 1708178605281,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.JO37oFyHv5GBPjbE"
+    },
+    {
+      "sort": 3000000,
+      "name": "Acid Rain",
+      "type": "text",
+      "_id": "HbRNv8tVlPEqWEIc",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>@Embed[.IAEQNRN3dhavHlYn caption=false]</p><p></p><p>@Embed[.gkgZ3BYSGis8Uhxi caption=false]</p><p></p><p>@Embed[.Ituwb8YlUkp5boxz caption=false]</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846373217,
+        "modifiedTime": 1707846657551,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.HbRNv8tVlPEqWEIc"
+    },
+    {
+      "sort": 3100000,
+      "name": "Smoggy (Tier 1)",
+      "type": "text",
+      "_id": "IAEQNRN3dhavHlYn",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><strong>Poison-Type Attacks gain +2 DB, and gain +1 to their Effect Range.</strong></p></li><li><p><strong>All non-Poison and Steel-Type creatures receive a -2 Penalty to their Save Rolls.</strong></p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846381507,
+        "modifiedTime": 1707846404074,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.IAEQNRN3dhavHlYn"
+    },
+    {
+      "sort": 3200000,
+      "name": "Choking Cloud (Tier 2)",
+      "type": "text",
+      "_id": "gkgZ3BYSGis8Uhxi",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Poison-Type Attacks gain +2 DB, and gain +1 to their Effect Range.</p></li><li><p>All non-Poison and Steel-Type creatures receive a -2 Penalty to their Save Rolls.</p></li><li><p><strong>All non-Poison and Steel-Type creatures lose a Tick of Hit Points at the end of their turn.</strong></p></li></ul><blockquote><p>Drag @UUID[Compendium.ptu.effects.XbtFo6c8W2cEt7U8]{Condition: Choking Cloud} on any non-Poison and Steel type to automate this effect. Adding to global weather does not work.</p></blockquote><ul><li><p><strong>While a creature is afflicted with @UUID[Compendium.ptu.effects.Item.299X6pActAV8ITz7]{Poisoned} or @UUID[Compendium.ptu.effects.Item.39Ty93ddaWcIhagZ]{Badly Poisoned}, they are @UUID[Compendium.ptu.effects.wqzPWKMbwvOWLVoI]{Vulnerable}.</strong></p></li></ul><blockquote><p>Drag @UUID[Compendium.ptu.effects.XbtFo6c8W2cEt7U8]{Condition: Choking Cloud} on any non-Poison and Steel type to automate this effect. Adding to global weather does not work.</p></blockquote><ul><li><p><strong>When a creature takes a Critical Hit from a @CompSearch[moves keywords=Slice]{Move with the “Slice” Keyword}, they are @UUID[Compendium.ptu.effects.Item.299X6pActAV8ITz7]{Poisoned}.</strong></p></li></ul><blockquote><p>This effect is only partially Automated!</p></blockquote>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846410888,
+        "modifiedTime": 1710770743259,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.gkgZ3BYSGis8Uhxi"
+    },
+    {
+      "sort": 3300000,
+      "name": "Acid Storm (Tier 3)",
+      "type": "text",
+      "_id": "Ituwb8YlUkp5boxz",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Poison-Type Attacks <strong>gain +3 DB</strong>, and <strong>gain +2 to their Effect Range</strong>.</p></li><li><p><strong>All non-Poison Type creatures receive a -4 Penalty to their Save Rolls</strong>.</p></li><li><p><strong>All non-Poison Type creatures lose a Tick of Hit Points, and Poison-Type creatures gain a Tick of Temporary Hit Points, at the end of their turn.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p>While a creature is afflicted with @UUID[Compendium.ptu.effects.Item.299X6pActAV8ITz7]{Poisoned} or @UUID[Compendium.ptu.effects.Item.39Ty93ddaWcIhagZ]{Badly Poisoned}, they are @UUID[Compendium.ptu.effects.wqzPWKMbwvOWLVoI]{Vulnerable} <strong>and have a -5 penalty to both Physical and Special Damage Reduction.</strong></p></li></ul><blockquote><p>Only the Damage Reduction part of this effect is automated!</p></blockquote><ul><li><p>When a creature takes a Critical Hit from a @CompSearch[moves keywords=Slice]{Move with the “Slice” Keyword}, they are <strong>@UUID[Compendium.ptu.effects.Item.39Ty93ddaWcIhagZ]{Badly Poisoned}.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846447263,
+        "modifiedTime": 1708178653532,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.Ituwb8YlUkp5boxz"
+    },
+    {
+      "sort": 3400000,
+      "name": "Shadow Sky",
+      "type": "text",
+      "_id": "ax9LfhLrEu4lmlew",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<blockquote><p>These are weathers to be used with the Nuclear Type. If you aren't using Nuclear Type in your campaign, these weathers become unavailable.</p></blockquote><p>@Embed[.57kFkOqy9xY60WP8 caption=false]</p><p></p><p>@Embed[.o2sGLH6NV9dXHcfT caption=false]</p><p></p><p>@Embed[.6ykh6wKs7S5DJlXw caption=false]</p>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846655315,
+        "modifiedTime": 1707853047636,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.ax9LfhLrEu4lmlew"
+    },
+    {
+      "sort": 3500000,
+      "name": "Shady (Tier 1)",
+      "type": "text",
+      "_id": "57kFkOqy9xY60WP8",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><strong>Shadow-Type Attacks gain +2 DB.</strong></p></li><li><p><strong>The DC for all Hyper Mode Saves increases by +2.</strong></p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846663395,
+        "modifiedTime": 1707846731161,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.57kFkOqy9xY60WP8"
+    },
+    {
+      "sort": 3600000,
+      "name": "Enshrouded (Tier 2)",
+      "type": "text",
+      "_id": "o2sGLH6NV9dXHcfT",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Shadow-Type Attacks gain +2 DB.</p></li><li><p>The DC for all Hyper Mode Saves increases by +2.</p></li><li><p><strong>All non-Shadow-Type creatures lose a Tick of Hit Points at the end of their turn.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>Shadow-Type creatures gain +5 Damage Reduction against Super Effective damage.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>Once per Scene, when a Shadow-Type creature gains at least one Combat Stage, they may add +1 Combat Stage to any one of the Stats affected.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846751724,
+        "modifiedTime": 1708178674734,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.o2sGLH6NV9dXHcfT"
+    },
+    {
+      "sort": 3700000,
+      "name": "Baleful Brume (Tier 3)",
+      "type": "text",
+      "_id": "6ykh6wKs7S5DJlXw",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Shadow-Type Attacks gain +2 DB.</p></li><li><p><strong>Shadow-Type creatures cannot exit Hyper Mode.</strong></p></li><li><p>All non-Shadow-Type creatures lose a Tick of Hit Points at the end of their turn, and all creatures are Vulnerable.</p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p>Shadow-Type creatures gain +5 Damage Reduction against Super Effective damage, <strong>and non-Shadow-Type creatures take +5 bonus damage when they take Super Effective damage and +5 bonus damage when damaged by a Critical Hit.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>Twice per Scene</strong>, when a Shadow-Type creature gains at least one Combat Stage, they may add +1 Combat Stage to any one of the Stats affected. <strong>XD-Series Shadow Pokemon may instead do this At-Will.</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846784124,
+        "modifiedTime": 1708178696442,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.6ykh6wKs7S5DJlXw"
+    },
+    {
+      "sort": 3800000,
+      "name": "Fallout",
+      "type": "text",
+      "_id": "SakJWjickDMWB80r",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<blockquote><p>These are weathers to be used with the Nuclear Type. If you aren't using Nuclear Type in your campaign, these weathers become unavailable.</p></blockquote><p>@Embed[.2sJWuEyR9S47v7bf caption=false]</p><p></p><p>@Embed[.KPTl4Ok92yhWblt7 caption=false]</p><p></p><p>@Embed[.km9RudFAY1778m0q caption=false]</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846897639,
+        "modifiedTime": 1707852917022,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.SakJWjickDMWB80r"
+    },
+    {
+      "sort": 3900000,
+      "name": "Glowy (Tier 1)",
+      "type": "text",
+      "_id": "2sJWuEyR9S47v7bf",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p><strong>Nuclear-Types gain +1 to their Movement Capabilities, and their Initiative is increased by +5.</strong></p></li><li><p><strong>Non-Nuclear-Type creatures have one of their Abilities randomly disabled.</strong></p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846907247,
+        "modifiedTime": 1707846932640,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.2sJWuEyR9S47v7bf"
+    },
+    {
+      "sort": 4000000,
+      "name": "Radshower (Tier 2)",
+      "type": "text",
+      "_id": "KPTl4Ok92yhWblt7",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Nuclear-Types gain <strong>+2</strong> to their Movement Capabilities, and their Initiative is increased by <strong>+10</strong>.</p></li><li><p>Non-Nuclear-Type creatures have one of their Abilities randomly disabled.</p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>All non-Nuclear- and Steel-Type creatures lose a Tick of Hit Points at the end of their turn</strong></p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p><strong>All non-Nuclear- and Steel-Type creatures take +10 bonus damage from all attacks.</strong></p></li><li><p><strong>Nuclear-Type Moves and Physical Steel-Type Moves now inflict @UUID[Compendium.ptu.effects.xE6uIFWZoYXAZQxA]{Flinch} on 19+. If the Move already Flinches, the Effect Range for Flinches increases by 2.</strong></p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846938585,
+        "modifiedTime": 1708178713600,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.KPTl4Ok92yhWblt7"
+    },
+    {
+      "sort": 4100000,
+      "name": "Neutrino Superabundance (Tier 3)",
+      "type": "text",
+      "_id": "km9RudFAY1778m0q",
+      "title": {
+        "show": true,
+        "level": 2
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<ul><li><p>Nuclear-Types gain <strong>+3</strong> to their Movement Capabilities, and their Initiative is increased by <strong>+15</strong>.</p></li><li><p>Non-Nuclear-Type creatures have <strong>two</strong> of their Abilities randomly disabled.</p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p>All non-Nuclear- and Steel-Type creatures lose one Tick of Hit Points at the end of their turn.</p></li></ul><blockquote><p>This part of the effect is not Automated!</p></blockquote><ul><li><p>All <strong>non-Nuclear-Type</strong> creatures take <strong>+15</strong> bonus damage from all attacks.</p></li><li><p>Nuclear-Type Moves and Physical Steel-Type Moves now<strong> </strong>inflict @UUID[Compendium.ptu.effects.xE6uIFWZoYXAZQxA]{Flinch} on <strong>17+</strong>. If the Move already Flinches, the Effect Range for Flinches increases by <strong>4.</strong></p></li></ul>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.350",
+        "systemId": "ptu",
+        "systemVersion": "4.1.4",
+        "createdTime": 1707846989414,
+        "modifiedTime": 1708178724643,
+        "lastModifiedBy": "ptubuilder00000000",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "category": null,
+      "_key": "!journal.pages!XaqlAbknAD3Tpx5E.km9RudFAY1778m0q"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "core": {
+      "sheetClass": "ptu.PTURuleBookJournal"
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.0",
+    "createdTime": 1707842989329,
+    "modifiedTime": 1708344977629,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "_key": "!journal!XaqlAbknAD3Tpx5E"
+}

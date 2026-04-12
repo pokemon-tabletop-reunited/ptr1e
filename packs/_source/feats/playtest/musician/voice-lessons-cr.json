@@ -1,0 +1,64 @@
+{
+  "name": "Voice Lessons [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You and your Pokémon’s Moves with the Sonic Keyword gain the Friendly keyword (except Perish Song), and you and your Pokémon’s Contest Moves are given the Sonic Keyword. Additionally, whenever your Pokémon make an Appeal Roll using a Contest Move with the Sonic Keyword, they receive +1d6.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Headliner Rank 2"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Musician [CR]",
+    "name": "Voice Lessons [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "WRKXvQaKG4o08kOu",
+  "_id": "juUyiT9paDsu3hEx",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!juUyiT9paDsu3hEx"
+}

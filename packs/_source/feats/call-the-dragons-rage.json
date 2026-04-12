@@ -1,0 +1,67 @@
+{
+  "name": "Call the Dragon's Rage",
+  "system": {
+    "origin": "",
+    "effect": "You learn the Moves Dragon Rush and Outrage. You may use these Moves as Weapon Attacks when wielding Melee Weapons.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack",
+      "Weapon"
+    ],
+    "prerequisites": [
+      "Bare the Dragon's Claws",
+      "Master Command or Intimidate"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Herald of Pride",
+    "automation": [],
+    "name": "Call the Dragon's Rage",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Bare the Dragon's Claws, Master Command or Intimidate"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079254,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 3600000,
+  "_id": "3E7MnoXIFZpIdABN",
+  "_key": "!items!3E7MnoXIFZpIdABN"
+}

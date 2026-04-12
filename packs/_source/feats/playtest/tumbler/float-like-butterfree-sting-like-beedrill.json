@@ -1,0 +1,75 @@
+{
+  "name": "Float Like Butterfree, Sting Like Beedrill",
+  "system": {
+    "origin": "",
+    "effect": "The Tumbler may choose to ignore difficult terrain and hazard effects on the field. They also learn the move Flying Press.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.CQtEgSitXIFDpydm"
+      }
+    ],
+    "enabled": true,
+    "slug": "float-like-butterfree-sting-like-beedrill",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "5 Tumbler Features",
+      "Master Acrobatics"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Tumbler [CR]",
+    "automation": [],
+    "name": "Burst of Speed",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "5 Tumbler Features, Master Acrobatics",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "createdTime": 1706116152349,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "2MciwRd3DpIWin4u",
+  "sort": 600000,
+  "_id": "DRhR0ASUiH42uoh1",
+  "_key": "!items!DRhR0ASUiH42uoh1"
+}

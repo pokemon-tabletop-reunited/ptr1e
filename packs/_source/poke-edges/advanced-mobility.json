@@ -1,0 +1,99 @@
+{
+  "name": "Advanced Mobility",
+  "system": {
+    "origin": "",
+    "effect": "Increase one Movement Capability by 2. This Edge may be taken multiple times, but may not be applied more than once to the same Movement Capability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "mobility",
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "Burrow",
+            "value": "burrow"
+          },
+          {
+            "label": "Levitate",
+            "value": "levitate"
+          },
+          {
+            "label": "Overland",
+            "value": "overland"
+          },
+          {
+            "label": "Sky",
+            "value": "sky"
+          },
+          {
+            "label": "Swim",
+            "value": "swim"
+          },
+          {
+            "label": "Teleporter",
+            "value": "teleporter"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.capabilities.{item|flags.ptu.rulesSelections.mobility}",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "advanced-mobility",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Level 20"
+    ],
+    "cost": "1 TP",
+    "name": "Advanced Mobility",
+    "useCount": 0
+  },
+  "type": "pokeedge",
+  "img": "https://assets.forge-vtt.com/652d5b20bd60c2104d8ee322/systems/ptu/css/images/icons/poke_edge_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Level 20"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683369202694,
+    "modifiedTime": 1712493035929,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "kanto-adventures",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "Igr1mD6tDszkZc18",
+  "sort": 300000,
+  "_key": "!items!Igr1mD6tDszkZc18"
+}

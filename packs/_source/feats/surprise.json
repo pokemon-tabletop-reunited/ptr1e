@@ -1,0 +1,66 @@
+{
+  "name": "Surprise!",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You make an attack against a foe that does not anticipate an attack or is adjacent to your Pokémon with Pack Hunt or Teamwork\nEffect: Make two attack rolls for the triggering action, and use the better result to finalize the attack. If both attacks would hit, the target is Flinched. Surprise! may be used only once per Scene per target. If the triggering attack was a Poké Ball, Hand Net, Weighted Net, Glue Cannon, or Struggle Attack, Surprise! costs 1 AP to activate; otherwise, it costs 2 AP. If the triggering attack was a Cap Cannon, Surprise! costs 1 AP to activate.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Hunter",
+      "Adept Stealth or Survival"
+    ],
+    "frequency": "X AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Hunter",
+    "automation": [],
+    "name": "Surprise!",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Hunter, Adept Stealth or Survival"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079340,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 16200000,
+  "_id": "Fiwq5uXCpvd0AJ27",
+  "_key": "!items!Fiwq5uXCpvd0AJ27"
+}

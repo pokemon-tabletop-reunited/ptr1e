@@ -1,0 +1,69 @@
+{
+  "name": "Psionic Overload [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You hit with a Damaging Telekinetic Move or use another Telekinetic Move\nEffect: The effect of this Feature depends on the Triggering Move.\n- Barrier: Place 2 additional segments of Barrier, and you may place the Barriers anywhere within 6 meters of yourself. They do not need to remain contiguous, nor does one segment have to touch you.\n- Kinesis: The user of the triggering attack becomes Confused and Suppressed.\n- Meditate: You gain +1 Defense, Special Attack, and Special Defense Combat Stages.\n- Psychic: The target becomes Vulnerable for one full round, and may be Pushed 2 additional meters.\n- Telekinesis: At the end of each turn that the target remains Lifted, they lose a Tick of Hit Points.\n- Twin Beam: You may use of Twin Beam again, ignoring Frequency, against the same or another target in range, although this use of Twin Beam lacks the \"Double Strike\" keyword.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "psionic-overload-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "PK Omega",
+      "Master Focus"
+    ],
+    "frequency": "2 AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Telekinetic [CR]",
+    "name": "Psionic Overload [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "k9NMANuFU8PfFW1I",
+  "_id": "RvsANtHlRbPYBwPk",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!RvsANtHlRbPYBwPk"
+}

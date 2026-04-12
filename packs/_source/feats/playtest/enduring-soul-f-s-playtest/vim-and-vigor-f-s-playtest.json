@@ -1,0 +1,77 @@
+{
+  "name": "Vim and Vigor [F&S Playtest]",
+  "system": {
+    "origin": "[F&S Playtest]",
+    "effect": "Target: Your Pokémon with at least 2 Tutor Points\nEffect: You spend an hour with the target. The target loses 2 Tutor Points, and gains the Vigor Ability. ",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "vim-and-vigor-f-s-playtest",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Playtest",
+      "F&S"
+    ],
+    "prerequisites": [
+      "Shrug Off",
+      "Master Athletics or Focus"
+    ],
+    "frequency": "At-Will - Extended Action",
+    "notes": "",
+    "free": false,
+    "class": "Enduring Soul [F&S Playtest]",
+    "name": "Vim and Vigor",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "Shrug Off, Master Athletics or Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078876,
+    "modifiedTime": 1707827204534,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "tohou-the-wilderness",
+      "uuid": null,
+      "coreVersion": "11.308",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.alpha.25"
+    }
+  },
+  "folder": "UVQvHiZHa8JnNuHJ",
+  "_id": "j1I1ihEurPZNar6b",
+  "sort": 25000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!j1I1ihEurPZNar6b"
+}

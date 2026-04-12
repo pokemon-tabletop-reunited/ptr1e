@@ -1,0 +1,56 @@
+{
+  "name": "Motor Drive",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "The user is immune to the damage and effects of Electric Type attacks. Whenever an Electric Type attack hits the Pokémon, raise their Speed by +1 Combat Stage. Defensive.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "Effectiveness",
+        "predicate": [],
+        "type": "electric",
+        "value": 0
+      }
+    ],
+    "enabled": true,
+    "slug": "motor-drive",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.hCTbNW1Isw6W5BwJ",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "Tc5HA3VQmm66bgYc",
+  "effects": [],
+  "folder": null,
+  "sort": 26100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1712499057688,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Tc5HA3VQmm66bgYc"
+}

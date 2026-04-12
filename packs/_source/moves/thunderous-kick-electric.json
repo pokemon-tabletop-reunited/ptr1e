@@ -1,0 +1,94 @@
+{
+  "name": "Thunderous Kick (Electric)",
+  "type": "move",
+  "img": "systems/ptu/css/images/types2/ElectricIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "All legal targets hit lose 1 Defense Combat Stage. Once per Scene, Thunderous Kick may instead be used as an Electric-Type Move.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.fNSwwM06WlrPmrFS",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "thunderous-kick-electric",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.fNSwwM06WlrPmrFS",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Electric",
+    "category": "Physical",
+    "damageBase": "9",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "Melee",
+    "contestType": "Tough - Good Show!",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "effects": [],
+  "flags": {
+    "scene-packer": {
+      "hash": "55c9f2b7d0033fd32b93f0fffe54626111ac2ac1",
+      "sourceId": "Item.LLcOpXnkyBFLxz5W"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710789907711,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "boQOI9aOwxp02KCo",
+  "sort": 0,
+  "_key": "!items!boQOI9aOwxp02KCo"
+}

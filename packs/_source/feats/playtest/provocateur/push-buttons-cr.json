@@ -1,0 +1,64 @@
+{
+  "name": "Push Buttons [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Your Social Moves’ Frequency is not Expended if they miss. You gain the Demoralize Edge, even if you do not meet the prerequisites. Its effects for Status Moves now trigger on 18+, and Social Moves that activate this “Crit” Range cause their targets to lose a tick of Hit Points. If you already have Demoralize, you may gain another Edge for which you meet the prerequisites.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Provocateur"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Provocateur [CR]",
+    "name": "Push Buttons [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "mS7fmuAZxBzZ1J7B",
+  "_id": "wskGlFkqUpTveVi5",
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1710765909004,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!wskGlFkqUpTveVi5"
+}

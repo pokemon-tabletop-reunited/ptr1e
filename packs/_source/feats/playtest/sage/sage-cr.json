@@ -1,0 +1,71 @@
+{
+  "name": "Sage [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Target: An Ally\nEffect: While this Feature is bound, the target gains Damage Reduction equal to your Occult Education Rank doubled or the target's Tick Value, whichever is higher.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "sage-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.lQBCt9nEw2ZElij1",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+HP",
+      "Playtest",
+      "Class Rework",
+      "Stratagem",
+      "Orders"
+    ],
+    "prerequisites": [
+      "Novice Occult Education"
+    ],
+    "frequency": "Bind 2 AP – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Sage [CR]",
+    "name": "Sage [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "3RdR0bAuym3k8na2",
+  "_id": "yERKWRmckDVAOoBb",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1710939865263,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!yERKWRmckDVAOoBb"
+}

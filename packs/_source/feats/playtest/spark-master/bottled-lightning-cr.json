@@ -1,0 +1,65 @@
+{
+  "name": "Bottled Lightning [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Target: An item made of conductive material\nEffect: Choose one of your Electric Type Moves with a target. You Charge the target item with this Move. Bot-tled Lightning counts as using the Move for frequency purposes. You may expend this Charge as a Rapid Action on your turn to use the Move the item was charged with, originating from the item. If a Pokémon or Trainer touches a Charged item, you may instead activate this Rapid Action as if it had the Priority keyword. At the end of a Scene, all items lose their Charge, and you may only have X items Charged at a time where X is half your Focus Rank.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Storm Wizard Rank 1",
+      "Adept Focus"
+    ],
+    "frequency": "2 AP - Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Spark Master [CR]",
+    "name": "Bottled Lightning [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "3iyoTE9LsCFKK2kz",
+  "_id": "7k7umavjw899jNy8",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7k7umavjw899jNy8"
+}

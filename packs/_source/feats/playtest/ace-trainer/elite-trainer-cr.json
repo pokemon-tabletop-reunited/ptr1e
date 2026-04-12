@@ -1,0 +1,95 @@
+{
+  "name": "Elite Trainer [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Choose Agility Training, Brutal Training, Focused Training, or Inspired Training. You gain the chosen Feature, even if you do not meet the prerequisites. When training, you may apply up to two different [Training] Features on each of your Pokémon. If you already have all of these Features, instead pick another Feature for which you qualify.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.feats.Item.TQ6scoBM3iZKMuZT",
+            "predicate": {
+              "not": "feat:agility-training"
+            }
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.MolTHMn3UrNiIZ3h",
+            "predicate": {
+              "not": "feat:brutal-training"
+            }
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.FLSt79Zix8j69T07",
+            "predicate": {
+              "not": "feat:focused-training"
+            }
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.WfLcIrUmRwblAaYr",
+            "predicate": {
+              "not": "feat:inspired-training"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": "elite-trainer-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Ace Trainer"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Ace Trainer [CR]",
+    "name": "Elite Trainer [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "18LvSoVBoPmxJnOL",
+  "_id": "k6qUHpNiqGuXUpXB",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1710769162349,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!k6qUHpNiqGuXUpXB"
+}

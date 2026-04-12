@@ -1,0 +1,81 @@
+{
+  "name": "Mt. Moon Blues",
+  "system": {
+    "origin": "",
+    "effect": "You learn the Moves Sing and Supersonic",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.I8d7of2dA9eAP0OG"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.YD9PPN6tPaLMrvvm"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "mt-moon-blues",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "Musician"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Musician",
+    "automation": [],
+    "name": "Mt. Moon Blues",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Musician",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081750,
+    "modifiedTime": 1710771715078,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 15500000,
+  "_id": "F0NWjUWiizuI3aDv",
+  "_key": "!items!F0NWjUWiizuI3aDv"
+}
