@@ -1,0 +1,69 @@
+{
+  "name": "Mark of Vision [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Target: A willing Trainer\nEffect: You mark the target with a mystical power which allows you to close your eyes and focus to perceive the world with their senses from their perspective. You may Bind this Ability multiple times, each time on a different target, but you may only concentrate on one Mark of Vision at a time, and you may only have a number of Marks at one time equal to half your Perception Rank. A target may choose to end this effect at any time, or to deny you access to their senses temporarily without ending the effect entirely. You have a rough sense of how far away and in what direction marked targets are.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "mark-of-vision-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Oracle",
+      "Adept Perception"
+    ],
+    "frequency": "Bind 1 AP – Extended Action",
+    "notes": "",
+    "free": false,
+    "class": "Oracle [CR]",
+    "name": "Mark of Vision [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "xBwAXgt5P3gmtGcD",
+  "_id": "pqdqMycoPDVv4J9R",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!pqdqMycoPDVv4J9R"
+}

@@ -1,0 +1,103 @@
+{
+  "name": "Grant: Training Feature",
+  "type": "effect",
+  "_id": "fm0TZUuQK0uRhkJA",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Reminder to pick your level 1 training feature regardless of meeting prerequisites!",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.feats.Item.TQ6scoBM3iZKMuZT",
+            "predicate": {
+              "not": "feat:agility-training"
+            }
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.MolTHMn3UrNiIZ3h",
+            "predicate": {
+              "not": "feat:brutal-training"
+            }
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.FLSt79Zix8j69T07",
+            "predicate": {
+              "not": "feat:focused-training"
+            }
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.WfLcIrUmRwblAaYr",
+            "predicate": {
+              "not": "feat:inspired-training"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}",
+        "replaceSelf": true
+      }
+    ],
+    "enabled": true,
+    "slug": "grant-training-feature",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710769193661,
+    "modifiedTime": 1710769621038,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fm0TZUuQK0uRhkJA"
+}

@@ -1,0 +1,464 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:04.258Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 1664,
+    "form": "",
+    "stats": {
+      "hp": 7,
+      "atk": 10,
+      "def": 13,
+      "spatk": 7,
+      "spdef": 8,
+      "spd": 5
+    },
+    "types": [
+      "Fairy",
+      "Normal"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "own-tempo",
+          "uuid": "Compendium.ptu.abilities.Item.Fp7nWb0csK9MHRsZ"
+        },
+        {
+          "slug": "scrappy",
+          "uuid": "Compendium.ptu.abilities.Item.LVKN9UuObrFnBbxc"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "danger-syrup",
+          "uuid": "Compendium.ptu.abilities.Item.JM87rlp0Y9maAWQs"
+        },
+        {
+          "slug": "celebrate",
+          "uuid": "Compendium.ptu.abilities.Item.xhjgbopRyNS1nOHB"
+        }
+      ],
+      "high": [
+        {
+          "slug": "simple",
+          "uuid": "Compendium.ptu.abilities.Item.vQHsvwM1ELbK2H3D"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "slug": "delta-dwebble-cake",
+        "uuid": "Compendium.ptu.species.Item.nTqGgZ7xxksH0JmT",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "slug": "delta-crustle-cake",
+        "uuid": "Compendium.ptu.species.Item.6z9EFMGBcyex7cKf",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.4,
+      "weight": 200,
+      "sizeClass": "Medium",
+      "weightClass": 6
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Grassland"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 0,
+      "swim": 1,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 5,
+      "naturewalk": [
+        "Forest"
+      ],
+      "other": [
+        {
+          "slug": "alluring",
+          "uuid": "Compendium.ptu.capabilities.Item.kxQazrYjhK3WLEXG"
+        },
+        {
+          "slug": "chilled",
+          "uuid": "Compendium.ptu.capabilities.Item.4RJFVQvf9t70YWI3"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "fairy-wind",
+          "uuid": "Compendium.ptu.moves.Item.HmIauAep0pKBGFRh",
+          "level": 5
+        },
+        {
+          "slug": "sweet-scent",
+          "uuid": "Compendium.ptu.moves.Item.nJhqaS0PzJJ7w1pS",
+          "level": 7
+        },
+        {
+          "slug": "mist",
+          "uuid": "Compendium.ptu.moves.Item.uaOHYAjzdGsqGBJ0",
+          "level": 11
+        },
+        {
+          "slug": "powder-snow",
+          "uuid": "Compendium.ptu.moves.Item.l4TzdGjtPZHycF5b",
+          "level": 13
+        },
+        {
+          "slug": "chip-away",
+          "uuid": "Compendium.ptu.moves.Item.jA1lUJTWb7izUm2l",
+          "level": 17
+        },
+        {
+          "slug": "work-up",
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "level": 19
+        },
+        {
+          "slug": "dazzling-gleam",
+          "uuid": "Compendium.ptu.moves.Item.tqoJF3EAgEEv3l1l",
+          "level": 23
+        },
+        {
+          "slug": "misty-terrain",
+          "uuid": "Compendium.ptu.moves.Item.N6Cj9FQBPkjc9wwt",
+          "level": 24
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "level": 29
+        },
+        {
+          "slug": "aurora-beam",
+          "uuid": "Compendium.ptu.moves.Item.UqFpnMAAoEOqvUDj",
+          "level": 31
+        },
+        {
+          "slug": "play-rough",
+          "uuid": "Compendium.ptu.moves.Item.MayZhpGvJzcbv8BT",
+          "level": 38
+        },
+        {
+          "slug": "shell-smash",
+          "uuid": "Compendium.ptu.moves.Item.FZgGqe9WVDcpRaG6",
+          "level": 43
+        },
+        {
+          "slug": "flail",
+          "uuid": "Compendium.ptu.moves.Item.IWQXKwgnyM2CvDLV",
+          "level": 50
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "level": 55
+        }
+      ],
+      "machine": [
+        {
+          "slug": "work-up",
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf"
+        },
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "hail",
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "ice-beam",
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U"
+        },
+        {
+          "slug": "blizzard",
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s"
+        },
+        {
+          "slug": "hyper-beam",
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "aerial-ace",
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "echoed-voice",
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX"
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK"
+        },
+        {
+          "slug": "swords-dance",
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800"
+        },
+        {
+          "slug": "fly",
+          "uuid": "Compendium.ptu.moves.Item.TA3fevwvHn8PJHEI"
+        },
+        {
+          "slug": "frost-breath",
+          "uuid": "Compendium.ptu.moves.Item.nM8DQhM6b8g5KZyy"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "dazzling-gleam",
+          "uuid": "Compendium.ptu.moves.Item.tqoJF3EAgEEv3l1l"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "slug": "autotomize-n",
+          "uuid": "Compendium.ptu.moves.Item.ZJvARZqHBE6REWnp"
+        },
+        {
+          "slug": "block",
+          "uuid": "Compendium.ptu.moves.Item.PvmLk3AU04nOjH4x"
+        },
+        {
+          "slug": "bug-bite",
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD"
+        },
+        {
+          "slug": "heal-bell",
+          "uuid": "Compendium.ptu.moves.Item.v8vXs3oV4YimX2AZ"
+        },
+        {
+          "slug": "helping-hand",
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ"
+        },
+        {
+          "slug": "icy-wind",
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc"
+        },
+        {
+          "slug": "knock-off",
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6"
+        },
+        {
+          "slug": "magic-coat",
+          "uuid": "Compendium.ptu.moves.Item.qfZVvzSa9Pytij7O"
+        },
+        {
+          "slug": "magic-room",
+          "uuid": "Compendium.ptu.moves.Item.gkHbjclskfbhxEZs"
+        },
+        {
+          "slug": "metronome",
+          "uuid": "Compendium.ptu.moves.Item.9aU7CnwwaU0FE4tk"
+        },
+        {
+          "slug": "recycle",
+          "uuid": "Compendium.ptu.moves.Item.yUba2OWKoxAE3txP"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "snore",
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "delta-crustle-cake",
+    "rules": [],
+    "source": {
+      "value": "Fangame Insurgence Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "PjOQybdSHWn87sdq",
+  "name": "Delta Crustle (Cake)",
+  "_id": "6z9EFMGBcyex7cKf",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!6z9EFMGBcyex7cKf"
+}

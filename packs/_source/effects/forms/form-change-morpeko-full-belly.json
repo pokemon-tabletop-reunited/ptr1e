@@ -1,0 +1,69 @@
+{
+  "name": "Form Change: Morpeko Full Belly",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will place Morpeko into full-belly mode. Please ensure Hangry Mode is removed prior to using this effect.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.modifiers.acBonus.mod",
+        "mode": "add",
+        "value": 2,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-morpeko-full-belly",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "DJzDYBNllxgyeiok",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.12",
+    "coreVersion": "13.350",
+    "createdTime": 1695891197328,
+    "modifiedTime": 1706024522433,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "L7TTW78qp2h4tJw8",
+  "sort": 400000,
+  "_key": "!items!L7TTW78qp2h4tJw8"
+}

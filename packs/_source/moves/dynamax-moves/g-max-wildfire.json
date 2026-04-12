@@ -1,0 +1,74 @@
+{
+  "folder": "8tcCd3dOnqridsEG",
+  "name": "G-Max Wildfire",
+  "type": "move",
+  "_id": "ix0PLvXFW4kkaQAw",
+  "img": "systems/ptu/static/css/images/types2/FireIC_Icon.png",
+  "system": {
+    "origin": "Regional Phenomena",
+    "effect": "All Targets are put into a Vortex.\nRequirement: Charizard is Gigantamaxed and has a Fire Type Move.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.BuK1xNKNhBn1DZDu",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "g-max-wildfire",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fire",
+    "category": "Physical",
+    "damageBase": "12",
+    "frequency": "At-Will",
+    "ac": "0",
+    "range": "Range 12, Ranged Blast 4",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 2900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1705335588190,
+    "modifiedTime": 1710789364909,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ix0PLvXFW4kkaQAw"
+}

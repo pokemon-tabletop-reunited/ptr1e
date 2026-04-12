@@ -1,0 +1,65 @@
+{
+  "name": "Ninja [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain the Infiltrator Ability and the Stealth Capability.\nBonus: You gain the Sneak's Tricks Edge, even if you do not meet the prerequisites.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Novice Stealth or Novice Combat"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Ninja [CR]",
+    "name": "Ninja [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "Oh9iNhjBAL6rHEpw",
+  "_id": "ofUJMrIuCU0qYaRR",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ofUJMrIuCU0qYaRR"
+}

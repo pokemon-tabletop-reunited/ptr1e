@@ -1,0 +1,271 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:06.349Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "When evolution approaches, Wurmple will either nestle themselves in the crooks of tree branches or on top of piles of large leaves. Should they evolve into Silcoon, they will choose spots that receive lots of sunlight. Silcoon attach themselves to nearby branches or leaves with copious amounts of silk to prevent themselves from accidentally being dislodged from their shelters. Silcoon do not move often, but luckily for them, they do not need to eat; they store all the energy they need to survive as Wurmple. They have been known, however, to spin silk in such a manner that morning&nbsp;dew or rain water will flow down to them and help slake their thirst. When in danger, Silcoon rely on their tough casings to protect themselves. Though capable of movement (albeit slowly), they rarely actually do so, as they need to save as much energy as they can for evolution. Their activity tends to be limited to concealing themselves with leaves to hide from predators. Despite their immobility, however, studies show that Silcoon are keenly aware of their surroundings.",
+    "number": 266,
+    "form": "",
+    "stats": {
+      "hp": 5,
+      "atk": 4,
+      "def": 6,
+      "spatk": 3,
+      "spdef": 3,
+      "spd": 2
+    },
+    "types": [
+      "Bug"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "shed-skin",
+          "uuid": "Compendium.ptu.abilities.Item.pWARd2idBLFnfGi5"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "silk-threads",
+          "uuid": "Compendium.ptu.abilities.Item.66iTF1CxOWtm2jOY"
+        },
+        {
+          "slug": "battle-armor",
+          "uuid": "Compendium.ptu.abilities.Item.gHfEkYe9Vdc6TqeX"
+        },
+        {
+          "slug": "overcoat",
+          "uuid": "Compendium.ptu.abilities.Item.aYpa4hA9aHeNGyeQ"
+        }
+      ],
+      "high": [
+        {
+          "slug": "sturdy",
+          "uuid": "Compendium.ptu.abilities.Item.AaDXWUAMnhxLbyn3"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.JCLL0uZaWIdivJK0",
+        "slug": "wurmple",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.NCsjc0YHh65Ty2fW",
+        "slug": "silcoon",
+        "level": 5,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.1DGqCJVArEOqAVaG",
+        "slug": "beautifly",
+        "level": 10,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.6,
+      "weight": 10,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Bug"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Nullivore"
+    ],
+    "habitats": [
+      "Forest",
+      "Rainforest"
+    ],
+    "capabilities": {
+      "overland": 1,
+      "sky": 0,
+      "swim": 1,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 1,
+      "naturewalk": [
+        "Forest",
+        "Grassland"
+      ],
+      "other": [
+        {
+          "slug": "threaded",
+          "uuid": "Compendium.ptu.capabilities.Item.FgI0NCLyoQbTmVvh"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.Mw6vBLeHYty112VS",
+          "slug": "harden",
+          "level": "Evo"
+        }
+      ],
+      "machine": [],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD",
+          "slug": "bug-bite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dM7JNhVHOmnTxRhy",
+          "slug": "electroweb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "silcoon",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Silcoon",
+  "_id": "NCsjc0YHh65Ty2fW",
+  "effects": [],
+  "sort": 46800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!NCsjc0YHh65Ty2fW"
+}

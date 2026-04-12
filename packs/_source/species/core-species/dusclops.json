@@ -1,0 +1,603 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:10.198Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Dusclops are feared Pokémon, found patrolling ominous woods once night falls. Their bodies are thought to be completely hollow, with only spectral balls of fire burning within. They are said to absorb will-o’-the-wisps (mysterious balls of light that seem to appear over bogs and marshes) to fuel this fire. Those that gaze into their singular red eyes are said to be able to glimpse these flames--at the cost of their lives, however, as they will absorb the spirits of anyone they make eye contact with. Dusclops can hypnotize foes by waving their hands around in a ghastly manner. Their eyes&nbsp;​will glow while doing so, and their victims will be forced to do their biddings afterwards. Their bodies are much like black holes, in that they can absorb practically anything. Nothing they absorb, however, has even been seen coming back out. Because of this, no one knows where objects (and beings) Dusclops absorb go. Some believe that they transport these items to the spirit world, while others believe they take them to a purgatory, where they wait aimlessly in limbo for the rest of eternity.",
+    "number": 356,
+    "form": "",
+    "stats": {
+      "hp": 4,
+      "atk": 7,
+      "def": 13,
+      "spatk": 6,
+      "spdef": 13,
+      "spd": 3
+    },
+    "types": [
+      "Ghost"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "shackle",
+          "uuid": "Compendium.ptu.abilities.Item.oR8CFw84rjr0vz5u"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "frighten",
+          "uuid": "Compendium.ptu.abilities.Item.eKg9pZRDbRf40GME"
+        },
+        {
+          "slug": "interference",
+          "uuid": "Compendium.ptu.abilities.Item.NGesozzcq6yYzALH"
+        },
+        {
+          "slug": "frisk",
+          "uuid": "Compendium.ptu.abilities.Item.W64GEtQ6ZO7uxZCa"
+        }
+      ],
+      "high": [
+        {
+          "slug": "pressure",
+          "uuid": "Compendium.ptu.abilities.Item.FrTjgCVwTEhGA5Sn"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.n68JFVB2UVSdHQZy",
+        "slug": "duskull",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.ttg8DsXzRdD0eK0v",
+        "slug": "dusclops",
+        "level": 25,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.b5dNf6vomI1G9rGO",
+        "slug": "dusknoir",
+        "level": 40,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.6,
+      "weight": 30.6,
+      "sizeClass": "Medium",
+      "weightClass": 3
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Indeterminate"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Nullivore"
+    ],
+    "habitats": [
+      "Cave",
+      "Forest",
+      "Mountain"
+    ],
+    "capabilities": {
+      "overland": 6,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 4,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 3,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "darkvision",
+          "uuid": "Compendium.ptu.capabilities.Item.zzJWpOj40dLelBm5"
+        },
+        {
+          "slug": "dead-silent",
+          "uuid": "Compendium.ptu.capabilities.Item.27U7ZioOgyZFzxDx"
+        },
+        {
+          "slug": "invisibility",
+          "uuid": "Compendium.ptu.capabilities.Item.6sANE4BU79H8FAUR"
+        },
+        {
+          "slug": "phasing",
+          "uuid": "Compendium.ptu.capabilities.Item.rJqBxh0Nwwqwu6ev"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.TXPzXlSA5R7gCowi",
+          "slug": "shadow-punch",
+          "level": "Evo"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ma0Yb0fLx263208P",
+          "slug": "disable",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VtkRa05N67wR9RcG",
+          "slug": "astonish",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xxRjav6kNCLkivvr",
+          "slug": "foresight",
+          "level": 14
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ShchrVmRnyokSkTh",
+          "slug": "shadow-sneak",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4zyVHZ1t6PJsYzGX",
+          "slug": "pursuit",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky",
+          "slug": "confuse-ray",
+          "level": 30
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5A0ZjnRjOwj1i7n8",
+          "slug": "curse",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XbAfCHhH425Ldmj4",
+          "slug": "hex",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball",
+          "level": 45
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mddjD9rQYW5169un",
+          "slug": "mean-look",
+          "level": 52
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback",
+          "level": 57
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4gPfx0ONfNK8vio2",
+          "slug": "future-sight",
+          "level": 64
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.fTu9Cq4z0G7PDH2x",
+          "slug": "calm-mind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "slug": "earthquake"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs",
+          "slug": "psychic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zgeymOL0WIKgT6lq",
+          "slug": "torment"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD",
+          "slug": "charge-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AMdvXp9FBhfXOLJs",
+          "slug": "embargo"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0",
+          "slug": "infestation"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0",
+          "slug": "dream-eater"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Uut6FpUzRObtZvBm",
+          "slug": "trick-room"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFyiKFMmD0rwvIl7",
+          "slug": "ally-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nzd3auiq1JwJFmCb",
+          "slug": "bind-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ",
+          "slug": "counter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.vg4sghb5ZX1spGho",
+          "slug": "dynamic-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+          "slug": "fire-punch-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4gPfx0ONfNK8vio2",
+          "slug": "future-sight-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IuGk58XiaSA0Gypi",
+          "slug": "gravity-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h",
+          "slug": "ice-punch-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P6WwfKrGPuSohaOH",
+          "slug": "mega-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4SK37Ub6d9G8jOaJ",
+          "slug": "mega-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9aU7CnwwaU0FE4tk",
+          "slug": "metronome"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TD0L4L2JEH8VpTFW",
+          "slug": "ominous-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DO1UIDQKBBUxPcTj",
+          "slug": "pain-split"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jtmrf8Dol8bkamvO",
+          "slug": "seismic-toss"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VpNKUQKz3srKJvMv",
+          "slug": "skill-swap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4",
+          "slug": "sucker-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tNexDVIwrtPBsV0u",
+          "slug": "telekinesis"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY",
+          "slug": "thunder-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5f5SrSIiFCEOkSWm",
+          "slug": "trick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oZW7peinTFoJ7cim",
+          "slug": "wonder-room"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 2,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "dusclops",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Dusclops",
+  "_id": "ttg8DsXzRdD0eK0v",
+  "effects": [],
+  "sort": 103500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ttg8DsXzRdD0eK0v"
+}

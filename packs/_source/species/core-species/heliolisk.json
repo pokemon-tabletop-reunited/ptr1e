@@ -1,0 +1,511 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:09.770Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "The small orange frills surrounding a Heliolisk’s neck are in fact part of a much larger black collar which can unfold into a light-absorbing disk around the Pokémon’s head. The greater area of a Heliolisk’s frills allow it to create electricity through the photoelectric effect much more efficiently than Helioptile; when fully charged, a single Heliolisk can provide enough electricity to power the lights of an entire skyscraper. Heliolisk also use electricity to stimulate their own muscles. They can cover 100 yards (91 meters) in merely five seconds and even run across the surface of water for a brief period of time using the extra strength provided by jolts of electricity. However, they must recharge after such energy-demanding tasks. Heliolisk spend much of their time standing still with their frills unfolded in the sun to gather energy. When they attack, the tips of their frills will glow brightly. During mating season, these diurnal Pokémon will unfold and light up their frills to attract mates. Individuals with the largest frills are deemed the most attractive. An ancient desert culture once praised Heliolisk, believing them to be mystical and connected to a deity they worshipped. When this culture's ruins were excavated by Galarian archaeologists, a number of Heliolisk snuck onboard with the unearthed artifacts and made it to Galar, establishing the population that exists there today.",
+    "number": 695,
+    "form": "",
+    "stats": {
+      "hp": 6,
+      "atk": 6,
+      "def": 5,
+      "spatk": 11,
+      "spdef": 9,
+      "spd": 11
+    },
+    "types": [
+      "Electric",
+      "Normal"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "electrodash",
+          "uuid": "Compendium.ptu.abilities.Item.4cIJr5LMQXpPUMah"
+        },
+        {
+          "slug": "desert-weather",
+          "uuid": "Compendium.ptu.abilities.Item.Zj5ffH0DXjm8WW6O"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "solar-power",
+          "uuid": "Compendium.ptu.abilities.Item.PdpYQuMW4BlVlrTq"
+        },
+        {
+          "slug": "sun-blanket",
+          "uuid": "Compendium.ptu.abilities.Item.lGAUnDeneM1g7BeD"
+        }
+      ],
+      "high": [
+        {
+          "slug": "heliovolt",
+          "uuid": "Compendium.ptu.abilities.Item.11dDuaezjpl8hwNG"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.sLKP4luk00SkwwkB",
+        "slug": "helioptile",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.pMdKnM6DOB7aJcrC",
+        "slug": "heliolisk",
+        "level": 20,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1,
+      "weight": 21,
+      "sizeClass": "Medium",
+      "weightClass": 2
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Monster",
+        "Dragon"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Phototroph"
+    ],
+    "habitats": [
+      "Desert",
+      "Mountain"
+    ],
+    "capabilities": {
+      "overland": 8,
+      "sky": 0,
+      "swim": 4,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 3,
+      "naturewalk": [
+        "Desert"
+      ],
+      "other": [
+        {
+          "slug": "zapper",
+          "uuid": "Compendium.ptu.capabilities.Item.v3QyNdZYDVwlG2tY"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.HhQrSZjCBL95D1zV",
+          "slug": "thunder-shock",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qRvLgOrsmdXEsBsU",
+          "slug": "charge",
+          "level": 11
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oVue0OGsxZn0kQGX",
+          "slug": "quick-attack",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.b1toUoLQY3BbeQJ5",
+          "slug": "razor-wind",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.auckyPDvFlAeuhKr",
+          "slug": "parabolic-charge",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze",
+          "level": 35
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ltI3ruaEiyhlwPjj",
+          "slug": "volt-switch",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GfFcvf9IeVMVx5mF",
+          "slug": "electrify",
+          "level": 45
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt",
+          "level": 49
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XC3ObpOOy8mGk8s8",
+          "slug": "sandstorm"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PdslVg2qIvDMDHiA",
+          "slug": "low-sweep"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI",
+          "slug": "focus-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD",
+          "slug": "charge-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MrGSomQEncQd3zt6",
+          "slug": "brutal-swing"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ltI3ruaEiyhlwPjj",
+          "slug": "volt-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fQxEojo3sSwnLk1q",
+          "slug": "dragon-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "slug": "grass-knot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.idhhi7YJRDHnUUMR",
+          "slug": "wild-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s",
+          "slug": "surf"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFyiKFMmD0rwvIl7",
+          "slug": "ally-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rW6YqKNIilq1npZJ",
+          "slug": "eerie-impulse-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GfFcvf9IeVMVx5mF",
+          "slug": "electrify-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dM7JNhVHOmnTxRhy",
+          "slug": "electroweb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+          "slug": "fire-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD",
+          "slug": "hyper-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dOMKjZx7flfPZTtV",
+          "slug": "low-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.N0EkteKIFV2WtAJ6",
+          "slug": "magnet-rise"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.auckyPDvFlAeuhKr",
+          "slug": "parabolic-charge-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.b1toUoLQY3BbeQJ5",
+          "slug": "razor-wind-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY",
+          "slug": "thunder-punch"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 5,
+        "modifier": 1,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "heliolisk",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Heliolisk",
+  "_id": "pMdKnM6DOB7aJcrC",
+  "effects": [],
+  "sort": 95700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!pMdKnM6DOB7aJcrC"
+}

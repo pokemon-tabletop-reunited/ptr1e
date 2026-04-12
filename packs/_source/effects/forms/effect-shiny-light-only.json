@@ -1,0 +1,91 @@
+{
+  "name": "Effect: Shiny (Light only)",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenLight",
+        "value": {
+          "alpha": 0.2,
+          "angle": 360,
+          "bright": 0.01,
+          "coloration": 10,
+          "dim": 0.03,
+          "attenuation": 1,
+          "luminosity": 0.1,
+          "saturation": 0.05,
+          "contrast": 0,
+          "shadows": 0.05,
+          "animation": {
+            "type": "torch",
+            "speed": 7,
+            "intensity": 5,
+            "reverse": true
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          },
+          "color": "#bbb816"
+        }
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-shiny",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "DJzDYBNllxgyeiok",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1710375598390,
+    "modifiedTime": 1710762985846,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "hc0y9Hu0SHi8CpSM",
+  "sort": 0,
+  "_key": "!items!hc0y9Hu0SHi8CpSM"
+}

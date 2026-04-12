@@ -1,0 +1,65 @@
+{
+  "name": "Power Chord [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You play a Song\nEffect: Make a Charm or Focus Check, and add your Special Attack. Foes in the area of effect take Special Normal-Type Damage equal to the result.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Headliner Rank 3",
+      "Master Charm or Focus"
+    ],
+    "frequency": "Scene x2 – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Musician [CR]",
+    "name": "Power Chord [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "WRKXvQaKG4o08kOu",
+  "_id": "6R1vXiuLNkZG9QnQ",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!6R1vXiuLNkZG9QnQ"
+}

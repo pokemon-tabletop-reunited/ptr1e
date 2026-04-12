@@ -1,0 +1,435 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:04.270Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Hippowdon are very ill-tempered Pokémon, prone to attacking anything that angers them on sight. They can open their jaws to a width of nearly 7 feet (2 meters) and bite down with enough force to crush cars. They will give only one warning sign before attacking, opening their mouths wide to display their power before rushing at foes to attack. Like Hippopotas, they are normally found with their torsos submerged in sand. As they sit, they store sand in their bodies through the large pores on their backs. When angered, Hippowdon can expel these grains to create powerful sand&nbsp;tornadoes. They are often seen with sand spilling out of their pores, having stored too much while submerged. As they walk, they leave trails of sand behind in their wakes. Despite their poor tempers, Hippowdon are sometimes seen dwelling in close proximity with each other; these pods are to be segregated by gender, only coming together to mate. Pods do not seem to develop close bonds, however, and individuals tend to act on their own during day-to-day activities. Curiously, these ferocious creatures have a mutualistic relationship with tiny Dwebble; Dwebble help dislodge stones that get stuck in the pores of Hippowdon, and then can use the stones to make their shells. For this reason, Hippowdon are often protective of local Dwebble populations.",
+    "number": 450,
+    "form": "",
+    "stats": {
+      "hp": 10,
+      "atk": 11,
+      "def": 12,
+      "spatk": 7,
+      "spdef": 7,
+      "spd": 5
+    },
+    "types": [
+      "Ground"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "sand-stream",
+          "uuid": "Compendium.ptu.abilities.Item.dNI65Cb2U5AKUhmu"
+        },
+        {
+          "slug": "arena-trap",
+          "uuid": "Compendium.ptu.abilities.Item.X2YtNsIATMTDMR6o"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "sand-force",
+          "uuid": "Compendium.ptu.abilities.Item.mrh8upnRkfCDcSxf"
+        },
+        {
+          "slug": "enduring-rage",
+          "uuid": "Compendium.ptu.abilities.Item.SPD8UhzfdpeeTrCS"
+        }
+      ],
+      "high": [
+        {
+          "slug": "sand-rush",
+          "uuid": "Compendium.ptu.abilities.Item.zXedk9ljVUiQ7ssV"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.6q3Ugn4tR9DxWzVU",
+        "slug": "hippopotas",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.7rioMizVOpAQ7iah",
+        "slug": "hippowdon",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 2,
+      "weight": 300,
+      "sizeClass": "Large",
+      "weightClass": 6
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Cave",
+      "Desert"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 0,
+      "swim": 3,
+      "levitate": 0,
+      "burrow": 3,
+      "highJump": 0,
+      "longJump": 1,
+      "power": 9,
+      "naturewalk": [
+        "Desert"
+      ],
+      "other": [
+        {
+          "slug": "groundshaper",
+          "uuid": "Compendium.ptu.capabilities.Item.gneJRPErFFv5Kz3g"
+        },
+        {
+          "slug": "tremorsense",
+          "uuid": "Compendium.ptu.capabilities.Item.3dWZglNbT0uCCQmQ"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.QMaJ91E3XBatUcV9",
+          "slug": "bite",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TqoaCRNjoH4lGBj4",
+          "slug": "yawn",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AVg7omn9VOzv0724",
+          "slug": "dig",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gL2f9k8qYJ1OwiZO",
+          "slug": "sand-tomb",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5uY1ltFWijN07CKe",
+          "slug": "crunch",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "slug": "earthquake",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge",
+          "level": 50
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YSxU9QCnB3OBqtgh",
+          "slug": "fissure",
+          "level": 60
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY",
+          "slug": "roar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "slug": "earthquake"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XC3ObpOOy8mGk8s8",
+          "slug": "sandstorm"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut",
+          "slug": "stone-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+          "slug": "earth-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QDqTpQ7sJUvhU2v4",
+          "slug": "fire-fang-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uGIN68MryZnqXa5w",
+          "slug": "ice-fang-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "slug": "iron-head"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XklsarNBfkknbU8O",
+          "slug": "stealth-rock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2sgLgahHycXD5OuT",
+          "slug": "stomping-tantrum"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xwJMUiNv3k0k9VK6",
+          "slug": "superpower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.FWdcrF4mgW14bOCZ",
+          "slug": "thunder-fang-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 1,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 1,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 1,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "hippowdon",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Hippowdon",
+  "_id": "7rioMizVOpAQ7iah",
+  "effects": [],
+  "sort": 16900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!7rioMizVOpAQ7iah"
+}

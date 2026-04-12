@@ -1,0 +1,86 @@
+{
+  "folder": "3ytoWW3tJMtnZJNo",
+  "name": "Effect: Atk Ace",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "Enduring Soul",
+    "effect": "Pokémon owned by a Trainer with the Atk Ace Class gain +1 Atk and an additional +1 per 10 levels.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": "1 + floor(@actor.system.level.current / 10)",
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-atk-ace",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T01:45:48.387Z",
+        "version": {
+          "schema": 0.111,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.1",
+    "coreVersion": "13.350",
+    "createdTime": 1694533590342,
+    "modifiedTime": 1706453089314,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "marth-ptr",
+      "uuid": null,
+      "coreVersion": "11.314",
+      "systemId": "ptu",
+      "systemVersion": "4.0.5"
+    }
+  },
+  "_id": "1nxph1eBRlqpr3xd",
+  "sort": 0,
+  "_key": "!items!1nxph1eBRlqpr3xd"
+}

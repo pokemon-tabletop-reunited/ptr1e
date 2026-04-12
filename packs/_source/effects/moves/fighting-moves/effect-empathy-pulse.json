@@ -1,0 +1,93 @@
+{
+  "name": "Effect: Empathy Pulse",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "+1 Atk CS, +1 Accuracy",
+    "snippet": "+1 Atk CS, +1 Accuracy",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.stats.spatk.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-empathy-pulse",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "fxR7gYSzdO2ZAQya",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "scene-packer": {
+      "hash": "99608edcb8890bd01313f9508e11a0997f179646",
+      "sourceId": "Item.ucUhviZ95UgW9bzS"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1709371136643,
+    "modifiedTime": 1710789533971,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_id": "A56F9TJ7SkM5yTl7",
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!A56F9TJ7SkM5yTl7"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Paranormal Anathema [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You’re hit by a Psychic-, Ghost-, Dark-, or Fairy-Type Move\nEffect: If the triggering Move was a Status-Class Move, the Move fails. If the triggering Move was a Damaging Move, you resist the Damage one step further.\nBonus: You are immune to any secondary effects that trigger on accuracy rolls from Psychic-, Ghost-, Dark-, and Fairy-Type Moves.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Mental Resistance",
+      "Expert Occult Education"
+    ],
+    "frequency": "Scene – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Researcher [CR]",
+    "name": "Paranormal Anathema [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "wKlgeANt8BWt41q1",
+  "_id": "rL9qfKlqWHrKgIva",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!rL9qfKlqWHrKgIva"
+}

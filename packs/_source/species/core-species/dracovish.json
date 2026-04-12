@@ -1,0 +1,472 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:05.532Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Looking at a modern Dracovish, it is clear that something went horribly awry at some point in the resurrection process. Most obviously, the Pokémon's two halves came from different species, and the head has been incorrectly attached to the wrong end of the tail. When first put together, paleontologists believed that these Pokémon were primarily aquatic, possessing remnants of what they (correctly) thought were gills. However, the powerful legs made them believe that Dracovish may have briefly run out of the water to ambush terrestrial prey, despite being unable to breathe air. They would have been able to reach speeds of 40 mph (64 km/h) on the sand, and their strong jaws would have helped them quickly grasp and drag victims back into the waves. However, as shoreline prey began to adapt and move higher up the waterline, Dracovish could not follow due to their gills, and thus died out after they exhausted what they could catch near the sea. Modern Dracovish can survive in fully aquatic environments, preferring not to venture on land at all if they can avoid it. Consequently, their powerful legs are of no use to them beyond slowly trudging along the bottoms of their tanks.",
+    "number": 882,
+    "form": "",
+    "stats": {
+      "hp": 9,
+      "atk": 9,
+      "def": 10,
+      "spatk": 7,
+      "spdef": 8,
+      "spd": 8
+    },
+    "types": [
+      "Water",
+      "Dragon"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "klutz",
+          "uuid": "Compendium.ptu.abilities.Item.v3cXCpyr3KY3RiCR"
+        },
+        {
+          "slug": "water-absorb",
+          "uuid": "Compendium.ptu.abilities.Item.QpL0f8jY8uoEJ2Fv"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "sand-rush",
+          "uuid": "Compendium.ptu.abilities.Item.zXedk9ljVUiQ7ssV"
+        },
+        {
+          "slug": "strong-jaw",
+          "uuid": "Compendium.ptu.abilities.Item.Gqv7K8YBzWY2e5Zt"
+        }
+      ],
+      "high": [
+        {
+          "slug": "moody",
+          "uuid": "Compendium.ptu.abilities.Item.G0Y7SqRMddqfOU3Z"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.I3QNPBgC1trLXkei",
+        "slug": "dracovish",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 2.3,
+      "weight": 190,
+      "sizeClass": "Large",
+      "weightClass": 5
+    },
+    "breeding": {
+      "genderRatio": -1,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": 13
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Forest",
+      "Grassland"
+    ],
+    "capabilities": {
+      "overland": 8,
+      "sky": 0,
+      "swim": 5,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 6,
+      "naturewalk": [
+        "Ocean"
+      ],
+      "other": [
+        {
+          "slug": "fountain",
+          "uuid": "Compendium.ptu.capabilities.Item.ut911FJQTWb21u98"
+        },
+        {
+          "slug": "gilled",
+          "uuid": "Compendium.ptu.capabilities.Item.Sr5UjqsO8FydTuNw"
+        },
+        {
+          "slug": "mountable-1",
+          "uuid": "Compendium.ptu.capabilities.Item.XkFHXfisqlsZxNvQ"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rYLmG0KWrwYOCkmR",
+          "slug": "water-gun",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MrGSomQEncQd3zt6",
+          "slug": "brutal-swing",
+          "level": 14
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QMaJ91E3XBatUcV9",
+          "slug": "bite",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sEpnYIBn1Bkm9ZXd",
+          "slug": "dragon-breath",
+          "level": 35
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.99QTjxycWPkoSfze",
+          "slug": "stomp",
+          "level": 42
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.foVUAPgmU09qFHrb",
+          "slug": "super-fang",
+          "level": 49
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5uY1ltFWijN07CKe",
+          "slug": "crunch",
+          "level": 56
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eP5v3fyYhEOi26WC",
+          "slug": "fishious-rend",
+          "level": 63
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse",
+          "level": 70
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jvtENU2Q9nhemWwU",
+          "slug": "dragon-rush",
+          "level": 77
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "slug": "earthquake"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IqR2d6OPYZMNbYYl",
+          "slug": "leech-life"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU",
+          "slug": "scald"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MrGSomQEncQd3zt6",
+          "slug": "brutal-swing"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut",
+          "slug": "stone-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s",
+          "slug": "surf"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN",
+          "slug": "waterfall"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5ORKWU9EYYyzJOaH",
+          "slug": "brine"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5P4ZKecoBzCd8vh5",
+          "slug": "dive"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFGQXQGO2EeO8mpK",
+          "slug": "draco-meteor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+          "slug": "earth-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ",
+          "slug": "endure"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "slug": "iron-head"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.iRpfWZ1PSCAeyUEX",
+          "slug": "liquidation"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P6WwfKrGPuSohaOH",
+          "slug": "mega-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L",
+          "slug": "outrage"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2sgLgahHycXD5OuT",
+          "slug": "stomping-tantrum"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.foVUAPgmU09qFHrb",
+          "slug": "super-fang"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DUWjQv05jUb2p6gj",
+          "slug": "whirlpool"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx",
+          "slug": "zen-headbutt"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 5,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "dracovish",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Dracovish",
+  "_id": "I3QNPBgC1trLXkei",
+  "effects": [],
+  "sort": 36800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!I3QNPBgC1trLXkei"
+}

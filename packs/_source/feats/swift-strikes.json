@@ -1,0 +1,67 @@
+{
+  "name": "Swift Strikes",
+  "system": {
+    "origin": "",
+    "effect": "Use a Weapon Attack as if it had the Priority Keyword. If the Move already had the Priority Keyword, use it as if it had the Priority (Advanced) Keyword instead.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Weapon"
+    ],
+    "prerequisites": [
+      "4 Skirmisher Features",
+      "Master Combat or Acrobatics"
+    ],
+    "frequency": "1 AP - Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Skirmisher",
+    "automation": [],
+    "name": "Swift Strikes",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "4 Skirmisher Features, Master Combat or Acrobatics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079016,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 9200000,
+  "_id": "7sM3SzPOX6HsD5Ak",
+  "_key": "!items!7sM3SzPOX6HsD5Ak"
+}

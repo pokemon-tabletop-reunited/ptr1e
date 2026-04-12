@@ -1,0 +1,64 @@
+{
+  "name": "Telekinetic Burst [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Choose one of the following effects to activate:\n- You perform a Disarm, Trip, or Push Maneuver using your Telekinetic Capability, with a bonus of half of your Focus Rank to the roll.\n- Your Levitate Speed increases by half of your Focus Rank until your next turn.\n- The range of your Interference Ability increases to 5 meters, and its effect lasts for 2 rounds, rather than 1.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "PK Combat or Expert Focus"
+    ],
+    "frequency": "1 AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Telekinetic [CR]",
+    "name": "Telekinetic Burst [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "k9NMANuFU8PfFW1I",
+  "_id": "SV6rC1roEvlrWjAk",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!SV6rC1roEvlrWjAk"
+}

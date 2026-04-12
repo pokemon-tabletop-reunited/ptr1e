@@ -1,0 +1,80 @@
+{
+  "name": "Capture DC: Legendary",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "capture-dc",
+        "value": -30,
+        "label": "Legendary"
+      }
+    ],
+    "enabled": true,
+    "slug": "legendary",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T01:45:48.453Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "UjuxQCHI76TeZxb7",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1698007480685,
+    "modifiedTime": 1710853989325,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "eiHI7pSRauVpiEMD",
+  "sort": 700000,
+  "_key": "!items!eiHI7pSRauVpiEMD"
+}

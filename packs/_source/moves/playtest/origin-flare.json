@@ -1,0 +1,79 @@
+{
+  "folder": "fbTx2sE6CN3JvW6S",
+  "name": "Origin Flare",
+  "type": "move",
+  "img": "systems/ptu/static/css/images/types2/SteelIC_Icon.png",
+  "system": {
+    "origin": "Homebrew",
+    "effect": "Origin Flare Burns the target on 15+. If the user used the Move Fortify on their last turn, they gain three Ticks of Temporary Hit Points.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": {
+          "not": "target:types:fire"
+        },
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.NA1Vn8A2h6JIIUhj",
+        "range": "15",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "origin-flare",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1",
+      "Smite"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Steel",
+    "category": "Special",
+    "damageBase": "10",
+    "frequency": "Scene x2",
+    "ac": "2",
+    "range": "Range 8",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1700092860379,
+    "modifiedTime": 1710782529859,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "AJpdSoGxPuzcfCqg",
+  "sort": 0,
+  "_key": "!items!AJpdSoGxPuzcfCqg"
+}

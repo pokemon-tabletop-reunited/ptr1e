@@ -1,0 +1,75 @@
+{
+  "name": "Hurricane",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FlyingIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Hurricane Confuses its target on 15+. If the target is in Sunny Weather, Hurricane's Accuracy Check is 11. If the target is in Rainy Weather, Hurricane cannot miss. If the target is airborne as a result of Bounce, Fly, or Sky Drop, Hurricane cannot miss.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.pLKjxFPUOZQHAcXH",
+        "range": "15",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "hurricane",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Flying",
+    "category": "Special",
+    "damageBase": "11",
+    "frequency": "Scene x2",
+    "ac": "7",
+    "range": "Burst 1",
+    "contestType": "Cool - Exhausting Act",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "UuIiRIuykuszwDPE",
+  "effects": [],
+  "sort": 43700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710789058101,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UuIiRIuykuszwDPE"
+}

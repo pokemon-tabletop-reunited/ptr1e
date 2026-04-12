@@ -1,0 +1,270 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:09.979Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "When preparing to evolve, Caterpie spin cocoons around themselves. These cocoons, while still vulnerable when soft, will eventually harden into iron-hard casings, triggering their evolutions into Metapod. A Metapod’s only defense is to use Harden; when under attack, they weather blows by raising their defenses, though extremely hard blows can occasionally crack their shells and expose their weak, liquid-like innards. They must conserve their energy to prepare for their final evolutions. To avoid attacks, these Pokémon stay motionless and simply&nbsp;​wait. Metapod are remarkably patient, enduring whatever pain they must to reach their final stages. They must remain upright while biding their time or risk spilling out their innards. They are often regarded as nearly useless in battle, as freshly-caught Metapod are incapable of damaging foes at all (other than by using Struggle). Luckily, however, the Caterpie line undergoes some of the quickest evolutions known to date, and it does not take very long for Metapod to finally evolve into Butterfree.",
+    "number": 11,
+    "form": "",
+    "stats": {
+      "hp": 5,
+      "atk": 2,
+      "def": 6,
+      "spatk": 3,
+      "spdef": 3,
+      "spd": 3
+    },
+    "types": [
+      "Bug"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "shed-skin",
+          "uuid": "Compendium.ptu.abilities.Item.pWARd2idBLFnfGi5"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "battle-armor",
+          "uuid": "Compendium.ptu.abilities.Item.gHfEkYe9Vdc6TqeX"
+        },
+        {
+          "slug": "silk-threads",
+          "uuid": "Compendium.ptu.abilities.Item.66iTF1CxOWtm2jOY"
+        },
+        {
+          "slug": "magic-guard",
+          "uuid": "Compendium.ptu.abilities.Item.3zEQl6AsWskjTjQy"
+        }
+      ],
+      "high": [
+        {
+          "slug": "sturdy",
+          "uuid": "Compendium.ptu.abilities.Item.AaDXWUAMnhxLbyn3"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.RriSr9AfZCwAmn1G",
+        "slug": "caterpie",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.re4gFj8gasIb2Xn9",
+        "slug": "metapod",
+        "level": 5,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.6l0LA3HHFuefbvzu",
+        "slug": "butterfree",
+        "level": 10,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.7,
+      "weight": 9.9,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Bug"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Nullivore"
+    ],
+    "habitats": [
+      "Forest"
+    ],
+    "capabilities": {
+      "overland": 2,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 1,
+      "naturewalk": [
+        "Forest",
+        "Grassland"
+      ],
+      "other": [
+        {
+          "slug": "threaded",
+          "uuid": "Compendium.ptu.capabilities.Item.FgI0NCLyoQbTmVvh"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.Mw6vBLeHYty112VS",
+          "slug": "harden",
+          "level": "Evo"
+        }
+      ],
+      "machine": [],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD",
+          "slug": "bug-bite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dM7JNhVHOmnTxRhy",
+          "slug": "electroweb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kxvFjyRtAzf99FIX",
+          "slug": "string-shot"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "metapod",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Metapod",
+  "_id": "re4gFj8gasIb2Xn9",
+  "effects": [],
+  "sort": 99700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!re4gFj8gasIb2Xn9"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Razor Shell",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/WaterIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Razor Shell lowers the target's Defense by 1 Combat Stage on an Even-Numbered Roll.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.QiM1lYbyKd8CpfpL",
+        "range": "even",
+        "value": "",
+        "affects": "target",
+        "even": true
+      }
+    ],
+    "enabled": true,
+    "slug": "razor-shell",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.QiM1lYbyKd8CpfpL",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1",
+      "Dash",
+      "Slice"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Water",
+    "category": "Physical",
+    "damageBase": "8",
+    "frequency": "EOT",
+    "ac": "3",
+    "range": "Melee",
+    "contestType": "Cool - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "OijK9459N1YEnF1Y",
+  "effects": [],
+  "sort": 33100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710782316210,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OijK9459N1YEnF1Y"
+}

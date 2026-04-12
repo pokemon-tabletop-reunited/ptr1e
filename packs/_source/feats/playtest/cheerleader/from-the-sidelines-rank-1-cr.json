@@ -1,0 +1,181 @@
+{
+  "name": "From the Sidelines Rank 1 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: At each rank, choose two moves from the following list.\nAssist, Brace, Heal Pulse, Beguile, Defensive Charm, Dispel, Offensive Charm, Speed Charm.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "rank1move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.OGcEIK4DjhajZg4s",
+            "predicate": {
+              "not": "move:assist"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.SOLt8IpPbPOZVZCq",
+            "predicate": {
+              "not": "move:brace"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.nqcLxXATvTYyFTCs",
+            "predicate": {
+              "not": "move:heal-pulse"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.LdT7bwzKhtuBpR4Z",
+            "predicate": {
+              "not": "move:beguile"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.6CxHDY1wKBeVb26e",
+            "predicate": {
+              "not": "move:defensive-charm"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.tN8mJsaydjHVwmg7",
+            "predicate": {
+              "not": "move:dispel"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.fYCIYwP3rgO9UDcX",
+            "predicate": {
+              "not": "move:offensive-charm"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.cnaybNPcq7GJeIv4",
+            "predicate": {
+              "not": "move:speed-charm"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.rank1move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "rank1move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.OGcEIK4DjhajZg4s",
+            "predicate": {
+              "not": "move:assist"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.SOLt8IpPbPOZVZCq",
+            "predicate": {
+              "not": "move:brace"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.nqcLxXATvTYyFTCs",
+            "predicate": {
+              "not": "move:heal-pulse"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.LdT7bwzKhtuBpR4Z",
+            "predicate": {
+              "not": "move:beguile"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.6CxHDY1wKBeVb26e",
+            "predicate": {
+              "not": "move:defensive-charm"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.tN8mJsaydjHVwmg7",
+            "predicate": {
+              "not": "move:dispel"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.fYCIYwP3rgO9UDcX",
+            "predicate": {
+              "not": "move:offensive-charm"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.cnaybNPcq7GJeIv4",
+            "predicate": {
+              "not": "move:speed-charm"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.rank1move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": "from-the-sidelines-rank-1-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Cheerleader"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Cheerleader [CR]",
+    "name": "From the Sidelines [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "gFSt4QEIkRBOMEOK",
+  "_id": "Cy6Dq76YJj484yRz",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1710770070073,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Cy6Dq76YJj484yRz"
+}

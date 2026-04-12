@@ -1,0 +1,538 @@
+{
+  "name": "Abomasnow-Mega",
+  "type": "species",
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:10.644Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Abomasnow are far more elusive than Snover, with only a handful of sightings in the wild having been confirmed in the past few decades. For a long time, they were thought to be myths, going by names like “abominable snowmen,” “yetis,” and, most recently, “Ice Monsters.” Based on recent findings, Abomasnow likely only appear when snow flowers in their habitat bloom, for reasons unknown. Once the last petal falls, these Pokémon retreat back to some undiscovered location, not appearing again until the next bloom. Abomasnow can whip up terrible blizzards that make it virtually impossible to see; this is likely how they keep themselves hidden. They live exclusively on mountains perpetually covered in snow; whether Abomasnow choose to dwell in snowy areas or make the area they live in snowy is debatable. These Pokémon are surprisingly quiet, making little to no noise during their everyday lives. No clear photos of these Pokémon in the wild exist so far, due to the heavy snow that constantly surrounds them. It is said that though elusive, these Pokémon will appear to protect endangered Snover with their raging blizzards and hammer-like arms.",
+    "number": 460,
+    "form": "",
+    "stats": {
+      "hp": 9,
+      "atk": 13,
+      "def": 11,
+      "spatk": 13,
+      "spdef": 11,
+      "spd": 3
+    },
+    "types": [
+      "Grass",
+      "Ice"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "soundproof",
+          "uuid": "Compendium.ptu.abilities.Item.GyvsSbzvLJZitpqb"
+        },
+        {
+          "slug": "ice-body",
+          "uuid": "Compendium.ptu.abilities.Item.frxDUj1Z8z3I7HHm"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "full-guard",
+          "uuid": "Compendium.ptu.abilities.Item.LvWEZmjIhrO9KvXw"
+        },
+        {
+          "slug": "snow-warning",
+          "uuid": "Compendium.ptu.abilities.Item.pMmuDPGNNg6E1equ"
+        }
+      ],
+      "high": [
+        {
+          "slug": "abominable",
+          "uuid": "Compendium.ptu.abilities.Item.W3vM5lPhAp2PKHsh"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.oUyqIrvsDXLc6uJ0",
+        "slug": "snover",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 30,
+        "uuid": "Compendium.ptu.species.Item.x9URHcR6jjW64Jeq",
+        "slug": "abomasnow",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 2.2,
+      "weight": 135.5,
+      "sizeClass": "Large",
+      "weightClass": 5
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Monster",
+        "Plant"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Phototroph"
+    ],
+    "habitats": [
+      "Taiga"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 0,
+      "swim": 3,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 10,
+      "naturewalk": [
+        "Forest",
+        "Grassland",
+        "Tundra"
+      ],
+      "other": [
+        {
+          "slug": "chilled",
+          "uuid": "Compendium.ptu.capabilities.Item.4RJFVQvf9t70YWI3"
+        },
+        {
+          "slug": "freezer",
+          "uuid": "Compendium.ptu.capabilities.Item.O0LMo4PRnTk008ds"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.wYz4RubDs84tDVul",
+          "slug": "razor-leaf",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UsV1dE6qhSVDd2oN",
+          "slug": "grass-whistle",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uaOHYAjzdGsqGBJ0",
+          "slug": "mist",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SUduMarNZi7p42fG",
+          "slug": "ice-shard",
+          "level": 26
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2ky0KrGcz81tQ5X3",
+          "slug": "ingrain",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.EOjVWwZLa33n8M7P",
+          "slug": "wood-hammer",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard",
+          "level": 47
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.enDcfNIF6u9ZPOkV",
+          "slug": "sheer-cold",
+          "level": 58
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0",
+          "slug": "safeguard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "slug": "earthquake"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI",
+          "slug": "focus-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup",
+          "slug": "energy-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nM8DQhM6b8g5KZyy",
+          "slug": "frost-breath"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "slug": "grass-knot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.UcNQuMWgO1s8OxcP",
+          "slug": "avalanche"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PvmLk3AU04nOjH4x",
+          "slug": "block"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ptP5LFYkJR4BJHIu",
+          "slug": "bullet-seed"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+          "slug": "giga-drain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h",
+          "slug": "ice-punch-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L",
+          "slug": "outrage"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uomsKYZy3Di509MG",
+          "slug": "rock-climb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX",
+          "slug": "role-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU",
+          "slug": "seed-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2sgLgahHycXD5OuT",
+          "slug": "stomping-tantrum"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zO24D3CxJw7guk2Y",
+          "slug": "synthesis"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s41RoaO2fbzPVqR6",
+          "slug": "worry-seed"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 1,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "abomasnow",
+    "rules": [],
+    "type": {
+      "0": "Grass",
+      "1": "Ice",
+      "2": ""
+    },
+    "source": {
+      "value": "PTR Core Dex Megas"
+    },
+    "keywords": []
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "rulesSelections": {},
+      "rollOptions": {
+        "all": {
+          "item:id:bE1it3P3nj43sxGV": true,
+          "item:slug:abomasnow-mega": true,
+          "item:type:species": true,
+          "species:abomasnow-mega": true
+        },
+        "item": {
+          "item:id:bE1it3P3nj43sxGV": true,
+          "item:slug:abomasnow-mega": true,
+          "item:type:species": true,
+          "species:abomasnow-mega": true
+        }
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "irSNiCnUnI7il9mJ",
+  "_id": "RZGiXvhK4bSV2oJ3",
+  "effects": [],
+  "_key": "!items!RZGiXvhK4bSV2oJ3"
+}

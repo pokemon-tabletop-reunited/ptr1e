@@ -1,0 +1,72 @@
+{
+  "name": "Unstoppable Will",
+  "system": {
+    "origin": "",
+    "effect": "You gain the Discipline Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.kHDxnwsm7KNgQuQY"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Slow or Steady",
+      "Expert Combat or Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Fortress",
+    "automation": [],
+    "name": "Unstoppable Will",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Slow or Steady, Expert Combat or Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081688,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 59900000,
+  "_id": "rBWFS5miAB79sEfN",
+  "_key": "!items!rBWFS5miAB79sEfN"
+}

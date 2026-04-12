@@ -1,0 +1,79 @@
+{
+  "name": "Living Shadow [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Your own Shadow can attack others; you may have your Dark Type Moves originate from any Square adjacent to you. If you are fighting among complete darkness, you may have your Dark Type Moves originate from any square within X meters that is completely dark, where X is the higher of your Guile or Stealth Rank. Attacks originating from Living Shadow do not trigger effects that rely on being hit with a melee attack.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "livingshadow",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.livingshadow}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack or Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Shade Caller"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Shade Caller [CR]",
+    "name": "Living Shadow [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "QemdecWjlqq4mCe7",
+  "_id": "SZi4lzF8aCQ6hW31",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!SZi4lzF8aCQ6hW31"
+}

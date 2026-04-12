@@ -1,0 +1,498 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:09.978Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Litleo live in prides along with their older relatives. These Pokémon are easily excitable and quick to get into fights with other Pokémon. The tufts of fur on their heads, which many refer to as their manes despite their odd placements, radiate a great deal of heat; they often glow and pulse as a result. The intensity and temperature of light emanating from a Litleo’s mane is indicative of its emotions; the mane will burn hotter and brighter when it is angered or excited, but duller when it is ill or fatigued. Litleo manes tend to glow very bright when their owners are in heated battles as their bodies work to provide as much energy as possible. Young Litleo never stray from their prides, honing their skills by play-fighting with siblings or stalking prey that wander near. Older ones, though, are forced out of their prides to hunt for themselves; when evolved, they may return to their old prides, join separate ones, or, if male, start their own, provided that they can recruit a respectable numbers of females into them. The Litleonid meteor shower is named after these Pokémon.",
+    "number": 667,
+    "form": "",
+    "stats": {
+      "hp": 6,
+      "atk": 5,
+      "def": 6,
+      "spatk": 7,
+      "spdef": 5,
+      "spd": 7
+    },
+    "types": [
+      "Fire",
+      "Normal"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "rivalry",
+          "uuid": "Compendium.ptu.abilities.Item.d7ihoF4B0GU8C5uM"
+        },
+        {
+          "slug": "moxie",
+          "uuid": "Compendium.ptu.abilities.Item.LKlXsNHcGUO0NVKe"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "huge-power",
+          "uuid": "Compendium.ptu.abilities.Item.oNB76oqVYrjhYd7W"
+        },
+        {
+          "slug": "unnerve",
+          "uuid": "Compendium.ptu.abilities.Item.bGuvT8siRHgGCiWg"
+        }
+      ],
+      "high": [
+        {
+          "slug": "pride",
+          "uuid": "Compendium.ptu.abilities.Item.8brN3Vlz1joXVmO2"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.rVSlnlD6VovEY2FQ",
+        "slug": "litleo",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.y4sDVQ4IXWvJ2JRc",
+        "slug": "pyroar",
+        "level": 25,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.6,
+      "weight": 13.5,
+      "sizeClass": "Small",
+      "weightClass": 2
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Grassland"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 2,
+      "power": 2,
+      "naturewalk": [
+        "Grassland"
+      ],
+      "other": [
+        {
+          "slug": "firestarter",
+          "uuid": "Compendium.ptu.capabilities.Item.nAIkONF3gtaYfEyX"
+        },
+        {
+          "slug": "tracker",
+          "uuid": "Compendium.ptu.capabilities.Item.W1Zt8pLS50kjTL1d"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XQOEuOenSzYNz4eO",
+          "slug": "leer",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IH2EuCM09nw3lOgQ",
+          "slug": "ember",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4a68jMGmkXi2pkfF",
+          "slug": "headbutt",
+          "level": 11
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZxJ0mZxf9M32w2b",
+          "slug": "noble-roar",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down",
+          "level": 20
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QDqTpQ7sJUvhU2v4",
+          "slug": "fire-fang",
+          "level": 23
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ",
+          "slug": "endeavor",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "slug": "flamethrower",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5uY1ltFWijN07CKe",
+          "slug": "crunch",
+          "level": 39
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD",
+          "slug": "hyper-voice",
+          "level": 43
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uabUdNDKH4LCcTZI",
+          "slug": "incinerate",
+          "level": 46
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6",
+          "slug": "overheat",
+          "level": 50
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY",
+          "slug": "roar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "slug": "flamethrower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM",
+          "slug": "fire-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV",
+          "slug": "flame-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6",
+          "slug": "overheat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.idhhi7YJRDHnUUMR",
+          "slug": "wild-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jVruXIDWy3HEHAeA",
+          "slug": "snarl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.9onCqeLjl53i2wH6",
+          "slug": "entrainment"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ",
+          "slug": "fire-spin"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VxO7N8CbFaW3889w",
+          "slug": "flare-blitz"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TqoaCRNjoH4lGBj4",
+          "slug": "yawn"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ",
+          "slug": "endeavor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb",
+          "slug": "heat-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD",
+          "slug": "hyper-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 1,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "litleo",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Litleo",
+  "_id": "rVSlnlD6VovEY2FQ",
+  "effects": [],
+  "sort": 99500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!rVSlnlD6VovEY2FQ"
+}

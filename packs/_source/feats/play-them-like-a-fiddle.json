@@ -1,0 +1,66 @@
+{
+  "name": "Play Them Like a Fiddle",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You hit with Leer, Confide, Baby-Doll Eyes, or a Provocateur Move\nEffect: The Move gains additional effects as listed below. You may use the effects of each Move only once per Scene.\n»» Baby-Doll Eyes: The target becomes Infatuated with you for the rest of the Scene, and cannot be cured of this condition by any means, including Taking a Breather. This does not bypass immunity to Infatuation.\n»» Confide: You choose a Move the target has used this Scene. That Move becomes Disabled for the target.\n»» Leer: The target’s Defense is lowered an additional Combat Stage, and their Special Defense is lowered by 2 Combat Stages.\n»» Sweet Kiss: While the target is Confused, they may not perform Disengage Maneuvers, and whenever they hit themselves in Confusion, they provoke an Attack of Opportunity from all of their adjacent foes.\n»» Taunt: For 1 full round, the next damaging attack to hit the target of Taunt deals +3d8+10 Damage.\n»» Torment: The target’s Ability is disabled until the end of the encounter. If the target has more than one Ability, you choose one of them to disable.\n»» Lovely Kiss: The target’s Evasion is lowered by 2 for the rest of the Scene.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Powerful Motivator",
+      "a Provocateur Skill at Expert Rank"
+    ],
+    "frequency": "Scene x3 - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Provocateur",
+    "automation": [],
+    "name": "Play Them Like a Fiddle",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Powerful Motivator, a Provocateur Skill at Expert Rank"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079298,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 30300000,
+  "_id": "RuuA4ZobmeCOwTgT",
+  "_key": "!items!RuuA4ZobmeCOwTgT"
+}

@@ -1,0 +1,507 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:09.761Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Duraludon are most well-known for their hard, shiny bodies. They are in fact composed of a special lightweight metal alloy, allowing these large creatures to move with great agility while remaining very resilient to attacks. The alloy is also highly reflective, blinding opponents using the light of the sun. Its main drawback is that it rusts easily, meaning that Duraludon must take care to avoid water. Thus, they prefer to inhabit caves or mountains with large overhanging ridges they can hide under to stay dry from the rain. Duraludon use their two asymmetric hands to grind stone into rubble before consuming it. They must consume a variety of minerals in order to strengthen their bodies. In some regions, these Pokémon are seen as rivals of fearsome Tyranitar, battling one another for control of mountain territory. A famous Galarian movie depicts a fight between a Dynamax Tyranitar and a Dynamax (Gigantamax in the sequel) Duraludon taking place in an urban setting.",
+    "number": 884,
+    "form": "",
+    "stats": {
+      "hp": 7,
+      "atk": 10,
+      "def": 12,
+      "spatk": 12,
+      "spdef": 5,
+      "spd": 9
+    },
+    "types": [
+      "Steel",
+      "Dragon"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "light-metal",
+          "uuid": "Compendium.ptu.abilities.Item.sK8f1Q4WGmqWVoXF"
+        },
+        {
+          "slug": "heavy-metal",
+          "uuid": "Compendium.ptu.abilities.Item.af9Spqi2HBsMlq5r"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "stalwart",
+          "uuid": "Compendium.ptu.abilities.Item.1g5b8gZ4IV6l0g3m"
+        },
+        {
+          "slug": "battle-armor",
+          "uuid": "Compendium.ptu.abilities.Item.gHfEkYe9Vdc6TqeX"
+        }
+      ],
+      "high": [
+        {
+          "slug": "clear-body",
+          "uuid": "Compendium.ptu.abilities.Item.SgZgmNYHuMbt7JF2"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.oz4V62tztR3pwqCf",
+        "slug": "duraludon",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 25,
+        "slug": "archaludon",
+        "uuid": "Compendium.ptu.species.Item.Ch7ssmaFjChTHzVg",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 1.8,
+      "weight": 40,
+      "sizeClass": "Medium",
+      "weightClass": 2
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Mineral",
+        "Dragon"
+      ],
+      "hatchRate": 16
+    },
+    "diet": [
+      "Terravore"
+    ],
+    "habitats": [
+      "Mountain"
+    ],
+    "capabilities": {
+      "overland": 7,
+      "sky": 0,
+      "swim": 3,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 3,
+      "power": 8,
+      "naturewalk": [
+        "Mountain"
+      ],
+      "other": []
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkiKEwN1gZtlAkUi",
+          "slug": "metal-claw",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XQOEuOenSzYNz4eO",
+          "slug": "leer",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jZzomtDAHtgzeeSV",
+          "slug": "rock-smash",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rtmTimpeb0k1Njsy",
+          "slug": "hone-claws",
+          "level": 12
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.FrDQDljR3YE3roFi",
+          "slug": "metal-sound",
+          "level": 18
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.lA7uzkBcGhFOexAT",
+          "slug": "breaking-swipe",
+          "level": 24
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fQxEojo3sSwnLk1q",
+          "slug": "dragon-tail",
+          "level": 30
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus",
+          "level": 42
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ulXmidTSzjPqUrfI",
+          "slug": "dragon-claw",
+          "level": 48
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.926T6mncd7CobCCr",
+          "slug": "flash-cannon",
+          "level": 54
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.KqLVnz96kGfAWYtg",
+          "slug": "metal-burst",
+          "level": 60
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam",
+          "level": 66
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eDFWwKCjaJ7vNNbJ",
+          "slug": "reflect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut",
+          "slug": "stone-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jn8ej4sQ6o2PuUJx",
+          "slug": "gyro-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fQxEojo3sSwnLk1q",
+          "slug": "dragon-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.926T6mncd7CobCCr",
+          "slug": "flash-cannon"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jVruXIDWy3HEHAeA",
+          "slug": "snarl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.70ikTYAJeGbsEN9K",
+          "slug": "mirror-coat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WRDjP0nlxlzd20a5",
+          "slug": "night-slash"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sm3q5D8SkQcEmiGB",
+          "slug": "slash"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.FLwCZdF58DeyPcpS",
+          "slug": "body-press"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFGQXQGO2EeO8mpK",
+          "slug": "draco-meteor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ",
+          "slug": "endure"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ckL9G6vvS6TUl57i",
+          "slug": "foul-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "slug": "iron-head"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L",
+          "slug": "outrage"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XklsarNBfkknbU8O",
+          "slug": "stealth-rock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ofec7MWJjs5NFO9o",
+          "slug": "steel-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2sgLgahHycXD5OuT",
+          "slug": "stomping-tantrum"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "duraludon",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "type": {
+      "0": "Steel",
+      "1": "Dragon",
+      "2": ""
+    },
+    "keywords": [],
+    "stackSlugs": false,
+    "enabled": false
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Duraludon",
+  "_id": "oz4V62tztR3pwqCf",
+  "effects": [],
+  "sort": 94500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.5",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1712492085153,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!oz4V62tztR3pwqCf"
+}

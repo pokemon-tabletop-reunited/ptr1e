@@ -1,0 +1,94 @@
+{
+  "name": "Shield",
+  "system": {
+    "origin": "",
+    "effect": "A Shield is an Off-Hand defensive item held in one hand or braced to an arm. Shields grant +1 Evasion. They may be readied as a Standard Action to instead grant +4 Evasion and 10 Damage Reduction until the end of your next turn, but also cause you to become Slowed for that duration. If used Two-Handed, shields can also function as a Small Melee Weapon.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.evasion.physical.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.evasion.special.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.evasion.speed.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "shield",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.441Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.dBg5buuImguROMaE",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Equipment",
+      "Off-Hand",
+      "Both Hands"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "3000",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Shield",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368797926,
+    "modifiedTime": 1712495370939,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 43500000,
+  "_id": "amyGa2iDJk9KgbQM",
+  "_key": "!items!amyGa2iDJk9KgbQM"
+}

@@ -1,0 +1,602 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:07.880Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Celebi is known as the “Voice of the Forest.” It is exceedingly elusive, as it not only is able to travel across land, but across time as well. It may appear in and out of temporal portals almost instantaneously, leaving no trace of its presence other than blooming flora in areas where it has appeared. It can even revive dead plant life simply through its mere presence. Though Celebi is believed to be able to visit any place and time in history, it only appears deep in forests, and even then only during peaceful times. Years can go by without a single sighting reported because of this. Some believe that sighting Celebi is an indication of a bright future ahead for the whole world. As it travels across time, it is fabled to leave behind mysterious eggs brought back from the future in its wake. Celebi is said to use its powers to protect the forests in which it dwells. It will influence events in the past to stop harmful ones from occurring in the future. Celebi is believed by some scientists to be able to exist in multiple time periods at the same time, though this claim is obviously rather difficult to prove.",
+    "number": 251,
+    "form": "",
+    "stats": {
+      "hp": 10,
+      "atk": 10,
+      "def": 10,
+      "spatk": 10,
+      "spdef": 10,
+      "spd": 10
+    },
+    "types": [
+      "Psychic",
+      "Grass"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "natural-cure",
+          "uuid": "Compendium.ptu.abilities.Item.gii3PvJqGxrfeTc8"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "magic-guard",
+          "uuid": "Compendium.ptu.abilities.Item.3zEQl6AsWskjTjQy"
+        },
+        {
+          "slug": "probability-control",
+          "uuid": "Compendium.ptu.abilities.Item.gLhfLgMdZn8Fhx4N"
+        },
+        {
+          "slug": "full-guard",
+          "uuid": "Compendium.ptu.abilities.Item.LvWEZmjIhrO9KvXw"
+        }
+      ],
+      "high": [
+        {
+          "slug": "healer",
+          "uuid": "Compendium.ptu.abilities.Item.FFAtOaEA7Ta5J6oA"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.ZBTfFBrxRB1mS7HT",
+        "slug": "celebi",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.6,
+      "weight": 5,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": -1,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": 75
+    },
+    "diet": [
+      "Phototroph"
+    ],
+    "habitats": [
+      "Forest",
+      "Rainforest"
+    ],
+    "capabilities": {
+      "overland": 7,
+      "sky": 6,
+      "swim": 4,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 2,
+      "naturewalk": [
+        "Forest",
+        "Grassland"
+      ],
+      "other": [
+        {
+          "slug": "aura-reader",
+          "uuid": "Compendium.ptu.capabilities.Item.TtY94KGl4bDY1e0b"
+        },
+        {
+          "slug": "gardener",
+          "uuid": "Compendium.ptu.capabilities.Item.AR3toDFVavTYzNgu"
+        },
+        {
+          "slug": "glow",
+          "uuid": "Compendium.ptu.capabilities.Item.v4OOr4KlIO0DKw5r"
+        },
+        {
+          "slug": "sprouter",
+          "uuid": "Compendium.ptu.capabilities.Item.dXGH5wmq6ZNADuye"
+        },
+        {
+          "slug": "telekinetic",
+          "uuid": "Compendium.ptu.capabilities.Item.bYwetISXI1HZMl3M"
+        },
+        {
+          "slug": "telepath",
+          "uuid": "Compendium.ptu.capabilities.Item.Qy7Cft4o4FAbHQ8G"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.wGfMIdaCB5sim3hx",
+          "slug": "confusion",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.v8vXs3oV4YimX2AZ",
+          "slug": "heal-bell",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jx4TeOVUk1DX8R45",
+          "slug": "leech-seed",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qJILuzcs4SDgylfD",
+          "slug": "recover",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0",
+          "slug": "safeguard",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qFkD5vP06XSTPXlE",
+          "slug": "magical-leaf",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power",
+          "level": 14
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uZjoE8y3gbmlRVcc",
+          "slug": "baton-pass",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rkPaIX8nSuJmwQiC",
+          "slug": "natural-gift",
+          "level": 23
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sc65MsNIR00dmyTY",
+          "slug": "heal-block",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4gPfx0ONfNK8vio2",
+          "slug": "future-sight",
+          "level": 32
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MDyKPjGyVmPQz2Fm",
+          "slug": "healing-wish",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.FBj8VAFE3YZoI8C1",
+          "slug": "leaf-storm",
+          "level": 41
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kVqbY3ciBTeqHLxU",
+          "slug": "perish-song",
+          "level": 46
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.fTu9Cq4z0G7PDH2x",
+          "slug": "calm-mind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0",
+          "slug": "safeguard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs",
+          "slug": "psychic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eDFWwKCjaJ7vNNbJ",
+          "slug": "reflect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XC3ObpOOy8mGk8s8",
+          "slug": "sandstorm"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup",
+          "slug": "energy-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD",
+          "slug": "charge-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0",
+          "slug": "dream-eater"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "slug": "grass-knot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Uut6FpUzRObtZvBm",
+          "slug": "trick-room"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.FNtFpxkWjT9PhvEb",
+          "slug": "nature-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tqoJF3EAgEEv3l1l",
+          "slug": "dazzling-gleam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFyiKFMmD0rwvIl7",
+          "slug": "ally-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Y5R5mbVcGq6fwoFj",
+          "slug": "defense-curl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+          "slug": "earth-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+          "slug": "giga-drain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.v8vXs3oV4YimX2AZ",
+          "slug": "heal-bell-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.syEhvBKtqQTBqyct",
+          "slug": "last-resort"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qfZVvzSa9Pytij7O",
+          "slug": "magic-coat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gkHbjclskfbhxEZs",
+          "slug": "magic-room"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9aU7CnwwaU0FE4tk",
+          "slug": "metronome"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UHM3jig6NFhqO8Of",
+          "slug": "mimic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX",
+          "slug": "role-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU",
+          "slug": "seed-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VpNKUQKz3srKJvMv",
+          "slug": "skill-swap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XklsarNBfkknbU8O",
+          "slug": "stealth-rock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc",
+          "slug": "swift"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zO24D3CxJw7guk2Y",
+          "slug": "synthesis"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tNexDVIwrtPBsV0u",
+          "slug": "telekinesis"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5f5SrSIiFCEOkSWm",
+          "slug": "trick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+          "slug": "uproar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oZW7peinTFoJ7cim",
+          "slug": "wonder-room"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s41RoaO2fbzPVqR6",
+          "slug": "worry-seed"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx",
+          "slug": "zen-headbutt"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 6,
+        "modifier": 2,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "celebi",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Celebi",
+  "_id": "ZBTfFBrxRB1mS7HT",
+  "effects": [],
+  "sort": 67500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ZBTfFBrxRB1mS7HT"
+}

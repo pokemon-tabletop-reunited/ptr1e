@@ -1,0 +1,49 @@
+{
+  "name": "Teleporter",
+  "type": "capability",
+  "img": "/systems/ptu/static/css/images/icons/capability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Teleporter is a Movement Capability that defines how far the Pokémon can travel by teleportation. Only one teleport action can be taken during a round of combat. The Pokémon must have line of sight to the location they wish to teleport to, and they must end each teleport action touching a surface (ie it is not possible to ‘chain’ teleports in order to fly). If a Pokémon also has the Sky or Levitate Capability, they may Teleport into Sky spaces (only to spaces within their maximum height for Levitate). Blocking Terrain, like doors, windows and walls, cannot be Shifted through using Teleporter. Teleporter cannot be increased by taking a Sprint Action. If a Pokémon learns the move Teleport and does not have the Teleporter Capability they gain Teleporter 4. If they already have the Teleporter Capability, the Teleporter value is raised 4.\n",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 4,
+        "path": "system.modifiers.capabilities.teleporter"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.3",
+    "coreVersion": "13.350",
+    "createdTime": 1694693284211,
+    "modifiedTime": 1695027494151,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "ylhIk5i0Xtp65asH",
+  "sort": 0,
+  "_key": "!items!ylhIk5i0Xtp65asH"
+}

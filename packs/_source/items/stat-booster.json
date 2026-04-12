@@ -1,0 +1,107 @@
+{
+  "name": "Stat Booster",
+  "system": {
+    "origin": "",
+    "effect": "Stat Boosters have a chosen Stat, either Attack, Defense, Special Attack, Special Defense, Speed, Evasion, or Accuracy. These items cause the default Stage of their linked Stat to be +1 Combat Stage instead of 0, or simply +1 for Accuracy and Evasion. Accessory Item for Trainers.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "stat-boost",
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "Accuracy",
+            "value": "Compendium.forge-vtt-shared-compendiums-dragos-shared-compendium.item-2-items.Item.Z3eMj5TBVOMidj4B"
+          },
+          {
+            "label": "Attack",
+            "value": "Compendium.forge-vtt-shared-compendiums-dragos-shared-compendium.item-2-items.Item.CVz4TRCakVzh1UV0"
+          },
+          {
+            "label": "Defense",
+            "value": "Compendium.forge-vtt-shared-compendiums-dragos-shared-compendium.item-2-items.Item.bbxAum65eCyJu6Rk"
+          },
+          {
+            "label": "Evasion",
+            "value": "Compendium.forge-vtt-shared-compendiums-dragos-shared-compendium.item-2-items.Item.sN68L2Kmb6WoYiJf"
+          },
+          {
+            "label": "Special Attack",
+            "value": "Compendium.forge-vtt-shared-compendiums-dragos-shared-compendium.item-2-items.Item.ivVjXD5X72zgWt2T"
+          },
+          {
+            "label": "Special Defense",
+            "value": "Compendium.forge-vtt-shared-compendiums-dragos-shared-compendium.item-2-items.Item.0uBTUdsFDx8NS7VS"
+          },
+          {
+            "label": "Speed",
+            "value": "Compendium.forge-vtt-shared-compendiums-dragos-shared-compendium.item-2-items.Item.sDBWWM9EN61eIged"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "replaceSelf": true,
+        "uuid": "{item|flags.ptu.rulesSelections.stat-boost}"
+      }
+    ],
+    "enabled": true,
+    "slug": "stat-booster",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.284Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Artificer"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "4000",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Stat Booster",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368819993,
+    "modifiedTime": 1712496087949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 13800000,
+  "_id": "AT2gaIwem67KxHGi",
+  "_key": "!items!AT2gaIwem67KxHGi"
+}

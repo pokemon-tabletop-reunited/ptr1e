@@ -1,0 +1,65 @@
+{
+  "folder": "dFIH3ZVcIQRJGnr8",
+  "name": "Long Ranged",
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Long Range Weapons raise the AC of the Attack by\n+1, have a range of 12 meters, and raise the Damage\nBase by +1. Long Range Weapons can’t target Pokémon\nor Trainers that are closer than 4 meters from the user",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:weapon"
+        ],
+        "selectors": [
+          "attack-roll",
+          "damage-base"
+        ],
+        "hideIfDisabled": false,
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "long-ranged",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "quantity": "1",
+    "category": "Equipment",
+    "cost": "0",
+    "consumable": 0,
+    "subtype": "",
+    "container": false
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "TcN7uuVjUE20mWNg",
+  "sort": 300000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.3.0",
+    "createdTime": 1710773278657,
+    "modifiedTime": 1718112661548,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!TcN7uuVjUE20mWNg"
+}

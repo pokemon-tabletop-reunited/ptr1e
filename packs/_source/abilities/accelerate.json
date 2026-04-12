@@ -1,0 +1,69 @@
+{
+  "name": "Accelerate",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "The user may use a damaging Move to which they add STAB as a Priority Move. If the Move hits, the user adds half their Speed Stat to the Damage Roll. If the Move already had Priority, the attack gains a +4 Bonus to Accuracy.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:priority"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "attack",
+        "value": 4,
+        "label": "Accelerate (if already Priority)"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:priority"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "damage",
+        "value": "floor(@actor.system.stats.spd.total/2)"
+      }
+    ],
+    "enabled": true,
+    "slug": "accelerate",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Scene x2 - Free Action",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "rVDriQTbYVaKgB3H",
+  "effects": [],
+  "folder": null,
+  "sort": 47300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.0",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1708345355948,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!rVDriQTbYVaKgB3H"
+}

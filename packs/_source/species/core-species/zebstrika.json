@@ -1,0 +1,503 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:07.322Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Zebstrika are temperamental and unpredictable Pokémon. Like Blitzle, they can be found in herds averaging about 20 or so members. They can harness electricity from a variety of sources, including the atmosphere, friction, and lightning bolts during thunderstorms. Zebstrika are easily angered and will charge at full gallop at anything they perceive as threats. Once a single Zebstrika in a herd charges, the rest of the herd charges as well, leading to a stampede within a matter of seconds. As Zebstrika run, their manes begin discharging bolts of electricity in all directions, stunning&nbsp;everything nearby. The sound of a Zebstrika galloping at full speed is akin to a thunder clap, while a herd of them makes the ground reverberate as if a tremendous storm is approaching. Zebstrika, like their pre-evolutions, communicate by flashing their manes in a variety of patterns, though their stripes can now light up and flash as well. They often attack with little regard for their own safety, utilizing moves like Wild Charge that not only damage foes, but themselves as well.",
+    "number": 523,
+    "form": "",
+    "stats": {
+      "hp": 8,
+      "atk": 10,
+      "def": 6,
+      "spatk": 8,
+      "spdef": 6,
+      "spd": 12
+    },
+    "types": [
+      "Electric"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "lightning-rod",
+          "uuid": "Compendium.ptu.abilities.Item.fZgyeYuH8xV4VnmU"
+        },
+        {
+          "slug": "motor-drive",
+          "uuid": "Compendium.ptu.abilities.Item.Tc5HA3VQmm66bgYc"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "sprint",
+          "uuid": "Compendium.ptu.abilities.Item.83eqtrEv4q3MGyRS"
+        },
+        {
+          "slug": "run-away",
+          "uuid": "Compendium.ptu.abilities.Item.G9hF2ZJDvnrp7Ezx"
+        }
+      ],
+      "high": [
+        {
+          "slug": "sap-sipper",
+          "uuid": "Compendium.ptu.abilities.Item.vKXX0T04RnD0Olx5"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.WrI6iGByOAKBVcCU",
+        "slug": "blitzle",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.V0BtO6QnhXzLpjIb",
+        "slug": "zebstrika",
+        "level": 25,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.6,
+      "weight": 79.5,
+      "sizeClass": "Medium",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Grassland"
+    ],
+    "capabilities": {
+      "overland": 8,
+      "sky": 0,
+      "swim": 4,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 2,
+      "power": 7,
+      "naturewalk": [
+        "Grassland"
+      ],
+      "other": [
+        {
+          "slug": "glow",
+          "uuid": "Compendium.ptu.capabilities.Item.v4OOr4KlIO0DKw5r"
+        },
+        {
+          "slug": "mountable-1",
+          "uuid": "Compendium.ptu.capabilities.Item.XkFHXfisqlsZxNvQ"
+        },
+        {
+          "slug": "zapper",
+          "uuid": "Compendium.ptu.capabilities.Item.v3QyNdZYDVwlG2tY"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.6lQy212f7N3GH5KS",
+          "slug": "tail-whip",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qRvLgOrsmdXEsBsU",
+          "slug": "charge",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave",
+          "level": 11
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV",
+          "slug": "flame-charge",
+          "level": 18
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4zyVHZ1t6PJsYzGX",
+          "slug": "pursuit",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2Bldc8dEEOuOSx39",
+          "slug": "spark",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.99QTjxycWPkoSfze",
+          "slug": "stomp",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0KazDGc9T8CETH5f",
+          "slug": "discharge",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.aS33KlxhRCP0s5Zd",
+          "slug": "agility",
+          "level": 42
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.idhhi7YJRDHnUUMR",
+          "slug": "wild-charge",
+          "level": 47
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.czDZWjn9TbP9ON4q",
+          "slug": "thrash",
+          "level": 53
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wH58mC5l9DR8W3hF",
+          "slug": "ion-deluge",
+          "level": 58
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV",
+          "slug": "flame-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6",
+          "slug": "overheat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD",
+          "slug": "charge-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ltI3ruaEiyhlwPjj",
+          "slug": "volt-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.idhhi7YJRDHnUUMR",
+          "slug": "wild-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.24gRKtjHojSS9Vb0",
+          "slug": "double-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ",
+          "slug": "endure"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0LzmFA1iAyCrMaqh",
+          "slug": "feint"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Zvyuo4sSpliuYCjX",
+          "slug": "me-first"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K3PXmG9E0s7QEUQ2",
+          "slug": "rage"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IU5XxUVfxPggP6Rx",
+          "slug": "sand-attack"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TD9T2QEalKGQZicp",
+          "slug": "screech"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFyiKFMmD0rwvIl7",
+          "slug": "ally-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+          "slug": "bounce"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wH58mC5l9DR8W3hF",
+          "slug": "ion-deluge-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dOMKjZx7flfPZTtV",
+          "slug": "low-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.N0EkteKIFV2WtAJ6",
+          "slug": "magnet-rise"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 6,
+        "modifier": 3,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "zebstrika",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Zebstrika",
+  "_id": "V0BtO6QnhXzLpjIb",
+  "effects": [],
+  "sort": 60200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!V0BtO6QnhXzLpjIb"
+}

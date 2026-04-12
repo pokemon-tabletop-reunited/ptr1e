@@ -1,0 +1,202 @@
+{
+  "name": "Hex Maniac Studies Rank 2",
+  "system": {
+    "origin": "",
+    "effect": "Learn two Hex Maniac Moves. You may choose any Move marked with the Hex Maniac Studies Rank you are taking or lower.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "rank1move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky",
+            "predicate": {
+              "not": "move:confuse-ray"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.3abHb5scrH2j6qMF",
+            "predicate": {
+              "not": "move:hypnosis"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.5A0ZjnRjOwj1i7n8",
+            "predicate": {
+              "not": "move:curse"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+            "predicate": {
+              "not": "move:spite"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+            "predicate": {
+              "not": "move:will-o-wisp"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.rank1move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "rank1move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky"
+                  ]
+                }
+              },
+              {
+                "not": "move:confuse-ray"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.3abHb5scrH2j6qMF",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.3abHb5scrH2j6qMF"
+                  ]
+                }
+              },
+              {
+                "not": "move:hypnosis"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.5A0ZjnRjOwj1i7n8",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.5A0ZjnRjOwj1i7n8"
+                  ]
+                }
+              },
+              {
+                "not": "move:curse"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM"
+                  ]
+                }
+              },
+              {
+                "not": "move:spite"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU"
+                  ]
+                }
+              },
+              {
+                "not": "move:will-o-wisp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.rank1move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Ranked 3"
+    ],
+    "prerequisites": [
+      "Hex Maniac"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Hex Maniac",
+    "automation": [],
+    "name": "Hex Maniac Studies Rank 2",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Hex Maniac"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081789,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 31500000,
+  "_id": "T96X9ue3NkVH8y09",
+  "_key": "!items!T96X9ue3NkVH8y09"
+}

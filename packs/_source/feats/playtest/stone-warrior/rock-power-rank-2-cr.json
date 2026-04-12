@@ -1,0 +1,69 @@
+{
+  "name": "Rock Power Rank 2 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Each Rank, choose one of Cave Crasher, Sturdy, Rock Head, or Sand Veil. You gain the chosen Ability. If you choose Sand Veil, you may consider sand a \"solid surface\" for the purposes of Stone Stance.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "rock-power-rank-2-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Expert Combat or Survival"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Stone Warrior [CR]",
+    "name": "Rock Power [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "nC4MYGyp8GMoMBLk",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "EgvWCY2tK6gyz4XQ",
+  "_key": "!items!EgvWCY2tK6gyz4XQ"
+}

@@ -1,0 +1,548 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:05.302Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "It is believed that Vulpix initially came to Alola by boat alongside people; however, they were outcompeted in open fields by endemic species, forcing them to the furthest reaches of their ranges on mountains. Trainers who have raised Vulpix may know that they are initially born with single white tails; scientists believe that in the snowy mountains, albino Vulpix that never developed pigments were actually selected for because their whiteness helped them avoid detection. Indeed, Alolan Vulpix were initially called \"Keokeo\" by native Alolans, meaning \"the white ones.\" These Pokémon live in packs of two to five individuals known as a \"skulk\" atop snowy peaks, helping each other find food and shelter in their barren environments. Each skulk is led by an Alolan Ninetales, which, though not always visible, is almost always nearby and ready to defend the group. Their breaths can reach temperatures as low as -58ºF (-50ºC), freezing prey solid. When in warmer areas, Alolan Vulpix will spray shards of ice from their tails to cool themselves off; tiny flecks of ice can be seen springing from strands of their fur when observed under a microscope.",
+    "number": 37,
+    "form": "alolan",
+    "stats": {
+      "hp": 4,
+      "atk": 4,
+      "def": 4,
+      "spatk": 5,
+      "spdef": 7,
+      "spd": 7
+    },
+    "types": [
+      "Ice"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "cute-charm",
+          "uuid": "Compendium.ptu.abilities.Item.AgnYj2VubiCsPwJh"
+        },
+        {
+          "slug": "snow-cloak",
+          "uuid": "Compendium.ptu.abilities.Item.XGOKQvMtgXTgrckF"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "glisten",
+          "uuid": "Compendium.ptu.abilities.Item.X2GqcrligAh32t4u"
+        },
+        {
+          "slug": "winters-kiss",
+          "uuid": "Compendium.ptu.abilities.Item.ysdI7l7jNsUsmsqt"
+        }
+      ],
+      "high": [
+        {
+          "slug": "snow-warning",
+          "uuid": "Compendium.ptu.abilities.Item.pMmuDPGNNg6E1equ"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.GjOpPtslrLmd2qad",
+        "slug": "vulpix-alolan",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.185j6g6x8ZMUKJiR",
+        "slug": "ninetales-alolan",
+        "level": 25,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.6,
+      "weight": 9.9,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 25,
+      "eggGroups": [
+        "Field"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Mountain",
+      "Tundra"
+    ],
+    "capabilities": {
+      "overland": 4,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 2,
+      "power": 2,
+      "naturewalk": [
+        "Mountain",
+        "Tundra"
+      ],
+      "other": [
+        {
+          "slug": "freezer",
+          "uuid": "Compendium.ptu.capabilities.Item.O0LMo4PRnTk008ds"
+        },
+        {
+          "slug": "tracker",
+          "uuid": "Compendium.ptu.capabilities.Item.W1Zt8pLS50kjTL1d"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.l4TzdGjtPZHycF5b",
+          "slug": "powder-snow",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.6lQy212f7N3GH5KS",
+          "slug": "tail-whip",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY",
+          "slug": "roar",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dIkyKSyZGctjHX9O",
+          "slug": "baby-doll-eyes",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SUduMarNZi7p42fG",
+          "slug": "ice-shard",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky",
+          "slug": "confuse-ray",
+          "level": 12
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback",
+          "level": 18
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uaOHYAjzdGsqGBJ0",
+          "slug": "mist",
+          "level": 20
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.16Ij0HJODJxOy5j9",
+          "slug": "feint-attack",
+          "level": 23
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XbAfCHhH425Ldmj4",
+          "slug": "hex",
+          "level": 26
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UqFpnMAAoEOqvUDj",
+          "slug": "aurora-beam",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.a71ua5UPPcL0IxqO",
+          "slug": "extrasensory",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0",
+          "slug": "safeguard",
+          "level": 34
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmcnLyXMgD9aKb21",
+          "slug": "imprison",
+          "level": 39
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard",
+          "level": 42
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oaad2J3TCzr2MNOa",
+          "slug": "grudge",
+          "level": 44
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4Bf7QbKy0NepUHk0",
+          "slug": "captivate",
+          "level": 47
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.enDcfNIF6u9ZPOkV",
+          "slug": "sheer-cold",
+          "level": 50
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY",
+          "slug": "roar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0",
+          "slug": "safeguard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.C70wtWRmVuXR7SGi",
+          "slug": "aurora-veil"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nM8DQhM6b8g5KZyy",
+          "slug": "frost-breath"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.aS33KlxhRCP0s5Zd",
+          "slug": "agility"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TgmOU36SFwwlN5di",
+          "slug": "charm"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ma0Yb0fLx263208P",
+          "slug": "disable"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UhvLxdWq2D7gOvMr",
+          "slug": "encore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.a71ua5UPPcL0IxqO",
+          "slug": "extrasensory"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IWQXKwgnyM2CvDLV",
+          "slug": "flail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZn05DqBo1RGVRLH",
+          "slug": "freeze-dry"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IcjwAnfajBTDL3IF",
+          "slug": "howl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.3abHb5scrH2j6qMF",
+          "slug": "hypnosis"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.LkpfF5gcUddBm8CS",
+          "slug": "moonblast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.hbvOBUXRYWouyVQG",
+          "slug": "power-swap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.6Q0qjfHVNHd5fsec",
+          "slug": "secret-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.e4wLCbrGwnAJvOAA",
+          "slug": "tail-slap"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B",
+          "slug": "aqua-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB",
+          "slug": "covet"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ckL9G6vvS6TUl57i",
+          "slug": "foul-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.v8vXs3oV4YimX2AZ",
+          "slug": "heal-bell"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DO1UIDQKBBUxPcTj",
+          "slug": "pain-split"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX",
+          "slug": "role-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx",
+          "slug": "zen-headbutt"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 1,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 1,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "vulpix-alolan",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Vulpix-Alolan",
+  "_id": "GjOpPtslrLmd2qad",
+  "effects": [],
+  "sort": 33200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!GjOpPtslrLmd2qad"
+}

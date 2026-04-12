@@ -1,0 +1,538 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:09.308Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Surprisingly, meek and frail Wimpod can potentially evolve into large and menacing Golispod. Despite their intimidating stature, however, Golisopod are peaceful creatures. They spend most of their time meditating silently deep beneath the sea in underwater caverns or sunken ships. These Pokémon also try to avoid needless conflict; they do not hunt, instead feeding on kelp, algae, and discarded refuse. However, Golisopod are well-equipped to defend themselves from danger. Their diamond-hard carapaces can shield them from most blows, while their sharp claws can slice with enough force to briefly cleave water or air right in two. Golisopod will try to fight as little as possible, only holding their foes off until they have an opening to flee and meditate in peace. Some say that this is a remnant of their skittish behavior as Wimpod, while others assert that this is a strategical decision that helps them save energy. When cornered, though, these Pokémon will do whatever it takes in order to neutralize the threat, taking advantage of every opening and using their small front claws to finish foes off. Golisopod are both a common prey and predator of Grapploct, who will frequently (and against their will)&nbsp;&nbsp;initiate fights with them.&nbsp;Wild Golisopod are sometimes found surrounded by Wimpod; whether this relationship is protective or merely friendly is unknown.&nbsp;Golisopod rarely venture onto beaches, as their appearances often frighten swimmers into attacking them; this spooks them into fleeing.",
+    "number": 768,
+    "form": "",
+    "stats": {
+      "hp": 8,
+      "atk": 13,
+      "def": 14,
+      "spatk": 6,
+      "spdef": 9,
+      "spd": 4
+    },
+    "types": [
+      "Bug",
+      "Water"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "emergency-exit",
+          "uuid": "Compendium.ptu.abilities.Item.Sjj7SPCkwVrv7QzY"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "shell-armor",
+          "uuid": "Compendium.ptu.abilities.Item.tkdLZgBAfZSgOCZg"
+        },
+        {
+          "slug": "poison-point",
+          "uuid": "Compendium.ptu.abilities.Item.osJgodPktGSkPJf4"
+        },
+        {
+          "slug": "damp",
+          "uuid": "Compendium.ptu.abilities.Item.VeCeKD06r2h3Iuyd"
+        }
+      ],
+      "high": [
+        {
+          "slug": "tough-claws",
+          "uuid": "Compendium.ptu.abilities.Item.iWuCTYkVJZ0cqVjl"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.akNO6p4xc5Xpihca",
+        "slug": "wimpod",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.lPaGBFAzipkOAsJX",
+        "slug": "golisopod",
+        "level": 20,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 2,
+      "weight": 108,
+      "sizeClass": "Large",
+      "weightClass": 5
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Bug",
+        "Water 3"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Omnivore"
+    ],
+    "habitats": [
+      "Beach",
+      "Ocean"
+    ],
+    "capabilities": {
+      "overland": 7,
+      "sky": 0,
+      "swim": 7,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 8,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "gilled",
+          "uuid": "Compendium.ptu.capabilities.Item.Sr5UjqsO8FydTuNw"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.FewUYoJG43VJnop2",
+          "slug": "first-impression",
+          "level": "Evo"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4W8tzNRKdmn0WRYd",
+          "slug": "fury-cutter",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jZzomtDAHtgzeeSV",
+          "slug": "rock-smash",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD",
+          "slug": "bug-bite",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sm3q5D8SkQcEmiGB",
+          "slug": "slash",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OijK9459N1YEnF1Y",
+          "slug": "razor-shell",
+          "level": 26
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4",
+          "slug": "sucker-punch",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zQDRgnFwCOuGBf1r",
+          "slug": "pin-missile",
+          "level": 41
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.iRpfWZ1PSCAeyUEX",
+          "slug": "liquidation",
+          "level": 48
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.du6VccHCQ2VjQ0D8",
+          "slug": "bulk-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "slug": "venoshock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IqR2d6OPYZMNbYYl",
+          "slug": "leech-life"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HisedpFvMgmEqsbV",
+          "slug": "sludge-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5",
+          "slug": "sludge-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI",
+          "slug": "focus-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DfuvLNHQ0TBVgPN4",
+          "slug": "false-swipe"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU",
+          "slug": "scald"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nM8DQhM6b8g5KZyy",
+          "slug": "frost-breath"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oxBlIL3xxTpZFy8u",
+          "slug": "x-scissor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625",
+          "slug": "poison-jab"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s",
+          "slug": "surf"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jVruXIDWy3HEHAeA",
+          "slug": "snarl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN",
+          "slug": "waterfall"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD",
+          "slug": "bug-bite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CyMarrube3yoGcuy",
+          "slug": "drill-run"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kkib04B5KkMnRQ2I",
+          "slug": "dual-chop"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ",
+          "slug": "endeavor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "slug": "iron-head"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6",
+          "slug": "knock-off"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.iRpfWZ1PSCAeyUEX",
+          "slug": "liquidation"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DO1UIDQKBBUxPcTj",
+          "slug": "pain-split"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF",
+          "slug": "throat-chop"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 5,
+        "modifier": 1,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 5,
+        "modifier": 1,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "golisopod",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Golisopod",
+  "_id": "lPaGBFAzipkOAsJX",
+  "effects": [],
+  "sort": 87100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!lPaGBFAzipkOAsJX"
+}

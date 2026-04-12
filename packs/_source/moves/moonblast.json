@@ -1,0 +1,77 @@
+{
+  "name": "Moonblast",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FairyIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Moonblast lowers the target's Special Attack by 1 Combat Stage on 15+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.AO5BWJzK4te0YKtr",
+        "range": "15",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "moonblast",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fairy",
+    "category": "Special",
+    "damageBase": "10",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "Range 6",
+    "contestType": "Beauty - Reflective Appeal",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "LkpfF5gcUddBm8CS",
+  "effects": [],
+  "sort": 28500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1709371295824,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!LkpfF5gcUddBm8CS"
+}

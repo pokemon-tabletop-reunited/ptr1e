@@ -1,0 +1,629 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:06.906Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 3057,
+    "form": "",
+    "stats": {
+      "hp": 8,
+      "atk": 11,
+      "def": 6,
+      "spatk": 10,
+      "spdef": 6,
+      "spd": 9
+    },
+    "types": [
+      "Dark",
+      "Poison"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "poison-touch",
+          "uuid": "Compendium.ptu.abilities.Item.tZqCQEp1Y7W3J3TG"
+        },
+        {
+          "slug": "run-away",
+          "uuid": "Compendium.ptu.abilities.Item.G9hF2ZJDvnrp7Ezx"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "bloodlust",
+          "uuid": "Compendium.ptu.abilities.Item.GuCrDDGtv3C6CCr9"
+        },
+        {
+          "slug": "strong-jaw",
+          "uuid": "Compendium.ptu.abilities.Item.Gqv7K8YBzWY2e5Zt"
+        }
+      ],
+      "high": [
+        {
+          "slug": "defy-death",
+          "uuid": "Compendium.ptu.abilities.Item.hccoP35m1qpEJxeW"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.pLoFAKWUULtva8os",
+        "slug": "minyan",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.S24LjjqTlx7kjmla",
+        "slug": "vilucard",
+        "level": 25,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.6,
+      "weight": 64.4,
+      "sizeClass": "Medium",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field",
+        "Humanshape"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Grassland",
+      "Urban"
+    ],
+    "capabilities": {
+      "overland": 7,
+      "sky": 6,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 3,
+      "longJump": 3,
+      "power": 4,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "darkvision",
+          "uuid": "Compendium.ptu.capabilities.Item.zzJWpOj40dLelBm5"
+        },
+        {
+          "slug": "dead-silent",
+          "uuid": "Compendium.ptu.capabilities.Item.27U7ZioOgyZFzxDx"
+        },
+        {
+          "slug": "invisibility",
+          "uuid": "Compendium.ptu.capabilities.Item.6sANE4BU79H8FAUR"
+        },
+        {
+          "slug": "stealth",
+          "uuid": "Compendium.ptu.capabilities.Item.a1N1M1GMjMClaOdj"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "poison-sting",
+          "uuid": "Compendium.ptu.moves.Item.Zy5IjFmrIxowfntS",
+          "level": 3
+        },
+        {
+          "slug": "taunt",
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "level": 8
+        },
+        {
+          "slug": "bite",
+          "uuid": "Compendium.ptu.moves.Item.QMaJ91E3XBatUcV9",
+          "level": 13
+        },
+        {
+          "slug": "mean-look",
+          "uuid": "Compendium.ptu.moves.Item.mddjD9rQYW5169un",
+          "level": 17
+        },
+        {
+          "slug": "poison-fang",
+          "uuid": "Compendium.ptu.moves.Item.KbOJDmhqPMfCTmGr",
+          "level": 22
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "level": 24
+        },
+        {
+          "slug": "thief",
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "level": 28
+        },
+        {
+          "slug": "venoshock",
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "level": 31
+        },
+        {
+          "slug": "nasty-plot",
+          "uuid": "Compendium.ptu.moves.Item.z0iMHqLi2ctCy2nb",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ghDIsYuAYNsFHXVa",
+          "slug": "drain-life",
+          "level": 38
+        },
+        {
+          "slug": "giga-drain",
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+          "level": 40
+        },
+        {
+          "slug": "foul-play",
+          "uuid": "Compendium.ptu.moves.Item.ckL9G6vvS6TUl57i",
+          "level": 42
+        },
+        {
+          "slug": "venom-drench",
+          "uuid": "Compendium.ptu.moves.Item.oYlTFgi4c74YPeW6",
+          "level": 45
+        },
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "level": 47
+        },
+        {
+          "slug": "shadow-sneak",
+          "uuid": "Compendium.ptu.moves.Item.ShchrVmRnyokSkTh",
+          "level": 50
+        }
+      ],
+      "machine": [
+        {
+          "slug": "roar",
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY"
+        },
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "bulk-up",
+          "uuid": "Compendium.ptu.moves.Item.du6VccHCQ2VjQ0D8"
+        },
+        {
+          "slug": "venoshock",
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "sunny-day",
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+        },
+        {
+          "slug": "taunt",
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN"
+        },
+        {
+          "slug": "hyper-beam",
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "rain-dance",
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "leech-life",
+          "uuid": "Compendium.ptu.moves.Item.IqR2d6OPYZMNbYYl"
+        },
+        {
+          "slug": "psychic",
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs"
+        },
+        {
+          "slug": "shadow-ball",
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr"
+        },
+        {
+          "slug": "brick-break",
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "sludge-wave",
+          "uuid": "Compendium.ptu.moves.Item.HisedpFvMgmEqsbV"
+        },
+        {
+          "slug": "flamethrower",
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn"
+        },
+        {
+          "slug": "sludge-bomb",
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5"
+        },
+        {
+          "slug": "aerial-ace",
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP"
+        },
+        {
+          "slug": "torment",
+          "uuid": "Compendium.ptu.moves.Item.zgeymOL0WIKgT6lq"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "thief",
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "steel-wing",
+          "uuid": "Compendium.ptu.moves.Item.iXFRlGUw8hfFQSlm"
+        },
+        {
+          "slug": "false-swipe",
+          "uuid": "Compendium.ptu.moves.Item.DfuvLNHQ0TBVgPN4"
+        },
+        {
+          "slug": "fling",
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6"
+        },
+        {
+          "slug": "acrobatics",
+          "uuid": "Compendium.ptu.moves.Item.VsFJounIwoSOu8g4"
+        },
+        {
+          "slug": "embargo",
+          "uuid": "Compendium.ptu.moves.Item.AMdvXp9FBhfXOLJs"
+        },
+        {
+          "slug": "payback",
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0"
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK"
+        },
+        {
+          "slug": "x-scissor",
+          "uuid": "Compendium.ptu.moves.Item.oxBlIL3xxTpZFy8u"
+        },
+        {
+          "slug": "infestation",
+          "uuid": "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0"
+        },
+        {
+          "slug": "poison-jab",
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625"
+        },
+        {
+          "slug": "dream-eater",
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "u-turn",
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "snarl",
+          "uuid": "Compendium.ptu.moves.Item.jVruXIDWy3HEHAeA"
+        },
+        {
+          "slug": "dark-pulse",
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf"
+        },
+        {
+          "slug": "confide",
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "slug": "air-cutter",
+          "uuid": "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p"
+        },
+        {
+          "slug": "ally-switch",
+          "uuid": "Compendium.ptu.moves.Item.BFyiKFMmD0rwvIl7"
+        },
+        {
+          "slug": "astonish-n",
+          "uuid": "Compendium.ptu.moves.Item.VtkRa05N67wR9RcG"
+        },
+        {
+          "slug": "bounce",
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR"
+        },
+        {
+          "slug": "covet",
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ghDIsYuAYNsFHXVa",
+          "slug": "drain-life-n"
+        },
+        {
+          "slug": "drain-punch",
+          "uuid": "Compendium.ptu.moves.Item.Dr7Eh1TGQHwQcreV"
+        },
+        {
+          "slug": "dual-chop",
+          "uuid": "Compendium.ptu.moves.Item.kkib04B5KkMnRQ2I"
+        },
+        {
+          "slug": "endeavor",
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "fire-punch",
+          "uuid": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf"
+        },
+        {
+          "slug": "foul-play",
+          "uuid": "Compendium.ptu.moves.Item.ckL9G6vvS6TUl57i"
+        },
+        {
+          "slug": "gastro-acid",
+          "uuid": "Compendium.ptu.moves.Item.MDlLKeBdiKEtjK3o"
+        },
+        {
+          "slug": "giga-drain",
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m"
+        },
+        {
+          "slug": "gunk-shot",
+          "uuid": "Compendium.ptu.moves.Item.WBkN88g7D8ruzV02"
+        },
+        {
+          "slug": "hyper-voice",
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD"
+        },
+        {
+          "slug": "ice-punch",
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h"
+        },
+        {
+          "slug": "knock-off",
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6"
+        },
+        {
+          "slug": "last-resort",
+          "uuid": "Compendium.ptu.moves.Item.syEhvBKtqQTBqyct"
+        },
+        {
+          "slug": "leech-life-n",
+          "uuid": "Compendium.ptu.moves.Item.IqR2d6OPYZMNbYYl"
+        },
+        {
+          "slug": "ominous-wind",
+          "uuid": "Compendium.ptu.moves.Item.TD0L4L2JEH8VpTFW"
+        },
+        {
+          "slug": "pluck",
+          "uuid": "Compendium.ptu.moves.Item.VCxGumWgpdoxEx9T"
+        },
+        {
+          "slug": "role-play",
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX"
+        },
+        {
+          "slug": "skill-swap",
+          "uuid": "Compendium.ptu.moves.Item.VpNKUQKz3srKJvMv"
+        },
+        {
+          "slug": "snatch",
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT"
+        },
+        {
+          "slug": "sucker-punch",
+          "uuid": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4"
+        },
+        {
+          "slug": "super-fang",
+          "uuid": "Compendium.ptu.moves.Item.foVUAPgmU09qFHrb"
+        },
+        {
+          "slug": "thunder-punch",
+          "uuid": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY"
+        },
+        {
+          "slug": "throat-chop",
+          "uuid": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF"
+        },
+        {
+          "slug": "trick",
+          "uuid": "Compendium.ptu.moves.Item.5f5SrSIiFCEOkSWm"
+        },
+        {
+          "slug": "zen-headbutt",
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 5,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 5,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "vilucard",
+    "rules": [],
+    "source": {
+      "value": "Fangame Uranium Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "eBzxHM3RlUyuiO0g",
+  "name": "Vilucard",
+  "_id": "S24LjjqTlx7kjmla",
+  "effects": [],
+  "sort": 7100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!S24LjjqTlx7kjmla"
+}

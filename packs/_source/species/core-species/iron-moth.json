@@ -1,0 +1,627 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "dexentry": "",
+    "number": 994,
+    "form": "",
+    "stats": {
+      "hp": 8,
+      "atk": 7,
+      "def": 6,
+      "spatk": 14,
+      "spdef": 11,
+      "spd": 11
+    },
+    "types": [
+      "Fire",
+      "Poison"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "quark-drive",
+          "uuid": "Compendium.ptu.abilities.Item.3IDyXfsYKnoTul4P"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "magma-armor",
+          "uuid": "Compendium.ptu.abilities.Item.hMzd6dUVY7WpGbfh"
+        },
+        {
+          "slug": "brimstone",
+          "uuid": "Compendium.ptu.abilities.Item.LsevtHLkLeZf2FF4"
+        },
+        {
+          "slug": "corrosive-toxins",
+          "uuid": "Item.RNlv9uogyYuAPD8v"
+        }
+      ],
+      "high": [
+        {
+          "slug": "deadly-poison",
+          "uuid": "Compendium.ptu.abilities.Item.oA45nsUcwtBPKXnW"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.x27MwhNbSoLUP2q8",
+        "slug": "iron-moth",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 1.2,
+      "weight": 36,
+      "sizeClass": "Medium",
+      "weightClass": 3
+    },
+    "breeding": {
+      "genderRatio": -1,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": 25
+    },
+    "diet": [
+      "Ergovore",
+      "Phototroph"
+    ],
+    "habitats": [
+      "Cave",
+      "Mountain"
+    ],
+    "capabilities": {
+      "overland": 2,
+      "sky": 7,
+      "swim": 3,
+      "levitate": 4,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 5,
+      "naturewalk": "",
+      "other": [
+        {
+          "slug": "breathless",
+          "uuid": "Compendium.ptu.capabilities.Item.GQ53gx8t1mfqgydo"
+        },
+        {
+          "slug": "firestarter",
+          "uuid": "Compendium.ptu.capabilities.Item.nAIkONF3gtaYfEyX"
+        },
+        {
+          "slug": "glow",
+          "uuid": "Compendium.ptu.capabilities.Item.v4OOr4KlIO0DKw5r"
+        },
+        {
+          "slug": "heater",
+          "uuid": "Compendium.ptu.capabilities.Item.9DQsEtRIDXdw7ICw"
+        },
+        {
+          "slug": "magnetic",
+          "uuid": "Compendium.ptu.capabilities.Item.O00WEaCeKskK8vY4"
+        },
+        {
+          "slug": "venom-sac",
+          "uuid": "Compendium.ptu.capabilities.Item.8D1RiKYJzi7vs54w"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.XFAP16yE2fKZRExS",
+          "slug": "gust",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DCD0giVPub7Agz5U",
+          "slug": "whirlwind",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IH2EuCM09nw3lOgQ",
+          "slug": "ember",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.j1LhD3Z6maB3Y9pi",
+          "slug": "electric-terrain",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kbFCQpaR2tvABKMa",
+          "slug": "acid-spray",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Hm5nTF5Wh5UusvYM",
+          "slug": "struggle-bug",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ",
+          "slug": "fire-spin",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down",
+          "level": 12
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uabUdNDKH4LCcTZI",
+          "slug": "incinerate",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5vPZfwNkmM0eKO03",
+          "slug": "sludge",
+          "level": 18
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TD9T2QEalKGQZicp",
+          "slug": "screech",
+          "level": 20
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0KazDGc9T8CETH5f",
+          "slug": "discharge",
+          "level": 24
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5",
+          "slug": "sludge-bomb",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TjyskB7OEbBoJ819",
+          "slug": "fiery-dance",
+          "level": 32
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.FrDQDljR3YE3roFi",
+          "slug": "metal-sound",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zUrh8yq6xkj8Ja3N",
+          "slug": "morning-sun",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HisedpFvMgmEqsbV",
+          "slug": "sludge-wave",
+          "level": 42
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UuIiRIuykuszwDPE",
+          "slug": "hurricane",
+          "level": 44
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.e6iWUraE813j6eXu",
+          "slug": "bug-buzz",
+          "level": 48
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6",
+          "slug": "overheat",
+          "level": 52
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fTu9Cq4z0G7PDH2x",
+          "slug": "calm-mind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "slug": "venoshock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs",
+          "slug": "psychic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HisedpFvMgmEqsbV",
+          "slug": "sludge-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "slug": "flamethrower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5",
+          "slug": "sludge-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM",
+          "slug": "fire-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV",
+          "slug": "flame-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6",
+          "slug": "overheat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup",
+          "slug": "energy-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD",
+          "slug": "charge-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VsFJounIwoSOu8g4",
+          "slug": "acrobatics"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uZ5eUCeStPObSEHj",
+          "slug": "explosion"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TA3fevwvHn8PJHEI",
+          "slug": "fly"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0",
+          "slug": "infestation"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.926T6mncd7CobCCr",
+          "slug": "flash-cannon"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tqoJF3EAgEEv3l1l",
+          "slug": "dazzling-gleam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.aS33KlxhRCP0s5Zd",
+          "slug": "agility"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IRGZ3Cc7WrqjhF9u",
+          "slug": "scary-face"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kbFCQpaR2tvABKMa",
+          "slug": "acid-spray"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Hm5nTF5Wh5UusvYM",
+          "slug": "struggle-bug"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ",
+          "slug": "fire-spin"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MTBLJx5OwpfGk4xx",
+          "slug": "poison-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc",
+          "slug": "swift"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.LyEh7DPaMxvOwU3G",
+          "slug": "toxic-spikes"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UhvLxdWq2D7gOvMr",
+          "slug": "encore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.j1LhD3Z6maB3Y9pi",
+          "slug": "electric-terrain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.e6iWUraE813j6eXu",
+          "slug": "bug-buzz"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VxO7N8CbFaW3889w",
+          "slug": "flare-blitz"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PVOl5xnPtVbzUzVm",
+          "slug": "tera-blast"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p",
+          "slug": "air-cutter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.x6Pk6ClFw3trGL9a",
+          "slug": "dual-wingbeat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TbqvNIqswHYAVHOW",
+          "slug": "focus-energy"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Vbx41b1x1ClrU2pj",
+          "slug": "heat-crash"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uabUdNDKH4LCcTZI",
+          "slug": "incinerate"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UHM3jig6NFhqO8Of",
+          "slug": "mimic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TD0L4L2JEH8VpTFW",
+          "slug": "ominous-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.b1toUoLQY3BbeQJ5",
+          "slug": "razor-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xSWKEGt7GbGNhXw8",
+          "slug": "skitter-smack"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1WQ6vh8cbOaUzhaf",
+          "slug": "tailwind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IWDclyABMiQ3puo0",
+          "slug": "tri-attack"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CCtm8sYMR7X45ZwK",
+          "slug": "twister"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DCD0giVPub7Agz5U",
+          "slug": "whirlwind"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 5,
+        "modifier": 2,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 6,
+        "modifier": 1,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "iron-moth",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "type": {
+      "0": "Fire",
+      "1": "Poison",
+      "2": ""
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Iron Moth",
+  "_id": "x27MwhNbSoLUP2q8",
+  "effects": [],
+  "sort": 109600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1693120305329,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!x27MwhNbSoLUP2q8"
+}

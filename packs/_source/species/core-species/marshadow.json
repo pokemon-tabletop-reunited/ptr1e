@@ -1,0 +1,555 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:07.349Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Marshadow is a mythical Pokémon that is said to dwell entirely in the shadows--literally. It is said to have the ability to sink into the shadows of living things and objects, slinking about from shade to shade. According to legend, Marshadow gains power and knowledge about the beings whose shadows it is hiding in, learning about their movements, fighting style, emotions, and even thoughts. Given enough time, it can intimately learn these things better than the being itself, enabling it to get the upper hand in battle when the time is right to strike. Some say it learned its fighting technique by dwelling in the shadow of a famous martial artist for many years. Marshadow is believed to be able to cause nightmares, especially ones involving malevolent shadows moving just out of the dreamer's field of vision. Despite these abilities, this Pokémon is very cowardly and wary of confrontation; it is said to never engage in battle without first mimicking its target from darkness for an extended period of time beforehand, ensuring that the battle will be quick and in its favor once it begins. When Marshadow attacks, its normally-dark body flares up with a spectral glow, and it enters a form known as Zenith Marshadow.",
+    "number": 802,
+    "form": "",
+    "stats": {
+      "hp": 9,
+      "atk": 13,
+      "def": 8,
+      "spatk": 9,
+      "spdef": 9,
+      "spd": 13
+    },
+    "types": [
+      "Fighting",
+      "Ghost"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "technician",
+          "uuid": "Compendium.ptu.abilities.Item.mfD1Ga7xMCBqOk5H"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "ambush",
+          "uuid": "Compendium.ptu.abilities.Item.rlnJ3Qo2U9bHJWnW"
+        },
+        {
+          "slug": "run-away",
+          "uuid": "Compendium.ptu.abilities.Item.G9hF2ZJDvnrp7Ezx"
+        },
+        {
+          "slug": "copy-master",
+          "uuid": "Compendium.ptu.abilities.Item.M6sQilkBRtWPkuBP"
+        }
+      ],
+      "high": [
+        {
+          "slug": "fade-away",
+          "uuid": "Compendium.ptu.abilities.Item.aYkcWJw4LdxHdUkB"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.WRMFIQDjbxMMWMZ5",
+        "slug": "marshadow",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.7,
+      "weight": 22.2,
+      "sizeClass": "Small",
+      "weightClass": 2
+    },
+    "breeding": {
+      "genderRatio": -1,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": 75
+    },
+    "diet": [
+      "Nullivore"
+    ],
+    "habitats": [
+      "Forest",
+      "Urban"
+    ],
+    "capabilities": {
+      "overland": 6,
+      "sky": 0,
+      "swim": 3,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 7,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "darkvision",
+          "uuid": "Compendium.ptu.capabilities.Item.zzJWpOj40dLelBm5"
+        },
+        {
+          "slug": "dead-silent",
+          "uuid": "Compendium.ptu.capabilities.Item.27U7ZioOgyZFzxDx"
+        },
+        {
+          "slug": "invisibility",
+          "uuid": "Compendium.ptu.capabilities.Item.6sANE4BU79H8FAUR"
+        },
+        {
+          "slug": "phasing",
+          "uuid": "Compendium.ptu.capabilities.Item.rJqBxh0Nwwqwu6ev"
+        },
+        {
+          "slug": "shadow-meld",
+          "uuid": "Compendium.ptu.capabilities.Item.eNlTKVakIiBf5xXg"
+        },
+        {
+          "slug": "stealth",
+          "uuid": "Compendium.ptu.capabilities.Item.a1N1M1GMjMClaOdj"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.4zyVHZ1t6PJsYzGX",
+          "slug": "pursuit",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ShchrVmRnyokSkTh",
+          "slug": "shadow-sneak",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WRDNnocUmynpRpWb",
+          "slug": "force-palm",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0LzmFA1iAyCrMaqh",
+          "slug": "feint",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SLG74AL41rgCYYrw",
+          "slug": "rolling-kick",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SbluTZoOqsq2aRD0",
+          "slug": "copycat",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TXPzXlSA5R7gCowi",
+          "slug": "shadow-punch",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX",
+          "slug": "role-play",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.X5S085dhT6JG9Top",
+          "slug": "jump-kick",
+          "level": 18
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i4oD9kuEv0Gm9bZ8",
+          "slug": "spectral-thief",
+          "level": 23
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7CkvaKCsI8Oyb3LO",
+          "slug": "close-combat",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4",
+          "slug": "sucker-punch",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ",
+          "slug": "endeavor",
+          "level": 30
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fTu9Cq4z0G7PDH2x",
+          "slug": "calm-mind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.du6VccHCQ2VjQ0D8",
+          "slug": "bulk-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YG7EABDKQsFjDi8E",
+          "slug": "smack-down"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PdslVg2qIvDMDHiA",
+          "slug": "low-sweep"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI",
+          "slug": "focus-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DfuvLNHQ0TBVgPN4",
+          "slug": "false-swipe"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VsFJounIwoSOu8g4",
+          "slug": "acrobatics"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut",
+          "slug": "stone-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625",
+          "slug": "poison-jab"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "slug": "grass-knot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eQqKpKRD5wG1Hg7d",
+          "slug": "assurance-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+          "slug": "bounce"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ",
+          "slug": "counter-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Dr7Eh1TGQHwQcreV",
+          "slug": "drain-punch-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ",
+          "slug": "endeavor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+          "slug": "fire-punch-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ckL9G6vvS6TUl57i",
+          "slug": "foul-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.syEhvBKtqQTBqyct",
+          "slug": "last-resort"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h",
+          "slug": "ice-punch-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "slug": "iron-head"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6",
+          "slug": "knock-off"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dOMKjZx7flfPZTtV",
+          "slug": "low-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L",
+          "slug": "outrage"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX",
+          "slug": "role-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4",
+          "slug": "sucker-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xwJMUiNv3k0k9VK6",
+          "slug": "superpower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF",
+          "slug": "throat-chop"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY",
+          "slug": "thunder-punch-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx",
+          "slug": "zen-headbutt"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 1,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 5,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 5,
+        "modifier": 3,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "marshadow",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Marshadow",
+  "_id": "WRMFIQDjbxMMWMZ5",
+  "effects": [],
+  "sort": 63200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!WRMFIQDjbxMMWMZ5"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Small Prophecies",
+  "system": {
+    "origin": "",
+    "effect": "Roll 1d20 and note the result. Until the end of your next turn, you may choose to replace a single d20 roll you or a willing ally makes with the noted result.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense"
+    ],
+    "prerequisites": [
+      "Divination",
+      "Adept Perception"
+    ],
+    "frequency": "1 AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Oracle",
+    "automation": [],
+    "name": "Small Prophecies",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Divination, Adept Perception"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368084413,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 22800000,
+  "_id": "Ljx2yIpWIrqskwGh",
+  "_key": "!items!Ljx2yIpWIrqskwGh"
+}

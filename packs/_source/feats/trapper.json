@@ -1,0 +1,66 @@
+{
+  "name": "Trapper",
+  "system": {
+    "origin": "",
+    "effect": "You create a consumable item that creates 8 meters of Hazard within 6 meters. All 8 meters must be adjacent with at least one other space of the Hazard. These Hazards cause foes that run into them to become Slowed until the end of their next turn and have an additional effect based on the terrain in which the item was made. When foes run into these Hazards, they are destroyed after their effects resolve. Pokémon and Trainers with Naturewalk for the terrains associated with a Hazard are immune to its effects. These items must be used the same day they are created or they lose all effect.\n»» Dust Trap - Grassland or Desert: A foe that runs into this Hazard is Blinded until the end of their next turn.\n»» Tangle Trap - Forest or Wetlands: A foe that runs into this Hazard is must immediately stop Shifting, and they are Stuck instead of Slowed until the end of their next turn.\n»» Slick Trap - Ocean or Tundra: A foe that runs into this Hazard becomes Vulnerable until the end of their next Turn.\n»» Abrasion Trap - Mountain, Cave, or Urban: A foe that runs into this Hazard lowers their Defense and Special Defense by 1 Combat Stage.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP"
+    ],
+    "prerequisites": [
+      "Survivalist",
+      "Adept Survival"
+    ],
+    "frequency": "Daily x2 - Extended Action",
+    "notes": "",
+    "free": false,
+    "class": "Survivalist",
+    "automation": [],
+    "name": "Trapper",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Survivalist, Adept Survival"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368084397,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 59500000,
+  "_id": "qcHxZOkislCpVqdj",
+  "_key": "!items!qcHxZOkislCpVqdj"
+}

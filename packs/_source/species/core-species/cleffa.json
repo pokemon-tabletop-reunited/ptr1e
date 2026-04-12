@@ -1,0 +1,590 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:06.113Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Cleffa are said to land on earth via shooting stars, appearing wherever they land. This legend can be partly attributed to their star-shaped silhouettes; some also believe that they are reborn stars. While their extraterrestrial origins are debatable, it is a fact that their numbers oddly increase on nights following meteor showers. On these nights, Cleffa can be seen dancing in rings as meteors streak across the sky. They dance until dawn and disappear quickly once the last meteor falls. They are almost never seen at any other time and seem to nourish themselves on morning dew that condenses during these rituals. It is said that seeing a ring of Cleffa dancing will bring good luck upon onlookers. Cleffa are drawn to Moon Stones and often hold them while dancing. However, they are more fascinated with rare Comet Shards. Trained Cleffa who come across them will attempt to hoard them, though their rarity makes collections of any more than a dozen unheard of. It is theorized that wild Cleffa colonies have stashes in the hundreds somewhere in the mountains, reconstructing comets to take them home. Cleffa are also entranced by the Pokémon Minior.",
+    "number": 173,
+    "form": "",
+    "stats": {
+      "hp": 5,
+      "atk": 3,
+      "def": 3,
+      "spatk": 5,
+      "spdef": 6,
+      "spd": 2
+    },
+    "types": [
+      "Fairy"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "cute-charm",
+          "uuid": "Compendium.ptu.abilities.Item.AgnYj2VubiCsPwJh"
+        },
+        {
+          "slug": "magic-guard",
+          "uuid": "Compendium.ptu.abilities.Item.3zEQl6AsWskjTjQy"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "friend-guard",
+          "uuid": "Compendium.ptu.abilities.Item.i0XQhctF8P16Pkg9"
+        },
+        {
+          "slug": "frisk",
+          "uuid": "Compendium.ptu.abilities.Item.W64GEtQ6ZO7uxZCa"
+        }
+      ],
+      "high": [
+        {
+          "slug": "unaware",
+          "uuid": "Compendium.ptu.abilities.Item.eQiIEPjvWrRhdtdQ"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.LMKxCm0KAlPyFErc",
+        "slug": "cleffa",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.0XBPBpq3V07s39dr",
+        "slug": "clefairy",
+        "level": 10,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.elwy8szKCBctgeoS",
+        "slug": "clefable",
+        "level": 20,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.3,
+      "weight": 3,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 25,
+      "eggGroups": [
+        "Fairy"
+      ],
+      "hatchRate": 4
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Cave",
+      "Mountain"
+    ],
+    "capabilities": {
+      "overland": 3,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 1,
+      "naturewalk": [
+        "Cave"
+      ],
+      "other": [
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.TgmOU36SFwwlN5di",
+          "slug": "charm",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9svLFVhuPrSbsm6v",
+          "slug": "pound",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UhvLxdWq2D7gOvMr",
+          "slug": "encore",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YD9PPN6tPaLMrvvm",
+          "slug": "sing",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0cpoDUWBYwTiDlnG",
+          "slug": "sweet-kiss",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SbluTZoOqsq2aRD0",
+          "slug": "copycat",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qFkD5vP06XSTPXlE",
+          "slug": "magical-leaf",
+          "level": 16
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cpRMxzdrs7dfFuC4",
+          "slug": "psyshock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0",
+          "slug": "safeguard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs",
+          "slug": "psychic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eDFWwKCjaJ7vNNbJ",
+          "slug": "reflect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "slug": "flamethrower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM",
+          "slug": "fire-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0",
+          "slug": "dream-eater"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "slug": "grass-knot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.0JDFAZ8Q0rDKNodB",
+          "slug": "amnesia"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QzP3iamQFsN5S4FS",
+          "slug": "aromatherapy"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MH31RHW3E9lc1Mdt",
+          "slug": "belly-drum"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB",
+          "slug": "covet"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jTbqMYhNzo1hgOHO",
+          "slug": "fake-tears"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nqcLxXATvTYyFTCs",
+          "slug": "heal-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9aU7CnwwaU0FE4tk",
+          "slug": "metronome"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UHM3jig6NFhqO8Of",
+          "slug": "mimic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.N6Cj9FQBPkjc9wwt",
+          "slug": "misty-terrain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.94z8W0FoKrzOGZFS",
+          "slug": "present"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1OeCu4MotfnHbck4",
+          "slug": "splash"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Gma6FE34GAXWT2Ib",
+          "slug": "stored-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.u7mqJHkVCUIRhlaq",
+          "slug": "tickle"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IhG2cFq2x7jzUzg8",
+          "slug": "wish"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.x8xJKEwM5Zp3jqGw",
+          "slug": "after-you"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ",
+          "slug": "counter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB",
+          "slug": "covet"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Y5R5mbVcGq6fwoFj",
+          "slug": "defense-curl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ",
+          "slug": "endeavor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IuGk58XiaSA0Gypi",
+          "slug": "gravity"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD",
+          "slug": "hyper-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.syEhvBKtqQTBqyct",
+          "slug": "last-resort"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qfZVvzSa9Pytij7O",
+          "slug": "magic-coat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P6WwfKrGPuSohaOH",
+          "slug": "mega-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4SK37Ub6d9G8jOaJ",
+          "slug": "mega-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.yUba2OWKoxAE3txP",
+          "slug": "recycle"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX",
+          "slug": "role-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nzhedIfXpsZWaEx9",
+          "slug": "rollout"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jtmrf8Dol8bkamvO",
+          "slug": "seismic-toss"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kJK4H8XRW4Yk4c1J",
+          "slug": "soft-boiled"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tNexDVIwrtPBsV0u",
+          "slug": "telekinesis"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5f5SrSIiFCEOkSWm",
+          "slug": "trick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+          "slug": "uproar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oZW7peinTFoJ7cim",
+          "slug": "wonder-room"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx",
+          "slug": "zen-headbutt"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 2,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 1,
+        "modifier": 1,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 1,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "cleffa",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Cleffa",
+  "_id": "LMKxCm0KAlPyFErc",
+  "effects": [],
+  "sort": 43600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!LMKxCm0KAlPyFErc"
+}

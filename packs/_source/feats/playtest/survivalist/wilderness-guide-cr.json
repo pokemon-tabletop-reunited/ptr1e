@@ -1,0 +1,70 @@
+{
+  "name": "Wilderness Guide [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Wilderness Guide’s effect depends on your current terrain.\n» Grassland or Forest: All allies gain the Stealth Capability and a +2 bonus to their Overland Speed for one full round.\n» Ocean or Wetlands: All allies gain 5 Damage Reduction and a +2 bonus to their Swim Speed for one full round.\n» Desert or Tundra: All allies do not lose Hit Points from Weather and ignore any Evasion increases from foes' Abilities for one full round.\n» Mountain or Cave: All allies do not trigger Hazards and cannot be Blinded for one full round.\n» Urban: All allies gain +1 Evasion and a +2 bonus on Accuracy Rolls and Skill Checks to perform the Dirty Trick and Manipulate Combat Maneuvers for one full round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "wilderness-guide-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Orders",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Survivalist",
+      "Expert Survival"
+    ],
+    "frequency": "Scene x3 – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Survivalist [CR]",
+    "name": "Wilderness Guide [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "jwSUGJETAKuub2Ws",
+  "_id": "WEbhhRhbo3UAQPar",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!WEbhhRhbo3UAQPar"
+}

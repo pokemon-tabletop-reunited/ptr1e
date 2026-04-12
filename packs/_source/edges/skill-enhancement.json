@@ -1,0 +1,410 @@
+{
+  "name": "Skill Enhancement",
+  "system": {
+    "origin": "",
+    "effect": "Choose two different Skills. You gain a +2 bonus to each of those skills. Skill Enhancement may be taken multiple times, but the bonus may be applied only once to a particular skill.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "skillEnhancement1",
+        "rollOption": "skill-enhancement",
+        "choices": [
+          {
+            "label": "Acrobatics",
+            "value": "acrobatics",
+            "predicate": [
+              {
+                "not": "skill-enhancement:acrobatics"
+              }
+            ]
+          },
+          {
+            "label": "Athletics",
+            "value": "athletics",
+            "predicate": [
+              {
+                "not": "skill-enhancement:athletics"
+              }
+            ]
+          },
+          {
+            "label": "Charm",
+            "value": "charm",
+            "predicate": [
+              {
+                "not": "skill-enhancement:charm"
+              }
+            ]
+          },
+          {
+            "label": "Combat",
+            "value": "combat",
+            "predicate": [
+              {
+                "not": "skill-enhancement:combat"
+              }
+            ]
+          },
+          {
+            "label": "Command",
+            "value": "command",
+            "predicate": [
+              {
+                "not": "skill-enhancement:command"
+              }
+            ]
+          },
+          {
+            "label": "General Education",
+            "value": "generalEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:generalEd"
+              }
+            ]
+          },
+          {
+            "label": "Medicine Education",
+            "value": "medicineEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:medicinEed"
+              }
+            ]
+          },
+          {
+            "label": "Occult Education",
+            "value": "occultEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:occultEd"
+              }
+            ]
+          },
+          {
+            "label": "Pokemon Education",
+            "value": "pokemonEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:pokemonEd"
+              }
+            ]
+          },
+          {
+            "label": "Tech Education",
+            "value": "techEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:techEd"
+              }
+            ]
+          },
+          {
+            "label": "Focus",
+            "value": "focus",
+            "predicate": [
+              {
+                "not": "skill-enhancement:focus"
+              }
+            ]
+          },
+          {
+            "label": "Guile",
+            "value": "guile",
+            "predicate": [
+              {
+                "not": "skill-enhancement:guile"
+              }
+            ]
+          },
+          {
+            "label": "Intimidate",
+            "value": "intimidate",
+            "predicate": [
+              {
+                "not": "skill-enhancement:intimidate"
+              }
+            ]
+          },
+          {
+            "label": "Intuition",
+            "value": "intuition",
+            "predicate": [
+              {
+                "not": "skill-enhancement:intuition"
+              }
+            ]
+          },
+          {
+            "label": "Perception",
+            "value": "perception",
+            "predicate": [
+              {
+                "not": "skill-enhancement:perception"
+              }
+            ]
+          },
+          {
+            "label": "Stealth",
+            "value": "stealth",
+            "predicate": [
+              {
+                "not": "skill-enhancement:stealth"
+              }
+            ]
+          },
+          {
+            "label": "Survival",
+            "value": "survival",
+            "predicate": [
+              {
+                "not": "skill-enhancement:survival"
+              }
+            ]
+          },
+          {
+            "label": "Fossils",
+            "value": "fossils",
+            "predicate": [
+              {
+                "not": "skill-enhancement:fossils"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "skillEnhancement2",
+        "rollOption": "skill-enhancement",
+        "choices": [
+          {
+            "label": "Acrobatics",
+            "value": "acrobatics",
+            "predicate": [
+              {
+                "not": "skill-enhancement:acrobatics"
+              }
+            ]
+          },
+          {
+            "label": "Athletics",
+            "value": "athletics",
+            "predicate": [
+              {
+                "not": "skill-enhancement:athletics"
+              }
+            ]
+          },
+          {
+            "label": "Charm",
+            "value": "charm",
+            "predicate": [
+              {
+                "not": "skill-enhancement:charm"
+              }
+            ]
+          },
+          {
+            "label": "Combat",
+            "value": "combat",
+            "predicate": [
+              {
+                "not": "skill-enhancement:combat"
+              }
+            ]
+          },
+          {
+            "label": "Command",
+            "value": "command",
+            "predicate": [
+              {
+                "not": "skill-enhancement:command"
+              }
+            ]
+          },
+          {
+            "label": "General Education",
+            "value": "generalEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:generalEd"
+              }
+            ]
+          },
+          {
+            "label": "Medicine Education",
+            "value": "medicineEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:medicinEed"
+              }
+            ]
+          },
+          {
+            "label": "Occult Education",
+            "value": "occultEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:occultEd"
+              }
+            ]
+          },
+          {
+            "label": "Pokemon Education",
+            "value": "pokemonEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:pokemonEd"
+              }
+            ]
+          },
+          {
+            "label": "Tech Education",
+            "value": "techEd",
+            "predicate": [
+              {
+                "not": "skill-enhancement:techEd"
+              }
+            ]
+          },
+          {
+            "label": "Focus",
+            "value": "focus",
+            "predicate": [
+              {
+                "not": "skill-enhancement:focus"
+              }
+            ]
+          },
+          {
+            "label": "Guile",
+            "value": "guile",
+            "predicate": [
+              {
+                "not": "skill-enhancement:guile"
+              }
+            ]
+          },
+          {
+            "label": "Intimidate",
+            "value": "intimidate",
+            "predicate": [
+              {
+                "not": "skill-enhancement:intimidate"
+              }
+            ]
+          },
+          {
+            "label": "Intuition",
+            "value": "intuition",
+            "predicate": [
+              {
+                "not": "skill-enhancement:intuition"
+              }
+            ]
+          },
+          {
+            "label": "Perception",
+            "value": "perception",
+            "predicate": [
+              {
+                "not": "skill-enhancement:perception"
+              }
+            ]
+          },
+          {
+            "label": "Stealth",
+            "value": "stealth",
+            "predicate": [
+              {
+                "not": "skill-enhancement:stealth"
+              }
+            ]
+          },
+          {
+            "label": "Survival",
+            "value": "survival",
+            "predicate": [
+              {
+                "not": "skill-enhancement:survival"
+              }
+            ]
+          },
+          {
+            "label": "Fossils",
+            "value": "fossils",
+            "predicate": [
+              {
+                "not": "skill-enhancement:fossils"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 2,
+        "path": "system.skills.{item|flags.ptu.rulesSelections.skillEnhancement1}.modifier.mod",
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 2,
+        "path": "system.skills.{item|flags.ptu.rulesSelections.skillEnhancement2}.modifier.mod",
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "skill-enhancement",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Skill"
+    ],
+    "prerequisites": [],
+    "notes": "",
+    "free": false,
+    "name": "Skill Enhancement",
+    "useCount": 0
+  },
+  "type": "edge",
+  "img": "/systems/ptu/css/images/icons/edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "-"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683367953767,
+    "modifiedTime": 1707826198795,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "EQgpwUEg5apFH5rE",
+  "_key": "!items!EQgpwUEg5apFH5rE"
+}

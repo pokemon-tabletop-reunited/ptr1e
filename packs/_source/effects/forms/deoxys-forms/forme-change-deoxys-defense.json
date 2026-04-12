@@ -1,0 +1,103 @@
+{
+  "name": "Forme Change: Deoxys Defense",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect transitions Deoxys Normal Forme to Defense Forme. Remove it to return to Normal Forme.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:deoxys-normal",
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/386s_DEF.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            "species:deoxys-normal",
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/386_DEF.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:deoxys-normal"
+        ],
+        "uuid": "Compendium.ptu.species.Item.jRXpKWFUuHTZXn84"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "species:deoxys-normal"
+        ],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.AaDXWUAMnhxLbyn3"
+      },
+      {
+        "key": "TokenName",
+        "predicate": [
+          "species:deoxys-normal"
+        ],
+        "value": "Deoxys-Defense"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "YdHoWjlDNxGG3rT3",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.4",
+    "coreVersion": "13.350",
+    "createdTime": 1695369259719,
+    "modifiedTime": 1696169353021,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "bTs4aSIZCk4qXfB1",
+  "sort": 0,
+  "_key": "!items!bTs4aSIZCk4qXfB1"
+}

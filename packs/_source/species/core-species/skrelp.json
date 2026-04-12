@@ -1,0 +1,502 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:07.587Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Skrelp are poor swimmers and travel very slowly through the water, as their pectoral fins cannot efficiently propel their upright bodies (their close relatives, Horsea, have modified dorsal fins on their backs to correct this). Skrelp do not need to be agile, however, because they spend their time camouflaging themselves in kelp forests, where they are virtually indistinguishable from the seaweed thanks to the growths on their bodies that resemble rotting kelp. In these forests, Skrelp patiently wait for unwary prey seeking shelter within the kelp to swim by before spraying&nbsp;them with liquid poison and consuming them; the bulk of their diets, however, is the very rotting kelp that they hide in. These Pokémon try to move as little as possible in order to conserve energy for evolution and avoid predation. In some regions, dried Skrelp is thought to have powerful medicinal properties. People of these areas consume Skrelp powder in minute quantities, as even half an ounce more than the standard dosage can be fatally poisonous. This practice, though outlawed worldwide, remains common in rural areas. In Alolan waters, Skrelp can be found clustered around wild Dhelmise.",
+    "number": 690,
+    "form": "",
+    "stats": {
+      "hp": 5,
+      "atk": 6,
+      "def": 6,
+      "spatk": 6,
+      "spdef": 6,
+      "spd": 3
+    },
+    "types": [
+      "Poison",
+      "Water"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "poison-point",
+          "uuid": "Compendium.ptu.abilities.Item.osJgodPktGSkPJf4"
+        },
+        {
+          "slug": "poison-touch",
+          "uuid": "Compendium.ptu.abilities.Item.tZqCQEp1Y7W3J3TG"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "adaptability",
+          "uuid": "Compendium.ptu.abilities.Item.MBgvgf5LwdH5UGib"
+        },
+        {
+          "slug": "pollution-weather-playtest",
+          "uuid": "Compendium.ptu.abilities.Item.dxYIaMNxoXRM61cj"
+        }
+      ],
+      "high": [
+        {
+          "slug": "corrosion",
+          "uuid": "Compendium.ptu.abilities.Item.rdCRiZiEx4ZI1zlE"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.X2kt21ojJnSBCSFZ",
+        "slug": "skrelp",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 30,
+        "uuid": "Compendium.ptu.species.Item.UTl1jGyEfJ33ronS",
+        "slug": "dragalge",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 0.5,
+      "weight": 7.3,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Water 1",
+        "Dragon"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Ocean"
+    ],
+    "capabilities": {
+      "overland": 2,
+      "sky": 0,
+      "swim": 5,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 0,
+      "longJump": 1,
+      "power": 1,
+      "naturewalk": [
+        "Ocean"
+      ],
+      "other": [
+        {
+          "slug": "fountain",
+          "uuid": "Compendium.ptu.capabilities.Item.ut911FJQTWb21u98"
+        },
+        {
+          "slug": "gilled",
+          "uuid": "Compendium.ptu.capabilities.Item.Sr5UjqsO8FydTuNw"
+        },
+        {
+          "slug": "stealth",
+          "uuid": "Compendium.ptu.capabilities.Item.a1N1M1GMjMClaOdj"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kvvdzOdMFvhMbQga",
+          "slug": "smokescreen",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rYLmG0KWrwYOCkmR",
+          "slug": "water-gun",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.16Ij0HJODJxOy5j9",
+          "slug": "feint-attack",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.6lQy212f7N3GH5KS",
+          "slug": "tail-whip",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5h0l5eITZN4LdYqj",
+          "slug": "bubble",
+          "level": 12
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Rj7PzPVf9YeEn5mG",
+          "slug": "acid",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ZUObOjSakgrvkfXJ",
+          "slug": "camouflage",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MTBLJx5OwpfGk4xx",
+          "slug": "poison-tail",
+          "level": 23
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic",
+          "level": 32
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B",
+          "slug": "aqua-tail",
+          "level": 35
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5",
+          "slug": "sludge-bomb",
+          "level": 38
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oRu76Vk1LfE93pky",
+          "slug": "hydro-pump",
+          "level": 42
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse",
+          "level": 49
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "slug": "venoshock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HisedpFvMgmEqsbV",
+          "slug": "sludge-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5",
+          "slug": "sludge-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU",
+          "slug": "scald"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s",
+          "slug": "surf"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN",
+          "slug": "waterfall"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.joCaLnLmgcLh36ym",
+          "slug": "acid-armor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xOwF6QzLLB5POWAK",
+          "slug": "haze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MayZhpGvJzcbv8BT",
+          "slug": "play-rough"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.LyEh7DPaMxvOwU3G",
+          "slug": "toxic-spikes"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oYlTFgi4c74YPeW6",
+          "slug": "venom-drench"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B",
+          "slug": "aqua-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+          "slug": "bounce"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5P4ZKecoBzCd8vh5",
+          "slug": "dive"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WBkN88g7D8ruzV02",
+          "slug": "gunk-shot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L",
+          "slug": "outrage"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "skrelp",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": [],
+    "type": {
+      "0": "Poison",
+      "1": "Water",
+      "2": ""
+    },
+    "stackSlugs": false
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Skrelp",
+  "_id": "X2kt21ojJnSBCSFZ",
+  "effects": [],
+  "sort": 64400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708102747155,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!X2kt21ojJnSBCSFZ"
+}

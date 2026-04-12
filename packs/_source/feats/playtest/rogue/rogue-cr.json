@@ -1,0 +1,81 @@
+{
+  "name": "Rogue [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You learn the Moves Feint Attack and Thief.\nNote: Acrobatics, Athletics, and Stealth are referred to as “Rogue Skills” as short-hand.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.16Ij0HJODJxOy5j9"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh"
+      }
+    ],
+    "enabled": true,
+    "slug": "rogue-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Two of Acrobatics or Athletics or and Stealth at Novice Rank"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Rogue [CR]",
+    "name": "Rogue [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "O8uiNyzyRLx7VuWt",
+  "_id": "iVlB7WlORRXRFExb",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1710768786578,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!iVlB7WlORRXRFExb"
+}

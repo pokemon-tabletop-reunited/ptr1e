@@ -1,0 +1,97 @@
+{
+  "name": "Signature Move",
+  "system": {
+    "origin": "",
+    "effect": "Choose a Move you know. Increase the Move’s Frequency one step, as if you had used a PP Up. This choice cannot be changed once made. This Feature may not select Moves known through temporary means, nor can these Moves be used to qualify for this Feature.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "signatureMoveFeat",
+        "adjustName": false,
+        "prompt": "Choose which stat to increase.",
+        "choices": [
+          {
+            "label": "HP",
+            "value": "system.modifiers.baseStats.hp.mod"
+          },
+          {
+            "label": "ATK",
+            "value": "system.modifiers.baseStats.atk.mod"
+          },
+          {
+            "label": "DEF",
+            "value": "system.modifiers.baseStats.def.mod"
+          },
+          {
+            "label": "SPATK",
+            "value": "system.modifiers.baseStats.spatk.mod"
+          },
+          {
+            "label": "SPDEF",
+            "value": "system.modifiers.baseStats.spdef.mod"
+          },
+          {
+            "label": "SPD",
+            "value": "system.modifiers.baseStats.spd.mod"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "{item|flags.ptu.rulesSelections.signatureMoveFeat}",
+        "mode": "add",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Any"
+    ],
+    "prerequisites": [
+      "Learned four Moves"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "name": "Signature Move",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Learned four Moves"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078997,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 49000000,
+  "_id": "i3MkAvqpDv33WIkD",
+  "_key": "!items!i3MkAvqpDv33WIkD"
+}

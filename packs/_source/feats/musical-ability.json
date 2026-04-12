@@ -1,0 +1,84 @@
+{
+  "name": "Musical Ability",
+  "system": {
+    "origin": "",
+    "effect": "Choose Drown Out or Soundproof. You gain the chosen Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.abilities.Item.CLHnXbO5J6lson7C"
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.GyvsSbzvLJZitpqb"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "Musician"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Musician",
+    "automation": [],
+    "name": "Musical Ability",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Musician"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079160,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 16900000,
+  "_id": "GR5NnJDkrH6SglkA",
+  "_key": "!items!GR5NnJDkrH6SglkA"
+}

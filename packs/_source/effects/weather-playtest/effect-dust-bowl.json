@@ -1,0 +1,117 @@
+{
+  "folder": "VXd9n6naiPNthfVe",
+  "name": "Effect: Dust Bowl",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "<span>@Embed[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.y5XB5KR2FF2XysmZ caption=false]</span>\n<blockquote>Due to the nature of global effects, setting expiration on them will not do anything, so please manually track expiration.</blockquote>",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": [
+          "fire-damage-base",
+          "electric-damage-base"
+        ],
+        "value": -3
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "or": [
+            "self:types:rock",
+            "self:types:ground"
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.special.mod",
+        "phase": "afterDerived",
+        "value": 10,
+        "priority": null
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:category:special",
+          "target:distance:4+"
+        ],
+        "label": "+4 Distance to Target (Sand)",
+        "hideIfDisabled": false,
+        "selectors": "ranged-attack",
+        "value": -3
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "or": [
+            "self:types:rock",
+            "self:types:ground"
+          ]
+        },
+        "mode": "add",
+        "path": "system.modifiers.initiative.mod",
+        "phase": "afterDerived",
+        "value": 10,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-dust-bowl",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Weather",
+      "Playtest"
+    ],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "createdTime": 1708178841231,
+    "modifiedTime": 1708178841231,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "YQYxjFgbTbujbgNj",
+  "_key": "!items!YQYxjFgbTbujbgNj"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Enchanting Transformation",
+  "system": {
+    "origin": "",
+    "effect": "You perform a magical transformation on yourself. While this Feature is Bound, you gain +5 Damage Resistance against Dragon, Fighting, Dark, and Bug-Typed attacks and your Glamour Weaver Moves have the additional effects below.\n\n»» Sweet Kiss: Sweet Kiss ignores Speed Evasion.\n»» Disarming Voice: You may also choose to use Disarming Voice as a Line 4 or Cone 2.\n»» Dazzling Gleam: On Even-Numbered rolls, targets hit by Dazzling Gleam have their Accuracy Lowered by 1.\n»» Draining Kiss: You gain an additional Tick of Hit Points when gaining Hit Points from Draining Kiss.\n»» Moonblast: Whenever Moonblast misses a target, they lose a Tick of Hit Points.\n»» Aromatic Mist: All allies affected by Aromatic Mist gain a +2 bonus to their next Save Check.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "Glamour Weaver"
+    ],
+    "frequency": "Bind 2 AP - Shift Action",
+    "notes": "",
+    "free": false,
+    "class": "Glamour Weaver",
+    "automation": [],
+    "name": "Enchanting Transformation",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Glamour Weaver"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078943,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 51200000,
+  "_id": "jUUlXXE86nUUaXSN",
+  "_key": "!items!jUUlXXE86nUUaXSN"
+}

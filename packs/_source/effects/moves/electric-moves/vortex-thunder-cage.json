@@ -1,0 +1,99 @@
+{
+  "name": "Vortex (Thunder Cage)",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Vortex.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "While in a Vortex, the target is Slowed, Trapped, and loses a Tick of Hit Points at the beginning of each turn. At the end of each turn, the user may roll 1d20 to end all of these effects; during the first turn, they must roll a 20 or higher to dispel the vortex. The DC is lowered by 6 each following turn, automatically wearing off on the fifth turn (20, 14, 8, 2, Dispel)",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.ptu.effects.Item.I2nVAxBFKDMe8EQt",
+        "onDeleteActions": {
+          "grantee": "restrict",
+          "granter": "cascade"
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.ptu.effects.Item.uqo5H1DwUuAiaYRA",
+        "onDeleteActions": {
+          "grantee": "restrict",
+          "granter": "cascade"
+        }
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "vortex-save",
+        "value": -3
+      }
+    ],
+    "enabled": true,
+    "slug": "vortex",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.636Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "value": {
+      "isValued": true,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": {
+      "formula": "td",
+      "type": "save",
+      "dc": 20,
+      "decrease": true
+    },
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "gpLgMgi7hofskTVt",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "C7mgl4yeDtXl1FxR",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "createdTime": 1709370882817,
+    "modifiedTime": 1709370948454,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!C7mgl4yeDtXl1FxR"
+}

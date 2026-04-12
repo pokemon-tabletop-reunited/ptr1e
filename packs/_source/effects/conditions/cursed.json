@@ -1,0 +1,75 @@
+{
+  "name": "Cursed",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Cursed.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "If a Cursed Target takes a Standard Action, they lose two ticks of Hit Points at the end of that turn.",
+    "snippet": "",
+    "rules": [],
+    "enabled": true,
+    "slug": "cursed",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.636Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "encounter",
+      "expiry": "turn-start"
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": {
+      "formula": "td + td",
+      "type": "volatile",
+      "dc": 15,
+      "decrease": false
+    },
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "rPNjp26cMp3XQ6aC",
+  "_id": "Su7r4LU2xSVK9WY6",
+  "effects": [],
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.3",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1695027124661,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Su7r4LU2xSVK9WY6"
+}

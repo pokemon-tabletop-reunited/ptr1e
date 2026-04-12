@@ -1,0 +1,291 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:06.122Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 1638,
+    "form": "",
+    "stats": {
+      "hp": 4,
+      "atk": 6,
+      "def": 8,
+      "spatk": 4,
+      "spdef": 6,
+      "spd": 3
+    },
+    "types": [
+      "Ground",
+      "Bug"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "immunity",
+          "uuid": "Compendium.ptu.abilities.Item.EIwNj0k0OfXcoUNa"
+        },
+        {
+          "slug": "poison-heal",
+          "uuid": "Compendium.ptu.abilities.Item.SAJxzWp6ojhQRUVr"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "perception",
+          "uuid": "Compendium.ptu.abilities.Item.npbIziNlGUgPqn5M"
+        },
+        {
+          "slug": "poison-touch",
+          "uuid": "Compendium.ptu.abilities.Item.tZqCQEp1Y7W3J3TG"
+        }
+      ],
+      "high": [
+        {
+          "slug": "toxic-boost",
+          "uuid": "Compendium.ptu.abilities.Item.VpG5HkNkA92qA5Jd"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "slug": "delta-beldum-spider",
+        "uuid": "Compendium.ptu.species.Item.M4wEAWfcM9za3i3K",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "slug": "delta-metang-spider",
+        "uuid": "Compendium.ptu.species.Item.YD3984fvC1mq8o2O",
+        "level": 20,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "slug": "delta-metagross-spider",
+        "uuid": "Compendium.ptu.species.Item.dZq2OEDbw4urJqp2",
+        "level": 40,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.6,
+      "weight": 95.2,
+      "sizeClass": "Small",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": -1,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Forest",
+      "Rainforest"
+    ],
+    "capabilities": {
+      "overland": 4,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 4,
+      "naturewalk": [
+        "Forest"
+      ],
+      "other": [
+        {
+          "slug": "threaded",
+          "uuid": "Compendium.ptu.capabilities.Item.FgI0NCLyoQbTmVvh"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        },
+        {
+          "slug": "wallclimber",
+          "uuid": "Compendium.ptu.capabilities.Item.pvTnoGYp0kBhHmMD"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "bug-bite",
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD",
+          "level": 1
+        },
+        {
+          "slug": "string-shot",
+          "uuid": "Compendium.ptu.moves.Item.kxvFjyRtAzf99FIX",
+          "level": 1
+        },
+        {
+          "slug": "mud-slap",
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "level": 5
+        },
+        {
+          "slug": "spider-web",
+          "uuid": "Compendium.ptu.moves.Item.cVvKcL3mPp6NRRPG",
+          "level": 15
+        },
+        {
+          "slug": "sticky-web",
+          "uuid": "Compendium.ptu.moves.Item.vOj9bt7G9I4GixBZ",
+          "level": 30
+        }
+      ],
+      "machine": [],
+      "egg": [],
+      "tutor": [
+        {
+          "slug": "bug-bite",
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD"
+        },
+        {
+          "slug": "electroweb",
+          "uuid": "Compendium.ptu.moves.Item.dM7JNhVHOmnTxRhy"
+        },
+        {
+          "slug": "string-shot",
+          "uuid": "Compendium.ptu.moves.Item.kxvFjyRtAzf99FIX"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 1,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 1,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "delta-beldum-spider",
+    "rules": [],
+    "source": {
+      "value": "Fangame Insurgence Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "PjOQybdSHWn87sdq",
+  "name": "Delta Beldum (Spider)",
+  "_id": "M4wEAWfcM9za3i3K",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!M4wEAWfcM9za3i3K"
+}

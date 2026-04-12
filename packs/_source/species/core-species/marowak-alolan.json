@@ -1,0 +1,605 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:06.100Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Marowak that migrated to the Alola changed quite drastically. An abundance of Grass-types like Lurantis encouraged them to change types, for instance. Such extreme pressure also favored individuals that worked together (in contrast to the distant relations of mainland Marowak). These Pokémon maintain the tradition of passing down the bones of loved ones; rather than dueling over them, however, Alolan Marowak seem to choose \"heirs\" that will have the honor of wielding their bones when they pass. These Pokémon remain close with one another for their whole lives. They hold elaborate mourning rituals for their fallen allies; though their bones may be repurposed, Alolan Marowak will create dirt mound \"graves\" along the sides of roads, fiercely attacking those who disturb them. It is said that their undying loyalty for one another endures even through death, with their spirits protecting those wielding their bones and granting them \"sixth senses.\" Alolan people refer to and fear these Pokémon as \"conjurers of the dead\" for this reason. Alolan Marowak strike their bones on the black patches on their heads to ignite them. They spin their bones and perform intricate dances to perform both rituals and attacks. They can release fireballs in this manner; while not individually strong, their determination to land repeated blows can make them formidable foes. It is said that a blaze caused by its ghostly fire cannot be quenched, no matter how much water is poured over it.",
+    "number": 105,
+    "form": "alolan",
+    "stats": {
+      "hp": 6,
+      "atk": 8,
+      "def": 11,
+      "spatk": 5,
+      "spdef": 8,
+      "spd": 5
+    },
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "bone-wielder",
+          "uuid": "Compendium.ptu.abilities.Item.0ogwaZvuI6AUinpK"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "cursed-body",
+          "uuid": "Compendium.ptu.abilities.Item.eq6HX7kv2a2Fo51U"
+        },
+        {
+          "slug": "lightning-rod",
+          "uuid": "Compendium.ptu.abilities.Item.fZgyeYuH8xV4VnmU"
+        },
+        {
+          "slug": "rock-head",
+          "uuid": "Compendium.ptu.abilities.Item.2N9Ih71fbWBeoUm0"
+        }
+      ],
+      "high": [
+        {
+          "slug": "dancer",
+          "uuid": "Compendium.ptu.abilities.Item.VqZi7F0M1qGlK8t0"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.KlayP4VCdN4x25LO",
+        "slug": "cubone",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 25,
+        "uuid": "Compendium.ptu.species.Item.L3Xn2ZrTY8LOt1mz",
+        "slug": "marowak-alolan",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 1,
+      "weight": 34,
+      "sizeClass": "Medium",
+      "weightClass": 3
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Monster"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Cave",
+      "Mountain",
+      "Urban"
+    ],
+    "capabilities": {
+      "overland": 6,
+      "sky": 0,
+      "swim": 3,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 2,
+      "power": 4,
+      "naturewalk": [
+        "Cave",
+        "Mountain"
+      ],
+      "other": [
+        {
+          "slug": "darkvision",
+          "uuid": "Compendium.ptu.capabilities.Item.zzJWpOj40dLelBm5"
+        },
+        {
+          "slug": "glow",
+          "uuid": "Compendium.ptu.capabilities.Item.v4OOr4KlIO0DKw5r"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        },
+        {
+          "slug": "wielder",
+          "uuid": "Compendium.ptu.capabilities.Item.TCK4KX0iwhgf1PGe"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.6lQy212f7N3GH5KS",
+          "slug": "tail-whip",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1nn2idBRjplah2Ph",
+          "slug": "bone-club",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cDe2PIlHkOV2msto",
+          "slug": "flame-wheel",
+          "level": 11
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XQOEuOenSzYNz4eO",
+          "slug": "leer",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XbAfCHhH425Ldmj4",
+          "slug": "hex",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Wl0TsRshICE0ZX9P",
+          "slug": "bonemerang",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp",
+          "level": 23
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SfzNA4iRWJQ71BjE",
+          "slug": "shadow-bone",
+          "level": 27
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.czDZWjn9TbP9ON4q",
+          "slug": "thrash",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2sgLgahHycXD5OuT",
+          "slug": "stomping-tantrum",
+          "level": 43
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ",
+          "slug": "endeavor",
+          "level": 49
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VxO7N8CbFaW3889w",
+          "slug": "flare-blitz",
+          "level": 53
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0VBbEO76A1KyQIM",
+          "slug": "retaliate",
+          "level": 59
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WZK129tnh7zkxtmi",
+          "slug": "bone-rush",
+          "level": 65
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YG7EABDKQsFjDi8E",
+          "slug": "smack-down"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "slug": "earthquake"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "slug": "flamethrower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XC3ObpOOy8mGk8s8",
+          "slug": "sandstorm"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM",
+          "slug": "fire-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV",
+          "slug": "flame-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI",
+          "slug": "focus-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DfuvLNHQ0TBVgPN4",
+          "slug": "false-swipe"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MrGSomQEncQd3zt6",
+          "slug": "brutal-swing"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut",
+          "slug": "stone-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0",
+          "slug": "dream-eater"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFyiKFMmD0rwvIl7",
+          "slug": "ally-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+          "slug": "earth-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ",
+          "slug": "endeavor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+          "slug": "fire-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb",
+          "slug": "heat-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "slug": "iron-head"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6",
+          "slug": "knock-off"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dOMKjZx7flfPZTtV",
+          "slug": "low-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L",
+          "slug": "outrage"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DO1UIDQKBBUxPcTj",
+          "slug": "pain-split"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XklsarNBfkknbU8O",
+          "slug": "stealth-rock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2sgLgahHycXD5OuT",
+          "slug": "stomping-tantrum"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF",
+          "slug": "throat-chop"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY",
+          "slug": "thunder-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+          "slug": "uproar"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 2,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 1,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "marowak-alolan",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "type": {
+      "0": "Fire",
+      "1": "Ghost",
+      "2": ""
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Marowak-Alolan",
+  "_id": "L3Xn2ZrTY8LOt1mz",
+  "effects": [],
+  "sort": 42400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!L3Xn2ZrTY8LOt1mz"
+}

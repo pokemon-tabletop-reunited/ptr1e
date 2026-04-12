@@ -1,0 +1,62 @@
+{
+  "name": "Solar Power",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - The user rolls Damage\nThe user loses a Tick of Hit Points, and gains a bonus to the triggering damage roll equal to 5 + their Tick Value. Solar Power may be activated ignoring frequency while in Sunny Weather.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "manual"
+        ],
+        "label": "Solar Power (lose 1 tick hp? (MANUAL))",
+        "hideIfDisabled": false,
+        "selectors": "damage-roll",
+        "value": "5 + floor(@actor.system.health.total / 10)"
+      }
+    ],
+    "enabled": true,
+    "slug": "solar-power",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Weather"
+    ],
+    "frequency": "Scene x2 - Rapid Action",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "PdpYQuMW4BlVlrTq",
+  "effects": [],
+  "folder": null,
+  "sort": 23000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1712499961511,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!PdpYQuMW4BlVlrTq"
+}

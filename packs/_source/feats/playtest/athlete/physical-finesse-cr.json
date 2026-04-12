@@ -1,0 +1,69 @@
+{
+  "name": "Physical Finesse [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Whenever you perform your hour of exercise from the Athlete feat you choose a Physical Dedication from the below list, selecting one for which you have the associated Edge. You gain the bonus from that Dedication, the Move and Advanced Maneuver associated with it. You may only be Trained in one Dedication at a time and will lose these bonuses at the end of the next Extended Rest.\n### Physical Dedications\n#### Fieldsman\nPrerequisite: Athletic Initiative\nEffect: You gain +4 to Initiative, and add Rock Climb as an Athlete Move to your list of Moves. You receive the Empower Ability.\n#### \"Cyclist\"\nPrerequisite: Mounted Prowess\nEffect: When you Shift using a Bicycle, your Overland Speed is increased by +2 your Long Jump and High Jump by +1, and you add Barreling Charge to your list of Moves. You gain a +10 Bonus to Damage with Athlete Moves while on a Bicycle or another Mount.\n#### Powerhouse\nPrerequisite: Power Boost\nEffect: Increase your Power Capability by +1 and add Wring Out as an Athlete Move to your list of Moves. You gain a +2 bonus to checks related to Grappling. If you have Dominance while Grappling and choose to end the Grapple, you may Push the other person as a Rapid Action (this maneuver is considered related to Grappling). If you succeed in Pushing the target, they are Pushed 1 additional meter and are Tripped.\n#### Marathonman\nPrerequisite: Stamina\nEffect: You gain +2 to Save Checks and add Refresh as an Athlete Move to your list of Moves. Whenever you regain Hit Points, you receive Temporary Hit Points equal to your Athletics Rank, and whenever you gain Temporary Hit Points, that amount is increased by an amount equal to your Athletics Rank.\n#### Tidemaster\nPrerequisite: Swimmer\nEffect: Increase your Swim Speed by +1 and add Dive as an Athlete Move to your list of Moves. While Swimming, you gain +2 Evasion, +3 to Opposed Combat Maneuver Checks, and, against Water Type attacks, 5 Damage Reduction.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "physical-finesse-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Training Regime",
+      "Expert Athletics"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Athlete [CR]",
+    "name": "Physical Finesse [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "VZSMHMJcCWCVyQIC",
+  "_id": "zfu1PGONY1UzO7pX",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!zfu1PGONY1UzO7pX"
+}

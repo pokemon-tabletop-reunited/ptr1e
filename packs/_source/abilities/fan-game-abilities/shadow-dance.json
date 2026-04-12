@@ -1,0 +1,85 @@
+{
+  "folder": "rmoa0NFMp7Td9R3R",
+  "name": "Shadow Dance",
+  "type": "ability",
+  "img": "/systems/ptu/static/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "While in a New Moon or under 50% Max Hit Points, the user’s initiative is doubled.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "not": "effect:new-moon"
+        },
+        "mode": "add",
+        "path": "system.modifiers.initiative.mod",
+        "phase": "afterDerived",
+        "value": {
+          "brackets": [
+            {
+              "start": 50,
+              "end": 100,
+              "value": 0
+            },
+            {
+              "start": -100,
+              "end": 49,
+              "value": "@actor.system.initiative.value"
+            }
+          ],
+          "field": "actor|system.health.percent"
+        },
+        "priority": null
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "and": [
+            "effect:new-moon"
+          ]
+        },
+        "hideIfDisabled": false,
+        "selectors": "initiative",
+        "value": "@actor.system.initiative.value"
+      }
+    ],
+    "enabled": true,
+    "slug": "shadow-dance",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.VtrMd7ye9vcTIu6y",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": ""
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1696782106441,
+    "modifiedTime": 1712499866859,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "Bvrv4SX3gmS10ghW",
+  "sort": 0,
+  "_key": "!items!Bvrv4SX3gmS10ghW"
+}

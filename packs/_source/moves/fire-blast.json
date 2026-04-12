@@ -1,0 +1,80 @@
+{
+  "name": "Fire Blast",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FireIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Fire Blast burns the target on 19+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": {
+          "not": "target:types:fire"
+        },
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.NA1Vn8A2h6JIIUhj",
+        "range": "19",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "fire-blast",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1",
+      "Smite"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fire",
+    "category": "Special",
+    "damageBase": "11",
+    "frequency": "Scene x2",
+    "ac": "4",
+    "range": "Range 6",
+    "contestType": "Beauty - Exhausting Act",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "2J0IU5MKdpEwtTfM",
+  "effects": [],
+  "sort": 3700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1709368297069,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2J0IU5MKdpEwtTfM"
+}

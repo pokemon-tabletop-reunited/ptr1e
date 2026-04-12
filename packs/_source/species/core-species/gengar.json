@@ -1,0 +1,621 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:10.906Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Gengar draw heat from others; when one is near, those around it can feel chills as the temperature drops by nearly 10°F (5°C). They may even try to lay curses on those who walk alone near them. Gengar are most active during full moons, creeping out in the dead of night and disguising themselves as shadows; they may even enters sleeping homes to lurk in the dark. They will mimic every movement their targets make until they lower their guards. Then, they strike, draining their life force as sustenance. Gengar are also said to attack those who are hopelessly lost and afraid in the mountains. Many Gengar have learned to feed on fear, simply following victims in the shadows and mimicking them almost, but not quite perfectly. This cultivates great paranoia in victims, which they can then feast on. Other tricks Gengar have been known to use include: laughing maniacally in the shadows, lighting their red eyes in the darkness, and chanting mysteriously in the distance. In some places, parents warn that Gengar appear at night in the bedrooms of naughty children. A famous folk tale tells of a Gengar that once used to be human, attacking people so it could have a friend.",
+    "number": 94,
+    "form": "",
+    "stats": {
+      "hp": 6,
+      "atk": 7,
+      "def": 6,
+      "spatk": 13,
+      "spdef": 8,
+      "spd": 11
+    },
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "levitate",
+          "uuid": "Compendium.ptu.abilities.Item.WsNZitOqUrhu9k78"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "frighten",
+          "uuid": "Compendium.ptu.abilities.Item.eKg9pZRDbRf40GME"
+        },
+        {
+          "slug": "intimidate",
+          "uuid": "Compendium.ptu.abilities.Item.NnYU42v8Ge5lmPQF"
+        },
+        {
+          "slug": "spiteful-intervention",
+          "uuid": "Compendium.ptu.abilities.Item.PwuToX9yuTRWxzJw"
+        }
+      ],
+      "high": [
+        {
+          "slug": "soulstealer",
+          "uuid": "Compendium.ptu.abilities.Item.0xUM2GkCAMVjrJ1T"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.eE7KbLWP5hL4dZrO",
+        "slug": "gastly",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.pd1UPTfiwwhLnGEg",
+        "slug": "haunter",
+        "level": 20,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.z2tr8yRLv3ICUZKY",
+        "slug": "gengar",
+        "level": 35,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.5,
+      "weight": 40.5,
+      "sizeClass": "Medium",
+      "weightClass": 3
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Indeterminate"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Nullivore"
+    ],
+    "habitats": [
+      "Urban"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 0,
+      "swim": 3,
+      "levitate": 5,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 3,
+      "power": 4,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "darkvision",
+          "uuid": "Compendium.ptu.capabilities.Item.zzJWpOj40dLelBm5"
+        },
+        {
+          "slug": "dead-silent",
+          "uuid": "Compendium.ptu.capabilities.Item.27U7ZioOgyZFzxDx"
+        },
+        {
+          "slug": "invisibility",
+          "uuid": "Compendium.ptu.capabilities.Item.6sANE4BU79H8FAUR"
+        },
+        {
+          "slug": "phasing",
+          "uuid": "Compendium.ptu.capabilities.Item.rJqBxh0Nwwqwu6ev"
+        },
+        {
+          "slug": "shadow-meld",
+          "uuid": "Compendium.ptu.capabilities.Item.eNlTKVakIiBf5xXg"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mddjD9rQYW5169un",
+          "slug": "mean-look",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5A0ZjnRjOwj1i7n8",
+          "slug": "curse",
+          "level": 12
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.l0VYJRDN4GADxkX2",
+          "slug": "night-shade",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky",
+          "slug": "confuse-ray",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4",
+          "slug": "sucker-punch",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0",
+          "slug": "dream-eater",
+          "level": 39
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse",
+          "level": 44
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jam3Tqd8arclLpHn",
+          "slug": "destiny-bond",
+          "level": 50
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XbAfCHhH425Ldmj4",
+          "slug": "hex",
+          "level": 55
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uJn8utERPx8HehlL",
+          "slug": "nightmare",
+          "level": 61
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "slug": "venoshock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs",
+          "slug": "psychic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5",
+          "slug": "sludge-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zgeymOL0WIKgT6lq",
+          "slug": "torment"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI",
+          "slug": "focus-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup",
+          "slug": "energy-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AMdvXp9FBhfXOLJs",
+          "slug": "embargo"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uZ5eUCeStPObSEHj",
+          "slug": "explosion"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0",
+          "slug": "infestation"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625",
+          "slug": "poison-jab"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0",
+          "slug": "dream-eater"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Uut6FpUzRObtZvBm",
+          "slug": "trick-room"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tqoJF3EAgEEv3l1l",
+          "slug": "dazzling-gleam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFyiKFMmD0rwvIl7",
+          "slug": "ally-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ",
+          "slug": "counter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Dr7Eh1TGQHwQcreV",
+          "slug": "drain-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.vg4sghb5ZX1spGho",
+          "slug": "dynamic-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+          "slug": "fire-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ckL9G6vvS6TUl57i",
+          "slug": "foul-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+          "slug": "giga-drain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h",
+          "slug": "ice-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6",
+          "slug": "knock-off"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P6WwfKrGPuSohaOH",
+          "slug": "mega-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4SK37Ub6d9G8jOaJ",
+          "slug": "mega-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9aU7CnwwaU0FE4tk",
+          "slug": "metronome"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TD0L4L2JEH8VpTFW",
+          "slug": "ominous-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DO1UIDQKBBUxPcTj",
+          "slug": "pain-split"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX",
+          "slug": "role-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jtmrf8Dol8bkamvO",
+          "slug": "seismic-toss"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TXPzXlSA5R7gCowi",
+          "slug": "shadow-punch-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VpNKUQKz3srKJvMv",
+          "slug": "skill-swap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4",
+          "slug": "sucker-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tNexDVIwrtPBsV0u",
+          "slug": "telekinesis"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY",
+          "slug": "thunder-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5f5SrSIiFCEOkSWm",
+          "slug": "trick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+          "slug": "uproar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oZW7peinTFoJ7cim",
+          "slug": "wonder-room"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 3,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 2,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 5,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "gengar",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Gengar",
+  "_id": "z2tr8yRLv3ICUZKY",
+  "effects": [],
+  "sort": 113000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!z2tr8yRLv3ICUZKY"
+}

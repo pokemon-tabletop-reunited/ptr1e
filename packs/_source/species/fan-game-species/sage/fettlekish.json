@@ -1,0 +1,504 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:10.647Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 3579,
+    "form": "",
+    "stats": {
+      "hp": 8,
+      "atk": 3,
+      "def": 6,
+      "spatk": 10,
+      "spdef": 9,
+      "spd": 9
+    },
+    "types": [
+      "Water",
+      "Fire"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "water-absorb",
+          "uuid": "Compendium.ptu.abilities.Item.QpL0f8jY8uoEJ2Fv"
+        },
+        {
+          "slug": "flame-body",
+          "uuid": "Compendium.ptu.abilities.Item.vF0vjHMDikFAthFY"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "oblivious",
+          "uuid": "Compendium.ptu.abilities.Item.O2dMnMBgSN8ookBo"
+        },
+        {
+          "slug": "friend-guard",
+          "uuid": "Compendium.ptu.abilities.Item.i0XQhctF8P16Pkg9"
+        }
+      ],
+      "high": [
+        {
+          "slug": "heat-mirage",
+          "uuid": "Compendium.ptu.abilities.Item.Q6PcPE8sqmueDGHe"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.HDGa8heRF7ytUdhl",
+        "slug": "cuppy",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.xCEy7mCkKA9wZOc7",
+        "slug": "fettlekish",
+        "level": 25,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.7,
+      "weight": 14.4,
+      "sizeClass": "Small",
+      "weightClass": 2
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Water 2"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Ocean"
+    ],
+    "capabilities": {
+      "overland": 2,
+      "sky": 0,
+      "swim": 7,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 3,
+      "longJump": 3,
+      "power": 2,
+      "naturewalk": [
+        "Ocean"
+      ],
+      "other": [
+        {
+          "slug": "fountain",
+          "uuid": "Compendium.ptu.capabilities.Item.ut911FJQTWb21u98"
+        },
+        {
+          "slug": "gilled",
+          "uuid": "Compendium.ptu.capabilities.Item.Sr5UjqsO8FydTuNw"
+        },
+        {
+          "slug": "heater",
+          "uuid": "Compendium.ptu.capabilities.Item.9DQsEtRIDXdw7ICw"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "flame-burst",
+          "uuid": "Compendium.ptu.moves.Item.JV9D80kHWzifgoYH",
+          "level": "Evo"
+        },
+        {
+          "slug": "bubble",
+          "uuid": "Compendium.ptu.moves.Item.5h0l5eITZN4LdYqj",
+          "level": 6
+        },
+        {
+          "slug": "mist",
+          "uuid": "Compendium.ptu.moves.Item.uaOHYAjzdGsqGBJ0",
+          "level": 10
+        },
+        {
+          "slug": "flail",
+          "uuid": "Compendium.ptu.moves.Item.IWQXKwgnyM2CvDLV",
+          "level": 13
+        },
+        {
+          "slug": "bubble-beam",
+          "uuid": "Compendium.ptu.moves.Item.0O3ntZlEtOYU7vqT",
+          "level": 17
+        },
+        {
+          "slug": "aqua-ring",
+          "uuid": "Compendium.ptu.moves.Item.ywYeIhxlrHb9gOP1",
+          "level": 22
+        },
+        {
+          "slug": "calm-mind",
+          "uuid": "Compendium.ptu.moves.Item.fTu9Cq4z0G7PDH2x",
+          "level": 27
+        },
+        {
+          "slug": "scald",
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU",
+          "level": 31
+        },
+        {
+          "slug": "agility",
+          "uuid": "Compendium.ptu.moves.Item.aS33KlxhRCP0s5Zd",
+          "level": 36
+        },
+        {
+          "slug": "heat-wave",
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb",
+          "level": 42
+        },
+        {
+          "slug": "aromatherapy",
+          "uuid": "Compendium.ptu.moves.Item.QzP3iamQFsN5S4FS",
+          "level": 47
+        },
+        {
+          "slug": "hydro-pump",
+          "uuid": "Compendium.ptu.moves.Item.oRu76Vk1LfE93pky",
+          "level": 51
+        },
+        {
+          "slug": "water-spout",
+          "uuid": "Compendium.ptu.moves.Item.Nwh51csVMKXOHWDp",
+          "level": 56
+        },
+        {
+          "slug": "overheat",
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6",
+          "level": 62
+        }
+      ],
+      "machine": [
+        {
+          "slug": "calm-mind",
+          "uuid": "Compendium.ptu.moves.Item.fTu9Cq4z0G7PDH2x"
+        },
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "sunny-day",
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+        },
+        {
+          "slug": "hyper-beam",
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "rain-dance",
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "flamethrower",
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn"
+        },
+        {
+          "slug": "fire-blast",
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "flame-charge",
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "overheat",
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6"
+        },
+        {
+          "slug": "scald",
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU"
+        },
+        {
+          "slug": "will-o-wisp",
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU"
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK"
+        },
+        {
+          "slug": "psych-up",
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "surf",
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s"
+        },
+        {
+          "slug": "waterfall",
+          "uuid": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN"
+        },
+        {
+          "slug": "confide",
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "slug": "aqua-tail",
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B"
+        },
+        {
+          "slug": "brine",
+          "uuid": "Compendium.ptu.moves.Item.5ORKWU9EYYyzJOaH"
+        },
+        {
+          "slug": "dive",
+          "uuid": "Compendium.ptu.moves.Item.5P4ZKecoBzCd8vh5"
+        },
+        {
+          "slug": "double-edge",
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "fire-spin-n",
+          "uuid": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ"
+        },
+        {
+          "slug": "heal-bell",
+          "uuid": "Compendium.ptu.moves.Item.v8vXs3oV4YimX2AZ"
+        },
+        {
+          "slug": "heat-wave",
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb"
+        },
+        {
+          "slug": "hyper-voice",
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD"
+        },
+        {
+          "slug": "magic-coat",
+          "uuid": "Compendium.ptu.moves.Item.qfZVvzSa9Pytij7O"
+        },
+        {
+          "slug": "pain-split",
+          "uuid": "Compendium.ptu.moves.Item.DO1UIDQKBBUxPcTj"
+        },
+        {
+          "slug": "recycle",
+          "uuid": "Compendium.ptu.moves.Item.yUba2OWKoxAE3txP"
+        },
+        {
+          "slug": "signal-beam",
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP"
+        },
+        {
+          "slug": "snore",
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53"
+        },
+        {
+          "slug": "swift",
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc"
+        },
+        {
+          "slug": "water-pulse",
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4"
+        },
+        {
+          "slug": "whirlpool-n",
+          "uuid": "Compendium.ptu.moves.Item.DUWjQv05jUb2p6gj"
+        },
+        {
+          "slug": "zen-headbutt",
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "fettlekish",
+    "rules": [],
+    "source": {
+      "value": "Fangame Sage Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "CMymFngAhNsaPlS5",
+  "name": "Fettlekish",
+  "_id": "xCEy7mCkKA9wZOc7",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!xCEy7mCkKA9wZOc7"
+}

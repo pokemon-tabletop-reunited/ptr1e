@@ -1,0 +1,93 @@
+{
+  "name": "Effect: Max Knuckle",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "+1 Atk CS",
+    "snippet": "+1 Atk CS",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.atk.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-max-knuckle",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.moves.Item.kryclDHj7FOE85eg",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "fxR7gYSzdO2ZAQya",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "scene-packer": {
+      "hash": "e9ecdeba072fa6708ea69dcd35c40e019cc3e255",
+      "sourceId": "Item.yUMkEHjbGbBVbP6V"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1709369338895,
+    "modifiedTime": 1710789726120,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_id": "D4g9yKjXXo9ruY8U",
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!D4g9yKjXXo9ruY8U"
+}

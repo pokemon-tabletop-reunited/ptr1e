@@ -1,0 +1,75 @@
+{
+  "name": "Zap Case",
+  "system": {
+    "origin": "",
+    "effect": "Whenever a Poké Ball with a Zap Case hits a target it deals damage as if using a Struggle Attack. This Damage is Electric-Typed. If the Ball is already used as a Struggle Attack (such as with Curve Ball), then the Zap Case changes the damage to Electric-Type and adds bonus damage equal to twice the user’s Technology Education skill. When attempting to catch Pokémon, damage is resolved before the capture roll. This can also be used when releasing a Pokémon (damage is resolved before the Pokémon is released).",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "RollOption",
+        "domain": "struggle",
+        "option": "electric"
+      },
+      {
+        "key": "RollOption",
+        "domain": "struggle",
+        "option": "electric:ranged"
+      }
+    ],
+    "enabled": true,
+    "slug": "zap-case",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.441Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Poke Ball Case"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "1500",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Zap Case",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368863973,
+    "modifiedTime": 1712495677883,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 43300000,
+  "_id": "aWifcCgpkbMK3s32",
+  "_key": "!items!aWifcCgpkbMK3s32"
+}

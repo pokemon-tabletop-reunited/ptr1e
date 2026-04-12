@@ -1,0 +1,523 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:04.696Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Beartic inhabit icy caves and glaciers, particularly those near northern polar oceans and seas. They spend most of their time on four limbs, though they will stand bipedally in order to intimidate foes or reach higher ground. Beartic are capable of exhaling air at subzero temperatures, freezing the surrounding moisture. They use this ability to encase their paws and mouths with claws and fangs of ice, respectively, to attack foes. To cross large stretches of ocean, these Pokémon will freeze the waters beneath their paws, creating pathways of ice for them to walk on. They are also adept&nbsp;swimmers that spend much of their time hunting in the water; when tired, they will simply freeze the water beneath them to rest, creating new ice floes. With their thick fur and wide paws, Beartic are adapted to moving and living in icy environments. They are often the focus of studies regarding changes in global temperatures because of how heavily they depend on large expanses of ice. A warming climate has caused many scientists to focus closely on the Beartic population, which has been slowly but steadily dropping every year.",
+    "number": 614,
+    "form": "",
+    "stats": {
+      "hp": 10,
+      "atk": 13,
+      "def": 8,
+      "spatk": 7,
+      "spdef": 8,
+      "spd": 5
+    },
+    "types": [
+      "Ice"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "snow-cloak",
+          "uuid": "Compendium.ptu.abilities.Item.XGOKQvMtgXTgrckF"
+        },
+        {
+          "slug": "slush-rush",
+          "uuid": "Compendium.ptu.abilities.Item.cv7t3NcXKiGHSsQs"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "refrigerate",
+          "uuid": "Compendium.ptu.abilities.Item.WG1rMXjorgAMBDBK"
+        },
+        {
+          "slug": "thick-fat",
+          "uuid": "Compendium.ptu.abilities.Item.g9kAU2J4rkXhNDJv"
+        }
+      ],
+      "high": [
+        {
+          "slug": "swift-swim",
+          "uuid": "Compendium.ptu.abilities.Item.RK51P3bQWpC6Ioz2"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.ZVyUS1sGNHGCANdJ",
+        "slug": "cubchoo",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.BursQnUnaoTjwJ7D",
+        "slug": "beartic",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 2.6,
+      "weight": 260,
+      "sizeClass": "Large",
+      "weightClass": 6
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Omnivore"
+    ],
+    "habitats": [
+      "Cave",
+      "Taiga",
+      "Tundra"
+    ],
+    "capabilities": {
+      "overland": 6,
+      "sky": 0,
+      "swim": 4,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 2,
+      "power": 9,
+      "naturewalk": [
+        "Tundra"
+      ],
+      "other": [
+        {
+          "slug": "chilled",
+          "uuid": "Compendium.ptu.capabilities.Item.4RJFVQvf9t70YWI3"
+        },
+        {
+          "slug": "freezer",
+          "uuid": "Compendium.ptu.capabilities.Item.O0LMo4PRnTk008ds"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.IiLJ3J3xpWhhTqvw",
+          "slug": "icicle-crash",
+          "level": "Evo"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.l4TzdGjtPZHycF5b",
+          "slug": "powder-snow",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.3vdmhkXenPgplUwb",
+          "slug": "bide",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1x4TfrhoZdHT7Sj2",
+          "slug": "play-nice",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kBtOW4lhbgV3tltJ",
+          "slug": "fury-swipes",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5ORKWU9EYYyzJOaH",
+          "slug": "brine",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ",
+          "slug": "endure",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger",
+          "level": 29
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sm3q5D8SkQcEmiGB",
+          "slug": "slash",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IWQXKwgnyM2CvDLV",
+          "slug": "flail",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest",
+          "level": 41
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard",
+          "level": 45
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail",
+          "level": 53
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.czDZWjn9TbP9ON4q",
+          "slug": "thrash",
+          "level": 59
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.enDcfNIF6u9ZPOkV",
+          "slug": "sheer-cold",
+          "level": 66
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY",
+          "slug": "roar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.du6VccHCQ2VjQ0D8",
+          "slug": "bulk-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI",
+          "slug": "focus-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut",
+          "slug": "stone-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nM8DQhM6b8g5KZyy",
+          "slug": "frost-breath"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "slug": "grass-knot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s",
+          "slug": "surf"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.Htb3LXoNd24yFNEG",
+          "slug": "aqua-jet-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UcNQuMWgO1s8OxcP",
+          "slug": "avalanche"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB",
+          "slug": "covet"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h",
+          "slug": "ice-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dOMKjZx7flfPZTtV",
+          "slug": "low-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.enDcfNIF6u9ZPOkV",
+          "slug": "sheer-cold-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xwJMUiNv3k0k9VK6",
+          "slug": "superpower-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.czDZWjn9TbP9ON4q",
+          "slug": "thrash-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF",
+          "slug": "throat-chop"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 1,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "beartic",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Beartic",
+  "_id": "BursQnUnaoTjwJ7D",
+  "effects": [],
+  "sort": 23800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!BursQnUnaoTjwJ7D"
+}

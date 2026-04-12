@@ -1,0 +1,74 @@
+{
+  "folder": "2Idf6tl6HbJkRYPL",
+  "name": "Effect: Sage's Wards (Light Screen)",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Trigger: An ally activates one of your Moves with the Blessing Keyword.\nEffect: The triggering ally gains an additional benefit as follows, depending on the Move used. The benefit takes effect after the Blessing and the attack that triggered it are resolved.\n- Light Screen: +1 Sp. Defense Combat Stage",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spdef.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-sages-wards-light-screen",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_id": "iNfiGKyKNYhNWRBi",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710770236727,
+    "modifiedTime": 1710770243775,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!iNfiGKyKNYhNWRBi"
+}

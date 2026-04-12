@@ -1,0 +1,104 @@
+{
+  "folder": "mPgTCXDywTV4kW8J",
+  "name": "Effect: Shrinkable",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "While Shrunken, a Pokémon may not perform Standard Actions except to return to normal size, and gains a +4 bonus to Evasion.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 4,
+        "path": "system.modifiers.evasion.physical.mod",
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 4,
+        "path": "system.modifiers.evasion.special.mod",
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 4,
+        "path": "system.modifiers.evasion.speed.mod",
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "TokenImage",
+        "scale": 0.25
+      },
+      {
+        "key": "RollOption",
+        "option": "condition:cannot-attack"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-shrinkable",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.635Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1694687463422,
+    "modifiedTime": 1707827619677,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "B5dNUIb1u2nz14T4",
+  "sort": 0,
+  "_key": "!items!B5dNUIb1u2nz14T4"
+}

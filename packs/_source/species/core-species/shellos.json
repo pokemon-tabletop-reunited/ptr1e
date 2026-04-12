@@ -1,0 +1,502 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:08.124Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Shellos are unique in that they and Gastrodon have two variants, a pink West Sea form and a blue East Sea form. Scientists believe that they are currently undergoing allopatric speciation, a process in which geographic isolation causes two populations to evolve into separate species. It is theorized that the rise of Mt. Coronet in Sinnoh divided Shellos into two sides, each of which then began adapting to their new habitats while being cut off from those on the other side of the peak. Research shows that Shellos in more fertile waters are more vibrant in color; this suggests that their colorations may be influenced by diet, climate, or water temperature. It is theorized that pink West Sea Shellos are associated with warmer waters, and blue East Sea Shellos are associated with cooler waters. Though the two variants can still currently breed as one species, scientists believe that this may not be case in the future, when the two forms may not even recognize each other as related. Shellos can extend their necks very far to reach algae and plankton in difficult places. When squeezed, they will ooze a slippery purple fluid analogous to mammalian sweat. This substance makes it difficult for predators to grasp them so they can flee. They can similarly exude a sticky, but harmless purple goo to slow attackers. Shellos also have remarkable regenerative qualities, and researchers are currently studying their cellular properties in order to discover the biological mechanism behind this.",
+    "number": 422,
+    "form": "",
+    "stats": {
+      "hp": 8,
+      "atk": 5,
+      "def": 5,
+      "spatk": 6,
+      "spdef": 6,
+      "spd": 3
+    },
+    "types": [
+      "Water"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "sand-force",
+          "uuid": "Compendium.ptu.abilities.Item.mrh8upnRkfCDcSxf"
+        },
+        {
+          "slug": "storm-drain",
+          "uuid": "Compendium.ptu.abilities.Item.gPFOWD8FeI5TQrum"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "life-force",
+          "uuid": "Compendium.ptu.abilities.Item.bpK8mB9HhdS1vybW"
+        },
+        {
+          "slug": "gooey",
+          "uuid": "Compendium.ptu.abilities.Item.bu0EeMn7eyjLc0gB"
+        }
+      ],
+      "high": [
+        {
+          "slug": "defy-death",
+          "uuid": "Compendium.ptu.abilities.Item.hccoP35m1qpEJxeW"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.b6UzQzaQBUoxiEmW",
+        "slug": "shellos",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.JiYg37gBQPSQcbJ3",
+        "slug": "gastrodon",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.3,
+      "weight": 6.3,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Water 1",
+        "Indeterminate"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Beach",
+      "Ocean"
+    ],
+    "capabilities": {
+      "overland": 2,
+      "sky": 0,
+      "swim": 4,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 0,
+      "power": 1,
+      "naturewalk": [
+        "Wetlands"
+      ],
+      "other": [
+        {
+          "slug": "amorphous",
+          "uuid": "Compendium.ptu.capabilities.Item.nWoI9YVnNO7M6UtR"
+        },
+        {
+          "slug": "gilled",
+          "uuid": "Compendium.ptu.capabilities.Item.Sr5UjqsO8FydTuNw"
+        },
+        {
+          "slug": "sticky-hold",
+          "uuid": "Compendium.ptu.capabilities.Item.BBQjPkbI532CmvQq"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        },
+        {
+          "slug": "wallclimber",
+          "uuid": "Compendium.ptu.capabilities.Item.pvTnoGYp0kBhHmMD"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GorxsfqD0s09olBW",
+          "slug": "mud-sport",
+          "level": 2
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Mw6vBLeHYty112VS",
+          "slug": "harden",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BAmSs75wp3OsvF8d",
+          "slug": "mud-bomb",
+          "level": 11
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam",
+          "level": 29
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.updKSTwGuQaZfbTk",
+          "slug": "muddy-water",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qJILuzcs4SDgylfD",
+          "slug": "recover",
+          "level": 46
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU",
+          "slug": "scald"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0",
+          "slug": "infestation"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s",
+          "slug": "surf"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.joCaLnLmgcLh36ym",
+          "slug": "acid-armor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0JDFAZ8Q0rDKNodB",
+          "slug": "amnesia"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5ORKWU9EYYyzJOaH",
+          "slug": "brine"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RKyKtJkj75j2CNJF",
+          "slug": "clear-smog"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ",
+          "slug": "counter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5A0ZjnRjOwj1i7n8",
+          "slug": "curse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YSxU9QCnB3OBqtgh",
+          "slug": "fissure"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GM2n72N4lfcq8Xrt",
+          "slug": "memento"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.70ikTYAJeGbsEN9K",
+          "slug": "mirror-coat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uaOHYAjzdGsqGBJ0",
+          "slug": "mist"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5vPZfwNkmM0eKO03",
+          "slug": "sludge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.srUwReOeuVGAPTa5",
+          "slug": "spit-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VTgi7fLjJYUtu8GT",
+          "slug": "stockpile"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CbxiHzGex7oTghfX",
+          "slug": "swallow"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Eq9EWGK88eM4HOh8",
+          "slug": "trump-card"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TqoaCRNjoH4lGBj4",
+          "slug": "yawn"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5ORKWU9EYYyzJOaH",
+          "slug": "brine"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ",
+          "slug": "counter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5P4ZKecoBzCd8vh5",
+          "slug": "dive"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+          "slug": "earth-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DO1UIDQKBBUxPcTj",
+          "slug": "pain-split"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kxvFjyRtAzf99FIX",
+          "slug": "string-shot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DUWjQv05jUb2p6gj",
+          "slug": "whirlpool"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "shellos",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Shellos",
+  "_id": "b6UzQzaQBUoxiEmW",
+  "effects": [],
+  "sort": 70800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!b6UzQzaQBUoxiEmW"
+}

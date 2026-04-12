@@ -1,0 +1,111 @@
+{
+  "name": "Effect: Cone of Force",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Evasion -2",
+    "snippet": "Evasion -2",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.modifiers.evasion.physical.mod",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.modifiers.evasion.special.mod",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.modifiers.evasion.speed.mod",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-cone-of-force",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "vvYHstuSI4986bjM",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "scene-packer": {
+      "hash": "c8d2a228966c8c971f868e05ee9320c8efdcce85",
+      "sourceId": "Item.NjZwj2dfVnICMHX8"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1709371150457,
+    "modifiedTime": 1710851809956,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_id": "93cE7dCUpOcBP4ci",
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!93cE7dCUpOcBP4ci"
+}

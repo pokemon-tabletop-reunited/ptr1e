@@ -1,0 +1,73 @@
+{
+  "name": "Wind Runner [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain the Levitate Ability. You have a total Levitate Speed equal to 4 plus half of the higher of your Acrobatics or Perception Rank.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "GrantItem",
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.SKJicSWmXBMtgNpo",
+        "predicate": []
+      }
+    ],
+    "enabled": true,
+    "slug": "wind-runner-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Wind Runner [CR]",
+    "name": "Wind Runner [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "m4L8vSCzreUH7otz",
+  "_id": "yeun03NXy8D10auE",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1708175845421,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!yeun03NXy8D10auE"
+}

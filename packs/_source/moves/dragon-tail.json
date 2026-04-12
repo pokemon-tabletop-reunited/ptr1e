@@ -1,0 +1,78 @@
+{
+  "name": "Dragon Tail",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/DragonIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "The target is Pushed 6 meters minus their Weight Class. The target is also Tripped on 15+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.4lqKV4CxikZxxNWJ",
+        "range": "15",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "dragon-tail",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1",
+      "Push"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Dragon",
+    "category": "Physical",
+    "damageBase": "6",
+    "frequency": "At-Will",
+    "ac": "3",
+    "range": "Melee",
+    "contestType": "Smart - Big Show",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "fQxEojo3sSwnLk1q",
+  "effects": [],
+  "sort": 60600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1709370332030,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fQxEojo3sSwnLk1q"
+}

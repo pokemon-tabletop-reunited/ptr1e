@@ -1,0 +1,70 @@
+{
+  "name": "Terrain Talent Rank 1 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Each Rank, you gain two Terrain Talents, chosen from the Terrains for which you gained Naturewalk from Survivalist.\nNote: You do not have to be in the corresponding terrain to take advantage of Terrain Talents! They work everywhere.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "terrain-talent-rank-1-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+HP",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Survivalist",
+      "2 Mastered Terrains"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Survivalist [CR]",
+    "name": "Terrain Talent [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "jwSUGJETAKuub2Ws",
+  "_id": "ZDAInHhpAqghSQx3",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ZDAInHhpAqghSQx3"
+}

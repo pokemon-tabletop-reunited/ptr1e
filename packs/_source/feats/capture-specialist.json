@@ -1,0 +1,70 @@
+{
+  "name": "Capture Specialist",
+  "system": {
+    "origin": "",
+    "effect": "You gain two Capture Techniques of your choice. You must meet any prerequisites of the Technique.\nCapture Techniques: Capture Skills, Curve Ball, Devitalizing Throw, Fast Pitch, Snare, Tools of the Trade, Catch Combo, False Strike, Relentless Pursuit",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Novice Acrobatics or Athletics or Stealth or Survival",
+      "Novice Guile or Perception"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "automation": [],
+    "name": "Capture Specialist",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Acrobatics, Athletics, Stealth, or Survival at Novice; Guile, or Perception at Novice",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078856,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 68900000,
+  "_id": "zrB7GlGu51tXcR6P",
+  "_key": "!items!zrB7GlGu51tXcR6P"
+}

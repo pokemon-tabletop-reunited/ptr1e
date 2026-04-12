@@ -1,0 +1,513 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:04.470Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Zapdos is said to dwell in thunderclouds, sending bolts of lighting to the ground below. The sky turns dark and stormy everywhere it flies, and its body emits crackling noises and sparks. As it soars, its wings sparkle due to the sheer amount of electricity they hold.&nbsp; Like the other birds, Zapdos is rarely seen, and is said only to appear when thunderclouds part down the middle. It can gain power when struck by lightning bolts, both its own as well as natural ones. Because of how it becomes stronger by being around electricity, it is said to stop by at areas with large amounts of power, such as&nbsp;​power plants; sightings have been reported at the Kanto Power Plant, for example. Zapdos is also said to be linked with oceans, controlling the currents flowing beneath the waves. Legend has it that Zapdos hatched when an egg was struck by lighting at the same moment a strange silver feather landed on it from above. The dark storm clouds parted around the area as the egg hatched, and Zapdos emerged to take off into the clear sky.",
+    "number": 145,
+    "form": "",
+    "stats": {
+      "hp": 9,
+      "atk": 9,
+      "def": 9,
+      "spatk": 13,
+      "spdef": 9,
+      "spd": 10
+    },
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "pressure",
+          "uuid": "Compendium.ptu.abilities.Item.FrTjgCVwTEhGA5Sn"
+        },
+        {
+          "slug": "lightning-rod",
+          "uuid": "Compendium.ptu.abilities.Item.fZgyeYuH8xV4VnmU"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "drizzle",
+          "uuid": "Compendium.ptu.abilities.Item.r8QALyZIZbX2XI2q"
+        },
+        {
+          "slug": "keen-eye",
+          "uuid": "Compendium.ptu.abilities.Item.WZYBAssGyy370eLf"
+        }
+      ],
+      "high": [
+        {
+          "slug": "sequence",
+          "uuid": "Compendium.ptu.abilities.Item.YWRUQgKcUMBYJvAr"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.9IIezyJymnopYnda",
+        "slug": "zapdos",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.6,
+      "weight": 52.6,
+      "sizeClass": "Medium",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": -1,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": 40
+    },
+    "diet": [
+      "Omnivore"
+    ],
+    "habitats": [
+      "Mountain",
+      "Urban"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 10,
+      "swim": 5,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 3,
+      "power": 7,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "glow",
+          "uuid": "Compendium.ptu.capabilities.Item.v4OOr4KlIO0DKw5r"
+        },
+        {
+          "slug": "guster",
+          "uuid": "Compendium.ptu.capabilities.Item.St6x6ofobU8ztcts"
+        },
+        {
+          "slug": "mountable-1",
+          "uuid": "Compendium.ptu.capabilities.Item.XkFHXfisqlsZxNvQ"
+        },
+        {
+          "slug": "zapper",
+          "uuid": "Compendium.ptu.capabilities.Item.v3QyNdZYDVwlG2tY"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.NyWuI63z9ECPszTk",
+          "slug": "peck",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HhQrSZjCBL95D1zV",
+          "slug": "thunder-shock",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Hn8ikOihbzcReurJ",
+          "slug": "detect",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VCxGumWgpdoxEx9T",
+          "slug": "pluck",
+          "level": 11
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qRvLgOrsmdXEsBsU",
+          "slug": "charge",
+          "level": 18
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.aS33KlxhRCP0s5Zd",
+          "slug": "agility",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0KazDGc9T8CETH5f",
+          "slug": "discharge",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance",
+          "level": 29
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen",
+          "level": 32
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhSwAd1ySjbUSnwe",
+          "slug": "drill-peck",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder",
+          "level": 39
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ytI4ym6JnQcVWGkM",
+          "slug": "roost",
+          "level": 43
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TvQ1jJr71rELMuTc",
+          "slug": "magnetic-flux",
+          "level": 46
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xkb0LIHiVO23Vo1a",
+          "slug": "zap-cannon",
+          "level": 50
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY",
+          "slug": "roar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ytI4ym6JnQcVWGkM",
+          "slug": "roost"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XC3ObpOOy8mGk8s8",
+          "slug": "sandstorm"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.iXFRlGUw8hfFQSlm",
+          "slug": "steel-wing"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD",
+          "slug": "charge-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CZujTEpGpPnTGGB0",
+          "slug": "sky-drop"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ltI3ruaEiyhlwPjj",
+          "slug": "volt-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TA3fevwvHn8PJHEI",
+          "slug": "fly"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.idhhi7YJRDHnUUMR",
+          "slug": "wild-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p",
+          "slug": "air-cutter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DANp8m02Ocfv3esu",
+          "slug": "defog"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb",
+          "slug": "heat-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TD0L4L2JEH8VpTFW",
+          "slug": "ominous-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VCxGumWgpdoxEx9T",
+          "slug": "pluck"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Vtvj9SpaCa6X7NYK",
+          "slug": "sky-attack"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc",
+          "slug": "swift"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1WQ6vh8cbOaUzhaf",
+          "slug": "tailwind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CCtm8sYMR7X45ZwK",
+          "slug": "twister"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 5,
+        "modifier": 2,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 5,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "zapdos",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Zapdos",
+  "_id": "9IIezyJymnopYnda",
+  "effects": [],
+  "sort": 19400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!9IIezyJymnopYnda"
+}

@@ -1,0 +1,75 @@
+{
+  "folder": "8tcCd3dOnqridsEG",
+  "name": "G-Max Chi-Strike",
+  "type": "move",
+  "_id": "mZiBrLEtR00cLTdz",
+  "img": "systems/ptu/static/css/images/types2/FightingIC_Icon.png",
+  "system": {
+    "origin": "Regional Phenomena",
+    "effect": "This Move is a Critical Hit on 15+. Targets hit by the Move are Pushed 4 Meters.\nRequirement: Machamp is Gigantamaxed and has a Fighting Type Move",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "{item|id}-crit-range",
+        "value": 5
+      }
+    ],
+    "enabled": true,
+    "slug": "g-max-chi-strike",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Push",
+      "Max"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fighting",
+    "category": "Physical",
+    "damageBase": "12",
+    "frequency": "At-Will",
+    "ac": "0",
+    "range": "Close Blast 6",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1705335705709,
+    "modifiedTime": 1710852046172,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!mZiBrLEtR00cLTdz"
+}

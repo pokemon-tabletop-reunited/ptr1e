@@ -1,0 +1,491 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:10.188Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "The origins of Vanillite are unclear. In Unova folklore, children are told that they arose from icicles that were bathed in the morning sun but wished with all of their might that they would not melt. However, their bodies do not truly resemble icicles, as they have ovoid heads covered by slush. This slush is very sensitive to heat and will melt almost immediately once the ambient air temperature rises above freezing point. Touching the slush with a finger will cause it to melt at the point of contact, exposing the icy heads that they cover. To keep their slush from melting, Vanillite will sleep buried within piles of snow. It is unclear what purpose this slush serves, however. Their breaths can reach a freezing -58°F (-50°C), keeping them cloaked in frosty air; they are sometimes sent out for mere seconds in warm areas to lower temperatures. Any longer than this, however, and their icy bodies will slowly begin to shrink. Their breaths can also freeze water in the air to form snow. Casteliacones, which are sold in Castelia City, Unova, are a popular regional version of soft-serve ice cream that superficially resemble Vanillite. The design was chosen because of how Vanillite are associated with cold weather.",
+    "number": 582,
+    "form": "",
+    "stats": {
+      "hp": 4,
+      "atk": 5,
+      "def": 5,
+      "spatk": 7,
+      "spdef": 6,
+      "spd": 5
+    },
+    "types": [
+      "Ice"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "ice-body",
+          "uuid": "Compendium.ptu.abilities.Item.frxDUj1Z8z3I7HHm"
+        },
+        {
+          "slug": "snow-cloak",
+          "uuid": "Compendium.ptu.abilities.Item.XGOKQvMtgXTgrckF"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "weak-armor",
+          "uuid": "Compendium.ptu.abilities.Item.Biwc7xoa5cREFAE1"
+        },
+        {
+          "slug": "winters-kiss",
+          "uuid": "Compendium.ptu.abilities.Item.ysdI7l7jNsUsmsqt"
+        }
+      ],
+      "high": [
+        {
+          "slug": "clear-body",
+          "uuid": "Compendium.ptu.abilities.Item.SgZgmNYHuMbt7JF2"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.sX6muGQOfL4SePp0",
+        "slug": "vanillite",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.bwfqPV4jAUNI4Vy1",
+        "slug": "vanillish",
+        "level": 20,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.9lLGWicAgFVgT4Wo",
+        "slug": "vanilluxe",
+        "level": 35,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.4,
+      "weight": 5.7,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Mineral"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Terravore"
+    ],
+    "habitats": [
+      "Cave",
+      "Taiga",
+      "Tundra"
+    ],
+    "capabilities": {
+      "overland": 3,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 4,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 1,
+      "naturewalk": [
+        "Tundra"
+      ],
+      "other": [
+        {
+          "slug": "chilled",
+          "uuid": "Compendium.ptu.capabilities.Item.4RJFVQvf9t70YWI3"
+        },
+        {
+          "slug": "freezer",
+          "uuid": "Compendium.ptu.capabilities.Item.O0LMo4PRnTk008ds"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.xnllnYlK5CBzHzne",
+          "slug": "icicle-spear",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Mw6vBLeHYty112VS",
+          "slug": "harden",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VtkRa05N67wR9RcG",
+          "slug": "astonish",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+          "slug": "uproar",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uaOHYAjzdGsqGBJ0",
+          "slug": "mist",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UcNQuMWgO1s8OxcP",
+          "slug": "avalanche",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.hhrt3v2JFeROi3w8",
+          "slug": "mirror-shot",
+          "level": 26
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.joCaLnLmgcLh36ym",
+          "slug": "acid-armor",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam",
+          "level": 35
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.70ikTYAJeGbsEN9K",
+          "slug": "mirror-coat",
+          "level": 44
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard",
+          "level": 49
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.enDcfNIF6u9ZPOkV",
+          "slug": "sheer-cold",
+          "level": 53
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uZ5eUCeStPObSEHj",
+          "slug": "explosion"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nM8DQhM6b8g5KZyy",
+          "slug": "frost-breath"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.926T6mncd7CobCCr",
+          "slug": "flash-cannon"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.ZJvARZqHBE6REWnp",
+          "slug": "autotomize"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SUduMarNZi7p42fG",
+          "slug": "ice-shard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmcnLyXMgD9aKb21",
+          "slug": "imprison"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.N0EkteKIFV2WtAJ6",
+          "slug": "magnet-rise"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rkPaIX8nSuJmwQiC",
+          "slug": "natural-gift"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.l4TzdGjtPZHycF5b",
+          "slug": "powder-snow"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFyiKFMmD0rwvIl7",
+          "slug": "ally-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qfZVvzSa9Pytij7O",
+          "slug": "magic-coat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.N0EkteKIFV2WtAJ6",
+          "slug": "magnet-rise"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+          "slug": "uproar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 2,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": -1,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "vanillite",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Vanillite",
+  "_id": "sX6muGQOfL4SePp0",
+  "effects": [],
+  "sort": 101400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!sX6muGQOfL4SePp0"
+}

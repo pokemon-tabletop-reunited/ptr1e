@@ -1,0 +1,64 @@
+{
+  "name": "Ride as One [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: While you are Mounted, you and your Mount each use the highest of each other’s Speed Evasion. If both you and your Mount have the same Speed Evasion, you instead each receive a +1 bonus to Speed Evasion. Whenever one of you receives Initiative, either of you may take your turn. When the next person would receive initiative, the person that did not take their turn then takes it.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Rider"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Rider [CR]",
+    "name": "Ride as One [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "3tqdXgsWtyq6Ai5Q",
+  "_id": "2nvYzyfEhIv6Ilb5",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2nvYzyfEhIv6Ilb5"
+}

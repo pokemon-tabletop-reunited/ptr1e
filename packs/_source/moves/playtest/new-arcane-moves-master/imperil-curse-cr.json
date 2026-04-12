@@ -1,0 +1,85 @@
+{
+  "folder": "tpnj35nZR172ENQ2",
+  "name": "Imperil Curse [CR]",
+  "type": "move",
+  "img": "systems/ptu/static/css/images/types2/NormalIC_Icon.png",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: If Imperil Curse hits, all legal targets become Vulnerable for 1 full round. On 17+, Imperil Curse Suppresses all legal targets.\nLimitation: None",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.wqzPWKMbwvOWLVoI",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.uxkB2vhF5HGjQAZY",
+        "range": "17",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "imperil-curse-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 2"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Normal",
+    "category": "Special",
+    "damageBase": "6",
+    "frequency": "Scene x2",
+    "ac": "4",
+    "range": "WR",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1699701779793,
+    "modifiedTime": 1710850548415,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "9m8HrDwvIQ4zwsUW",
+  "_key": "!items!9m8HrDwvIQ4zwsUW"
+}

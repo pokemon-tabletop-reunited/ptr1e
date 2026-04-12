@@ -1,0 +1,107 @@
+{
+  "name": "Effect: Default Combat Stage",
+  "type": "effect",
+  "img": "systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Increases the default combat stage of the chosen stat by +1. ",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "default",
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "Attack +1",
+            "value": "system.stats.atk.stage.mod"
+          },
+          {
+            "label": "Defense +1",
+            "value": "system.stats.def.stage.mod"
+          },
+          {
+            "label": "Special Attack +1",
+            "value": "system.stats.spatk.stage.mod"
+          },
+          {
+            "label": "Special Defense +1",
+            "value": "system.stats.spdef.stage.mod"
+          },
+          {
+            "label": "Speed +1",
+            "value": "system.stats.spd.stage.mod"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "{item|flags.ptu.rulesSelections.default}",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-default-combat-stage",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "UjuxQCHI76TeZxb7",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_id": "B28ejoG9fROULnvd",
+  "sort": 300000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1709371479511,
+    "modifiedTime": 1710853989325,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "co-prep",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.0"
+    }
+  },
+  "_key": "!items!B28ejoG9fROULnvd"
+}

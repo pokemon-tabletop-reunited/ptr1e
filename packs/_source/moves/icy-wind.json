@@ -1,0 +1,77 @@
+{
+  "name": "Icy Wind",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/IceIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "All Legal Targets have their Speed lowered 1 Combat Stage.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.XBde5nFeK2gNVXzg",
+        "range": "1",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "icy-wind",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.XBde5nFeK2gNVXzg",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Wind"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Ice",
+    "category": "Special",
+    "damageBase": "6",
+    "frequency": "EOT",
+    "ac": "3",
+    "range": "Cone 2",
+    "contestType": "Beauty - Desperation",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "OI05tbugvNMMOqmc",
+  "effects": [],
+  "sort": 32600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710785086755,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OI05tbugvNMMOqmc"
+}

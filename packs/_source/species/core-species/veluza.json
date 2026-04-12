@@ -1,0 +1,604 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "dexentry": "",
+    "number": 976,
+    "form": "",
+    "stats": {
+      "hp": 9,
+      "atk": 10,
+      "def": 7,
+      "spatk": 8,
+      "spdef": 7,
+      "spd": 7
+    },
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "swift-swim",
+          "uuid": "Compendium.ptu.abilities.Item.RK51P3bQWpC6Ioz2"
+        },
+        {
+          "slug": "shed-skin",
+          "uuid": "Compendium.ptu.abilities.Item.pWARd2idBLFnfGi5"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "sharpness",
+          "uuid": "Compendium.ptu.abilities.Item.w6V93SHSUDI2I348"
+        },
+        {
+          "slug": "mold-breaker",
+          "uuid": "Compendium.ptu.abilities.Item.XUKqSH4Bt2Ofps47"
+        }
+      ],
+      "high": [
+        {
+          "slug": "regenerator",
+          "uuid": "Compendium.ptu.abilities.Item.eIl3V6VvOoYYiIAJ"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.8H7JVkcCwHkYc3MV",
+        "slug": "veluza",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 2.5,
+      "weight": 90,
+      "sizeClass": "Large",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Water 2"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Freshwater",
+      "Ocean"
+    ],
+    "capabilities": {
+      "overland": 4,
+      "sky": 0,
+      "swim": 11,
+      "levitate": 4,
+      "burrow": 0,
+      "highJump": 4,
+      "longJump": 4,
+      "power": 7,
+      "naturewalk": [
+        "Ocean"
+      ],
+      "other": [
+        {
+          "slug": "gilled",
+          "uuid": "Compendium.ptu.capabilities.Item.Sr5UjqsO8FydTuNw"
+        },
+        {
+          "slug": "telekinetic",
+          "uuid": "Compendium.ptu.capabilities.Item.bYwetISXI1HZMl3M"
+        },
+        {
+          "slug": "fountain",
+          "uuid": "Compendium.ptu.capabilities.Item.ut911FJQTWb21u98"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Htb3LXoNd24yFNEG",
+          "slug": "aqua-jet",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0T6UdFilX3WHVIyg",
+          "slug": "sharpen",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VCxGumWgpdoxEx9T",
+          "slug": "pluck",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4zyVHZ1t6PJsYzGX",
+          "slug": "pursuit",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TbqvNIqswHYAVHOW",
+          "slug": "focus-energy",
+          "level": 11
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse",
+          "level": 14
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UkCThqEzC82ABM7h",
+          "slug": "cut",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QMaJ91E3XBatUcV9",
+          "slug": "bite",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Hu61b2V3edzwrS1L",
+          "slug": "flip-turn",
+          "level": 20
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.3OlN4vy8m6QbHNYo",
+          "slug": "psycho-cut",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sm3q5D8SkQcEmiGB",
+          "slug": "slash",
+          "level": 24
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rfFmMC7BlgtCXFQX",
+          "slug": "aqua-cutter",
+          "level": 27
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gM7gVgpQ2BHbc9g6",
+          "slug": "fillet-away",
+          "level": 30
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WRDjP0nlxlzd20a5",
+          "slug": "night-slash",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IMGBHyWLtSo8MbTl",
+          "slug": "psychic-fangs",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.iRpfWZ1PSCAeyUEX",
+          "slug": "liquidation",
+          "level": 39
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ZJvARZqHBE6REWnp",
+          "slug": "autotomize",
+          "level": 42
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5uY1ltFWijN07CKe",
+          "slug": "crunch",
+          "level": 45
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.L0dp4EW2HVwYI8kd",
+          "slug": "final-gambit",
+          "level": 48
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fTu9Cq4z0G7PDH2x",
+          "slug": "calm-mind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs",
+          "slug": "psychic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.iXFRlGUw8hfFQSlm",
+          "slug": "steel-wing"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DfuvLNHQ0TBVgPN4",
+          "slug": "false-swipe"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU",
+          "slug": "scald"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s",
+          "slug": "surf"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN",
+          "slug": "waterfall"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.aS33KlxhRCP0s5Zd",
+          "slug": "agility"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IRGZ3Cc7WrqjhF9u",
+          "slug": "scary-face"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P5vnPuSAjEqGKcHK",
+          "slug": "psybeam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky",
+          "slug": "confuse-ray"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Mh5MHyCuN80yItfC",
+          "slug": "chilling-water"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc",
+          "slug": "swift"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Gma6FE34GAXWT2Ib",
+          "slug": "stored-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx",
+          "slug": "zen-headbutt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmcnLyXMgD9aKb21",
+          "slug": "imprison"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PljheBBLgIqBu5GY",
+          "slug": "ice-spinner"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0JDFAZ8Q0rDKNodB",
+          "slug": "amnesia"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ZUrSRt9zs9UJZgJG",
+          "slug": "psychic-terrain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z0iMHqLi2ctCy2nb",
+          "slug": "nasty-plot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oRu76Vk1LfE93pky",
+          "slug": "hydro-pump"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PVOl5xnPtVbzUzVm",
+          "slug": "tera-blast"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.UqFpnMAAoEOqvUDj",
+          "slug": "aurora-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IWQXKwgnyM2CvDLV",
+          "slug": "flail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0tSaC3HxBUs2yleI",
+          "slug": "psywave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qJILuzcs4SDgylfD",
+          "slug": "recover"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.czDZWjn9TbP9ON4q",
+          "slug": "thrash"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.rfFmMC7BlgtCXFQX",
+          "slug": "aqua-cutter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dwKfen4bsSh3Q640",
+          "slug": "barrier"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SJgQHdeEdZ98BPbU",
+          "slug": "ceaseless-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB",
+          "slug": "covet"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5P4ZKecoBzCd8vh5",
+          "slug": "dive"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YWFFDr5Ul470Pnyp",
+          "slug": "fake-out"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TbqvNIqswHYAVHOW",
+          "slug": "focus-energy"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.LkpfF5gcUddBm8CS",
+          "slug": "moonblast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OijK9459N1YEnF1Y",
+          "slug": "razor-shell"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 5,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 5,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "veluza",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "type": {
+      "0": "Water",
+      "1": "Psychic",
+      "2": ""
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Veluza",
+  "_id": "8H7JVkcCwHkYc3MV",
+  "effects": [],
+  "sort": 17700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1693120305329,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8H7JVkcCwHkYc3MV"
+}

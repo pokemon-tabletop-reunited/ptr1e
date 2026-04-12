@@ -1,0 +1,536 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:07.589Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 3097,
+    "form": "",
+    "stats": {
+      "hp": 9,
+      "atk": 12,
+      "def": 8,
+      "spatk": 5,
+      "spdef": 5,
+      "spd": 11
+    },
+    "types": [
+      "Water",
+      "Steel"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "inner-focus",
+          "uuid": "Compendium.ptu.abilities.Item.uM561WHxXwcdrMWl"
+        },
+        {
+          "slug": "swift-swim",
+          "uuid": "Compendium.ptu.abilities.Item.RK51P3bQWpC6Ioz2"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "sheer-force",
+          "uuid": "Compendium.ptu.abilities.Item.f2Wd9jSdqyZfsv7r"
+        },
+        {
+          "slug": "infiltrator",
+          "uuid": "Compendium.ptu.abilities.Item.9nkIfAs2uDYCUGfb"
+        }
+      ],
+      "high": [
+        {
+          "slug": "dodge",
+          "uuid": "Compendium.ptu.abilities.Item.TAtIrb9iZKJLUtQT"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.ZXgTa5Td6rYKzBGa",
+        "slug": "frynai",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.80Jowfbo6bAsA38Q",
+        "slug": "saidine",
+        "level": 20,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.X5IRZVuL6RVePhk3",
+        "slug": "daikatuna",
+        "level": 35,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.8,
+      "weight": 53.8,
+      "sizeClass": "Medium",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Water 2"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Ocean"
+    ],
+    "capabilities": {
+      "overland": 6,
+      "sky": 0,
+      "swim": 8,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 3,
+      "longJump": 3,
+      "power": 6,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "darkvision",
+          "uuid": "Compendium.ptu.capabilities.Item.zzJWpOj40dLelBm5"
+        },
+        {
+          "slug": "gilled",
+          "uuid": "Compendium.ptu.capabilities.Item.Sr5UjqsO8FydTuNw"
+        },
+        {
+          "slug": "stealth",
+          "uuid": "Compendium.ptu.capabilities.Item.a1N1M1GMjMClaOdj"
+        },
+        {
+          "slug": "wielder",
+          "uuid": "Compendium.ptu.capabilities.Item.TCK4KX0iwhgf1PGe"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "quick-attack",
+          "uuid": "Compendium.ptu.moves.Item.oVue0OGsxZn0kQGX",
+          "level": 4
+        },
+        {
+          "slug": "water-gun",
+          "uuid": "Compendium.ptu.moves.Item.rYLmG0KWrwYOCkmR",
+          "level": 8
+        },
+        {
+          "slug": "swords-dance",
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "level": 11
+        },
+        {
+          "slug": "slash",
+          "uuid": "Compendium.ptu.moves.Item.sm3q5D8SkQcEmiGB",
+          "level": 15
+        },
+        {
+          "slug": "metal-claw",
+          "uuid": "Compendium.ptu.moves.Item.XkiKEwN1gZtlAkUi",
+          "level": 16
+        },
+        {
+          "slug": "aqua-jet",
+          "uuid": "Compendium.ptu.moves.Item.Htb3LXoNd24yFNEG",
+          "level": 19
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "level": 24
+        },
+        {
+          "slug": "fury-swipes",
+          "uuid": "Compendium.ptu.moves.Item.kBtOW4lhbgV3tltJ",
+          "level": 28
+        },
+        {
+          "slug": "aqua-tail",
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B",
+          "level": 33
+        },
+        {
+          "slug": "feint-attack",
+          "uuid": "Compendium.ptu.moves.Item.16Ij0HJODJxOy5j9",
+          "level": 36
+        },
+        {
+          "slug": "iron-tail",
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "level": 39
+        },
+        {
+          "slug": "x-scissor",
+          "uuid": "Compendium.ptu.moves.Item.oxBlIL3xxTpZFy8u",
+          "level": 46
+        },
+        {
+          "slug": "iron-head",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "level": 50
+        },
+        {
+          "slug": "agility",
+          "uuid": "Compendium.ptu.moves.Item.aS33KlxhRCP0s5Zd",
+          "level": 52
+        },
+        {
+          "slug": "night-slash",
+          "uuid": "Compendium.ptu.moves.Item.WRDjP0nlxlzd20a5",
+          "level": 59
+        },
+        {
+          "slug": "hydro-pump",
+          "uuid": "Compendium.ptu.moves.Item.oRu76Vk1LfE93pky",
+          "level": 61
+        }
+      ],
+      "machine": [
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "sunny-day",
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+        },
+        {
+          "slug": "taunt",
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN"
+        },
+        {
+          "slug": "hyper-beam",
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "rain-dance",
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "earthquake",
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "brick-break",
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "aerial-ace",
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP"
+        },
+        {
+          "slug": "torment",
+          "uuid": "Compendium.ptu.moves.Item.zgeymOL0WIKgT6lq"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "thief",
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "false-swipe",
+          "uuid": "Compendium.ptu.moves.Item.DfuvLNHQ0TBVgPN4"
+        },
+        {
+          "slug": "scald",
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU"
+        },
+        {
+          "slug": "fling",
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6"
+        },
+        {
+          "slug": "shadow-claw",
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr"
+        },
+        {
+          "slug": "payback",
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0"
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK"
+        },
+        {
+          "slug": "rock-polish",
+          "uuid": "Compendium.ptu.moves.Item.7M8aaHfxabHTcwau"
+        },
+        {
+          "slug": "gyro-ball",
+          "uuid": "Compendium.ptu.moves.Item.jn8ej4sQ6o2PuUJx"
+        },
+        {
+          "slug": "swords-dance",
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800"
+        },
+        {
+          "slug": "x-scissor",
+          "uuid": "Compendium.ptu.moves.Item.oxBlIL3xxTpZFy8u"
+        },
+        {
+          "slug": "poison-jab",
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "flash-cannon",
+          "uuid": "Compendium.ptu.moves.Item.926T6mncd7CobCCr"
+        },
+        {
+          "slug": "surf",
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s"
+        },
+        {
+          "slug": "waterfall",
+          "uuid": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN"
+        },
+        {
+          "slug": "confide",
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "slug": "aqua-tail",
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B"
+        },
+        {
+          "slug": "brine",
+          "uuid": "Compendium.ptu.moves.Item.5ORKWU9EYYyzJOaH"
+        },
+        {
+          "slug": "dive",
+          "uuid": "Compendium.ptu.moves.Item.5P4ZKecoBzCd8vh5"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "focus-punch",
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv"
+        },
+        {
+          "slug": "foul-play",
+          "uuid": "Compendium.ptu.moves.Item.ckL9G6vvS6TUl57i"
+        },
+        {
+          "slug": "iron-defense",
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF"
+        },
+        {
+          "slug": "iron-head-n",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN"
+        },
+        {
+          "slug": "iron-tail",
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb"
+        },
+        {
+          "slug": "night-slash-n",
+          "uuid": "Compendium.ptu.moves.Item.WRDjP0nlxlzd20a5"
+        },
+        {
+          "slug": "snatch",
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT"
+        },
+        {
+          "slug": "throat-chop",
+          "uuid": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF"
+        },
+        {
+          "slug": "water-pulse",
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 6,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "daikatuna",
+    "rules": [],
+    "source": {
+      "value": "Fangame Uranium Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "eBzxHM3RlUyuiO0g",
+  "name": "Daikatuna",
+  "_id": "X5IRZVuL6RVePhk3",
+  "effects": [],
+  "sort": 8200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!X5IRZVuL6RVePhk3"
+}

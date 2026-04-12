@@ -1,0 +1,129 @@
+{
+  "name": "Effect: Springtide Storm (Incarnate))",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "+1 All Stats CS",
+    "snippet": "+1 All Stats CS",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spatk.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spdef.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spd.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.atk.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.def.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-springtide-storm-incarnate",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "A1BMh0oUl6hmIRqv",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "scene-packer": {
+      "hash": "14b36d6221c311066e732a71a534b4d6d417e2ae",
+      "sourceId": "Item.0gYGeX4pMXRjvx8a"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "VpHLQKjdMiwwVGRQ",
+  "sort": 100000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "createdTime": 1709371146587,
+    "modifiedTime": 1709371147253,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.1"
+    }
+  },
+  "_key": "!items!VpHLQKjdMiwwVGRQ"
+}

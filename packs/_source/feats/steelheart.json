@@ -1,0 +1,69 @@
+{
+  "name": "Steelheart",
+  "system": {
+    "origin": "",
+    "effect": "When wielding metal Melee Weapons, you may use Athletics or Focus instead of Combat to determine the Damage Base of your Struggle Attacks, to qualify for a Weapon’s Moves, and to resist Disarm Checks. Whenever your Weapon Attacks hit a foe who has previously hit you with a Melee attack in the same round, the foe loses a Tick of Hit Points.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Defense",
+      "Weapon"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Steel)",
+      "Novice Athletics",
+      "Novice Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Steelheart",
+    "automation": [],
+    "name": "Steelheart",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Elemental Connection (Steel), Novice Athletics, Novice Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081692,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 34900000,
+  "_id": "VuEwIKckzSoKMxvs",
+  "_key": "!items!VuEwIKckzSoKMxvs"
+}

@@ -1,0 +1,532 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:05.744Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Arbok are vicious hunters--and vengeful ones at that. If attacked, they will chase down opponents relentlessly until they catch them. Arbok are masters of intimidation. The patterns on their bellies can paralyze foes in fear. These belly patterns differs from area to area. If the patterns alone are insufficient, they can also make eerie hissing noises by expelling air slowly from their mouths. Once their prey are immobilized, Arbok will constrict them with a crushing force able to flatten steel oil drums. They can easily poison stronger foes, weakening them enough for them to constrict easily.&nbsp;​Surprisingly, Arbok are rather adept swimmers as well, capable of crossing lakes and rivers effortlessly. Notably, Arbok seem to become mesmerized and peaceful upon hearing the sound of wind instruments like Poké Flutes. An Arbok in the middle of constricting its prey will even loosen its grip upon hearing such sounds. Because of this, Poké Flutes have become one of the most reliable ways to deal with aggressive Arbok, with some cultures even developing performances out of the art.",
+    "number": 24,
+    "form": "",
+    "stats": {
+      "hp": 6,
+      "atk": 10,
+      "def": 7,
+      "spatk": 7,
+      "spdef": 8,
+      "spd": 8
+    },
+    "types": [
+      "Poison"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "shed-skin",
+          "uuid": "Compendium.ptu.abilities.Item.pWARd2idBLFnfGi5"
+        },
+        {
+          "slug": "intimidate",
+          "uuid": "Compendium.ptu.abilities.Item.NnYU42v8Ge5lmPQF"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "serpents-mark",
+          "uuid": "Compendium.ptu.abilities.Item.OKYrWl8UkVEub2n6"
+        },
+        {
+          "slug": "serpents-mark",
+          "uuid": "Compendium.ptu.abilities.Item.OKYrWl8UkVEub2n6"
+        }
+      ],
+      "high": [
+        {
+          "slug": "serpents-mark",
+          "uuid": "Compendium.ptu.abilities.Item.OKYrWl8UkVEub2n6"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.8YJiFSF29HFr69QU",
+        "slug": "ekans",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 20,
+        "uuid": "Compendium.ptu.species.Item.KHUUSzLEi6WfYaZW",
+        "slug": "arbok",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 3.5,
+      "weight": 65,
+      "sizeClass": "Large",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field",
+        "Dragon"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Forest",
+      "Grassland",
+      "Marsh"
+    ],
+    "capabilities": {
+      "overland": 6,
+      "sky": 0,
+      "swim": 4,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 2,
+      "power": 3,
+      "naturewalk": [
+        "Grassland"
+      ],
+      "other": [
+        {
+          "slug": "darkvision",
+          "uuid": "Compendium.ptu.capabilities.Item.zzJWpOj40dLelBm5"
+        },
+        {
+          "slug": "stealth",
+          "uuid": "Compendium.ptu.capabilities.Item.a1N1M1GMjMClaOdj"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.5uY1ltFWijN07CKe",
+          "slug": "crunch",
+          "level": "Evo"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Zy5IjFmrIxowfntS",
+          "slug": "poison-sting",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QMaJ91E3XBatUcV9",
+          "slug": "bite",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VUD1mCjhImVmtttd",
+          "slug": "glare",
+          "level": 12
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TD9T2QEalKGQZicp",
+          "slug": "screech",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Rj7PzPVf9YeEn5mG",
+          "slug": "acid",
+          "level": 20
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.srUwReOeuVGAPTa5",
+          "slug": "spit-up",
+          "level": 27
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VTgi7fLjJYUtu8GT",
+          "slug": "stockpile",
+          "level": 27
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CbxiHzGex7oTghfX",
+          "slug": "swallow",
+          "level": 27
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kbFCQpaR2tvABKMa",
+          "slug": "acid-spray",
+          "level": 32
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BAmSs75wp3OsvF8d",
+          "slug": "mud-bomb",
+          "level": 39
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MDlLKeBdiKEtjK3o",
+          "slug": "gastro-acid",
+          "level": 44
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sv18it1VOb2zM9Gd",
+          "slug": "belch",
+          "level": 48
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xOwF6QzLLB5POWAK",
+          "slug": "haze",
+          "level": 51
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.yCI1ct0Zqqt1KLeZ",
+          "slug": "coil",
+          "level": 56
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WBkN88g7D8ruzV02",
+          "slug": "gunk-shot",
+          "level": 63
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "slug": "venoshock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "slug": "earthquake"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HisedpFvMgmEqsbV",
+          "slug": "sludge-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5",
+          "slug": "sludge-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zgeymOL0WIKgT6lq",
+          "slug": "torment"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MrGSomQEncQd3zt6",
+          "slug": "brutal-swing"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fQxEojo3sSwnLk1q",
+          "slug": "dragon-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0",
+          "slug": "infestation"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625",
+          "slug": "poison-jab"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B",
+          "slug": "aqua-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nzd3auiq1JwJFmCb",
+          "slug": "bind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QDqTpQ7sJUvhU2v4",
+          "slug": "fire-fang-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MDlLKeBdiKEtjK3o",
+          "slug": "gastro-acid"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+          "slug": "giga-drain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WBkN88g7D8ruzV02",
+          "slug": "gunk-shot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uGIN68MryZnqXa5w",
+          "slug": "ice-fang-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU",
+          "slug": "seed-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2sgLgahHycXD5OuT",
+          "slug": "stomping-tantrum"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF",
+          "slug": "throat-chop"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.FWdcrF4mgW14bOCZ",
+          "slug": "thunder-fang-n"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 2,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "arbok",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "type": {
+      "0": "Poison",
+      "1": ""
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Arbok",
+  "_id": "KHUUSzLEi6WfYaZW",
+  "effects": [],
+  "sort": 40200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!KHUUSzLEi6WfYaZW"
+}

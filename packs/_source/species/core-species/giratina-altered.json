@@ -1,0 +1,589 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:09.963Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "In Sinnoh mythology, Arceus created Giratina alongside Dialga and Palkia. It is often excluded when discussing Sinnoh’s major deities, however; according to legend, it was banished into a warped dimension completely opposite of ours for some unknown act of violence. This dimension is referred to as the Distortion (or Reverse, in some texts) World. Giratina is said to take a different, freer form in this dimension, known as its Origin Forme. The stronger gravity of our world is thought to place confines on Giratina, forcing it to transform into a more restricted form known as its Altered Forme; an artifact known as the Griseous Orb is said to allow it to retain its Origin Forme in this world. Giratina appears to have a connection with death, often seen in visions by people visiting cemeteries. It also is believed to be able to use reflective objects as portals between dimensions. Though rarely mentioned in legends, the few myths that do refer to it describe it as spending eternity gazing enviously into this world and its inhabitants.",
+    "number": 487,
+    "form": "",
+    "stats": {
+      "hp": 15,
+      "atk": 10,
+      "def": 12,
+      "spatk": 10,
+      "spdef": 12,
+      "spd": 9
+    },
+    "types": [
+      "Ghost",
+      "Dragon"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "pressure",
+          "uuid": "Compendium.ptu.abilities.Item.FrTjgCVwTEhGA5Sn"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "bully",
+          "uuid": "Compendium.ptu.abilities.Item.77wWcWPZRDWaq8Dh"
+        },
+        {
+          "slug": "telepathy",
+          "uuid": "Compendium.ptu.abilities.Item.KHtzAPwDaGBwCn5l"
+        },
+        {
+          "slug": "prime-fury",
+          "uuid": "Compendium.ptu.abilities.Item.aOBGGKUF5d2oGykz"
+        }
+      ],
+      "high": [
+        {
+          "slug": "soulstealer",
+          "uuid": "Compendium.ptu.abilities.Item.0xUM2GkCAMVjrJ1T"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.qUwJZNvKAWd8Y9DR",
+        "slug": "giratina-altered",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 4.5,
+      "weight": 750,
+      "sizeClass": "Gigantic",
+      "weightClass": 6
+    },
+    "breeding": {
+      "genderRatio": -1,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": 75
+    },
+    "diet": [
+      "Omnivore"
+    ],
+    "habitats": [
+      "Non-Space"
+    ],
+    "capabilities": {
+      "overland": 7,
+      "sky": 10,
+      "swim": 7,
+      "levitate": 0,
+      "burrow": 3,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 14,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "aura-reader",
+          "uuid": "Compendium.ptu.capabilities.Item.TtY94KGl4bDY1e0b"
+        },
+        {
+          "slug": "darkvision",
+          "uuid": "Compendium.ptu.capabilities.Item.zzJWpOj40dLelBm5"
+        },
+        {
+          "slug": "forme-change",
+          "uuid": "Compendium.ptu.capabilities.Item.DECg3tjK13ZVqe1b"
+        },
+        {
+          "slug": "mountable-2",
+          "uuid": "Compendium.ptu.capabilities.Item.XkFHXfisqlsZxNvQ"
+        },
+        {
+          "slug": "origin-forme",
+          "uuid": "Compendium.ptu.capabilities.Item.aJkDk9xPLVyxdQ2u"
+        },
+        {
+          "slug": "telekinetic",
+          "uuid": "Compendium.ptu.capabilities.Item.bYwetISXI1HZMl3M"
+        },
+        {
+          "slug": "telepath",
+          "uuid": "Compendium.ptu.capabilities.Item.Qy7Cft4o4FAbHQ8G"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.sEpnYIBn1Bkm9ZXd",
+          "slug": "dragon-breath",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IRGZ3Cc7WrqjhF9u",
+          "slug": "scary-face",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TD0L4L2JEH8VpTFW",
+          "slug": "ominous-wind",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sm3q5D8SkQcEmiGB",
+          "slug": "slash",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ShchrVmRnyokSkTh",
+          "slug": "shadow-sneak",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jam3Tqd8arclLpHn",
+          "slug": "destiny-bond",
+          "level": 24
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ulXmidTSzjPqUrfI",
+          "slug": "dragon-claw",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+          "slug": "earth-power",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gYkmoTL90zOWT5lv",
+          "slug": "aura-sphere",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw",
+          "level": 42
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TF2YIHXE7NHYPU6J",
+          "slug": "shadow-force",
+          "level": 46
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XbAfCHhH425Ldmj4",
+          "slug": "hex",
+          "level": 50
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.ulXmidTSzjPqUrfI",
+          "slug": "dragon-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fTu9Cq4z0G7PDH2x",
+          "slug": "calm-mind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY",
+          "slug": "roar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0",
+          "slug": "safeguard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "slug": "earthquake"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs",
+          "slug": "psychic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.iXFRlGUw8hfFQSlm",
+          "slug": "steel-wing"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup",
+          "slug": "energy-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD",
+          "slug": "charge-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MrGSomQEncQd3zt6",
+          "slug": "brutal-swing"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut",
+          "slug": "stone-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TA3fevwvHn8PJHEI",
+          "slug": "fly"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fQxEojo3sSwnLk1q",
+          "slug": "dragon-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0",
+          "slug": "dream-eater"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf",
+          "slug": "dark-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p",
+          "slug": "air-cutter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B",
+          "slug": "aqua-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DANp8m02Ocfv3esu",
+          "slug": "defog"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFGQXQGO2EeO8mpK",
+          "slug": "draco-meteor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+          "slug": "earth-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4W8tzNRKdmn0WRYd",
+          "slug": "fury-cutter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IuGk58XiaSA0Gypi",
+          "slug": "gravity"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD",
+          "slug": "hyper-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "slug": "iron-head"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TD0L4L2JEH8VpTFW",
+          "slug": "ominous-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L",
+          "slug": "outrage"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DO1UIDQKBBUxPcTj",
+          "slug": "pain-split"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX",
+          "slug": "role-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UrSzOSXlBYKS4JvG",
+          "slug": "silver-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+          "slug": "spite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc",
+          "slug": "swift"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tNexDVIwrtPBsV0u",
+          "slug": "telekinesis"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CCtm8sYMR7X45ZwK",
+          "slug": "twister"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 6,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 5,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 5,
+        "modifier": 2,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 5,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "giratina-altered",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Giratina-Altered",
+  "_id": "qUwJZNvKAWd8Y9DR",
+  "effects": [],
+  "sort": 97800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qUwJZNvKAWd8Y9DR"
+}

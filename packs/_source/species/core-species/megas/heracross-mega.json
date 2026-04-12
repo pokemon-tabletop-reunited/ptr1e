@@ -1,0 +1,573 @@
+{
+  "name": "Heracross-Mega",
+  "type": "species",
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:09.532Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Heracross live within forests, feeding on tree sap and honey. Their most famous features are their large horns, which they use to defend themselves from foes. In battle, Heracross can use their horns to toss foes far away. They dig their sharp claws into tree bark before slipping under the grasps of enemies and sliding their horns underneath. Then, they throw their foes with forces capable of moving objects over a 100 times their body weight. Alternatively, they may charge at foes to frighten them before tossing them away. Heracross take strong pride in their horns. When fighting for territory, dominance or mates, Heracross will engage in duels, horns against horns. The individuals with the larger horns generally emerge as the victors. In Alola, they also compete with Vikavolt in addition to other Heracross. Their exoskeletons are very tough, able to withstand even the strongest blows. Heracross are very docile Pokémon, content doing nothing more than eating tree sap all day. However, they will quickly become aggressive should something interrupt their feeding, and will charge relentlessly at distractions with their horn. Though capable of flight, they are clumsy in the air and can only stay aloft for short periods of time.",
+    "number": 214,
+    "form": "",
+    "stats": {
+      "hp": 8,
+      "atk": 19,
+      "def": 12,
+      "spatk": 4,
+      "spdef": 11,
+      "spd": 8
+    },
+    "types": [
+      "Bug",
+      "Fighting"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "guts",
+          "uuid": "Compendium.ptu.abilities.Item.MmN3OuS0wuIjvAWR"
+        },
+        {
+          "slug": "swarm",
+          "uuid": "Compendium.ptu.abilities.Item.GQxRmCCwljxUs0Lj"
+        },
+        {
+          "slug": "skill-link",
+          "uuid": "Compendium.ptu.abilities.Item.1eHAkLt91Wb7wU6u"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "moxie",
+          "uuid": "Compendium.ptu.abilities.Item.LKlXsNHcGUO0NVKe"
+        },
+        {
+          "slug": "sap-sipper",
+          "uuid": "Compendium.ptu.abilities.Item.vKXX0T04RnD0Olx5"
+        }
+      ],
+      "high": [
+        {
+          "slug": "parry",
+          "uuid": "Compendium.ptu.abilities.Item.jbw03WAPa9wuHCBX"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.nbCoxtfRIJawthBO",
+        "slug": "heracross",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 1.5,
+      "weight": 54,
+      "sizeClass": "Medium",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Bug"
+      ],
+      "hatchRate": 13
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Forest",
+      "Rainforest"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 4,
+      "swim": 3,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 8,
+      "naturewalk": "",
+      "other": []
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.sP4zLbwVgUQyO2Sp",
+          "slug": "horn-attack",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XQOEuOenSzYNz4eO",
+          "slug": "leer",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ",
+          "slug": "endure",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0LzmFA1iAyCrMaqh",
+          "slug": "feint",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jA1lUJTWb7izUm2l",
+          "slug": "chip-away",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ",
+          "slug": "counter",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dmfUspd2RR1hlXmU",
+          "slug": "fury-attack",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zQDRgnFwCOuGBf1r",
+          "slug": "pin-missile",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down",
+          "level": 34
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.StGpIzCBfyxbhlSv",
+          "slug": "megahorn",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7CkvaKCsI8Oyb3LO",
+          "slug": "close-combat",
+          "level": 43
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ekstCWqmGpJSMLj1",
+          "slug": "reversal",
+          "level": 46
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.du6VccHCQ2VjQ0D8",
+          "slug": "bulk-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "slug": "venoshock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YG7EABDKQsFjDi8E",
+          "slug": "smack-down"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "slug": "earthquake"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI",
+          "slug": "focus-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DfuvLNHQ0TBVgPN4",
+          "slug": "false-swipe"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MrGSomQEncQd3zt6",
+          "slug": "brutal-swing"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut",
+          "slug": "stone-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.3vdmhkXenPgplUwb",
+          "slug": "bide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IWQXKwgnyM2CvDLV",
+          "slug": "flail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Mw6vBLeHYty112VS",
+          "slug": "harden"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4zyVHZ1t6PJsYzGX",
+          "slug": "pursuit"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eWzbtm5EjwcP1GoO",
+          "slug": "revenge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QtP0f7jbB5JpbHQu",
+          "slug": "rock-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jtmrf8Dol8bkamvO",
+          "slug": "seismic-toss"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.MVQIN27r61bxzB7J",
+          "slug": "arm-thrust-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD",
+          "slug": "bug-bite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ptP5LFYkJR4BJHIu",
+          "slug": "bullet-seed-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ",
+          "slug": "counter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4W8tzNRKdmn0WRYd",
+          "slug": "fury-cutter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6",
+          "slug": "knock-off"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dOMKjZx7flfPZTtV",
+          "slug": "low-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WRDjP0nlxlzd20a5",
+          "slug": "night-slash-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jtmrf8Dol8bkamvO",
+          "slug": "seismic-toss"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.lh8CZDIXVYVWsbCF",
+          "slug": "throat-chop"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.f6wiL5OLPxVtLVWi",
+          "slug": "vacuum-wave"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 5,
+        "modifier": 3,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 1,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 1,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "heracross",
+    "rules": [],
+    "type": {
+      "0": "Bug",
+      "1": "Fighting",
+      "2": ""
+    },
+    "source": {
+      "value": "PTR Core Dex Megas"
+    },
+    "keywords": []
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "rulesSelections": {},
+      "rollOptions": {
+        "all": {
+          "item:id:0eeIF37hMk1Qhz4I": true,
+          "item:slug:heracross-mega": true,
+          "item:type:species": true,
+          "species:heracross-mega": true
+        },
+        "item": {
+          "item:id:0eeIF37hMk1Qhz4I": true,
+          "item:slug:heracross-mega": true,
+          "item:type:species": true,
+          "species:heracross-mega": true
+        }
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "irSNiCnUnI7il9mJ",
+  "_id": "EttXjVS30zeygxOR",
+  "effects": [],
+  "_key": "!items!EttXjVS30zeygxOR"
+}

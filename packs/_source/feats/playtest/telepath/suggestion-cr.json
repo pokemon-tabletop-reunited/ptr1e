@@ -1,0 +1,65 @@
+{
+  "name": "Suggestion [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Target: Pokémon or Trainers\nEffect: You smoothly plant a thought into the subject’s head that lasts as long as this Feature is Bound. They won’t know exactly why or how they thought of it; they will naturally assume they thought of it themselves, and their brain will attempt to get there as logically as it can. The target may not necessarily act on the Suggestion, especially if it is against their nature. Using Suggestion to plant a specific thought may cause the target to think about a specific subject, dredging up surface thoughts related to the matter. Using this on a target leaves discoverable psychic residue. You may only use Suggestion as long as you have the Telepathy Capability, though you may keep it Bound without having Telepathy active.\nBonus: You gain the Gentle Vibe Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Honed Mind",
+      "Master Focus or Intuition"
+    ],
+    "frequency": "Bind 1 AP – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Telepath [CR]",
+    "name": "Suggestion [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "9CP3ESv64DxexWYw",
+  "_id": "5KwybdQabOyEHGWf",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5KwybdQabOyEHGWf"
+}

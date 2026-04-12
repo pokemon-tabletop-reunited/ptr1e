@@ -1,0 +1,77 @@
+{
+  "folder": "3AhTAywjx4AYtRjv",
+  "name": "Maneuver: Grapple",
+  "type": "move",
+  "img": "systems/ptu/static/css/images/types2/UntypedIC_Icon.png",
+  "system": {
+    "origin": "",
+    "effect": "You and the target each make opposed Combat or Athletics Checks. If you win, you and the target each become Grappled, and you gain Dominance in the Grapple.\n\nPokémon and Trainers that are Grappled\n» Are Vulnerable\n» Cannot take Shift Actions, or any actions that would cause them to Shift.\n» Gain a -6 penalty to Accuracy Rolls if targeting anyone outside the Grapple.\n» Additionally, Grapple has other effects on whether the target has or doesn't have Dominance.\n\nIf a target begins their turn as a part of a Grapple but with no Dominance, they may choose to contest the Grapple as a Full Action. If they do, all participants make opposed Combat or Athletics Checks. Whoever wins then may choose to either continue the Grapple and gain Dominance, or to end the Grapple.\n\nIf a target has the Phasing or Teleporter Capability, they may also use those to escape from a Grapple on their turn with no check required.\n\nIf a target begins their turn as part of a Grapple and has Dominance, they may take one of the following actions as a Full Action.\n» End the Grapple.\n» Secure: They gain a +3 Bonus to the next opposed check they make in the Grapple.\n» Attack: They may automatically hit with an Unarmed Struggle Attack.\n» Move: They Shift, dragging the other person in the grapple with them. The user's Movement Capability is lowered by the other grappler's Weight Class.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:wrap"
+        ],
+        "label": "Using Wrap?",
+        "hideIfDisabled": true,
+        "selectors": "{item|id}-attack",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "maneuver-grapple",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Untyped",
+    "category": "Status",
+    "damageBase": "",
+    "frequency": "At-Will",
+    "ac": "4",
+    "range": "Melee",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1696797763032,
+    "modifiedTime": 1712494416670,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "gBjnwPNmaFiIeqIs",
+  "_key": "!items!gBjnwPNmaFiIeqIs"
+}

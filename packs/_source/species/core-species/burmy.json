@@ -1,0 +1,327 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:05.750Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Burmy are almost always seen covered in some kind of material, so few know what they look like bare (they resemble plain-looking, vertically-oriented larvae). They are very susceptible to the weather, so they will scramble to cover themselves if exposed. Their cloaks keep them insulated in cold winds; in warmer weather, they shed the outer layers of their cloaks to keep from overheating. Burmy seem to always find something to cover themselves in, no matter how barren their surroundings. In battle, their cloaks often shed off, forcing them to construct new ones out of nearby materials, using their silk to bind things goether. In forests, they will often be found in leaves and twigs. Near rivers, they will veil themselves in sand and pebbles. In cities, they scavenge refuse and metal scraps to make cloaks. Burmy have been recorded using other materials, as they are surprisingly resourceful when it comes to cloaking themselves; feathers, flower petals, and even discarded insect parts have all been used to make their covers.",
+    "number": 412,
+    "form": "",
+    "stats": {
+      "hp": 4,
+      "atk": 3,
+      "def": 5,
+      "spatk": 3,
+      "spdef": 5,
+      "spd": 4
+    },
+    "types": [
+      "Bug"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "quick-cloak",
+          "uuid": "Compendium.ptu.abilities.Item.8Whv8rYfLVqZu8m9"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "overcoat",
+          "uuid": "Compendium.ptu.abilities.Item.aYpa4hA9aHeNGyeQ"
+        },
+        {
+          "slug": "shed-skin",
+          "uuid": "Compendium.ptu.abilities.Item.pWARd2idBLFnfGi5"
+        },
+        {
+          "slug": "tolerance",
+          "uuid": "Compendium.ptu.abilities.Item.7yg8Y7g7p8Uil1YT"
+        }
+      ],
+      "high": [
+        {
+          "slug": "sturdy",
+          "uuid": "Compendium.ptu.abilities.Item.AaDXWUAMnhxLbyn3"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.KbP1j9TqW7adXNiN",
+        "slug": "burmy",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.f4x4MrVpWzb4mjNl",
+        "slug": "wormadam-plant",
+        "level": 20,
+        "other": {
+          "restrictions": [
+            "Female"
+          ]
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.4Mo5hTklcHxXU0dj",
+        "slug": "wormadam-trash",
+        "level": 20,
+        "other": {
+          "restrictions": [
+            "Female"
+          ]
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.TqG66EwWnI52l09Q",
+        "slug": "wormadam-sandy",
+        "level": 20,
+        "other": {
+          "restrictions": [
+            "Female"
+          ]
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.R4ViKuUcOBDgyzBX",
+        "slug": "mothim",
+        "level": 20,
+        "other": {
+          "restrictions": [
+            "Male"
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 0.2,
+      "weight": 3.4,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Bug"
+      ],
+      "hatchRate": 7
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Desert",
+      "Forest",
+      "Rainforest",
+      "Urban"
+    ],
+    "capabilities": {
+      "overland": 3,
+      "sky": 0,
+      "swim": 1,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 1,
+      "naturewalk": [
+        "Desert",
+        "Forest",
+        "Grassland",
+        "Urban"
+      ],
+      "other": [
+        {
+          "slug": "split-evolution",
+          "uuid": "Compendium.ptu.capabilities.Item.X6zDRsVYyOuz9sHX"
+        },
+        {
+          "slug": "threaded",
+          "uuid": "Compendium.ptu.capabilities.Item.FgI0NCLyoQbTmVvh"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD",
+          "slug": "bug-bite",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power",
+          "level": 20
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.NOJaY2kH3aQcaexD",
+          "slug": "bug-bite"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dM7JNhVHOmnTxRhy",
+          "slug": "electroweb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kxvFjyRtAzf99FIX",
+          "slug": "string-shot"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": -1,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 1,
+        "modifier": 2,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "burmy",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Burmy",
+  "_id": "KbP1j9TqW7adXNiN",
+  "effects": [],
+  "sort": 41400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!KbP1j9TqW7adXNiN"
+}

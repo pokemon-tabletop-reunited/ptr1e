@@ -1,0 +1,85 @@
+{
+  "name": "Badly Poisoned",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Badly-Poisoned.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "The target's Special Defense Value is lowered by 2 Combat Stages for the duration of the poison. Poison and Steel-Type Pokemon are immune to becoming Poisoned. If a Poisoned Target takes a Standard Action or is prevented from taking a Standard Action by an effect such as Sleep, Flinch, or Paralysis they lose 5 Hit Points; this amount is doubled each consecutive round (10, 20, 40, etc).",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.stats.spdef.stage.mod",
+        "value": -2,
+        "mode": "add",
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "badly-poisoned",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.635Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "value": {
+      "isValued": true,
+      "value": 1,
+      "autoIncrement": true
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [
+      "poisoned"
+    ],
+    "persistent": {
+      "formula": "5 * pow(2, (@item.system.value.value - 2))",
+      "type": "persistent"
+    },
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "rPNjp26cMp3XQ6aC",
+  "_id": "39Ty93ddaWcIhagZ",
+  "effects": [],
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1708177127923,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!39Ty93ddaWcIhagZ"
+}

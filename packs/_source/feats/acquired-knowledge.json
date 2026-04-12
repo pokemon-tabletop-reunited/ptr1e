@@ -1,0 +1,71 @@
+{
+  "folder": "w57O8iIZjaX9inzM",
+  "name": "Acquired Knowledge",
+  "type": "feat",
+  "img": "/systems/ptu/static/css/images/icons/feat_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Add your Pokemon Education Rank x2 to any capture check you make.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "capture-check",
+        "value": "@actor.system.skills.pokemonEd.value.total * -2"
+      }
+    ],
+    "enabled": true,
+    "slug": "acquired-knowledge",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "General"
+    ],
+    "prerequisites": [
+      "Novice Pokemon Education"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "automation": []
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Novice Pokemon Education",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1693313936720,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-chosen",
+      "uuid": null,
+      "coreVersion": "11.307",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.alpha.14"
+    }
+  },
+  "_id": "vabusVvoCI8AWfsn",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!vabusVvoCI8AWfsn"
+}

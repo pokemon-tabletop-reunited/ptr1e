@@ -1,0 +1,533 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:07.147Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "When Galarian archaeologists excavated the ruins of an ancient desert civilization overseas, they brought back magnificent artifacts and riches along with them. Also along for the ride, however, were sleeping Darumaka that were mistaken for still figurines. Reminiscent of Vulpix in Alola, the Darumaka that made it to Galar quickly adapted to life in the chilly north. Their fire sacs swiftly withered away in successive generations, being replaced by an organ that generates cold air instead.&nbsp;Some believe that Darumaka had already adapted to life in the cold in other areas long in the past after tectonic activity shifted their land mass far to the north. Galarian Darumaka actually get more energetic the colder they become, an anomaly amongst mammalian species. They freeze the air with their breaths to create snowballs and can commonly be seen throwing these snowballs at one another to play. These mischievous Pokémon may even chuck snowballs at passerby before ducking into snowdrifts to hide. They mean no harm from this, however, and are actually quite friendly when it comes to both humans and other Pokémon.",
+    "number": 554,
+    "form": "galarian",
+    "stats": {
+      "hp": 7,
+      "atk": 9,
+      "def": 5,
+      "spatk": 2,
+      "spdef": 5,
+      "spd": 5
+    },
+    "types": [
+      "Ice"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "hustle",
+          "uuid": "Compendium.ptu.abilities.Item.Fi2GT4YpvrH2Qa7l"
+        },
+        {
+          "slug": "ice-body",
+          "uuid": "Compendium.ptu.abilities.Item.frxDUj1Z8z3I7HHm"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "inner-focus",
+          "uuid": "Compendium.ptu.abilities.Item.uM561WHxXwcdrMWl"
+        },
+        {
+          "slug": "winters-kiss",
+          "uuid": "Compendium.ptu.abilities.Item.ysdI7l7jNsUsmsqt"
+        }
+      ],
+      "high": [
+        {
+          "slug": "celebrate",
+          "uuid": "Compendium.ptu.abilities.Item.xhjgbopRyNS1nOHB"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.UoCTuhDG9MiiZ0hP",
+        "slug": "darumaka-galarian",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 30,
+        "uuid": "Compendium.ptu.species.Item.feDBZxZshBX1cBIb",
+        "slug": "darmanitan-galarian",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 0.7,
+      "weight": 40,
+      "sizeClass": "Small",
+      "weightClass": 3
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Mountain",
+      "Tundra"
+    ],
+    "capabilities": {
+      "overland": 4,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 4,
+      "naturewalk": [
+        "Tundra"
+      ],
+      "other": [
+        {
+          "slug": "chilled",
+          "uuid": "Compendium.ptu.capabilities.Item.4RJFVQvf9t70YWI3"
+        },
+        {
+          "slug": "freezer",
+          "uuid": "Compendium.ptu.capabilities.Item.O0LMo4PRnTk008ds"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.l4TzdGjtPZHycF5b",
+          "slug": "powder-snow",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QMaJ91E3XBatUcV9",
+          "slug": "bite",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UcNQuMWgO1s8OxcP",
+          "slug": "avalanche",
+          "level": 12
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uGIN68MryZnqXa5w",
+          "slug": "ice-fang",
+          "level": 20
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4a68jMGmkXi2pkfF",
+          "slug": "headbutt",
+          "level": 24
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h",
+          "slug": "ice-punch",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+          "slug": "uproar",
+          "level": 32
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MH31RHW3E9lc1Mdt",
+          "slug": "belly-drum",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.czDZWjn9TbP9ON4q",
+          "slug": "thrash",
+          "level": 44
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xwJMUiNv3k0k9VK6",
+          "slug": "superpower",
+          "level": 48
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "slug": "brick-break"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "slug": "flamethrower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM",
+          "slug": "fire-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+          "slug": "rock-tomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6",
+          "slug": "overheat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jn8ej4sQ6o2PuUJx",
+          "slug": "gyro-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "slug": "grass-knot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.cDe2PIlHkOV2msto",
+          "slug": "flame-wheel"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZn05DqBo1RGVRLH",
+          "slug": "freeze-dry"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uX0GA4opzRCtDQVY",
+          "slug": "hammer-arm"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uabUdNDKH4LCcTZI",
+          "slug": "incinerate"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fCWLpvekbsjaPVHA",
+          "slug": "power-up-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TqoaCRNjoH4lGBj4",
+          "slug": "yawn"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.UcNQuMWgO1s8OxcP",
+          "slug": "avalanche"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ",
+          "slug": "endure"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+          "slug": "fire-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv",
+          "slug": "focus-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb",
+          "slug": "heat-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h",
+          "slug": "ice-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P6WwfKrGPuSohaOH",
+          "slug": "mega-kick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4SK37Ub6d9G8jOaJ",
+          "slug": "mega-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xwJMUiNv3k0k9VK6",
+          "slug": "superpower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+          "slug": "uproar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx",
+          "slug": "zen-headbutt"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 1,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 1,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "darumaka-galarian",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "type": {
+      "0": "Ice",
+      "1": ""
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Darumaka-Galarian",
+  "_id": "UoCTuhDG9MiiZ0hP",
+  "effects": [],
+  "sort": 59700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UoCTuhDG9MiiZ0hP"
+}

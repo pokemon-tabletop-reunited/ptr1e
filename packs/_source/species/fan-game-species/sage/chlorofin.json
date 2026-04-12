@@ -1,0 +1,571 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:09.303Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 3591,
+    "form": "",
+    "stats": {
+      "hp": 6,
+      "atk": 8,
+      "def": 6,
+      "spatk": 9,
+      "spdef": 9,
+      "spd": 10
+    },
+    "types": [
+      "Water",
+      "Grass"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "friend-guard",
+          "uuid": "Compendium.ptu.abilities.Item.i0XQhctF8P16Pkg9"
+        },
+        {
+          "slug": "swift-swim",
+          "uuid": "Compendium.ptu.abilities.Item.RK51P3bQWpC6Ioz2"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "natural-cure",
+          "uuid": "Compendium.ptu.abilities.Item.gii3PvJqGxrfeTc8"
+        },
+        {
+          "slug": "gentle-vibe",
+          "uuid": "Compendium.ptu.abilities.Item.g57zV6QaJdzHO2Le"
+        }
+      ],
+      "high": [
+        {
+          "slug": "regenerator",
+          "uuid": "Compendium.ptu.abilities.Item.eIl3V6VvOoYYiIAJ"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.0NAPpfx9pdWMu4bE",
+        "slug": "leafish",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.l6ka07HvSWHkVwZI",
+        "slug": "chlorofin",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.6,
+      "weight": 68.8,
+      "sizeClass": "Medium",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Water 2",
+        "Plant"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Carnivore",
+      "Phototroph"
+    ],
+    "habitats": [
+      "Freshwater"
+    ],
+    "capabilities": {
+      "overland": 3,
+      "sky": 0,
+      "swim": 8,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 3,
+      "longJump": 3,
+      "power": 4,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "blender",
+          "uuid": "Compendium.ptu.capabilities.Item.77fEVlIy87KrANwC"
+        },
+        {
+          "slug": "fountain",
+          "uuid": "Compendium.ptu.capabilities.Item.ut911FJQTWb21u98"
+        },
+        {
+          "slug": "gilled",
+          "uuid": "Compendium.ptu.capabilities.Item.Sr5UjqsO8FydTuNw"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "zen-headbutt",
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx",
+          "level": "Evo"
+        },
+        {
+          "slug": "razor-leaf",
+          "uuid": "Compendium.ptu.moves.Item.wYz4RubDs84tDVul",
+          "level": 4
+        },
+        {
+          "slug": "grass-whistle",
+          "uuid": "Compendium.ptu.moves.Item.UsV1dE6qhSVDd2oN",
+          "level": 8
+        },
+        {
+          "slug": "headbutt",
+          "uuid": "Compendium.ptu.moves.Item.4a68jMGmkXi2pkfF",
+          "level": 11
+        },
+        {
+          "slug": "water-pulse",
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "level": 15
+        },
+        {
+          "slug": "leaf-tornado",
+          "uuid": "Compendium.ptu.moves.Item.XKnzCG5ZGzGWMl5n",
+          "level": 18
+        },
+        {
+          "slug": "synthesis",
+          "uuid": "Compendium.ptu.moves.Item.zO24D3CxJw7guk2Y",
+          "level": 22
+        },
+        {
+          "slug": "aqua-jet",
+          "uuid": "Compendium.ptu.moves.Item.Htb3LXoNd24yFNEG",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9P1PCDCF7KK7hfJQ",
+          "slug": "leaf-shield",
+          "level": 29
+        },
+        {
+          "slug": "leaf-blade",
+          "uuid": "Compendium.ptu.moves.Item.0wyKb3JsjxCnVsr6",
+          "level": 32
+        },
+        {
+          "slug": "agility",
+          "uuid": "Compendium.ptu.moves.Item.aS33KlxhRCP0s5Zd",
+          "level": 37
+        },
+        {
+          "slug": "muddy-water",
+          "uuid": "Compendium.ptu.moves.Item.updKSTwGuQaZfbTk",
+          "level": 41
+        },
+        {
+          "slug": "nature-power",
+          "uuid": "Compendium.ptu.moves.Item.FNtFpxkWjT9PhvEb",
+          "level": 46
+        },
+        {
+          "slug": "bounce",
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+          "level": 50
+        },
+        {
+          "slug": "soak",
+          "uuid": "Compendium.ptu.moves.Item.sKWmTZ2uB6fKrhmo",
+          "level": 55
+        },
+        {
+          "slug": "leaf-storm",
+          "uuid": "Compendium.ptu.moves.Item.FBj8VAFE3YZoI8C1",
+          "level": 59
+        },
+        {
+          "slug": "water-spout",
+          "uuid": "Compendium.ptu.moves.Item.Nwh51csVMKXOHWDp",
+          "level": 64
+        }
+      ],
+      "machine": [
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "hail",
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "sunny-day",
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+        },
+        {
+          "slug": "ice-beam",
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U"
+        },
+        {
+          "slug": "blizzard",
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s"
+        },
+        {
+          "slug": "hyper-beam",
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "rain-dance",
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "solar-beam",
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "reflect",
+          "uuid": "Compendium.ptu.moves.Item.eDFWwKCjaJ7vNNbJ"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "thief",
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "echoed-voice",
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX"
+        },
+        {
+          "slug": "energy-ball",
+          "uuid": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup"
+        },
+        {
+          "slug": "scald",
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU"
+        },
+        {
+          "slug": "fling",
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6"
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK"
+        },
+        {
+          "slug": "swords-dance",
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800"
+        },
+        {
+          "slug": "x-scissor",
+          "uuid": "Compendium.ptu.moves.Item.oxBlIL3xxTpZFy8u"
+        },
+        {
+          "slug": "dragon-tail",
+          "uuid": "Compendium.ptu.moves.Item.fQxEojo3sSwnLk1q"
+        },
+        {
+          "slug": "grass-knot",
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "surf",
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s"
+        },
+        {
+          "slug": "waterfall",
+          "uuid": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN"
+        },
+        {
+          "slug": "confide",
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "slug": "aqua-ring-n",
+          "uuid": "Compendium.ptu.moves.Item.ywYeIhxlrHb9gOP1"
+        },
+        {
+          "slug": "aqua-tail",
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B"
+        },
+        {
+          "slug": "body-slam",
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle"
+        },
+        {
+          "slug": "bounce",
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR"
+        },
+        {
+          "slug": "brine",
+          "uuid": "Compendium.ptu.moves.Item.5ORKWU9EYYyzJOaH"
+        },
+        {
+          "slug": "bullet-seed",
+          "uuid": "Compendium.ptu.moves.Item.ptP5LFYkJR4BJHIu"
+        },
+        {
+          "slug": "counter",
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ"
+        },
+        {
+          "slug": "dive",
+          "uuid": "Compendium.ptu.moves.Item.5P4ZKecoBzCd8vh5"
+        },
+        {
+          "slug": "double-edge",
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A"
+        },
+        {
+          "slug": "endeavor",
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "giga-drain",
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m"
+        },
+        {
+          "slug": "helping-hand",
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ"
+        },
+        {
+          "slug": "hyper-voice",
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD"
+        },
+        {
+          "slug": "iron-tail",
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb"
+        },
+        {
+          "slug": "liquidation",
+          "uuid": "Compendium.ptu.moves.Item.iRpfWZ1PSCAeyUEX"
+        },
+        {
+          "slug": "recycle",
+          "uuid": "Compendium.ptu.moves.Item.yUba2OWKoxAE3txP"
+        },
+        {
+          "slug": "role-play",
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX"
+        },
+        {
+          "slug": "secret-power",
+          "uuid": "Compendium.ptu.moves.Item.6Q0qjfHVNHd5fsec"
+        },
+        {
+          "slug": "signal-beam",
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP"
+        },
+        {
+          "slug": "snore",
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53"
+        },
+        {
+          "slug": "swift",
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc"
+        },
+        {
+          "slug": "synthesis",
+          "uuid": "Compendium.ptu.moves.Item.zO24D3CxJw7guk2Y"
+        },
+        {
+          "slug": "trick",
+          "uuid": "Compendium.ptu.moves.Item.5f5SrSIiFCEOkSWm"
+        },
+        {
+          "slug": "water-pulse",
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4"
+        },
+        {
+          "slug": "zen-headbutt",
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 1,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 5,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "chlorofin",
+    "rules": [],
+    "source": {
+      "value": "Fangame Sage Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "CMymFngAhNsaPlS5",
+  "name": "Chlorofin",
+  "_id": "l6ka07HvSWHkVwZI",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!l6ka07HvSWHkVwZI"
+}

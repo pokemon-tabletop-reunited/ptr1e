@@ -1,0 +1,87 @@
+{
+  "name": "Commander",
+  "system": {
+    "origin": "",
+    "effect": "Choose one of Ravager Orders, Marksman Orders, Trickster Orders, Guardian Orders, or Precision Orders. You gain the chosen Feature, even if you do not meet its prerequisites.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.feats.Item.zy3F5IZmiosjU2HJ"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.m0mQ75HwcMpOL7YS"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.Phenl8QYGXnXaWm5"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.cfWqpdUD5EXZ4x9d"
+          },
+          {
+            "value": "Compendium.ptu.feats.Item.KyV5hPmKqaJTvMgK"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class"
+    ],
+    "prerequisites": [
+      "Novice Command"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "name": "Commander",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Novice Command"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079172,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 19000000,
+  "_id": "I5R9aAUQYJfiR1HP",
+  "_key": "!items!I5R9aAUQYJfiR1HP"
+}

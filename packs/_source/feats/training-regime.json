@@ -1,0 +1,68 @@
+{
+  "name": "Training Regime",
+  "system": {
+    "origin": "",
+    "effect": "You gain additional static bonuses based on your Trained Stats.\n»» Attack: You gain a +2 Bonus on Accuracy Checks to hit with Combat Maneuvers.\n»» Defense: You gain 5 Damage Reduction when Intercepting attacks.\n»» Special Attack: You may add half your Special Attack Stat to Damaging Athlete Moves. This does not stack with Twisted Power.\n»» Special Defense: You gain a +2 Bonus to Opposed Checks to resist Combat Maneuvers.\n»» Speed: When you Sprint, you double your Movement Capability instead of increasing by 50%.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP"
+    ],
+    "prerequisites": [
+      "Athlete"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Athlete",
+    "automation": [],
+    "name": "Training Regime",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "Athlete"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079268,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 50900000,
+  "_id": "jNlWNJfDdiGv4syN",
+  "_key": "!items!jNlWNJfDdiGv4syN"
+}

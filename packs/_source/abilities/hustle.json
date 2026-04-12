@@ -1,0 +1,64 @@
+{
+  "name": "Hustle",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "The user receives a -2 penalty to all Accuracy Rolls and gains a +10 Bonus to All Damage Rolls.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "attack-roll",
+        "value": -2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "damage-roll",
+        "value": 10
+      }
+    ],
+    "enabled": true,
+    "slug": "hustle",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "Fi2GT4YpvrH2Qa7l",
+  "effects": [],
+  "folder": null,
+  "sort": 14700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1707761783909,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Fi2GT4YpvrH2Qa7l"
+}

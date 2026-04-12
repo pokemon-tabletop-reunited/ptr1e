@@ -1,0 +1,64 @@
+{
+  "folder": "3AhTAywjx4AYtRjv",
+  "name": "Maneuver: Intercept Melee",
+  "type": "move",
+  "img": "systems/ptu/static/css/images/types2/UntypedIC_Icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Trigger: An Ally within Movement Range is hit by an adjacent for.\nEffect: You move to the Ally and Push the triggering Ally 1 Meter away from you, and Shift to occupy their space, and are hit by the triggering attack.\n\nNote: If the target that was Intercepted was hit by an Area of Effect Move, and the 1 meter push does not remove them from the Area of Effect, the Intercept has no effect since they are still in the area of the attack – it would cause the Interceptor to be hit by the Move however.\n\nAdditional Rules:\n» Pokémon and Trainers may only Intercept against Priority and Interrupt Moves if they are faster than the user of those Moves.\n» Moves that cannot miss (such as Aura Sphere or Swift) cannot be Intercepted.\n» Pokémon and Trainers cannot attempt Intercepts if they are Asleep, Confused, Enraged, Frozen, Stuck, Paralyzed, or otherwise unable to move.\n» Intercepts may not be used to move the Intercepting Pokémon or Trainer OUT of the way of an attack. They will always be hit, regardless.\n» Pokémon may spend Spirit down to -1 to Intercept.\n» Trainers by default may only Intercept using a Full Action, Interrupt.\n» Pokémon by default may only Intercept by spending their Shift & Rapid Action + 1 Spirit, as an Interrupt.",
+    "snippet": "",
+    "rules": [],
+    "enabled": true,
+    "slug": "maneuver-intercept-melee",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Untyped",
+    "category": "Status",
+    "damageBase": "",
+    "frequency": "Special, Interrupt",
+    "ac": "--",
+    "range": "Movement Range",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.0",
+    "coreVersion": "13.350",
+    "createdTime": 1696797763032,
+    "modifiedTime": 1708348809118,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "WEKEWAjdv0y0Rk50",
+  "_key": "!items!WEKEWAjdv0y0Rk50"
+}

@@ -1,0 +1,516 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:08.856Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "These small Pokémon are extremely timid and docile, but also extremely venomous. Even a tiny drop of the venom they excrete from their barbs can be fatal. To make matters worse, Nidoran♀ are easily spooked, and it is not at all difficult to accidentally be scratched by a fleeing individual. If cornered, however, Nidoran♀ will defend themselves with their horns; while these horns are smaller than that of the males of this species, they still nevertheless are very dangerous. They may attack with Poison Sting or Double Kick as they try to escape, the former of which incapacitates foes ​while the latter knocks them back, allowing the Pokémon to flee. It is rare to find a lone Nidoran♀, as they are very social Pokémon that are almost never seen without elder Nidorina and Nidoqueen, or at the very least sibling Nidoran♂, accompanying them. In fact, the vast majority of documented cases of Nidoran♀ poisonings have been attributed to skittish and scared wild individuals attacking out of sheer terror after having been separated from their families.",
+    "number": 29,
+    "form": "",
+    "stats": {
+      "hp": 6,
+      "atk": 5,
+      "def": 5,
+      "spatk": 4,
+      "spdef": 4,
+      "spd": 4
+    },
+    "types": [
+      "Poison"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "poison-point",
+          "uuid": "Compendium.ptu.abilities.Item.osJgodPktGSkPJf4"
+        },
+        {
+          "slug": "rivalry",
+          "uuid": "Compendium.ptu.abilities.Item.d7ihoF4B0GU8C5uM"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "hustle",
+          "uuid": "Compendium.ptu.abilities.Item.Fi2GT4YpvrH2Qa7l"
+        },
+        {
+          "slug": "celebrate",
+          "uuid": "Compendium.ptu.abilities.Item.xhjgbopRyNS1nOHB"
+        }
+      ],
+      "high": [
+        {
+          "slug": "bodyguard",
+          "uuid": "Compendium.ptu.abilities.Item.8O7o6xH3FIi4RXi9"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.h9nSrVqwOCKx1I9E",
+        "slug": "nidoran-female",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.CHDcHmiZdHaHn3dz",
+        "slug": "nidorina",
+        "level": 15,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.nRRFrdN5K1O0rAp1",
+        "slug": "nidoqueen",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.4,
+      "weight": 7,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 0,
+      "eggGroups": [
+        "Monster",
+        "Field"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Grassland"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 0,
+      "swim": 3,
+      "levitate": 0,
+      "burrow": 2,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 2,
+      "naturewalk": [
+        "Grassland"
+      ],
+      "other": [
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.9Bi4aMf4Ls0JdLNK",
+          "slug": "growl",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1Sk8xyD2S2J6qU1K",
+          "slug": "scratch",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.6lQy212f7N3GH5KS",
+          "slug": "tail-whip",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.24gRKtjHojSS9Vb0",
+          "slug": "double-kick",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Zy5IjFmrIxowfntS",
+          "slug": "poison-sting",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kBtOW4lhbgV3tltJ",
+          "slug": "fury-swipes",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QMaJ91E3XBatUcV9",
+          "slug": "bite",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.LyEh7DPaMxvOwU3G",
+          "slug": "toxic-spikes",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.3IoUOnJtp47ClxG4",
+          "slug": "flatter",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5uY1ltFWijN07CKe",
+          "slug": "crunch",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4Bf7QbKy0NepUHk0",
+          "slug": "captivate",
+          "level": 43
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.KbOJDmhqPMfCTmGr",
+          "slug": "poison-fang",
+          "level": 45
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "slug": "venoshock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5",
+          "slug": "sludge-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625",
+          "slug": "poison-jab"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.S4iliKMoFr7Ge4Zs",
+          "slug": "beat-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TgmOU36SFwwlN5di",
+          "slug": "charm"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jA1lUJTWb7izUm2l",
+          "slug": "chip-away"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fm4wwdVZiUeL6yFQ",
+          "slug": "counter"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ma0Yb0fLx263208P",
+          "slug": "disable"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ",
+          "slug": "endure"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TbqvNIqswHYAVHOW",
+          "slug": "focus-energy"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MTBLJx5OwpfGk4xx",
+          "slug": "poison-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.4zyVHZ1t6PJsYzGX",
+          "slug": "pursuit"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.USJx4QKRdpmiRYKv",
+          "slug": "skull-bash"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I8d7of2dA9eAP0OG",
+          "slug": "supersonic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oYlTFgi4c74YPeW6",
+          "slug": "venom-drench"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Y5R5mbVcGq6fwoFj",
+          "slug": "defense-curl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.foVUAPgmU09qFHrb",
+          "slug": "super-fang"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 1,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": -1,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 1,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "nidoran-female",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Nidoran-Female",
+  "_id": "h9nSrVqwOCKx1I9E",
+  "effects": [],
+  "sort": 82000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!h9nSrVqwOCKx1I9E"
+}

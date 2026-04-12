@@ -1,0 +1,95 @@
+{
+  "folder": "DJzDYBNllxgyeiok",
+  "name": "Form Change: Morpeko Hangry Mode",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will put your Morpeko into Hangry Mode. Please ensure that Full Belly Mode is removed from the Morpeko before adding this effect.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "label": "Hangry Mode",
+        "hideIfDisabled": false,
+        "selectors": "damage-roll",
+        "value": 5
+      },
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:morpeko",
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/877s_Hangry.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            "species:morpeko",
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/877_Hangry.webp"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-morpeko-hangry-mode",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.12",
+    "coreVersion": "13.350",
+    "createdTime": 1695892281573,
+    "modifiedTime": 1706024522433,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-chosen",
+      "uuid": null,
+      "coreVersion": "11.313",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.beta.10"
+    }
+  },
+  "_id": "1Xf6TOopEqz6zM2r",
+  "sort": 200000,
+  "_key": "!items!1Xf6TOopEqz6zM2r"
+}

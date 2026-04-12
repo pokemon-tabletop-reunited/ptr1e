@@ -1,0 +1,501 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:06.367Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Salandit dwell in dry, arid areas with plenty of crags to scurry in and out of. They often make their homes near the sites of active volcanoes. These Pokémon are not very strong, so they rely on stealth and deception to outwit foes. Salandit can combust the bodily fluids produced by their venom sacs to create flames and release them from the bases of their tails. This ignition also produces toxic gases as a byproduct, which Salandit can also emit from the same place. The fumes have an oddly sweet aroma; those inhaling it often do not even realize that they are breathing poison until they feel lightheaded and dizzy. Given enough time, even the strongest and most resilient Pokémon will begin to feel its effects. Salandit prefer&nbsp;to sneak up on prey from behind and immobilize them with their fumes before the victims even notice.&nbsp;Humorously, Salandit have great trouble hunting Spinda, as their dizzying gases have little effect on these tipsy Pokémon. Female Salandit also have the ability to release pheromones that can influence males, both of other Pokémon as well as of humans. The longer a being inhales a Salandit’s pheromones, the further it falls under its control. When endangered, female Salandit may call upon the males of the area to come to its aid, amplifying the amount of poisonous gases released. Male Salandit will deliver most of their gathered food to females, often leaving them quite malnourished.",
+    "number": 757,
+    "form": "",
+    "stats": {
+      "hp": 5,
+      "atk": 4,
+      "def": 4,
+      "spatk": 7,
+      "spdef": 4,
+      "spd": 8
+    },
+    "types": [
+      "Poison",
+      "Fire"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "corrosion",
+          "uuid": "Compendium.ptu.abilities.Item.rdCRiZiEx4ZI1zlE"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "brimstone",
+          "uuid": "Compendium.ptu.abilities.Item.LsevtHLkLeZf2FF4"
+        },
+        {
+          "slug": "oblivious",
+          "uuid": "Compendium.ptu.abilities.Item.O2dMnMBgSN8ookBo"
+        },
+        {
+          "slug": "sun-blanket",
+          "uuid": "Compendium.ptu.abilities.Item.lGAUnDeneM1g7BeD"
+        }
+      ],
+      "high": [
+        {
+          "slug": "pickpocket",
+          "uuid": "Compendium.ptu.abilities.Item.8m9FR9xTLgOLRRZY"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.OYderFX8NpTCkWzu",
+        "slug": "salandit",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.jXtmKsXKasKNpZUS",
+        "slug": "salazzle",
+        "level": 30,
+        "other": {
+          "restrictions": [
+            "Female"
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 0.6,
+      "weight": 4.8,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 87.5,
+      "eggGroups": [
+        "Dragon",
+        "Monster"
+      ],
+      "hatchRate": 7
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Mountain",
+      "Plains"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 0,
+      "swim": 3,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 3,
+      "naturewalk": [
+        "Mountain"
+      ],
+      "other": [
+        {
+          "slug": "alluring",
+          "uuid": "Compendium.ptu.capabilities.Item.kxQazrYjhK3WLEXG"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.1Sk8xyD2S2J6qU1K",
+          "slug": "scratch",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2YHDxImu2aLCkeYO",
+          "slug": "poison-gas",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IH2EuCM09nw3lOgQ",
+          "slug": "ember",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nJhqaS0PzJJ7w1pS",
+          "slug": "sweet-scent",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XQAbXq62SPrixIKK",
+          "slug": "dragon-rage",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1C4eSkywCcdopGkD",
+          "slug": "smog",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ZptlbhF8Dnr6IyeX",
+          "slug": "double-slap",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JV9D80kHWzifgoYH",
+          "slug": "flame-burst",
+          "level": 24
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic",
+          "level": 29
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z0iMHqLi2ctCy2nb",
+          "slug": "nasty-plot",
+          "level": 32
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "slug": "venoshock",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "slug": "flamethrower",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oYlTFgi4c74YPeW6",
+          "slug": "venom-drench",
+          "level": 45
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse",
+          "level": 48
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.ulXmidTSzjPqUrfI",
+          "slug": "dragon-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DKcoWwUTCJWg58nw",
+          "slug": "venoshock"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN",
+          "slug": "taunt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IqR2d6OPYZMNbYYl",
+          "slug": "leech-life"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HisedpFvMgmEqsbV",
+          "slug": "sludge-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "slug": "flamethrower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5",
+          "slug": "sludge-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM",
+          "slug": "fire-blast"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zgeymOL0WIKgT6lq",
+          "slug": "torment"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV",
+          "slug": "flame-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6",
+          "slug": "overheat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+          "slug": "will-o-wisp"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625",
+          "slug": "poison-jab"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.sv18it1VOb2zM9Gd",
+          "slug": "belch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YWFFDr5Ul470Pnyp",
+          "slug": "fake-out"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6",
+          "slug": "knock-off"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IU5XxUVfxPggP6Rx",
+          "slug": "sand-attack"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB",
+          "slug": "covet"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ckL9G6vvS6TUl57i",
+          "slug": "foul-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WBkN88g7D8ruzV02",
+          "slug": "gunk-shot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb",
+          "slug": "heat-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6",
+          "slug": "knock-off"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT",
+          "slug": "snatch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "salandit",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Salandit",
+  "_id": "OYderFX8NpTCkWzu",
+  "effects": [],
+  "sort": 48700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OYderFX8NpTCkWzu"
+}

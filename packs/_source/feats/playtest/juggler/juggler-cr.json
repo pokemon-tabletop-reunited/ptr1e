@@ -1,0 +1,65 @@
+{
+  "name": "Juggler [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain the Quick Switch Feature, and using it costs only 1 AP.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Novice Acrobatics or Novice Guile"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Juggler [CR]",
+    "name": "Juggler [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "u4sxjQFNU2N2zGmv",
+  "_id": "xU5YRXq7WUdeSpRv",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!xU5YRXq7WUdeSpRv"
+}

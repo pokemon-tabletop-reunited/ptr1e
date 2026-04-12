@@ -1,0 +1,158 @@
+{
+  "name": "Storm Wizard Rank 3",
+  "system": {
+    "origin": "",
+    "effect": "You may learn two Moves from the list below, marked with the Storm Wizard Rank you are gaining or lower.\nRank 3 Moves: Discharge, Thunder, Thunder Wave, Volt Tackle",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.qRvLgOrsmdXEsBsU"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.2Bldc8dEEOuOSx39"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.rW6YqKNIilq1npZJ"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.0KazDGc9T8CETH5f"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.l7sqm6Fyaz6kQL9A"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.qRvLgOrsmdXEsBsU"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.2Bldc8dEEOuOSx39"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.rW6YqKNIilq1npZJ"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.0KazDGc9T8CETH5f"
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.l7sqm6Fyaz6kQL9A"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Ranked 3"
+    ],
+    "prerequisites": [
+      "Master Acrobatics or Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Spark Master",
+    "automation": [],
+    "name": "Storm Wizard Rank 3",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Master Acrobatics or Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081782,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 60200000,
+  "_id": "rim1Pe0CwLjFH7o9",
+  "_key": "!items!rim1Pe0CwLjFH7o9"
+}

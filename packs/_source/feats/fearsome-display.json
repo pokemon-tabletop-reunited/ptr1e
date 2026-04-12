@@ -1,0 +1,65 @@
+{
+  "name": "Fearsome Display",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You use Leer or a Roughneck Move\nEffect: The Move gains additional effects.\n»» Leer: Attacks against affected foes gain a +2 Bonus to their Critical Range for one full round.\n»» Chip Away: The target is considered Vulnerable against this attack.\n»» Headbutt: The target has their Initiative set to 0 until the end of their next turn.\n»» Glare: The target loses 2 Speed Combat Stages. This occurs whether Glare hits or misses.\n»» Mean Look: The target is Suppressed.\n»» Endure: You gain two Ticks of Temporary Hit Points.\n»» Slack Off: You are cured of one Status Affliction.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Malice"
+    ],
+    "frequency": "2 AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Roughneck",
+    "automation": [],
+    "name": "Fearsome Display",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Malice"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081675,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 28100000,
+  "_id": "PsUpv4pNjF1LIJHC",
+  "_key": "!items!PsUpv4pNjF1LIJHC"
+}

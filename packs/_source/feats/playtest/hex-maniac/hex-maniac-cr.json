@@ -1,0 +1,93 @@
+{
+  "name": "Hex Maniac [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Choose Cursed Body or Omen. You gain the Chosen Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "choices": [
+          {
+            "value": "Compendium.ptu.abilities.Item.pMSDhQp6Tx0Cojng",
+            "predicate": {
+              "not": "ability:omen"
+            }
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.eq6HX7kv2a2Fo51U",
+            "predicate": {
+              "not": "ability:cursed-body"
+            }
+          }
+        ],
+        "adjustName": false
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.hexManiacCR}"
+      }
+    ],
+    "enabled": true,
+    "slug": "hex-maniac-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+HP",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Novice Occult Education"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Hex Maniac [CR]",
+    "name": "Hex Maniac [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "ulRWJYcSU9YnBGQX",
+  "_id": "HZXJEBlDf682Sl4R",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.0",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1708347020311,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!HZXJEBlDf682Sl4R"
+}

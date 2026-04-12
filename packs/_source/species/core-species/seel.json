@@ -1,0 +1,538 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:09.521Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Seel prefer to swim in oceans with waters of temperatures around 14°F (-10°C). However, they have been seen merrily swimming in water as cold as -40°F (-40°C). Seel are actually more active the colder the surrounding water is. Conversely, they get tired more easily in warm waters; this makes their appearance in the Alola region a mystery, though some scientists hypothesize that the islands may be along a Seel migration route. Their light-blue fur (which appears white) and layers of blubber insulate them from the harsh cold. Seel are vespertine Pokémon that are most active in the evening. Sometimes, one may see a Seel napping near the shoreline in the morning. When hunting, they dive underwater for extended periods of time. When they need to breathe, they surface and break&nbsp;through sea ice with their horns (and tusks if necessary). When Seel swim, they close their nostrils tightly to block out water. They are highly social Pokémon, living in large, raucous groups on ice floes in the middle of the sea. Seel may play-fight with each other on these floes, sparring with their tusks and horns as well as Water-type and sometimes Ice-type attacks. This activity is important in teaching young Seel how to defend themselves against enemies.",
+    "number": 86,
+    "form": "",
+    "stats": {
+      "hp": 7,
+      "atk": 5,
+      "def": 6,
+      "spatk": 5,
+      "spdef": 7,
+      "spd": 5
+    },
+    "types": [
+      "Water"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "thick-fat",
+          "uuid": "Compendium.ptu.abilities.Item.g9kAU2J4rkXhNDJv"
+        },
+        {
+          "slug": "winters-kiss",
+          "uuid": "Compendium.ptu.abilities.Item.ysdI7l7jNsUsmsqt"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "ice-body",
+          "uuid": "Compendium.ptu.abilities.Item.frxDUj1Z8z3I7HHm"
+        },
+        {
+          "slug": "hydration",
+          "uuid": "Compendium.ptu.abilities.Item.a1zxQOsfN2PjKUQ7"
+        }
+      ],
+      "high": [
+        {
+          "slug": "frostbite",
+          "uuid": "Compendium.ptu.abilities.Item.I0qzmUj5HSvUYTKX"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.nDEGfyoAXscDDRS1",
+        "slug": "seel",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.vp8ZImt7HCVr1Gz7",
+        "slug": "dewgong",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.1,
+      "weight": 90,
+      "sizeClass": "Medium",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Water 1",
+        "Field"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Arctic",
+      "Ocean"
+    ],
+    "capabilities": {
+      "overland": 4,
+      "sky": 0,
+      "swim": 5,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 3,
+      "naturewalk": [
+        "Ocean",
+        "Tundra"
+      ],
+      "other": [
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.4a68jMGmkXi2pkfF",
+          "slug": "headbutt",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9Bi4aMf4Ls0JdLNK",
+          "slug": "growl",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.aQC3OZK3LUV4UHj2",
+          "slug": "water-sport",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind",
+          "level": 11
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UhvLxdWq2D7gOvMr",
+          "slug": "encore",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SUduMarNZi7p42fG",
+          "slug": "ice-shard",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ywYeIhxlrHb9gOP1",
+          "slug": "aqua-ring",
+          "level": 23
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UqFpnMAAoEOqvUDj",
+          "slug": "aurora-beam",
+          "level": 27
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Htb3LXoNd24yFNEG",
+          "slug": "aqua-jet",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5ORKWU9EYYyzJOaH",
+          "slug": "brine",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9",
+          "slug": "take-down",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5P4ZKecoBzCd8vh5",
+          "slug": "dive",
+          "level": 41
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B",
+          "slug": "aqua-tail",
+          "level": 43
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam",
+          "level": 47
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0",
+          "slug": "safeguard",
+          "level": 51
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail",
+          "level": 53
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0",
+          "slug": "safeguard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ImFfaRbYkW1fzPPL",
+          "slug": "smart-strike"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s",
+          "slug": "surf"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN",
+          "slug": "waterfall"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.sv18it1VOb2zM9Gd",
+          "slug": "belch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ma0Yb0fLx263208P",
+          "slug": "disable"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UhvLxdWq2D7gOvMr",
+          "slug": "encore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9onCqeLjl53i2wH6",
+          "slug": "entrainment"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YWFFDr5Ul470Pnyp",
+          "slug": "fake-out"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.L7FUH6KfecCPRKxB",
+          "slug": "horn-drill"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xnllnYlK5CBzHzne",
+          "slug": "icicle-spear"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.6ePYnDDvYpss2MsY",
+          "slug": "lick"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kVqbY3ciBTeqHLxU",
+          "slug": "perish-song"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.B6mHk3zIO3QaXnIQ",
+          "slug": "slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.srUwReOeuVGAPTa5",
+          "slug": "spit-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VTgi7fLjJYUtu8GT",
+          "slug": "stockpile"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CbxiHzGex7oTghfX",
+          "slug": "swallow"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.ywYeIhxlrHb9gOP1",
+          "slug": "aqua-ring"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.O8DwOJXqhrynxm8B",
+          "slug": "aqua-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5ORKWU9EYYyzJOaH",
+          "slug": "brine"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.5P4ZKecoBzCd8vh5",
+          "slug": "dive"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CyMarrube3yoGcuy",
+          "slug": "drill-run"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 1,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "seel",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Seel",
+  "_id": "nDEGfyoAXscDDRS1",
+  "effects": [],
+  "sort": 90200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!nDEGfyoAXscDDRS1"
+}

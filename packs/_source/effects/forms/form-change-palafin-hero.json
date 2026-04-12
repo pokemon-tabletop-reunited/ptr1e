@@ -1,0 +1,92 @@
+{
+  "name": "Form Change: Palafin Hero",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "value": "/systems/ptu/static/images/sprites/964_1.webp",
+        "predicate": {
+          "not": "self:pokemon:shiny"
+        }
+      },
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/964s_1.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:palafin-hero"
+        ],
+        "uuid": "Compendium.ptu.species.Item.bsN60L9oZQ3DM31I"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-palafin-hero",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "DJzDYBNllxgyeiok",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1711651560754,
+    "modifiedTime": 1712493830305,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "testing",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "_id": "MRwgSGklIvxzFrgk",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MRwgSGklIvxzFrgk"
+}

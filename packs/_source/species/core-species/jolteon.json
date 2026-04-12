@@ -1,0 +1,476 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:03.815Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "In drier areas with little water and unusually high amounts of electrical activity, Eevee may evolve into Jolteon when exposed to Thunder Stones. These Pokémon are as fast as lightning and can fire bolts of electricity at up to 10,000 volts. They are very temperamental, however, and have frequent mood swings that affect their power; Jolteon experiencing stronger emotions, such as rage or elation, launch stronger attacks. Their cells all exude weak charges, which they can concentrate with static electricity in their fur into more powerful bolts. Additionally, by charging their&nbsp;fur negatively, they can bristle it into piercing spikes. Jolteon can launch these spikes at foes by using Pin Missile. Their charged fur emits a constant crackling noise. When frightened or startled, even by their own trainers, Jolteon will bristle their fur and will not hesitate to launch the devastating attack Thunder. Their electrogenetic organs are located in their lungs, causing a crackling sound whenever they exhale. However, despite their fickle temperaments, Jolteon are very loyal Pokémon, and can easily be trained to only bristle on command or in battle.&nbsp;​",
+    "number": 135,
+    "form": "",
+    "stats": {
+      "hp": 7,
+      "atk": 7,
+      "def": 6,
+      "spatk": 11,
+      "spdef": 10,
+      "spd": 13
+    },
+    "types": [
+      "Electric"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "volt-absorb",
+          "uuid": "Compendium.ptu.abilities.Item.7Q8Gplr8sh2uNdxg"
+        },
+        {
+          "slug": "sprint",
+          "uuid": "Compendium.ptu.abilities.Item.83eqtrEv4q3MGyRS"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "type-aura-electric",
+          "uuid": "Compendium.ptu.abilities.Item.DQ7zOCNPg8WkDKmO"
+        },
+        {
+          "slug": "quick-feet",
+          "uuid": "Compendium.ptu.abilities.Item.rPtapBNFTzWoRsM3"
+        }
+      ],
+      "high": [
+        {
+          "slug": "vanguard",
+          "uuid": "Compendium.ptu.abilities.Item.LfQUndsQtprQgocE"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.u0vJNmW9NyFphsjE",
+        "slug": "eevee",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.2ptxpLvWD50XgCRA",
+        "slug": "jolteon",
+        "level": 25,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.8,
+      "weight": 24.5,
+      "sizeClass": "Small",
+      "weightClass": 2
+    },
+    "breeding": {
+      "genderRatio": 87.5,
+      "eggGroups": [
+        "Field"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Omnivore"
+    ],
+    "habitats": [
+      "Forest",
+      "Urban"
+    ],
+    "capabilities": {
+      "overland": 10,
+      "sky": 0,
+      "swim": 5,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 3,
+      "power": 3,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "tracker",
+          "uuid": "Compendium.ptu.capabilities.Item.W1Zt8pLS50kjTL1d"
+        },
+        {
+          "slug": "zapper",
+          "uuid": "Compendium.ptu.capabilities.Item.v3QyNdZYDVwlG2tY"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.HhQrSZjCBL95D1zV",
+          "slug": "thunder-shock",
+          "level": "Evo"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IU5XxUVfxPggP6Rx",
+          "slug": "sand-attack",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dIkyKSyZGctjHX9O",
+          "slug": "baby-doll-eyes",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.oVue0OGsxZn0kQGX",
+          "slug": "quick-attack",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.24gRKtjHojSS9Vb0",
+          "slug": "double-kick",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.FWdcrF4mgW14bOCZ",
+          "slug": "thunder-fang",
+          "level": 20
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zQDRgnFwCOuGBf1r",
+          "slug": "pin-missile",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.aS33KlxhRCP0s5Zd",
+          "slug": "agility",
+          "level": 29
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0KazDGc9T8CETH5f",
+          "slug": "discharge",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.syEhvBKtqQTBqyct",
+          "slug": "last-resort",
+          "level": 41
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder",
+          "level": 45
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY",
+          "slug": "roar"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr",
+          "slug": "shadow-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+          "slug": "echoed-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD",
+          "slug": "charge-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ltI3ruaEiyhlwPjj",
+          "slug": "volt-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.idhhi7YJRDHnUUMR",
+          "slug": "wild-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "slug": "body-slam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB",
+          "slug": "covet"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.v8vXs3oV4YimX2AZ",
+          "slug": "heal-bell"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD",
+          "slug": "hyper-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.syEhvBKtqQTBqyct",
+          "slug": "last-resort"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.N0EkteKIFV2WtAJ6",
+          "slug": "magnet-rise"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP",
+          "slug": "mud-slap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc",
+          "slug": "swift"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 5,
+        "modifier": 2,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "jolteon",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Jolteon",
+  "_id": "2ptxpLvWD50XgCRA",
+  "effects": [],
+  "sort": 8800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2ptxpLvWD50XgCRA"
+}

@@ -1,0 +1,524 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:06.112Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 1622,
+    "form": "",
+    "stats": {
+      "hp": 5,
+      "atk": 7,
+      "def": 10,
+      "spatk": 4,
+      "spdef": 4,
+      "spd": 3
+    },
+    "types": [
+      "Fire",
+      "Steel"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "flame-body",
+          "uuid": "Compendium.ptu.abilities.Item.vF0vjHMDikFAthFY"
+        },
+        {
+          "slug": "sturdy",
+          "uuid": "Compendium.ptu.abilities.Item.AaDXWUAMnhxLbyn3"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "heavy-metal",
+          "uuid": "Compendium.ptu.abilities.Item.af9Spqi2HBsMlq5r"
+        },
+        {
+          "slug": "magma-armor",
+          "uuid": "Compendium.ptu.abilities.Item.hMzd6dUVY7WpGbfh"
+        }
+      ],
+      "high": [
+        {
+          "slug": "drought",
+          "uuid": "Compendium.ptu.abilities.Item.BRUgqjGF8THEEA7W"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.LKiML0gr594VPWcM",
+        "slug": "delta-aron",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.8PBLRa1XPXWXbK4g",
+        "slug": "delta-lairon",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.YaJuAJYFkKQcHbAv",
+        "slug": "delta-aggron",
+        "level": 40,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.4,
+      "weight": 60,
+      "sizeClass": "Small",
+      "weightClass": 4
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Terravore"
+    ],
+    "habitats": [
+      "Cave"
+    ],
+    "capabilities": {
+      "overland": 3,
+      "sky": 0,
+      "swim": 1,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 0,
+      "longJump": 0,
+      "power": 5,
+      "naturewalk": [
+        "Cave"
+      ],
+      "other": [
+        {
+          "slug": "amorphous",
+          "uuid": "Compendium.ptu.capabilities.Item.nWoI9YVnNO7M6UtR"
+        },
+        {
+          "slug": "firestarter",
+          "uuid": "Compendium.ptu.capabilities.Item.nAIkONF3gtaYfEyX"
+        },
+        {
+          "slug": "glow",
+          "uuid": "Compendium.ptu.capabilities.Item.v4OOr4KlIO0DKw5r"
+        },
+        {
+          "slug": "heater",
+          "uuid": "Compendium.ptu.capabilities.Item.9DQsEtRIDXdw7ICw"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "tackle",
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "level": 1
+        },
+        {
+          "slug": "acid-armor",
+          "uuid": "Compendium.ptu.moves.Item.joCaLnLmgcLh36ym",
+          "level": 1
+        },
+        {
+          "slug": "dragon-rage",
+          "uuid": "Compendium.ptu.moves.Item.XQAbXq62SPrixIKK",
+          "level": 4
+        },
+        {
+          "slug": "flame-burst",
+          "uuid": "Compendium.ptu.moves.Item.JV9D80kHWzifgoYH",
+          "level": 7
+        },
+        {
+          "slug": "metal-claw",
+          "uuid": "Compendium.ptu.moves.Item.XkiKEwN1gZtlAkUi",
+          "level": 10
+        },
+        {
+          "slug": "flame-wheel",
+          "uuid": "Compendium.ptu.moves.Item.cDe2PIlHkOV2msto",
+          "level": 13
+        },
+        {
+          "slug": "wide-guard",
+          "uuid": "Compendium.ptu.moves.Item.x0Ma0IW8uk7gyQ8z",
+          "level": 16
+        },
+        {
+          "slug": "roar",
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY",
+          "level": 19
+        },
+        {
+          "slug": "iron-head",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "level": 22
+        },
+        {
+          "slug": "flamethrower",
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "level": 25
+        },
+        {
+          "slug": "dragon-breath",
+          "uuid": "Compendium.ptu.moves.Item.sEpnYIBn1Bkm9ZXd",
+          "level": 28
+        },
+        {
+          "slug": "metal-sound",
+          "uuid": "Compendium.ptu.moves.Item.FrDQDljR3YE3roFi",
+          "level": 31
+        },
+        {
+          "slug": "iron-tail",
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "level": 34
+        },
+        {
+          "slug": "iron-defense",
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "level": 37
+        },
+        {
+          "slug": "self-destruct",
+          "uuid": "Compendium.ptu.moves.Item.JJzbmEnsVa1QCx5V",
+          "level": 40
+        },
+        {
+          "slug": "autotomize",
+          "uuid": "Compendium.ptu.moves.Item.ZJvARZqHBE6REWnp",
+          "level": 43
+        },
+        {
+          "slug": "flare-blitz",
+          "uuid": "Compendium.ptu.moves.Item.VxO7N8CbFaW3889w",
+          "level": 46
+        },
+        {
+          "slug": "metal-burst",
+          "uuid": "Compendium.ptu.moves.Item.KqLVnz96kGfAWYtg",
+          "level": 49
+        }
+      ],
+      "machine": [
+        {
+          "slug": "work-up",
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf"
+        },
+        {
+          "slug": "dragon-claw",
+          "uuid": "Compendium.ptu.moves.Item.ulXmidTSzjPqUrfI"
+        },
+        {
+          "slug": "roar",
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY"
+        },
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "sunny-day",
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "earthquake",
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "flamethrower",
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn"
+        },
+        {
+          "slug": "fire-blast",
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM"
+        },
+        {
+          "slug": "aerial-ace",
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "flame-charge",
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "overheat",
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6"
+        },
+        {
+          "slug": "brutal-swing",
+          "uuid": "Compendium.ptu.moves.Item.MrGSomQEncQd3zt6"
+        },
+        {
+          "slug": "shadow-claw",
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr"
+        },
+        {
+          "slug": "rock-polish",
+          "uuid": "Compendium.ptu.moves.Item.7M8aaHfxabHTcwau"
+        },
+        {
+          "slug": "bulldoze",
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu"
+        },
+        {
+          "slug": "dragon-tail",
+          "uuid": "Compendium.ptu.moves.Item.fQxEojo3sSwnLk1q"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "surf",
+          "uuid": "Compendium.ptu.moves.Item.pRxBTVSGS7ScdK5s"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "slug": "defense-curl",
+          "uuid": "Compendium.ptu.moves.Item.Y5R5mbVcGq6fwoFj"
+        },
+        {
+          "slug": "earth-power",
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw"
+        },
+        {
+          "slug": "endeavor",
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ"
+        },
+        {
+          "slug": "heat-wave",
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb"
+        },
+        {
+          "slug": "iron-defense",
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF"
+        },
+        {
+          "slug": "iron-head",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN"
+        },
+        {
+          "slug": "iron-tail",
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb"
+        },
+        {
+          "slug": "mud-slap",
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP"
+        },
+        {
+          "slug": "rollout",
+          "uuid": "Compendium.ptu.moves.Item.nzhedIfXpsZWaEx9"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "snore",
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53"
+        },
+        {
+          "slug": "spite",
+          "uuid": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM"
+        },
+        {
+          "slug": "superpower",
+          "uuid": "Compendium.ptu.moves.Item.xwJMUiNv3k0k9VK6"
+        },
+        {
+          "slug": "uproar",
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 1,
+        "modifier": 1,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 2,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 1,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 1,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "delta-aron",
+    "rules": [],
+    "source": {
+      "value": "Fangame Insurgence Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "PjOQybdSHWn87sdq",
+  "name": "Delta Aron",
+  "_id": "LKiML0gr594VPWcM",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!LKiML0gr594VPWcM"
+}

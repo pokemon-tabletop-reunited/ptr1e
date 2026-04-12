@@ -1,0 +1,221 @@
+{
+  "name": "Enhanced Embrace Rank 1",
+  "system": {
+    "origin": "",
+    "effect": "Learn two Moves from the list below. Moves marked with an Embrace require that Embrace to be chosen.\nRank 1 Moves: Defend Order, Fury Cutter, Fell Needle, Struggle Bug(Monarch), Sticky Web(Arachnid)",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "feat",
+        "adjustName": false,
+        "prompt": "Choose which stat to increase.",
+        "choices": [
+          {
+            "label": "ATK (Arachnid's Embrace)",
+            "value": "system.modifiers.baseStats.atk.mod"
+          },
+          {
+            "label": "SPATK (Monarch's Embrace)",
+            "value": "system.modifiers.baseStats.spatk.mod"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "{item|flags.ptu.rulesSelections.feat}",
+        "mode": "add",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.7hrNCJ06sxq0OB9q",
+            "predicate": {
+              "not": "move:defend-order"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.4W8tzNRKdmn0WRYd",
+            "predicate": {
+              "not": "move:fury-cutter"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.RjTMjxxZSdIu2xZL",
+            "predicate": {
+              "not": "move:fell-stinger"
+            }
+          },
+          {
+            "label": "Struggle Bug (Monarch)",
+            "value": "Compendium.ptu.moves.Item.Hm5nTF5Wh5UusvYM",
+            "predicate": {
+              "not": "move:struggle-bug"
+            }
+          },
+          {
+            "label": "Sticky Web (Arachnid)",
+            "value": "Compendium.ptu.moves.Item.vOj9bt7G9I4GixBZ",
+            "predicate": {
+              "not": "move:sticky-web"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.7hrNCJ06sxq0OB9q",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.7hrNCJ06sxq0OB9q"
+                  ]
+                }
+              },
+              {
+                "not": "move:defend-order"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.4W8tzNRKdmn0WRYd",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.4W8tzNRKdmn0WRYd"
+                  ]
+                }
+              },
+              {
+                "not": "move:fury-cutter"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.RjTMjxxZSdIu2xZL",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.RjTMjxxZSdIu2xZL"
+                  ]
+                }
+              },
+              {
+                "not": "move:fell-stinger"
+              }
+            ]
+          },
+          {
+            "label": "Struggle Bug (Monarch)",
+            "value": "Compendium.ptu.moves.Item.Hm5nTF5Wh5UusvYM",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.Hm5nTF5Wh5UusvYM"
+                  ]
+                }
+              },
+              {
+                "not": "move:struggle-bug"
+              }
+            ]
+          },
+          {
+            "label": "Sticky Web (Arachnid)",
+            "value": "Compendium.ptu.moves.Item.vOj9bt7G9I4GixBZ",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.vOj9bt7G9I4GixBZ"
+                  ]
+                }
+              },
+              {
+                "not": "move:sticky-web"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 3"
+    ],
+    "prerequisites": [
+      "Swarmlord"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Swarmlord",
+    "name": "Enhanced Embrace Rank 1",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Swarmlord"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079196,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 64800000,
+  "_id": "wYljyKmZn7u3uhvW",
+  "_key": "!items!wYljyKmZn7u3uhvW"
+}

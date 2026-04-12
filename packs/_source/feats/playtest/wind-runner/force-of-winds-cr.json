@@ -1,0 +1,93 @@
+{
+  "name": "Force of Winds [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Choose @UUID[Compendium.ptu.abilities.Item.rTE4w4C9aplyiUtk]{Windveiled} or @UUID[Compendium.ptu.abilities.Item.C6aRawvdZOrPx2xK]{Wind Rider}. You gain the chosen Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "choices": [
+          {
+            "value": "Compendium.ptu.abilities.Item.rTE4w4C9aplyiUtk",
+            "predicate": {
+              "not": "ability:windveiled"
+            }
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.C6aRawvdZOrPx2xK",
+            "predicate": {
+              "not": "ability:wind-rider"
+            }
+          }
+        ],
+        "adjustName": false
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.forceOfWindsCR}"
+      }
+    ],
+    "enabled": true,
+    "slug": "gale-speed-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Raging Winds Rank 1",
+      "Master Acrobatics or Perception"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Wind Runner [CR]",
+    "name": "Gale Speed [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "m4L8vSCzreUH7otz",
+  "_id": "jkVwLcKtuNd5UULr",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!jkVwLcKtuNd5UULr"
+}

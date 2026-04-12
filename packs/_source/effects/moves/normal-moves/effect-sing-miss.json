@@ -1,0 +1,98 @@
+{
+  "folder": "vvYHstuSI4986bjM",
+  "name": "Effect: Sing (Miss)",
+  "type": "effect",
+  "_id": "MlJSSeAT9abuLZ3G",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "@Embed[Compendium.ptu.moves.Item.YD9PPN6tPaLMrvvm]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.modifiers.evasion.physical.mod",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.modifiers.evasion.special.mod",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.modifiers.evasion.speed.mod",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.effects.Item.I2nVAxBFKDMe8EQt"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-sing-miss",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 2,
+      "unit": "rounds",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "sort": 4800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1710850705151,
+    "modifiedTime": 1710851809956,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MlJSSeAT9abuLZ3G"
+}

@@ -1,0 +1,466 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:10.436Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Applin that bury into tart apples after hatching will one day evolve into Flapple. Flapple can concentrate the natural acids present in their fruit to concoct a potent chemical mixture. They store this acidic cocktail in their cheeks, spitting it out to catch prey or to defend themselves from attackers; it is strong enough to cause chemical burns on exposed skin. Flapple will hide in the branches of apple trees with their wings folded and their heads down to mimic apples. When unsuspecting bugs fly by, they will dissolve them with their acid before consuming their catches. Applin have in fact fashioned the skins of their apples into their wing membranes. Though resourceful, they are not particularly aerodynamic and must exert a lot of energy to stay aloft. For this reason, they prefer an ambush strategy when hunting and only fly when they need to relocate in search of better hunting grounds or escape from danger. In some regions, people dilute Flapple acid with water and add spices to create a refreshingly-tart beverage. This beverage can also be fermented to produce an alcoholic variant.",
+    "number": 841,
+    "form": "",
+    "stats": {
+      "hp": 7,
+      "atk": 11,
+      "def": 8,
+      "spatk": 10,
+      "spdef": 6,
+      "spd": 7
+    },
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "gluttony",
+          "uuid": "Compendium.ptu.abilities.Item.r5RAP7wiKkOLZ81U"
+        },
+        {
+          "slug": "liquid-ooze",
+          "uuid": "Compendium.ptu.abilities.Item.4Eajhd1jemnWDwl9"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "ripen",
+          "uuid": "Compendium.ptu.abilities.Item.Qcsb6CLGYJZjjFoh"
+        },
+        {
+          "slug": "hustle",
+          "uuid": "Compendium.ptu.abilities.Item.Fi2GT4YpvrH2Qa7l"
+        }
+      ],
+      "high": [
+        {
+          "slug": "flutter",
+          "uuid": "Compendium.ptu.abilities.Item.NPu2GzghOUmik64d"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.A0sBewaxj0epSaUU",
+        "slug": "applin",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 20,
+        "uuid": "Compendium.ptu.species.Item.w26bbvB0ag2aT1cA",
+        "slug": "flapple",
+        "other": {
+          "restrictions": [
+            "Tart"
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 0.3,
+      "weight": 1,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Plant",
+        "Dragon"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Forest",
+      "Grassland"
+    ],
+    "capabilities": {
+      "overland": 4,
+      "sky": 6,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 1,
+      "naturewalk": [
+        "Forest",
+        "Grassland"
+      ],
+      "other": [
+        {
+          "slug": "guster",
+          "uuid": "Compendium.ptu.capabilities.Item.St6x6ofobU8ztcts"
+        },
+        {
+          "slug": "stealth",
+          "uuid": "Compendium.ptu.capabilities.Item.a1N1M1GMjMClaOdj"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.kdkh4n6TWXFCaL9I",
+          "slug": "wing-attack",
+          "level": "Evo"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.kbFCQpaR2tvABKMa",
+          "slug": "acid-spray",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VsFJounIwoSOu8g4",
+          "slug": "acrobatics",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jx4TeOVUk1DX8R45",
+          "slug": "leech-seed",
+          "level": 12
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sEpnYIBn1Bkm9ZXd",
+          "slug": "dragon-breath",
+          "level": 20
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dJm387VzcoJlHf8I",
+          "slug": "dragon-dance",
+          "level": 24
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s7PxDFwc4DrmDPzt",
+          "slug": "grav-apple",
+          "level": 32
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TA3fevwvHn8PJHEI",
+          "slug": "fly",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jvtENU2Q9nhemWwU",
+          "slug": "dragon-rush",
+          "level": 44
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup",
+          "slug": "energy-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VsFJounIwoSOu8g4",
+          "slug": "acrobatics"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ltI3ruaEiyhlwPjj",
+          "slug": "volt-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TA3fevwvHn8PJHEI",
+          "slug": "fly"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.ptP5LFYkJR4BJHIu",
+          "slug": "bullet-seed"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Y5R5mbVcGq6fwoFj",
+          "slug": "defense-curl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BFGQXQGO2EeO8mpK",
+          "slug": "draco-meteor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu",
+          "slug": "dragon-pulse"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ",
+          "slug": "endure"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+          "slug": "giga-drain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Bcv2CeJg9qU1q0Cb",
+          "slug": "growth-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L",
+          "slug": "outrage"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.yUba2OWKoxAE3txP",
+          "slug": "recycle-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nzhedIfXpsZWaEx9",
+          "slug": "rollout"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU",
+          "slug": "seed-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QGRRWu7evV8MKgs4",
+          "slug": "sucker-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.CCtm8sYMR7X45ZwK",
+          "slug": "twister-n"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 5,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "flapple",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "type": {
+      "0": "Grass",
+      "1": "Dragon",
+      "2": ""
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Flapple",
+  "_id": "w26bbvB0ag2aT1cA",
+  "effects": [],
+  "sort": 107500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!w26bbvB0ag2aT1cA"
+}

@@ -1,0 +1,90 @@
+{
+  "name": "Fire Fang",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FireIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Fire Fang Burns or Flinches on 18-19 during Accuracy Check; flip a coin to determine whether the foe becomes Burned or Flinched. On 20 during Accuracy Check, the foe is both Burned and Flinched.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": {
+          "not": "target:types:fire"
+        },
+        "range": "19",
+        "even": false,
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.NA1Vn8A2h6JIIUhj",
+        "value": "",
+        "affects": "target"
+      },
+      {
+        "key": "ApplyEffect",
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.xE6uIFWZoYXAZQxA",
+        "range": "18",
+        "value": "",
+        "predicate": []
+      }
+    ],
+    "enabled": true,
+    "slug": "fire-fang",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1",
+      "Jaw"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fire",
+    "category": "Physical",
+    "damageBase": "7",
+    "frequency": "At-Will",
+    "ac": "3",
+    "range": "Melee",
+    "contestType": "Beauty - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "QDqTpQ7sJUvhU2v4",
+  "effects": [],
+  "sort": 35700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1709368321233,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!QDqTpQ7sJUvhU2v4"
+}

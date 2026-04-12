@@ -1,0 +1,206 @@
+{
+  "name": "Hex Maniac Studies Rank 1",
+  "system": {
+    "origin": "",
+    "effect": "Learn two Hex Maniac Moves. You may choose any Move marked with the Hex Maniac Studies Rank you are taking or lower.  Use Curse as if you were a Ghost-type Pokemon.\nRank 1 Moves: Confuse Ray, Curse, Hypnosis, Spite, Will-O-Wisp",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "rank1move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky",
+            "predicate": {
+              "not": "move:confuse-ray"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.3abHb5scrH2j6qMF",
+            "predicate": {
+              "not": "move:hypnosis"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.5A0ZjnRjOwj1i7n8",
+            "predicate": {
+              "not": "move:curse"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+            "predicate": {
+              "not": "move:spite"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+            "predicate": {
+              "not": "move:will-o-wisp"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "uuid": "{item|flags.ptu.rulesSelections.rank1move1}",
+        "allowDuplicate": false
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "rank1move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky"
+                  ]
+                }
+              },
+              {
+                "not": "move:confuse-ray"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.3abHb5scrH2j6qMF",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.3abHb5scrH2j6qMF"
+                  ]
+                }
+              },
+              {
+                "not": "move:hypnosis"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.5A0ZjnRjOwj1i7n8",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.5A0ZjnRjOwj1i7n8"
+                  ]
+                }
+              },
+              {
+                "not": "move:curse"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.7sMVSFGaJax6lWuM"
+                  ]
+                }
+              },
+              {
+                "not": "move:spite"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank1move1}",
+                    "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU"
+                  ]
+                }
+              },
+              {
+                "not": "move:will-o-wisp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.rank1move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": "hex-maniac-studies-rank-1",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Ranked 3"
+    ],
+    "prerequisites": [
+      "Hex Maniac"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Hex Maniac",
+    "automation": [],
+    "name": "Hex Maniac Studies Rank 1",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Hex Maniac",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078965,
+    "modifiedTime": 1710770077462,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 44000000,
+  "_id": "dcrTr412w7Sbt3q1",
+  "_key": "!items!dcrTr412w7Sbt3q1"
+}

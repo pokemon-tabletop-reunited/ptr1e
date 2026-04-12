@@ -1,0 +1,77 @@
+{
+  "name": "Ephemeral Effect: Type Brace (Ground)",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Applies @UUID[Compendium.ptu.effects.Item.3Z0FXRjOLUkhlBLG] when the correct condition is met.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "move:type:ground"
+        ],
+        "affects": "origin",
+        "selectors": "damage-received",
+        "uuid": "Compendium.ptu.effects.Item.3Z0FXRjOLUkhlBLG"
+      }
+    ],
+    "enabled": true,
+    "slug": "ephemeral-effect-type-brace-ground",
+    "schema": {
+      "version": 0.111,
+      "lastMigration": {
+        "datetime": "2023-10-08T13:36:44.558Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.311",
+          "system": "4.0.0.beta.11"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "Z22J3Gw8tt1I241d",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.11",
+    "coreVersion": "13.350",
+    "createdTime": 1696532522711,
+    "modifiedTime": 1696772995295,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "UhXINRTcKLKHoi67",
+  "sort": 200000,
+  "_key": "!items!UhXINRTcKLKHoi67"
+}

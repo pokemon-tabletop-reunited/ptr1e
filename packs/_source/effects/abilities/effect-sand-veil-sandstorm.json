@@ -1,0 +1,95 @@
+{
+  "name": "Effect: Sand Veil (Sandstorm)",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "The user gains an extra +1 Evasion while in Hail or snowy terrain. \n\n@UUID[Compendium.ptu.abilities.Item.Ewr9Oh7DddMKcWLZ]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.evasion.physical.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.evasion.special.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.evasion.speed.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "snow-cloak-hail",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "HTNFGIxy9zsCONjI",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "createdTime": 1706452826091,
+    "modifiedTime": 1712499651437,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "kanto-adventures",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.0.6"
+    }
+  },
+  "_id": "fRleASN88UKiuYYY",
+  "sort": 5500000,
+  "_key": "!items!fRleASN88UKiuYYY"
+}

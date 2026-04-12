@@ -1,0 +1,65 @@
+{
+  "name": "Menace",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You hit a foe with the Terrorize Manipulation\nEffect: Until their next turn, the target has their Initiative lowered to 0. For one full round, attacks against them cause them to Flinch on 17+ or have their existing Flinch Range increased by +4.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Roughneck"
+    ],
+    "frequency": "At-Will - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Roughneck",
+    "automation": [],
+    "name": "Menace",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Roughneck"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368084420,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 20300000,
+  "_id": "Ja6Y0K2FWx074TAL",
+  "_key": "!items!Ja6Y0K2FWx074TAL"
+}

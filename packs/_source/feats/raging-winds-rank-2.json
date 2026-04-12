@@ -1,0 +1,268 @@
+{
+  "name": "Raging Winds Rank 2",
+  "system": {
+    "origin": "",
+    "effect": "You may learn two Moves from the list below, marked with the Raging Winds Rank you are gaining or lower.\nRank 2 Moves: Air Slash, Bounce, Defog, Feather Dance",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+            "predicate": {
+              "not": "move:aerial-ace"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p",
+            "predicate": {
+              "not": "move:air-cutter"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.XFAP16yE2fKZRExS",
+            "predicate": {
+              "not": "move:gust"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.1WQ6vh8cbOaUzhaf",
+            "predicate": {
+              "not": "move:tailwind"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zl9s4r9bKURTf07l",
+            "predicate": {
+              "not": "move:air-slash"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+            "predicate": {
+              "not": "move:bounce"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.DANp8m02Ocfv3esu",
+            "predicate": {
+              "not": "move:defog"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.etQ46pkobBuyW3Xx",
+            "predicate": {
+              "not": "move:feather-dance"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP"
+                  ]
+                }
+              },
+              {
+                "not": "move:aerial-ace"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p"
+                  ]
+                }
+              },
+              {
+                "not": "move:air-cutter"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.XFAP16yE2fKZRExS",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.XFAP16yE2fKZRExS"
+                  ]
+                }
+              },
+              {
+                "not": "move:gust"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.1WQ6vh8cbOaUzhaf",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.1WQ6vh8cbOaUzhaf"
+                  ]
+                }
+              },
+              {
+                "not": "move:tailwind"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zl9s4r9bKURTf07l",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.Zl9s4r9bKURTf07l"
+                  ]
+                }
+              },
+              {
+                "not": "move:air-slash"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR"
+                  ]
+                }
+              },
+              {
+                "not": "move:bounce"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.DANp8m02Ocfv3esu",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.DANp8m02Ocfv3esu"
+                  ]
+                }
+              },
+              {
+                "not": "move:defog"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.etQ46pkobBuyW3Xx",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.etQ46pkobBuyW3Xx"
+                  ]
+                }
+              },
+              {
+                "not": "move:feather-dance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 3",
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Expert Acrobatics or Perception"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Wind Runner",
+    "automation": [],
+    "name": "Raging Winds Rank 2",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Expert Acrobatics or Perception"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081714,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 54500000,
+  "_id": "lxge7NPhHL4T09il",
+  "_key": "!items!lxge7NPhHL4T09il"
+}

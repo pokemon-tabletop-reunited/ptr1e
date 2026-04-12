@@ -1,0 +1,70 @@
+{
+  "name": "Earth Shaker [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Pick three of Bulldoze, Mud Shot, Mud-Slap, Mud Sport, or Sand-Attack. You learn the chosen Moves.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "earth-shaker-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Ground)",
+      "Novice Intuition or Novice Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Earth Shaker [CR]",
+    "name": "Earth Shaker [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "d3NxFgIfiV3ERXZj",
+  "_id": "VhRc8TSpwKXUE5g2",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!VhRc8TSpwKXUE5g2"
+}

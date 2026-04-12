@@ -1,0 +1,82 @@
+{
+  "folder": "p9yRJ8QVFrEtl0mK",
+  "name": "Aura of Life [CR]",
+  "type": "feat",
+  "img": "/systems/ptu/static/css/images/icons/feat_icon.png",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You may use Intuition instead of Survival to Scout an area and find what Wild Pokémon are living there.\nBonus: If your Intuition is Adept Rank or higher, you may also use Intuition instead of Survival to try and find Mega Stones, Z Stones and Type Gems following the rules of finding Pokémon Fossils.\nIf your Intuition is Expert Rank or higher, your DM can choose to have spirits of passed away Pokémon or people appear and talk to you. Try and see if you can help these spirits pass to the realms beyond by fulfilling last requests.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "auraguardian",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.auraguardian}.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "aura-of-life-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack or Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Aura Guardian",
+      "Novice Intuition"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Aura Guardian [CR]"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1700000012643,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "NuxsNx1wBpAerdkw",
+  "_key": "!items!NuxsNx1wBpAerdkw"
+}

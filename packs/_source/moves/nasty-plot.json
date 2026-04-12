@@ -1,0 +1,75 @@
+{
+  "name": "Nasty Plot",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/DarkIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Raise the user's Special Attack by 2 Combat Stages.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "origin",
+        "selectors": "{item|id}-damage-dealt",
+        "uuid": "Compendium.ptu.effects.Item.h1Jaqhwr9pUithTH",
+        "range": "1",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "nasty-plot",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.h1Jaqhwr9pUithTH",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Dark",
+    "category": "Status",
+    "damageBase": "--",
+    "frequency": "EOT",
+    "ac": "--",
+    "range": "Self",
+    "contestType": "Cute - Get Ready!",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "z0iMHqLi2ctCy2nb",
+  "effects": [],
+  "sort": 87400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1709369751013,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!z0iMHqLi2ctCy2nb"
+}

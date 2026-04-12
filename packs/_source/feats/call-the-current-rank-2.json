@@ -1,0 +1,224 @@
+{
+  "name": "Call the Current Rank 2",
+  "system": {
+    "origin": "",
+    "effect": "You learn 2 Moves chosen from the list below, marked with the Rank of this Feature you are gaining or lower.\nRank 2 Moves: Bubblebeam, Waterfall, Whirlpool",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "rank2move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.Htb3LXoNd24yFNEG",
+            "predicate": {
+              "not": "move:aqua-jet"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.ywYeIhxlrHb9gOP1",
+            "predicate": {
+              "not": "move:aqua-ring"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+            "predicate": {
+              "not": "move:water-pulse"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.MkQLfqYsti5jwzTm",
+            "predicate": {
+              "not": "move:bubblebeam"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.DUWjQv05jUb2p6gj",
+            "predicate": {
+              "not": "move:whirlpool"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN",
+            "predicate": {
+              "not": "move:waterfall"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.rank2move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "rank2move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.Htb3LXoNd24yFNEG",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank2move1}",
+                    "Compendium.ptu.moves.Item.Htb3LXoNd24yFNEG"
+                  ]
+                }
+              },
+              {
+                "not": "move:aqua-jet"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.ywYeIhxlrHb9gOP1",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank2move1}",
+                    "Compendium.ptu.moves.Item.ywYeIhxlrHb9gOP1"
+                  ]
+                }
+              },
+              {
+                "not": "move:aqua-ring"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank2move1}",
+                    "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4"
+                  ]
+                }
+              },
+              {
+                "not": "move:water-pulse"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.MkQLfqYsti5jwzTm",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank2move1}",
+                    "Compendium.ptu.moves.Item.MkQLfqYsti5jwzTm"
+                  ]
+                }
+              },
+              {
+                "not": "move:bubblebeam"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.DUWjQv05jUb2p6gj",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank2move1}",
+                    "Compendium.ptu.moves.Item.DUWjQv05jUb2p6gj"
+                  ]
+                }
+              },
+              {
+                "not": "move:whirlpool"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.rank2move1}",
+                    "Compendium.ptu.moves.Item.72Gli6hv7dk4QRdN"
+                  ]
+                }
+              },
+              {
+                "not": "move:waterfall"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.rank2move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 3",
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Adept Athletics or Acrobatics"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Maelstrom",
+    "automation": [],
+    "name": "Call the Current Rank 2",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Adept Athletics or Acrobatics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081713,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 53700000,
+  "_id": "lS9yQxgkQETHZKaz",
+  "_key": "!items!lS9yQxgkQETHZKaz"
+}

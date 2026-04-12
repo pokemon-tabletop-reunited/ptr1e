@@ -1,0 +1,65 @@
+{
+  "name": "Flexible Form",
+  "system": {
+    "origin": "",
+    "effect": "Your body becomes more malleable, and even your bones are able to flex when required. You do not gain Wounds from taking Massive damage, and you gain a +2 Bonus to any Acrobatics or Athletics Check made to bend, squeeze, or otherwise contort your body - including those to avoid Trip or Grapple maneuvers.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Miasmic"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Miasmic",
+    "automation": [],
+    "name": "Flexible Form",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Miasmic"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081762,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 54200000,
+  "_id": "llYHD0rYIUSGPPuz",
+  "_key": "!items!llYHD0rYIUSGPPuz"
+}

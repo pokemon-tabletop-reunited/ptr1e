@@ -1,0 +1,86 @@
+{
+  "folder": "HTNFGIxy9zsCONjI",
+  "name": "Effect: Bone Wielder",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "The user’s Bone Club, Bonemerang, and Bone Rush moves treat immunity against Ground-Type Moves as neutral. The user's Shadow Bone Moves treat immunity against Ghost-Type Moves as neutral.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:ground"
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:ghost"
+      }
+    ],
+    "enabled": true,
+    "slug": "bone-wielder",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-16T22:16:23.546Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.13"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1703967350930,
+    "modifiedTime": 1712499651437,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "kanto-adventures",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "OG1a1uZlWaHbc5zx",
+  "sort": 2300000,
+  "_key": "!items!OG1a1uZlWaHbc5zx"
+}

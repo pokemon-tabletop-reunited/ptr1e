@@ -1,0 +1,524 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:05.090Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 3130,
+    "form": "",
+    "stats": {
+      "hp": 13,
+      "atk": 14,
+      "def": 8,
+      "spatk": 7,
+      "spdef": 8,
+      "spd": 6
+    },
+    "types": [
+      "Fighting",
+      "Rock"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "battle-armor",
+          "uuid": "Compendium.ptu.abilities.Item.gHfEkYe9Vdc6TqeX"
+        },
+        {
+          "slug": "inner-focus",
+          "uuid": "Compendium.ptu.abilities.Item.uM561WHxXwcdrMWl"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "sturdy",
+          "uuid": "Compendium.ptu.abilities.Item.AaDXWUAMnhxLbyn3"
+        },
+        {
+          "slug": "guts",
+          "uuid": "Compendium.ptu.abilities.Item.MmN3OuS0wuIjvAWR"
+        }
+      ],
+      "high": [
+        {
+          "slug": "clear-body",
+          "uuid": "Compendium.ptu.abilities.Item.SgZgmNYHuMbt7JF2"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.7RFOgfc50j4BtGhl",
+        "slug": "jungore",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.EiIntlkohcD0yKmr",
+        "slug": "majungold",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.7,
+      "weight": 156.9,
+      "sizeClass": "Medium",
+      "weightClass": 5
+    },
+    "breeding": {
+      "genderRatio": 87.5,
+      "eggGroups": [
+        "Field",
+        "Mineral"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Marsh",
+      "Rainforest"
+    ],
+    "capabilities": {
+      "overland": 7,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 2,
+      "power": 9,
+      "naturewalk": [
+        "Forest",
+        "Wetland"
+      ],
+      "other": []
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "scary-face",
+          "uuid": "Compendium.ptu.moves.Item.IRGZ3Cc7WrqjhF9u",
+          "level": 6
+        },
+        {
+          "slug": "rock-throw",
+          "uuid": "Compendium.ptu.moves.Item.ciR11ELc7B3ulJzA",
+          "level": 10
+        },
+        {
+          "slug": "bite",
+          "uuid": "Compendium.ptu.moves.Item.QMaJ91E3XBatUcV9",
+          "level": 12
+        },
+        {
+          "slug": "bide",
+          "uuid": "Compendium.ptu.moves.Item.3vdmhkXenPgplUwb",
+          "level": 15
+        },
+        {
+          "slug": "brick-break",
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab",
+          "level": 17
+        },
+        {
+          "slug": "iron-defense",
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "level": 20
+        },
+        {
+          "slug": "rock-slide",
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "level": 26
+        },
+        {
+          "slug": "iron-head",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "level": 30
+        },
+        {
+          "slug": "reversal",
+          "uuid": "Compendium.ptu.moves.Item.ekstCWqmGpJSMLj1",
+          "level": 34
+        },
+        {
+          "slug": "crunch",
+          "uuid": "Compendium.ptu.moves.Item.5uY1ltFWijN07CKe",
+          "level": 37
+        },
+        {
+          "slug": "thrash",
+          "uuid": "Compendium.ptu.moves.Item.czDZWjn9TbP9ON4q",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.k3uDmc898TaGdfVD",
+          "slug": "golden-fist",
+          "level": 44
+        },
+        {
+          "slug": "rock-wrecker",
+          "uuid": "Compendium.ptu.moves.Item.uJIYs5b22o0rRX9s",
+          "level": 53
+        },
+        {
+          "slug": "skull-bash",
+          "uuid": "Compendium.ptu.moves.Item.USJx4QKRdpmiRYKv",
+          "level": 58
+        },
+        {
+          "slug": "hammer-arm",
+          "uuid": "Compendium.ptu.moves.Item.uX0GA4opzRCtDQVY",
+          "level": 68
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "level": 75
+        }
+      ],
+      "machine": [
+        {
+          "slug": "roar",
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY"
+        },
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "bulk-up",
+          "uuid": "Compendium.ptu.moves.Item.du6VccHCQ2VjQ0D8"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "sunny-day",
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+        },
+        {
+          "slug": "taunt",
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN"
+        },
+        {
+          "slug": "hyper-beam",
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "smack-down",
+          "uuid": "Compendium.ptu.moves.Item.YG7EABDKQsFjDi8E"
+        },
+        {
+          "slug": "earthquake",
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "brick-break",
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "sandstorm",
+          "uuid": "Compendium.ptu.moves.Item.XC3ObpOOy8mGk8s8"
+        },
+        {
+          "slug": "rock-tomb",
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "focus-blast",
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI"
+        },
+        {
+          "slug": "fling",
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6"
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK"
+        },
+        {
+          "slug": "rock-polish",
+          "uuid": "Compendium.ptu.moves.Item.7M8aaHfxabHTcwau"
+        },
+        {
+          "slug": "stone-edge",
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut"
+        },
+        {
+          "slug": "gyro-ball",
+          "uuid": "Compendium.ptu.moves.Item.jn8ej4sQ6o2PuUJx"
+        },
+        {
+          "slug": "bulldoze",
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu"
+        },
+        {
+          "slug": "rock-slide",
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk"
+        },
+        {
+          "slug": "poison-jab",
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "flash-cannon",
+          "uuid": "Compendium.ptu.moves.Item.926T6mncd7CobCCr"
+        },
+        {
+          "slug": "confide",
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "slug": "ancient-power",
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH"
+        },
+        {
+          "slug": "block",
+          "uuid": "Compendium.ptu.moves.Item.PvmLk3AU04nOjH4x"
+        },
+        {
+          "slug": "drain-punch",
+          "uuid": "Compendium.ptu.moves.Item.Dr7Eh1TGQHwQcreV"
+        },
+        {
+          "slug": "drill-run",
+          "uuid": "Compendium.ptu.moves.Item.CyMarrube3yoGcuy"
+        },
+        {
+          "slug": "dual-chop",
+          "uuid": "Compendium.ptu.moves.Item.kkib04B5KkMnRQ2I"
+        },
+        {
+          "slug": "earth-power",
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "fire-punch",
+          "uuid": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf"
+        },
+        {
+          "slug": "focus-punch",
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h",
+          "slug": "ice-punch"
+        },
+        {
+          "slug": "iron-defense",
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF"
+        },
+        {
+          "slug": "iron-head",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN"
+        },
+        {
+          "slug": "iron-tail",
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb"
+        },
+        {
+          "slug": "knock-off",
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6"
+        },
+        {
+          "slug": "last-resort",
+          "uuid": "Compendium.ptu.moves.Item.syEhvBKtqQTBqyct"
+        },
+        {
+          "slug": "low-kick",
+          "uuid": "Compendium.ptu.moves.Item.dOMKjZx7flfPZTtV"
+        },
+        {
+          "slug": "thunder-punch",
+          "uuid": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY"
+        },
+        {
+          "slug": "superpower",
+          "uuid": "Compendium.ptu.moves.Item.xwJMUiNv3k0k9VK6"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "majungold",
+    "rules": [],
+    "source": {
+      "value": "Fangame Uranium Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "eBzxHM3RlUyuiO0g",
+  "name": "Majungold",
+  "_id": "EiIntlkohcD0yKmr",
+  "effects": [],
+  "sort": 3800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!EiIntlkohcD0yKmr"
+}

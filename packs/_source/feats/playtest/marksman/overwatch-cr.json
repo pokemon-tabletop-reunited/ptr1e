@@ -1,0 +1,66 @@
+{
+  "name": "Overwatch [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Create a Wide Line X, where X is equal to your Weapon’s Range minus 2. For one full round, if a foe moves in or out of that area, you may make a Ranged Weapon attack, Frequency allowing, against that foe as a Free Action. You may not attack a specific foe more than once per round this way. While this is in effect, if you Move from your current location, Overwatch’s effect is lost.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Marksman",
+      "Adept Perception or Combat"
+    ],
+    "frequency": "At-Will – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Marksman [CR]",
+    "name": "Overwatch [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "TTdZunMgErcrbby5",
+  "_id": "1d19v0SdfB3bMDRB",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1d19v0SdfB3bMDRB"
+}

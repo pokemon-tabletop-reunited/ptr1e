@@ -1,0 +1,87 @@
+{
+  "name": "Shadow Call",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Last Chance Abilities are always associated with an Elemental Type. The user gains a +5 bonus to Damage Rolls when using attacks of that Type. This bonus increases to +10 when the user is under 1/3rd of their Maximum Hit Points.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "hideIfDisabled": false,
+        "selectors": "damage-roll",
+        "value": {
+          "brackets": [
+            {
+              "start": 0,
+              "end": 33,
+              "value": 10
+            },
+            {
+              "start": 34,
+              "end": 100,
+              "value": 5
+            }
+          ],
+          "field": "actor|system.health.percent"
+        },
+        "label": "{item|name}",
+        "predicate": [
+          "move:type:shadow"
+        ]
+      }
+    ],
+    "enabled": true,
+    "slug": "last-chance",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T01:45:48.710Z",
+        "version": {
+          "schema": 0.111,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "createdTime": 1706453426306,
+    "modifiedTime": 1707761783909,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "rejuvenation",
+      "uuid": null,
+      "coreVersion": "11.308",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.alpha.34"
+    }
+  },
+  "_id": "PwzyF5HoXMN6BTJD",
+  "sort": 0,
+  "_key": "!items!PwzyF5HoXMN6BTJD"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Firebrand [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Your Fire-Type Moves Burn Targets on a roll of 19+. If a move already has a chance of Burning foes, Firebrand increases the effect range by +2.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "firebrand",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.firebrand}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack or Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Fire Bringer",
+      "Adept Focus or Combat"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Fire Bringer [CR]",
+    "name": "Firebrand [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "FeVAuZAxeshdeg9p",
+  "_id": "fj3uFMvEqHoM78Jd",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fj3uFMvEqHoM78Jd"
+}

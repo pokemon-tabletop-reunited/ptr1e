@@ -1,0 +1,78 @@
+{
+  "name": "Ancient Power",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/RockIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "The user has each of its stats raised by 1 Combat Stage on 19+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-dealt",
+        "uuid": "Compendium.ptu.effects.Item.vm2BX3GeRQJf8ceT",
+        "range": "19",
+        "value": "",
+        "affects": "origin"
+      }
+    ],
+    "enabled": true,
+    "slug": "ancient-power",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.vm2BX3GeRQJf8ceT",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1",
+      "Spirit Surge"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Rock",
+    "category": "Special",
+    "damageBase": "6",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "Range 6",
+    "contestType": "Tough - Desperation",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "JtVhKjrnr8wc4BAH",
+  "effects": [],
+  "sort": 26200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710783076348,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!JtVhKjrnr8wc4BAH"
+}

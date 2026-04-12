@@ -1,0 +1,557 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:06.372Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 3552,
+    "form": "",
+    "stats": {
+      "hp": 5,
+      "atk": 6,
+      "def": 7,
+      "spatk": 5,
+      "spdef": 3,
+      "spd": 3
+    },
+    "types": [
+      "Fire",
+      "Rock"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "magma-armor",
+          "uuid": "Compendium.ptu.abilities.Item.hMzd6dUVY7WpGbfh"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "sturdy",
+          "uuid": "Compendium.ptu.abilities.Item.AaDXWUAMnhxLbyn3"
+        },
+        {
+          "slug": "flame-body",
+          "uuid": "Compendium.ptu.abilities.Item.vF0vjHMDikFAthFY"
+        },
+        {
+          "slug": "cave-crasher",
+          "uuid": "Compendium.ptu.abilities.Item.KbDf9PYW1vwrlAg4"
+        }
+      ],
+      "high": [
+        {
+          "slug": "brimstone",
+          "uuid": "Compendium.ptu.abilities.Item.LsevtHLkLeZf2FF4"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.OsEhJGMLAmMz4TrL",
+        "slug": "rocano",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.WYEUEWJDdgdWS1mx",
+        "slug": "volcaroc",
+        "level": 25,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.t587g8Ejb2j3O5P1",
+        "slug": "volcoalder",
+        "level": 35,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.4,
+      "weight": 34,
+      "sizeClass": "Small",
+      "weightClass": 3
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Mineral"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Terravore"
+    ],
+    "habitats": [
+      "Cave",
+      "Mountain"
+    ],
+    "capabilities": {
+      "overland": 4,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 3,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 2,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "firestarter",
+          "uuid": "Compendium.ptu.capabilities.Item.nAIkONF3gtaYfEyX"
+        },
+        {
+          "slug": "glow",
+          "uuid": "Compendium.ptu.capabilities.Item.v4OOr4KlIO0DKw5r"
+        },
+        {
+          "slug": "heater",
+          "uuid": "Compendium.ptu.capabilities.Item.9DQsEtRIDXdw7ICw"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        },
+        {
+          "slug": "volatile-bomb",
+          "uuid": "Compendium.ptu.capabilities.Item.AwHMDdbqCI2nugGD"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "tackle",
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "level": 1
+        },
+        {
+          "slug": "harden",
+          "uuid": "Compendium.ptu.moves.Item.Mw6vBLeHYty112VS",
+          "level": 1
+        },
+        {
+          "slug": "poison-gas",
+          "uuid": "Compendium.ptu.moves.Item.2YHDxImu2aLCkeYO",
+          "level": 1
+        },
+        {
+          "slug": "incinerate",
+          "uuid": "Compendium.ptu.moves.Item.uabUdNDKH4LCcTZI",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nzhedIfXpsZWaEx9",
+          "slug": "rollout",
+          "level": 8
+        },
+        {
+          "slug": "smokescreen",
+          "uuid": "Compendium.ptu.moves.Item.kvvdzOdMFvhMbQga",
+          "level": 11
+        },
+        {
+          "slug": "clear-smog",
+          "uuid": "Compendium.ptu.moves.Item.RKyKtJkj75j2CNJF",
+          "level": 15
+        },
+        {
+          "slug": "flame-burst",
+          "uuid": "Compendium.ptu.moves.Item.JV9D80kHWzifgoYH",
+          "level": 18
+        },
+        {
+          "slug": "smack-down",
+          "uuid": "Compendium.ptu.moves.Item.YG7EABDKQsFjDi8E",
+          "level": 22
+        },
+        {
+          "slug": "iron-defense",
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "level": 25
+        },
+        {
+          "slug": "ancient-power",
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "level": 29
+        },
+        {
+          "slug": "lava-plume",
+          "uuid": "Compendium.ptu.moves.Item.WpFzl62EYkpKipF5",
+          "level": 32
+        },
+        {
+          "slug": "stealth-rock",
+          "uuid": "Compendium.ptu.moves.Item.XklsarNBfkknbU8O",
+          "level": 36
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.NLvAbMYzgghJqrEt",
+          "slug": "mudslide",
+          "level": 39
+        },
+        {
+          "slug": "rock-slide",
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "level": 39
+        },
+        {
+          "slug": "flamethrower",
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+          "level": 43
+        },
+        {
+          "slug": "earth-power",
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+          "level": 46
+        },
+        {
+          "slug": "explosion",
+          "uuid": "Compendium.ptu.moves.Item.uZ5eUCeStPObSEHj",
+          "level": 50
+        },
+        {
+          "slug": "eruption",
+          "uuid": "Compendium.ptu.moves.Item.Mmjh1FNVMsGEYklr",
+          "level": 53
+        }
+      ],
+      "machine": [
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "sunny-day",
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+        },
+        {
+          "slug": "light-screen",
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "solar-beam",
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO"
+        },
+        {
+          "slug": "smack-down",
+          "uuid": "Compendium.ptu.moves.Item.YG7EABDKQsFjDi8E"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "flamethrower",
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn"
+        },
+        {
+          "slug": "sludge-bomb",
+          "uuid": "Compendium.ptu.moves.Item.T4KEAGNoEIpiO0G5"
+        },
+        {
+          "slug": "sandstorm",
+          "uuid": "Compendium.ptu.moves.Item.XC3ObpOOy8mGk8s8"
+        },
+        {
+          "slug": "fire-blast",
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM"
+        },
+        {
+          "slug": "rock-tomb",
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "flame-charge",
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "overheat",
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6"
+        },
+        {
+          "slug": "scald",
+          "uuid": "Compendium.ptu.moves.Item.Nu3QmPfiZVzOccNU"
+        },
+        {
+          "slug": "will-o-wisp",
+          "uuid": "Compendium.ptu.moves.Item.qltGKDIhEJpOqswU"
+        },
+        {
+          "slug": "explosion",
+          "uuid": "Compendium.ptu.moves.Item.uZ5eUCeStPObSEHj"
+        },
+        {
+          "slug": "rock-polish",
+          "uuid": "Compendium.ptu.moves.Item.7M8aaHfxabHTcwau"
+        },
+        {
+          "slug": "stone-edge",
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut"
+        },
+        {
+          "slug": "gyro-ball",
+          "uuid": "Compendium.ptu.moves.Item.jn8ej4sQ6o2PuUJx"
+        },
+        {
+          "slug": "bulldoze",
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu"
+        },
+        {
+          "slug": "rock-slide",
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "confide",
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j"
+        }
+      ],
+      "egg": [
+        {
+          "slug": "heavy-slam",
+          "uuid": "Compendium.ptu.moves.Item.W3CQUsjZCf2VJUCz"
+        },
+        {
+          "slug": "inferno",
+          "uuid": "Compendium.ptu.moves.Item.f25cGYvLApdYt14w"
+        },
+        {
+          "slug": "iron-head",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN"
+        },
+        {
+          "slug": "power-gem",
+          "uuid": "Compendium.ptu.moves.Item.supS2UO9UHy5af12"
+        },
+        {
+          "slug": "wide-guard",
+          "uuid": "Compendium.ptu.moves.Item.x0Ma0IW8uk7gyQ8z"
+        }
+      ],
+      "tutor": [
+        {
+          "slug": "ancient-power",
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH"
+        },
+        {
+          "slug": "earth-power",
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "heat-wave",
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb"
+        },
+        {
+          "slug": "iron-defense",
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF"
+        },
+        {
+          "slug": "iron-head",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN"
+        },
+        {
+          "slug": "mud-slap",
+          "uuid": "Compendium.ptu.moves.Item.rDlHKWGG9k3AxIlP"
+        },
+        {
+          "slug": "rollout",
+          "uuid": "Compendium.ptu.moves.Item.nzhedIfXpsZWaEx9"
+        },
+        {
+          "slug": "secret-power",
+          "uuid": "Compendium.ptu.moves.Item.6Q0qjfHVNHd5fsec"
+        },
+        {
+          "slug": "snore",
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53"
+        },
+        {
+          "slug": "stealth-rock",
+          "uuid": "Compendium.ptu.moves.Item.XklsarNBfkknbU8O"
+        },
+        {
+          "slug": "uproar",
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 3,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "rocano",
+    "rules": [],
+    "source": {
+      "value": "Fangame Sage Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "CMymFngAhNsaPlS5",
+  "name": "Rocano",
+  "_id": "OsEhJGMLAmMz4TrL",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OsEhJGMLAmMz4TrL"
+}

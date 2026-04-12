@@ -1,0 +1,75 @@
+{
+  "name": "Acid",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/PoisonIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Acid lowers the target's Special Defense by 1 Combat Stage on 18+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.hfe2s7t6fb8huiiQ",
+        "range": "18",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "acid",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.hfe2s7t6fb8huiiQ",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Poison",
+    "category": "Special",
+    "damageBase": "4",
+    "frequency": "At-Will",
+    "ac": "2",
+    "range": "Cone 2",
+    "contestType": "Smart - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "Rj7PzPVf9YeEn5mG",
+  "effects": [],
+  "sort": 37700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710784484334,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Rj7PzPVf9YeEn5mG"
+}

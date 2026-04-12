@@ -1,0 +1,66 @@
+{
+  "name": "Haunted Wounds [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You hit with an Apparition Move or Ghost-Typed Weapon Attack\nEffect: After one full round, repeat the triggering attack against one target as a Free Action, regardless of range. If this attack hits, it deals damage as if it were resisted one step further. Haunted Wounds may only affect a target once per Scene.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Shadow Arms",
+      "Master Intimidate or Occult Education"
+    ],
+    "frequency": "Scene x2 – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Apparition [CR]",
+    "name": "Haunted Wounds [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "9Lj9g7fcD9O4Gws1",
+  "_id": "etDWsBlJjnt7Ic4K",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!etDWsBlJjnt7Ic4K"
+}

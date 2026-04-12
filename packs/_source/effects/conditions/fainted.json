@@ -1,0 +1,79 @@
+{
+  "name": "Fainted",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Fainted.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "A Pokémon or Trainer that is at 0 Hit Points or lower is Fainted, or Knocked Out. A Fainted Pokémon or Trainer is unconscious due to injuries or other effects, and cannot use any Actions, Abilities, or Features unless the Feature or Ability specifically says otherwise.\n\nThe “Fainted” Condition is removed only by specific items such as Revive, or by being brought up to a positive Hit Point count by healing Features or Moves such as Wish or Heal Pulse. Potions and other healing items may still bring a Pokémon above 0 Hit Points, but it remains Fainted for another 10 minutes. When a Pokémon becomes Fainted, they are automatically cured of all Persistent and Volatile Status Conditions. The target also becomes Vulnerable.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.ptu.effects.Item.wqzPWKMbwvOWLVoI",
+        "onDeleteActions": {
+          "grantee": "restrict",
+          "granter": "cascade"
+        }
+      }
+    ],
+    "enabled": true,
+    "slug": "fainted",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.636Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": null,
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "rPNjp26cMp3XQ6aC",
+  "_id": "SdnNC6eLuDDf9zSa",
+  "effects": [],
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.3",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1695027124661,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!SdnNC6eLuDDf9zSa"
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Lucky Clover Grand Finale",
+  "system": {
+    "origin": "",
+    "effect": "You learn the Moves Moonblast and Aromatic Mist.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.PITSF6OhptqQFLxc"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.LkpfF5gcUddBm8CS"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "Passionato Harmony",
+      "Master Charm or Occult Education"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Glamour Weaver",
+    "automation": [],
+    "name": "Lucky Clover Grand Finale",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Passionato Harmony, Master Charm or Occult Education"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079236,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 16600000,
+  "_id": "GBLXpM3OH9rFBh6v",
+  "_key": "!items!GBLXpM3OH9rFBh6v"
+}

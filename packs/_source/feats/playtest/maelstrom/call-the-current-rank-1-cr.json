@@ -1,0 +1,69 @@
+{
+  "name": "Call The Current Rank 1 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You learn 3 Moves chosen from the list below, marked with the Rank of this Feature you are gaining or lower.\nRank 1: Aqua Jet, Aqua Ring, Chilling Water, Water Pulse, Water Sport\nRank 2: Brine, Rain Dance, Scald, Waterfall, Whirlpool\nRank 3: Aqua Tail, Dive, Hydro Pump, Surf, Wave Crash",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "call-the-current-rank-1-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 3",
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Maelstrom"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Maelstrom [CR]",
+    "name": "Call The Current [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "S8f1tL26M52IDjLP",
+  "_id": "Ns8LqpBqsffYWMr5",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Ns8LqpBqsffYWMr5"
+}

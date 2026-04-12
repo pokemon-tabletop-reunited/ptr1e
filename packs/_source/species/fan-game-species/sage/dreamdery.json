@@ -1,0 +1,585 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:05.516Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 3546,
+    "form": "",
+    "stats": {
+      "hp": 7,
+      "atk": 5,
+      "def": 6,
+      "spatk": 9,
+      "spdef": 11,
+      "spd": 7
+    },
+    "types": [
+      "Psychic"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "psych-out",
+          "uuid": "Compendium.ptu.abilities.Item.RgllwkMAWBzr40sF"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "infiltrator",
+          "uuid": "Compendium.ptu.abilities.Item.9nkIfAs2uDYCUGfb"
+        },
+        {
+          "slug": "hypnotic",
+          "uuid": "Compendium.ptu.abilities.Item.p8Fw4crpH16CAZ5v"
+        },
+        {
+          "slug": "sprint",
+          "uuid": "Compendium.ptu.abilities.Item.83eqtrEv4q3MGyRS"
+        }
+      ],
+      "high": [
+        {
+          "slug": "prankster",
+          "uuid": "Compendium.ptu.abilities.Item.aAZUoLYxGu9SpoLZ"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.HbT3QF0pTBnyYFtG",
+        "slug": "dreamdery",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 0.9,
+      "weight": 24.5,
+      "sizeClass": "Small",
+      "weightClass": 2
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field",
+        "Fairy"
+      ],
+      "hatchRate": 13
+    },
+    "diet": [
+      "Carnivore"
+    ],
+    "habitats": [
+      "Grassland",
+      "Urban"
+    ],
+    "capabilities": {
+      "overland": 6,
+      "sky": 0,
+      "swim": 3,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 2,
+      "power": 2,
+      "naturewalk": "",
+      "other": [
+        {
+          "slug": "darkvision",
+          "uuid": "Compendium.ptu.capabilities.Item.zzJWpOj40dLelBm5"
+        },
+        {
+          "slug": "dream-mist",
+          "uuid": "Compendium.ptu.capabilities.Item.UQIGU7D570K0h1hH"
+        },
+        {
+          "slug": "telepath",
+          "uuid": "Compendium.ptu.capabilities.Item.Qy7Cft4o4FAbHQ8G"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "growl",
+          "uuid": "Compendium.ptu.moves.Item.9Bi4aMf4Ls0JdLNK",
+          "level": 1
+        },
+        {
+          "slug": "yawn",
+          "uuid": "Compendium.ptu.moves.Item.TqoaCRNjoH4lGBj4",
+          "level": 1
+        },
+        {
+          "slug": "confusion",
+          "uuid": "Compendium.ptu.moves.Item.wGfMIdaCB5sim3hx",
+          "level": 1
+        },
+        {
+          "slug": "double-slap",
+          "uuid": "Compendium.ptu.moves.Item.ZptlbhF8Dnr6IyeX",
+          "level": 4
+        },
+        {
+          "slug": "cotton-spore",
+          "uuid": "Compendium.ptu.moves.Item.08DZcCU0jqyEQ3jv",
+          "level": 8
+        },
+        {
+          "slug": "psybeam",
+          "uuid": "Compendium.ptu.moves.Item.P5vnPuSAjEqGKcHK",
+          "level": 13
+        },
+        {
+          "slug": "hypnosis",
+          "uuid": "Compendium.ptu.moves.Item.3abHb5scrH2j6qMF",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.1zqnnv3jjmSyC8hn",
+          "slug": "psybolt",
+          "level": 20
+        },
+        {
+          "slug": "flatter",
+          "uuid": "Compendium.ptu.moves.Item.3IoUOnJtp47ClxG4",
+          "level": 25
+        },
+        {
+          "slug": "nightmare",
+          "uuid": "Compendium.ptu.moves.Item.uJn8utERPx8HehlL",
+          "level": 28
+        },
+        {
+          "slug": "psyshock",
+          "uuid": "Compendium.ptu.moves.Item.cpRMxzdrs7dfFuC4",
+          "level": 32
+        },
+        {
+          "slug": "lovely-kiss",
+          "uuid": "Compendium.ptu.moves.Item.FtteBhLvsPR6XCEk",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ogm2T1VniTYBKa6h",
+          "slug": "possession",
+          "level": 40
+        },
+        {
+          "slug": "psychic",
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs",
+          "level": 44
+        },
+        {
+          "slug": "cotton-guard",
+          "uuid": "Compendium.ptu.moves.Item.bTh2RR9t2qBxFkDy",
+          "level": 49
+        },
+        {
+          "slug": "dream-eater",
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0",
+          "level": 52
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.PCE42hdFSB3on0bl",
+          "slug": "terrorize",
+          "level": 56
+        }
+      ],
+      "machine": [
+        {
+          "slug": "psyshock",
+          "uuid": "Compendium.ptu.moves.Item.cpRMxzdrs7dfFuC4"
+        },
+        {
+          "slug": "calm-mind",
+          "uuid": "Compendium.ptu.moves.Item.fTu9Cq4z0G7PDH2x"
+        },
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "taunt",
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN"
+        },
+        {
+          "slug": "hyper-beam",
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3"
+        },
+        {
+          "slug": "light-screen",
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "rain-dance",
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "leech-life",
+          "uuid": "Compendium.ptu.moves.Item.IqR2d6OPYZMNbYYl"
+        },
+        {
+          "slug": "psychic",
+          "uuid": "Compendium.ptu.moves.Item.mw0PcwRSYEbxYyWs"
+        },
+        {
+          "slug": "shadow-ball",
+          "uuid": "Compendium.ptu.moves.Item.66w0oT6I80QzeAMr"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "reflect",
+          "uuid": "Compendium.ptu.moves.Item.eDFWwKCjaJ7vNNbJ"
+        },
+        {
+          "slug": "torment",
+          "uuid": "Compendium.ptu.moves.Item.zgeymOL0WIKgT6lq"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "thief",
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "echoed-voice",
+          "uuid": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX"
+        },
+        {
+          "slug": "fling",
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6"
+        },
+        {
+          "slug": "charge-beam",
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD"
+        },
+        {
+          "slug": "payback",
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0"
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK"
+        },
+        {
+          "slug": "thunder-wave",
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy"
+        },
+        {
+          "slug": "psych-up",
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ"
+        },
+        {
+          "slug": "dream-eater",
+          "uuid": "Compendium.ptu.moves.Item.hGvLkFzRbc1D0FX0"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "trick-room",
+          "uuid": "Compendium.ptu.moves.Item.Uut6FpUzRObtZvBm"
+        },
+        {
+          "slug": "dark-pulse",
+          "uuid": "Compendium.ptu.moves.Item.M9VSBteeyEya9Qcf"
+        },
+        {
+          "slug": "confide",
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j"
+        }
+      ],
+      "egg": [
+        {
+          "slug": "baton-pass",
+          "uuid": "Compendium.ptu.moves.Item.uZjoE8y3gbmlRVcc"
+        },
+        {
+          "slug": "confuse-ray",
+          "uuid": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky"
+        },
+        {
+          "slug": "follow-me",
+          "uuid": "Compendium.ptu.moves.Item.NLoyrd8nOVQxDlHt"
+        },
+        {
+          "slug": "hex",
+          "uuid": "Compendium.ptu.moves.Item.XbAfCHhH425Ldmj4"
+        },
+        {
+          "slug": "mind-reader",
+          "uuid": "Compendium.ptu.moves.Item.IB7f6qhUE3A1k07u"
+        },
+        {
+          "slug": "perish-song",
+          "uuid": "Compendium.ptu.moves.Item.kVqbY3ciBTeqHLxU"
+        },
+        {
+          "slug": "wish",
+          "uuid": "Compendium.ptu.moves.Item.IhG2cFq2x7jzUzg8"
+        }
+      ],
+      "tutor": [
+        {
+          "slug": "drain-punch",
+          "uuid": "Compendium.ptu.moves.Item.Dr7Eh1TGQHwQcreV"
+        },
+        {
+          "slug": "endeavor",
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "focus-punch",
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv"
+        },
+        {
+          "slug": "foul-play",
+          "uuid": "Compendium.ptu.moves.Item.ckL9G6vvS6TUl57i"
+        },
+        {
+          "slug": "giga-drain",
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m"
+        },
+        {
+          "slug": "heal-bell",
+          "uuid": "Compendium.ptu.moves.Item.v8vXs3oV4YimX2AZ"
+        },
+        {
+          "slug": "helping-hand",
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ"
+        },
+        {
+          "slug": "hyper-voice",
+          "uuid": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD"
+        },
+        {
+          "slug": "magic-coat",
+          "uuid": "Compendium.ptu.moves.Item.qfZVvzSa9Pytij7O"
+        },
+        {
+          "slug": "metronome",
+          "uuid": "Compendium.ptu.moves.Item.9aU7CnwwaU0FE4tk"
+        },
+        {
+          "slug": "ominous-wind",
+          "uuid": "Compendium.ptu.moves.Item.TD0L4L2JEH8VpTFW"
+        },
+        {
+          "slug": "pain-split",
+          "uuid": "Compendium.ptu.moves.Item.DO1UIDQKBBUxPcTj"
+        },
+        {
+          "slug": "role-play",
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX"
+        },
+        {
+          "slug": "signal-beam",
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP"
+        },
+        {
+          "slug": "skill-swap",
+          "uuid": "Compendium.ptu.moves.Item.VpNKUQKz3srKJvMv"
+        },
+        {
+          "slug": "snatch",
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT"
+        },
+        {
+          "slug": "swift",
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc"
+        },
+        {
+          "slug": "telekinesis",
+          "uuid": "Compendium.ptu.moves.Item.tNexDVIwrtPBsV0u"
+        },
+        {
+          "slug": "trick",
+          "uuid": "Compendium.ptu.moves.Item.5f5SrSIiFCEOkSWm"
+        },
+        {
+          "slug": "zen-headbutt",
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 1,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 2,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "dreamdery",
+    "rules": [],
+    "source": {
+      "value": "Fangame Sage Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "CMymFngAhNsaPlS5",
+  "name": "Dreamdery",
+  "_id": "HbT3QF0pTBnyYFtG",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!HbT3QF0pTBnyYFtG"
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Coaching [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: Your Pokémon makes a Combat Maneuver\nEffect: Your Pokémon gains a bonus based on the type of Combat Maneuver they are making. This Feature may be triggered once per Scene per Pokémon.\n- Your Pokémon gains a +1d6 bonus to Opposed Acrobatics, Athletics, Combat, or Stealth Skill Checks.\n- If your Pokémon was Sprinting, they double their Movement Capabilities instead of increasing by 50%.\n- If your Pokémon was making an Attack of Opportunity, they automatically hit.\n- You may also activate this Feature to let them Intercept for any Ally regardless of Loyalty, and they automatically succeed on the Skill Check to do so.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "coaching-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Training Regime"
+    ],
+    "frequency": "1 AP – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Athlete [CR]",
+    "name": "Coaching [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "VZSMHMJcCWCVyQIC",
+  "_id": "iW4GJQMrr5OHyCPp",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!iW4GJQMrr5OHyCPp"
+}

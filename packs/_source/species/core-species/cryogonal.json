@@ -1,0 +1,498 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:07.127Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Cryogonal are made nearly entirely of ice crystals. Unlike normal ice, however, their bodies undergo sublimation from gas to solid and deposition from solid to gas, completely skipping a liquid form in either direction. Cryogonal are unable to control these transformations; if their body temperatures drops below 32°F (0°C), the freezing point of water, they will assume a solid form, and if they are above that point, they will become gaseous. Trainers can give their Cryogonal the same anti-melting “medicine” many Ice-types are treated with in order to raise their melting points considerably, though these Pokémon still dislike heat. Because of they can seemingly appear from thin air in cold weather, some believe that Cryogonal are born in snow clouds; many of them suddenly appear alongside snow as the air temperature drops. Cryogonal hunt by ensnaring prey in chains of ice released from their mouths that reach -148°F (-100°C), freezing them in seconds. They then pull their victims back in to consume them.",
+    "number": 615,
+    "form": "",
+    "stats": {
+      "hp": 8,
+      "atk": 5,
+      "def": 5,
+      "spatk": 10,
+      "spdef": 14,
+      "spd": 11
+    },
+    "types": [
+      "Ice"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "levitate",
+          "uuid": "Compendium.ptu.abilities.Item.WsNZitOqUrhu9k78"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "ice-body",
+          "uuid": "Compendium.ptu.abilities.Item.frxDUj1Z8z3I7HHm"
+        },
+        {
+          "slug": "snow-cloak",
+          "uuid": "Compendium.ptu.abilities.Item.XGOKQvMtgXTgrckF"
+        },
+        {
+          "slug": "permafrost",
+          "uuid": "Compendium.ptu.abilities.Item.Nl8X270WdWIxIMfj"
+        }
+      ],
+      "high": [
+        {
+          "slug": "snow-warning",
+          "uuid": "Compendium.ptu.abilities.Item.pMmuDPGNNg6E1equ"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.TSZpzq7mrURHjCDv",
+        "slug": "cryogonal",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 1.1,
+      "weight": 148,
+      "sizeClass": "Medium",
+      "weightClass": 5
+    },
+    "breeding": {
+      "genderRatio": -1,
+      "eggGroups": [
+        "Mineral"
+      ],
+      "hatchRate": 13
+    },
+    "diet": [
+      "Terravore"
+    ],
+    "habitats": [
+      "Cave",
+      "Tundra"
+    ],
+    "capabilities": {
+      "overland": 1,
+      "sky": 5,
+      "swim": 2,
+      "levitate": 4,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 6,
+      "naturewalk": [
+        "Tundra"
+      ],
+      "other": [
+        {
+          "slug": "chilled",
+          "uuid": "Compendium.ptu.capabilities.Item.4RJFVQvf9t70YWI3"
+        },
+        {
+          "slug": "freezer",
+          "uuid": "Compendium.ptu.capabilities.Item.O0LMo4PRnTk008ds"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.nzd3auiq1JwJFmCb",
+          "slug": "bind",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SUduMarNZi7p42fG",
+          "slug": "ice-shard",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0T6UdFilX3WHVIyg",
+          "slug": "sharpen",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dvjTasujiwEqMKec",
+          "slug": "rapid-spin",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xOwF6QzLLB5POWAK",
+          "slug": "haze",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uaOHYAjzdGsqGBJ0",
+          "slug": "mist",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UqFpnMAAoEOqvUDj",
+          "slug": "aurora-beam",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.joCaLnLmgcLh36ym",
+          "slug": "acid-armor",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen",
+          "level": 29
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eDFWwKCjaJ7vNNbJ",
+          "slug": "reflect",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sm3q5D8SkQcEmiGB",
+          "slug": "slash",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WUgXHLrvnUAn2vky",
+          "slug": "confuse-ray",
+          "level": 41
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qJILuzcs4SDgylfD",
+          "slug": "recover",
+          "level": 45
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZn05DqBo1RGVRLH",
+          "slug": "freeze-dry",
+          "level": 49
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam",
+          "level": 50
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WRDjP0nlxlzd20a5",
+          "slug": "night-slash",
+          "level": 53
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.enDcfNIF6u9ZPOkV",
+          "slug": "sheer-cold",
+          "level": 57
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "slug": "hail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U",
+          "slug": "ice-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "slug": "blizzard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.weEc5wlOZ5H7Tguh",
+          "slug": "light-screen"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TQrk7QpDTMSD7Ycz",
+          "slug": "rain-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eDFWwKCjaJ7vNNbJ",
+          "slug": "reflect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VsFJounIwoSOu8g4",
+          "slug": "acrobatics"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.uZ5eUCeStPObSEHj",
+          "slug": "explosion"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.C70wtWRmVuXR7SGi",
+          "slug": "aurora-veil"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nM8DQhM6b8g5KZyy",
+          "slug": "frost-breath"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625",
+          "slug": "poison-jab"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.926T6mncd7CobCCr",
+          "slug": "flash-cannon"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH",
+          "slug": "ancient-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nzd3auiq1JwJFmCb",
+          "slug": "bind-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.DANp8m02Ocfv3esu",
+          "slug": "defog"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "slug": "icy-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K7oM1QaqyugwZzbF",
+          "slug": "iron-defense"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6",
+          "slug": "knock-off"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mcLo2BLQjcZr88Ar",
+          "slug": "laser-focus"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qfZVvzSa9Pytij7O",
+          "slug": "magic-coat"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WRDjP0nlxlzd20a5",
+          "slug": "night-slash-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.enDcfNIF6u9ZPOkV",
+          "slug": "sheer-cold-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XkVx9ch1TmBWwuwP",
+          "slug": "signal-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TnRLGZ6WIGqIeQ4",
+          "slug": "water-pulse"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "cryogonal",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Cryogonal",
+  "_id": "TSZpzq7mrURHjCDv",
+  "effects": [],
+  "sort": 57200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!TSZpzq7mrURHjCDv"
+}

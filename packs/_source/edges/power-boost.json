@@ -1,0 +1,60 @@
+{
+  "name": "Power Boost",
+  "system": {
+    "origin": "",
+    "effect": "Increase your Power Capability by +2.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 2,
+        "path": "system.modifiers.capabilities.power"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Expert Athletics"
+    ],
+    "notes": "",
+    "free": false,
+    "name": "Power Boost",
+    "useCount": 0
+  },
+  "type": "edge",
+  "img": "/systems/ptu/css/images/icons/edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Expert Athletics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683367953776,
+    "modifiedTime": 1707761797684,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "v8sOft2b87rCkT04",
+  "_key": "!items!v8sOft2b87rCkT04"
+}

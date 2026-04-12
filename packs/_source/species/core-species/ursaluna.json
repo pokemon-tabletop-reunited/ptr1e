@@ -1,0 +1,418 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:04.465Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 901,
+    "form": "",
+    "stats": {
+      "hp": 13,
+      "atk": 14,
+      "def": 11,
+      "spatk": 5,
+      "spdef": 8,
+      "spd": 5
+    },
+    "types": [
+      "Ground",
+      "Normal"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "guts",
+          "uuid": "Compendium.ptu.abilities.Item.MmN3OuS0wuIjvAWR"
+        },
+        {
+          "slug": "bulletproof",
+          "uuid": "Compendium.ptu.abilities.Item.sK4HKyvIQrumnNOm"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "unnerve",
+          "uuid": "Compendium.ptu.abilities.Item.bGuvT8siRHgGCiWg"
+        },
+        {
+          "slug": "frighten",
+          "uuid": "Compendium.ptu.abilities.Item.eKg9pZRDbRf40GME"
+        }
+      ],
+      "high": [
+        {
+          "slug": "arena-trap",
+          "uuid": "Compendium.ptu.abilities.Item.X2YtNsIATMTDMR6o"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.MT1BfXHTobdNEkJK",
+        "slug": "teddiursa",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 20,
+        "uuid": "Compendium.ptu.species.Item.FY8xfSdysNgjEK1L",
+        "slug": "ursaring",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 35,
+        "uuid": "Compendium.ptu.species.Item.8dNSG4cMA6qGeg8l",
+        "slug": "ursaluna",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 2.4,
+      "weight": 290,
+      "sizeClass": "Large",
+      "weightClass": 6
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Omnivore"
+    ],
+    "habitats": [
+      "Cave",
+      "Mountain",
+      "Wetland"
+    ],
+    "capabilities": {
+      "overland": 7,
+      "sky": 0,
+      "swim": 4,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 8,
+      "naturewalk": [
+        "Wetland"
+      ],
+      "other": [
+        {
+          "slug": "groundshaper",
+          "uuid": "Compendium.ptu.capabilities.Item.gneJRPErFFv5Kz3g"
+        },
+        {
+          "slug": "mountable-1",
+          "uuid": "Compendium.ptu.capabilities.Item.XkFHXfisqlsZxNvQ"
+        },
+        {
+          "slug": "tracker",
+          "uuid": "Compendium.ptu.capabilities.Item.W1Zt8pLS50kjTL1d"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "level": "Evo",
+          "uuid": "Compendium.ptu.moves.Item.c68ct6JUUpPfIe1J",
+          "slug": "headlong-rush"
+        },
+        {
+          "level": 8,
+          "uuid": "Compendium.ptu.moves.Item.kBtOW4lhbgV3tltJ",
+          "slug": "fury-swipes"
+        },
+        {
+          "level": 15,
+          "uuid": "Compendium.ptu.moves.Item.16Ij0HJODJxOy5j9",
+          "slug": "feint-attack"
+        },
+        {
+          "level": 22,
+          "uuid": "Compendium.ptu.moves.Item.nJhqaS0PzJJ7w1pS",
+          "slug": "sweet-scent"
+        },
+        {
+          "level": 25,
+          "uuid": "Compendium.ptu.moves.Item.MayZhpGvJzcbv8BT",
+          "slug": "play-rough"
+        },
+        {
+          "level": 25,
+          "uuid": "Compendium.ptu.moves.Item.1x4TfrhoZdHT7Sj2",
+          "slug": "play-nice"
+        },
+        {
+          "level": 29,
+          "uuid": "Compendium.ptu.moves.Item.sm3q5D8SkQcEmiGB",
+          "slug": "slash"
+        },
+        {
+          "level": 33,
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "level": 36,
+          "uuid": "Compendium.ptu.moves.Item.IRGZ3Cc7WrqjhF9u",
+          "slug": "scary-face"
+        },
+        {
+          "level": 41,
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "level": 43,
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "level": 48,
+          "uuid": "Compendium.ptu.moves.Item.czDZWjn9TbP9ON4q",
+          "slug": "thrash"
+        },
+        {
+          "level": 52,
+          "uuid": "Compendium.ptu.moves.Item.XteYd5rxLc3PYt9N",
+          "slug": "high-horsepower"
+        },
+        {
+          "level": 55,
+          "uuid": "Compendium.ptu.moves.Item.uX0GA4opzRCtDQVY",
+          "slug": "hammer-arm"
+        }
+      ],
+      "machine": [],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dIkyKSyZGctjHX9O",
+          "slug": "baby-doll-eyes"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.du6VccHCQ2VjQ0D8",
+          "slug": "bulk-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "slug": "bulldoze"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+          "slug": "earth-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+          "slug": "fire-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TbqvNIqswHYAVHOW",
+          "slug": "focus-energy"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XteYd5rxLc3PYt9N",
+          "slug": "high-horsepower"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3",
+          "slug": "hyper-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h",
+          "slug": "ice-punch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MayZhpGvJzcbv8BT",
+          "slug": "play-rough"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk",
+          "slug": "rock-slide"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jZzomtDAHtgzeeSV",
+          "slug": "rock-smash"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr",
+          "slug": "shadow-claw"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut",
+          "slug": "stone-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc",
+          "slug": "swift"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle-n"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY",
+          "slug": "thunder-punch"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 2,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 5,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 1,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 4,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "ursaluna",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "type": {
+      "0": "Ground",
+      "1": "Normal",
+      "2": ""
+    },
+    "keywords": [],
+    "stackSlugs": false,
+    "enabled": false
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Ursaluna",
+  "_id": "8dNSG4cMA6qGeg8l",
+  "effects": [],
+  "sort": 18500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1714850830946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8dNSG4cMA6qGeg8l"
+}

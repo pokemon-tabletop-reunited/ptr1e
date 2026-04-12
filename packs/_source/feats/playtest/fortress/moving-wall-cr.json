@@ -1,0 +1,83 @@
+{
+  "name": "Moving Wall [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain the Battle Armor and the Bodyguard Abilites.\nBonus: When you use and resolve Bodyguard, the foe whose attack triggered Bodyguard is Challenged until the end of your next turn.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "movingwall",
+        "choices": [
+          {
+            "value": "def",
+            "label": "Defense"
+          },
+          {
+            "value": "spdef",
+            "label": "Special Defense"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.movingwall}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "moving-wall-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense or Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Fortress"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Fortress [CR]",
+    "name": "Moving Wall [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "ZBJ3dlw6Ug7RBgxO",
+  "_id": "eO4r0LQy34h8uy34",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!eO4r0LQy34h8uy34"
+}

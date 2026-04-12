@@ -1,0 +1,72 @@
+{
+  "name": "Stat Booster (SpAttack)",
+  "system": {
+    "origin": "",
+    "effect": "The default state of the holder's Special Attack Stat is +1 Combat Stage. Accessory Item for Trainers.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spatk.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "focus-sp-attack",
+    "schema": {
+      "version": 0.114,
+      "lastMigration": {
+        "datetime": "2024-02-17T17:08:16.391Z",
+        "version": {
+          "schema": 0.11,
+          "foundry": "11.315",
+          "system": "4.2.0"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "quantity": "1",
+    "category": "",
+    "cost": "6000",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Focus",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "folder": "UVsLKp3sKVOGdClM",
+  "ownership": {
+    "default": 0
+  },
+  "_id": "8J33pMMrY5YvfUXz",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710773392624,
+    "modifiedTime": 1710773411450,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!8J33pMMrY5YvfUXz"
+}

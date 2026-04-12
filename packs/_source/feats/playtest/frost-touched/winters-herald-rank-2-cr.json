@@ -1,0 +1,84 @@
+{
+  "name": "Winter's Herald Rank 2 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You may learn three Moves from the list below,marked with the Rank of Winter’s Herald you are gaining or lower.\nRank 1: Freeze-Dry, Ice Beam, Ice Punch, Ice Spinner, Icicle Crash\nRank 2: Avalanche, Blizzard, Frost Breath, Glaciate, Icicle Spear",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "wintersheraldrank2",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.wintersheraldrank2}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "winters-herald-rank-2-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+Attack or Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Master Athletics or Survival"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Frost Touched [CR]",
+    "name": "Winter's Herald [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "4cnYn2XBox6Zkddc",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "20kJLqE6AAUAGblV",
+  "_key": "!items!20kJLqE6AAUAGblV"
+}

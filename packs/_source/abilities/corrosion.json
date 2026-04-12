@@ -1,0 +1,57 @@
+{
+  "name": "Corrosion",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "The user's Poison-Type attacks are resisted one step less, and deal damage to Immune targets as if they were doubly resisted. The user may Poison and Badly Poison Steel and Poison-Type Pokemon.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "poison-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.s326whCdbxxGAr61"
+      }
+    ],
+    "enabled": true,
+    "slug": "corrosion",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "rdCRiZiEx4ZI1zlE",
+  "effects": [],
+  "folder": null,
+  "sort": 47400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1712497420882,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!rdCRiZiEx4ZI1zlE"
+}

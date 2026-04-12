@@ -1,0 +1,66 @@
+{
+  "name": "Technician",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Moves with a Damage Base of 6 or lower have their Damage Base increased by +2. This bonus always applies to Moves with the Double Strike or Fivestrike Keywords.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "or": [
+            "move:damage-base:pre-stab:1",
+            "move:damage-base:pre-stab:2",
+            "move:damage-base:pre-stab:3",
+            "move:damage-base:pre-stab:4",
+            "move:damage-base:pre-stab:5",
+            "move:damage-base:pre-stab:6"
+          ]
+        },
+        "hideIfDisabled": false,
+        "selectors": "damage-base",
+        "value": 2
+      }
+    ],
+    "enabled": true,
+    "slug": "technician",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "mfD1Ga7xMCBqOk5H",
+  "effects": [],
+  "folder": null,
+  "sort": 42400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1710771589759,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!mfD1Ga7xMCBqOk5H"
+}

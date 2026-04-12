@@ -1,0 +1,75 @@
+{
+  "name": "Effect: Type STAB Boost (Dark)",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:type:dark"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "damage-base",
+        "value": 2,
+        "label": "STAB Boost"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-type-stab-increase-dark",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "eJalVmQbQ22w7p0c",
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.1",
+    "coreVersion": "13.350",
+    "createdTime": 1705593636805,
+    "modifiedTime": 1706451476350,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "3Hg70m1G33Pv1zlB",
+  "_key": "!items!3Hg70m1G33Pv1zlB"
+}

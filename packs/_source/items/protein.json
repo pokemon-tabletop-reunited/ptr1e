@@ -1,0 +1,71 @@
+{
+  "name": "Protein",
+  "system": {
+    "origin": "",
+    "effect": "Raise the user’s Attack Base Stat 1. You may only get use out of up to five Vitamins per Pokémon.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "phase": "applyAEs",
+        "value": "{item|system.quantity} * 1",
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.441Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Vitamin",
+      "Chef"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "4900",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Protein",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "systems/ptu/images/item_icons/protein.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368786807,
+    "modifiedTime": 1712496050806,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 44100000,
+  "_id": "baTiBtfxkBDEfu7j",
+  "_key": "!items!baTiBtfxkBDEfu7j"
+}

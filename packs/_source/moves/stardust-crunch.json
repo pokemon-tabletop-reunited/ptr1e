@@ -1,0 +1,77 @@
+{
+  "name": "Stardust Crunch",
+  "type": "move",
+  "img": "systems/ptu/static/css/images/types2/FairyIC_Icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Stardust Crunch lowers the targets Evasion by 1 on 19+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.pMSied2gA79y0msm",
+        "range": "19",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "stardust-crunch",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fairy",
+    "category": "Physical",
+    "damageBase": "7",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "Melee",
+    "contestType": "Tough - Exhausting Act",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "BgnNtZpI9XfThqXv",
+  "effects": [],
+  "folder": null,
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "13.350",
+    "createdTime": 1693119119587,
+    "modifiedTime": 1709371403866,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!BgnNtZpI9XfThqXv"
+}

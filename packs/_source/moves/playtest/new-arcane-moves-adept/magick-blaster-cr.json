@@ -1,0 +1,76 @@
+{
+  "folder": "laXYP0SFSLCeWOcn",
+  "name": "Magick Blaster [CR]",
+  "type": "move",
+  "img": "systems/ptu/static/css/images/types2/NormalIC_Icon.png",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Magick Blaster Flinches the target on 19+.\nLimitation: Ranged Weapons Only",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.xE6uIFWZoYXAZQxA",
+        "range": "19",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "magick-blaster-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Double Strike"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Normal",
+    "category": "Special",
+    "damageBase": "4",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "WR",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1699701779793,
+    "modifiedTime": 1710850579204,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "NLCTGbgK8mCz5aLT",
+  "_key": "!items!NLCTGbgK8mCz5aLT"
+}

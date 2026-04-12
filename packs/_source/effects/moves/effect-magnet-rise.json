@@ -1,0 +1,78 @@
+{
+  "folder": "cCM0awlDiATvW03q",
+  "name": "Effect: Magnet Rise",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "@Embed[Compendium.ptu.moves.Item.N0EkteKIFV2WtAJ6]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.WsNZitOqUrhu9k78"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-magnet-rise",
+    "schema": {
+      "version": 0.114,
+      "lastMigration": {
+        "datetime": "2024-02-17T16:59:48.762Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.2.0"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 5,
+      "unit": "rounds",
+      "expiry": "turn-end"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_id": "zW6HxBflztnc9odZ",
+  "sort": 500000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "createdTime": 1710772439963,
+    "modifiedTime": 1712495153716,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!zW6HxBflztnc9odZ"
+}

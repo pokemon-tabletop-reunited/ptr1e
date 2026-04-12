@@ -1,0 +1,87 @@
+{
+  "name": "Capability Training",
+  "system": {
+    "origin": "",
+    "effect": "Increase Power or a Jump Capability by 1. Capability Training may be taken multiple times, each time increasing a different Capability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "capability-training",
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "High Jump",
+            "value": "highJump"
+          },
+          {
+            "label": "Long Jump",
+            "value": "longJump"
+          },
+          {
+            "label": "Power",
+            "value": "power"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.capabilities.{item|flags.ptu.rulesSelections.capability-training}",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "capability-training",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Level 20"
+    ],
+    "cost": "1 TP",
+    "name": "Capability Training",
+    "useCount": 0
+  },
+  "type": "pokeedge",
+  "img": "https://assets.forge-vtt.com/652d5b20bd60c2104d8ee322/systems/ptu/css/images/icons/poke_edge_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Level 20"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683369202709,
+    "modifiedTime": 1712493035929,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "kanto-adventures",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "HNK35xsz32VOWf4Z",
+  "sort": 100000,
+  "_key": "!items!HNK35xsz32VOWf4Z"
+}

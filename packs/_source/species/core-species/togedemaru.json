@@ -1,0 +1,542 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:07.342Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Togedemaru have triangular patches of long, needle-like fur that can stand together on end like spikes. When in danger, they can curl up into balls with their spikes raised to defend themselves from attackers. These spikes also help attract electricity during storms; the needle-like appendages on their heads, however, function much better as lightning rods for this purpose. They also help Togedemaru stay balanced, much like tails. When a thunderstorm is approaching, many Togedemaru will venture out into the open with their fur bristled, waiting patiently to be struck by bolts of lightning. They can also siphon electricity from other Electric-types using their spikes. Togedemaru store gathered electricity in electrical sacs within their bodies for use when protecting themselves. While they can generate their own electricity to a limited extent, the bulk of their charge is gathered during lightning storms. Predators that are foolish enough to attack curled-up Togedemaru will not only be pierced by their fourteen sharp spikes, but also be shocked as they let loose stored electricity. Togedemaru are known to share electricity with one another by directly shocking each other’s lightning rods and charging each other’s electrical sacs.",
+    "number": 777,
+    "form": "",
+    "stats": {
+      "hp": 7,
+      "atk": 10,
+      "def": 6,
+      "spatk": 4,
+      "spdef": 7,
+      "spd": 10
+    },
+    "types": [
+      "Electric",
+      "Steel"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "iron-barbs",
+          "uuid": "Compendium.ptu.abilities.Item.JaCmBKcCCyFeASLS"
+        },
+        {
+          "slug": "lightning-rod",
+          "uuid": "Compendium.ptu.abilities.Item.fZgyeYuH8xV4VnmU"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "snuggle",
+          "uuid": "Compendium.ptu.abilities.Item.JD3cQ9cK4ocPpB2P"
+        },
+        {
+          "slug": "sturdy",
+          "uuid": "Compendium.ptu.abilities.Item.AaDXWUAMnhxLbyn3"
+        }
+      ],
+      "high": [
+        {
+          "slug": "sequence",
+          "uuid": "Compendium.ptu.abilities.Item.YWRUQgKcUMBYJvAr"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.VuOKrY8ISGIzr7bM",
+        "slug": "togedemaru",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.3,
+      "weight": 3.3,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field",
+        "Fairy"
+      ],
+      "hatchRate": 13
+    },
+    "diet": [
+      "Ergovore",
+      "Herbivore"
+    ],
+    "habitats": [
+      "Mountain"
+    ],
+    "capabilities": {
+      "overland": 6,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 3,
+      "naturewalk": [],
+      "other": [
+        {
+          "slug": "glow",
+          "uuid": "Compendium.ptu.capabilities.Item.v4OOr4KlIO0DKw5r"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        },
+        {
+          "slug": "zapper",
+          "uuid": "Compendium.ptu.capabilities.Item.v3QyNdZYDVwlG2tY"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HhQrSZjCBL95D1zV",
+          "slug": "thunder-shock",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Y5R5mbVcGq6fwoFj",
+          "slug": "defense-curl",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nzhedIfXpsZWaEx9",
+          "slug": "rollout",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.qRvLgOrsmdXEsBsU",
+          "slug": "charge",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.2Bldc8dEEOuOSx39",
+          "slug": "spark",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tAlvJ3LBduqijkxO",
+          "slug": "nuzzle",
+          "level": 21
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.N0EkteKIFV2WtAJ6",
+          "slug": "magnet-rise",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0KazDGc9T8CETH5f",
+          "slug": "discharge",
+          "level": 29
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xeRUT74SummIAXGa",
+          "slug": "zing-zap",
+          "level": 33
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.j1LhD3Z6maB3Y9pi",
+          "slug": "electric-terrain",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.idhhi7YJRDHnUUMR",
+          "slug": "wild-charge",
+          "level": 41
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zQDRgnFwCOuGBf1r",
+          "slug": "pin-missile",
+          "level": 45
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.FvTnYPJPje5PF7sJ",
+          "slug": "spiky-shield",
+          "level": 49
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RjTMjxxZSdIu2xZL",
+          "slug": "fell-stinger",
+          "level": 53
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.gCofXErMduyn6zwf",
+          "slug": "work-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.y9WyqqBWO4tAaX8G",
+          "slug": "thunderbolt"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.w5E02WXdvxiY8n0Z",
+          "slug": "thunder"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eDFWwKCjaJ7vNNbJ",
+          "slug": "reflect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.cu9K3c625G2F54lh",
+          "slug": "thief"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6",
+          "slug": "fling"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Z38TtI0Rkj5fIHLD",
+          "slug": "charge-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.8frJ1rnKqBmGvKC0",
+          "slug": "payback"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK",
+          "slug": "giga-impact"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ltI3ruaEiyhlwPjj",
+          "slug": "volt-switch"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wxMkDV7tasspdddy",
+          "slug": "thunder-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jn8ej4sQ6o2PuUJx",
+          "slug": "gyro-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.TFFIb8CygY9dB625",
+          "slug": "poison-jab"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "slug": "grass-knot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.idhhi7YJRDHnUUMR",
+          "slug": "wild-charge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.NAhc5NF7m0p5BPmP",
+          "slug": "disarming-voice"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UhvLxdWq2D7gOvMr",
+          "slug": "encore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.YWFFDr5Ul470Pnyp",
+          "slug": "fake-out"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IWQXKwgnyM2CvDLV",
+          "slug": "flail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.94z8W0FoKrzOGZFS",
+          "slug": "present"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ekstCWqmGpJSMLj1",
+          "slug": "reversal"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.u7mqJHkVCUIRhlaq",
+          "slug": "tickle"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.FVUA7xZWQAvmptA2",
+          "slug": "twineedle"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IhG2cFq2x7jzUzg8",
+          "slug": "wish"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.x8xJKEwM5Zp3jqGw",
+          "slug": "after-you"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+          "slug": "bounce"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB",
+          "slug": "covet"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Y5R5mbVcGq6fwoFj",
+          "slug": "defense-curl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dM7JNhVHOmnTxRhy",
+          "slug": "electroweb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ",
+          "slug": "endeavor"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IuGk58XiaSA0Gypi",
+          "slug": "gravity"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN",
+          "slug": "iron-head"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bpb9SFiI7s9wqGyb",
+          "slug": "iron-tail"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.syEhvBKtqQTBqyct",
+          "slug": "last-resort"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.N0EkteKIFV2WtAJ6",
+          "slug": "magnet-rise"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX",
+          "slug": "role-play"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.nzhedIfXpsZWaEx9",
+          "slug": "rollout"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.i3pBrEvJz6tycWOT",
+          "slug": "shock-wave"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.foVUAPgmU09qFHrb",
+          "slug": "super-fang"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx",
+          "slug": "zen-headbutt"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 2,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "togedemaru",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Togedemaru",
+  "_id": "VuOKrY8ISGIzr7bM",
+  "effects": [],
+  "sort": 62200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!VuOKrY8ISGIzr7bM"
+}

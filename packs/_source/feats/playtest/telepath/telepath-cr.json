@@ -1,0 +1,67 @@
+{
+  "name": "Telepath [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain the Telepathy Capability while this Feature is Bound.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Psychic)",
+      "Iron Mind",
+      "Novice Intuition"
+    ],
+    "frequency": "Bind 2 AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Telepath [CR]",
+    "name": "Telepath [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "9CP3ESv64DxexWYw",
+  "_id": "NNntJiZPVgukW87J",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!NNntJiZPVgukW87J"
+}

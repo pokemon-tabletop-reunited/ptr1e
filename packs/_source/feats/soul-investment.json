@@ -1,0 +1,67 @@
+{
+  "name": "Soul Investment",
+  "system": {
+    "origin": "",
+    "effect": "Target: Your Soul Bonded Weapon\nEffect: Choose one Novice and one Expert Arcane Weapon Move. Your Soul Bonded Weapon adds those Moves to your Move List as long as this Feature is Bound. You may only Bind one instance of this Feature at a time, and you may not have multiple instances of the same Move in your Move List.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Weapon"
+    ],
+    "prerequisites": [
+      "Arcanist",
+      "Master Occult Education"
+    ],
+    "frequency": "Bind 2 AP – Extended Action",
+    "notes": "",
+    "free": false,
+    "class": "Arcanist",
+    "automation": [],
+    "name": "Soul Investment",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Arcanist, Master Occult Education"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078908,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 57900000,
+  "_id": "pHhTdWPRdxvZNg3Q",
+  "_key": "!items!pHhTdWPRdxvZNg3Q"
+}

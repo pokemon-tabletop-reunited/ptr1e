@@ -1,0 +1,78 @@
+{
+  "folder": "8tcCd3dOnqridsEG",
+  "name": "G-Max Malodor",
+  "type": "move",
+  "_id": "0yM7ifPQjjRaRdp8",
+  "img": "systems/ptu/static/css/images/types2/PoisonIC_Icon.png",
+  "system": {
+    "origin": "Regional Phenomena",
+    "effect": "All Targets are Badly Poisoned.\nRequirement: Garbodor is Gigantamaxed and has a Poison Type Move.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": {
+          "not": "target:types:poison"
+        },
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.39Ty93ddaWcIhagZ",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "g-max-malodor",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Max"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Poison",
+    "category": "Physical",
+    "damageBase": "12",
+    "frequency": "At-Will",
+    "ac": "0",
+    "range": "Range 9, Ranged Blast 6",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1705335805278,
+    "modifiedTime": 1710783768285,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0yM7ifPQjjRaRdp8"
+}

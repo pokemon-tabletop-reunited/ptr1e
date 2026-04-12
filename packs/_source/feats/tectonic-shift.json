@@ -1,0 +1,158 @@
+{
+  "name": "Tectonic Shift",
+  "system": {
+    "origin": "",
+    "effect": "Pick two of Earthquake, Earth Power, or Sand Tomb. You learn the chosen Moves",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.gL2f9k8qYJ1OwiZO",
+            "predicate": {
+              "not": "move:sand-tomb"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+            "predicate": {
+              "not": "move:earth-power"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.CyMarrube3yoGcuy",
+            "predicate": {
+              "not": "move:earthquake"
+            }
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.gL2f9k8qYJ1OwiZO",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.gL2f9k8qYJ1OwiZO"
+                  ]
+                }
+              },
+              {
+                "not": "move:sand-tomb"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw"
+                  ]
+                }
+              },
+              {
+                "not": "move:earth-power"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c"
+                  ]
+                }
+              },
+              {
+                "not": "move:earthquake"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Ground Out",
+      "Master Focus or Intuition"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Earth Shaker",
+    "automation": [],
+    "name": "Tectonic Shift",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Ground Out, Master Focus or Intuition"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078879,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 42600000,
+  "_id": "cLPqJelPHovJAofJ",
+  "_key": "!items!cLPqJelPHovJAofJ"
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Scale Shot",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/DragonIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "The user's Speed is raised by 1 Combat Stage, and the user's Defense is lowered by 1 Combat Stage.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "origin",
+        "selectors": "{item|id}-damage-dealt",
+        "uuid": "Compendium.ptu.effects.Item.u4tg5ryiRHPrHFff",
+        "range": "1",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "scale-shot",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1",
+      "Five Strike"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Dragon",
+    "category": "Physical",
+    "damageBase": "3",
+    "frequency": "EOT",
+    "ac": "4",
+    "range": "Range 6",
+    "contestType": "Tough - Desperation",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "A5c6FxBGE2Fl83U8",
+  "effects": [],
+  "sort": 13300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1709370532541,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!A5c6FxBGE2Fl83U8"
+}

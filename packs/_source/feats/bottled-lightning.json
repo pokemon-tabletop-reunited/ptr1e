@@ -1,0 +1,66 @@
+{
+  "name": "Bottled Lightning",
+  "system": {
+    "origin": "",
+    "effect": "Target: An item made of conductive material\nEffect: Choose one of your Electric Type Moves with a target. You Charge the target item with this Move. Bottled Lightning counts as using the Move for frequency purposes. You may expend this Charge as a Rapid Action on your turn to use the Move the item was charged with, originating from the item. If a Pokémon or Trainer touches a Charged item, you may instead activate this Rapid Action as if it had the Priority keyword. At the end of a Scene, all items lose their Charge, and you may only have X items Charged at a time where X is half your Focus Rank.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Storm Wizard",
+      "Adept Focus"
+    ],
+    "frequency": "2 AP - Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Spark Master",
+    "automation": [],
+    "name": "Bottled Lightning",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Storm Wizard, Adept Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079071,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 3800000,
+  "_id": "3NnPjMluFHFRE2K2",
+  "_key": "!items!3NnPjMluFHFRE2K2"
+}

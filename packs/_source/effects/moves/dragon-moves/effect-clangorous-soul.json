@@ -1,0 +1,129 @@
+{
+  "name": "Effect: Clangorous Soul",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "+1 All Stats CS",
+    "snippet": "+1 All Stats CS",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spatk.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spdef.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.spd.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.atk.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.def.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-clangorous-soul",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "eWRhszFP5Db0FUK4",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "scene-packer": {
+      "hash": "0bf8d6a964e96493bcab2afd4ff5a60181da0a2c",
+      "sourceId": "Item.rdtLJtGKbG5uDi0G"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "C9dEPTkVrhvpEpQm",
+  "sort": 200000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "createdTime": 1709370181794,
+    "modifiedTime": 1709370186457,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.1"
+    }
+  },
+  "_key": "!items!C9dEPTkVrhvpEpQm"
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Highly Responsive to Prayers [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You use Wish or Heal Bell, or an ally receives an Injury\nEffect: You may apply the [Stratagem] of the Sage Feature as a Free Action on the triggering ally. This effect lasts until the start of your next turn, does not require you to Bind AP to use.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "highly-responsive-to-prayers-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Mountain of Faith"
+    ],
+    "frequency": "Scene x3 – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Sage [CR]",
+    "name": "Highly Responsive to Prayers [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "3RdR0bAuym3k8na2",
+  "_id": "FsXC5Sdw9SyVyUIB",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!FsXC5Sdw9SyVyUIB"
+}

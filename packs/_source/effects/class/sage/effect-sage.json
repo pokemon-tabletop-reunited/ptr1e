@@ -1,0 +1,81 @@
+{
+  "folder": "2Idf6tl6HbJkRYPL",
+  "name": "Effect: Sage",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "<blockquote>Effect functions however you should make a local copy and edit the last 0 in both rules to be whatever double your Occult Education is.</blockquote>",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.physical.mod",
+        "phase": "afterDerived",
+        "value": "max(floor({actor|system.health.total}/10),0)"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.special.mod",
+        "phase": "afterDerived",
+        "value": "max(floor({actor|system.health.total}/10),0)"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-sage",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.1.1",
+    "createdTime": 1706452655246,
+    "modifiedTime": 1706452655246,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "lQBCt9nEw2ZElij1",
+  "sort": 0,
+  "_key": "!items!lQBCt9nEw2ZElij1"
+}

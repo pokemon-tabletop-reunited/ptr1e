@@ -1,0 +1,77 @@
+{
+  "name": "Thick Club",
+  "system": {
+    "origin": "",
+    "effect": "When held by a Cubone or Marowak, this rare, dense bone grants the Pure Power Ability. Thick Clubs are Wielded. Cannot be used by Trainers.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": {
+          "or": [
+            "species:cubone",
+            "species:marowak",
+            "species:marowak-alolan"
+          ]
+        },
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.nuGa21WQ0QD07kQj"
+      }
+    ],
+    "enabled": true,
+    "slug": "thick-club",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.517Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "Compendium.ptu.abilities.Item.nuGa21WQ0QD07kQj",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Held Item"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Thick Club",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "systems/ptu/images/item_icons/thick club.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368784295,
+    "modifiedTime": 1712494296744,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 64500000,
+  "_id": "vabigvqHJ9OqFM0V",
+  "_key": "!items!vabigvqHJ9OqFM0V"
+}

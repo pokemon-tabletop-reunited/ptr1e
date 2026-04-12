@@ -1,0 +1,84 @@
+{
+  "name": "Effect: Reckless Advance",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Increase the damage rolls of the target’s damaging melee attacks by +8.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "melee-attack"
+        ],
+        "selectors": [
+          "damage-roll"
+        ],
+        "hideIfDisabled": false,
+        "value": 8,
+        "label": "Reckless Advance"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-reckless-advance",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T01:45:48.387Z",
+        "version": {
+          "schema": 0.111,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "UjuxQCHI76TeZxb7",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1696541770749,
+    "modifiedTime": 1710853989325,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "FMhkR9rKCkyJTOVo",
+  "sort": 600000,
+  "_key": "!items!FMhkR9rKCkyJTOVo"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Miasma's Call [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You learn the moves Acid Armor and Sludge Bomb.\nBonus: You learn the move Acid Rain.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Vile Body",
+      "Expert Stealth or Guile"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Miasmic [CR]",
+    "name": "Miasma’s Call [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "PLpbskog4GyNWGdq",
+  "_id": "LnMuCRsMSp6nu8Oe",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!LnMuCRsMSp6nu8Oe"
+}

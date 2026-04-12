@@ -1,0 +1,303 @@
+{
+  "name": "Fire Breather Rank 2 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Learn three Fire Bringer Moves from the list below. You may choose any Move marked with the Fire Breather Rank you are taking or lower.\nRank 1: Fiery Dance, Fire Punch, Fire Spin, Flamethrower, Lava Plume\nRank 2: Blaze Kick, Burning Jealousy, Flare Blitz, Heat Wave, Inferno",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "firebreatherrank2",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.firebreatherrank2}.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.TjyskB7OEbBoJ819",
+            "predicate": {
+              "not": "move:fiery-dance"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+            "predicate": {
+              "not": "move:fire-punch"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ",
+            "predicate": {
+              "not": "move:fire-spin"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+            "predicate": {
+              "not": "move:flamethrower"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.WpFzl62EYkpKipF5",
+            "predicate": {
+              "not": "move:lava-plume"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Vj2gQXAHg94lFdNb",
+            "predicate": {
+              "not": "move:blaze-kick"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.eKo8Aq43yTIs1tus",
+            "predicate": {
+              "not": "move:burning-jealousy"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.VxO7N8CbFaW3889w",
+            "predicate": {
+              "not": "move:flare-blitz"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb",
+            "predicate": {
+              "not": "move:heat-wave"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.f25cGYvLApdYt14w",
+            "predicate": {
+              "not": "move:inferno"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.TjyskB7OEbBoJ819",
+            "predicate": {
+              "not": "move:fiery-dance"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+            "predicate": {
+              "not": "move:fire-punch"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ",
+            "predicate": {
+              "not": "move:fire-spin"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+            "predicate": {
+              "not": "move:flamethrower"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.WpFzl62EYkpKipF5",
+            "predicate": {
+              "not": "move:lava-plume"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Vj2gQXAHg94lFdNb",
+            "predicate": {
+              "not": "move:blaze-kick"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.eKo8Aq43yTIs1tus",
+            "predicate": {
+              "not": "move:burning-jealousy"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.VxO7N8CbFaW3889w",
+            "predicate": {
+              "not": "move:flare-blitz"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb",
+            "predicate": {
+              "not": "move:heat-wave"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.f25cGYvLApdYt14w",
+            "predicate": {
+              "not": "move:inferno"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move3",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.TjyskB7OEbBoJ819",
+            "predicate": {
+              "not": "move:fiery-dance"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.EA2vavVCPlHFLvwf",
+            "predicate": {
+              "not": "move:fire-punch"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ",
+            "predicate": {
+              "not": "move:fire-spin"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn",
+            "predicate": {
+              "not": "move:flamethrower"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.WpFzl62EYkpKipF5",
+            "predicate": {
+              "not": "move:lava-plume"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Vj2gQXAHg94lFdNb",
+            "predicate": {
+              "not": "move:blaze-kick"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.eKo8Aq43yTIs1tus",
+            "predicate": {
+              "not": "move:burning-jealousy"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.VxO7N8CbFaW3889w",
+            "predicate": {
+              "not": "move:flare-blitz"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb",
+            "predicate": {
+              "not": "move:heat-wave"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.f25cGYvLApdYt14w",
+            "predicate": {
+              "not": "move:inferno"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move3}"
+      }
+    ],
+    "enabled": true,
+    "slug": "fire-breather-rank-2-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+Attack or Special Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Master Focus or Combat"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Fire Bringer [CR]",
+    "name": "Fire Breather [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "FeVAuZAxeshdeg9p",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "9szn6GwuOeJkDNBv",
+  "_key": "!items!9szn6GwuOeJkDNBv"
+}

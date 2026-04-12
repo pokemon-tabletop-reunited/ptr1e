@@ -1,0 +1,93 @@
+{
+  "folder": "ZHCHpQN1HXsmSltC",
+  "name": "Stack: Vigor",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "For each stack deal +5 bonus damage on next physical damaging move; then remove all stacks.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "flags.ptu.vigor",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "physical-damage",
+        "value": "{actor|flags.ptu.vigor} * 5"
+      }
+    ],
+    "enabled": true,
+    "slug": "stack-acuity",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-14T21:44:47.635Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.1.1",
+    "createdTime": 1706452750719,
+    "modifiedTime": 1706452750719,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "marth-ptr",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.1.0"
+    }
+  },
+  "_id": "dmO40gFAbDtV0qXh",
+  "sort": 0,
+  "_key": "!items!dmO40gFAbDtV0qXh"
+}

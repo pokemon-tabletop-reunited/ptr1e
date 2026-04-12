@@ -1,0 +1,65 @@
+{
+  "name": "Tough as Nails [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You learn the Moves Endure and Slack Off.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "3 Roughneck Features",
+      "Master Intimidate"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Roughneck [CR]",
+    "name": "Tough as Nails [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "UjDP0F2khMUTsYeP",
+  "_id": "3gZXtfFIhJYEvBru",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3gZXtfFIhJYEvBru"
+}

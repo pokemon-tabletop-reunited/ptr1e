@@ -1,0 +1,80 @@
+{
+  "name": "Steel Roller",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/SteelIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Legal targets hit by Steel Roller are Tripped on a roll of 15+. Any Hazards in spaces Passed through or adjacent to those spaces are removed (they are removed before they can affect the user). If the user moves through an area of Terrain, or a Field-range Terrain is active, those effects immediately end.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.4lqKV4CxikZxxNWJ",
+        "range": "15",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "steel-roller",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Pass",
+      "Dash",
+      "Smite",
+      "Spirit Surge"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Steel",
+    "category": "Physical",
+    "damageBase": "13",
+    "frequency": "Daily x2",
+    "ac": "2",
+    "range": "Melee",
+    "contestType": "Tough - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "NXbEuTNQS7Seiump",
+  "effects": [],
+  "sort": 31600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710782576195,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!NXbEuTNQS7Seiump"
+}

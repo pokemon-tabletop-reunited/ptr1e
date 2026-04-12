@@ -1,0 +1,140 @@
+{
+  "name": "Martial Artist",
+  "system": {
+    "origin": "",
+    "effect": "Choose one of the following abilities: Guts [+HP], Inner Focus [+Speed], Iron Fist [+Defense], Limber [+Speed], Reckless [+Attack], Technician [+Speed]. You gain the chosen Ability and its associated tag. Whenever you gain any Martial Artist Feature, you also gain the associated tag.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "Guts: [+HP]",
+            "value": "Compendium.ptu.abilities.Item.MmN3OuS0wuIjvAWR"
+          },
+          {
+            "label": "Inner Focus: [+Speed]",
+            "value": "Compendium.ptu.abilities.Item.uM561WHxXwcdrMWl"
+          },
+          {
+            "label": "Iron Fist: [+Defense]",
+            "value": "Compendium.ptu.abilities.Item.Ro8jM65y4N3lP1tq"
+          },
+          {
+            "label": "Limber: [+Speed]",
+            "value": "Compendium.ptu.abilities.Item.GfjB1TuUfCwWHWaw"
+          },
+          {
+            "label": "Reckless: [+Attack]",
+            "value": "Compendium.ptu.abilities.Item.rCJBNK2adHEKBYfG"
+          },
+          {
+            "label": "Technician: [+Speed]",
+            "value": "Compendium.ptu.abilities.Item.mfD1Ga7xMCBqOk5H"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "mode": "add",
+        "value": 1,
+        "predicate": [
+          "class:martial-artist-guts-hp"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "mode": "add",
+        "value": 1,
+        "predicate": [
+          {
+            "or": [
+              "class:martial-artist-inner-focus-speed",
+              "class:martial-artist-limber-speed",
+              "class:martial-artist-technician-speed"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.modifiers.baseStats.def.mod",
+        "mode": "add",
+        "value": 1,
+        "predicate": [
+          "class:martial-artist-iron-fist-defense"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "mode": "add",
+        "value": 1,
+        "predicate": [
+          "class:martial-artist-reckless-attack"
+        ]
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class"
+    ],
+    "prerequisites": [
+      "Basic Martial Arts",
+      "Novice Combat"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "name": "Martial Artist",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "Basic Martial Arts, Novice Combat"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078919,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 29600000,
+  "_id": "RRgxTLIcGFVgDmCt",
+  "_key": "!items!RRgxTLIcGFVgDmCt"
+}

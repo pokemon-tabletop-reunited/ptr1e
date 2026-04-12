@@ -1,0 +1,94 @@
+{
+  "name": "Mega Evolve: Nidoking",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will Mega-Evolve your Nidoking.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:nidoking"
+        ],
+        "value": "/systems/ptu/static/images/sprites/034_mega.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:nidoking"
+        ],
+        "uuid": "Compendium.ptu.species.Item.rARAQMSQ46wVBD10"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "species:nidoking"
+        ],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.SRJ62OMgoKi2xUII"
+      }
+    ],
+    "enabled": true,
+    "slug": "mega-evolve-nidoking",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T01:45:48.523Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "TuFJ2nmx9i2k6KYk",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.12",
+    "coreVersion": "13.350",
+    "createdTime": 1698188968218,
+    "modifiedTime": 1705331175514,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "4KW4LUFLFULLWOKw",
+  "sort": 0,
+  "_key": "!items!4KW4LUFLFULLWOKw"
+}

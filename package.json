@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "db:pack": "node ./utils/packs.mjs package pack",
+    "db:unpack": "node ./utils/packs.mjs package unpack"
+  },
+  "dependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.3",
+    "@babel/eslint-parser": "^7.22.15",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "eslint-plugin-jsdoc": "^46.5.0",
+    "fancy-log": "^2.0.0",
+    "rollup": "^3.29.5",
+    "yargs": "^17.7.2"
+  }
+}

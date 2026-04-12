@@ -1,0 +1,96 @@
+{
+  "name": "Focus (Evasion)",
+  "system": {
+    "origin": "",
+    "effect": "A Focus grants +5 Bonus to a Stat, chosen when crafted. This Bonus is applied AFTER Combat Stages. Focuses are often Accessory-Slot Items, but may be crafted as Head-Slot, Hand or Off-Hand Slot Items as well; a Trainer may only benefit from one Focus at a time, regardless of the Equipment Slot. Focuses are not usually found in stores, but may sometimes be found for $6000 at your GM’s discretion.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.evasion.physical.mod",
+        "phase": "applyAEs",
+        "value": 5,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.evasion.special.mod",
+        "phase": "applyAEs",
+        "value": 5,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.evasion.speed.mod",
+        "phase": "applyAEs",
+        "value": 5,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "focus-evasion",
+    "schema": {
+      "version": 0.114,
+      "lastMigration": {
+        "datetime": "2024-02-17T17:08:15.967Z",
+        "version": {
+          "schema": 0.11,
+          "foundry": "11.315",
+          "system": "4.2.0"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "quantity": "1",
+    "category": "",
+    "cost": "6000",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Focus",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "https://assets.forge-vtt.com/652d5b20bd60c2104d8ee322/systems/ptu/css/images/icons/item_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368813804,
+    "modifiedTime": 1712495983923,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "kanto-adventures",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "folder": "vv5ZFS9C9wcgAZqN",
+  "_id": "UMdkTlXSn3oQykbK",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UMdkTlXSn3oQykbK"
+}

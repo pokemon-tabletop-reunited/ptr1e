@@ -1,0 +1,99 @@
+{
+  "name": "Type Expertise Rank 2",
+  "system": {
+    "origin": "",
+    "effect": "Each Rank, choose a Type of which you know at least 3 Moves. You gain STAB for the chosen Type. STAB is never applied to Struggle Attacks.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "typeExpertiseRank2Feat",
+        "adjustName": false,
+        "prompt": "Choose which stat to increase.",
+        "choices": [
+          {
+            "label": "HP",
+            "value": "system.modifiers.baseStats.hp.mod"
+          },
+          {
+            "label": "ATK",
+            "value": "system.modifiers.baseStats.atk.mod"
+          },
+          {
+            "label": "DEF",
+            "value": "system.modifiers.baseStats.def.mod"
+          },
+          {
+            "label": "SPATK",
+            "value": "system.modifiers.baseStats.spatk.mod"
+          },
+          {
+            "label": "SPDEF",
+            "value": "system.modifiers.baseStats.spdef.mod"
+          },
+          {
+            "label": "SPD",
+            "value": "system.modifiers.baseStats.spd.mod"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "{item|flags.ptu.rulesSelections.typeExpertiseRank2Feat}",
+        "mode": "add",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+Any"
+    ],
+    "prerequisites": [
+      "Level 9",
+      "3 Moves of the Chosen Type in your Move List"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "name": "Type Expertise Rank 2",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Level 9, 3 Moves of the Chosen Type in your Move List"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079051,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 13900000,
+  "_id": "D9vL3Z8M6oLuKf2K",
+  "_key": "!items!D9vL3Z8M6oLuKf2K"
+}

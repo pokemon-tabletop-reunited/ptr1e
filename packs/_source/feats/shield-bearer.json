@@ -1,0 +1,65 @@
+{
+  "name": "Shield Bearer",
+  "system": {
+    "origin": "",
+    "effect": "You may immediately ready a Shield, and do not become Slowed as a result. You may choose to grant an adjacent Ally the Evasion and Damage Reduction bonuses from your shield instead of gaining them yourself, but these bonuses only apply as long as the ally remains adjacent to you. If you do and the ally Shifts, you may Shift alongside your ally as a Shift Action Interrupt. This cannot cause you to shift more than your normal Movement.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Stalwart Bastion"
+    ],
+    "frequency": "1 AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Fortress",
+    "automation": [],
+    "name": "Shield Bearer",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Stalwart Bastion"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079302,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 68000000,
+  "_id": "zAIrLfBjiO24EPO6",
+  "_key": "!items!zAIrLfBjiO24EPO6"
+}

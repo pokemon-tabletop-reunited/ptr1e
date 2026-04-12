@@ -1,0 +1,102 @@
+{
+  "name": "Effect: Cut (Eph.)",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "@Embed[Compendium.ptu.moves.Item.UkCThqEzC82ABM7h]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.modifiers.damageReduction.physical.mod",
+        "phase": "afterDerived",
+        "value": "min(5, @actor.modifiers.damageReduction.physical.total)",
+        "priority": 99
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.modifiers.damageReduction.special.mod",
+        "phase": "afterDerived",
+        "value": "min(5, @actor.modifiers.damageReduction.special.total)",
+        "priority": 99
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-cut",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "vvYHstuSI4986bjM",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "scene-packer": {
+      "hash": "98717d58d8662a8a9c543ed0b384a027f33ed453",
+      "sourceId": "Item.FoWUxE1IUEogSOn4"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1709369332081,
+    "modifiedTime": 1710851809956,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_id": "aVm0441s0adbinyC",
+  "sort": 2800000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!aVm0441s0adbinyC"
+}

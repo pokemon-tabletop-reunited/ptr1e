@@ -1,0 +1,66 @@
+{
+  "name": "Metamagic",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You use a Special Move\nEffect: You may apply a Rank 1 Power Manipulation to your attack.\nRank 1 Power Manipulations are: Energy Finesse, Warp Energy, Directed Barrier, Power Overdrive",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "Arcanist",
+      "Adept Occult Education"
+    ],
+    "frequency": "1 AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Arcanist",
+    "automation": [],
+    "name": "Metamagic",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Arcanist, Adept Occult Education"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078977,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 32900000,
+  "_id": "UB2M3vpMQ2CNtzOL",
+  "_key": "!items!UB2M3vpMQ2CNtzOL"
+}

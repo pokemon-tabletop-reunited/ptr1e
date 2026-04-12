@@ -1,0 +1,107 @@
+{
+  "folder": "TuFJ2nmx9i2k6KYk",
+  "name": "Mega Evolve: Magcargo",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will mega-evolve your Magcargo.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:magcargo",
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/219s_MEGA.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            "species:magcargo",
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/219_MEGA.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:magcargo"
+        ],
+        "uuid": "Compendium.ptu.species.Item.4Dr7JAB0OHRipou3"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "species:magcargo"
+        ],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.M3xyDINrou3zvm0O"
+      }
+    ],
+    "enabled": true,
+    "slug": "mega-evolve-magcargo",
+    "schema": {
+      "version": 0.114,
+      "lastMigration": {
+        "datetime": "2024-02-19T14:16:37.253Z",
+        "version": {
+          "schema": 0.111,
+          "foundry": "11.315",
+          "system": "4.2.1"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1696236636263,
+    "modifiedTime": 1710762964779,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "yahKTkV6FaSxygK2",
+  "sort": 0,
+  "_key": "!items!yahKTkV6FaSxygK2"
+}

@@ -1,0 +1,90 @@
+{
+  "name": "Effect: Salt Cure (Eph. Steel)",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Water and Steel types take damage from this move as if it is super-effective.",
+    "snippet": "Water and Steel types take 1.5x damage from this move.",
+    "rules": [
+      {
+        "key": "Effectiveness",
+        "predicate": [],
+        "type": "rock",
+        "value": 4
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-salt-cure-eph",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "HaJo7lUbAIbnRUXL",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "scene-packer": {
+      "hash": "276cf253baf348769423fb6cb7e25c6d68a74d0a",
+      "sourceId": "Item.8AUdtWG6iQBt7beF"
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1709371138249,
+    "modifiedTime": 1710852842476,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_id": "rcjxP5up4cCL3Zl2",
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!rcjxP5up4cCL3Zl2"
+}

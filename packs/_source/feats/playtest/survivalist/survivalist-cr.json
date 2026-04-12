@@ -1,0 +1,65 @@
+{
+  "name": "Survivalist [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Choose a Terrain in which you have spent at least three nights. You gain Naturewalk for that terrain and a +2 bonus to Athletics, Acrobatics, Stealth, Perception, and Survival Checks in that terrain. When you have 2 Survivalist Features, you may choose a second Terrain. When you have 4 Survivalist Features, you may choose a third terrain. When you have 6 Survivalist Features, you may choose a fourth terrain.\nThe terrains are: Grassland, Forest, Wetlands, Ocean, Tundra, Mountain, Cave, Urban, Desert",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+HP",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Novice Survival"
+    ],
+    "frequency": "One Time Use – Extended Action",
+    "notes": "",
+    "free": false,
+    "class": "Survivalist [CR]",
+    "name": "Survivalist [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "jwSUGJETAKuub2Ws",
+  "_id": "qfHOst3SHL1te7yP",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qfHOst3SHL1te7yP"
+}

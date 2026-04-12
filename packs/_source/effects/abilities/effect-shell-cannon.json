@@ -1,0 +1,103 @@
+{
+  "folder": "HTNFGIxy9zsCONjI",
+  "name": "Effect: Shell Cannon",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "@Embed[Compendium.ptu.abilities.Item.su90TtsmN1w7QqyN]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "attack-roll",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.capabilities.overland",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.capabilities.swim",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null,
+        "predicate": []
+      },
+      {
+        "key": "FlatModifier",
+        "hideIfDisabled": false,
+        "selectors": "damage-roll",
+        "value": 4,
+        "predicate": []
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-shell-cannon",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1711902225880,
+    "modifiedTime": 1712499919660,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "kanto-adventures",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "UOwQkZpkwdU7kCHU",
+  "sort": 600000,
+  "_key": "!items!UOwQkZpkwdU7kCHU"
+}

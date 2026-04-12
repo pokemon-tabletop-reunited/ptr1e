@@ -1,0 +1,261 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:07.338Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Magikarp are often regarded as the “most useless Pokémon.” The most they normally can do is use Splash, which does absolutely nothing. Although they can reach heights of 7 feet using this move, they are unable to change direction in the air, so they land in the exact same place. Legend has it that older Magikarp can splash over mountains, though this has never been seen. In fact, splashing Magikarp actually make easy prey for Flying-type Pokémon like Pidgeotto, who can snatch them up as they bounce. They are also weak swimmers, unable to swim through even weak currents. As a result, many of them congregate in small ponds or lakes, unable swim through river currents. Magikarp are very hardy, however, with strong survival instincts and immune systems. They are able to tolerate waters of nearly any salinity, depth, and pollution level. It is believed that in the ancient relatives of Magikarp were actually far more powerful than they are today; why they became so weak is the subject of great research.",
+    "number": 129,
+    "form": "",
+    "stats": {
+      "hp": 2,
+      "atk": 1,
+      "def": 6,
+      "spatk": 2,
+      "spdef": 2,
+      "spd": 8
+    },
+    "types": [
+      "Water"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "bulletproof",
+          "uuid": "Compendium.ptu.abilities.Item.sK4HKyvIQrumnNOm"
+        },
+        {
+          "slug": "simple",
+          "uuid": "Compendium.ptu.abilities.Item.vQHsvwM1ELbK2H3D"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "decoy",
+          "uuid": "Compendium.ptu.abilities.Item.IFgjMY4bmZjv9gcP"
+        },
+        {
+          "slug": "swift-swim",
+          "uuid": "Compendium.ptu.abilities.Item.RK51P3bQWpC6Ioz2"
+        }
+      ],
+      "high": [
+        {
+          "slug": "rattled",
+          "uuid": "Compendium.ptu.abilities.Item.TcxNWzXMpxjBZbgo"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.Vhe0fBLNUTU4poSO",
+        "slug": "magikarp",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.XkkxdHQAvX95GW7l",
+        "slug": "gyarados",
+        "level": 20,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.9,
+      "weight": 10,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Water 2",
+        "Dragon"
+      ],
+      "hatchRate": 2
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Freshwater",
+      "Ocean"
+    ],
+    "capabilities": {
+      "overland": 1,
+      "sky": 0,
+      "swim": 5,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 3,
+      "longJump": 3,
+      "power": 1,
+      "naturewalk": [
+        "Ocean"
+      ],
+      "other": [
+        {
+          "slug": "gilled",
+          "uuid": "Compendium.ptu.capabilities.Item.Sr5UjqsO8FydTuNw"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.1OeCu4MotfnHbck4",
+          "slug": "splash",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IWQXKwgnyM2CvDLV",
+          "slug": "flail",
+          "level": 30
+        }
+      ],
+      "machine": [],
+      "egg": [],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+          "slug": "bounce"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 1,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "magikarp",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Magikarp",
+  "_id": "Vhe0fBLNUTU4poSO",
+  "effects": [],
+  "sort": 61800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Vhe0fBLNUTU4poSO"
+}

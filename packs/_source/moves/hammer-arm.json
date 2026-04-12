@@ -1,0 +1,75 @@
+{
+  "name": "Hammer Arm",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FightingIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "The user lowers their Speed by 1 Combat Stage.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-dealt",
+        "uuid": "Compendium.ptu.effects.Item.nOd3v02f918iW2aV",
+        "range": "1",
+        "value": "",
+        "affects": "origin"
+      }
+    ],
+    "enabled": true,
+    "slug": "hammer-arm",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.nOd3v02f918iW2aV",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fighting",
+    "category": "Physical",
+    "damageBase": "10",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "Melee",
+    "contestType": "Cool - Desperation",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "uX0GA4opzRCtDQVY",
+  "effects": [],
+  "sort": 81400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710789622062,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!uX0GA4opzRCtDQVY"
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Wrap",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/NormalIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "The user gains a +1 Bonus to Accuracy Rolls made to initiate Grapple Maneuvers, and +2 to Skill Checks made to initiate Grapple Maneuvers or gain Dominance. Whenever the user gains Dominance in a Grapple, the target of the Grapple loses a Tick of Hit Points.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "manual"
+        ],
+        "hideIfDisabled": false,
+        "selectors": [
+          "skill-combat",
+          "skill-athletics"
+        ],
+        "value": 2,
+        "label": "Grappling? (Wrap Bonus)"
+      }
+    ],
+    "enabled": true,
+    "slug": "wrap",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.moves.Item.gBjnwPNmaFiIeqIs",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Normal",
+    "category": "Static",
+    "damageBase": "--",
+    "frequency": "Static",
+    "ac": "--",
+    "range": "--",
+    "contestType": "Tough - Safe Option",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "26DAmIlAg7WbPpsM",
+  "effects": [],
+  "sort": 3400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1712494514133,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!26DAmIlAg7WbPpsM"
+}

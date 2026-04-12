@@ -1,0 +1,64 @@
+{
+  "name": "Sky Drop",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FlyingIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Set-Up Effect: Make Sky Drop's Accuracy Check. If the user hits, the user and target are moved 25 meters into the air. The target forfeits their next turn and cannot Shift or take actions until Sky Drop is resolved. Resolution Effect: Shift while in the air and lower both the user and the target heights back to the ground. Then apply Sky Drop's damage. If the target has a Sky or Levitate Speed, Sky Drop fails to deal damage. If the user is Fainted after the Set-Up but before the Resolution, the target falls to the ground and takes damage as if Sky Drop had a Damage Base of 3 (1d6+5/8) unless they have a Sky or Levitate Speed, in which case they take no damage.",
+    "snippet": "",
+    "rules": [],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1",
+      "Set-Up"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Flying",
+    "category": "Physical",
+    "damageBase": 6,
+    "frequency": "Scene x2",
+    "ac": 3,
+    "range": "Melee",
+    "contestType": "Smart - Special Attention",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "CZujTEpGpPnTGGB0",
+  "effects": [],
+  "sort": 16400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1707815182675,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!CZujTEpGpPnTGGB0"
+}

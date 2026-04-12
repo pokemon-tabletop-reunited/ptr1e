@@ -1,0 +1,110 @@
+{
+  "folder": "exsA2kaHiTXyoEFL",
+  "name": "Form Change: Gloomy Castform",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will transform your Castform.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:castform",
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/351s_Cloudy.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            "species:castform",
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/351_Cloudy.webp"
+      },
+      {
+        "key": "TypeOverwrite",
+        "value": [
+          "Dark"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.Jlsx5Vx5w1ecR6oE"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-gloomy-castform",
+    "schema": {
+      "version": 0.111,
+      "lastMigration": {
+        "datetime": "2023-10-08T13:36:44.683Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.311",
+          "system": "4.0.0.beta.11"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.0",
+    "createdTime": 1708348723747,
+    "modifiedTime": 1708348921559,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "ptr-dev-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.1.2"
+    }
+  },
+  "_id": "X6oZMBR5sgezfaZV",
+  "sort": 150000,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!X6oZMBR5sgezfaZV"
+}

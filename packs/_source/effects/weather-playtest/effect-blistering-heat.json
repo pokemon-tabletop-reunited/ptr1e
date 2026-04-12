@@ -1,0 +1,151 @@
+{
+  "folder": "VXd9n6naiPNthfVe",
+  "name": "Effect: Blistering Heat",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "<span>@Embed[Compendium.ptu.journals.XaqlAbknAD3Tpx5E.JournalEntryPage.YBWVC5IMxZYqnabl caption=false]</span>\n<blockquote>Due to the nature of global effects, setting expiration on them will not do anything, so please manually track expiration.</blockquote>",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [
+          "self:types:grass"
+        ],
+        "mode": "add",
+        "path": "system.modifiers.capabilities.all",
+        "phase": "afterDerived",
+        "value": 1,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [
+          "self:types:grass"
+        ],
+        "mode": "add",
+        "path": "system.modifiers.initiative.mod",
+        "phase": "afterDerived",
+        "value": 5,
+        "priority": null
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "fire-damage-base",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "ice-damage-base",
+        "value": -2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "nor": [
+            "self:types:fire",
+            "self:types:grass"
+          ]
+        },
+        "hideIfDisabled": false,
+        "selectors": [
+          "attack",
+          "save-check"
+        ],
+        "value": -2
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": [
+          "fire-damage-received",
+          "steel-damage-received"
+        ],
+        "uuid": "Compendium.ptu.effects.Item.NA1Vn8A2h6JIIUhj",
+        "range": "19",
+        "value": ""
+      },
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "target:types:water"
+        ],
+        "affects": "target",
+        "selectors": "fire-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.YirEcq7HUwGSPBBO"
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [
+          "move:category:physical"
+        ],
+        "affects": "target",
+        "selectors": "steel-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.NA1Vn8A2h6JIIUhj",
+        "range": "19",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-blistering-heat",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Weather",
+      "Playtest"
+    ],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1708178841231,
+    "modifiedTime": 1710763642819,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "fXsxr8akxM4wQfdy",
+  "_key": "!items!fXsxr8akxM4wQfdy"
+}

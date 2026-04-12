@@ -1,0 +1,66 @@
+{
+  "name": "Man of Steel [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You learn the Moves King’s Shield, Metal Burst, and Meteor Mash. You may use these Moves as Weapon Attacks when wielding Melee Weapons.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Steelheart",
+      "Master Athletics or Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Steelheart [CR]",
+    "name": "Man of Steel [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "ragCbmOsDCUz60wA",
+  "_id": "PNcX6tScydRWiDRK",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!PNcX6tScydRWiDRK"
+}

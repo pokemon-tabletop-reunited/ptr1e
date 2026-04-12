@@ -1,0 +1,66 @@
+{
+  "name": "Reality Bender",
+  "system": {
+    "origin": "",
+    "effect": "You are able to subconsciously alter the fabric of reality to change small facts or circumstances. If your character is confronting a “random” event such as a die roll, coin flip, or cards being dealt, the character may activate this Feature to influence the event. In this scenario, the GM provides you with two possible outcomes, and you pick one of them to actually occur. This means you always decide the outcome of binary events such as a coin flip; cheating cards or slot machines is much harder, as there are multiple outcomes and you only get to pick between two. This Feature can also be used to generate common items worth $250 or less that the character might normally possess, such as a Potion or Poké Ball, when in a pinch. The character just happens to find the needed item among their belongings. This Feature can only create items you wish to use at that moment, and of which you have none available; such as needing to heal a Pokémon but having no Potions left. Items created with Reality Bender must be used quickly after activating the feature and cannot be stored for later.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Warper",
+      "Expert Guile"
+    ],
+    "frequency": "Daily - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Warper",
+    "automation": [],
+    "name": "Reality Bender",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Warper, Expert Guile"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079000,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 48800000,
+  "_id": "i1od8TAyAHERY9LM",
+  "_key": "!items!i1od8TAyAHERY9LM"
+}

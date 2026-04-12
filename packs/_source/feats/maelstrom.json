@@ -1,0 +1,68 @@
+{
+  "name": "Maelstrom",
+  "system": {
+    "origin": "",
+    "effect": "You gain the Gilled Capability, and a +2 bonus to your Swim speed. Whenever your Water-Type Moves miss all targets, you gain a Tick of Temporary Hit Points.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Water)",
+      "Novice Athletics",
+      "Novice Acrobatics"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Maelstrom",
+    "automation": [],
+    "name": "Maelstrom",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Elemental Connection (Water), Novice Athletics, Novice Acrobatics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078962,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 29300000,
+  "_id": "R7hvjPNKBIjwCQiL",
+  "_key": "!items!R7hvjPNKBIjwCQiL"
+}

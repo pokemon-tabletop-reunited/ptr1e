@@ -1,0 +1,65 @@
+{
+  "name": "Sovereignty [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: While this Feature is bound, you gain a +3 Bonus to Save Checks against Volatile Status Afflictions, and a +3 Bonus to Opposed Checks when defending against being Disarmed, Grappled, Pushed, or Tripped.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Herald of Pride",
+      "Expert Command or Intimidate"
+    ],
+    "frequency": "Bind 2 AP – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Herald of Pride [CR]",
+    "name": "Sovereignty [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "lZqjsR5bQoFGXnFK",
+  "_id": "dSqTlA2kFKylnuUS",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!dSqTlA2kFKylnuUS"
+}

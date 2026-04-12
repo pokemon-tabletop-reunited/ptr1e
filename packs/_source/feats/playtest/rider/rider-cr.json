@@ -1,0 +1,66 @@
+{
+  "name": "Rider [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: While you are Mounted on a Pokemon under the effects of Agility Training, the bonuses from Agility Training are doubled. All Rider features require you to be Mounted to take effect.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Mounted Prowess",
+      "Agility Training."
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Rider [CR]",
+    "name": "Rider [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "3tqdXgsWtyq6Ai5Q",
+  "_id": "x02b6SzG7s0eTNIr",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!x02b6SzG7s0eTNIr"
+}

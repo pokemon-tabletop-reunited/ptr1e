@@ -1,0 +1,98 @@
+{
+  "name": "Effect: Defense Curl",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "The user becomes Curled Up. While Curled Up, the user becomes immune to Critical Hits, and gains 10 Damage Reduction and +1 Defense Combat Stage. However, while Curled Up, the user is Slowed and their Accuracy is lowered by 4. The user may stop being Curled Up as a Rapid Action, or if they are Recalled or Take a Breather. If the user has Rollout or Ice Ball in their Move List, they do not become Slowed while Curled Up, and the user gains a +10 bonus to the damage rolls of those Moves and does not suffer Accuracy Penalties from being Curled Up when using those moves.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.physical.mod",
+        "phase": "applyAEs",
+        "value": 10,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.damageReduction.special.mod",
+        "phase": "applyAEs",
+        "value": 10,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.def.stage.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-defense-curl",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "cCM0awlDiATvW03q",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_id": "2rVbX71BeIqrailD",
+  "sort": 300000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "createdTime": 1709369255813,
+    "modifiedTime": 1712495153716,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "ptu-classic-adventure-saturday",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.1"
+    }
+  },
+  "_key": "!items!2rVbX71BeIqrailD"
+}

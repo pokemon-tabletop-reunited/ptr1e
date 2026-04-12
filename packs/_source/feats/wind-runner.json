@@ -1,0 +1,75 @@
+{
+  "name": "Wind Runner",
+  "system": {
+    "origin": "",
+    "effect": "You gain the Levitate Ability. You have a total Levitate Speed equal to 4 plus half of the higher of your Acrobatics or Perception Rank.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.WsNZitOqUrhu9k78"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Flying)",
+      "Novice Acrobatics",
+      "Novice Perception"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Wind Runner",
+    "automation": [],
+    "name": "Wind Runner",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "Elemental Connection (Flying), Novice Acrobatics, Novice Perception"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078886,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 6500000,
+  "_id": "5VaDJ7MLNvmrUATn",
+  "_key": "!items!5VaDJ7MLNvmrUATn"
+}

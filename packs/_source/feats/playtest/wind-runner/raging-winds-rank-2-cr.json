@@ -1,0 +1,268 @@
+{
+  "name": "Raging Winds Rank 2 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You may learn three Moves from the list below, marked with the Raging Winds Rank you are gaining or lower.\nRank 1: Air Cutter, Dual Wingbeat, Gust, Tailwind, Wind Dance\nRank 2: Air Slash, Defog, Feather Dance, Tempest, Wind Shear\nRank 3: Brave Bird, Flying Press, Mirror Move, Sky Attack, Hurricane",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.x6Pk6ClFw3trGL9a",
+            "predicate": {
+              "not": "move:dual-wingbeat"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p",
+            "predicate": {
+              "not": "move:air-cutter"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.XFAP16yE2fKZRExS",
+            "predicate": {
+              "not": "move:gust"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.1WQ6vh8cbOaUzhaf",
+            "predicate": {
+              "not": "move:tailwind"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zl9s4r9bKURTf07l",
+            "predicate": {
+              "not": "move:air-slash"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.DANp8m02Ocfv3esu",
+            "predicate": {
+              "not": "move:defog"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.etQ46pkobBuyW3Xx",
+            "predicate": {
+              "not": "move:feather-dance"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.wlsVm3f8L7L7r3jV",
+            "predicate": {
+              "not": "move:tempest"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.K0FacvVgLhcFubUs",
+            "predicate": {
+              "not": "move:wind-shear"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.x6Pk6ClFw3trGL9a",
+            "predicate": {
+              "not": "move:dual-wingbeat"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p",
+            "predicate": {
+              "not": "move:air-cutter"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.XFAP16yE2fKZRExS",
+            "predicate": {
+              "not": "move:gust"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.1WQ6vh8cbOaUzhaf",
+            "predicate": {
+              "not": "move:tailwind"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zl9s4r9bKURTf07l",
+            "predicate": {
+              "not": "move:air-slash"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.DANp8m02Ocfv3esu",
+            "predicate": {
+              "not": "move:defog"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.etQ46pkobBuyW3Xx",
+            "predicate": {
+              "not": "move:feather-dance"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.wlsVm3f8L7L7r3jV",
+            "predicate": {
+              "not": "move:tempest"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.K0FacvVgLhcFubUs",
+            "predicate": {
+              "not": "move:wind-shear"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move3",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.x6Pk6ClFw3trGL9a",
+            "predicate": {
+              "not": "move:dual-wingbeat"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.avOW8t5qubeyPB2p",
+            "predicate": {
+              "not": "move:air-cutter"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.XFAP16yE2fKZRExS",
+            "predicate": {
+              "not": "move:gust"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.1WQ6vh8cbOaUzhaf",
+            "predicate": {
+              "not": "move:tailwind"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zl9s4r9bKURTf07l",
+            "predicate": {
+              "not": "move:air-slash"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.DANp8m02Ocfv3esu",
+            "predicate": {
+              "not": "move:defog"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.etQ46pkobBuyW3Xx",
+            "predicate": {
+              "not": "move:feather-dance"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.wlsVm3f8L7L7r3jV",
+            "predicate": {
+              "not": "move:tempest"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.K0FacvVgLhcFubUs",
+            "predicate": {
+              "not": "move:wind-shear"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move3}"
+      }
+    ],
+    "enabled": true,
+    "slug": "raging-winds-rank-2-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 3",
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Wind Runner [CR]",
+    "name": "Raging Winds [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "m4L8vSCzreUH7otz",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "guj2JFhKUujBD5vw",
+  "_key": "!items!guj2JFhKUujBD5vw"
+}

@@ -1,0 +1,91 @@
+{
+  "folder": "gpLgMgi7hofskTVt",
+  "name": "Effect: Electric Terrain",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Increase DB of electric moves by 2",
+    "snippet": "Increase DB of electric moves by 2",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "electric-damage-base",
+        "value": 2
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-electric-terrain",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "scene-packer": {
+      "hash": "5f73d7506d04f99edcb3c1fdead87dcb89d68c68",
+      "sourceId": "Item.m6IDm2p3MxZuOGLr"
+    },
+    "ptu": {
+      "showInTokenPanel": true
+    },
+    "LocknKey": {
+      "IDKeysFlag": "",
+      "RemoveKeyonUseFlag": false,
+      "LPFormulaFlag": "",
+      "LPFormulaOverrideFlag": false,
+      "LBFormulaFlag": "",
+      "LBFormulaOverrideFlag": false,
+      "ReplacementItemFlag": ""
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "oMC7M6N3hUs3m1eG",
+  "sort": 200000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.1",
+    "createdTime": 1709370611402,
+    "modifiedTime": 1709370615436,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pokemon-test-world",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.1"
+    }
+  },
+  "_key": "!items!oMC7M6N3hUs3m1eG"
+}

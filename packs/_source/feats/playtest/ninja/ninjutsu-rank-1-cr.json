@@ -1,0 +1,70 @@
+{
+  "name": "Ninjutsu Rank 1 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You learn two of the following Moves:\nPoison Jab, Cross Poison, Venoshock, Baneful Bunker, Smart Strike, Corrosive Gas.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "ninjutsu-rank-1-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Ranked 2",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Poison Weapons",
+      "Master Stealth"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Ninja [CR]",
+    "name": "Ninjutsu [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "Oh9iNhjBAL6rHEpw",
+  "_id": "hnBnXmVbQ8ZBJ0BO",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!hnBnXmVbQ8ZBJ0BO"
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Metal Cruncher",
+  "type": "move",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "effects": [],
+  "_id": "XfPtBwobmeMurred",
+  "system": {
+    "origin": "",
+    "effect": "Metal Cruncher lowers the targets Defense 1 Combat Stage on a 7+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.OtQlmjHAk6TQeSLS",
+        "range": "7",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "metal-cruncher",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.OtQlmjHAk6TQeSLS",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1",
+      "Smite",
+      "Spirit Surge"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Steel",
+    "category": "Physical",
+    "damageBase": "12",
+    "frequency": "Scene",
+    "ac": "7",
+    "range": "Melee",
+    "contestType": "Smart",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "name": "",
+    "automation": [],
+    "useCount": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "img": "/systems/ptu/css/images/types2/SteelIC_Icon.png",
+  "folder": "CKiVqPT3ASdUeaM0",
+  "sort": 3100000,
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1689606523899,
+    "modifiedTime": 1710782749750,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!XfPtBwobmeMurred"
+}

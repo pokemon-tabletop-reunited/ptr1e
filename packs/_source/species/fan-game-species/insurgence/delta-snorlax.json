@@ -1,0 +1,552 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:04.254Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 1549,
+    "form": "",
+    "stats": {
+      "hp": 16,
+      "atk": 11,
+      "def": 7,
+      "spatk": 7,
+      "spdef": 11,
+      "spd": 3
+    },
+    "types": [
+      "Grass"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "overcoat",
+          "uuid": "Compendium.ptu.abilities.Item.aYpa4hA9aHeNGyeQ"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "grass-pelt",
+          "uuid": "Compendium.ptu.abilities.Item.6cZLya14HHjNSame"
+        },
+        {
+          "slug": "adaptability",
+          "uuid": "Compendium.ptu.abilities.Item.MBgvgf5LwdH5UGib"
+        },
+        {
+          "slug": "root-down",
+          "uuid": "Compendium.ptu.abilities.Item.LUFr9s74PE0jFtUe"
+        }
+      ],
+      "high": [
+        {
+          "slug": "thick-fat",
+          "uuid": "Compendium.ptu.abilities.Item.g9kAU2J4rkXhNDJv"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 1,
+        "uuid": "Compendium.ptu.species.Item.YlDpghGPjgP64gQP",
+        "slug": "delta-munchlax",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      },
+      {
+        "level": 25,
+        "uuid": "Compendium.ptu.species.Item.6mWFFg8rEO59XG54",
+        "slug": "delta-snorlax",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 2.1,
+      "weight": 460,
+      "sizeClass": "Large",
+      "weightClass": 6
+    },
+    "breeding": {
+      "genderRatio": 87.5,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": -1
+    },
+    "diet": [
+      "Phototroph"
+    ],
+    "habitats": [
+      "Forest",
+      "Grassland"
+    ],
+    "capabilities": {
+      "overland": 5,
+      "sky": 0,
+      "swim": 1,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 12,
+      "naturewalk": [
+        "Forest",
+        "Grassland"
+      ],
+      "other": []
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "rototiller",
+          "uuid": "Compendium.ptu.moves.Item.xLei5olAnOdIr4FO",
+          "level": 4
+        },
+        {
+          "slug": "growth",
+          "uuid": "Compendium.ptu.moves.Item.Bcv2CeJg9qU1q0Cb",
+          "level": 9
+        },
+        {
+          "slug": "bulldoze",
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu",
+          "level": 12
+        },
+        {
+          "slug": "razor-leaf",
+          "uuid": "Compendium.ptu.moves.Item.wYz4RubDs84tDVul",
+          "level": 17
+        },
+        {
+          "slug": "ingrain",
+          "uuid": "Compendium.ptu.moves.Item.2ky0KrGcz81tQ5X3",
+          "level": 20
+        },
+        {
+          "slug": "body-slam",
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle",
+          "level": 25
+        },
+        {
+          "slug": "synthesis",
+          "uuid": "Compendium.ptu.moves.Item.zO24D3CxJw7guk2Y",
+          "level": 28
+        },
+        {
+          "slug": "grassy-terrain",
+          "uuid": "Compendium.ptu.moves.Item.dXNYCLtPWarypUld",
+          "level": 33
+        },
+        {
+          "slug": "rollout",
+          "uuid": "Compendium.ptu.moves.Item.nzhedIfXpsZWaEx9",
+          "level": 36
+        },
+        {
+          "slug": "block",
+          "uuid": "Compendium.ptu.moves.Item.PvmLk3AU04nOjH4x",
+          "level": 41
+        },
+        {
+          "slug": "belly-drum",
+          "uuid": "Compendium.ptu.moves.Item.MH31RHW3E9lc1Mdt",
+          "level": 44
+        },
+        {
+          "slug": "grass-knot",
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "level": 49
+        },
+        {
+          "slug": "earthquake",
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c",
+          "level": 50
+        },
+        {
+          "slug": "wood-hammer",
+          "uuid": "Compendium.ptu.moves.Item.EOjVWwZLa33n8M7P",
+          "level": 57
+        }
+      ],
+      "machine": [
+        {
+          "slug": "roar",
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY"
+        },
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "bulk-up",
+          "uuid": "Compendium.ptu.moves.Item.du6VccHCQ2VjQ0D8"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "sunny-day",
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+        },
+        {
+          "slug": "hyper-beam",
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "solar-beam",
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO"
+        },
+        {
+          "slug": "smack-down",
+          "uuid": "Compendium.ptu.moves.Item.YG7EABDKQsFjDi8E"
+        },
+        {
+          "slug": "earthquake",
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "brick-break",
+          "uuid": "Compendium.ptu.moves.Item.QD9iT4AII5PpKxab"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "rock-tomb",
+          "uuid": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "focus-blast",
+          "uuid": "Compendium.ptu.moves.Item.HU7NSy5rYDet6DbI"
+        },
+        {
+          "slug": "energy-ball",
+          "uuid": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup"
+        },
+        {
+          "slug": "fling",
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6"
+        },
+        {
+          "slug": "embargo",
+          "uuid": "Compendium.ptu.moves.Item.AMdvXp9FBhfXOLJs"
+        },
+        {
+          "slug": "shadow-claw",
+          "uuid": "Compendium.ptu.moves.Item.pT1I4vwhSiqnVRkr"
+        },
+        {
+          "slug": "smart-strike",
+          "uuid": "Compendium.ptu.moves.Item.ImFfaRbYkW1fzPPL"
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK"
+        },
+        {
+          "slug": "gyro-ball",
+          "uuid": "Compendium.ptu.moves.Item.jn8ej4sQ6o2PuUJx"
+        },
+        {
+          "slug": "bulldoze",
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu"
+        },
+        {
+          "slug": "rock-slide",
+          "uuid": "Compendium.ptu.moves.Item.AvGyaqir7qFsEzxk"
+        },
+        {
+          "slug": "grass-knot",
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "confide",
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j"
+        }
+      ],
+      "egg": [],
+      "tutor": [
+        {
+          "slug": "after-you",
+          "uuid": "Compendium.ptu.moves.Item.x8xJKEwM5Zp3jqGw"
+        },
+        {
+          "slug": "amnesia-n",
+          "uuid": "Compendium.ptu.moves.Item.0JDFAZ8Q0rDKNodB"
+        },
+        {
+          "slug": "block",
+          "uuid": "Compendium.ptu.moves.Item.PvmLk3AU04nOjH4x"
+        },
+        {
+          "slug": "bulldoze-n",
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu"
+        },
+        {
+          "slug": "covet",
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB"
+        },
+        {
+          "slug": "drain-punch",
+          "uuid": "Compendium.ptu.moves.Item.Dr7Eh1TGQHwQcreV"
+        },
+        {
+          "slug": "earth-power",
+          "uuid": "Compendium.ptu.moves.Item.VZYf1f6nsz9bp7vw"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "focus-punch",
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv"
+        },
+        {
+          "slug": "giga-drain",
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m"
+        },
+        {
+          "slug": "grass-whistle-n",
+          "uuid": "Compendium.ptu.moves.Item.UsV1dE6qhSVDd2oN"
+        },
+        {
+          "slug": "helping-hand",
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ"
+        },
+        {
+          "slug": "iron-head",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN"
+        },
+        {
+          "slug": "knock-off",
+          "uuid": "Compendium.ptu.moves.Item.wXMLKSFvWlsa0ee6"
+        },
+        {
+          "slug": "metronome-n",
+          "uuid": "Compendium.ptu.moves.Item.9aU7CnwwaU0FE4tk"
+        },
+        {
+          "slug": "outrage",
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L"
+        },
+        {
+          "slug": "recycle",
+          "uuid": "Compendium.ptu.moves.Item.yUba2OWKoxAE3txP"
+        },
+        {
+          "slug": "rollout",
+          "uuid": "Compendium.ptu.moves.Item.nzhedIfXpsZWaEx9"
+        },
+        {
+          "slug": "seed-bomb",
+          "uuid": "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU"
+        },
+        {
+          "slug": "snatch",
+          "uuid": "Compendium.ptu.moves.Item.s6hVuNnG75HkMapT"
+        },
+        {
+          "slug": "snore",
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53"
+        },
+        {
+          "slug": "superpower",
+          "uuid": "Compendium.ptu.moves.Item.xwJMUiNv3k0k9VK6"
+        },
+        {
+          "slug": "synthesis",
+          "uuid": "Compendium.ptu.moves.Item.zO24D3CxJw7guk2Y"
+        },
+        {
+          "slug": "thunder-punch",
+          "uuid": "Compendium.ptu.moves.Item.0gi5EtY9Gq2yZ4eY"
+        },
+        {
+          "slug": "uproar",
+          "uuid": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd"
+        },
+        {
+          "slug": "wood-hammer-n",
+          "uuid": "Compendium.ptu.moves.Item.EOjVWwZLa33n8M7P"
+        },
+        {
+          "slug": "worry-seed",
+          "uuid": "Compendium.ptu.moves.Item.s41RoaO2fbzPVqR6"
+        },
+        {
+          "slug": "zen-headbutt",
+          "uuid": "Compendium.ptu.moves.Item.bbYMsmddMV20isEx"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 6,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 5,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "delta-snorlax",
+    "rules": [],
+    "source": {
+      "value": "Fangame Insurgence Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "PjOQybdSHWn87sdq",
+  "name": "Delta Snorlax",
+  "_id": "6mWFFg8rEO59XG54",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!6mWFFg8rEO59XG54"
+}

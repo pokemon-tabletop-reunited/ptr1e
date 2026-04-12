@@ -1,0 +1,71 @@
+{
+  "name": "Iron",
+  "system": {
+    "origin": "",
+    "effect": "Raise the user’s Defense Base Stat 1. You may only get use out of up to five Vitamins per Pokémon.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "phase": "applyAEs",
+        "value": "{item|system.quantity} * 1",
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.441Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Vitamin",
+      "Chef"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "4900",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Iron",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "systems/ptu/images/item_icons/iron.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368799148,
+    "modifiedTime": 1712496050806,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 46600000,
+  "_id": "dXAbrFgm65yJOY2n",
+  "_key": "!items!dXAbrFgm65yJOY2n"
+}

@@ -1,0 +1,75 @@
+{
+  "folder": "mS7fmuAZxBzZ1J7B",
+  "name": "One of the Classic Blunders [CR]",
+  "type": "feat",
+  "img": "/systems/ptu/static/css/images/icons/feat_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Trigger: A foe misses an attack against you.\nEffect: You use 1 of your Status Class Provocateur moves against the triggering Target. This can only trigger once per target per scene.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "phase": "applyAEs",
+        "value": 1,
+        "priority": 20
+      }
+    ],
+    "enabled": true,
+    "slug": "one-of-the-classic-blunders-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework",
+      "Interrupt"
+    ],
+    "prerequisites": [
+      "Provocateur",
+      "Two Provocateur Skills at Adept Rank"
+    ],
+    "frequency": "1AP - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Provocateur [CR]"
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "ST1NH01lICJGG7II",
+  "sort": 100000,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710765908090,
+    "modifiedTime": 1710765909004,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-chosen",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_key": "!items!ST1NH01lICJGG7II"
+}

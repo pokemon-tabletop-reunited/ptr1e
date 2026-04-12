@@ -1,0 +1,66 @@
+{
+  "name": "Sage",
+  "system": {
+    "origin": "",
+    "effect": "Target: An ally within 5 meters\nEffect: The target gains Damage Reduction equal to your Occult Education Rank doubled or their Tick Value, whichever is higher, for one full round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+HP"
+    ],
+    "prerequisites": [
+      "Novice Occult Education"
+    ],
+    "frequency": "At-Will - Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "automation": [],
+    "name": "Sage",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Novice Occult Education"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081726,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 14600000,
+  "_id": "DozuivSDWCgvsoeu",
+  "_key": "!items!DozuivSDWCgvsoeu"
+}

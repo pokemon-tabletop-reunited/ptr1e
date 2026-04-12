@@ -1,0 +1,76 @@
+{
+  "name": "Type Brace (Ice)",
+  "system": {
+    "origin": "",
+    "effect": "Grants the holder 15 Damage Reduction against all direct-damage Ice Moves. Accessory Item for Trainers.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "move:type:ice"
+        ],
+        "selectors": "damage-received",
+        "uuid": "Compendium.ptu.effects.Item.3Z0FXRjOLUkhlBLG",
+        "affects": "origin"
+      }
+    ],
+    "enabled": true,
+    "slug": "type-brace-ice",
+    "schema": {
+      "version": 0.114,
+      "lastMigration": {
+        "datetime": "2024-02-17T17:08:16.423Z",
+        "version": {
+          "schema": 0.11,
+          "foundry": "11.315",
+          "system": "4.2.0"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Held Item",
+      "Accessory",
+      "Artificer"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "2000",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Type Brace (Water)",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "folder": "H6OYFc3rpfIkZdnP",
+  "ownership": {
+    "default": 0
+  },
+  "_id": "aAkmLEIXZboywg8p",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710773544948,
+    "modifiedTime": 1710773544948,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!aAkmLEIXZboywg8p"
+}

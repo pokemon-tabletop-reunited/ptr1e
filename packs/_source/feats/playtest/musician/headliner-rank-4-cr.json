@@ -1,0 +1,264 @@
+{
+  "name": "Headliner Rank 4 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You learn two Musician Moves marked with the Rank of this Feature you are taking or lower.\nRank 1: Sing, Supersonic, Sonic Boom\nRank 2: Screech, Metal Sound, Snarl, Echoed Voice\nRank 3: Hyper Voice, Uproar, Round, Chatter\nRank 4: Boomburst, Overdrive, Ancient Roar",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.YD9PPN6tPaLMrvvm",
+            "predicate": {
+              "not": "move:sing"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.I8d7of2dA9eAP0OG",
+            "predicate": {
+              "not": "move:supersonic"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.kLwGOMnWIIl2m3sU",
+            "predicate": {
+              "not": "move:sonic-boom"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TD9T2QEalKGQZicp",
+            "predicate": {
+              "not": "move:screech"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.FrDQDljR3YE3roFi",
+            "predicate": {
+              "not": "move:metal-sound"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.jVruXIDWy3HEHAeA",
+            "predicate": {
+              "not": "move:snarl"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+            "predicate": {
+              "not": "move:echoed-voice"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD",
+            "predicate": {
+              "not": "move:hyper-voice"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+            "predicate": {
+              "not": "move:uproar"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+            "predicate": {
+              "not": "move:round"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Y4ZEuPq2fnFkDFy7",
+            "predicate": {
+              "not": "move:chatter"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.D6jojqxcGzhoRDwL",
+            "predicate": {
+              "not": "move:boomburst"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.XjxlA3XnsIEo5J8y",
+            "predicate": {
+              "not": "move:overdrive"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.rbt17HN0D19aABeC",
+            "predicate": {
+              "not": "move:ancient-roar"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.YD9PPN6tPaLMrvvm",
+            "predicate": {
+              "not": "move:sing"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.I8d7of2dA9eAP0OG",
+            "predicate": {
+              "not": "move:supersonic"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.kLwGOMnWIIl2m3sU",
+            "predicate": {
+              "not": "move:sonic-boom"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TD9T2QEalKGQZicp",
+            "predicate": {
+              "not": "move:screech"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.FrDQDljR3YE3roFi",
+            "predicate": {
+              "not": "move:metal-sound"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.jVruXIDWy3HEHAeA",
+            "predicate": {
+              "not": "move:snarl"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.gOhBiJMpOl84MLaX",
+            "predicate": {
+              "not": "move:echoed-voice"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.1Zrse7wrjRftpdXD",
+            "predicate": {
+              "not": "move:hyper-voice"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Si0MaGpUCvDBY8Gd",
+            "predicate": {
+              "not": "move:uproar"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+            "predicate": {
+              "not": "move:round"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Y4ZEuPq2fnFkDFy7",
+            "predicate": {
+              "not": "move:chatter"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.D6jojqxcGzhoRDwL",
+            "predicate": {
+              "not": "move:boomburst"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.XjxlA3XnsIEo5J8y",
+            "predicate": {
+              "not": "move:overdrive"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.rbt17HN0D19aABeC",
+            "predicate": {
+              "not": "move:ancient-roar"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": "headliner-rank-4-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack",
+      "Ranked 4",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Musician",
+      "Master Charm or Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Musician [CR]",
+    "name": "Headliner [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "WRKXvQaKG4o08kOu",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1710768664859,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "HIt1eG2CM0veE7d3",
+  "_key": "!items!HIt1eG2CM0veE7d3"
+}

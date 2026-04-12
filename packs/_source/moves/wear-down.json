@@ -1,0 +1,78 @@
+{
+  "name": "Wear Down",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/NormalIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Wear Down lowers the target's Defense by 1 Combat Stage on Even-Numbered Rolls.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.bqiqznj14sIHOpBR",
+        "range": "even",
+        "value": "",
+        "affects": "target",
+        "even": true
+      }
+    ],
+    "enabled": true,
+    "slug": "wear-down",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.bqiqznj14sIHOpBR",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Normal",
+    "category": "Physical",
+    "damageBase": "5",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "WR",
+    "contestType": "--",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "qSWSfpyHLvBTCz94",
+  "effects": [],
+  "sort": 75900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710851877815,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!qSWSfpyHLvBTCz94"
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Mold Ball",
+  "system": {
+    "origin": "",
+    "effect": "-25 Modifier if the target is Poison or Fighting type.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "or": [
+            "target:types:poison",
+            "target:types:fighting"
+          ]
+        },
+        "hideIfDisabled": false,
+        "selectors": "{item|id}-capture-roll",
+        "value": -25
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.336Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Poke Ball"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "300",
+    "consumable": "0",
+    "subtype": "pokeball",
+    "container": false,
+    "automation": [],
+    "name": "Mold Ball",
+    "useCount": 0,
+    "modifier": null
+  },
+  "type": "item",
+  "img": "systems/ptu/images/item_icons/mold ball.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368808674,
+    "modifiedTime": 1712495896404,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 24600000,
+  "_id": "KPQtcd2yWdetmck0",
+  "_key": "!items!KPQtcd2yWdetmck0"
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Tailwind",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FlyingIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "For the remainder of the encounter, all allied trainers and Pokémon gain +5 to their Initiative. Multiple instances of Tailwind cannot stack. *Grants: Guster\n\nAlt: @UUID[Compendium.ptu.effects.Item.9uDrqDIX9OxOn7th]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.capabilities.Item.St6x6ofobU8ztcts"
+      }
+    ],
+    "enabled": true,
+    "slug": "tailwind",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.kQdPof3rxBVN6BiS",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Wind"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Flying",
+    "category": "Status",
+    "damageBase": "--",
+    "frequency": "Scene",
+    "ac": "--",
+    "range": "Field",
+    "contestType": "Smart - Saving Grace",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "1WQ6vh8cbOaUzhaf",
+  "effects": [],
+  "sort": 2700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1707849207241,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1WQ6vh8cbOaUzhaf"
+}

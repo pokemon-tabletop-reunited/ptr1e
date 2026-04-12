@@ -1,0 +1,79 @@
+{
+  "name": "Expunge",
+  "type": "move",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "effects": [],
+  "_id": "3ihCEnOGHoXbo2KL",
+  "system": {
+    "origin": "",
+    "effect": "When calculating Weakness and Resistance for Expunge, Nuclear-Typed targets calculate damage as if Nuclear was weak to Nuclear; if the user has the Radioactive Ability, it treats the target at though the target was not Nuclear-Typed for the purposes of Radioactive. If the target is in Nuclear Fallout Weather, Expunge cannot miss.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "target:types:nuclear"
+        ],
+        "selectors": "{item|id}-damage-received",
+        "affects": "target",
+        "uuid": "Compendium.ptu.effects.Item.LaCn3yJsTra9MI0E"
+      }
+    ],
+    "enabled": true,
+    "slug": "expunge",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Smite"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Nuclear",
+    "category": "Special",
+    "damageBase": "11",
+    "frequency": "Scene x2",
+    "ac": "7",
+    "range": "Range 4, Ranged Blast 2",
+    "contestType": "Smart",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "name": "",
+    "automation": [],
+    "useCount": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "img": "/systems/ptu/css/images/types2/NuclearIC_Icon.png",
+  "folder": "CKiVqPT3ASdUeaM0",
+  "sort": 400000,
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1689606523899,
+    "modifiedTime": 1710852667641,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!3ihCEnOGHoXbo2KL"
+}

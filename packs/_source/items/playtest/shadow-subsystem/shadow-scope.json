@@ -1,0 +1,63 @@
+{
+  "folder": "lpdptis936rBZFDU",
+  "name": "Shadow Scope",
+  "type": "item",
+  "_id": "twCEGui6ti82vT6n",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This is an advanced, more specialized Aura Scope, designed to be integrated alongside a Snag Machine, being worn as a Head Item. While still allowing the user to see the Auras of living creatures, it is designed to lock out the user from using the Snag Machine’s Snag Balls on anything but another Trainer’s Shadow Pokémon. The Balls upgraded by the integrated Snag Machine receive an additional -10 Modifier to Capture Rolls. The Shadow Scope also notifies the wearer automatically when a Shadow Pokémon is in the user’s field of vision, and specifically pinpoints it via its heads-up display.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "target:types:shadow"
+        ],
+        "label": "Shadow pokemon?",
+        "hideIfDisabled": false,
+        "selectors": "capture-roll",
+        "value": -10
+      }
+    ],
+    "enabled": true,
+    "slug": "shadow-scope",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "quantity": "1",
+    "category": "",
+    "cost": "8000",
+    "consumable": 0,
+    "subtype": "",
+    "container": false
+  },
+  "effects": [],
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1697671539030,
+    "modifiedTime": 1712495466225,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!twCEGui6ti82vT6n"
+}

@@ -1,0 +1,154 @@
+{
+  "name": "Effect: Study Manual Tier 2",
+  "type": "effect",
+  "img": "systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "smt2",
+        "choices": [
+          {
+            "label": "Acrobatics",
+            "value": "acrobatics"
+          },
+          {
+            "label": "Athletics",
+            "value": "athletics"
+          },
+          {
+            "label": "Charm",
+            "value": "charm"
+          },
+          {
+            "label": "Combat",
+            "value": "combat"
+          },
+          {
+            "label": "Command",
+            "value": "command"
+          },
+          {
+            "label": "General Education",
+            "value": "generalEd"
+          },
+          {
+            "label": "Medicine Education",
+            "value": "medicineEd"
+          },
+          {
+            "label": "Occult Education",
+            "value": "occultEd"
+          },
+          {
+            "label": "Pokemon Education",
+            "value": "pokemonEd"
+          },
+          {
+            "label": "Tech Education",
+            "value": "techEd"
+          },
+          {
+            "label": "Focus",
+            "value": "focus"
+          },
+          {
+            "label": "Guile",
+            "value": "guile"
+          },
+          {
+            "label": "Intimidate",
+            "value": "intimidate"
+          },
+          {
+            "label": "Intuition",
+            "value": "intuition"
+          },
+          {
+            "label": "Perception",
+            "value": "perception"
+          },
+          {
+            "label": "Stealth",
+            "value": "stealth"
+          },
+          {
+            "label": "Survival",
+            "value": "survival"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.skills.{item|flags.ptu.rulesSelections.smt2}.modifier.mod",
+        "phase": "applyAEs",
+        "value": 2
+      },
+      {
+        "key": "ActionPoint",
+        "drainedValue": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "study-manual-tier-2",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "YOFSDHg7L2IrQsvT",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1698924738961,
+    "modifiedTime": 1712495333375,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "devvv",
+      "uuid": null,
+      "coreVersion": "11.313",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.beta.15"
+    }
+  },
+  "_id": "8S5ANEmz5pXLdcNy",
+  "sort": 200000,
+  "_key": "!items!8S5ANEmz5pXLdcNy"
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Triple Arrows",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FightingIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Targets hit by Triple Arrows lose 1 Combat Stage in both Defense and Special Defense.\\nAfter attacking with Triple Arrows, hit or miss, the user may Disengage 2m and attack a different target with Triple Arrows. This effect may be repeated a second time, targeting a creature that has not been targeted by either prior attack. Before making each attack roll, the user can elect to give up triggering all remaining additional shifts and attacks. Triple Arrows gains 1 Accuracy and 1 Damage Base for each attack that is given up. Triple Arrows always benefits from the Technician Ability.\\n Once Daily, after all attacks with Triple Arrows have been resolved, the user becomes Pumped. While Pumped, the userâ€™s Critical Range is extended by 2, or 18+ if the Critical Range is not otherwise extended. Being switched will cause this effect to end.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.zG7mEuQyTkJ8Ou3F",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "triple-arrows",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.zG7mEuQyTkJ8Ou3F",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Fighting",
+    "category": "Physical",
+    "damageBase": "5",
+    "frequency": "EOT",
+    "ac": "2",
+    "range": "Range 4",
+    "contestType": "Cool - Special Attention",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "0aTjK9XQlBWmqI3C",
+  "effects": [],
+  "sort": 1500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710789864897,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0aTjK9XQlBWmqI3C"
+}

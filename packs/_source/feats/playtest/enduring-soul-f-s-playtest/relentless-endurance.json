@@ -1,0 +1,75 @@
+{
+  "name": "Relentless Endurance",
+  "system": {
+    "origin": "[F&S Playtest]",
+    "effect": "Trigger: Your Pokémon falls below 50%% HP.\nEffect: Your Pokémon are considered at 1 Spirit for the sake of Bonuses from Spirit.\nBonus: If your Pokémon is below 20% HP, they are considered at 3 Spirit for the sake of Bonuses from Spirit.\n",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "phase": "applyAEs",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": "relentless-endurance",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP"
+    ],
+    "prerequisites": [
+      "Enduring Soul",
+      "Adept Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Enduring Soul [F&S Playtest]",
+    "name": "Shrug Off",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "Enduring Soul, Adept Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078992,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "tohou-the-wilderness",
+      "uuid": null,
+      "coreVersion": "11.308",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.alpha.25"
+    }
+  },
+  "folder": "UVQvHiZHa8JnNuHJ",
+  "_id": "3EBHtOMeqDVpN41u",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3EBHtOMeqDVpN41u"
+}

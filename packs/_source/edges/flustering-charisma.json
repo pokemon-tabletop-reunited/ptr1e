@@ -1,0 +1,65 @@
+{
+  "name": "Flustering Charisma",
+  "system": {
+    "origin": "",
+    "effect": "When you hit with a Move with the Social keyword, the target takes a -2 penalty to Save Checks against Volatile Status Afflictions for 1 full round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [
+          "move:social"
+        ],
+        "selectors": "damage-received",
+        "uuid": "Compendium.ptu.effects.Item.n1GqXEIcRzrAtMli",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "flustering-charisma",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.n1GqXEIcRzrAtMli",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Adept Charm or Guile"
+    ],
+    "notes": "",
+    "free": false,
+    "name": "Flustering Charisma",
+    "useCount": 0
+  },
+  "type": "edge",
+  "img": "/systems/ptu/css/images/icons/edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Adept Charm or Guile"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683367953813,
+    "modifiedTime": 1712495255163,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "DlrPhx5QApDOSCy0",
+  "_key": "!items!DlrPhx5QApDOSCy0"
+}

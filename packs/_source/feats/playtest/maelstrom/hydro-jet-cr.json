@@ -1,0 +1,68 @@
+{
+  "name": "Hydro Jet [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You use a damaging single target Water-Type Move\nEffect: Hydro Jet’s effect depends on if the triggering Move was Melee or Ranged.\n- If Melee, the Move gains the Pass keyword and you may change direction during the four meters of Pass (but may still only target any given Pokémon or Trainer once).\n- If Ranged, the Move becomes a Line 4 instead of its usual range.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "hydro-jet-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Call The Current Rank 1"
+    ],
+    "frequency": "1 AP – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Maelstrom [CR]",
+    "name": "Hydro Jet [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "S8f1tL26M52IDjLP",
+  "_id": "kjIs6nOQqkbQFZLN",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!kjIs6nOQqkbQFZLN"
+}

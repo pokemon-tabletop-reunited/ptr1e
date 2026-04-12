@@ -1,0 +1,276 @@
+{
+  "name": "Master Skills",
+  "system": {
+    "origin": "",
+    "effect": "You Rank Up a Skill from Expert to Master. You may take this Edge multiple times.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "{item|id}",
+        "choices": [
+          {
+            "label": "acrobatics",
+            "value": "system.skills.acrobatics.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.acrobatics.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "athletics",
+            "value": "system.skills.athletics.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.athletics.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "charm",
+            "value": "system.skills.charm.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.charm.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "combat",
+            "value": "system.skills.combat.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.combat.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "command",
+            "value": "system.skills.command.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.command.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "generalEd",
+            "value": "system.skills.generalEd.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.generalEd.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "medicineEd",
+            "value": "system.skills.medicineEd.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.medicineEd.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "occultEd",
+            "value": "system.skills.occultEd.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.occultEd.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "pokemonEd",
+            "value": "system.skills.pokemonEd.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.pokemonEd.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "techEd",
+            "value": "system.skills.techEd.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.techEd.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "focus",
+            "value": "system.skills.focus.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.focus.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "guile",
+            "value": "system.skills.guile.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.guile.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "intimidate",
+            "value": "system.skills.intimidate.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.intimidate.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "intuition",
+            "value": "system.skills.intuition.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.intuition.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "perception",
+            "value": "system.skills.perception.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.perception.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "stealth",
+            "value": "system.skills.stealth.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.stealth.value.total}",
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "label": "survival",
+            "value": "system.skills.survival.value.mod",
+            "predicate": [
+              {
+                "eq": [
+                  "{actor|system.skills.survival.value.total}",
+                  5
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "{item|flags.ptu.rulesSelections.{item|id}}",
+        "value": 1,
+        "priority": 10,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "master-skills",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Skill"
+    ],
+    "prerequisites": [
+      "Level 12"
+    ],
+    "notes": "",
+    "free": false,
+    "name": "Master Skills",
+    "useCount": 0
+  },
+  "type": "edge",
+  "img": "/systems/ptu/css/images/icons/edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Level 12"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683367953783,
+    "modifiedTime": 1707826191539,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "_id": "JzVNlI5Mdq3kbmG9",
+  "sort": 0,
+  "_key": "!items!JzVNlI5Mdq3kbmG9"
+}

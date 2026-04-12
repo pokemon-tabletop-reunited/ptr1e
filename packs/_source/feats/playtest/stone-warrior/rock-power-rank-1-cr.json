@@ -1,0 +1,106 @@
+{
+  "name": "Rock Power Rank 1 [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Each Rank, choose one of Cave Crasher, Sturdy, Rock Head, or Sand Veil. You gain the chosen Ability. If you choose Sand Veil, you may consider sand a \"solid surface\" for the purposes of Stone Stance.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.abilities.Item.KbDf9PYW1vwrlAg4",
+            "predicate": {
+              "not": "ability:cave-crasher"
+            }
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.AaDXWUAMnhxLbyn3",
+            "predicate": {
+              "not": "ability:sturdy"
+            }
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.2N9Ih71fbWBeoUm0",
+            "predicate": {
+              "not": "ability:rock-head"
+            }
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.Ewr9Oh7DddMKcWLZ",
+            "predicate": {
+              "not": "ability:sand-veil"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      }
+    ],
+    "enabled": true,
+    "slug": "rock-power-rank-1-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Adept Combat or Survival"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Stone Warrior [CR]",
+    "name": "Rock Power [CR]Rank 1 [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "nC4MYGyp8GMoMBLk",
+  "_id": "GYnmteHLhVAZQKJB",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!GYnmteHLhVAZQKJB"
+}

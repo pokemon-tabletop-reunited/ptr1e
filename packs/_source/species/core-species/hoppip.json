@@ -1,0 +1,542 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:03.808Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "Hoppip are common sights on breezy days, floating in the wind with their leaves whirling idly. Their light bodies can be picked up by breezes, letting them follow the winds. Their feet are capable of gripping onto the ground tightly to avoid being blown away. However, they are not suitable for walking, leaving wind as their main form of locomotion. Hoppip also gather in large clusters for stability during strong gales, linking their leaves together to form tightly-interwoven chains. These clusters can number anywhere from 10 to 100, with colonies of over a thousand having been reported during strong tropical windstorms. Clusters that are blown loose may float aimlessly across the sky like aerial tumbleweeds. Due to their docile natures, Hoppip unfortunately make easy prey for many predators. However, the leaves on their heads are unimaginably bitter, so few dare to consume them. It is said that their astringency can linger in the mouth for a week, and no amount of purging can remove or mask the taste.&nbsp;",
+    "number": 187,
+    "form": "",
+    "stats": {
+      "hp": 4,
+      "atk": 4,
+      "def": 4,
+      "spatk": 4,
+      "spdef": 6,
+      "spd": 5
+    },
+    "types": [
+      "Grass",
+      "Flying"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "infiltrator",
+          "uuid": "Compendium.ptu.abilities.Item.9nkIfAs2uDYCUGfb"
+        },
+        {
+          "slug": "windveiled",
+          "uuid": "Compendium.ptu.abilities.Item.rTE4w4C9aplyiUtk"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "chlorophyll",
+          "uuid": "Compendium.ptu.abilities.Item.ZiTUZHmZaIq0K2na"
+        },
+        {
+          "slug": "leaf-guard",
+          "uuid": "Compendium.ptu.abilities.Item.wwGnvLri2jpoS0RP"
+        }
+      ],
+      "high": [
+        {
+          "slug": "flutter",
+          "uuid": "Compendium.ptu.abilities.Item.NPu2GzghOUmik64d"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.2CGSPSbq8k40KBla",
+        "slug": "hoppip",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.rDHDHKftidYicKqU",
+        "slug": "skiploom",
+        "level": 15,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.uEcyITiY2jm3aTh7",
+        "slug": "jumpluff",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.4,
+      "weight": 0.5,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Fairy",
+        "Plant"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Phototroph"
+    ],
+    "habitats": [
+      "Forest",
+      "Grassland"
+    ],
+    "capabilities": {
+      "overland": 2,
+      "sky": 3,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 2,
+      "longJump": 2,
+      "power": 1,
+      "naturewalk": [
+        "Forest",
+        "Grassland"
+      ],
+      "other": [
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.1OeCu4MotfnHbck4",
+          "slug": "splash",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zEIiTcsXhPE8v0fF",
+          "slug": "absorb",
+          "level": 1
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zO24D3CxJw7guk2Y",
+          "slug": "synthesis",
+          "level": 4
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.6lQy212f7N3GH5KS",
+          "slug": "tail-whip",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.50Vtl0u0jPevwY4K",
+          "slug": "tackle",
+          "level": 8
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HmIauAep0pKBGFRh",
+          "slug": "fairy-wind",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.NisjPhyvzfHCfgSx",
+          "slug": "poison-powder",
+          "level": 12
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.XssTGMznjX8N33L7",
+          "slug": "stun-spore",
+          "level": 14
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhX27aIM6MPFqya8",
+          "slug": "sleep-powder",
+          "level": 16
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ptP5LFYkJR4BJHIu",
+          "slug": "bullet-seed",
+          "level": 19
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jx4TeOVUk1DX8R45",
+          "slug": "leech-seed",
+          "level": 22
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9PVNtUbbwbRhZimy",
+          "slug": "mega-drain",
+          "level": 25
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VsFJounIwoSOu8g4",
+          "slug": "acrobatics",
+          "level": 28
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.fM5WQyilyABYub1f",
+          "slug": "rage-powder",
+          "level": 31
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.08DZcCU0jqyEQ3jv",
+          "slug": "cotton-spore",
+          "level": 34
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn",
+          "level": 37
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s41RoaO2fbzPVqR6",
+          "slug": "worry-seed",
+          "level": 40
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+          "slug": "giga-drain",
+          "level": 43
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+          "slug": "bounce",
+          "level": 46
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GM2n72N4lfcq8Xrt",
+          "slug": "memento",
+          "level": 49
+        }
+      ],
+      "machine": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4",
+          "slug": "toxic"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld",
+          "slug": "hidden-power"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0",
+          "slug": "protect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.sMByqeVz0Wq8Ybby",
+          "slug": "frustration"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Oa9NuYFi7yvPQTIO",
+          "slug": "solar-beam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o",
+          "slug": "return"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN",
+          "slug": "double-team"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.eDFWwKCjaJ7vNNbJ",
+          "slug": "reflect"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.9TD6e8JoZBjIuuAP",
+          "slug": "aerial-ace"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou",
+          "slug": "facade"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "slug": "rest"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU",
+          "slug": "attract"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r",
+          "slug": "round"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.GPc4UqyAsng4fPup",
+          "slug": "energy-ball"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.VsFJounIwoSOu8g4",
+          "slug": "acrobatics"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.z5hgetbLhLvsd800",
+          "slug": "swords-dance"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bg7PRJBIZOfUUSNJ",
+          "slug": "psych-up"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.trOCAfV84TLLTKk0",
+          "slug": "infestation"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.jh2qDsk9mirEzqvu",
+          "slug": "grass-knot"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML",
+          "slug": "swagger"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W",
+          "slug": "sleep-talk"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SU7t0kTAUe6uRJin",
+          "slug": "u-turn"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI",
+          "slug": "substitute"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.tqoJF3EAgEEv3l1l",
+          "slug": "dazzling-gleam"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j",
+          "slug": "confide"
+        }
+      ],
+      "egg": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.0JDFAZ8Q0rDKNodB",
+          "slug": "amnesia"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.QzP3iamQFsN5S4FS",
+          "slug": "aromatherapy"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.wGfMIdaCB5sim3hx",
+          "slug": "confusion"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.bTh2RR9t2qBxFkDy",
+          "slug": "cotton-guard"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A",
+          "slug": "double-edge"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UhvLxdWq2D7gOvMr",
+          "slug": "encore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ",
+          "slug": "endure"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.dXNYCLtPWarypUld",
+          "slug": "grassy-terrain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU",
+          "slug": "seed-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.SXOzsTxC6DllLznC",
+          "slug": "strength-sap"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s41RoaO2fbzPVqR6",
+          "slug": "worry-seed"
+        }
+      ],
+      "tutor": [
+        {
+          "uuid": "Compendium.ptu.moves.Item.ttL8PRerkMtAJOVR",
+          "slug": "bounce"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.ptP5LFYkJR4BJHIu",
+          "slug": "bullet-seed"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.Y5R5mbVcGq6fwoFj",
+          "slug": "defense-curl"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.mGvVlposKAYCa15m",
+          "slug": "giga-drain"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ",
+          "slug": "helping-hand"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.b18uGrjFdKGy0rBU",
+          "slug": "seed-bomb"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.UrSzOSXlBYKS4JvG",
+          "slug": "silver-wind"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.RRgY3N3vFTIbzl53",
+          "slug": "snore"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.zO24D3CxJw7guk2Y",
+          "slug": "synthesis"
+        },
+        {
+          "uuid": "Compendium.ptu.moves.Item.s41RoaO2fbzPVqR6",
+          "slug": "worry-seed"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 1,
+        "modifier": 1,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "hoppip",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Hoppip",
+  "_id": "2CGSPSbq8k40KBla",
+  "effects": [],
+  "sort": 7300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!2CGSPSbq8k40KBla"
+}

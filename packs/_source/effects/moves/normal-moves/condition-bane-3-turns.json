@@ -1,0 +1,87 @@
+{
+  "folder": "vvYHstuSI4986bjM",
+  "name": "Condition: Bane (3 turns)",
+  "type": "condition",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "Automated",
+    "effect": "@Embed[Compendium.ptu.moves.Item.u4agkXP4M88Pd0SO]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "save-check",
+        "value": -2
+      }
+    ],
+    "enabled": true,
+    "slug": "Bane (3 turns)",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.635Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 3,
+      "unit": "rounds",
+      "expiry": "turn-end"
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": {
+      "formula": "td",
+      "type": "persistent"
+    },
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1710853872229,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "kanto-adventures",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "qUqJDFoLWLKd7b5K",
+  "sort": 0,
+  "_key": "!items!qUqJDFoLWLKd7b5K"
+}

@@ -1,0 +1,86 @@
+{
+  "name": "Slush Rush",
+  "type": "ability",
+  "img": "/systems/ptu/css/images/icons/ability_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "While in Hailing Weather or under half maximum Hit Points, the user’s Initiative is doubled.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": {
+          "not": "effect:snowy"
+        },
+        "mode": "add",
+        "path": "system.modifiers.initiative.mod",
+        "phase": "afterDerived",
+        "value": {
+          "brackets": [
+            {
+              "start": 50,
+              "end": 100,
+              "value": 0
+            },
+            {
+              "start": -100,
+              "end": 49,
+              "value": "@actor.system.initiative.value"
+            }
+          ],
+          "field": "actor|system.health.percent"
+        },
+        "priority": null
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": {
+          "and": [
+            "effect:snowy"
+          ]
+        },
+        "hideIfDisabled": false,
+        "selectors": "initiative",
+        "value": "@actor.system.initiative.value"
+      }
+    ],
+    "enabled": true,
+    "slug": "slush-rush",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "frequency": "Static",
+    "tier": "",
+    "automation": []
+  },
+  "_id": "cv7t3NcXKiGHSsQs",
+  "effects": [],
+  "folder": null,
+  "sort": 34400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1692968394056,
+    "modifiedTime": 1712499995056,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!cv7t3NcXKiGHSsQs"
+}

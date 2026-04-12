@@ -1,0 +1,85 @@
+{
+  "name": "Glaciate",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/IceIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "All Legal Targets have their Speed lowered 1 Combat Stage. On an Even-Numbered Roll, all Legal Targets on the ground are Slowed.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.I2nVAxBFKDMe8EQt",
+        "range": "even",
+        "value": "",
+        "affects": "target",
+        "even": true
+      },
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "affects": "target",
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.zg5BJA3J6vPpNNI2",
+        "range": "1",
+        "value": ""
+      }
+    ],
+    "enabled": true,
+    "slug": "glaciate",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.zg5BJA3J6vPpNNI2",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Ice",
+    "category": "Special",
+    "damageBase": "7",
+    "frequency": "EOT",
+    "ac": "3",
+    "range": "Burst 2",
+    "contestType": "Beauty - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "_id": "eNX5pFoS6PYxoqwx",
+  "effects": [],
+  "sort": 58700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1692963260348,
+    "modifiedTime": 1710785067763,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!eNX5pFoS6PYxoqwx"
+}

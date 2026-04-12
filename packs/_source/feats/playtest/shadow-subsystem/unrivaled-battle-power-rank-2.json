@@ -1,0 +1,299 @@
+{
+  "folder": "TajSsOGM13zplgIH",
+  "name": "Unrivaled Battle Power Rank 2",
+  "type": "feat",
+  "img": "/systems/ptu/static/css/images/icons/feat_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Effect: You learn 3 Moves chosen from the list below, marked with the Rank of this Feature you are gaining or lower.\nRank 2: Shadow Hold, Shadow Rave, Shadow Shed, Shadow Boost, Shadow Pummel",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "flag": "unrivaledBattlePower2",
+        "choices": [
+          {
+            "value": "atk",
+            "label": "Attack"
+          },
+          {
+            "value": "spatk",
+            "label": "Special Attack"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.{item|flags.ptu.rulesSelections.unrivaledBattlePower2}.mod",
+        "phase": "applyAEs",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.g19b3alAuzMQr7Qs",
+            "predicate": {
+              "not": "move:shadow-rush"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.8MUEKNGgj0oc7P2f",
+            "predicate": {
+              "not": "move:shadow-down"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.dwcRQgIBszpHjNpE",
+            "predicate": {
+              "not": "move:shadow-shave"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.LUIEdoSRzg2bt0Xp",
+            "predicate": {
+              "not": "move:shadow-corruption"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zh2B4hg2TvpbliA8",
+            "predicate": {
+              "not": "move:shadow-panic"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.CcEasi84O10SiFBr",
+            "predicate": {
+              "not": "move:shadow-hold"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.0YcLWdTRlotpUzIL",
+            "predicate": {
+              "not": "move:shadow-rave"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.teuroDno8HeBaqGD",
+            "predicate": {
+              "not": "move:shadow-shed"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.lVkbWxSKwAlWmxld",
+            "predicate": {
+              "not": "move:shadow-boost"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.EklvvYXb00hwyeBg",
+            "predicate": {
+              "not": "move:shadow-pummel"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.g19b3alAuzMQr7Qs",
+            "predicate": {
+              "not": "move:shadow-rush"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.8MUEKNGgj0oc7P2f",
+            "predicate": {
+              "not": "move:shadow-down"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.dwcRQgIBszpHjNpE",
+            "predicate": {
+              "not": "move:shadow-shave"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.LUIEdoSRzg2bt0Xp",
+            "predicate": {
+              "not": "move:shadow-corruption"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zh2B4hg2TvpbliA8",
+            "predicate": {
+              "not": "move:shadow-panic"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.CcEasi84O10SiFBr",
+            "predicate": {
+              "not": "move:shadow-hold"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.0YcLWdTRlotpUzIL",
+            "predicate": {
+              "not": "move:shadow-rave"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.teuroDno8HeBaqGD",
+            "predicate": {
+              "not": "move:shadow-shed"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.lVkbWxSKwAlWmxld",
+            "predicate": {
+              "not": "move:shadow-boost"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.EklvvYXb00hwyeBg",
+            "predicate": {
+              "not": "move:shadow-pummel"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move3",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.g19b3alAuzMQr7Qs",
+            "predicate": {
+              "not": "move:shadow-rush"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.8MUEKNGgj0oc7P2f",
+            "predicate": {
+              "not": "move:shadow-down"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.dwcRQgIBszpHjNpE",
+            "predicate": {
+              "not": "move:shadow-shave"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.LUIEdoSRzg2bt0Xp",
+            "predicate": {
+              "not": "move:shadow-corruption"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Zh2B4hg2TvpbliA8",
+            "predicate": {
+              "not": "move:shadow-panic"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.CcEasi84O10SiFBr",
+            "predicate": {
+              "not": "move:shadow-hold"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.0YcLWdTRlotpUzIL",
+            "predicate": {
+              "not": "move:shadow-rave"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.teuroDno8HeBaqGD",
+            "predicate": {
+              "not": "move:shadow-shed"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.lVkbWxSKwAlWmxld",
+            "predicate": {
+              "not": "move:shadow-boost"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.EklvvYXb00hwyeBg",
+            "predicate": {
+              "not": "move:shadow-pummel"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move3}"
+      }
+    ],
+    "enabled": true,
+    "slug": "unrivaled-battle-power-rank-2",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 3",
+      "+Attack or Special Attack"
+    ],
+    "prerequisites": [
+      "Adept Intimidation or Combat"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Heartless"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1697669940555,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "ZNO7wwC0jBJGN98G",
+  "_key": "!items!ZNO7wwC0jBJGN98G"
+}

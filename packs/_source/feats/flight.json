@@ -1,0 +1,66 @@
+{
+  "name": "Flight",
+  "system": {
+    "origin": "",
+    "effect": "You gain a Sky Speed equal to your Levitate Speed plus your Acrobatics or Perception Rank for the remainder of the round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "One With the Winds",
+      "Adept Acrobatics"
+    ],
+    "frequency": "1 AP - Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Wind Runner",
+    "automation": [],
+    "name": "Flight",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "One With the Winds, Adept Acrobatics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368084431,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 34800000,
+  "_id": "VqOxU6eP4xdfgWhr",
+  "_key": "!items!VqOxU6eP4xdfgWhr"
+}

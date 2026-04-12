@@ -1,0 +1,69 @@
+{
+  "name": "Shadow Arms [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You learn the Moves Shadow Claw, Shadow Punch, and Shadow Sneak. You may use these as Weapon Attacks when wielding Melee Weapons.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "shadow-arms-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Attack",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Apparition"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Apparition [CR]",
+    "name": "Shadow Arms [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "9Lj9g7fcD9O4Gws1",
+  "_id": "lRuBU3MTL78YuveQ",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!lRuBU3MTL78YuveQ"
+}

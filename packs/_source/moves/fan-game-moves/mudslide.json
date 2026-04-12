@@ -1,0 +1,77 @@
+{
+  "name": "Mudslide",
+  "type": "move",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "effects": [],
+  "_id": "NLvAbMYzgghJqrEt",
+  "system": {
+    "origin": "",
+    "effect": "All Legal Targets have their Evasion lowered by 1.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.dvdW23rD3i0jBRye",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "mudslide",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.dvdW23rD3i0jBRye",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Ground",
+    "category": "Special",
+    "damageBase": "6",
+    "frequency": "Scene x2",
+    "ac": "3",
+    "range": "Close Blast 2",
+    "contestType": "Tough",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "name": "",
+    "automation": [],
+    "useCount": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "img": "/systems/ptu/css/images/types2/GroundIC_Icon.png",
+  "folder": "CKiVqPT3ASdUeaM0",
+  "sort": 2100000,
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.3.2",
+    "coreVersion": "13.350",
+    "createdTime": 1689606523899,
+    "modifiedTime": 1721743582175,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!NLvAbMYzgghJqrEt"
+}

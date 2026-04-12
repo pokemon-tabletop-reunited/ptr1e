@@ -1,0 +1,66 @@
+{
+  "name": "Reactive Armor",
+  "system": {
+    "origin": "",
+    "effect": "Trigger: You gain an Injury or take a Critical Hit while wearing metallic Armor\nEffect: All foes within a Burst 1 lose Hit Points equal to double your Athletics or Focus Rank, and you gain Damage Reduction equal to double your Athletics or Focus Rank for one full round.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Steelheart",
+      "Adept Athletics or Focus"
+    ],
+    "frequency": "Scene x2 - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Steelheart",
+    "automation": [],
+    "name": "Reactive Armor",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Steelheart, Adept Athletics or Focus"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078814,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 32800000,
+  "_id": "UAwONQFFtPzLkrUG",
+  "_key": "!items!UAwONQFFtPzLkrUG"
+}

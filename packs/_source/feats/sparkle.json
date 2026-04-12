@@ -1,0 +1,78 @@
+{
+  "name": "Sparkle",
+  "system": {
+    "origin": "",
+    "effect": "You learn the Moves Tri-Attack and Weather Ball.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.IWDclyABMiQ3puo0"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.rBIPrDXPi37mBqNZ"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "Prism",
+      "Expert Charm or General Education"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Prism",
+    "automation": [],
+    "name": "Sparkle",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Prism, Expert Charm or General Education"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079304,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 29400000,
+  "_id": "RB3Q34auMGDFLdvW",
+  "_key": "!items!RB3Q34auMGDFLdvW"
+}

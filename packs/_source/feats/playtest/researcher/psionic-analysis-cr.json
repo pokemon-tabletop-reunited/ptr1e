@@ -1,0 +1,65 @@
+{
+  "name": "Psionic Analysis [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You are able to analyze Psychic Residue and can determine the following information about the creature of phenomena that left the residue:\n- What type of creature left the residue, or vaguely what sort of phenomena left the residue\n- Which Psychic-Type Moves they know\n- Which, if any, of the following Class Features they have: Telepath, Telekinetic, Warper,\nBonus: You gain the Forewarn Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Witch Hunter",
+      "Master Occult Education"
+    ],
+    "frequency": "Scene – Extended Action",
+    "notes": "",
+    "free": false,
+    "class": "Researcher [CR]",
+    "name": "Psionic Analysis [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "wKlgeANt8BWt41q1",
+  "_id": "jvqDC9fc73pVSUe9",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!jvqDC9fc73pVSUe9"
+}

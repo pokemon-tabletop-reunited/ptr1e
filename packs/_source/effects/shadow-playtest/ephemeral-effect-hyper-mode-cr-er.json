@@ -1,0 +1,77 @@
+{
+  "name": "Ephemeral Effect: Hyper Mode CR/ER",
+  "type": "effect",
+  "img": "systems/ptu/static/css/images/types2/ShadowIC_Icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.effectRange.mod",
+        "phase": "applyAEs",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.critRange.mod",
+        "phase": "applyAEs",
+        "value": 2
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-hyper-mode-iwr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "dDpOEXjREUS6rAWH",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.3",
+    "coreVersion": "13.350",
+    "createdTime": 1699893305338,
+    "modifiedTime": 1699894180916,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "iMEih8csttUKHcVd",
+  "sort": 0,
+  "_key": "!items!iMEih8csttUKHcVd"
+}

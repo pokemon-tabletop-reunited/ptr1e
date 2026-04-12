@@ -1,0 +1,77 @@
+{
+  "name": "Nuclear Slash",
+  "type": "move",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "effects": [],
+  "_id": "UzDGLo90JhAFm4Ql",
+  "system": {
+    "origin": "",
+    "effect": "Nuclear Slash is a Critical Hit on 18+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "{item|id}-crit-range",
+        "value": 2
+      }
+    ],
+    "enabled": true,
+    "slug": "nuclear-slash",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Pass"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Nuclear",
+    "category": "Physical",
+    "damageBase": "6",
+    "frequency": "EOT",
+    "ac": "4",
+    "range": "Melee",
+    "contestType": "Smart",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "name": "",
+    "automation": [],
+    "useCount": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "img": "/systems/ptu/css/images/types2/NuclearIC_Icon.png",
+  "folder": "CKiVqPT3ASdUeaM0",
+  "sort": 2700000,
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1689606523899,
+    "modifiedTime": 1710852082290,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UzDGLo90JhAFm4Ql"
+}

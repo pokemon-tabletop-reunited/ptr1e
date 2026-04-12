@@ -1,0 +1,76 @@
+{
+  "name": "Type Booster (Dark)",
+  "system": {
+    "origin": "",
+    "effect": "Grants a +5 Damage Bonus to all direct-damage Dark Moves used by the holder. Accessory Item for Trainers.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:type:dark"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "damage-roll",
+        "value": 5
+      }
+    ],
+    "enabled": true,
+    "slug": "type-booster-dark",
+    "schema": {
+      "version": 0.114,
+      "lastMigration": {
+        "datetime": "2024-02-17T17:08:16.431Z",
+        "version": {
+          "schema": 0.11,
+          "foundry": "11.315",
+          "system": "4.2.0"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Held Item",
+      "Accessory",
+      "Artificer"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "1800",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Type Brace (Water)",
+    "useCount": 0
+  },
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "folder": "eOYYcccDYyNUcc1E",
+  "ownership": {
+    "default": 0
+  },
+  "_id": "SG4PHlea6QrP9pIc",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710773503174,
+    "modifiedTime": 1710773503174,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!SG4PHlea6QrP9pIc"
+}

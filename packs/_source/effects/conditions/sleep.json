@@ -1,0 +1,84 @@
+{
+  "name": "Sleep",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Sleep.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "Sleeping Trainers and Pokémon receive no bonuses from Evasion, and cannot take actions except for Free and Rapid Actions that would cure Sleep (ex: activating the Shed Skin Ability). At the end of the sleeper’s turns, they may make a DC 16 Save Check to wake up. Whenever a Sleeping Pokémon takes Damage or loses life from an Attack, they wake up. This does not include loss of life from passive sources such as Poison or Burns, but active attacks and effects that cause Hit Point loss (such as being hit by the Press Feature, or Super Fang) would wake up their target. Sleeping targets cannot make Save Checks to be cured of Rage, Infatuation, or Confusion, but they also cannot hurt themselves in Confusion. Pokémon and Trainers may wake an adjacent ally as a Standard Action. The target also becomes Vulnerable.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.ptu.effects.Item.wqzPWKMbwvOWLVoI",
+        "onDeleteActions": {
+          "grantee": "restrict",
+          "granter": "cascade"
+        }
+      }
+    ],
+    "enabled": true,
+    "slug": "sleep",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.636Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "encounter",
+      "expiry": "turn-start"
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": {
+      "formula": "",
+      "type": "save",
+      "dc": 16,
+      "decrease": false
+    },
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "rPNjp26cMp3XQ6aC",
+  "_id": "RekZDOcIsADhrfH3",
+  "effects": [],
+  "sort": 1800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.3",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1695027124661,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!RekZDOcIsADhrfH3"
+}

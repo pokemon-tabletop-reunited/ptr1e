@@ -1,0 +1,291 @@
+{
+  "name": "Categoric Inclination",
+  "system": {
+    "origin": "",
+    "effect": "Choose Body, Mind, or Spirit. You gain a +1 Bonus to all Skill Checks of that Category.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "Body",
+            "value": "body",
+            "predicate": [
+              {
+                "not": "edge:categoric-inclination-body"
+              }
+            ]
+          },
+          {
+            "label": "Mind",
+            "value": "mind",
+            "predicate": [
+              {
+                "not": "edge:categoric-inclination-mind"
+              }
+            ]
+          },
+          {
+            "label": "Spirit",
+            "value": "spirit",
+            "predicate": [
+              {
+                "not": "edge:categoric-inclination-spirit"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "body",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.acrobatics.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "body",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.athletics.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "spirit",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.charm.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "body",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.combat.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "spirit",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.command.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "mind",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.generalEd.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "mind",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.medicineEd.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "mind",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.occultEd.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "mind",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.pokemonEd.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "mind",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.techEd.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "spirit",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.focus.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "mind",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.guile.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "body",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.intimidate.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "spirit",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.intuition.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "mind",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.perception.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "body",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.stealth.modifier.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "predicate": {
+          "eq": [
+            "body",
+            "{item|flags.ptu.rulesSelections.categoricInclination}"
+          ]
+        },
+        "path": "system.skills.survival.modifier.mod"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "-"
+    ],
+    "notes": "",
+    "free": false,
+    "name": "Categoric Inclination",
+    "useCount": 0
+  },
+  "type": "edge",
+  "img": "/systems/ptu/css/images/icons/edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "-"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683367953764,
+    "modifiedTime": 1707761797684,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "REYVuT7qPBMVbwMo",
+  "_key": "!items!REYVuT7qPBMVbwMo"
+}

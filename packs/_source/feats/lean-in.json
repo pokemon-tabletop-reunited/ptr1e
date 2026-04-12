@@ -1,0 +1,65 @@
+{
+  "name": "Lean In",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You and your Mount both take Damage from a Burst, Blast, Cone, or Line\nEffect: Both you and your Mount Resist the attack one step further.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Ride as One"
+    ],
+    "frequency": "Scene x2 - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Rider",
+    "automation": [],
+    "name": "Lean In",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Ride as One"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079301,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 58500000,
+  "_id": "povWzjJuvQHBx2UW",
+  "_key": "!items!povWzjJuvQHBx2UW"
+}

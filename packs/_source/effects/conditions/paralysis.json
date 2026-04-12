@@ -1,0 +1,70 @@
+{
+  "name": "Paralysis",
+  "type": "condition",
+  "img": "systems/ptu/static/images/conditions/Paralysis.svg",
+  "system": {
+    "origin": "Automated",
+    "effect": "A paralyzed target's Initiative is halved. Electric-Type Pokemon are immune to becoming Paralyzed. Make a Save Check that succeeds on 11+ at start of the target's turn. On a successful check the target may act normally, but on a failed check the following effects occur:\n\nThe target can only take a Standard OR Shift Action that round, but not both.\nThe target is Vulnerable for 1 full round.\nThe target cannot take attacks of opportunity for 1 full round.",
+    "snippet": "",
+    "rules": [],
+    "enabled": true,
+    "slug": "paralysis",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-09-18T08:52:04.636Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.308",
+          "system": "4.0.0.beta.3"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": 0,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "value": {
+      "isValued": false,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": null,
+    "name": "",
+    "tokenIcon": {
+      "show": true
+    }
+  },
+  "folder": "rPNjp26cMp3XQ6aC",
+  "_id": "bzZaLfYxVyKbJOCo",
+  "effects": [],
+  "sort": 1400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.3",
+    "coreVersion": "13.350",
+    "createdTime": 1691878068601,
+    "modifiedTime": 1695027124661,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!bzZaLfYxVyKbJOCo"
+}

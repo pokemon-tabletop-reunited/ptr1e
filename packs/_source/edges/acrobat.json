@@ -1,0 +1,70 @@
+{
+  "name": "Acrobat",
+  "system": {
+    "origin": "",
+    "effect": "Increase your Jump and Long Jump Capabilities by +1 each.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "path": "system.modifiers.capabilities.highJump",
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "value": 1,
+        "path": "system.modifiers.capabilities.longJump",
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "acrobat",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Novice Acrobatics"
+    ],
+    "notes": "",
+    "free": false,
+    "name": "Acrobat",
+    "useCount": 0
+  },
+  "type": "edge",
+  "img": "/systems/ptu/css/images/icons/edge_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Novice Acrobatics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683367953775,
+    "modifiedTime": 1707761797684,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "EUkre7TTFIJ6e9Tn",
+  "_key": "!items!EUkre7TTFIJ6e9Tn"
+}

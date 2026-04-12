@@ -1,0 +1,100 @@
+{
+  "name": "Second Strike",
+  "system": {
+    "origin": "",
+    "effect": "Trigger - You attempt to use a Grapple, Push, Trip, or Disarm Combat Maneuver but fail the Opposed Roll\nEffect: You may immediately use Rock Smash or a Struggle Attack against your target as a Free Action.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "mode": "add",
+        "value": 1,
+        "predicate": [
+          "class:martial-artist-guts-hp"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "mode": "add",
+        "value": 1,
+        "predicate": [
+          {
+            "or": [
+              "class:martial-artist-inner-focus-speed",
+              "class:martial-artist-limber-speed",
+              "class:martial-artist-technician-speed"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.modifiers.baseStats.def.mod",
+        "mode": "add",
+        "value": 1,
+        "predicate": [
+          "class:martial-artist-iron-fist-defense"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "mode": "add",
+        "value": 1,
+        "predicate": [
+          "class:martial-artist-reckless-attack"
+        ]
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "prerequisites": [
+      "Martial Training Rank 1",
+      "Expert Combat"
+    ],
+    "frequency": "At-Will – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Martial Artist",
+    "name": "Second Strike",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Martial Training Rank 1, Expert Combat"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368084442,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 22900000,
+  "_id": "LpSdrGqrQGiqWvm0",
+  "_key": "!items!LpSdrGqrQGiqWvm0"
+}

@@ -1,0 +1,89 @@
+{
+  "name": "Hex Maniac",
+  "system": {
+    "origin": "",
+    "effect": "Choose Cursed Body or Omen. You gain the Chosen Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.abilities.Item.eq6HX7kv2a2Fo51U"
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.pMSDhQp6Tx0Cojng"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": "hex-maniac",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+HP"
+    ],
+    "prerequisites": [
+      "Novice Occult Education"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "automation": [],
+    "name": "Hex Maniac",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Novice Occult Education",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079216,
+    "modifiedTime": 1710768615368,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 53600000,
+  "_id": "lRXwx5uMTAh8d1jW",
+  "_key": "!items!lRXwx5uMTAh8d1jW"
+}

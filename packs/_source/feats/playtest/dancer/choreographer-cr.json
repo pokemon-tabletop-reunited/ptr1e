@@ -1,0 +1,65 @@
+{
+  "name": "Choreographer [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Target: Your Pokémon\nEffect: The target learns a Dance Move you know. Choreographer may target a Pokémon multiple times.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Dance Form",
+      "Adept Acrobatics or Athletics or Charm"
+    ],
+    "frequency": "At-Will – Extended Action",
+    "notes": "",
+    "free": false,
+    "class": "Dancer [CR]",
+    "name": "Choreographer [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "5JFKPKlyJEga6GKY",
+  "_id": "pnicPGle7XVow9Kz",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!pnicPGle7XVow9Kz"
+}

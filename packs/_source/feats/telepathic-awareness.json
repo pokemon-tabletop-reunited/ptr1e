@@ -1,0 +1,84 @@
+{
+  "name": "Telepathic Awareness",
+  "system": {
+    "origin": "",
+    "effect": "Choose Gentle Vibe or Telepathy. You gain the chosen Ability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.abilities.Item.g57zV6QaJdzHO2Le"
+          },
+          {
+            "value": "Compendium.ptu.abilities.Item.KHtzAPwDaGBwCn5l"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move}"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense"
+    ],
+    "prerequisites": [
+      "Telepath"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Telepath",
+    "automation": [],
+    "name": "Telepathic Awareness",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Telepath"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078945,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 59000000,
+  "_id": "q4zB82gXpcNF1UAl",
+  "_key": "!items!q4zB82gXpcNF1UAl"
+}

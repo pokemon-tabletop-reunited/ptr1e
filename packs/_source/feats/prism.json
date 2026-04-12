@@ -1,0 +1,80 @@
+{
+  "name": "Prism",
+  "system": {
+    "origin": "",
+    "effect": "You learn the Moves Flash and Swift.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.joekwsOGEcyJt9BB"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.MLCGs5okqB4BLJKc"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Normal)",
+      "Novice General Education",
+      "Novice Charm"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Prism",
+    "automation": [],
+    "name": "Prism",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Elemental Connection (Normal), Novice General Education, Novice Charm"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078866,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 45800000,
+  "_id": "fGuRBGHtskgz4umB",
+  "_key": "!items!fGuRBGHtskgz4umB"
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Earthen Bond [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain the Tremorsense and Groundshaper Capabilities, and you gain Naturewalk for Cave, Mountain and Desert.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "earthen-bond-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Earth Shaker"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Earth Shaker [CR]",
+    "name": "Earthen Bond [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "d3NxFgIfiV3ERXZj",
+  "_id": "HIFp884Xe4tmzj20",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!HIFp884Xe4tmzj20"
+}

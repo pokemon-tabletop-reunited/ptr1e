@@ -1,0 +1,65 @@
+{
+  "name": "Unveiled Sight",
+  "system": {
+    "origin": "",
+    "effect": "You can see through Illusions. This means you can spot Illusions from the Illusionist capability, Illusion Ability, and Genjutsu Feature as being fake. You are immune to Moves with the Illusion keyword, Double Team cannot be activated against you, and you bypass Substitutes. As a Standard Action, you can create a Burst 4, dispelling all Illusion effects within.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense"
+    ],
+    "prerequisites": [
+      "Oracle"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Oracle",
+    "automation": [],
+    "name": "Unveiled Sight",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Oracle"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368084444,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 38900000,
+  "_id": "ZzrjQrQ118Lt8Ose",
+  "_key": "!items!ZzrjQrQ118Lt8Ose"
+}

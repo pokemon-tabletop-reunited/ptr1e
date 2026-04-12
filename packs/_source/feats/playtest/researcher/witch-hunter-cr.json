@@ -1,0 +1,64 @@
+{
+  "name": "Witch Hunter [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You gain the “Psionic Sight” Feature, even if you do not meet the prerequisites. If you already had the Psionic Sight Feature, you instead gain another Feature for which you qualify. Additionally, you gain the Mindlock Capability, and you and your Pokémon's attacks gain a +2 bonus to Accuracy against Psychic-, Ghost-, Dark-, and Fairy-Types.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Novice Occult Education"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Researcher [CR]",
+    "name": "Witch Hunter [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "wKlgeANt8BWt41q1",
+  "_id": "ZYjiQOH8fjky221p",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ZYjiQOH8fjky221p"
+}

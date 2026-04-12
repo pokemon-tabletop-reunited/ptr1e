@@ -1,0 +1,101 @@
+{
+  "name": "Condition: Hyper Mode",
+  "type": "condition",
+  "img": "systems/ptu/static/css/images/types2/ShadowIC_Icon.png",
+  "system": {
+    "origin": "Shadow Subsytem",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "move:type:shadow"
+        ],
+        "affects": "target",
+        "selectors": "damage-received",
+        "uuid": "Compendium.ptu.effects.Item.tCWGZzg8ULG353Dw"
+      },
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "move:type:shadow"
+        ],
+        "affects": "origin",
+        "selectors": "shadow-attack",
+        "uuid": "Compendium.ptu.effects.Item.iMEih8csttUKHcVd"
+      }
+    ],
+    "enabled": true,
+    "slug": "hyper-mode",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "value": {
+      "isValued": true,
+      "value": 1,
+      "autoIncrement": false
+    },
+    "references": {
+      "children": [],
+      "overrides": [],
+      "overriddenBy": []
+    },
+    "overrides": [],
+    "persistent": {
+      "dc": 20,
+      "decrease": true,
+      "type": "save"
+    },
+    "level": {
+      "value": 1
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "dDpOEXjREUS6rAWH",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.3",
+    "coreVersion": "13.350",
+    "createdTime": 1699753663348,
+    "modifiedTime": 1699894229152,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "ptr-dev-world",
+      "uuid": null,
+      "coreVersion": "11.311",
+      "systemId": "ptu",
+      "systemVersion": "4.0.2"
+    }
+  },
+  "_id": "NegVrXO5uxnkiyIZ",
+  "sort": 300000,
+  "_key": "!items!NegVrXO5uxnkiyIZ"
+}

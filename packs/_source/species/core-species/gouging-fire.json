@@ -1,0 +1,531 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T01:45:48.451Z",
+        "version": {
+          "schema": 0.11,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "dexentry": "It is said that Entei appears with the eruption of a new volcano. It races across the land to relieve itself of excess heat, and is able to incinerate foes who stand in its way with columns of fire that are hotter than magma. As it runs, the billowing smoke-like fur on its back dissipates its energy, heating up the land around it. Entei is said to have the passion and power of an active volcano. Some say that every time it roars, a volcano erupts somewhere around the globe. Like its brethren Raikou and Suicune, Entei constantly roams about. It rarely stops for even a moment to rest, let alone settle in a single location for an extended period of time. In the Brass Tower myth of the three legendary beasts, Entei represents the fire that burned down the building and killed the three Pokémon trapped inside. Some contend that before being resurrected by the mysterious bird Pokémon, Entei was in fact originally a Flareon; this idea is based on the fact that both Entei and Flareon are closely affiliated with fire.",
+    "number": 1020,
+    "form": "",
+    "stats": {
+      "hp": 11,
+      "atk": 12,
+      "def": 13,
+      "spatk": 7,
+      "spdef": 10,
+      "spd": 10
+    },
+    "types": [
+      "Fire",
+      "Dragon"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "protosynthesis",
+          "uuid": "Compendium.ptu.abilities.Item.MUe4qe4Qq6FyTeFA"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "blaze-boost",
+          "uuid": "Compendium.ptu.abilities.Item.htJlklZ7oog0fZfx"
+        },
+        {
+          "slug": "flash-fire",
+          "uuid": "Compendium.ptu.abilities.Item.ZtDz88aFEkBCL83y"
+        }
+      ],
+      "high": [
+        {
+          "slug": "stamina",
+          "uuid": "Compendium.ptu.abilities.Item.6QGcPmP9cVKQnFRA"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "level": 0,
+        "uuid": "Compendium.ptu.species.Item.ZyQzw1BQ2KKhxIVV",
+        "slug": "gouging-fire",
+        "other": {
+          "restrictions": [
+            ""
+          ]
+        }
+      }
+    ],
+    "size": {
+      "height": 3.5,
+      "weight": 590,
+      "sizeClass": "Huge",
+      "weightClass": 6
+    },
+    "breeding": {
+      "genderRatio": -1,
+      "eggGroups": [
+        "None"
+      ],
+      "hatchRate": 40
+    },
+    "diet": [
+      "Omnivore"
+    ],
+    "habitats": [
+      "Mountain"
+    ],
+    "capabilities": {
+      "overland": 8,
+      "sky": 0,
+      "swim": 4,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 2,
+      "power": 12,
+      "naturewalk": [
+        "Grassland",
+        "Mountain"
+      ],
+      "other": [
+        {
+          "slug": "firestarter",
+          "uuid": "Compendium.ptu.capabilities.Item.nAIkONF3gtaYfEyX"
+        },
+        {
+          "slug": "heater",
+          "uuid": "Compendium.ptu.capabilities.Item.9DQsEtRIDXdw7ICw"
+        },
+        {
+          "slug": "mountable-2",
+          "uuid": "Compendium.ptu.capabilities.Item.XkFHXfisqlsZxNvQ"
+        },
+        {
+          "slug": "tracker",
+          "uuid": "Compendium.ptu.capabilities.Item.W1Zt8pLS50kjTL1d"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "level": 1,
+          "uuid": "Compendium.ptu.moves.Item.XQOEuOenSzYNz4eO",
+          "slug": "leer"
+        },
+        {
+          "level": 1,
+          "uuid": "Compendium.ptu.moves.Item.99QTjxycWPkoSfze",
+          "slug": "stomp"
+        },
+        {
+          "level": 1,
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb",
+          "slug": "sunny-day"
+        },
+        {
+          "level": 1,
+          "uuid": "Compendium.ptu.moves.Item.uabUdNDKH4LCcTZI",
+          "slug": "incinerate"
+        },
+        {
+          "level": 7,
+          "uuid": "Compendium.ptu.moves.Item.QDqTpQ7sJUvhU2v4",
+          "slug": "fire-fang"
+        },
+        {
+          "level": 14,
+          "uuid": "Compendium.ptu.moves.Item.IcjwAnfajBTDL3IF",
+          "slug": "howl"
+        },
+        {
+          "level": 21,
+          "uuid": "Compendium.ptu.moves.Item.QMaJ91E3XBatUcV9",
+          "slug": "bite"
+        },
+        {
+          "level": 28,
+          "uuid": "Compendium.ptu.moves.Item.ulXmidTSzjPqUrfI",
+          "slug": "dragon-claw"
+        },
+        {
+          "level": 35,
+          "uuid": "Compendium.ptu.moves.Item.eVSyXXrYk7ylFc13",
+          "slug": "crush-claw"
+        },
+        {
+          "level": 42,
+          "uuid": "Compendium.ptu.moves.Item.zUrh8yq6xkj8Ja3N",
+          "slug": "morning-sun"
+        },
+        {
+          "level": 49,
+          "uuid": "Compendium.ptu.moves.Item.rRDYGhi3S5FyQzJD",
+          "slug": "burning-bulwark"
+        },
+        {
+          "level": 56,
+          "uuid": "Compendium.ptu.moves.Item.jvtENU2Q9nhemWwU",
+          "slug": "dragon-rush"
+        },
+        {
+          "level": 63,
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM",
+          "slug": "fire-blast"
+        },
+        {
+          "level": 70,
+          "uuid": "Compendium.ptu.moves.Item.WpFzl62EYkpKipF5",
+          "slug": "lava-plume"
+        },
+        {
+          "level": 77,
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L",
+          "slug": "outrage"
+        },
+        {
+          "level": 84,
+          "uuid": "Compendium.ptu.moves.Item.VxO7N8CbFaW3889w",
+          "slug": "flare-blitz"
+        },
+        {
+          "level": 91,
+          "uuid": "Compendium.ptu.moves.Item.aGcacZEU3SucYgv8",
+          "slug": "raging-fury"
+        }
+      ],
+      "machine": [
+        {
+          "slug": "body-slam",
+          "uuid": "Compendium.ptu.moves.Item.DzD1pun72sIQFQle"
+        },
+        {
+          "slug": "take-down",
+          "uuid": "Compendium.ptu.moves.Item.rmDcfFfrdq5PgwF9"
+        },
+        {
+          "slug": "double-edge",
+          "uuid": "Compendium.ptu.moves.Item.7Gi57ZcOWjyjhU0A"
+        },
+        {
+          "slug": "roar",
+          "uuid": "Compendium.ptu.moves.Item.sjIa2jm1cHAiMwmY"
+        },
+        {
+          "slug": "flamethrower",
+          "uuid": "Compendium.ptu.moves.Item.m01FTVITfrqlu0Kn"
+        },
+        {
+          "slug": "hyper-beam",
+          "uuid": "Compendium.ptu.moves.Item.WV86ctKatPhQpZC3"
+        },
+        {
+          "slug": "fire-spin",
+          "uuid": "Compendium.ptu.moves.Item.TiIjSQqYprGxlHAZ"
+        },
+        {
+          "slug": "earthquake",
+          "uuid": "Compendium.ptu.moves.Item.qQGrbuuO6EcG6b7c"
+        },
+        {
+          "slug": "fire-blast",
+          "uuid": "Compendium.ptu.moves.Item.2J0IU5MKdpEwtTfM"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "reversal",
+          "uuid": "Compendium.ptu.moves.Item.ekstCWqmGpJSMLj1"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "scary-face",
+          "uuid": "Compendium.ptu.moves.Item.IRGZ3Cc7WrqjhF9u"
+        },
+        {
+          "slug": "outrage",
+          "uuid": "Compendium.ptu.moves.Item.Pc0fIapOkBRR4J8L"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "sunny-day",
+          "uuid": "Compendium.ptu.moves.Item.m787MkYyENqNyGOb"
+        },
+        {
+          "slug": "crunch",
+          "uuid": "Compendium.ptu.moves.Item.5uY1ltFWijN07CKe"
+        },
+        {
+          "slug": "heat-wave",
+          "uuid": "Compendium.ptu.moves.Item.Z0jlIyTMOL1QXcDb"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "weather-ball",
+          "uuid": "Compendium.ptu.moves.Item.rBIPrDXPi37mBqNZ"
+        },
+        {
+          "slug": "overheat",
+          "uuid": "Compendium.ptu.moves.Item.TPm4Ml8gUM4sjXL6"
+        },
+        {
+          "slug": "dragon-claw",
+          "uuid": "Compendium.ptu.moves.Item.ulXmidTSzjPqUrfI"
+        },
+        {
+          "slug": "dragon-dance",
+          "uuid": "Compendium.ptu.moves.Item.dJm387VzcoJlHf8I"
+        },
+        {
+          "slug": "flare-blitz",
+          "uuid": "Compendium.ptu.moves.Item.VxO7N8CbFaW3889w"
+        },
+        {
+          "slug": "dragon-pulse",
+          "uuid": "Compendium.ptu.moves.Item.qOem2TUbrvmdG1Fu"
+        },
+        {
+          "slug": "giga-impact",
+          "uuid": "Compendium.ptu.moves.Item.WGOQso4iji1XKrdK"
+        },
+        {
+          "slug": "thunder-fang",
+          "uuid": "Compendium.ptu.moves.Item.FWdcrF4mgW14bOCZ"
+        },
+        {
+          "slug": "fire-fang",
+          "uuid": "Compendium.ptu.moves.Item.QDqTpQ7sJUvhU2v4"
+        },
+        {
+          "slug": "draco-meteor",
+          "uuid": "Compendium.ptu.moves.Item.BFGQXQGO2EeO8mpK"
+        },
+        {
+          "slug": "iron-head",
+          "uuid": "Compendium.ptu.moves.Item.BGJbdXIYaUJJwOQN"
+        },
+        {
+          "slug": "stone-edge",
+          "uuid": "Compendium.ptu.moves.Item.K67dXQdgED0HJTut"
+        },
+        {
+          "slug": "flame-charge",
+          "uuid": "Compendium.ptu.moves.Item.TeL0p7BkR386XexV"
+        },
+        {
+          "slug": "bulldoze",
+          "uuid": "Compendium.ptu.moves.Item.J2l5Cmp9LEW7Jvgu"
+        },
+        {
+          "slug": "dragon-tail",
+          "uuid": "Compendium.ptu.moves.Item.fQxEojo3sSwnLk1q"
+        },
+        {
+          "slug": "heat-crash",
+          "uuid": "Compendium.ptu.moves.Item.Vbx41b1x1ClrU2pj"
+        },
+        {
+          "slug": "snarl",
+          "uuid": "Compendium.ptu.moves.Item.jVruXIDWy3HEHAeA"
+        },
+        {
+          "slug": "smart-strike",
+          "uuid": "Compendium.ptu.moves.Item.ImFfaRbYkW1fzPPL"
+        },
+        {
+          "slug": "psychic-fangs",
+          "uuid": "Compendium.ptu.moves.Item.IMGBHyWLtSo8MbTl"
+        },
+        {
+          "slug": "stomping-tantrum",
+          "uuid": "Compendium.ptu.moves.Item.2sgLgahHycXD5OuT"
+        },
+        {
+          "slug": "breaking-swipe",
+          "uuid": "Compendium.ptu.moves.Item.lA7uzkBcGhFOexAT"
+        },
+        {
+          "slug": "scale-shot",
+          "uuid": "Compendium.ptu.moves.Item.A5c6FxBGE2Fl83U8"
+        },
+        {
+          "slug": "scorching-sands",
+          "uuid": "Compendium.ptu.moves.Item.GREJ4tNJ9P0BMBOx"
+        },
+        {
+          "slug": "tera-blast",
+          "uuid": "Compendium.ptu.moves.Item.PVOl5xnPtVbzUzVm"
+        },
+        {
+          "slug": "dragon-cheer",
+          "uuid": "Compendium.ptu.moves.Item.ocMZ5Ntq5UZkCUHI"
+        },
+        {
+          "slug": "temper-flare",
+          "uuid": "Compendium.ptu.moves.Item.njDhrwdkaxptmo9D"
+        }
+      ],
+      "egg": [
+        {
+          "slug": "double-kick",
+          "uuid": "Compendium.ptu.moves.Item.24gRKtjHojSS9Vb0"
+        },
+        {
+          "slug": "ancient-power",
+          "uuid": "Compendium.ptu.moves.Item.JtVhKjrnr8wc4BAH"
+        },
+        {
+          "slug": "noble-roar",
+          "uuid": "Compendium.ptu.moves.Item.AZxJ0mZxf9M32w2b"
+        }
+      ],
+      "tutor": []
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 5,
+        "modifier": 3,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 4,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 4,
+        "modifier": 2,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 3,
+        "modifier": 2,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "gouging-fire",
+    "rules": [],
+    "source": {
+      "value": "PTR Core Dex"
+    },
+    "type": {
+      "0": "Fire",
+      "1": "Dragon",
+      "2": ""
+    },
+    "keywords": []
+  },
+  "img": "https://assets.forge-vtt.com/6464e7dd7cb6da75187d728c/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "dljUGxtO8AR0tERN",
+  "name": "Gouging Fire",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1708094889604,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "ZyQzw1BQ2KKhxIVV",
+  "sort": 2100000,
+  "_key": "!items!ZyQzw1BQ2KKhxIVV"
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Advanced Capture Techniques Rank 2",
+  "system": {
+    "origin": "",
+    "effect": "You gain two Capture Techniques of your choice. You must meet any prerequisites of the Technique. You may qualify for Advanced Capture Techniques’ prerequisites with the Acrobatics, Athletics, Stealth, Survival, Guile, or Perception Skills only.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 4",
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Capture Specialist",
+      "any 2 Skills at Adept Rank"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Capture Specialist",
+    "automation": [],
+    "name": "Advanced Capture Techniques Rank 2",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Capture Specialist, any 2 Skills at Adept Rank"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079349,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 63100000,
+  "_id": "uuHt077dLCTMv4WK",
+  "_key": "!items!uuHt077dLCTMv4WK"
+}

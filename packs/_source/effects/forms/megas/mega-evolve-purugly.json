@@ -1,0 +1,96 @@
+{
+  "folder": "TuFJ2nmx9i2k6KYk",
+  "name": "Mega Evolve: Purugly",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:purugly",
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/432_MEGA.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:purugly"
+        ],
+        "uuid": "Compendium.ptu.species.Item.iiCeIz76MFeOyHye"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "species:purugly"
+        ],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.HpY8Pqd2aDkgkXqH"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            "species:purugly",
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/432_MEGA.webp"
+      }
+    ],
+    "enabled": true,
+    "slug": "mega-evolve-purugly",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.0.0.beta.12",
+    "coreVersion": "13.350",
+    "createdTime": 1698189820640,
+    "modifiedTime": 1699197708055,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "mqN4XQzEtqfZ9xYl",
+  "sort": 0,
+  "_key": "!items!mqN4XQzEtqfZ9xYl"
+}

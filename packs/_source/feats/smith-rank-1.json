@@ -1,0 +1,67 @@
+{
+  "name": "Smith Rank 1",
+  "system": {
+    "origin": "",
+    "effect": "You may create Simple Weapons for $1000, Light Shields for $1,500, and Light Armor for $4,000.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.atk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+Attack"
+    ],
+    "prerequisites": [
+      "Novice Focus",
+      "Novice Athletics"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "automation": [],
+    "name": "Smith Rank 1",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Novice Focus, Novice Athletics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081669,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 13700000,
+  "_id": "Cp2aIRdqOYq2fIqQ",
+  "_key": "!items!Cp2aIRdqOYq2fIqQ"
+}

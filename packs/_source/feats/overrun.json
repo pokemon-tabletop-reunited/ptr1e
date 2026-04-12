@@ -1,0 +1,66 @@
+{
+  "name": "Overrun",
+  "system": {
+    "origin": "",
+    "effect": "Trigger: Your Mount with Rock Head makes a Damage Roll for a Dash or Pass Move\nEffect: Your Pokémon adds their Speed Stat in addition to their normal attacking Stat to their Damage Roll. The target gains Damage Reduction against this attack equal to their own Speed Stat.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Conqueror's March",
+      "Expert Acrobatics or Athletics"
+    ],
+    "frequency": "Scene x2 - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Rider",
+    "automation": [],
+    "name": "Overrun",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Conqueror's March, Expert Acrobatics or Athletics"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368078822,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 50700000,
+  "_id": "jHVvNQeMyWDS7h4n",
+  "_key": "!items!jHVvNQeMyWDS7h4n"
+}

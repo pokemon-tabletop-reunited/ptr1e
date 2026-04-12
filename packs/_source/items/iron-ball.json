@@ -1,0 +1,78 @@
+{
+  "name": "Iron Ball",
+  "system": {
+    "origin": "",
+    "effect": "The Holder’s Speed is halved, and any immunity to Ground Type is lost. Hand Item for Trainers. Standard Action to drop.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "subtract",
+        "path": "system.stats.spd.mod.mod",
+        "phase": "afterDerived",
+        "value": "floor(@actor.system.stats.spd.total / 2)",
+        "priority": null
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:ground"
+      }
+    ],
+    "enabled": true,
+    "slug": "",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.458Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Held Item",
+      "Main Hand",
+      "Off-Hand",
+      "Chef"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "900",
+    "consumable": "0",
+    "subtype": "",
+    "container": false,
+    "automation": [],
+    "name": "Iron Ball",
+    "useCount": 0,
+    "modifier": null
+  },
+  "type": "item",
+  "img": "/systems/ptu/css/images/icons/item_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368783783,
+    "modifiedTime": 1712496197137,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 47800000,
+  "_id": "ewGvyFGcqKkMAOS3",
+  "_key": "!items!ewGvyFGcqKkMAOS3"
+}

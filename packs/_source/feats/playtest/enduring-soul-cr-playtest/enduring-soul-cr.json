@@ -1,0 +1,87 @@
+{
+  "name": "Enduring Soul [CR]",
+  "system": {
+    "origin": "[F&S Playtest]",
+    "effect": "Your Pokémon have their HP Base Stat increased by +1, and by +1 more for every 10 Levels they have. Additionally, you gain +1 to the HP Base Stat for every two Milestones you have, plus 1. You and your Pokemon begin each Scene with Temporary HP equal to the sum of your Athletics and Focus Ranks.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "phase": "applyAEs",
+        "value": "floor(@actor.system.level.current/20)+1",
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "enduring-soul-cr",
+    "schema": {
+      "version": 0.114,
+      "lastMigration": {
+        "datetime": "2024-02-17T16:58:32.782Z",
+        "version": {
+          "schema": 0.11,
+          "foundry": "11.315",
+          "system": "4.2.0"
+        }
+      }
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.bwQniJ8g4OIydZsO",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+HP",
+      "Playtest",
+      "CR"
+    ],
+    "prerequisites": [
+      "Novice Focus",
+      "Novice Athletics"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "name": "Enduring Soul",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true,
+      "prereqBackup": "Novice Focus",
+      "itemGrants": {}
+    }
+  },
+  "folder": "cwHgKZ5JJwLWPzJM",
+  "_id": "W3YXLpfbN6DUPC9L",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710766706059,
+    "modifiedTime": 1710766706059,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-chosen",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_key": "!items!W3YXLpfbN6DUPC9L"
+}

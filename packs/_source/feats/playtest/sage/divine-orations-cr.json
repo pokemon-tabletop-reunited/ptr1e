@@ -1,0 +1,65 @@
+{
+  "name": "Divine Orations [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You use a Move with the Blessing Keyword.\nEffect: Spend 1 AP. You may use a Move with the Blessing Keyword as a Free Action. You can choose to instead spend 3 AP to use a Move with the Blessing Keyword, ignoring Frequency.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.hp.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+HP",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Sage’s Benediction",
+      "Master Occult Education"
+    ],
+    "frequency": "X AP – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Sage [CR]",
+    "name": "Divine Orations [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "3RdR0bAuym3k8na2",
+  "_id": "s5JkqSRKTliHNgOi",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!s5JkqSRKTliHNgOi"
+}

@@ -1,0 +1,84 @@
+{
+  "folder": "8tcCd3dOnqridsEG",
+  "name": "Max Strike",
+  "type": "move",
+  "_id": "93Zra7DLGvRlWAcH",
+  "img": "systems/ptu/static/css/images/types2/NormalIC_Icon.png",
+  "system": {
+    "origin": "Regional Phenomena",
+    "effect": "Targets hit by the move have their Speed lowered 1 CS and are Pushed 3 Meters.\nRequirement: User is Dynamaxed and has a Normal Type Move.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.M2uXkWmR0MQa12zo",
+        "range": "1",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "max-strike",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T14:33:35.124Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.M2uXkWmR0MQa12zo",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Push",
+      "Max"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Normal",
+    "category": "Physical",
+    "damageBase": "12",
+    "frequency": "At-Will",
+    "ac": "0",
+    "range": "Close Blast 6",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 103125,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1705024998290,
+    "modifiedTime": 1710851689866,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!93Zra7DLGvRlWAcH"
+}

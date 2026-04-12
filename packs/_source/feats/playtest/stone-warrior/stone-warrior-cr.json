@@ -1,0 +1,132 @@
+{
+  "name": "Stone Warrior [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: Choose two of Accelerock, Rock Tomb, and Wide Guard. You gain the chosen Moves.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.AKWt1RNha1S9DMW9",
+            "predicate": {
+              "not": "move:accelerock"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+            "predicate": {
+              "not": "move:rock-tomb"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.x0Ma0IW8uk7gyQ8z",
+            "predicate": {
+              "not": "move:wide-guard"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.AKWt1RNha1S9DMW9",
+            "predicate": {
+              "not": "move:accelerock"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.TYpDbl848dGUkN3q",
+            "predicate": {
+              "not": "move:rock-tomb"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.x0Ma0IW8uk7gyQ8z",
+            "predicate": {
+              "not": "move:wide-guard"
+            }
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      }
+    ],
+    "enabled": true,
+    "slug": "stone-warrior-cr",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Rock)",
+      "Novice Combat or Novice Survival"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Stone Warrior [CR]",
+    "name": "Stone Warrior [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "nC4MYGyp8GMoMBLk",
+  "_id": "itVPnbOkN5FCd5NP",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!itVPnbOkN5FCd5NP"
+}

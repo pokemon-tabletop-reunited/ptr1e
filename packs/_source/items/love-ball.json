@@ -1,0 +1,72 @@
+{
+  "name": "Love Ball",
+  "system": {
+    "origin": "",
+    "effect": "-30 Modifier if the user has an active Pokémon that is of the same evolutionary line as the target, and the opposite gender. Does not work with genderless Pokémon.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "manual"
+        ],
+        "label": "Opposite gender?",
+        "hideIfDisabled": false,
+        "selectors": "{item|id}-capture-roll",
+        "value": -30
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-16T07:27:02.459Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "4.0.0.alpha.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Poke Ball"
+    ],
+    "quantity": "1",
+    "category": "",
+    "cost": "800",
+    "consumable": "0",
+    "subtype": "pokeball",
+    "container": false,
+    "automation": [],
+    "name": "Love Ball",
+    "useCount": 0,
+    "modifier": null
+  },
+  "type": "item",
+  "img": "systems/ptu/images/item_icons/love ball.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1683368833772,
+    "modifiedTime": 1712495896404,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 50000000,
+  "_id": "h1pK58XM9nHYktm1",
+  "_key": "!items!h1pK58XM9nHYktm1"
+}

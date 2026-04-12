@@ -1,0 +1,65 @@
+{
+  "name": "Pack Master [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: For you and your Pokémon with Teamwork, Teamwork’s effect now reads “While you are adjacent to an opponent, allies targeting that opponent receive a +2 bonus to Accuracy Checks”. Whenever you or your Pokémon successfully hit a foe with Pack Hunt, they gain a +2 Bonus to Accuracy Rolls and a +5 Bonus to Damage Rolls against that foe until the end of their next turn.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Pack Tactics",
+      "Expert Stealth or Expert Survival"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Hunter [CR]",
+    "name": "Pack Master [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "P0AeQaWQCaUDnVuY",
+  "_id": "0PErMgYhKXVAmG3G",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0PErMgYhKXVAmG3G"
+}

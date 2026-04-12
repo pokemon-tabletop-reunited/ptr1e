@@ -1,0 +1,64 @@
+{
+  "name": "Thought Detection [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You become aware of the number of living Humans or Pokémon within X meters of yourself; X is equal to your Focus Rank tripled. Pokémon or Trainers with the Mindlock Capability are not detected by this Ability. You may only use Thought Detection as long as you have the Telepathy Capability.\nBonus: Opposed targets affected by Thought Detection cannot benefit from Spirit for 3 Rounds.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Special Defense",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Telepathic Awareness"
+    ],
+    "frequency": "Scene – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Telepath [CR]",
+    "name": "Thought Detection [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "9CP3ESv64DxexWYw",
+  "_id": "kE7fQDq09vXUiA4z",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!kE7fQDq09vXUiA4z"
+}

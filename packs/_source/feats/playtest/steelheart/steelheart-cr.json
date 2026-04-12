@@ -1,0 +1,67 @@
+{
+  "name": "Steelheart [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: When wielding metal Melee Weapons, you may use Athletics or Focus instead of Combat to determine the Damage Base of your Struggle Attacks, to qualify for a Weapon’s Moves, and to resist Disarm Checks. Whenever your Weapon Attacks hit a foe who has previously hit you with a Melee attack in the same round, the foe loses a Tick of Hit Points.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "+Defense",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Elemental Connection (Steel)",
+      "Novice Athletics or Novice Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Steelheart [CR]",
+    "name": "Steelheart [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "type": "feat",
+  "folder": "ragCbmOsDCUz60wA",
+  "_id": "XBGuEwEkXiWfk7Il",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!XBGuEwEkXiWfk7Il"
+}

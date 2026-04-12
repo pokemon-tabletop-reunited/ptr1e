@@ -1,0 +1,82 @@
+{
+  "folder": "7YqKhwjbTBoIpy5X",
+  "name": "10, 000, 000 Volt Thunderbolt",
+  "type": "move",
+  "_id": "cfEVhUqlfUCCL4FF",
+  "img": "https://assets.forge-vtt.com/6464e7dd7cb6da75187d728c/systems/ptu/images/item_icons/pikashunium%20z.webp",
+  "system": {
+    "origin": "Z Moves",
+    "effect": "Critical Hit on 17+. Requires Thunderbolt.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "{item|id}-crit-range",
+        "value": 3
+      }
+    ],
+    "enabled": true,
+    "slug": "10-000-000-volt-thunderbolt",
+    "schema": {
+      "version": 0.112,
+      "lastMigration": {
+        "datetime": "2024-01-15T14:33:35.121Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.0.9"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Smite",
+      "Target 1"
+    ],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Electric",
+    "category": "Special",
+    "damageBase": "19",
+    "frequency": "Daily",
+    "ac": "2",
+    "range": "Range 4",
+    "contestType": "",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false
+  },
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "coreVersion": "13.350",
+    "createdTime": 1704885546418,
+    "modifiedTime": 1710851902315,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!cfEVhUqlfUCCL4FF"
+}

@@ -1,0 +1,158 @@
+{
+  "name": "Ground Out",
+  "system": {
+    "origin": "",
+    "effect": "Pick two of Drill Run, Magnitude, or Mud Bomb. You learn the chosen Moves",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "move1",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.BAmSs75wp3OsvF8d",
+            "predicate": {
+              "not": "move:mud-bomb"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Rgd3Ev4mWj8aldu1",
+            "predicate": {
+              "not": "move:magnitude"
+            }
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.CyMarrube3yoGcuy",
+            "predicate": {
+              "not": "move:drill-run"
+            }
+          }
+        ]
+      },
+      {
+        "key": "ChoiceSet",
+        "flag": "move2",
+        "adjustName": false,
+        "choices": [
+          {
+            "value": "Compendium.ptu.moves.Item.BAmSs75wp3OsvF8d",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.BAmSs75wp3OsvF8d"
+                  ]
+                }
+              },
+              {
+                "not": "move:mud-bomb"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.Rgd3Ev4mWj8aldu1",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.Rgd3Ev4mWj8aldu1"
+                  ]
+                }
+              },
+              {
+                "not": "move:magnitude"
+              }
+            ]
+          },
+          {
+            "value": "Compendium.ptu.moves.Item.CyMarrube3yoGcuy",
+            "predicate": [
+              {
+                "not": {
+                  "eq": [
+                    "{item|flags.ptu.rulesSelections.move1}",
+                    "Compendium.ptu.moves.Item.CyMarrube3yoGcuy"
+                  ]
+                }
+              },
+              {
+                "not": "move:drill-run"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move1}"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "{item|flags.ptu.rulesSelections.move2}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.def.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Defense"
+    ],
+    "prerequisites": [
+      "Earth Shaker",
+      "Expert Focus or Intuition"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Earth Shaker",
+    "automation": [],
+    "name": "Ground Out",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Earth Shaker, Expert Focus or Intuition"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368081704,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 4900000,
+  "_id": "4BuywLxVpoEh0lPP",
+  "_key": "!items!4BuywLxVpoEh0lPP"
+}

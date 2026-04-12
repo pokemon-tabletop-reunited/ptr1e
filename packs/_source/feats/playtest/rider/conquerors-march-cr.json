@@ -1,0 +1,66 @@
+{
+  "name": "Conqueror's March [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Target: Your Pokémon with Run Up or Run Away\nEffect: The target receives the following effects based on which Ability it possesses.\n- Run Up: This round, the target may use Melee moves with a range of Pass instead.\n- Run Away: The Pokemon may shift, take an action, and then may shift again a further 4m using it's preferred movement capability.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Orders",
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Tandem Speed",
+      "Adept Acrobatics or Athletics"
+    ],
+    "frequency": "At-Will – Standard Action",
+    "notes": "",
+    "free": false,
+    "class": "Rider [CR]",
+    "name": "Conqueror's March [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "3tqdXgsWtyq6Ai5Q",
+  "_id": "ZWMfEUX11R4LaNth",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ZWMfEUX11R4LaNth"
+}

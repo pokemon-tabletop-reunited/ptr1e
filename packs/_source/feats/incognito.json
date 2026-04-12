@@ -1,0 +1,72 @@
+{
+  "folder": "tLcmJZDelkDrOTM5",
+  "name": "Incognito",
+  "type": "feat",
+  "img": "/systems/ptu/static/css/images/icons/feat_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "Trigger: You attempt to capture a Pokémon while in stealth.\n\nEffect: You gain a +X bonus to the accuracy check to hit the Pokémon on top of any bonuses from stealth, where X equals (your stealth rank/2)+1. The Pokémon counts as having the Blinded and Vulnerable condition for the sake of calculating the capture DC, if the target was already Blinded, instead they are now also Totally Blinded. As this only applies to the capture roll, this cannot be negated by Blindsense.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": "incognito",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed"
+    ],
+    "prerequisites": [
+      "Advanced Capture Techniques Rank 2"
+    ],
+    "frequency": "1AP - Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Capture Specialist",
+    "automation": []
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Advanced Capture Techniques Rank 2",
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1693314035061,
+    "modifiedTime": 1707820219105,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-chosen",
+      "uuid": null,
+      "coreVersion": "11.307",
+      "systemId": "ptu",
+      "systemVersion": "4.0.0.alpha.14"
+    }
+  },
+  "_id": "5rwcLhobb7w7UiIB",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5rwcLhobb7w7UiIB"
+}

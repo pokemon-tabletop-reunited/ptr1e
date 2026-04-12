@@ -1,0 +1,66 @@
+{
+  "name": "Signature Manipulations Rank 2",
+  "system": {
+    "origin": "",
+    "effect": "Select a Power Manipulation marked Rank 2 or lower. For Rank 1 Manipulations, this Manipulation may be used twice per Scene without spending AP to activate. For Rank 2 Manipulations, this Manipulation may be used once per Scene without activating Authentic Thaumaturgy’s Frequency.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spatk.mod",
+        "value": 1
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Ranked 2",
+      "+Special Attack"
+    ],
+    "prerequisites": [
+      "Authentic Thaumaturgy"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "Arcanist",
+    "automation": [],
+    "name": "Signature Manipulations Rank 2",
+    "useCount": 0
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Authentic Thaumaturgy"
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1683368079014,
+    "modifiedTime": 1707818613949,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": null,
+  "sort": 42100000,
+  "_id": "c0HW7hvS12VCqsAu",
+  "_key": "!items!c0HW7hvS12VCqsAu"
+}

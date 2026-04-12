@@ -1,0 +1,84 @@
+{
+  "folder": null,
+  "name": "Wellspring Mask",
+  "type": "item",
+  "img": "https://assets.forge-vtt.com/6464e7dd7cb6da75187d728c/systems/ptu/static/css/images/icons/item_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "While Ogerpon is holding this, it gains the Water Type and Water Type moves DB are increased by 1.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TypeOverwrite",
+        "value": [
+          "Grass",
+          "Water"
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [],
+        "hideIfDisabled": false,
+        "selectors": "water-damage-base",
+        "value": 1
+      },
+      {
+        "key": "TokenImage",
+        "value": "/systems/ptu/static/images/sprites/1017_wellspring.webp"
+      }
+    ],
+    "enabled": true,
+    "slug": "wellspring-mask",
+    "schema": {
+      "version": 0.115,
+      "lastMigration": {
+        "datetime": "2024-03-20T14:21:33.607Z",
+        "version": {
+          "schema": 0.115,
+          "foundry": "11.315",
+          "system": "4.2.5"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "quantity": "1",
+    "category": "Held Item",
+    "cost": "0",
+    "consumable": 0,
+    "subtype": "",
+    "container": false
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": false
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1695517601075,
+    "modifiedTime": 1712494298637,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-chosen",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "mM1slKxjIOF4PRDx",
+  "sort": 0,
+  "_key": "!items!mM1slKxjIOF4PRDx"
+}

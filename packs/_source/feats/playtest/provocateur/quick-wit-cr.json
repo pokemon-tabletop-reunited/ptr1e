@@ -1,0 +1,65 @@
+{
+  "name": "Quick Wit [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Effect: You may make a Manipulate Maneuver or use a Social Move you know, Frequency allowing.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Provocateur",
+      "a Provocateur Skill at Adept Rank."
+    ],
+    "frequency": "Scene x3 – Rapid Action",
+    "notes": "",
+    "free": false,
+    "class": "Provocateur [CR]",
+    "name": "Quick Wit [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "mS7fmuAZxBzZ1J7B",
+  "_id": "iMGQ6tzQoWuSex0K",
+  "effects": [],
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1710765909004,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!iMGQ6tzQoWuSex0K"
+}

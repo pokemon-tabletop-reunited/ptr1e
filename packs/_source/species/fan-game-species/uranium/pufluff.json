@@ -1,0 +1,487 @@
+{
+  "type": "species",
+  "system": {
+    "schema": {
+      "version": 0.11,
+      "lastMigration": {
+        "datetime": "2023-08-15T11:56:04.682Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.307",
+          "system": "0.21"
+        }
+      }
+    },
+    "dexentry": "",
+    "number": 3114,
+    "form": "",
+    "stats": {
+      "hp": 6,
+      "atk": 5,
+      "def": 5,
+      "spatk": 6,
+      "spdef": 5,
+      "spd": 5
+    },
+    "types": [
+      "Ice",
+      "Fairy"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "slug": "snow-cloak",
+          "uuid": "Compendium.ptu.abilities.Item.XGOKQvMtgXTgrckF"
+        },
+        {
+          "slug": "rattled",
+          "uuid": "Compendium.ptu.abilities.Item.TcxNWzXMpxjBZbgo"
+        }
+      ],
+      "advanced": [
+        {
+          "slug": "overcoat",
+          "uuid": "Compendium.ptu.abilities.Item.aYpa4hA9aHeNGyeQ"
+        },
+        {
+          "slug": "glisten",
+          "uuid": "Compendium.ptu.abilities.Item.X2GqcrligAh32t4u"
+        }
+      ],
+      "high": [
+        {
+          "slug": "fluffy",
+          "uuid": "Compendium.ptu.abilities.Item.lH9tO883bqPwIbSP"
+        }
+      ]
+    },
+    "evolutions": [
+      {
+        "uuid": "Compendium.ptu.species.Item.BAiHQfILv6o9mrGF",
+        "slug": "pufluff",
+        "level": 1,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "uuid": "Compendium.ptu.species.Item.Y5cJuRFnzsVuMM8I",
+        "slug": "alpico",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      },
+      {
+        "slug": "anderind",
+        "uuid": "Compendium.ptu.species.Item.JcPER3GHgZo41lKX",
+        "level": 30,
+        "other": {
+          "restrictions": []
+        }
+      }
+    ],
+    "size": {
+      "height": 0.3,
+      "weight": 8.5,
+      "sizeClass": "Small",
+      "weightClass": 1
+    },
+    "breeding": {
+      "genderRatio": 50,
+      "eggGroups": [
+        "Field",
+        "Fairy"
+      ],
+      "hatchRate": 10
+    },
+    "diet": [
+      "Herbivore"
+    ],
+    "habitats": [
+      "Tundra"
+    ],
+    "capabilities": {
+      "overland": 4,
+      "sky": 0,
+      "swim": 2,
+      "levitate": 0,
+      "burrow": 0,
+      "highJump": 1,
+      "longJump": 1,
+      "power": 1,
+      "naturewalk": [
+        "Tundra"
+      ],
+      "other": [
+        {
+          "slug": "split-evolution",
+          "uuid": "Compendium.ptu.capabilities.Item.X6zDRsVYyOuz9sHX"
+        },
+        {
+          "slug": "underdog",
+          "uuid": "Compendium.ptu.capabilities.Item.AIbbzjfDZix8YFkU"
+        }
+      ]
+    },
+    "moves": {
+      "level": [
+        {
+          "slug": "powder-snow",
+          "uuid": "Compendium.ptu.moves.Item.l4TzdGjtPZHycF5b",
+          "level": 1
+        },
+        {
+          "slug": "growl",
+          "uuid": "Compendium.ptu.moves.Item.9Bi4aMf4Ls0JdLNK",
+          "level": 1
+        },
+        {
+          "slug": "fairy-wind",
+          "uuid": "Compendium.ptu.moves.Item.HmIauAep0pKBGFRh",
+          "level": 5
+        },
+        {
+          "slug": "charm",
+          "uuid": "Compendium.ptu.moves.Item.TgmOU36SFwwlN5di",
+          "level": 9
+        },
+        {
+          "slug": "icy-wind",
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc",
+          "level": 13
+        },
+        {
+          "slug": "fury-swipes",
+          "uuid": "Compendium.ptu.moves.Item.kBtOW4lhbgV3tltJ",
+          "level": 17
+        },
+        {
+          "slug": "cotton-guard",
+          "uuid": "Compendium.ptu.moves.Item.bTh2RR9t2qBxFkDy",
+          "level": 21
+        },
+        {
+          "slug": "disarming-voice",
+          "uuid": "Compendium.ptu.moves.Item.NAhc5NF7m0p5BPmP",
+          "level": 25
+        },
+        {
+          "slug": "baton-pass",
+          "uuid": "Compendium.ptu.moves.Item.uZjoE8y3gbmlRVcc",
+          "level": 29
+        },
+        {
+          "slug": "flail",
+          "uuid": "Compendium.ptu.moves.Item.IWQXKwgnyM2CvDLV",
+          "level": 33
+        },
+        {
+          "slug": "aurora-beam",
+          "uuid": "Compendium.ptu.moves.Item.UqFpnMAAoEOqvUDj",
+          "level": 36
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8",
+          "level": 41
+        },
+        {
+          "slug": "blizzard",
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s",
+          "level": 45
+        },
+        {
+          "slug": "hail",
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B",
+          "level": 49
+        },
+        {
+          "slug": "play-rough",
+          "uuid": "Compendium.ptu.moves.Item.MayZhpGvJzcbv8BT",
+          "level": 53
+        }
+      ],
+      "machine": [
+        {
+          "slug": "toxic",
+          "uuid": "Compendium.ptu.moves.Item.eFxRUdqQgdnJybY4"
+        },
+        {
+          "slug": "hail",
+          "uuid": "Compendium.ptu.moves.Item.pRtupyIihgfCW09B"
+        },
+        {
+          "slug": "hidden-power",
+          "uuid": "Compendium.ptu.moves.Item.QyDgi8hL1jQLLhld"
+        },
+        {
+          "slug": "taunt",
+          "uuid": "Compendium.ptu.moves.Item.PPcOINwAtEYByNNN"
+        },
+        {
+          "slug": "ice-beam",
+          "uuid": "Compendium.ptu.moves.Item.ipZPqONhX7WsWJ5U"
+        },
+        {
+          "slug": "blizzard",
+          "uuid": "Compendium.ptu.moves.Item.OaCO337ux9X8zQ2s"
+        },
+        {
+          "slug": "protect",
+          "uuid": "Compendium.ptu.moves.Item.HfiQ6I7xp7aGazV0"
+        },
+        {
+          "slug": "safeguard",
+          "uuid": "Compendium.ptu.moves.Item.DkpT2ACVxH31hpo0"
+        },
+        {
+          "slug": "frustration",
+          "uuid": "Compendium.ptu.moves.Item.tkATQl42vxqWDfjd"
+        },
+        {
+          "slug": "return",
+          "uuid": "Compendium.ptu.moves.Item.eRjK7eB733bE0D8o"
+        },
+        {
+          "slug": "double-team",
+          "uuid": "Compendium.ptu.moves.Item.BHmRIX70tqHROfdN"
+        },
+        {
+          "slug": "facade",
+          "uuid": "Compendium.ptu.moves.Item.QhQ2vUo3KMKo4Xou"
+        },
+        {
+          "slug": "rest",
+          "uuid": "Compendium.ptu.moves.Item.P0JIeR4lnilvg7K8"
+        },
+        {
+          "slug": "attract",
+          "uuid": "Compendium.ptu.moves.Item.0VI0E6oSQYULcSUU"
+        },
+        {
+          "slug": "round",
+          "uuid": "Compendium.ptu.moves.Item.GgdkAr3gDO6snP7r"
+        },
+        {
+          "slug": "fling",
+          "uuid": "Compendium.ptu.moves.Item.fDc6STMtfRenewU6"
+        },
+        {
+          "slug": "frost-breath",
+          "uuid": "Compendium.ptu.moves.Item.nM8DQhM6b8g5KZyy"
+        },
+        {
+          "slug": "swagger",
+          "uuid": "Compendium.ptu.moves.Item.arxy479cTjkB8mML"
+        },
+        {
+          "slug": "sleep-talk",
+          "uuid": "Compendium.ptu.moves.Item.Jfi9FN77Rplukh7W"
+        },
+        {
+          "slug": "substitute",
+          "uuid": "Compendium.ptu.moves.Item.IGk8nNBogMKp3seI"
+        },
+        {
+          "slug": "dazzling-gleam",
+          "uuid": "Compendium.ptu.moves.Item.tqoJF3EAgEEv3l1l"
+        },
+        {
+          "slug": "confide",
+          "uuid": "Compendium.ptu.moves.Item.43i757GW8pptWB5j"
+        }
+      ],
+      "egg": [
+        {
+          "slug": "assurance",
+          "uuid": "Compendium.ptu.moves.Item.eQqKpKRD5wG1Hg7d"
+        },
+        {
+          "slug": "draining-kiss",
+          "uuid": "Compendium.ptu.moves.Item.8BihXjkV4RVUcbMf"
+        },
+        {
+          "slug": "fake-out",
+          "uuid": "Compendium.ptu.moves.Item.YWFFDr5Ul470Pnyp"
+        },
+        {
+          "slug": "ice-fang",
+          "uuid": "Compendium.ptu.moves.Item.uGIN68MryZnqXa5w"
+        },
+        {
+          "slug": "ice-shard",
+          "uuid": "Compendium.ptu.moves.Item.SUduMarNZi7p42fG"
+        },
+        {
+          "slug": "reversal",
+          "uuid": "Compendium.ptu.moves.Item.ekstCWqmGpJSMLj1"
+        },
+        {
+          "slug": "yawn",
+          "uuid": "Compendium.ptu.moves.Item.TqoaCRNjoH4lGBj4"
+        }
+      ],
+      "tutor": [
+        {
+          "slug": "avalanche",
+          "uuid": "Compendium.ptu.moves.Item.UcNQuMWgO1s8OxcP"
+        },
+        {
+          "slug": "block",
+          "uuid": "Compendium.ptu.moves.Item.PvmLk3AU04nOjH4x"
+        },
+        {
+          "slug": "covet",
+          "uuid": "Compendium.ptu.moves.Item.Ys1GdaKIZDiaptNB"
+        },
+        {
+          "slug": "endeavor",
+          "uuid": "Compendium.ptu.moves.Item.AZOdMOvyaPYtEXOQ"
+        },
+        {
+          "slug": "endure",
+          "uuid": "Compendium.ptu.moves.Item.IAFYzSRQGxZM1SSQ"
+        },
+        {
+          "slug": "feint",
+          "uuid": "Compendium.ptu.moves.Item.0LzmFA1iAyCrMaqh"
+        },
+        {
+          "slug": "focus-punch",
+          "uuid": "Compendium.ptu.moves.Item.JwDy34HQ8GT4v6Jv"
+        },
+        {
+          "slug": "helping-hand",
+          "uuid": "Compendium.ptu.moves.Item.xhZNseKRJl3pPnTZ"
+        },
+        {
+          "slug": "ice-punch",
+          "uuid": "Compendium.ptu.moves.Item.I0Cy1NP2brM1jq1h"
+        },
+        {
+          "slug": "icy-wind",
+          "uuid": "Compendium.ptu.moves.Item.OI05tbugvNMMOqmc"
+        },
+        {
+          "slug": "role-play",
+          "uuid": "Compendium.ptu.moves.Item.pg083RFf3Tf7a3pX"
+        }
+      ]
+    },
+    "skills": {
+      "acrobatics": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "athletics": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "charm": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "combat": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "command": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "generalEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "medicineEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "occultEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "pokemonEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "techEd": {
+        "value": 1,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "focus": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "guile": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "intimidate": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      },
+      "intuition": {
+        "value": 2,
+        "modifier": 0,
+        "type": "spirit"
+      },
+      "perception": {
+        "value": 2,
+        "modifier": 0,
+        "type": "mind"
+      },
+      "stealth": {
+        "value": 3,
+        "modifier": 0,
+        "type": "body"
+      },
+      "survival": {
+        "value": 2,
+        "modifier": 0,
+        "type": "body"
+      }
+    },
+    "slug": "pufluff",
+    "rules": [],
+    "source": {
+      "value": "Fangame Uranium Dex"
+    },
+    "keywords": []
+  },
+  "img": "/systems/ptu/css/images/icons/dex_icon.png",
+  "folder": "eBzxHM3RlUyuiO0g",
+  "name": "Pufluff",
+  "_id": "BAiHQfILv6o9mrGF",
+  "effects": [],
+  "sort": 3100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1689609527590,
+    "modifiedTime": 1707761842946,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!BAiHQfILv6o9mrGF"
+}

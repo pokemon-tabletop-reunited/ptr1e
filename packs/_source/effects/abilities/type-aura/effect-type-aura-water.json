@@ -1,0 +1,82 @@
+{
+  "name": "Effect: Type Aura (Water)",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "move:type:water"
+        ],
+        "label": "Type Aura (Water)",
+        "hideIfDisabled": false,
+        "selectors": "damage-roll",
+        "value": 5
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-type-aura-water",
+    "schema": {
+      "version": 0.111,
+      "lastMigration": {
+        "datetime": "2023-10-08T13:36:44.756Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.311",
+          "system": "4.0.0.beta.11"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "isENiv6hVGXZFutU",
+  "sort": 131250,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1696536105647,
+    "modifiedTime": 1712492931056,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "7Xvdlzozy9DacaJO",
+  "_key": "!items!7Xvdlzozy9DacaJO"
+}

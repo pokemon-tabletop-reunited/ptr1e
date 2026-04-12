@@ -1,0 +1,94 @@
+{
+  "folder": "HTNFGIxy9zsCONjI",
+  "name": "Effect: Spray Down",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "@Embed[Compendium.ptu.abilities.Item.m7HTpTbsdqfc6miF]",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "remove",
+        "path": "system.modifiers.capabilities.levitate",
+        "phase": "applyAEs",
+        "value": 100,
+        "priority": null
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "remove",
+        "path": "system.modifiers.capabilities.sky",
+        "phase": "applyAEs",
+        "value": 100,
+        "priority": null
+      },
+      {
+        "key": "RollOption",
+        "option": "self:immunity-blocked:ground"
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-spray-down",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 3,
+      "unit": "rounds",
+      "expiry": "turn-end"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null,
+      "round": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1711899873032,
+    "modifiedTime": 1712500196238,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "kanto-adventures",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "Q1riP3kQOmXsC87S",
+  "sort": 700000,
+  "_key": "!items!Q1riP3kQOmXsC87S"
+}

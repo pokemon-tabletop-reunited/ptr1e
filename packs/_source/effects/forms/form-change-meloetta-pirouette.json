@@ -1,0 +1,92 @@
+{
+  "name": "Form Change: Meloetta Pirouette",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "value": "/systems/ptu/static/images/sprites/648_1.webp",
+        "predicate": {
+          "not": "self:pokemon:shiny"
+        }
+      },
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/648s_1.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:meloetta-step"
+        ],
+        "uuid": "Compendium.ptu.species.Item.TDUhEnRlByUlpIwC"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-landorus-therian",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "DJzDYBNllxgyeiok",
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.6",
+    "coreVersion": "13.350",
+    "createdTime": 1711653143321,
+    "modifiedTime": 1712493830305,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "testing",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.5"
+    }
+  },
+  "_id": "zYlXw6cdHtfeKo58",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zYlXw6cdHtfeKo58"
+}

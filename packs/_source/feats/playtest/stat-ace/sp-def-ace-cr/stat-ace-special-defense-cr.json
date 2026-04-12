@@ -1,0 +1,90 @@
+{
+  "name": "Stat Ace (Special Defense) [CR]",
+  "system": {
+    "origin": "",
+    "effect": "Effect: Your Pokémon have their Chosen Base Stat increased by +1, and by +1 more for every 10 Levels they have. Additionally, you, the Trainer, gain +1 to the Chosen Base Stat for every two Milestones you have, plus 1.\n\nNote: When you take Stat Ace, choose one of Attack, Defense, Special Attack, Special Defense, or Speed. This becomes your Pokémon’s Chosen Stat. You may take Stat Ace multiple times, choosing different Stats each time.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spdef.mod",
+        "phase": "applyAEs",
+        "value": "floor(@actor.system.level.current/20)+1",
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "stat-ace-special-defense-cr",
+    "schema": {
+      "version": 0.114,
+      "lastMigration": {
+        "datetime": "2024-02-17T16:59:49.502Z",
+        "version": {
+          "schema": 0.11,
+          "foundry": "11.315",
+          "system": "4.2.0"
+        }
+      }
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.UnvYG2084ke5reQE",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "Class",
+      "Playtest",
+      "CR",
+      "Branch"
+    ],
+    "prerequisites": [
+      "All A or B options",
+      "A:1 Pokémon with the chosen stat of 30 more",
+      "A: Expert Command or Focus",
+      "B:4 Pokémon with the chosen stat at 20 or higher",
+      "B: Adept Command or Focus"
+    ],
+    "frequency": "Static",
+    "notes": "",
+    "free": false,
+    "class": "",
+    "tags": "[Class][Branch]",
+    "name": "Stat Ace",
+    "useCount": 0,
+    "automation": []
+  },
+  "type": "feat",
+  "img": "/systems/ptu/css/images/icons/class_feat_icon.png",
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "prereqBackup": "Ace Trainer or Style Expert, 1 Pokémon with the chosen stat at 15 or more, Novice Command or Focus\nOr\n3 Pokémon with the chosen stat at 20 or higher, Novice Command or Focus",
+      "showInTokenPanel": true
+    }
+  },
+  "folder": "KlbLuc2juXKYPRSb",
+  "_id": "f4uiajDLlZ9Kwf3E",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.350",
+    "systemId": "ptu",
+    "systemVersion": "4.2.2",
+    "createdTime": 1710766876180,
+    "modifiedTime": 1710766876180,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-chosen",
+      "uuid": null,
+      "coreVersion": "11.315",
+      "systemId": "ptu",
+      "systemVersion": "4.2.2"
+    }
+  },
+  "_key": "!items!f4uiajDLlZ9Kwf3E"
+}

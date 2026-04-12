@@ -1,0 +1,66 @@
+{
+  "name": "Poison Weapons [CR]",
+  "system": {
+    "origin": "Class Rework",
+    "effect": "Trigger: You make a Weapon Attack.\nEffect: The attack or Move Poisons its targets on 16+, and you may have it deal Poison-Type Damage if you wish. If the Move would already inflict Poison, it may now instead inflict Badly Poisoned.\nBonus: You learn the Move Poison Fang, and any Damaging Physical Moves granted by Ninja Features may be used as Weapon Moves.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.modifiers.baseStats.spd.mod",
+        "value": 1,
+        "priority": 20,
+        "predicate": [],
+        "phase": "applyAEs"
+      }
+    ],
+    "enabled": true,
+    "slug": null,
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [
+      "+Speed",
+      "Weapon",
+      "Playtest",
+      "Class Rework"
+    ],
+    "prerequisites": [
+      "Ninja",
+      "Adept Stealth"
+    ],
+    "frequency": "1 AP – Free Action",
+    "notes": "",
+    "free": false,
+    "class": "Ninja [CR]",
+    "name": "Poison Weapons [CR]"
+  },
+  "img": "/systems/ptu/css/images/icons/feat_icon.png",
+  "type": "feat",
+  "folder": "Oh9iNhjBAL6rHEpw",
+  "_id": "EnsL3nhBG9NMzV96",
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.1.4",
+    "coreVersion": "13.350",
+    "createdTime": 1699736627730,
+    "modifiedTime": 1707827243445,
+    "lastModifiedBy": "ptubuilder00000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!EnsL3nhBG9NMzV96"
+}
