@@ -64,6 +64,7 @@ class PokeballItem extends PTUItemItem {
             const target = params.target ?? game.user.targets.first();
             if (!target?.actor) return ui.notifications.warn("PTU.Action.CaptureNoTarget", { localize: true })
             if (target.actor.type === "character") return ui.notifications.warn("PTU.Action.CaptureWrongTarget", { localize: true })
+            if ((this.system.quantity ?? 1) <= 0) return ui.notifications.warn("PTU.Action.NoPokeballs", { localize: true })
 
             const context = await this.actor.getCheckContext({
                 item: this,
@@ -118,6 +119,7 @@ class PokeballItem extends PTUItemItem {
 
             rollContext.substitutions = extractRollSubstitutions(this.actor.synthetics.rollSubstitutions, selectors, rollContext.options);
 
+            await this.update({ "system.quantity": this.system.quantity - 1 });
 
             const roll = await PTUCheck.roll(
                 new CheckModifier(
