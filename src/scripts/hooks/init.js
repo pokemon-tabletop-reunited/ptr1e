@@ -6,6 +6,7 @@ import { registerSheets } from "../sheets.js"
 import { registerTemplates } from "../templates.js"
 import { insurgenceData, sageData, uraniumData } from "../config/data/fangame-species-data.js"
 import { measureDistances } from "../../module/canvas/helpers.js"
+import { registerGithubSync } from "../../module/apps/github-sync/index.js"
 
 
 export const Init = {
@@ -75,6 +76,27 @@ export const Init = {
             // registerKeybindings();
             registerSettings();
             registerTemplates();
+
+            // GitHub Sync — in-app commit/PR workflow for content contributors
+            registerGithubSync({
+                systemId: "ptu",
+                apiUrl: "https://1e.ptr.wiki/foundry",
+                documentTypes: {
+                    move:        "ptu.moves",
+                    ability:     "ptu.abilities",
+                    feat:        "ptu.feats",
+                    edge:        "ptu.edges",
+                    effect:      "ptu.effects",
+                    species:     "ptu.species",
+                    item:        "ptu.items",
+                    capability:  "ptu.capabilities",
+                    pokeedge:    "ptu.poke-edges",
+                    reference:   "ptu.references",
+                    spiritaction: "ptu.spirit-actions",
+                },
+                // Reuse PTU's existing devMode setting rather than registering a new one
+                devModeSettingKey: "devMode",
+            });
 
             if(game.settings.get("ptu", "devMode")) CONFIG.ui.items.prototype._onDragStart = _onDragStart;
 

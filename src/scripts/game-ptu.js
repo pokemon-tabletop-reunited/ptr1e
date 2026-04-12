@@ -1,4 +1,5 @@
 import { PokemonGenerator } from "../module/actor/pokemon/generator.js"
+import { GithubSyncManager } from "../module/apps/github-sync/manager.js"
 import { CompendiumBrowser } from "../module/apps/compendium-browser/index.js"
 import { MigrationSummary } from "../module/apps/migration-summary.js"
 import { TokenPanel } from "../module/apps/token-panel.js"
@@ -66,7 +67,8 @@ const GamePTU = {
                     new PTUPokemonTrainingSheet({actor}).render(true);
                 }
             },
-            tokenPanel: new TokenPanel()
+            tokenPanel: new TokenPanel(),
+            github: GithubSyncManager,
         }
 
         Weather._initializeGlobalEffects();

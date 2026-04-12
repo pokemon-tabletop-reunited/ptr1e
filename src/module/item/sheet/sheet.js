@@ -1,6 +1,7 @@
 import { sluggify, sortStringRecord } from "../../../util/misc.js";
 import { RuleElements } from "../../rules/index.js";
 import { RULE_ELEMENT_FORMS, RuleElementForm } from "./rule-elements/index.js";
+import { GithubSyncManager } from "../../apps/github-sync/manager.js";
 
 class PTUItemSheet extends foundry.appv1.sheets.ItemSheet {
     /** @override */
@@ -115,6 +116,15 @@ class PTUItemSheet extends foundry.appv1.sheets.ItemSheet {
 			icon: "fas fa-comment",
 			onclick: () => this.object.sendToChat?.()
 		});
+
+        if (game.settings.get("ptu", "devMode")) {
+            buttons.unshift({
+                label: "Commit to GitHub",
+                class: "commit-to-github",
+                icon: "fa-solid fa-upload",
+                onclick: () => GithubSyncManager.commitItemToGithub(this.object),
+            });
+        }
 
         return buttons;
     }

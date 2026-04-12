@@ -1,0 +1,62 @@
+/* ============================================================
+   GitHub Commit Manager (#github-commit-manager)
+   Styles for the GithubSyncSheet ApplicationV2 window.
+   Ported from PTR2e's applications.less (.github-commit-manager block).
+   ============================================================ */
+
+.github-commit-manager .window-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Staged items list ──────────────────────────────────────── */
+
+.github-commit-manager main fieldset.scroll {
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+.github-commit-manager main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.github-commit-manager main ul li.blob {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.15rem 0;
+}
+
+.github-commit-manager main ul li.blob span {
+    flex: 0 0 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.github-commit-manager main ul li.blob span.message {
+    flex: 1;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.github-commit-manager main ul li.blob button {
+    flex: 0 0 auto;
+    padding: 0.2rem 0.4rem;
+}
+
+/* ── Footer buttons ─────────────────────────────────────────── */
+
+.github-commit-manager footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+.github-commit-manager footer button {
+    flex: 0 0 35%;
+}

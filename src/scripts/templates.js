@@ -17,6 +17,9 @@ export function registerTemplates() {
         "systems/ptu/static/templates/apps/compendium-browser/filters.hbs",
         "systems/ptu/static/templates/apps/compendium-browser/browser-settings.hbs",
 
+        // GitHub Sync
+        "systems/ptu/static/templates/apps/github-sync.hbs",
+
         // Charactermancer Partials
         // "systems/ptu/templates/partials/charactermancer-evolution-partial.hbs",
         // "/systems/ptu/templates/partials/charactermancer/stat-block-partial.hbs"

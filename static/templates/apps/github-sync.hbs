@@ -1,0 +1,75 @@
+<div class="d-flex flex-column p-1">
+  <header class="p-2">
+    {{#if ongoing}}
+    <p>You have a pending commit. Review the staged items below, then finalize when ready.</p>
+    <p><b>Note:</b> Your staged changes are held by the sync server and are not yet saved to GitHub. You must click <b>Finalize Commit</b> to create a Pull Request, or <b>Reset Commit</b> to discard all changes.</p>
+    {{else}}
+    <p>Open any supported item and click the <b>Commit to GitHub</b> button (<i class="fa-solid fa-upload"></i>) in its toolbar to start a commit.</p>
+    {{/if}}
+  </header>
+
+  <main class="pt-2">
+    {{#if ongoing}}
+    <fieldset class="pb-2 scroll">
+      <legend>Staged Items</legend>
+      <ul>
+        <li class="blob">
+          <span><b>Name</b></span>
+          <span class="message"><b>Message</b></span>
+        </li>
+        {{#each status.blobs}}
+        <li class="blob">
+          <span>{{this.name}}</span>
+          <span class="message">{{this.message}}</span>
+          <button type="button"
+                  data-action="delete"
+                  data-path="{{this.path}}"
+                  data-tooltip="Remove {{this.name}} from this commit">
+            <i class="fas fa-trash"></i>
+          </button>
+        </li>
+        {{/each}}
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Commit Details</legend>
+      <div class="form-group">
+        <label for="pr-title">Pull Request Title</label>
+        <div class="form-fields">
+          <input id="pr-title" name="pr-title" type="text"
+                 placeholder="e.g. Fix PP cost for several abilities">
+        </div>
+        <p class="hint">A short summary of the change set, used as the PR title on GitHub.</p>
+      </div>
+      <div class="form-group">
+        <label for="commit-message">Commit Message</label>
+        <div class="form-fields">
+          <textarea id="commit-message" name="commit-message" rows="3"
+                    placeholder="e.g. Fixed PP cost for Tackle, Growl, and Ember."></textarea>
+        </div>
+        <p class="hint">Describe your changes in detail. This becomes the commit description on GitHub.</p>
+      </div>
+    </fieldset>
+    {{/if}}
+  </main>
+
+  <footer class="pt-2 pb-2">
+    <button type="button"
+            data-action="finalize"
+            data-tooltip="Create a Pull Request on GitHub with all staged items"
+            {{#unless ongoing}}disabled{{/unless}}>
+      Finalize Commit
+    </button>
+    <button type="button"
+            data-action="cancel"
+            {{#if ongoing}}
+            data-tooltip="Discard all staged changes">
+      Reset Commit
+            {{else}}
+            data-tooltip="Close this window">
+      Close
+            {{/if}}
+    </button>
+  </footer>
+</div>
