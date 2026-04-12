@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "db:pack": "node ./utils/packs.mjs package pack",
-    "db:unpack": "node ./utils/packs.mjs package unpack"
+    "build": "npm run clean && npm run build:packs",
+    "build:packs": "node ./utils/packs.mjs package pack",
+    "build:unpack": "node ./utils/packs.mjs package unpack"
   },
   "dependencies": {
     "@foundryvtt/foundryvtt-cli": "^3.0.3",
