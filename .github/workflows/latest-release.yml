@@ -6,13 +6,12 @@ on:
     types:
         - completed
     branches:
-        - master
+        - release
   push:
-    branches: [master]
+    branches: [release]
 
 jobs:
     release:
-        if: github.event.repository.fork == false
         runs-on: ubuntu-latest
 
         steps:
