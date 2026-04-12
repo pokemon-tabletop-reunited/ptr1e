@@ -22,7 +22,7 @@
     padding: 0;
 }
 
-.github-commit-manager main ul li.blob {
+.github-commit-manager main ul li.gh-blob {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,20 +30,20 @@
     padding: 0.15rem 0;
 }
 
-.github-commit-manager main ul li.blob span {
+.github-commit-manager main ul li.gh-blob span {
     flex: 0 0 150px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.github-commit-manager main ul li.blob span.message {
+.github-commit-manager main ul li.gh-blob span.message {
     flex: 1;
     white-space: normal;
     overflow-wrap: break-word;
 }
 
-.github-commit-manager main ul li.blob button {
+.github-commit-manager main ul li.gh-blob button {
     flex: 0 0 auto;
     padding: 0.2rem 0.4rem;
 }

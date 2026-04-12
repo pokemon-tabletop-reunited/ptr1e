@@ -48,6 +48,41 @@ class GithubSyncManager {
 
     // ─────────────────────────────────────────────────────────────────────────
     //  Document resolution
+
+    /**
+     * Returns true if this item is eligible to be committed:
+     *  - Its type is in `documentTypes`, AND
+     *  - It either lives inside one of the configured packs, or was imported
+     *    from one of them (has a matching compendium source UUID).
+     *
+     * @param {Item} item
+     * @returns {boolean}
+     */
+    static isCommittableItem(item) {
+        const { documentTypes } = GithubSyncManager.config;
+        const validPacks = new Set(Object.values(documentTypes));
+
+        // Type must be supported
+        if (!documentTypes[item.type]) return false;
+
+        // Item is open directly from a compendium
+        if (!item.pack) return false;
+        
+        return validPacks.has(item.pack);
+
+        // World item — check if it was imported from one of the valid packs.
+        // Source UUID format: "Compendium.<systemId>.<packName>.Item.<id>"
+        // const sourceId =
+        //     item.flags?.core?.sourceId ?? item._stats?.compendiumSource;
+        // if (sourceId) {
+        //     const parts = sourceId.split(".");
+        //     if (parts[0] === "Compendium" && parts.length >= 3) {
+        //         return validPacks.has(`${parts[1]}.${parts[2]}`);
+        //     }
+        // }
+
+        // return false;
+    }
     // ─────────────────────────────────────────────────────────────────────────
 
     /**
@@ -102,6 +137,7 @@ class GithubSyncManager {
         }
         delete diff.sort;
         delete diff._id;
+        delete diff._key;
         delete diff._stats;
         delete diff.folder;
         delete diff.ownership;
@@ -124,14 +160,21 @@ class GithubSyncManager {
 
         let data = fu.mergeObject(packItem, diff, { inplace: false });
 
-        // Strip remaining metadata
+        // Explicitly restore every top-level field that must keep its pack/GitHub
+        // value and must never be derived from or overwritten by the live world item.
+        // We do this explicitly rather than relying on mergeObject carrying them
+        // through, because `pack.getDocument().toObject()` may not expose all source
+        // fields depending on the Foundry version.
+        for (const field of ["_id", "_key", "_stats", "ownership", "folder", "sort"]) {
+            if (Object.hasOwn(packItem, field)) data[field] = packItem[field];
+            else delete data[field];
+        }
+
+        // flags.core.sourceId is a Foundry compendium pointer — not present in
+        // GitHub source files and meaningless outside Foundry.
         if (data.flags?.core?.sourceId) delete data.flags.core.sourceId;
         if (fu.isEmpty(data.flags?.core)) delete data.flags?.core;
         if (fu.isEmpty(data.flags)) delete data.flags;
-        if (!data.folder) delete data.folder;
-        delete data.sort;
-        delete data.ownership;
-        delete data._stats;
 
         // System-specific post-merge cleanup (array merging, uuid stripping, etc.)
         data = mergeCleanup(data, diff, packItem);
@@ -164,13 +207,14 @@ class GithubSyncManager {
     static async commitItemToGithub(document) {
         const { documentTypes, blockedItems } = GithubSyncManager.config;
 
-        const packId = documentTypes[document.type];
-        if (!packId) {
+        if (!GithubSyncManager.isCommittableItem(document)) {
             ui.notifications.error(
-                `Cannot commit "${document.type}" to GitHub — not a supported document type.`
+                `Cannot commit this item to GitHub — it must be imported from or opened directly from a supported compendium pack.`
             );
             return;
         }
+
+        const packId = documentTypes[document.type];
 
         const pack = game.packs.get(packId);
         if (!pack) {
@@ -185,7 +229,8 @@ class GithubSyncManager {
         // New item — send raw data without diffing
         if (!existing) {
             try {
-                const result = await GithubSyncManager.saveBlobToGithub(document.toObject());
+                const newData = GithubSyncManager.#stripMetadata(document.toObject());
+                const result = await GithubSyncManager.saveBlobToGithub(newData);
                 if (result) GithubSyncManager.#openSheet();
             } catch (error) {
                 ui.notifications.error("An unexpected error occurred.");
@@ -227,6 +272,25 @@ class GithubSyncManager {
         }
     }
 
+    /**
+     * Strip all Foundry/LevelDB metadata from a raw item object in place.
+     * Used for new items that have no pack counterpart to diff against.
+     * @param {object} data  Result of item.toObject()
+     * @returns {object}
+     */
+    static #stripMetadata(data) {
+        delete data._id;
+        delete data._key;
+        delete data._stats;
+        delete data.sort;
+        delete data.folder;
+        delete data.ownership;
+        if (data.flags?.core?.sourceId) delete data.flags.core.sourceId;
+        if (fu.isEmpty(data.flags?.core)) delete data.flags?.core;
+        if (fu.isEmpty(data.flags)) delete data.flags;
+        return data;
+    }
+
     /** Open the commit manager UI (lazily, to avoid circular imports). */
     static #openSheet() {
         if (!GithubSyncManager.SheetClass) {
@@ -258,41 +322,77 @@ class GithubSyncManager {
 
         const stored = game.settings.get(systemId, identitySettingKey);
         if (stored) {
-            const resp = await fetch(`${apiUrl}/identify`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "X-Powered-By": poweredByHeader,
-                },
-                body: JSON.stringify({ id: stored }),
-            });
+            let resp;
+            try {
+                resp = await fetch(`${apiUrl}/identify`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Powered-By": poweredByHeader,
+                    },
+                    body: JSON.stringify({ id: stored }),
+                });
+            } catch (err) {
+                console.error("GithubSync | /identify request failed (stored token):", err);
+                return null;
+            }
+
+            console.debug(`GithubSync | /identify (stored) → HTTP ${resp.status}`);
+
             if (resp.status === 202) return stored;
             if (resp.status === 200) {
                 // Token is stale — clear and fall through to re-identify
                 await game.settings.set(systemId, identitySettingKey, "");
+            } else {
+                const body = await resp.text().catch(() => "(unreadable)");
+                console.error(
+                    `GithubSync | /identify returned unexpected status ${resp.status}. Body:`,
+                    body
+                );
+                return null;
             }
         }
 
         // Generate fresh identity
         const freshId = fu.randomID() + game.user.name + game.user.id;
-        const resp = await fetch(`${apiUrl}/identify`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "X-Powered-By": poweredByHeader,
-            },
-            body: JSON.stringify({ id: freshId }),
-        });
+        let resp;
+        try {
+            resp = await fetch(`${apiUrl}/identify`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-Powered-By": poweredByHeader,
+                },
+                body: JSON.stringify({ id: freshId }),
+            });
+        } catch (err) {
+            console.error("GithubSync | /identify request failed (fresh token):", err);
+            return null;
+        }
+
+        console.debug(`GithubSync | /identify (fresh) → HTTP ${resp.status}`);
 
         if (resp.status === 200) {
             const json = await resp.json();
+            console.debug("GithubSync | /identify response body:", json);
             const encoded = json.identity;
-            if (!encoded) return null;
+            if (!encoded) {
+                console.error(
+                    'GithubSync | /identify returned HTTP 200 but response has no "identity" field.',
+                    json
+                );
+                return null;
+            }
             const identity = atob(encoded);
             await game.settings.set(systemId, identitySettingKey, identity);
             return identity;
         }
 
+        const body = await resp.text().catch(() => "(unreadable)");
+        console.error(
+            `GithubSync | /identify returned unexpected status ${resp.status}. Body:`,
+            body
+        );
         return null;
     }
 

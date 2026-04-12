@@ -117,7 +117,7 @@ class PTUItemSheet extends foundry.appv1.sheets.ItemSheet {
 			onclick: () => this.object.sendToChat?.()
 		});
 
-        if (game.settings.get("ptu", "devMode")) {
+        if (game.settings.get("ptu", "devMode") && GithubSyncManager.isCommittableItem(this.object)) {
             buttons.unshift({
                 label: "Commit to GitHub",
                 class: "commit-to-github",
