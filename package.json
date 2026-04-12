@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "build": "npm run clean && npm run build:packs",
     "build:packs": "node ./utils/packs.mjs package pack",
     "build:unpack": "node ./utils/packs.mjs package unpack"
   },
