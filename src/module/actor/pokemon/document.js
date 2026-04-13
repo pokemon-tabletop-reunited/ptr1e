@@ -46,8 +46,11 @@ class PTUPokemonActor extends PTUActor {
      * Force refresh of level caps when trainer data changes
      */
     refreshPreparedData() {
-        // Force a full data preparation cycle
-        this.prepareData();
+        // Use reset() instead of prepareData() so that _initialize() runs first,
+        // properly clearing this.synthetics and reinitialising system from _source.
+        // Calling prepareData() directly skips that reset, doubling of certain
+        // changes.
+        this.reset();
         
         // Update any rendered sheets
         if (this.sheet?.rendered) {
