@@ -8,9 +8,9 @@ export class CompendiumBrowserSpeciesTab extends CompendiumBrowserTab {
         super(browser);
 
         this.searchFields = ["name"]
-        this.storeFields = ["name", "uuid", "type", "source", "img", "types", "number", "moves", "abilities", "capabilities", "keywords"]
+        this.storeFields = ["name", "uuid", "type", "source", "img", "types", "number", "moves", "abilities", "capabilities", "keywords", "habitats", "eggGroups"]
 
-        this.index = ["system.source.value", "system.types", "system.number", "system.moves", "system.abilities", "system.capabilities", "system.keywords"];
+        this.index = ["system.source.value", "system.types", "system.number", "system.moves", "system.abilities", "system.capabilities", "system.keywords", "system.habitats", "system.breeding.eggGroups"];
 
         this.capabilitesMinMax = {}
         FILTERABLE_CAPABILITIES.forEach(cap => this.capabilitesMinMax[cap] = { "min": 100, "max": -10 })
@@ -35,6 +35,8 @@ export class CompendiumBrowserSpeciesTab extends CompendiumBrowserTab {
         const allAbilitySlugsSeen = new Set()
         const allCapabilitiesSeen = new Set()
         const allKeywordsSeen = new Set();
+        const allHabitatsSeen = new Set();
+        const allEggGroupsSeen = new Set();
 
         for await (const { pack, index } of this.browser.packLoader.loadPacks(
             "Item",
@@ -94,6 +96,16 @@ export class CompendiumBrowserSpeciesTab extends CompendiumBrowserTab {
                     allKeywordsSeen.add(keyword);
                 }
 
+                const habitats = Array.isArray(speciesData.system.habitats) ? speciesData.system.habitats : [];
+                for (const habitat of habitats) {
+                    allHabitatsSeen.add(habitat);
+                }
+
+                const eggGroups = Array.isArray(speciesData.system.breeding?.eggGroups) ? speciesData.system.breeding.eggGroups : [];
+                for (const eggGroup of eggGroups) {
+                    allEggGroupsSeen.add(eggGroup);
+                }
+
                 this.trackCapabilitiesMinMax(speciesData.system.capabilities);
 
                 species.push({
@@ -106,7 +118,9 @@ export class CompendiumBrowserSpeciesTab extends CompendiumBrowserTab {
                     number: isNaN(number) ? Infinity : number,
                     moves: moves,
                     abilities: abilities,
-                    capabilities: speciesData.system.capabilities
+                    capabilities: speciesData.system.capabilities,
+                    habitats: habitats,
+                    eggGroups: eggGroups
                 })
             }
         }
@@ -124,6 +138,8 @@ export class CompendiumBrowserSpeciesTab extends CompendiumBrowserTab {
         this.filterData.multiselects.abilities.options = this.filterOptionsFromSlugList(allAbilitySlugsSeen)
         this.filterData.multiselects.capabilities.options = this.filterOptionsFromSlugList(allCapabilitiesSeen)
         this.filterData.multiselects.keywords.options = this.filterOptionsFromSet(allKeywordsSeen)
+        this.filterData.multiselects.habitats.options = this.filterOptionsFromSet(allHabitatsSeen)
+        this.filterData.multiselects.eggGroups.options = this.filterOptionsFromSet(allEggGroupsSeen)
         
         for (const cap of FILTERABLE_CAPABILITIES) {
             this.filterData.sliders[cap].values.max = this.capabilitesMinMax[cap].max
@@ -198,6 +214,8 @@ export class CompendiumBrowserSpeciesTab extends CompendiumBrowserTab {
         if (!this.isEntryHonoringMultiselect(multiselects.abilities, entry.abilities)) return false;
         if (!this.isEntryHonoringMultiselect(multiselects.capabilities, entry.capabilities.other.map(c => c.slug))) return false;
         if (!this.isEntryHonoringMultiselect(multiselects.keywords, entry.keywords, false)) return false;
+        if (!this.isEntryHonoringMultiselect(multiselects.habitats, entry.habitats, false)) return false;
+        if (!this.isEntryHonoringMultiselect(multiselects.eggGroups, entry.eggGroups, false)) return false;
 
         for (const cap of FILTERABLE_CAPABILITIES) {
             const capVal = entry.capabilities[cap] ? entry.capabilities[cap] : 0
@@ -270,6 +288,18 @@ export class CompendiumBrowserSpeciesTab extends CompendiumBrowserTab {
                 keywords: {
                     conjunction: "and",
                     label: "PTU.CompendiumBrowser.FilterOptions.Keywords",
+                    options: [],
+                    selected: []
+                },
+                habitats: {
+                    conjunction: "and",
+                    label: "PTU.CompendiumBrowser.FilterOptions.Habitats",
+                    options: [],
+                    selected: []
+                },
+                eggGroups: {
+                    conjunction: "and",
+                    label: "PTU.CompendiumBrowser.FilterOptions.EggGroups",
                     options: [],
                     selected: []
                 }
