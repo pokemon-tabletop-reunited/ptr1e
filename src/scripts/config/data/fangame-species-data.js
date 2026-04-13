@@ -12104,7 +12104,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Omnivore"],
-    "Habitat": ["Forest", "Marsh,", "Urban"],
+    "Habitat": ["Forest", "Marsh", "Urban"],
     "Capabilities": {
       "Overland": 6,
       "Sky": 0,
@@ -12226,7 +12226,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Herbivore"],
-    "Habitat": ["Fresh"],
+    "Habitat": ["Freshwater"],
     "Capabilities": {
       "Overland": 4,
       "Sky": 0,
@@ -13063,7 +13063,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Herbivore"],
-    "Habitat": ["Beach", "Fresh"],
+    "Habitat": ["Beach", "Freshwater"],
     "Capabilities": {
       "Overland": 4,
       "Sky": 0,
@@ -13181,7 +13181,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Herbivore"],
-    "Habitat": ["Beach", "Fresh"],
+    "Habitat": ["Beach", "Freshwater"],
     "Capabilities": {
       "Overland": 5,
       "Sky": 0,
@@ -13293,7 +13293,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Herbivore"],
-    "Habitat": ["Beach", "Fresh"],
+    "Habitat": ["Beach", "Freshwater"],
     "Capabilities": {
       "Overland": 5,
       "Sky": 0,
@@ -13408,7 +13408,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Herbivore"],
-    "Habitat": ["Fresh"],
+    "Habitat": ["Freshwater"],
     "Capabilities": {
       "Overland": 3,
       "Sky": 0,
@@ -13523,7 +13523,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Herbivore"],
-    "Habitat": ["Fresh"],
+    "Habitat": ["Freshwater"],
     "Capabilities": {
       "Overland": 4,
       "Sky": 0,
@@ -13635,7 +13635,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Herbivore"],
-    "Habitat": ["Fresh"],
+    "Habitat": ["Freshwater"],
     "Capabilities": {
       "Overland": 5,
       "Sky": 0,
@@ -15692,7 +15692,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Nullivore"],
-    "Habitat": ["Fresh"],
+    "Habitat": ["Freshwater"],
     "Capabilities": {
       "Overland": 1,
       "Sky": 0,
@@ -15776,7 +15776,7 @@ export const insurgenceData = [{
       "Average Hatch Rate": -1
     },
     "Diet": ["Nullivore"],
-    "Habitat": ["Fresh"],
+    "Habitat": ["Freshwater"],
     "Capabilities": {
       "Overland": 5,
       "Sky": 0,
@@ -32501,7 +32501,7 @@ export const sageData = [
     "Breeding Information": {
       "Gender Ratio": 50,
       "Egg Group": [
-        "Field/"
+        "Field"
       ],
       "Average Hatch Rate": 7
     },
@@ -32740,7 +32740,7 @@ export const sageData = [
     "Breeding Information": {
       "Gender Ratio": 50,
       "Egg Group": [
-        "Field/"
+        "Field"
       ],
       "Average Hatch Rate": -1
     },
@@ -41063,7 +41063,7 @@ export const sageData = [
     ],
     "Habitat": [
       "Grassland",
-      "Wetland"
+      "Wetlands"
     ],
     "Capabilities": {
       "Overland": 5,
@@ -41076,7 +41076,7 @@ export const sageData = [
       "Power": 4,
       "Weight Class": "2",
       "Naturewalk": [
-        "Wetland"
+        "Wetlands"
       ],
       "Other": [
         "(Wetland)",
@@ -41310,7 +41310,7 @@ export const sageData = [
     ],
     "Habitat": [
       "Grassland",
-      "Wetland"
+      "Wetlands"
     ],
     "Capabilities": {
       "Overland": 7,
@@ -41323,7 +41323,7 @@ export const sageData = [
       "Power": 6,
       "Weight Class": "4",
       "Naturewalk": [
-        "Wetland"
+        "Wetlands"
       ],
       "Other": [
         "(Wetland)"
@@ -56989,7 +56989,7 @@ export const sageData = [
       "Power": 4,
       "Weight Class": "2",
       "Naturewalk": [
-        "Wetland"
+        "Wetlands"
       ],
       "Other": [
         "Darkvision",
@@ -57219,7 +57219,7 @@ export const sageData = [
       "Power": 6,
       "Weight Class": "3",
       "Naturewalk": [
-        "Wetland"
+        "Wetlands"
       ],
       "Other": [
         "Darkvision",
@@ -83294,7 +83294,7 @@ export const uraniumData = [
       "Carnivore"
     ],
     "Habitat": [
-      "Wetland"
+      "Wetlands"
     ],
     "Capabilities": {
       "Overland": 6,
@@ -83307,7 +83307,7 @@ export const uraniumData = [
       "Power": 5,
       "Weight Class": "4",
       "Naturewalk": [
-        "Wetland"
+        "Wetlands"
       ],
       "Other": [
         "Darkvision",
@@ -83491,7 +83491,7 @@ export const uraniumData = [
       "Omnivore"
     ],
     "Habitat": [
-      "Wetland"
+      "Wetlands"
     ],
     "Capabilities": {
       "Overland": 7,
@@ -83504,7 +83504,7 @@ export const uraniumData = [
       "Power": 7,
       "Weight Class": "4",
       "Naturewalk": [
-        "Wetland"
+        "Wetlands"
       ],
       "Other": [
         "Darkvision",
@@ -106454,7 +106454,7 @@ export const uraniumData = [
       "Weight Class": "4",
       "Naturewalk": [
         "Forest",
-        "Wetland"
+        "Wetlands"
       ],
       "Other": [
         "Underdog"
@@ -106678,7 +106678,7 @@ export const uraniumData = [
       "Weight Class": "5",
       "Naturewalk": [
         "Forest",
-        "Wetland"
+        "Wetlands"
       ],
       "Other": [
         "Wetland)"

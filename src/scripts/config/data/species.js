@@ -122739,7 +122739,7 @@ export const pokemonData = [
             "Power":3,
             "Weight Class":"2",
             "Naturewalk":[
-                "Wetland"
+                "Wetlands"
             ],
             "Other":[
                 "Underdog"
@@ -122992,7 +122992,7 @@ export const pokemonData = [
             "Power":8,
             "Weight Class":"3",
             "Naturewalk":[
-                "Wetland"
+                "Wetlands"
             ],
             "Other":[
             ]
@@ -212984,7 +212984,7 @@ export const pokemonData = [
         ],
         "Habitat":[
             "Mountain",
-            "Wetland"
+            "Wetlands"
         ],
         "Capabilities":{
             "Overland":9,
@@ -212997,7 +212997,7 @@ export const pokemonData = [
             "Power":6,
             "Weight Class":"4",
             "Naturewalk":[
-                "Wetland"
+                "Wetlands"
             ],
             "Other":[
                 "Darkvision",
@@ -216172,7 +216172,7 @@ export const pokemonData = [
         "Habitat":[
             "Cave",
             "Mountain",
-            "Wetland"
+            "Wetlands"
         ],
         "Capabilities":{
             "Overland":7,
@@ -216185,7 +216185,7 @@ export const pokemonData = [
             "Power":8,
             "Weight Class":"6",
             "Naturewalk":[
-                "Wetland"
+                "Wetlands"
             ],
             "Other":[
                 "Groundshaper",
