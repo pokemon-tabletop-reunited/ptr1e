@@ -9,11 +9,14 @@
         "key": "ActiveEffectLike",
         "mode": "add",
         "path": "system.modifiers.baseStats.spdef.mod",
-        "value": 1
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
       }
     ],
     "enabled": true,
-    "slug": null,
+    "slug": "small-prophecies",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -24,7 +27,8 @@
     },
     "stackSlugs": false,
     "keywords": [
-      "+Special Defense"
+      "+Special Defense",
+      "Legacy"
     ],
     "prerequisites": [
       "Divination",
@@ -46,15 +50,16 @@
   },
   "flags": {
     "ptu": {
-      "prereqBackup": "Divination, Adept Perception"
+      "prereqBackup": "Divination, Adept Perception",
+      "showInTokenPanel": true
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.1",
+    "coreVersion": "13.351",
     "createdTime": 1683368084413,
-    "modifiedTime": 1707818613949,
+    "modifiedTime": 1776088721238,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null

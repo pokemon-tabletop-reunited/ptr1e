@@ -9,11 +9,14 @@
         "key": "ActiveEffectLike",
         "mode": "add",
         "path": "system.modifiers.baseStats.hp.mod",
-        "value": 1
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
       }
     ],
     "enabled": true,
-    "slug": null,
+    "slug": "divine-wind",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -24,7 +27,8 @@
     },
     "stackSlugs": false,
     "keywords": [
-      "+HP"
+      "+HP",
+      "Legacy"
     ],
     "prerequisites": [
       "Sage's Benediction",
@@ -46,15 +50,16 @@
   },
   "flags": {
     "ptu": {
-      "prereqBackup": "Sage's Benediction, Master Occult Education"
+      "prereqBackup": "Sage's Benediction, Master Occult Education",
+      "showInTokenPanel": true
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.1",
+    "coreVersion": "13.351",
     "createdTime": 1683368081775,
-    "modifiedTime": 1707818613949,
+    "modifiedTime": 1776088797567,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null

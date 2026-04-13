@@ -9,11 +9,14 @@
         "key": "ActiveEffectLike",
         "mode": "add",
         "path": "system.modifiers.baseStats.spatk.mod",
-        "value": 1
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
       }
     ],
     "enabled": true,
-    "slug": null,
+    "slug": "cacophony",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -24,7 +27,8 @@
     },
     "stackSlugs": false,
     "keywords": [
-      "+Special Attack"
+      "+Special Attack",
+      "Legacy"
     ],
     "prerequisites": [
       "Mt. Moon Blues",
@@ -46,15 +50,16 @@
   },
   "flags": {
     "ptu": {
-      "prereqBackup": "Mt. Moon Blues, Adept Charm or Focus"
+      "prereqBackup": "Mt. Moon Blues, Adept Charm or Focus",
+      "showInTokenPanel": true
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.1",
+    "coreVersion": "13.351",
     "createdTime": 1683368084381,
-    "modifiedTime": 1707818613949,
+    "modifiedTime": 1776088672120,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null

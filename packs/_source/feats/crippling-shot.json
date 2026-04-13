@@ -9,11 +9,14 @@
         "key": "ActiveEffectLike",
         "mode": "add",
         "path": "system.modifiers.baseStats.atk.mod",
-        "value": 1
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
       }
     ],
     "enabled": true,
-    "slug": null,
+    "slug": "crippling-shot",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -25,7 +28,8 @@
     "stackSlugs": false,
     "keywords": [
       "+Attack",
-      "Weapon"
+      "Weapon",
+      "Legacy"
     ],
     "prerequisites": [
       "Marksman",
@@ -47,15 +51,16 @@
   },
   "flags": {
     "ptu": {
-      "prereqBackup": "Marksman, Expert Perception or Combat"
+      "prereqBackup": "Marksman, Expert Perception or Combat",
+      "showInTokenPanel": true
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.1",
+    "coreVersion": "13.351",
     "createdTime": 1683368079319,
-    "modifiedTime": 1707818613949,
+    "modifiedTime": 1776088664948,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null

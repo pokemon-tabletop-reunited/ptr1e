@@ -9,11 +9,14 @@
         "key": "ActiveEffectLike",
         "mode": "add",
         "path": "system.modifiers.baseStats.spd.mod",
-        "value": 1
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
       }
     ],
     "enabled": true,
-    "slug": null,
+    "slug": "overrun",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -24,7 +27,8 @@
     },
     "stackSlugs": false,
     "keywords": [
-      "+Speed"
+      "+Speed",
+      "Legacy"
     ],
     "prerequisites": [
       "Conqueror's March",
@@ -46,15 +50,16 @@
   },
   "flags": {
     "ptu": {
-      "prereqBackup": "Conqueror's March, Expert Acrobatics or Athletics"
+      "prereqBackup": "Conqueror's March, Expert Acrobatics or Athletics",
+      "showInTokenPanel": true
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.1",
+    "coreVersion": "13.351",
     "createdTime": 1683368078822,
-    "modifiedTime": 1707818613949,
+    "modifiedTime": 1776088753736,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null

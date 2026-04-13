@@ -6,7 +6,7 @@
     "snippet": "",
     "rules": [],
     "enabled": true,
-    "slug": null,
+    "slug": "true-steel",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -16,7 +16,9 @@
       "value": "PTR Compendiums"
     },
     "stackSlugs": false,
-    "keywords": [],
+    "keywords": [
+      "Legacy"
+    ],
     "prerequisites": [
       "Polished Shine",
       "Type-Linked Skill at Master"
@@ -37,15 +39,16 @@
   },
   "flags": {
     "ptu": {
-      "prereqBackup": "Polished Shine, Type-Linked Skill at Master"
+      "prereqBackup": "Polished Shine, Type-Linked Skill at Master",
+      "showInTokenPanel": true
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.1",
+    "coreVersion": "13.351",
     "createdTime": 1683368079161,
-    "modifiedTime": 1707818613949,
+    "modifiedTime": 1776089702692,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null

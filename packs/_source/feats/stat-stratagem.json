@@ -6,7 +6,7 @@
     "snippet": "",
     "rules": [],
     "enabled": true,
-    "slug": null,
+    "slug": "stat-stratagem",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -19,7 +19,8 @@
     "keywords": [
       "Branch",
       "Orders",
-      "Stratagem"
+      "Stratagem",
+      "Legacy"
     ],
     "prerequisites": [
       "Stat Link",
@@ -42,15 +43,16 @@
   },
   "flags": {
     "ptu": {
-      "prereqBackup": "Stat Link, Stat Training, Master Focus or Command"
+      "prereqBackup": "Stat Link, Stat Training, Master Focus or Command",
+      "showInTokenPanel": true
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.1",
+    "coreVersion": "13.351",
     "createdTime": 1683368078877,
-    "modifiedTime": 1707818613949,
+    "modifiedTime": 1776088875589,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null

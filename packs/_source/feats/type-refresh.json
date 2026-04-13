@@ -6,7 +6,7 @@
     "snippet": "",
     "rules": [],
     "enabled": true,
-    "slug": null,
+    "slug": "type-refresh",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -18,7 +18,8 @@
     "stackSlugs": false,
     "keywords": [
       "Branch",
-      "Orders"
+      "Orders",
+      "Legacy"
     ],
     "prerequisites": [
       "Type Ace"
@@ -39,15 +40,16 @@
   },
   "flags": {
     "ptu": {
-      "prereqBackup": "Type Ace"
+      "prereqBackup": "Type Ace",
+      "showInTokenPanel": true
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.1",
+    "coreVersion": "13.351",
     "createdTime": 1683368078959,
-    "modifiedTime": 1707818613949,
+    "modifiedTime": 1776088942157,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null

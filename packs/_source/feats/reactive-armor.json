@@ -9,11 +9,14 @@
         "key": "ActiveEffectLike",
         "mode": "add",
         "path": "system.modifiers.baseStats.def.mod",
-        "value": 1
+        "value": 1,
+        "predicate": [],
+        "phase": "applyAEs",
+        "priority": null
       }
     ],
     "enabled": true,
-    "slug": null,
+    "slug": "reactive-armor",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -24,7 +27,8 @@
     },
     "stackSlugs": false,
     "keywords": [
-      "+Defense"
+      "+Defense",
+      "Legacy"
     ],
     "prerequisites": [
       "Steelheart",
@@ -46,15 +50,16 @@
   },
   "flags": {
     "ptu": {
-      "prereqBackup": "Steelheart, Adept Athletics or Focus"
+      "prereqBackup": "Steelheart, Adept Athletics or Focus",
+      "showInTokenPanel": true
     }
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.1",
+    "coreVersion": "13.351",
     "createdTime": 1683368078814,
-    "modifiedTime": 1707818613949,
+    "modifiedTime": 1776088890521,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null
