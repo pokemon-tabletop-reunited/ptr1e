@@ -9,7 +9,7 @@ export const TrainerPokemonSync = {
           
           pokemonWithTrainers.forEach(pokemon => {
               try {
-                  pokemon.prepareData();
+                  pokemon.reset();
               } catch (error) {
                   console.error(`PTU | Error initializing level caps for ${pokemon.name}:`, error);
               }
