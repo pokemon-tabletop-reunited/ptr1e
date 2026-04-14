@@ -6,7 +6,7 @@ import { registerSheets } from "../sheets.js"
 import { registerTemplates } from "../templates.js"
 import { insurgenceData, sageData, uraniumData } from "../config/data/fangame-species-data.js"
 import { measureDistances } from "../../module/canvas/helpers.js"
-import { registerGithubSync } from "../../module/apps/github-sync/index.js"
+import { registerGithubSync, ptr1eGH } from "../../module/apps/github-sync/index.js"
 import TokenRulerPTU from '../../module/canvas/ruler.js'
 
 export const Init = {
@@ -90,6 +90,7 @@ export const Init = {
                     feat:        "ptu.feats",
                     edge:        "ptu.edges",
                     effect:      "ptu.effects",
+                    condition:   "ptu.effects",
                     species:     "ptu.species",
                     item:        "ptu.items",
                     capability:  "ptu.capabilities",
@@ -99,6 +100,7 @@ export const Init = {
                 },
                 // Reuse PTU's existing devMode setting rather than registering a new one
                 devModeSettingKey: "devMode",
+                getReferencedDocuments: ptr1eGH.getReferencedDocuments,
             });
 
             if(game.settings.get("ptu", "devMode")) CONFIG.ui.items.prototype._onDragStart = _onDragStart;

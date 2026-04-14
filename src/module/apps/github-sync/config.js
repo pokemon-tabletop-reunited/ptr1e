@@ -50,10 +50,23 @@
  *   Called after `fu.mergeObject(packItem, diff)`. Apply any system-specific
  *   post-merge cleanup here (e.g. merging action arrays, stripping `uuid`
  *   fields). Return `null` to abort the commit. Defaults to identity.
- * @property {(data: object) => boolean} [validateDocument]
- *   Custom document validation before sending to the server. Return `false` to
- *   abort the commit (show your own error message inside the callback).
- *   Defaults to `() => true`.
+ * @property {(data: object) => { valid: boolean, errors: string[], warnings: string[] }} [validateDocument]
+ *   Custom document validation before sending to the server. Return
+ *   `{ valid: false, errors: [...] }` to abort the commit; include `warnings`
+ *   for non-blocking feedback shown in the commit sheet UI.
+ *   Defaults to `() => ({ valid: true, errors: [], warnings: [] })`.
+ * @property {(data: object) => string[]} [getReferencedDocuments]
+ *   Return an array of Foundry UUIDs for every document this item directly
+ *   references (e.g. prerequisite abilities, required moves). The commit
+ *   pipeline will resolve, validate, and auto-stage all reachable dependencies
+ *   in the same commit. Cycles are handled automatically via a visited set.
+ *   Defaults to `() => []`.
+ * @property {(data: object) => object} [transform]
+ *   Applied to the final merged document data just before it is staged,
+ *   after `mergeCleanup` and validation. Use this to fix minor data issues
+ *   that are not worth a full diff (e.g. stripping ForgeVTT / Sqyre image
+ *   URLs, normalising paths). Must return the (possibly modified) data object.
+ *   Defaults to identity `(data) => data`.
  * @property {(name: string) => string} [slugify]
  *   Convert an item name to a slug for pack-index fuzzy matching. Defaults to
  *   a simple lowercase-hyphenate implementation; override with your system's
@@ -83,7 +96,9 @@ function createGithubSyncConfig(options) {
         blockedItems: () => false,
         diffCleanup: (diff) => diff,
         mergeCleanup: (data) => data,
-        validateDocument: () => true,
+        validateDocument: () => ({ valid: true, errors: [], warnings: [] }),
+        getReferencedDocuments: () => [],
+        transform: (data) => data,
         slugify: (name) =>
             name
                 .toLowerCase()

@@ -32,6 +32,17 @@
       </ul>
     </fieldset>
 
+    {{#if warnings.length}}
+    <fieldset class="pb-2">
+      <legend>Warnings</legend>
+      <ul class="gh-warnings">
+        {{#each warnings}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </fieldset>
+    {{/if}}
+
     <fieldset>
       <legend>Commit Details</legend>
       <div class="form-group">

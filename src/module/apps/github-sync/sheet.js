@@ -102,6 +102,7 @@ class GithubSyncSheet extends HandlebarsApplicationMixin(ApplicationV2) {
             ...context,
             status,
             ongoing: this.ongoing,
+            warnings: GithubSyncManager.lastWarnings,
         };
     }
 }

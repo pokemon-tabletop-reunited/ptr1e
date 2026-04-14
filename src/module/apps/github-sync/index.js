@@ -42,6 +42,7 @@
 import { createGithubSyncConfig } from "./config.js";
 import { GithubSyncManager } from "./manager.js";
 import { GithubSyncSheet } from "./sheet.js";
+import * as ptr1eGH from "./ptr1e.js";
 
 /**
  * Configure and register the GithubSync module with Foundry.
@@ -103,4 +104,4 @@ function registerGithubSync(options) {
     return { manager: GithubSyncManager, sheet: GithubSyncSheet };
 }
 
-export { registerGithubSync, GithubSyncManager, GithubSyncSheet, createGithubSyncConfig };
+export { registerGithubSync, GithubSyncManager, GithubSyncSheet, createGithubSyncConfig, ptr1eGH };
