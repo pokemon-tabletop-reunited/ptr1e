@@ -224,6 +224,7 @@ class GithubSyncManager {
      *
      * @param {Item} document  The live Foundry Item to commit
      */
+
     static async commitItemToGithub(document) {
         const { blockedItems } = GithubSyncManager.config;
 
@@ -237,7 +238,9 @@ class GithubSyncManager {
         // ── Resolve transitive dependencies ───────────────────────────────────
         const { committable, invalid } = await GithubSyncManager.#collectReferencedItems(
             document,
-            new Set([document.uuid])
+            new Set([document.uuid]),
+            document.name,
+            document.uuid
         );
 
         // Verify the primary item isn't blocked
@@ -288,8 +291,8 @@ class GithubSyncManager {
         // ── Aggregate validation results ──────────────────────────────────────
         const allErrors = [
             ...primaryBlob.errors,
-            ...invalid.map((uuid) =>
-                `Referenced document could not be resolved to a supported compendium: ${uuid}`
+            ...invalid.map(({uuid, originName, originUuid}) =>
+                `Referenced document could not be resolved to a supported compendium: ${uuid} (referenced by "${originName}" [${originUuid}])`
             ),
         ];
         const allWarnings = [...primaryBlob.warnings];
@@ -371,7 +374,9 @@ class GithubSyncManager {
 
         const { committable, invalid } = await GithubSyncManager.#collectReferencedItems(
             document,
-            new Set([document.uuid])
+            new Set([document.uuid]),
+            document.name,
+            document.uuid
         );
 
         let primaryBlob;
@@ -387,8 +392,8 @@ class GithubSyncManager {
 
         const allErrors = [
             ...(primaryBlob?.errors ?? ["Preparation failed."]),
-            ...invalid.map((uuid) =>
-                `Referenced document could not be resolved to a supported compendium: ${uuid}`
+            ...invalid.map(({uuid, originName, originUuid}) =>
+                `Referenced document could not be resolved to a supported compendium: ${uuid} (referenced by "${originName}" [${originUuid}])`
             ),
         ];
         const allWarnings = [...(primaryBlob?.warnings ?? [])];
@@ -421,7 +426,20 @@ class GithubSyncManager {
      *   `committable` — resolved items that can be committed.
      *   `invalid`     — UUIDs that could not be resolved or are not in a known pack.
      */
-    static async #collectReferencedItems(document, visited) {
+    /**
+     * Recursively collect all transitive documents referenced by `document`.
+     * Uses `config.getReferencedDocuments` to get UUIDs, resolves each with
+     * `fromUuid`, and recurses into committable items.
+     *
+     * @param {Item} document   The item whose references to collect
+     * @param {Set<string>} visited  UUID strings already visited (cycle guard)
+     * @param {string} originName    Name of the referencing item (for error context)
+     * @param {string} originUuid    UUID of the referencing item (for error context)
+     * @returns {Promise<{ committable: Item[], invalid: Array<{uuid: string, originName: string, originUuid: string}> }>}
+     *   `committable` — resolved items that can be committed.
+     *   `invalid`     — objects with uuid, originName, originUuid for missing/invalid references.
+     */
+    static async #collectReferencedItems(document, visited, originName, originUuid) {
         const { getReferencedDocuments } = GithubSyncManager.config;
         const committable = [];
         const invalid = [];
@@ -433,14 +451,19 @@ class GithubSyncManager {
 
             const resolved = await fromUuid(uuid);
             if (!resolved || !GithubSyncManager.isCommittableItem(resolved)) {
-                invalid.push(uuid);
+                invalid.push({ uuid, originName, originUuid });
                 continue;
             }
 
             committable.push(resolved);
 
             // Recurse into this dependency's own references
-            const nested = await GithubSyncManager.#collectReferencedItems(resolved, visited);
+            const nested = await GithubSyncManager.#collectReferencedItems(
+                resolved,
+                visited,
+                resolved.name,
+                resolved.uuid
+            );
             committable.push(...nested.committable);
             invalid.push(...nested.invalid);
         }
