@@ -265,6 +265,18 @@ export const PTUCONFIG = {
     documentClass: PTUTokenDocument,
     sheetClass: PTUTokenConfig
   },
+  tokenRulerColors: {
+    normal: 0x4CAF50,
+    double: 0xFFC107,
+    triple: 0xF44336
+  },
+  tokenMovementCapabilityMap: {
+    overland: "walk",
+    swim: "swim",
+    sky: "fly",
+    levitate: "fly",
+    longJump: "jump"
+  },
   combat,
   combatant: {
     documentClass: PTUCombatant
