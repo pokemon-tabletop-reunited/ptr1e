@@ -264,6 +264,24 @@ class PTUTokenDocument extends TokenDocument {
             this.flags.ptu.manuallyResized = true;
         }
     }
+
+    /** @override */
+    _inferMovementAction() {
+        const movement = this.actor?.system?.capabilities;
+        if (!movement) return super._inferMovementAction();
+
+        const allOptions = [
+            "overland",
+            "sky",
+            "levitate",
+        ]
+        // find the fastest movement type that can perform the current action
+        const action = CONFIG.PTU.tokenMovementCapabilityMap[allOptions.reduce((fastest, key) => {
+          if ((movement[key] ?? 0) > (movement[fastest] ?? 0)) return key;
+          return fastest;
+        }, "overland")];
+        return action;
+    }
 }
 
 export { PTUTokenDocument }
