@@ -6,6 +6,7 @@
  */
 export function getReferencedDocuments(data) {
   const referenced = new Set();
+  if (data?.system?.referenceEffect) referenced.add(data.system.referenceEffect);
   for (const rule of data?.system?.rules ?? []) {
     switch (rule?.key) {
       case "ApplyEffect":
@@ -25,14 +26,16 @@ export function getReferencedDocuments(data) {
   return Array.from(referenced);
 };
 
+const ForgeRE = /^https:\/\/assets\.forge-vtt\.com\/.*\/systems\/ptu\//i;
+
 /**
  * Apply any system-specific transformations to the merged document data before staging. Used to fix minor data issues that are not worth a full diff, such
  * as stripping ForgeVTT/Sqyre image URLs or normalising paths.
  * @param {*} data 
  */
 export function transform(data) {
-  if (data.img.matches(/https:\/\/assets\.forge-vtt\.com\/.*\/systems\/ptu\//)) {
-    data.img = data.img.replace(/https:\/\/assets\.forge-vtt\.com\/.*\/systems\/ptu\//, "/systems/ptu/");
+  if (ForgeRE.test(data.img)) {
+    data.img = data.img.replace(ForgeRE, "/systems/ptu/");
   }
   return data;
 }
