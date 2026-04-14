@@ -11,7 +11,8 @@ class PTUItemSheet extends foundry.appv1.sheets.ItemSheet {
             width: 650,
             height: 510,
             tabs: [{ navSelector: ".tabs", contentSelector: ".sheet-body", initial: "overview" }],
-            dragDrop: [{ dragSelector: null, dropSelector: null }]
+            dragDrop: [{ dragSelector: null, dropSelector: null }],
+            scrollY: [".tab.active", ".tab.active .rules-list"]
         });
     }
 
