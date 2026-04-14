@@ -267,7 +267,6 @@ class PTUTokenDocument extends TokenDocument {
 
     /** @override */
     _inferMovementAction() {
-        console.log("Inferring movement action for token:", this);
         const movement = this.actor?.system?.capabilities;
         if (!movement) return super._inferMovementAction();
 
@@ -281,7 +280,6 @@ class PTUTokenDocument extends TokenDocument {
           if ((movement[key] ?? 0) > (movement[fastest] ?? 0)) return key;
           return fastest;
         }, "overland")];
-        console.log("Inferred movement action:", action);
         return action;
     }
 }
