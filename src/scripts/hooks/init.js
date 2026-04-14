@@ -6,6 +6,7 @@ import { registerSheets } from "../sheets.js"
 import { registerTemplates } from "../templates.js"
 import { insurgenceData, sageData, uraniumData } from "../config/data/fangame-species-data.js"
 import { measureDistances } from "../../module/canvas/helpers.js"
+import TokenRulerPTU from '../../module/canvas/ruler.js'
 
 
 export const Init = {
@@ -47,6 +48,9 @@ export const Init = {
             // Define Custom Token Object Class
             CONFIG.Token.objectClass = PTUCONFIG.Token.objectClass;
             CONFIG.Token.documentClass = PTUCONFIG.Token.documentClass;
+
+            // Use a custom TokenRuler for color-coded movement
+            CONFIG.Token.rulerClass = TokenRulerPTU;
 
             // Define Custom Roll classes
             CONFIG.Dice.rolls ??= []
