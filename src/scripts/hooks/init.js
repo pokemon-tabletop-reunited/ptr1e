@@ -101,6 +101,7 @@ export const Init = {
                 // Reuse PTU's existing devMode setting rather than registering a new one
                 devModeSettingKey: "devMode",
                 getReferencedDocuments: ptr1eGH.getReferencedDocuments,
+                transform: ptr1eGH.transform,
             });
 
             if(game.settings.get("ptu", "devMode")) CONFIG.ui.items.prototype._onDragStart = _onDragStart;
