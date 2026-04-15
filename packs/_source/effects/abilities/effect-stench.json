@@ -10,7 +10,9 @@
     "rules": [
       {
         "key": "FlatModifier",
-        "predicate": [],
+        "predicate": [
+          "condition:flinched"
+        ],
         "hideIfDisabled": false,
         "selectors": "attack-roll",
         "value": -2
@@ -55,11 +57,11 @@
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.2.6",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.6",
+    "coreVersion": "13.351",
     "createdTime": 1711907379147,
-    "modifiedTime": 1712500060601,
-    "lastModifiedBy": "ptubuilder000000",
+    "modifiedTime": 1776295219574,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW",
     "duplicateSource": null,
     "exportSource": {
       "worldId": "kanto-adventures",
@@ -67,11 +69,12 @@
       "coreVersion": "11.315",
       "systemId": "ptu",
       "systemVersion": "4.2.5"
-    }
+    },
+    "compendiumSource": null
   },
   "ownership": {
     "default": 0
   },
   "_id": "G3Dm3BBBe6vN0391",
-  "sort": 0
+  "sort": 400000
 }

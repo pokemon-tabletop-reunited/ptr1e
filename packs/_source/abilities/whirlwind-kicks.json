@@ -4,7 +4,7 @@
   "img": "/systems/ptu/static/css/images/icons/ability_icon.png",
   "system": {
     "origin": "",
-    "effect": "Connection - Triple Kick. When the user uses the Move “Rapid Spin”, it has a range of “Burst 1”. When the user uses the Move “Triple Kick”, one of the attacks made may be “Burst 1” instead of “Melee”. A given target may still only be hit once by a single use of Triple Kick, however.",
+    "effect": "Connection - Triple Kick. \nWhen the user uses the Move “Rapid Spin”, it has a range of “Burst 1”. @UUID[Compendium.ptu.moves.Item.RGT5L0tkI9I8l6eu]\nWhen the user uses the Move “Triple Kick”, one of the attacks made may be “Burst 1” instead of “Melee”. A given target may still only be hit once by a single use of Triple Kick, however. @UUID[Compendium.ptu.moves.Item.dVfouioNj802Rjhp]",
     "snippet": "",
     "rules": [
       {
@@ -12,6 +12,18 @@
         "predicate": [],
         "allowDuplicate": false,
         "uuid": "Compendium.ptu.moves.Item.87puwvWzfGqdOQVN"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.RGT5L0tkI9I8l6eu"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.moves.Item.dVfouioNj802Rjhp"
       }
     ],
     "enabled": true,
@@ -49,13 +61,14 @@
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.3.v12-beta.1",
+    "systemVersion": "4.4.3.6",
     "coreVersion": "13.351",
     "createdTime": 1692968394056,
-    "modifiedTime": 1748551242050,
-    "lastModifiedBy": "ptubuilder000000",
+    "modifiedTime": 1776297515411,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW",
     "duplicateSource": null,
-    "exportSource": null
+    "exportSource": null,
+    "compendiumSource": null
   },
   "_id": "2CyQqEmiFzAme0OZ",
   "sort": 0,

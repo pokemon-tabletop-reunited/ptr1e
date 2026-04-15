@@ -1,0 +1,102 @@
+{
+  "folder": "HTNFGIxy9zsCONjI",
+  "name": "Effect: Wishmaster",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "confidence",
+        "adjustName": true,
+        "choices": [
+          {
+            "label": "Attack",
+            "value": "atk"
+          },
+          {
+            "label": "Defense",
+            "value": "def"
+          },
+          {
+            "label": "Special Attack",
+            "value": "spatk"
+          },
+          {
+            "label": "Special Defense",
+            "value": "spdef"
+          },
+          {
+            "label": "Speed",
+            "value": "spd"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "predicate": [],
+        "mode": "add",
+        "path": "system.stats.{item|flags.ptu.rulesSelections.confidence}.stage.mod",
+        "phase": "applyAEs",
+        "value": 2,
+        "priority": null
+      }
+    ],
+    "enabled": true,
+    "slug": "effect-wishmaster",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": true,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ptu",
+    "systemVersion": "4.4.3.6",
+    "createdTime": 1776294652211,
+    "modifiedTime": 1776295219574,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
+  },
+  "ownership": {
+    "default": 0,
+    "izk1pNEkJuVFmrxW": 3
+  },
+  "_id": "CY7TLTaLBGE5lkAV",
+  "sort": 1100000
+}

@@ -17,6 +17,15 @@
         "hideIfDisabled": false,
         "selectors": "damage-roll",
         "value": 5
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "condition:rage"
+        ],
+        "hideIfDisabled": false,
+        "selectors": "save-check",
+        "value": -21
       }
     ],
     "enabled": true,
@@ -49,12 +58,13 @@
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.2.6",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.6",
+    "coreVersion": "13.351",
     "createdTime": 1692968394056,
-    "modifiedTime": 1712499384460,
-    "lastModifiedBy": "ptubuilder000000",
+    "modifiedTime": 1776294496204,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW",
     "duplicateSource": null,
-    "exportSource": null
+    "exportSource": null,
+    "compendiumSource": null
   }
 }
