@@ -5,9 +5,18 @@
   "folder": "lWQOqDm2AOGwGM16",
   "system": {
     "origin": "",
-    "effect": "Lower the Speed of all legal targets by 1 Combat Stage. If this lowers their Speed Combat Stage to -6, or if their Speed Combat Stage was already at -6, they are instead Stuck. *Grants Threaded",
+    "effect": "Lower the Speed of all legal targets by 2 Combat Stages. If this lowers their Speed Combat Stage to -6, or if their Speed Combat Stage was already at -6, they are instead Stuck. *Grants Threaded",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.eMPsvGnslThZfXly",
+        "range": "1",
+        "value": ""
+      }
+    ],
     "enabled": true,
     "slug": "string-shot",
     "schema": {
@@ -32,7 +41,7 @@
     "category": "Status",
     "damageBase": "--",
     "frequency": "At-Will",
-    "ac": 3,
+    "ac": "3",
     "range": "Cone 2",
     "contestType": "Smart - Excitement",
     "stab": false,
@@ -46,15 +55,20 @@
   "ownership": {
     "default": 0
   },
-  "flags": {},
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.6",
+    "coreVersion": "13.351",
     "createdTime": 1692963260348,
-    "modifiedTime": 1707761817661,
-    "lastModifiedBy": "ptubuilder000000",
+    "modifiedTime": 1776296386605,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW",
     "duplicateSource": null,
-    "exportSource": null
+    "exportSource": null,
+    "compendiumSource": null
   }
 }
