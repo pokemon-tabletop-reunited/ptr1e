@@ -17,6 +17,10 @@ class PackLoader {
         Item: {}
     };
     loadedSources = [];
+    loadedIndeces = {
+        Actor: {},
+        Item: {}
+    };
 
     constructor() {
         this.sourcesSettings = game.settings.get("ptu", "compendiumBrowserSources");
@@ -29,12 +33,14 @@ class PackLoader {
      */
     async *loadPacks(documentType, packs, indexFields) {
         this.loadedPacks[documentType] ??= {};
+        this.loadedIndeces[documentType] ??= {};
         const sources = this.#getSources();
 
         const progress = new Progress({ steps: packs.length });
         for (const packId of packs) {
             let data = this.loadedPacks[documentType][packId];
-            if (data) {
+            let indeces = this.loadedIndeces[documentType][packId] ?? new Set();
+            if (data && indeces.intersection(new Set(indexFields)).size === indexFields.length) {
                 const { pack } = data;
                 progress.advance(game.i18n.format("PTU.CompendiumBrowser.ProgressBar.LoadingPack", { pack: pack?.metadata.label ?? "" }));
             }
@@ -47,12 +53,15 @@ class PackLoader {
                 progress.advance(game.i18n.format("PTU.CompendiumBrowser.ProgressBar.LoadingPack", { pack: pack.metadata.label }));
                 if (pack.documentName !== documentType) continue;
 
-                const index = await pack.getIndex({ fields: indexFields });
+                const combinedIndeces = [...indeces.union(new Set(indexFields))];
+
+                const index = await pack.getIndex({ fields: combinedIndeces });
                 const firstResult = index.contents.at(0) ?? {};
                 if (firstResult.system) {
                     const filteredIndex = this.#createFilteredIndex(index, sources);
                     data = { pack, index: filteredIndex };
                     this.loadedPacks[documentType][packId] = data;
+                    this.loadedIndeces[documentType][packId] = new Set(combinedIndeces);
                 }
                 else {
                     ui.notifications.warn(game.i18n.format("PTU.CompendiumBrowser.PackNotLoaded", { pack: pack.collection }));
