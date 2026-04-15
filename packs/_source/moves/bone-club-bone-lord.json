@@ -1,0 +1,76 @@
+{
+  "name": "Bone Club (Bone Lord)",
+  "type": "move",
+  "img": "/systems/ptu/static/css/images/types2/GroundIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
+  "system": {
+    "origin": "",
+    "effect": "Bone Club Flinches the target on 18+.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "ApplyEffect",
+        "predicate": [],
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.xE6uIFWZoYXAZQxA",
+        "range": "18",
+        "value": "",
+        "affects": "target"
+      }
+    ],
+    "enabled": true,
+    "slug": "bone-club-bone-lord",
+    "schema": {
+      "version": 0.11,
+      "lastMigration": null
+    },
+    "referenceEffect": "Compendium.ptu.effects.Item.Sshi0USmZJDgzrTY",
+    "source": {
+      "value": "PTR Compendiums"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Ground",
+    "category": "Physical",
+    "damageBase": "7",
+    "frequency": "At-Will",
+    "ac": "5",
+    "range": "Melee",
+    "contestType": "Tough - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "izk1pNEkJuVFmrxW": 3
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ptu",
+    "systemVersion": "4.4.3.6",
+    "createdTime": 1776282568865,
+    "modifiedTime": 1776282568865,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
+  },
+  "_id": "4KOLqCx2gqZ4PmL0",
+  "sort": 0
+}
