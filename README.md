@@ -7,7 +7,7 @@
 [![All Release Downloads](https://img.shields.io/github/downloads/dylanpiera/Foundry-Pokemon-Tabletop-United-System/total.svg)]()
 
 # PTR System
-The Pokemon Tabletop Reunited system for FoundryVTT is a continuiation of the Pokemon Tabletop United system, with balance changes, and new content, created with FoundryVTT in mind.
+The Pokemon Tabletop Reunited system for FoundryVTT is a continuation of the Pokemon Tabletop United system, with balance changes, and new content, created with FoundryVTT in mind.
 
 Feel free to open an issue or join our [Discord Server](https://discord.gg/ptrfvtt) for any questions & feedback.
 
