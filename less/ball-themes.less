@@ -1,0 +1,441 @@
+// main: main.less
+
+.ball-themes {
+
+
+  &.element{
+    &.band {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 0;
+      clip-path: polygon(0 0, 52% 0, 22% 100%, 0% 100%);
+      transform: translateY(0%) translateX(2%);
+    }
+    &.background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      clip-path: polygon(0 0, 52% 0, 22% 100%, 0% 100%);
+    }
+    &.light-color {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      clip-path: polygon(0 0, 44% 0, 14% 100%, 0% 100%);
+    }
+    &.gradient {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 0;
+      clip-path: polygon(100% 0, 45% 0, 15% 100%, 100% 100%);
+    }
+  }
+
+  --ball-color-bkg: #c42835;
+  --ball-gradient: linear-gradient(45deg, #ecdbeb, #dffffe);
+  --ball-color-light: #e33242;
+  --ball-color-band: #222224;
+  --ball-color-highlight: #ff6a77;
+  --ball-color-item: #222224;
+  --ball-color-item-hover: #ff6a77;
+  --ball-color-item-active: #ff6a77;
+
+  &.background {
+    background: var(--ball-color-bkg) !important;
+  }
+  &.gradient {
+    background: var(--ball-gradient) !important;
+  }
+  &.light-color {
+    background: var(--ball-color-light) !important;
+  }
+  &.band {
+    background: var(--ball-color-band) !important;
+  }
+  &.highlight {
+    background: var(--ball-color-highlight) !important;
+  }
+  &.item {
+    color: var(--ball-color-item) !important;
+    &:hover {
+      text-shadow: unset;
+      text-shadow: 0 0 8px var(--ball-color-item-hover) !important;
+    }
+    &.active {
+      text-shadow: unset;
+      background: var(--ball-color-item-active) !important;
+    }
+  }
+
+  // specific ball themes
+  &.default{
+    --ball-color-bkg: #c42835;
+    --ball-gradient: linear-gradient(45deg, #ecdbeb, #dffffe);
+    --ball-color-light: #e33242;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #ff6a77;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #ff6a77;
+    --ball-color-item-active: #ff6a77;
+  }
+  &.air {
+    --ball-color-bkg: #44899f;
+    --ball-gradient: linear-gradient(45deg, #f1ffff, #dffffe);
+    --ball-color-light: #6eb6cb;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #44899f;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #44879e;
+    --ball-color-item-active: #44879e;
+  }
+  &.great {
+    --ball-color-bkg: #0040a1;
+    --ball-gradient: linear-gradient(45deg, #ecdbeb, #dffffe);
+    --ball-color-light: #0175c9;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #e2444c;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #0175c9;
+    --ball-color-item-active: #b03023;
+  }
+  &.ultra {
+    --ball-color-bkg: #333437;
+    --ball-gradient: linear-gradient(45deg, #ecdbeb, #dffffe);
+    --ball-color-light: #424447;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #c69835;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #c69835;
+    --ball-color-item-active: #c69835a1;
+  }
+  &.master {
+    --ball-color-bkg: #37195e;
+    --ball-gradient: linear-gradient(45deg, #ecdbeb, #dffffe);
+    --ball-color-light: #46256d;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #a67ed9;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #a67ed9;
+    --ball-color-item-active: #6a3aa1;
+  }
+  &.premier {
+    --ball-color-bkg: #fff;
+    --ball-gradient: linear-gradient(45deg, #ffefef, #fffafa, #ffefef);
+    --ball-color-light: #fdfdfd;
+    --ball-color-band: #c42835;
+    --ball-color-highlight: #c42835;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #ae574d;
+    --ball-color-item-active: #c42835;
+  }
+  &.cherish {
+    --ball-color-bkg: #f37b73;
+    --ball-gradient: linear-gradient(45deg, #f37b73, #ffa698, #fdd2cb);
+    --ball-color-light: #f37b73;
+    --ball-color-band: #ff9d9d;
+    --ball-color-highlight: #f37b73;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #f37b73;
+    --ball-color-item-active: #f37b73;
+  }
+  &.dive {
+    --ball-color-bkg: #6499c3;
+    --ball-gradient: linear-gradient(45deg, #6499c3, #7fcaef, #a5d7f0);
+    --ball-color-light: #7fcaef;
+    --ball-color-band: #fffbf6;
+    --ball-color-highlight: #fffbf6;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #7fcaef;
+    --ball-color-item-active: #7fcaef;
+  }
+  &.dusk {
+    --ball-color-bkg: #524746;
+    --ball-gradient: linear-gradient( 45deg, #6b5f5c, #443a39, #4d4240, #8b7b78 );
+    --ball-color-light: #635755;
+    --ball-color-band: #ed6e19;
+    --ball-color-highlight: #35a03d;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #35a03d;
+    --ball-color-item-active: #35a03d;
+  }
+  &.earth {
+    --ball-color-bkg: #676f24;
+    --ball-gradient: linear-gradient(45deg, #e7eccf, #dffffe);
+    --ball-color-light: #788b20;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #788b20;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #788b20;
+    --ball-color-item-active: #788b20;
+  }
+  &.fabulous {
+    --ball-color-bkg: #9642b8;
+    --ball-gradient: linear-gradient(45deg, #ac5df3, #dec3ff, #f8f1ff);
+    --ball-color-light: #9749c9;
+    --ball-color-band: #8db3ff;
+    --ball-color-highlight: #dec3ff;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #d6b4ff;
+    --ball-color-item-active: #d6b4ff;
+  }
+  &.fast {
+    --ball-color-bkg: #c56121;
+    --ball-gradient: linear-gradient(45deg, #f5d5bd, #ffe9b3);
+    --ball-color-light: #ea8e49;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #f9c642;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #f9c642;
+    --ball-color-item-active: #f9c642;
+  }
+  &.friend {
+    --ball-color-bkg: #6a963e;
+    --ball-gradient: linear-gradient(45deg, #a4cf79, #acd484, #d5ffaa);
+    --ball-color-light: #7fba43;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #db664c;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #db664c;
+    --ball-color-item-active: #db664c;
+  }
+  &.gossamer {
+    --ball-color-bkg: #e9cfe1;
+    --ball-gradient: linear-gradient(45deg, #f1dbe5, #fff9fd);
+    --ball-color-light: #f1dbe5;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #fdecf4;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #f3b7d4;
+    --ball-color-item-active: #f3b7d4;
+  }
+  &.hail {
+    --ball-color-bkg: #dbe0e0;
+    --ball-gradient: linear-gradient(45deg, #dbebec, #dffffe);
+    --ball-color-light: #c4f4ff;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #dbe0e0;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #c4f4ff;
+    --ball-color-item-active: #c4f4ff;
+  }
+  &.heal {
+    --ball-color-bkg: #d63a8d;
+    --ball-gradient: linear-gradient(45deg, #fcc3a6, #fff2cd, #fff7e2);
+    --ball-color-light: #e8529b;
+    --ball-color-band: #7c97ce;
+    --ball-color-highlight: #fdc89d;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #fff4dc;
+    --ball-color-item-active: #fff4dc;
+  }
+  &.heavy {
+    --ball-color-bkg: #797c86;
+    --ball-gradient: linear-gradient(45deg, #dbebec, #dffffe);
+    --ball-color-light: #9b9fa4;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #5b7ab9;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #5b7ab9;
+    --ball-color-item-active: #5b7ab9;
+  }
+  &.park {
+    --ball-color-bkg: #da9c22;
+    --ball-gradient: linear-gradient(45deg, #f7e4a2, #fffcee);
+    --ball-color-light: #f5d152;
+    --ball-color-band: #2f6db7;
+    --ball-color-highlight: #f5d152;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #f5d152;
+    --ball-color-item-active: #f5d152;
+  }
+  &.level {
+    --ball-color-bkg: #ecb90d;
+    --ball-gradient: linear-gradient(45deg, #fff4c4, #fff8e6);
+    --ball-color-light: #303332;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #e65340;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #e65340;
+    --ball-color-item-active: #e65340;
+  }
+  &.love {
+    --ball-color-bkg: #aa5286;
+    --ball-gradient: linear-gradient(45deg, #ecdbeb, #fff6fd);
+    --ball-color-light: #c580a8;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #fcbbd6;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #fcbbd6;
+    --ball-color-item-active: #fcbbd6;
+  }
+  &.lure {
+    --ball-color-bkg: #269eb0;
+    --ball-gradient: linear-gradient(45deg, #ecdbeb, #dffffe);
+    --ball-color-light: #50b2c1;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #cc6674;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #f6af50;
+    --ball-color-item-active: #f6af50;
+  }
+  &.luxury {
+    --ball-color-bkg: #404b4e;
+    --ball-gradient: linear-gradient(45deg, #404b4e, #646772);
+    --ball-color-light: #646772;
+    --ball-color-band: #d59340;
+    --ball-color-highlight: #d59340;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #d59340;
+    --ball-color-item-active: #d59340;
+  }
+  &.mold {
+    --ball-color-bkg: #3c0d09;
+    --ball-gradient: linear-gradient(45deg, #222224, #5a0401);
+    --ball-color-light: #3b3438;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #6b5862;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #6b5862;
+    --ball-color-item-active: #6b5862;
+  }
+  &.mold.highlight { input { color: #222224; } }
+  &.moon {
+    --ball-color-bkg: #2f322f;
+    --ball-gradient: linear-gradient(45deg, #dbeaec, #dffffe);
+    --ball-color-light: #465152;
+    --ball-color-band: #f5b851;
+    --ball-color-highlight: #29a5b9;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #29a5b9;
+    --ball-color-item-active: #29a5b9;
+  }
+  &.nest {
+    --ball-color-bkg: #e3e174;
+    --ball-gradient: linear-gradient(45deg, #dbecdb, #dffffe);
+    --ball-color-light: #82bc51;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #82bc51;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #82bc51;
+    --ball-color-item-active: #82bc51;
+  }
+  &.net {
+    --ball-color-bkg: #465152;
+    --ball-gradient: linear-gradient(45deg, #87a1aa, #dffffe);
+    --ball-color-light: #259da4;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #4e9bb4;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #377184;
+    --ball-color-item-active: #377184;
+  }
+  &.power {
+    --ball-color-bkg: #f23100;
+    --ball-gradient: linear-gradient(45deg, #ffc977, #ffe1bf);
+    --ball-color-light: #272c2a;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #ff9206;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #ff9206;
+    --ball-color-item-active: #ff9206;
+  }
+  &.quick {
+    --ball-color-bkg: #3984ca;
+    --ball-gradient: linear-gradient(45deg, #3984ca, #9ed2fa);
+    --ball-color-light: #73b4e5;
+    --ball-color-band: #281c12;
+    --ball-color-highlight: #efdb2a;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #bab44b;
+    --ball-color-item-active: #ecee2e;
+  }
+  &.rain {
+    --ball-color-bkg: #6291ff;
+    --ball-gradient: linear-gradient(45deg, #9db3e5, #dffffd);
+    --ball-color-light: #2959fb;
+    --ball-color-band: #1a1a18;
+    --ball-color-highlight: #6291ff;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #2a57ff;
+    --ball-color-item-active: #2959fb;
+  }
+  &.repeat {
+    --ball-color-bkg: #c42835;
+    --ball-gradient: linear-gradient(45deg, #ffefef, #fffef2);
+    --ball-color-light: #e33242;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #ffe853;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #ffe853;
+    --ball-color-item-active: #ffe853;
+  }
+  &.safari {
+    --ball-color-bkg: #766c2d;
+    --ball-gradient: linear-gradient(45deg, #d6d377, #fffff4);
+    --ball-color-light: #a8a446;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #368859;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #368859;
+    --ball-color-item-active: #368859;
+  }
+  &.sand {
+    --ball-color-bkg: #fcd255;
+    --ball-gradient: linear-gradient(45deg, #ffe7aa, #fdf9eb);
+    --ball-color-light: #d1ba75;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #fcd255;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #ffae00;
+    --ball-color-item-active: #ffae00;
+  }
+  &.solid {
+    --ball-color-bkg: #797d83;
+    --ball-gradient: linear-gradient(45deg, #ececee, #babfc5);
+    --ball-color-light: #9ca0a6;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #a58429;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #89773b;
+    --ball-color-item-active: #89773b;
+  }
+  &.sport {
+    --ball-color-bkg: #c42835;
+    --ball-gradient: linear-gradient(45deg, #ecdbeb, #dffffe);
+    --ball-color-light: #e33242;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #fffffa;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #ff6a77;
+    --ball-color-item-active: #ff6a77;
+  }
+  &.sun {
+    --ball-color-bkg: #fceaa4;
+    --ball-gradient: linear-gradient(45deg, #f1f0e8, #fcf7ea);
+    --ball-color-light: #fbb900;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #fceaa4;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #fbb900;
+    --ball-color-item-active: #fbb900;
+  }
+  &.timer {
+    --ball-color-bkg: #f48f36;
+    --ball-gradient: linear-gradient(45deg, #ffffff, #fffdfe);
+    --ball-color-light: #be5335;
+    --ball-color-band: #222224;
+    --ball-color-highlight: #e98c45;
+    --ball-color-item: #222224;
+    --ball-color-item-hover: #d25538;
+    --ball-color-item-active: #d25538;
+  }
+
+}
