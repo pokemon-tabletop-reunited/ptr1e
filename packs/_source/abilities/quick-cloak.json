@@ -4,11 +4,11 @@
   "img": "/systems/ptu/static/css/images/icons/ability_icon.png",
   "system": {
     "origin": "",
-    "effect": "Burmy quickly builds a cloak out of nearby materials; using leaves and twigs will give it a Grass Plant Cloak, using sand and rocks will give it a Ground Sandy Cloak, and using trash or scrap will give it a Steel Trash Cloak. While in a Cloak, Burmy gains the Type associated with the Cloak as a secondary Typing, which will become permanent upon evolution into Wormadam. Cloaks are destroyed if Burmy is hit for Super-Effective Damage, or if Burmy makes a new Cloak. Innate.",
+    "effect": "Burmy quickly builds a cloak out of nearby materials; using leaves and twigs will give it a @UUID[Compendium.ptu.effects.Item.r7ObsmQqpSsvNpBQ]{Grass Plant Cloak}, using sand and rocks will give it a @UUID[Compendium.ptu.effects.Item.759SE77gMLIDVChl]{Ground Sandy Cloak}, and using trash or scrap will give it a @UUID[Compendium.ptu.effects.Item.SObcZDxFAAnnkJZs]{Steel Trash Cloak}. While in a Cloak, Burmy gains the Type associated with the Cloak as a secondary Typing, which will become permanent upon evolution into Wormadam. Cloaks are destroyed if Burmy is hit for Super-Effective Damage, or if Burmy makes a new Cloak. Innate.",
     "snippet": "",
     "rules": [],
     "enabled": true,
-    "slug": null,
+    "slug": "quick-cloak",
     "schema": {
       "version": 0.11,
       "lastMigration": null
@@ -30,15 +30,20 @@
   "ownership": {
     "default": 0
   },
-  "flags": {},
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.3",
+    "coreVersion": "13.351",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
-    "lastModifiedBy": "ptubuilder000000",
+    "modifiedTime": 1776269053920,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW",
     "duplicateSource": null,
-    "exportSource": null
+    "exportSource": null,
+    "compendiumSource": null
   }
 }
