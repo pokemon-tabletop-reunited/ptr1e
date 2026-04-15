@@ -1,62 +1,60 @@
 {
-  "folder": "yvW9o33qyYDEIMRA",
   "name": "Cut",
-  "type": "item",
-  "img": "/systems/ptu/static/css/images/icons/item_icon.png",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/NormalIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
   "system": {
     "origin": "",
-    "effect": "Can be used to teach a pokemon Cut. Also allows pokemon to use Cut outside of battle.",
+    "effect": "Cut ignores up to 5 Damage Reduction (Defenses are not Damage Reduction.)",
     "snippet": "",
     "rules": [
       {
-        "key": "GrantItem",
+        "key": "EphemeralEffect",
         "predicate": [],
-        "allowDuplicate": false,
-        "uuid": "Compendium.ptu.moves.Item.UkCThqEzC82ABM7h"
+        "selectors": "{item|id}-damage-received",
+        "affects": "target",
+        "uuid": "Compendium.ptu.effects.Item.aVm0441s0adbinyC"
       }
     ],
     "enabled": true,
     "slug": "cut",
     "schema": {
-      "version": 0.115,
-      "lastMigration": {
-        "datetime": "2024-03-19T14:15:52.493Z",
-        "version": {
-          "schema": 0.114,
-          "foundry": "11.315",
-          "system": "4.2.4"
-        }
-      }
+      "version": 0.11,
+      "lastMigration": null
     },
-    "referenceEffect": "",
+    "referenceEffect": "Compendium.ptu.effects.Item.aVm0441s0adbinyC",
     "source": {
-      "value": "Homebrew"
+      "value": "PTR Compendiums"
     },
     "stackSlugs": false,
     "keywords": [
       "Pass",
       "Slice"
     ],
-    "quantity": "1",
-    "category": "HM",
-    "cost": "0",
-    "consumable": 0,
-    "subtype": "",
-    "container": false
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Normal",
+    "category": "Physical",
+    "damageBase": "5",
+    "frequency": "At-Will",
+    "ac": "3",
+    "range": "Melee",
+    "contestType": "Cool - Steady Performance",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
   },
   "effects": [],
   "flags": {
     "ptu": {
-      "showInTokenPanel": false
-    },
-    "LocknKey": {
-      "IDKeysFlag": "",
-      "RemoveKeyonUseFlag": false,
-      "LPFormulaFlag": "",
-      "LPFormulaOverrideFlag": false,
-      "LBFormulaFlag": "",
-      "LBFormulaOverrideFlag": false,
-      "ReplacementItemFlag": ""
+      "showInTokenPanel": true
     }
   },
   "_stats": {

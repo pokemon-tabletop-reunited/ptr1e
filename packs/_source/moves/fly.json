@@ -1,36 +1,22 @@
 {
-  "folder": "yvW9o33qyYDEIMRA",
   "name": "Fly",
-  "type": "item",
-  "img": "/systems/ptu/static/css/images/icons/item_icon.png",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/FlyingIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
   "system": {
     "origin": "",
-    "effect": "Can be used to teach a pokemon Fly. Also allows pokemon to use Fly outside of battle to fast travel to previously visited towns.",
+    "effect": "Set-Up Effect: The user is moved up 25 meters into the air. Resolution Effect: The user may shift twice while in the air, using their overland or sky speed, and then comes down next to a legal target, and attacks with Fly. *Grants: Sky +3",
     "snippet": "",
-    "rules": [
-      {
-        "key": "GrantItem",
-        "predicate": [],
-        "allowDuplicate": false,
-        "uuid": "Compendium.ptu.moves.Item.TA3fevwvHn8PJHEI"
-      }
-    ],
+    "rules": [],
     "enabled": true,
     "slug": "fly",
     "schema": {
-      "version": 0.115,
-      "lastMigration": {
-        "datetime": "2024-03-19T14:15:52.494Z",
-        "version": {
-          "schema": 0.114,
-          "foundry": "11.315",
-          "system": "4.2.4"
-        }
-      }
+      "version": 0.11,
+      "lastMigration": null
     },
     "referenceEffect": "",
     "source": {
-      "value": "Homebrew"
+      "value": "PTR Compendiums"
     },
     "stackSlugs": false,
     "keywords": [
@@ -38,26 +24,30 @@
       "Dash",
       "Set-Up"
     ],
-    "quantity": "1",
-    "category": "HM",
-    "cost": "0",
-    "consumable": 0,
-    "subtype": "",
-    "container": false
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Flying",
+    "category": "Physical",
+    "damageBase": "8",
+    "frequency": "At-Will",
+    "ac": "3",
+    "range": "Melee",
+    "contestType": "Smart - Special Attention",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
   },
   "effects": [],
   "flags": {
     "ptu": {
-      "showInTokenPanel": false
-    },
-    "LocknKey": {
-      "IDKeysFlag": "",
-      "RemoveKeyonUseFlag": false,
-      "LPFormulaFlag": "",
-      "LPFormulaOverrideFlag": false,
-      "LBFormulaFlag": "",
-      "LBFormulaOverrideFlag": false,
-      "ReplacementItemFlag": ""
+      "showInTokenPanel": true
     }
   },
   "_stats": {

@@ -1,54 +1,61 @@
 {
-  "folder": "yvW9o33qyYDEIMRA",
   "name": "Whirlpool",
-  "type": "item",
-  "img": "/systems/ptu/static/css/images/icons/item_icon.png",
+  "type": "move",
+  "img": "/systems/ptu/css/images/types2/WaterIC_Icon.png",
+  "folder": "lWQOqDm2AOGwGM16",
   "system": {
     "origin": "",
-    "effect": "",
+    "effect": "The target is put in a Vortex.",
     "snippet": "",
     "rules": [
       {
-        "key": "GrantItem",
+        "key": "ApplyEffect",
         "predicate": [],
-        "allowDuplicate": false,
-        "uuid": "Compendium.ptu.moves.Item.DUWjQv05jUb2p6gj"
+        "selectors": "{item|id}-damage-received",
+        "uuid": "Compendium.ptu.effects.Item.BuK1xNKNhBn1DZDu",
+        "range": "1",
+        "value": "",
+        "affects": "target"
       }
     ],
     "enabled": true,
     "slug": "whirlpool",
     "schema": {
-      "version": null,
+      "version": 0.11,
       "lastMigration": null
     },
     "referenceEffect": "",
     "source": {
-      "value": "Homebrew"
+      "value": "PTR Compendiums"
     },
     "stackSlugs": false,
     "keywords": [
       "Target 1"
     ],
-    "quantity": "1",
-    "category": "",
-    "cost": "0",
-    "consumable": 0,
-    "subtype": "",
-    "container": false
+    "sheerForce": false,
+    "toughClaws": false,
+    "technician": false,
+    "reckless": false,
+    "ironFist": false,
+    "megaLauncher": false,
+    "punkRock": false,
+    "strongJaw": false,
+    "type": "Water",
+    "category": "Special",
+    "damageBase": "4",
+    "frequency": "Scene x2",
+    "ac": "4",
+    "range": "Range 3",
+    "contestType": "Beauty - Safe Option",
+    "stab": false,
+    "damageBonus": 0,
+    "isStruggle": false,
+    "automation": []
   },
   "effects": [],
   "flags": {
     "ptu": {
-      "showInTokenPanel": false
-    },
-    "LocknKey": {
-      "IDKeysFlag": "",
-      "RemoveKeyonUseFlag": false,
-      "LPFormulaFlag": "",
-      "LPFormulaOverrideFlag": false,
-      "LBFormulaFlag": "",
-      "LBFormulaOverrideFlag": false,
-      "ReplacementItemFlag": ""
+      "showInTokenPanel": true
     }
   },
   "_stats": {
