@@ -30,6 +30,11 @@ jobs:
                   npm ci
                   npm run build:packs
 
+            - name: Compile LESS to CSS
+              run: |
+                  npm install -g less
+                  lessc less/main.less static/css/main.css
+
             - name: Update Manifest
               run: |
                   SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' system.json | tr -d '\n')
@@ -39,7 +44,7 @@ jobs:
             - name: Zip Files
               working-directory: .
               run: |
-                  7z a -tzip system.zip ./* -x!packs/_source -x!.github -x!.vscode -x!node_modules -x!package.json -x!package-lock.json
+                  7z a -tzip system.zip ./* -x!packs/_source -x!.github -x!.vscode -x!node_modules -x!package.json -x!less -x!package-lock.json -x!scripts -x!utils
 
             - name: Create Version Release
               id: create_version_release
