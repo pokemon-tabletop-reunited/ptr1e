@@ -1,0 +1,85 @@
+{
+  "folder": "DJzDYBNllxgyeiok",
+  "name": "Form Change: Rotom Wash",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "value": "/systems/ptu/static/images/sprites/479_Wash.webp",
+        "predicate": {
+          "not": "self:pokemon:shiny"
+        }
+      },
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/479s_Wash.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:rotom-wash"
+        ],
+        "uuid": "Compendium.ptu.species.Item.GxDqerb1nco2wmJj"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-rotom-heat",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.2.5",
+    "coreVersion": "13.351",
+    "createdTime": 1711652559242,
+    "modifiedTime": 1711652954004,
+    "lastModifiedBy": "ptubuilder000000",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "AOnVd9Wi4u5UFJKr",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

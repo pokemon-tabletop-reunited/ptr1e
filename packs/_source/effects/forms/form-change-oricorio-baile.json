@@ -1,0 +1,89 @@
+{
+  "name": "Form Change: Oricorio-Baile",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "value": "/systems/ptu/static/images/sprites/741_Baile.webp",
+        "predicate": {
+          "not": "self:pokemon:shiny"
+        }
+      },
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/741s_Baile.webp"
+      },
+      {
+        "key": "TypeOverwrite",
+        "value": "Fire, Flying"
+      }
+    ],
+    "enabled": true,
+    "slug": "form-change-oricorio-baile",
+    "schema": {
+      "version": 0.115,
+      "lastMigration": {
+        "datetime": "2024-03-19T17:05:42.932Z",
+        "version": {
+          "schema": null,
+          "foundry": "11.315",
+          "system": "4.2.4"
+        }
+      }
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "DJzDYBNllxgyeiok",
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ptu",
+    "systemVersion": "4.4.3.3",
+    "createdTime": 1776270837744,
+    "modifiedTime": 1776270837744,
+    "lastModifiedBy": "ptubuilder000000"
+  },
+  "_id": "6LnX3gn8aEZBxgAd",
+  "sort": 0
+}
