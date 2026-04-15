@@ -35,6 +35,10 @@ jobs:
                   npm install -g less
                   lessc less/main.less static/css/main.css
 
+            - name: Copy CSS to root
+              run: |
+                  cp -r static/css css
+  
             - name: Update Manifest
               run: |
                   SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' system.json | tr -d '\n')
