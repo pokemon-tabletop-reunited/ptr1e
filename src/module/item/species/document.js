@@ -16,7 +16,7 @@ class PTUSpecies extends PTUItem {
     }
 
     static async convertToPTUSpecies(speciesData, options = {}) {
-        const data = { type: "species", system: {}, img: "/systems/ptu/css/images/icons/dex_icon.png", folder: "5Jvv9TXViaCrDerw", ...options };
+        const data = { type: "species", system: {}, img: "/systems/ptu/static/css/images/icons/dex_icon.png", folder: "5Jvv9TXViaCrDerw", ...options };
 
         data.name = Handlebars.helpers.capitalize(speciesData._id);
         data.system.slug = sluggify(data.name);

@@ -96,7 +96,7 @@ class PTUDexSheet extends FormApplication {
 
         data.dex.total = (this.speciesDocs ?? [])
             .map((species) => ({
-                img: PTUDexSheet.speciesArtCache.get(species.slug) ?? "/systems/ptu/css/images/icons/dex_icon.png",
+                img: PTUDexSheet.speciesArtCache.get(species.slug) ?? "/systems/ptu/static/css/images/icons/dex_icon.png",
                 id: species.slug,
                 name: Handlebars.helpers.formatSlug(species.slug),
                 number: species.system.number,
@@ -199,7 +199,7 @@ class PTUDexSheet extends FormApplication {
             if (!species) continue;
 
             const imgPromise = PokemonGenerator.getImage(species)
-                .then(img => PTUDexSheet.speciesArtCache.set(slug, img ?? "/systems/ptu/css/images/icons/dex_icon.png"))
+                .then(img => PTUDexSheet.speciesArtCache.set(slug, img ?? "/systems/ptu/static/css/images/icons/dex_icon.png"))
                 .then(() => this.element.find(`.dex-item[data-id="${slug}"] .dex-item-img img`).attr("src", PTUDexSheet.speciesArtCache.get(slug)))
 
             promises.push(imgPromise);
