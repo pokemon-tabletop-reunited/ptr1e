@@ -1,3 +1,9 @@
+// out: ../static/css/main.css
+
+@import "fonts.less";
+@import "utils.less";
+@import "firefox.less";
+
 /* Define Colors as variables at root */
 :root {
   --skillBkgColor--pathetic: #cfe2f3;
@@ -7116,11 +7122,6 @@ a.content-link img {
   right: 0;
   pointer-events: none;
   bottom: 5px;
-}
-@-moz-document url-prefix() {
-  .mod-input:before {
-    right: 6px;
-  }
 }
 .tooltipster-content:has(.mod-tooltip) {
   overflow: hidden;
