@@ -135,8 +135,8 @@ class PTUPokemonActor extends PTUActor {
         }
 
         system.level.current = calculateLevel(system.level.exp);
-
-        system.level.expTillNextLevel = CONFIG.PTU.data.levelProgression[Math.min(system.level.current + 1, 100)];
+        const maxLevel = Math.max(...Object.keys(CONFIG.PTU.data.levelProgression));
+        system.level.expTillNextLevel = CONFIG.PTU.data.levelProgression[Math.min(system.level.current + 1, maxLevel)];
         system.level.percent = Math.round(
             (
                 (system.level.exp - CONFIG.PTU.data.levelProgression[system.level.current])
