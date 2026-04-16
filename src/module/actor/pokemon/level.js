@@ -1,8 +1,9 @@
 function calculateLevel(exp, level = 50) {
     const json = CONFIG.PTU.data.levelProgression;
+    const maxLevel = Math.max(...Object.keys(json));
 
     if (exp <= json[1]) { return 1; }
-    if (exp >= json[100]) { return 100; }
+    if (exp >= json[maxLevel]) { return maxLevel; }
 
     return _recursiveLevelCalc(exp, level, json);
 }
