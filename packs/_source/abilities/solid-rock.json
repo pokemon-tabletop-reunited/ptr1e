@@ -6,7 +6,17 @@
     "origin": "",
     "effect": "The user gains +5 Damage Reduction against Super-Effective damage. Defensive.",
     "snippet": "",
-    "rules": [],
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "move:super-effective"
+        ],
+        "selectors": "damage-received",
+        "affects": "origin",
+        "uuid": "Compendium.ptu.effects.Item.7CtwSrbyNzt4K4Wy"
+      }
+    ],
     "enabled": true,
     "slug": "solid-rock",
     "schema": {
@@ -37,10 +47,10 @@
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.9",
+    "coreVersion": "13.351",
     "createdTime": 1692968394056,
-    "modifiedTime": 1707761783909,
+    "modifiedTime": 1776306998172,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null
