@@ -108,6 +108,12 @@ class GithubSyncManager {
     static async getExistingItem(item, pack) {
         const { getItemSlug, slugify } = GithubSyncManager.config;
 
+        // First, check if the item is already in the compendium
+        if (item.pack) {
+            return item;
+        }
+
+        // It's not in the compendium, so now try
         const sourceId =
             item.flags?.core?.sourceId ?? item._stats?.compendiumSource;
         if (sourceId) {
