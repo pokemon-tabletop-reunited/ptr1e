@@ -163,6 +163,18 @@ class PTUItem extends Item {
         return Array.from(toReturn).sort();
     }
 
+    /**
+     * Retrieve additional roll options that are based on the interaction between this item and a target.
+     * For example, a move which is super effective against the target would want to include an additional
+     * "super-effective" roll option when calculating damage.
+     * 
+     * These should be VERY minimal, since we don't want to constantly have to recalculate things if they
+     * don't actually depend on the target or affect a roll.
+     */
+    getRollOptionsWithTarget(target, domains = []) {
+        return [];
+    }
+
     /** @override */
     getRollData() {
         return { actor: this.actor, item: this };

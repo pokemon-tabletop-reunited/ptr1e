@@ -92,6 +92,21 @@ class PTUMove extends PTUItem {
     }
 
     /** @override */
+    getRollOptionsWithTarget(target, domains = []) {
+        const toReturn = new Set();
+        
+        // calculate effectiveness
+        const effectiveness = target?.iwr?.all?.[sluggify(this.system.type)] ?? 1;
+        if (effectiveness > 1) {
+            toReturn.add("move:super-effective");
+        } else if (effectiveness < 1) {
+            toReturn.add("move:not-very-effective");
+        }
+        
+        return Array.from(new Set(toReturn)).sort();
+    }
+
+    /** @override */
     async use(options = {}) {
         if (this.isDamaging || this.system.frequency === "Static") return;
 
