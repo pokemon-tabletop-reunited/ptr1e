@@ -1,5 +1,5 @@
 {
-  "name": "Forme Change: Eiscue Break",
+  "name": "Forme Change: Eiscue No Ice",
   "type": "effect",
   "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
   "system": {
@@ -26,13 +26,6 @@
           ]
         },
         "value": "/systems/ptu/static/images/sprites/875_NoIce.webp"
-      },
-      {
-        "key": "TemporarySpecies",
-        "predicate": [
-          "species:eiscue-ice"
-        ],
-        "uuid": "Compendium.ptu.species.Item.TYrqMtpWCKKmYiur"
       }
     ],
     "enabled": true,
@@ -60,7 +53,7 @@
     "duration": {
       "value": -1,
       "unit": "unlimited",
-      "expiry": "turn-start"
+      "expiry": null
     },
     "start": {
       "value": 0,
@@ -85,13 +78,14 @@
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.2.6",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.6",
+    "coreVersion": "13.351",
     "createdTime": 1696245115392,
-    "modifiedTime": 1712498402079,
-    "lastModifiedBy": "ptubuilder000000",
+    "modifiedTime": 1776290239971,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW",
     "duplicateSource": null,
-    "exportSource": null
+    "exportSource": null,
+    "compendiumSource": null
   },
   "_id": "UAu1KzGwXAZYCOHP",
   "sort": 500000
