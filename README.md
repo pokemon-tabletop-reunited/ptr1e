@@ -31,6 +31,26 @@ https://github.com/pokemon-tabletop-reunited/ptr1e/releases/latest/download/syst
 If you're looking for the Non-PTR version you can install the [PTU Branch](https://github.com/pokemon-tabletop-reunited/ptr1e/tree/PTU-1.05)
 Please note that this branch is no longer receiving updates and is only compatible with Foundry v10.
 
+
+## 🚨 Changes From Stable 🚨
+- Redesigned Token Panel moved from Top Right to Bottom Right (near old position) beneath the sidebar
+- Add `move:super-effective` and `move:not-very-effective` Roll Options
+- [Tab Scroll Position Not Being Lost On Edit](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/859)
+- [Drag Ruler Coloring Based On Move Speed](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/858)
+- [Purchasing Item Increases Quantity By Current Quantity](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/854)
+- [Throwing Pokeballs to Catch Should Reduce Quantity](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/848)
+- [Save Button on Character Sheet Triggering On Submit](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/846)
+- [Tagify Not Defined Error](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/844)
+- [Flat Bonuses Adding Twice](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/840)
+- [Habitat and Egg Group Search in Compendium](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/841)
+- The addition of a basic Github-Foundry Item Sync system ("Commit to Github")
+- Building out the Github-Foundry Item Sync system a bit more (auto-stages linked items, enforces them being in the compendium)
+- Grey-on-grey text in chat fixed
+- Tagify Dropdown Text Color Black
+- Compendium Browser "Moves" tab loading
+- **Lots of content fixes**
+
+
 ## Links & Recommendations
 - [Quick Insert](https://gitlab.com/fvtt-modules-lab/quick-insert) is an amazing addon that allows you to drag & drop all over the place even more easily. We 1000% recommend using their module in conjuncture with our system!
 - [Pokemon Assets](https://github.com/righthandofvecna/pokemon-assets) adds a bunch of Pokemon-specific automation and overworld sprites!
