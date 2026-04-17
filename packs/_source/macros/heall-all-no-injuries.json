@@ -4,7 +4,7 @@
   "scope": "global",
   "author": "dgZ5HZCH2iuaMd7q",
   "img": "https://assets.forge-vtt.com/bazaar/core/icons/svg/aura.svg",
-  "command": "// Heal all selected actors excluding injuries to injured max health:\\ncanvas.tokens.controlled.forEach(async (token) => {\\n    await token.actor.update({\"data.health.value\": token.actor.system.health.max});\\n})",
+  "command": "// Heal all selected actors excluding injuries to injured max health:\ncanvas.tokens.controlled.forEach(async (token) => {\n    await token.actor.update({\"data.health.value\": token.actor.system.health.max});\n})",
   "folder": null,
   "flags": {
     "advanced-macros": {
