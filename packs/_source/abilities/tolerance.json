@@ -8,13 +8,13 @@
     "snippet": "",
     "rules": [
       {
-        "key": "ActiveEffectLike",
-        "predicate": [],
-        "mode": "add",
-        "path": "system.modifiers.resistanceSteps.mod",
-        "phase": "applyAEs",
-        "value": 1,
-        "priority": null
+        "key": "EphemeralEffect",
+        "predicate": [
+          "move:not-very-effective"
+        ],
+        "affects": "origin",
+        "selectors": "damage-received",
+        "uuid": "Compendium.ptu.effects.Item.0IQ4ubUm0uiezg9a"
       }
     ],
     "enabled": true,
@@ -51,13 +51,14 @@
   },
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.3.v12-beta.1",
+    "systemVersion": "4.4.3.10",
     "coreVersion": "13.351",
     "createdTime": 1692968394056,
-    "modifiedTime": 1739186612959,
-    "lastModifiedBy": "ptubuilder000000",
+    "modifiedTime": 1776396222645,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW",
     "duplicateSource": null,
-    "exportSource": null
+    "exportSource": null,
+    "compendiumSource": "Compendium.ptu.abilities.Item.7yg8Y7g7p8Uil1YT"
   },
   "_id": "7yg8Y7g7p8Uil1YT",
   "sort": 0,
