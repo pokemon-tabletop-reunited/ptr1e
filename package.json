@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build:packs": "node ./utils/packs.mjs package pack",
-    "build:unpack": "node ./utils/packs.mjs package unpack"
+    "build:unpack": "node ./utils/packs.mjs package unpack",
+    "git:reset-content-sync": "git branch -D content-sync 2>/dev/null || true; git push origin --delete content-sync 2>/dev/null || true; git checkout release; git checkout -b content-sync; git push -u origin content-sync"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.22.15",
