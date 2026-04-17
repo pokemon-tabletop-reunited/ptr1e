@@ -50,6 +50,13 @@ const VariantSettingsConfig = {
         default: "original",
         requiresReload: true,
     },
+    "useContestRules": {
+        name: "PTU.Settings.Variant.UseContestRules.Name",
+        hint: "PTU.Settings.Variant.UseContestRules.Hint",
+        type: Boolean,
+        default: true,
+        requiresReload: true
+    },
 }
 
 export class VariantSettings extends PTUSettingsMenu {
