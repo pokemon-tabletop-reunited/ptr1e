@@ -4,7 +4,7 @@
   "scope": "global",
   "author": "TbGIaTsufvM0rJ9I",
   "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
-  "command": "// Heal all selected actors reduce Injuries by 1\ncanvas.tokens.controlled.forEach(async (token) => {\nif(token.actor.system.health.injuries <1)\n{\n await token.actor.update({\"system.health.value\": token.actor.system.health.total, \"system.health.injuries\": 0});\n}else{\n  await token.actor.update({\"system.health.value\": token.actor.system.health.total, \"system.health.injuries\": token.actor.system.health.injuries-1});\n}  \n// Remove all conditions from selected actor\nactor.deleteEmbeddedDocuments(\"Item\", actor.items.filter(i=>i.type === \"condition\" && !i.isGranted).map(i => i.id))\n// Heal all selected actors including Injuries\n //await token.actor.effects.forEach(x => x.delete())\n\n})",
+  "command": "// Heal all selected actors reduce Injuries by 1\\ncanvas.tokens.controlled.forEach(async (token) => {\\nif(token.actor.system.health.injuries <1)\\n{\\n await token.actor.update({\"system.health.value\": token.actor.system.health.total, \"system.health.injuries\": 0});\\n}else{\\n  await token.actor.update({\"system.health.value\": token.actor.system.health.total, \"system.health.injuries\": token.actor.system.health.injuries-1});\\n}  \\n// Remove all conditions from selected actor\\nactor.deleteEmbeddedDocuments(\"Item\", actor.items.filter(i=>i.type === \"condition\" && !i.isGranted).map(i => i.id))\\n// Heal all selected actors including Injuries\\n //await token.actor.effects.forEach(x => x.delete())\\n\\n})",
   "folder": null,
   "flags": {
     "advanced-macros": {
