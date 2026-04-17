@@ -1,5 +1,4 @@
 [![foundry-shield]][foundry-url]
-[![foundry-shield-old]][foundry-url]
 ![Discord](https://img.shields.io/discord/748601513835888682?logo=discord&label=Discord&link=https%3A%2F%2Fdiscord.gg%2Fptufvtt)
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -27,7 +26,13 @@ If you would like to use the latest stable build, just import the following mani
 https://github.com/pokemon-tabletop-reunited/ptr1e/releases/latest/download/system.json
 ```
 
-### PTU 1.05 (V10 - Not Recommended)
+#### Legacy Build (V12)
+If you would like to use the latest build for Foundry v12, just import the following manifest into foundry: 
+```
+https://github.com/righthandofvecna/fvtt-ptr/releases/download/4.3.7/system.json
+```
+
+#### PTU 1.05 (V10 - Not Recommended)
 If you're looking for the Non-PTR version you can install the [PTU Branch](https://github.com/pokemon-tabletop-reunited/ptr1e/tree/PTU-1.05)
 Please note that this branch is no longer receiving updates and is only compatible with Foundry v10.
 
@@ -35,6 +40,8 @@ Please note that this branch is no longer receiving updates and is only compatib
 ## 🚨 Changes From Stable 🚨
 - Redesigned Token Panel moved from Top Right to Bottom Right (near old position) beneath the sidebar
 - Add `move:super-effective` and `move:not-very-effective` Roll Options
+- [Add Capabilities and Edges Tab to Token Panel](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/871)
+- [Optional Contest Tabs](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/869)
 - [Tab Scroll Position Not Being Lost On Edit](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/859)
 - [Drag Ruler Coloring Based On Move Speed](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/858)
 - [Purchasing Item Increases Quantity By Current Quantity](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/854)
@@ -66,7 +73,6 @@ Pokémon © 2002-2023 Pokémon. © 1995-2023 Nintendo/Creatures Inc./GAME FREAK 
 No copyright or trademark infringement is intended in using Pokémon content for the PTU for FoundryVTT System.
 
 [foundry-shield]: https://img.shields.io/badge/Foundry-v13.348-success
-[foundry-shield-old]: https://img.shields.io/badge/Foundry-v11.314-success
 [foundry-url]: https://foundryvtt.com/
 [forks-shield]: https://img.shields.io/github/forks/dylanpiera/Foundry-Pokemon-Tabletop-United-System.svg
 [forks-url]: https://github.com/dylanpiera/Foundry-Pokemon-Tabletop-United-System/network/members
