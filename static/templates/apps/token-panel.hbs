@@ -22,6 +22,7 @@
         </div>
         <div class="separator"></div>
         <div class="items-body">
+
             {{#if show.actions}}
             {{#if (gt attacks.length 0)}}
             {{#each attacks as |attack|}}
@@ -83,6 +84,7 @@
             {{/each}}
             {{/if}}
             {{/if}}
+
             {{#if (and (and (is actor.type "character") show.feats) (gt feats.length 0))}}
             {{#each feats as |feat|}}
                 <div class="action feat {{#if feat.rollable}}rollable{{/if}}" data-id="{{feat.id}}"
@@ -104,6 +106,7 @@
                 </div>
             {{/each}}
             {{/if}}
+
             {{#if (and show.abilities (gt abilities.length 0))}}
             {{#each abilities as |ability|}}
                 <div class="action ability {{#if ability.rollable}}rollable{{/if}}" data-id="{{ability.id}}"
@@ -123,6 +126,28 @@
                 </div>
             {{/each}}
             {{/if}}
+
+
+            {{#if (and show.edges (gt edges.length 0))}}
+            {{#each edges as |edge|}}
+                <div class="action edge {{#if edge.rollable}}rollable{{/if}}" data-id="{{edge.id}}"
+                    data-tooltip="{{edge.effect}}" data-tooltip-direction="LEFT">
+                    <div class="icon">
+                        <img class="icon" src="{{edge.img}}" alt="{{edge.name}}">
+                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{edge.name}}">
+                    </div>
+                    <div class="name">
+                        {{edge.name}}
+                    </div>
+                    <div class="tags">
+                        {{#if edge.frequency}}
+                            <div class="tag frequency" title="{{edge.frequency}}"><span>{{edge.frequency}}</span></div>
+                        {{/if}}
+                    </div>
+                </div>
+            {{/each}}
+            {{/if}}
+
             {{#if (and show.items (or (gt items.balls.length 0) (gt items.other.length 0)))}}
             {{#if (gt items.balls.length 0)}}
             {{#each items.balls as |ball|}}
@@ -154,30 +179,56 @@
             {{/if}}
             {{/if}}
         </div>
-        {{!-- Nav --}}
-        <div class="tab-strip">
+    </div>
+
+    {{!-- Nav --}}
+    <div class="tab-strip">
+        
+
+        {{#if (or (gt attacks.length 0) (gt struggles.length 0))}}
             <div class="tab-strip-tab {{#if show.actions}}active{{else}}inactive{{/if}}" data-target="actions">
                 <i class="fas fa-burst"></i>
                 <span class="tab-label">Moves</span>
             </div>
-            {{#if (is actor.type "character")}}
-                <div class="tab-strip-tab {{#if show.feats}}active{{else}}inactive{{/if}}" data-target="feats">
-                    <i class="fas fa-crown"></i>
-                    <span class="tab-label">Feats</span>
-                </div>
-            {{/if}}
+        {{/if}}
+        
+        
+        {{#if (is actor.type "character")}}
+        {{#if (gt feats.length 0)}}
+            <div class="tab-strip-tab {{#if show.feats}}active{{else}}inactive{{/if}}" data-target="feats">
+                <i class="fas fa-crown"></i>
+                <span class="tab-label">Feats</span>
+            </div>
+        {{/if}}
+        {{/if}}
+
+
+        {{#if (gt abilities.length 0)}}
             <div class="tab-strip-tab {{#if show.abilities}}active{{else}}inactive{{/if}}" data-target="abilities">
                 <i class="fas fa-star"></i>
                 <span class="tab-label">Abil.</span>
             </div>
-            {{#if (is actor.type "character")}}
-                <div class="tab-strip-tab {{#if show.items}}active{{else}}inactive{{/if}}" data-target="items">
-                    <i class="fas fa-backpack"></i>
-                    <span class="tab-label">Items</span>
-                </div>
-            {{/if}}
-        </div>
+        {{/if}}
+            
+        
+        {{#if (gt edges.length 0)}}
+            <div class="tab-strip-tab {{#if show.edges}}active{{else}}inactive{{/if}}" data-target="edges">
+                <i class="fas fa-rhombus"></i>
+                <span class="tab-label">Edges</span>
+            </div>
+        {{/if}}
+        
+        
+        {{#if (is actor.type "character")}}
+        {{#if (or (gt items.balls.length 0) (gt items.other.length 0))}}
+            <div class="tab-strip-tab {{#if show.items}}active{{else}}inactive{{/if}}" data-target="items">
+                <i class="fas fa-backpack"></i>
+                <span class="tab-label">Items</span>
+            </div>
+        {{/if}}
+        {{/if}}
     </div>
+    
 
     {{#if (or party.trainer (gt conditions.length 0) (gt effects.length 0))}}
     <div class="top-panel">

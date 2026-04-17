@@ -118,6 +118,10 @@
                 <label for="system.free">{{localize "ITEM.FreeEdge"}}</label>
                 <input class="ml-1 mr-1" name="system.free" type="checkbox" {{checked item.system.free}}/>
             </div>
+            <div class="item-row" style="justify-content: flex-start;">
+                <label for="flags.ptu.showInTokenPanel">{{localize "ITEM.ShowInTokenPanel"}}</label>
+                <input class="ml-1 mr-1" name="flags.ptu.showInTokenPanel" type="checkbox" {{checked item.flags.ptu.showInTokenPanel}}/>
+            </div>
         </div>
         <div class="tab rules h-100" data-group="primary" data-tab="rules">
             {{~> systems/ptu/static/templates/partials/rules/rule-partial.hbs item=item}}

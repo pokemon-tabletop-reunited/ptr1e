@@ -78,7 +78,7 @@ export class TokenPanel extends Application {
             })
         }
 
-        const abilities = []
+        const abilities = [];
         for (const ability of actor.itemTypes.ability?.sort((a, b) => a.sort - b.sort) ?? []) {
             if (ability.getFlag("ptu", "showInTokenPanel") === false) continue;
             abilities.push({
@@ -88,6 +88,30 @@ export class TokenPanel extends Application {
                 effect: ability.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(ability.system.effect), {async: true}) : "",
                 frequency: ability.system.frequency,
                 rollable: !!ability.roll,
+            })
+        }
+
+        const edges = [];
+        for (const edge of actor.itemTypes.edge?.sort((a, b) => a.sort - b.sort) ?? []) {
+            if (!(edge.getFlag("ptu", "showInTokenPanel") ?? false)) continue;
+            edges.push({
+                name: edge.name,
+                img: edge.img,
+                id: edge.id,
+                effect: edge.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(edge.system.effect), {async: true}) : "",
+                frequency: edge.system.frequency,
+                rollable: !!edge.roll,
+            })
+        }
+        for (const pokeedge of actor.itemTypes.pokeedge?.sort((a, b) => a.sort - b.sort) ?? []) {
+            if (!(pokeedge.getFlag("ptu", "showInTokenPanel") ?? false)) continue;
+            edges.push({
+                name: pokeedge.name,
+                img: pokeedge.img,
+                id: pokeedge.id,
+                effect: pokeedge.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(pokeedge.system.effect), {async: true}) : "",
+                frequency: pokeedge.system.frequency,
+                rollable: !!pokeedge.roll,
             })
         }
 
@@ -142,6 +166,7 @@ export class TokenPanel extends Application {
             conditions: actor.itemTypes.condition || [],
             effects,
             feats,
+            edges,
             abilities,
             heldItem,
             movement
