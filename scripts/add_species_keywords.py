@@ -52,10 +52,8 @@ def calculate_keywords(data, cache_dir=None, starters_override=None, paradox_ove
   species = get_species(key, cache_dir=cache_dir)
   if species:
     # Legendary/Mythical
-    if species.get('is_legendary'):
+    if species.get('is_legendary') or species.get('is_mythical'):
       keywords.add('Legendary')
-    if species.get('is_mythical'):
-      keywords.add('Mythical')
 
     # generation -> region heuristic
     gen = species.get('generation')
@@ -137,7 +135,7 @@ def main():
 
   starters_override, paradox_override = load_overrides()
   processed = 0
-  for dirpath, dirnames, filenames in os.walk("packs/_source/species"):
+  for dirpath, dirnames, filenames in os.walk("packs/_source/species/core-species"):
     for filename in filenames:
       if args.limit and processed >= args.limit:
         break
