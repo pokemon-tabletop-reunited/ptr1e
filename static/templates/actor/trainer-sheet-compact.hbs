@@ -13,7 +13,7 @@
             <a class="item tooltip ball-themes {{ballStyle}}" title="Features" data-tab="features"><i class="fas fa-crown"></i></a>
             <a class="item tooltip ball-themes {{ballStyle}}" title="Combat" data-tab="combat"><i class="fas fa-hand-fist"></i></a>
             <a class="item tooltip ball-themes {{ballStyle}}" title="Moves" data-tab="moves"><i class="fas fa-burst"></i></a>
-            <a class="item tooltip ball-themes {{ballStyle}}" title="Contests" data-tab="contests"><i class="fas fa-award"></i></a>
+            {{#if (getGameSetting "variant.useContestRules")}}<a class="item tooltip ball-themes {{ballStyle}}" title="Contests" data-tab="contests"><i class="fas fa-award"></i></a>{{/if}}
             <a class="item tooltip ball-themes {{ballStyle}}" title="Extra" data-tab="extra"><i class="fas fa-gear"></i></a>
             {{!-- <a class="item tooltip ball-themes {{ballStyle}}" title="Dex" data-tab="dex"><i class="fas fa-tablet-alt"></i></a> --}}
             <a class="item tooltip ball-themes {{ballStyle}}" title="Effects" data-tab="effects"><i class="fas fa-stars"></i></a>
@@ -752,6 +752,7 @@
             </div>
         </div>
 
+        {{#if (getGameSetting "variant.useContestRules")}}
         <!-- Contests Tab -->
         <div class="tab details contests h-100" data-group="primary" data-tab="contests">
             <!-- Moves -->
@@ -844,6 +845,7 @@
                 </div>
             </div>
         </div>
+        {{/if}}
 
         <!-- Extra Tab -->
         <div class="tab details extra" data-group="primary" data-tab="extra">
