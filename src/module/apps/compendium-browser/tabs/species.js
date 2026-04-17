@@ -120,7 +120,8 @@ export class CompendiumBrowserSpeciesTab extends CompendiumBrowserTab {
                     abilities: abilities,
                     capabilities: speciesData.system.capabilities,
                     habitats: habitats,
-                    eggGroups: eggGroups
+                    eggGroups: eggGroups,
+                    keywords: speciesData.system.keywords,
                 })
             }
         }
