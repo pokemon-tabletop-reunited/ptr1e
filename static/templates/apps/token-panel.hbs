@@ -1,16 +1,8 @@
-<section class="token-panel" {{#unless actor}}style="display: none;" {{/unless}}>
+<section class="token-panel">
+    {{#if actor}}
     <div class="main-panel">
-        <div class="name-tag">
-            {{actor.name}}
-        </div>
-        <div class="avatar">
+        <div class="avatar {{#if (eq actor.type "pokemon")}}pokemon{{/if}}">
             <img src="{{actor.img}}" alt="{{actor.name}}">
-            <div class="action-bar movement">
-                {{#each movement as |move|}}
-                    <div class="movement-card">
-                        <i class="{{move.icon}}" title="{{move.name}}"></i> {{move.value}}
-                    </div>
-                {{/each}}
                 {{!-- <div class="action">
                     <i class="fas fa-play" title="Standard Action"></i>
                 </div>
@@ -20,212 +12,186 @@
                 <div class="action">
                     <i class="fas fa-asterisk" title="Swift Action"></i>
                 </div> --}}
-            </div>
         </div>
-        <div style="margin-right: 0.5rem; height: 150px; width: 1px;"></div>
+        <div class="action-bar movement">
+            {{#each movement as |move|}}
+                <div class="movement-card">
+                    <i class="{{move.icon}}" title="{{move.name}}"></i> {{move.value}}
+                </div>
+            {{/each}}
+        </div>
+        <div class="separator"></div>
         <div class="items-body">
             {{#if show.actions}}
-                <div class="actions actions-accordion" id="actions-accordion">
-                    {{#if (gt attacks.length 0)}}
-                        <div class="actions-actions">
-                            {{#each attacks as |attack|}}
-                                <div class="action {{#if attack.rollable}}rollable{{/if}}" data-id="{{attack.id}}"
-                                    title="<div class='effect-popup'><div class='d-flex justify-content-center'><div class='effect-range'>{{attack.range}}</div>{{#each attack.keywords}}<div class='effect-range'>{{this}}</div>{{/each}}</div><div class='effect-effect'>{{attack.effect}}</div></div>">
-                                    <div class="icon {{#if attack.category}}with-category{{/if}}">
-                                        <img class="icon" src="{{attack.img}}" alt="{{attack.name}}">
-                                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{attack.name}}">
-                                        {{#if attack.category}}
-                                            <img class="icon category" src="{{attack.category}}" alt="{{attack.name}}">
-                                        {{/if}}
-                                    </div>
-                                    <div class="name">
-                                        {{attack.name}}
-                                    </div>
-                                    <div class="tags">
-                                        {{#if attack.frequency}}
-                                            <div class="tag frequency" title="{{attack.frequency}}">
-                                                {{attack.frequency}}
-                                            </div>
-                                        {{/if}}
-                                        {{#if attack.db}}
-                                            <div class="tag db" title="{{attack.db}}">
-                                                DB: {{attack.db}}
-                                            </div>
-                                        {{else}}
-                                            <div class="tag db" style="visibility: hidden;">
-                                            </div>
-                                        {{/if}}
-                                        {{#if attack.ac}}
-                                            <div class="tag ac" title="{{attack.ac}}">
-                                                AC: {{attack.ac}}
-                                            </div>
-                                        {{else}}
-                                            <div class="tag ac" style="visibility: hidden;">
-                                            </div>
-                                        {{/if}}
-                                    </div>
-                                </div>
-                            {{/each}}
-                        </div>
-                    {{/if}}
-                    {{#if (gt struggles.length 0)}}
-                        <div class="struggles-actions">
-                            {{#each struggles as |struggle|}}
-                            <div class="action rollable" data-id="{{struggle.id}}">
-                                <div class="icon {{#if struggle.category}}with-category{{/if}}">
-                                    <img class="icon" src="{{struggle.img}}" alt="{{struggle.name}}">
-                                    <img class="dice" src="/icons/svg/d20.svg" title="Roll {{struggle.name}}">
-                                    {{#if struggle.category}}
-                                        <img class="icon category" src="{{struggle.category}}" alt="{{struggle.name}}">
-                                    {{/if}}
-                                </div>
-                                <div class="name">
-                                    {{struggle.name}}
-                                </div>
-                                <div class="tags">
-                                    {{#if struggle.db}}
-                                    <div class="tag db" title="{{struggle.db}}">
-                                        DB: {{struggle.db}}
-                                    </div>
-                                    {{/if}}
-                                    {{#if struggle.ac}}
-                                    <div class="tag ac" title="{{struggle.ac}}">
-                                        AC: {{struggle.ac}}
-                                    </div>
-                                    {{/if}}
-                                    {{#if struggle.frequency}}
-                                    <div class="tag frequency" title="{{struggle.frequency}}">
-                                        {{struggle.frequency}}
-                                    </div>
-                                    {{/if}}
-                                </div>
-                            </div>
-                            {{/each}}
-                        </div>
+            {{#if (gt attacks.length 0)}}
+            {{#each attacks as |attack|}}
+                <div class="action attack {{#if attack.rollable}}rollable{{/if}}" data-id="{{attack.id}}"
+                    data-tooltip="<div class='effect-popup'><div class='d-flex justify-content-center'><div class='effect-range'>{{attack.range}}</div>{{#each attack.keywords}}<div class='effect-range'>{{this}}</div>{{/each}}</div><div class='effect-effect'>{{attack.effect}}</div></div>" data-tooltip-direction="LEFT">
+                    <div class="icon {{#if attack.category}}with-category{{/if}}">
+                        <img class="icon" src="{{attack.img}}" alt="{{attack.name}}">
+                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{attack.name}}">
+                        {{#if attack.category}}
+                            <img class="icon category" src="{{attack.category}}" alt="{{attack.name}}">
+                        {{/if}}
+                    </div>
+                    <div class="name">
+                        {{attack.name}}
+                    </div>
+                    <div class="tags">
+                        {{#if attack.frequency}}
+                            <div class="tag frequency" title="{{attack.frequency}}"><span>{{attack.frequency}}</span></div>
+                        {{/if}}
+                        {{#if attack.db}}
+                            <div class="tag db" title="{{attack.db}}"><span>DB: {{attack.db}}</span></div>
+                        {{else}}
+                            <div class="tag db" style="visibility: hidden;"></div>
+                        {{/if}}
+                        {{#if attack.ac}}
+                            <div class="tag ac" title="{{attack.ac}}"><span>AC: {{attack.ac}}</span></div>
+                        {{else}}
+                            <div class="tag ac" style="visibility: hidden;"></div>
+                        {{/if}}
+                    </div>
+                </div>
+            {{/each}}
+            {{/if}}
+            {{#if (gt struggles.length 0)}}
+            {{#each struggles as |struggle|}}
+            <div class="action struggle {{#if struggle.rollable}}rollable{{/if}}" data-id="{{struggle.id}}">
+                <div class="icon {{#if struggle.category}}with-category{{/if}}">
+                    <img class="icon" src="{{struggle.img}}" alt="{{struggle.name}}">
+                    <img class="dice" src="/icons/svg/d20.svg" title="Roll {{struggle.name}}">
+                    {{#if struggle.category}}
+                        <img class="icon category" src="{{struggle.category}}" alt="{{struggle.name}}">
                     {{/if}}
                 </div>
-                <div class="divider"></div>
+                <div class="name">
+                    {{struggle.name}}
+                </div>
+                <div class="tags">
+                    {{#if struggle.frequency}}
+                    <div class="tag frequency" title="{{struggle.frequency}}"><span>{{struggle.frequency}}</span></div>
+                    {{/if}}
+                    {{#if struggle.db}}
+                    <div class="tag db" title="{{struggle.db}}"><span>DB: {{struggle.db}}</span></div>
+                    {{/if}}
+                    {{#if struggle.ac}}
+                    <div class="tag ac" title="{{struggle.ac}}"><span>AC: {{struggle.ac}}</span></div>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+            {{/if}}
             {{/if}}
             {{#if (and (and (is actor.type "character") show.feats) (gt feats.length 0))}}
-                <div class="feats">
-                    {{#each feats as |feat|}}
-                        <div class="action {{#if feat.rollable}}rollable{{/if}}" data-id="{{feat.id}}"
-                            title="<div class='effect-popup'>{{#if feat.keywords}}<div class='d-flex justify-content-center'>{{#each feat.keywords}}<div class='effect-range'>{{this}}</div>{{/each}}</div>{{/if}}<div class='effect-effect'>{{feat.effect}}</div></div>">
-                            <div class="icon">
-                                <img class="icon" src="{{feat.img}}" alt="{{feat.name}}">
-                                <img class="dice" src="/icons/svg/d20.svg" title="Roll {{feat.name}}">
+            {{#each feats as |feat|}}
+                <div class="action feat {{#if feat.rollable}}rollable{{/if}}" data-id="{{feat.id}}"
+                    data-tooltip="<div class='effect-popup'>{{#if feat.keywords}}<div class='d-flex justify-content-center'>{{#each feat.keywords}}<div class='effect-range'>{{this}}</div>{{/each}}</div>{{/if}}<div class='effect-effect'>{{feat.effect}}</div></div>" data-tooltip-direction="LEFT">
+                    <div class="icon">
+                        <img class="icon" src="{{feat.img}}" alt="{{feat.name}}">
+                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{feat.name}}">
+                    </div>
+                    <div class="name">
+                        {{feat.name}}
+                    </div>
+                    <div class="tags">
+                        {{#if feat.frequency}}
+                            <div class="tag frequency" title="{{feat.frequency}}">
+                                <span>{{feat.frequency}}</span>
                             </div>
-                            <div class="name">
-                                {{feat.name}}
-                            </div>
-                            <div class="tags">
-                                {{#if feat.frequency}}
-                                    <div class="tag frequency" title="{{feat.frequency}}">
-                                        <span>{{feat.frequency}}</span>
-                                    </div>
-                                {{/if}}
-                            </div>
-                        </div>
-                    {{/each}}
+                        {{/if}}
+                    </div>
                 </div>
-                <div class="divider"></div>
+            {{/each}}
             {{/if}}
             {{#if (and show.abilities (gt abilities.length 0))}}
-                <div class="abilities">
-                    {{#each abilities as |ability|}}
-                        <div class="action {{#if ability.rollable}}rollable{{/if}}" data-id="{{ability.id}}"
-                            title="{{ability.effect}}">
-                            <div class="icon">
-                                <img class="icon" src="{{ability.img}}" alt="{{ability.name}}">
-                                <img class="dice" src="/icons/svg/d20.svg" title="Roll {{ability.name}}">
-                            </div>
-                            <div class="name">
-                                {{ability.name}}
-                            </div>
-                            <div class="tags">
-                                {{#if ability.frequency}}
-                                    <div class="tag frequency" title="{{ability.frequency}}">
-                                        {{ability.frequency}}
-                                    </div>
-                                {{/if}}
-                            </div>
-                        </div>
-                    {{/each}}
+            {{#each abilities as |ability|}}
+                <div class="action ability {{#if ability.rollable}}rollable{{/if}}" data-id="{{ability.id}}"
+                    data-tooltip="{{ability.effect}}" data-tooltip-direction="LEFT">
+                    <div class="icon">
+                        <img class="icon" src="{{ability.img}}" alt="{{ability.name}}">
+                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{ability.name}}">
+                    </div>
+                    <div class="name">
+                        {{ability.name}}
+                    </div>
+                    <div class="tags">
+                        {{#if ability.frequency}}
+                            <div class="tag frequency" title="{{ability.frequency}}"><span>{{ability.frequency}}</span></div>
+                        {{/if}}
+                    </div>
                 </div>
-                <div class="divider"></div>
+            {{/each}}
             {{/if}}
             {{#if (and show.items (or (gt items.balls.length 0) (gt items.other.length 0)))}}
-                <div class="items items-accordion" id="items-accordion">
-                    {{#if (gt items.balls.length 0)}}
-                    <div class="pokeball-items">
-                        {{#each items.balls as |ball|}}
-                            <div class="action {{#if ball.rollable}}rollable{{/if}}" data-id="{{ball.id}}"
-                                title="{{ball.system.effect}}">
-                                <div class="icon">
-                                    <img class="icon" src="{{ball.img}}" alt="{{ball.name}}">
-                                    <img class="dice" src="/icons/svg/d20.svg" title="Roll {{ball.name}}">
-                                </div>
-                                <div class="name">
-                                    {{ball.name}}
-                                </div>
-                            </div>
-                        {{/each}}
+            {{#if (gt items.balls.length 0)}}
+            {{#each items.balls as |ball|}}
+                <div class="action item pokeball {{#if ball.rollable}}rollable{{/if}}" data-id="{{ball.id}}"
+                    data-tooltip="{{ball.system.effect}}" data-tooltip-direction="LEFT">
+                    <div class="icon">
+                        <img class="icon" src="{{ball.img}}" alt="{{ball.name}}">
+                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{ball.name}}">
                     </div>
-                    {{/if}}
-                    {{#if (gt items.other.length 0)}}
-                    <div class="other-items">
-                        {{#each items.other as |item|}}
-                            <div class="action {{#if item.rollable}}rollable{{/if}}" data-id="{{item.id}}"
-                                title="{{item.effect}}">
-                                <div class="icon">
-                                    <img class="icon" src="{{item.img}}" alt="{{item.name}}">
-                                    <img class="dice" src="/icons/svg/d20.svg" title="Roll {{item.name}}">
-                                </div>
-                                <div class="name">
-                                    {{item.name}}
-                                </div>
-                            </div>
-                        {{/each}}
+                    <div class="name">
+                        {{ball.name}}
                     </div>
-                    {{/if}}
                 </div>
-                <div class="divider"></div>
+            {{/each}}
+            {{/if}}
+            {{#if (gt items.other.length 0)}}
+            {{#each items.other as |item|}}
+                <div class="action item other {{#if item.rollable}}rollable{{/if}}" data-id="{{item.id}}"
+                    data-tooltip="{{item.effect}}" data-tooltip-direction="LEFT">
+                    <div class="icon">
+                        <img class="icon" src="{{item.img}}" alt="{{item.name}}">
+                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{item.name}}">
+                    </div>
+                    <div class="name">
+                        {{item.name}}
+                    </div>
+                </div>
+            {{/each}}
+            {{/if}}
             {{/if}}
         </div>
-    </div>
-    <div class="footer-panel">
-        <div class="toggle-bar bar">
-            <div class="action {{#if show.actions}}active{{else}}inactive{{/if}}" data-target="actions">
-                <i class="fas fa-burst" title="Moves"></i>
+        {{!-- Nav --}}
+        <div class="tab-strip">
+            <div class="tab-strip-tab {{#if show.actions}}active{{else}}inactive{{/if}}" data-target="actions">
+                <i class="fas fa-burst"></i>
+                <span class="tab-label">Moves</span>
             </div>
             {{#if (is actor.type "character")}}
-                <div class="action {{#if show.feats}}active{{else}}inactive{{/if}}" data-target="feats">
-                    <i class="fas fa-crown" title="Feats"></i>
+                <div class="tab-strip-tab {{#if show.feats}}active{{else}}inactive{{/if}}" data-target="feats">
+                    <i class="fas fa-crown"></i>
+                    <span class="tab-label">Feats</span>
                 </div>
             {{/if}}
-            <div class="action {{#if show.abilities}}active{{else}}inactive{{/if}}" data-target="abilities">
-                <i class="fas fa-star" title="Abilities"></i>
+            <div class="tab-strip-tab {{#if show.abilities}}active{{else}}inactive{{/if}}" data-target="abilities">
+                <i class="fas fa-star"></i>
+                <span class="tab-label">Abil.</span>
             </div>
             {{#if (is actor.type "character")}}
-                <div class="action {{#if show.items}}active{{else}}inactive{{/if}}" data-target="items">
-                    <i class="fas fa-backpack" title="Items"></i>
+                <div class="tab-strip-tab {{#if show.items}}active{{else}}inactive{{/if}}" data-target="items">
+                    <i class="fas fa-backpack"></i>
+                    <span class="tab-label">Items</span>
                 </div>
             {{/if}}
         </div>
     </div>
+
+    {{#if (or party.trainer (gt conditions.length 0) (gt effects.length 0))}}
     <div class="top-panel">
-        {{#if (or party.trainer (gt conditions.length 0) (gt effects.length 0))}}
-            <div class="top-panel-toggle" data-target="party">
-                <i class="fas {{#if show.party}}fa-chevron-up{{else}}fa-chevron-down{{/if}}"></i>
-            </div>
-        {{/if}}
+        <div class="top-panel-toggle" data-target="party">
+            {{!-- <span class="toggle-label">Party</span> --}}
+            <i class="fas {{#if show.party}}fa-chevron-right{{else}}fa-chevron-left{{/if}}"></i>
+        </div>
         {{#if show.party}}
             {{#if party.trainer}}
-                <div class="party-overview">
-                    <div class="party-header">
+                <div class="block party-overview">
+                    <h5 class="header">Party</h5>
+                    {{#unless party.isTrainer}}
                         <img class="trainer icon" data-id="{{party.trainer.id}}" src="{{party.trainer.img}}" alt="{{party.trainer.name}}" draggable="true">
-                        <span class="header">{{party.trainer.name}}'s Party</span>
-                    </div>
+                    {{/unless}}
                     {{#if (gt party.pokemon.length 0)}}
                         <div class="party-pokemon">
                             {{#each party.pokemon as |pokemon|}}
@@ -242,10 +208,8 @@
                 </div>
             {{/if}}
             {{#if (gt conditions.length 0)}}
-                <div class="header mt-1">
-                    Conditions
-                </div>
-                <div class="conditions">
+                <div class="block conditions">
+                    <h5 class="header">Conditions</h5>
                     {{#each conditions as |condition|}}
                         <div class="condition" data-actor-id="{{condition.parent.id}}" data-item-id="{{condition.id}}" {{#if condition.system.effect}}title="{{condition.system.effect}}"{{/if}}>
                             <img class="icon" src="{{condition.img}}" alt="{{condition.name}}">
@@ -258,10 +222,8 @@
                 <hr>
             {{/if}}
             {{#if (gt effects.length 0)}}
-                <div class="header mt-1">
-                    Effects
-                </div>
-                <div class="effects">
+                <div class="block effects">
+                    <h5 class="header">Effects</h5>
                     {{#each effects as |effect|}}
                         <div class="effect" data-actor-id="{{effect.parent}}" data-item-id="{{effect.id}}" {{#if effect.effect}}title="{{effect.effect}}"{{/if}}>
                             <img class="icon" src="{{effect.img}}" alt="{{effect.name}}">
@@ -272,5 +234,7 @@
             {{/if}}
         {{/if}}
     </div>
+    {{/if}}
+    {{/if}}
 </section>
 

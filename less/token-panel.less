@@ -1,0 +1,668 @@
+// main: main.less
+
+@tokenPanelHeight: 160px;
+@tokenPanelBottomMargin: 3px;
+@totalTokenPanelHeight: (@tokenPanelHeight + @tokenPanelBottomMargin);
+
+// Make space to position the token panel at the bottom-right
+.token-panel-open #interface #ui-right {
+  height: calc(100vh - @totalTokenPanelHeight);
+}
+
+.token-panel {
+  pointer-events: initial;
+  z-index: var(--z-index-app);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  .main-panel {
+    min-width: 300px;
+    max-height: @tokenPanelHeight;
+    height: @tokenPanelHeight;
+    background: url(../../../../ui/denim075.png) repeat;
+    max-width: calc(100vw - 320px - 205px);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+
+    .items-body {
+      @itemsGap: 3px;
+      width: 220px;
+      max-height: 160px;
+      height: 160px - ((2 * @itemsGap));
+      max-width: calc(100vw - 100px - 130px - 320px - 205px);
+      overflow: auto;
+      margin: @itemsGap;
+
+      overflow: auto;
+      min-height: 48px;
+
+      >* {
+        margin-bottom: @itemsGap;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .action {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+        gap: 3px;
+        padding-bottom: 1px;
+        border-radius: 5px;
+        background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
+
+        .icon {
+          display: block;
+          flex: 0 0 25px;
+          display: flex;
+
+          img {
+            height: 25px;
+            width: 25px;
+            object-fit: fill;
+            border: unset;
+            border-radius: 5px 0 0 0;
+          }
+        }
+
+        .dice {
+          display: none;
+          background: lightslategray;
+        }
+
+        .tags {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          flex: 0 0 100%;
+          height: 20px;
+
+          .tag {
+            height: 20px;
+            font-size: 11px;
+            margin: 0;
+            color: #222224;
+            display: flex;
+            border-radius: 3px;
+            span {
+              display: inline-block;
+              min-width: 45px;
+              max-width: 140px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              text-align: center;
+              align-self: center;
+              padding: 0px 5px;
+            }
+          }
+
+          .tag.frequency {
+            background: #ffe599aa;
+            border: 1px solid #6b6040aa;
+          }
+
+          .tag.ac {
+            background: #55e9b8aa;
+            border: 1px solid #2c7a60aa;
+          }
+
+          .tag.db {
+            background: #cf81d6aa;
+            border: 1px solid #563558aa;
+          }
+        }
+
+        .icon.with-category {
+          flex: 0 0 44px;
+
+          img {
+            height: 22px;
+            width: 22px;
+            flex: 0 0 22px;
+          }
+
+          img.category {
+            border-radius: 0 5px 5px 0;
+          }
+        }
+
+        .name {
+          align-self: center;
+          font-size: 12px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #222224;
+        }
+
+        &.rollable {
+          &:hover {
+            background: linear-gradient(45deg, #e6bfe3, #c2fffd) !important;
+            cursor: pointer;
+
+            img.icon {
+              display: none;
+            }
+
+            img.dice {
+              display: block;
+            }
+
+            .icon {
+              flex: 0 0 25px;
+            }
+
+            .name {
+              flex: 0 0 120px;
+            }
+          }
+        }
+      }
+
+      .action.attack,
+      .action.struggle {
+        .name {
+          flex: 0 0 100px;
+        }
+      }
+
+      .action.item {
+        .icon {
+          flex: 0 0 33px;
+
+          img {
+            height: 33px;
+            width: 33px;
+          }
+        }
+
+        .name {
+          flex: 0 0 100px;
+        }
+      }
+
+      .action.feat,
+      .action.ability {
+        .name {
+          flex: 1;
+        }
+      }
+
+    }
+
+    .tab-strip {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 35px;
+      min-width: 35px;
+      height: 150px;
+      background: #222224bb;
+      gap: 2px;
+
+      .tab-strip-tab {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex: 1;
+        cursor: pointer;
+        gap: 2px;
+        border-radius: 5px;
+
+        i {
+          font-size: 16px;
+        }
+
+        .tab-label {
+          font-size: 9px;
+          white-space: nowrap;
+        }
+
+        &.active {
+          background: linear-gradient(45deg, #ecdbeb, #dffffe);
+          color: #222224;
+          box-shadow: inset 0 0 8px rgba(34, 34, 36, 0.25);
+        }
+
+        &.inactive {
+          color: #ffffffaa;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+
+    .avatar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-width: 85px;
+      height: 100%;
+      background: linear-gradient(45deg, #ecdbeb, #dffffe) !important;
+      border-radius: 5px;
+
+      img {
+        object-fit: cover;
+        border: unset;
+        image-rendering: pixelated;
+        width: 85px;
+        height: 150px;
+      }
+
+      &.pokemon {
+        min-width: 150px;
+        img {
+          width: 150px;
+        }
+      }
+    }
+
+    .action-bar {
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      border-left: 3px solid #222224;
+      box-shadow: 0 0 10px #222224;
+      padding: 0 2px;
+      justify-content: center;
+      align-items: center;
+
+      .action {
+        font-size: 16px;
+        margin: 0.25rem 0;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #222224aa;
+        background: #222224aa;
+        color: #ffffffcd;
+      }
+
+      .movement-card {
+        border: 1px solid #222224aa;
+        background: #222224aa;
+        color: #ffffffcd;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 40px;
+        height: 25px;
+        margin: 3px 0;
+      }
+    }
+
+    .separator {
+      width: 1px;
+      height: 150px;
+      background: #222224bb;
+    }
+
+    .misc-menu {
+      display: flex;
+      flex-direction: column;
+      min-width: 100px;
+      max-width: 100px;
+      height: 150px;
+      justify-content: start;
+      padding: 1rem 0.5rem;
+      background: #222224bb;
+
+      .header {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: whitesmoke;
+        margin-bottom: 0.25rem;
+      }
+
+      .ap-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 90px;
+        color: whitesmoke;
+
+        span {
+          flex: 0 0 auto;
+          margin: 0 5px;
+        }
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+
+        .icon {
+          width: 32px;
+          height: 32px;
+          border: unset;
+        }
+
+        .name {
+          color: whitesmoke;
+          align-self: center;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .top-panel {
+    position: absolute;
+    border-top-left-radius: 15px;
+    background: url(../../../../ui/denim075.png) repeat;
+    /* Position the top-panel to the left of the token panel */
+    right: 100%;
+    bottom: 0;
+    // width: 172px;
+    height: @tokenPanelHeight;
+    overflow: hidden;
+    padding: 5px 5px 0.5rem 5px;
+    z-index: 1;
+    display: flex;
+
+    .block {
+      max-width: 172px;
+      width: 172px;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .header {
+      align-self: center;
+      color: whitesmoke;
+      // font-style: italic;
+      text-align: center;
+      // font-size: 18px;
+      line-height: 20px;
+      margin: 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid var(--color-border-dark-secondary);
+      border-bottom: 2px solid var(--color-border-dark-highlight);
+    }
+
+    .conditions {
+      .condition {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2px;
+        padding-top: 2px;
+        overflow: hidden;
+
+        .icon {
+          height: 32px;
+          width: 32px;
+          object-fit: cover;
+          border: unset;
+          background: #222224;
+        }
+
+        .name {
+          flex: 0 0 auto;
+          align-self: center;
+          color: whitesmoke;
+          margin-left: 5px;
+          font-size: 12px;
+        }
+      }
+
+      .effect {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2px;
+        padding-top: 2px;
+        overflow: hidden;
+
+        .icon {
+          height: 32px;
+          width: 32px;
+          object-fit: cover;
+          border: unset;
+          background: #222224;
+        }
+
+        .name {
+          flex: 0 0 auto;
+          align-self: center;
+          color: whitesmoke;
+          margin-left: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .effects {
+      .condition {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2px;
+        padding-top: 2px;
+        overflow: hidden;
+
+        .icon {
+          height: 32px;
+          width: 32px;
+          object-fit: cover;
+          border: unset;
+          background: #222224;
+        }
+
+        .name {
+          flex: 0 0 auto;
+          align-self: center;
+          color: whitesmoke;
+          margin-left: 5px;
+          font-size: 12px;
+        }
+      }
+
+      .effect {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2px;
+        padding-top: 2px;
+        overflow: hidden;
+
+        .icon {
+          height: 32px;
+          width: 32px;
+          object-fit: cover;
+          border: unset;
+          background: #222224;
+        }
+
+        .name {
+          flex: 0 0 auto;
+          align-self: center;
+          color: whitesmoke;
+          margin-left: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .top-panel-toggle {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      padding: 4px 2px;
+      gap: 5px;
+      color: whitesmoke;
+      width: 20px;
+      border-radius: 5px;
+
+      .toggle-label {
+        font-style: italic;
+        font-size: 13px;
+      }
+
+      &:hover {
+        color: #ddd;
+        background: rgba(255, 255, 255, 0.05);
+      }
+    }
+
+    @partyImgSize: 38px;
+    @hpBarThickness: 4px;
+    @partyImgSizeWithHp: @partyImgSize + @hpBarThickness;
+    .party-overview {
+      width: (@partyImgSizeWithHp * 3) + 16px;
+      >img.trainer {
+        border: unset;
+        width: @partyImgSize;
+        height: @partyImgSize;
+        background: white;
+        box-shadow: inset 0 0 5px #222224;
+        object-fit: contain;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      .party-pokemon {
+        display: grid;
+        grid-template-columns: @partyImgSizeWithHp @partyImgSizeWithHp @partyImgSizeWithHp;
+        grid-auto-flow: row;
+        grid-auto-rows: @partyImgSize;
+        gap: 3px;
+
+        .pokemon {
+          background: white;
+          box-shadow: inset 0 0 5px #222224;
+          border-radius: 5px;
+          position: relative;
+
+          &:after {
+            position: absolute;
+            width: @hpBarThickness;
+            height: var(--health-percent);
+            background: black;
+            top: 0;
+            left: 0;
+            content: "";
+          }
+
+          img {
+            filter: drop-shadow(1px 1px 2px #222224);
+            border: none;
+            border-radius: 5px;
+            position: relative;
+            height: @partyImgSize;
+            width: @partyImgSizeWithHp;
+            object-fit: contain;
+          }
+
+          img.black {
+            border-left: 4px solid black;
+            background-color: #00000065;
+          }
+
+          img.darkred {
+            border-left: 4px solid #686161;
+            background-color: #8b000065;
+          }
+
+          img.red {
+            border-left: 4px solid red;
+            background-color: #ff000065;
+          }
+
+          img.orange {
+            border-left: 4px solid orange;
+            background-color: #ffa50065;
+          }
+
+          img.green {
+            border-left: 4px solid lime;
+            background-color: #00ff0065;
+          }
+
+          img.lime {
+            border-left: 4px solid green;
+            background-color: #00800065;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// position the hotbar at the left of the screen
+#interface {
+  justify-content: flex-start;
+
+  #ui-middle {
+    margin-left: 232px;
+
+    #ui-bottom {
+      align-items: flex-start;
+    }
+  }
+}
+
+//
+// Responsive Design
+//
+
+// reduce avatar size on smaller screens to minimize space usage
+@media (max-width: 1650px) {
+	.token-panel {
+    .main-panel {
+      .avatar,
+      .avatar.pokemon {
+        min-width: 60px;
+        img {
+          image-rendering: unset;
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+
+// keep the hotbar in two-row mode
+@media (max-width: 1600px) {
+  .token-panel-open {
+    #hotbar {
+      height: calc((var(--hotbar-size)* 2) + 8px);
+      #action-bar {
+        width: calc((var(--hotbar-size)* 5) + 32px);
+      }
+    }
+  }
+}
+
+// hide the top panel on very small screens to save space
+@media (max-width: 1200px) {
+	.token-panel {
+    .top-panel {
+      display: none;
+    }
+    .main-panel {
+      border-top-left-radius: 5px;
+    }
+  }
+}

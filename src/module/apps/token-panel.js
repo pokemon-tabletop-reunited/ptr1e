@@ -7,6 +7,10 @@ export class TokenPanel extends Application {
         return this.token?.actor ?? game.user?.character ?? null;
     }
 
+    get shouldShow() {
+        return !!this.actor && game.user.settings.showTokenPanel;
+    }
+
     /**
      * Debounce and slightly delayed request to re-render this panel. Necessary for situations where it is not possible
      * to properly wait for promises to resolve before refreshing the UI.
@@ -148,24 +152,7 @@ export class TokenPanel extends Application {
     activateListeners($html) {
         super.activateListeners($html);
 
-        if ($('#actions-accordion').find(".actions-actions, .struggles-actions").length > 1) {
-            $html.find('#actions-accordion').enhsplitter({
-                position: game.user.getFlag("ptu", "TokenPanel.actionsSplit") ?? "50%",
-                splitterSize: "10px",
-                minSize: 0,
-                onDragEnd: (e, c) => game.user.setFlag("ptu", "TokenPanel.actionsSplit", c.currentPosition),
-            });
-        }
-        if ($('#items-accordion').find(".pokeball-items, .other-items").length > 1) {
-            $html.find('#items-accordion').enhsplitter({
-                position: game.user.getFlag("ptu", "TokenPanel.itemsSplit") ?? "50%",
-                splitterSize: "10px",
-                minSize: 0,
-                onDragEnd: (e, c) => game.user.setFlag("ptu", "TokenPanel.itemsSplit", c.currentPosition),
-            });
-        }
-
-        for (const toggle of $html.find(".toggle-bar .action, .top-panel-toggle")) {
+        for (const toggle of $html.find(".tab-strip-tab, .top-panel-toggle")) {
             toggle.addEventListener("click", (event) => {
                 const target = event.currentTarget.dataset.target;
                 const isShown = game.user.getFlag("ptu", `TokenPanel.show.${target}`);
@@ -174,7 +161,7 @@ export class TokenPanel extends Application {
             });
         }
 
-        for (const action of $html.find(".actions-accordion .action")) {
+        for (const action of $html.find(".action.attack, .action.struggle")) {
             action.addEventListener("click", (event) => {
                 const id = event.currentTarget.dataset.id;
                 const attack = this.actor.attacks.get(id);
@@ -205,7 +192,7 @@ export class TokenPanel extends Application {
             });
         }
 
-        for (const action of $html.find(".pokeball-items .action")) {
+        for (const action of $html.find(".action.item.pokeball")) {
             action.addEventListener("click", (event) => {
                 const id = event.currentTarget.dataset.id;
                 const ball = this.actor.items.get(id);
@@ -215,7 +202,7 @@ export class TokenPanel extends Application {
             });
         }
 
-        for (const action of $html.find(".items-accordion .action, .abilities .action, .feats .action")) {
+        for (const action of $html.find(".action.item:not(.pokeball), .action.ability, .action.feat")) {
             action.addEventListener("contextmenu", (event) => {
                 const id = event.currentTarget.dataset.id;
                 const item = this.actor.items.get(id);
@@ -399,5 +386,16 @@ export class TokenPanel extends Application {
 
         if (pokemon.length > 0) party.pokemon = pokemon;
         return party;
+    }
+
+    /** @override */
+    async render() {
+        // check if this.actor exists
+        if (!this.shouldShow) {
+            document.querySelector("body").classList.remove("token-panel-open");
+        } else {
+            document.querySelector("body").classList.add("token-panel-open");
+        }
+        return super.render(...arguments);
     }
 }
