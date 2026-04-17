@@ -106,7 +106,8 @@ export class CompendiumBrowserSpeciesTab extends CompendiumBrowserTab {
                     number: isNaN(number) ? Infinity : number,
                     moves: moves,
                     abilities: abilities,
-                    capabilities: speciesData.system.capabilities
+                    capabilities: speciesData.system.capabilities,
+                    keywords: speciesData.system.keywords
                 })
             }
         }
