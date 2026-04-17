@@ -26,6 +26,18 @@ export class TokenPanel extends Application {
         });
     }
 
+    async _getItemData(item) {
+        const effectText = item.system.snippet || item.system.effect || "";
+        return {
+            name: item.name,
+            img: item.img,
+            id: item.id,
+            effect: effectText ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(effectText), {async: true}) : "",
+            frequency: item.system.frequency,
+            rollable: !!item.roll,
+        }
+    }
+
     /** @override */
     async getData(options = {}) {
         const { actor } = this;
@@ -51,7 +63,7 @@ export class TokenPanel extends Application {
                 keywords: attack.item?.system.keywords ?? [],
                 sort: attack.item?.sort ?? 0,
             };
-            if(attack.item?.system.category) data.category = `/systems/ptu/static/css/images/types2/${attack.item?.system.category}IC_Icon.png`;
+            if (attack.item?.system.category) data.category = `/systems/ptu/static/css/images/types2/${attack.item?.system.category}IC_Icon.png`;
             if (attack.item.system.isStruggle) struggles.push(data);
             else attacks.push(data);
         }
@@ -67,63 +79,38 @@ export class TokenPanel extends Application {
         const feats = [];
         for (const feat of actor.itemTypes.feat?.sort((a, b) => a.sort - b.sort) ?? []) {
             if (feat.getFlag("ptu", "showInTokenPanel") === false) continue;
-            feats.push({
-                name: feat.name,
-                img: feat.img,
-                id: feat.id,
-                effect: feat.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(feat.system.effect), {async: true}) : "",
-                frequency: feat.system.frequency,
-                rollable: !!feat.roll,
-                keywords: feat.system.keywords,
-            })
+            feats.push(await this._getItemData(feat));
         }
 
         const abilities = [];
         for (const ability of actor.itemTypes.ability?.sort((a, b) => a.sort - b.sort) ?? []) {
             if (ability.getFlag("ptu", "showInTokenPanel") === false) continue;
-            abilities.push({
-                name: ability.name,
-                img: ability.img,
-                id: ability.id,
-                effect: ability.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(ability.system.effect), {async: true}) : "",
-                frequency: ability.system.frequency,
-                rollable: !!ability.roll,
-            })
+            abilities.push(await this._getItemData(ability));
         }
 
         const edges = [];
         for (const edge of actor.itemTypes.edge?.sort((a, b) => a.sort - b.sort) ?? []) {
             if (!(edge.getFlag("ptu", "showInTokenPanel") ?? false)) continue;
-            edges.push({
-                name: edge.name,
-                img: edge.img,
-                id: edge.id,
-                effect: edge.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(edge.system.effect), {async: true}) : "",
-                frequency: edge.system.frequency,
-                rollable: !!edge.roll,
-            })
+            edges.push(await this._getItemData(edge));
         }
+        
         for (const pokeedge of actor.itemTypes.pokeedge?.sort((a, b) => a.sort - b.sort) ?? []) {
             if (!(pokeedge.getFlag("ptu", "showInTokenPanel") ?? false)) continue;
-            edges.push({
-                name: pokeedge.name,
-                img: pokeedge.img,
-                id: pokeedge.id,
-                effect: pokeedge.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(pokeedge.system.effect), {async: true}) : "",
-                frequency: pokeedge.system.frequency,
-                rollable: !!pokeedge.roll,
-            })
+            edges.push(await this._getItemData(pokeedge));
+        }
+
+        const capabilities = [];
+        for (const capability of actor.itemTypes.capability?.sort((a, b) => a.sort - b.sort) ?? []) {
+            if (!(capability.getFlag("ptu", "showInTokenPanel") ?? false)) continue;
+            capabilities.push(await this._getItemData(capability));
         }
 
         const effects = [];
         for (const effect of actor.itemTypes.effect?.sort((a, b) => a.sort - b.sort) ?? []) {
             if (effect.getFlag("ptu", "showInTokenPanel") === false) continue;
             effects.push({
-                id: effect.id,
                 parent: effect.parent.id,
-                name: effect.name,
-                img: effect.img,
-                effect: effect.system.effect ? await foundry.applications.ux.TextEditor.implementation.enrichHTML(foundry.utils.duplicate(effect.system.effect), {async: true}) : "",
+                ...await this._getItemData(effect),
             });
         }
 
@@ -167,6 +154,7 @@ export class TokenPanel extends Application {
             effects,
             feats,
             edges,
+            capabilities,
             abilities,
             heldItem,
             movement
@@ -227,7 +215,12 @@ export class TokenPanel extends Application {
             });
         }
 
-        for (const action of $html.find(".action.item:not(.pokeball), .action.ability, .action.feat")) {
+        for (const action of $html.find(".action.item:not(.pokeball), .action.ability, .action.feat, .action.edge, .action.pokeedge, .action.capability")) {
+            action.addEventListener("dblclick", (event) => {
+                const id = event.currentTarget.dataset.id;
+                const item = this.actor.items.get(id);
+                return item?.sheet?.render?.({force: true});
+            });
             action.addEventListener("contextmenu", (event) => {
                 const id = event.currentTarget.dataset.id;
                 const item = this.actor.items.get(id);

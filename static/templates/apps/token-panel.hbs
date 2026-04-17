@@ -148,6 +148,26 @@
             {{/each}}
             {{/if}}
 
+            {{#if (and show.capabilities (gt capabilities.length 0))}}
+            {{#each capabilities as |capability|}}
+                <div class="action capability {{#if capability.rollable}}rollable{{/if}}" data-id="{{capability.id}}"
+                    data-tooltip="{{capability.effect}}" data-tooltip-direction="LEFT">
+                    <div class="icon">
+                        <img class="icon" src="{{capability.img}}" alt="{{capability.name}}">
+                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{capability.name}}">
+                    </div>
+                    <div class="name">
+                        {{capability.name}}
+                    </div>
+                    <div class="tags">
+                        {{#if capability.frequency}}
+                            <div class="tag frequency" title="{{capability.frequency}}"><span>{{capability.frequency}}</span></div>
+                        {{/if}}
+                    </div>
+                </div>
+            {{/each}}
+            {{/if}}
+
             {{#if (and show.items (or (gt items.balls.length 0) (gt items.other.length 0)))}}
             {{#if (gt items.balls.length 0)}}
             {{#each items.balls as |ball|}}
@@ -215,6 +235,13 @@
             <div class="tab-strip-tab {{#if show.edges}}active{{else}}inactive{{/if}}" data-target="edges">
                 <i class="fas fa-rhombus"></i>
                 <span class="tab-label">Edges</span>
+            </div>
+        {{/if}}
+
+        {{#if (gt capabilities.length 0)}}
+            <div class="tab-strip-tab {{#if show.capabilities}}active{{else}}inactive{{/if}}" data-target="capabilities">
+                <i class="fas fa-arrow-up"></i>
+                <span class="tab-label">Capa.</span>
             </div>
         {{/if}}
         
