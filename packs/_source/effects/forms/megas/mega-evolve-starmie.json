@@ -1,11 +1,10 @@
 {
-  "folder": "TuFJ2nmx9i2k6KYk",
   "name": "Mega Evolve: Starmie",
   "type": "effect",
   "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
   "system": {
     "origin": "",
-    "effect": "",
+    "effect": "This effect will mega-evolve your Victreebel.",
     "snippet": "",
     "rules": [
       {
@@ -14,7 +13,7 @@
           "species:starmie",
           "self:pokemon:shiny"
         ],
-        "value": "/systems/ptu/static/images/sprites/121_MEGA.webp"
+        "value": "/systems/ptu/static/images/sprites/121s_MEGA.webp"
       },
       {
         "key": "TokenImage",
@@ -33,7 +32,7 @@
         "predicate": [
           "species:starmie"
         ],
-        "uuid": "Compendium.ptu.species.Item.GhACTAIZ8snCaBcm"
+        "uuid": "Compendium.ptu.species.Item.WsxBBDZvKOk8QIqu"
       },
       {
         "key": "GrantItem",
@@ -41,7 +40,7 @@
           "species:starmie"
         ],
         "allowDuplicate": false,
-        "uuid": "Compendium.ptu.abilities.Item.gPFOWD8FeI5TQrum"
+        "uuid": "Compendium.ptu.abilities.Item.oNB76oqVYrjhYd7W"
       }
     ],
     "enabled": true,
@@ -62,7 +61,7 @@
     "duration": {
       "value": -1,
       "unit": "unlimited",
-      "expiry": "turn-start"
+      "expiry": null
     },
     "start": {
       "value": 0,
@@ -76,20 +75,27 @@
     "context": null
   },
   "effects": [],
+  "folder": "TuFJ2nmx9i2k6KYk",
   "ownership": {
-    "default": 0
+    "default": 0,
+    "izk1pNEkJuVFmrxW": 3
   },
-  "flags": {},
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
   "_stats": {
-    "systemId": "ptu",
-    "systemVersion": "4.0.0.beta.12",
-    "coreVersion": "13.350",
-    "createdTime": 1698190829165,
-    "modifiedTime": 1699197709875,
-    "lastModifiedBy": "ptubuilder000000",
+    "compendiumSource": null,
     "duplicateSource": null,
-    "exportSource": null
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ptu",
+    "systemVersion": "4.4.3.11",
+    "createdTime": 1776486782628,
+    "modifiedTime": 1776486782628,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
   },
-  "_id": "rgUGPqu1a4RQBWVI",
+  "_id": "rtn6mhUp7iRdYNXV",
   "sort": 0
 }
