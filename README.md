@@ -40,6 +40,8 @@ Please note that this branch is no longer receiving updates and is only compatib
 ## 🚨 Changes From Stable 🚨
 - Redesigned Token Panel moved from Top Right to Bottom Right (near old position) beneath the sidebar
 - Add `move:super-effective` and `move:not-very-effective` Roll Options
+- Add mega sprites and mega stones
+- Push To Chat On Left Click From Token Panel
 - [Fixed Keywords in Species Compendium Browser Tab](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/875)
 - [Add Capabilities and Edges Tab to Token Panel](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/871)
 - [Optional Contest Tabs](https://github.com/pokemon-tabletop-reunited/ptr1e/issues/869)
