@@ -1,0 +1,101 @@
+{
+  "name": "Mega Evolve: Clefable",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will mega-evolve your Clefable.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:clefable",
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/36s_MEGA.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            "species:clefable",
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/36_MEGA.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:clefable"
+        ],
+        "uuid": "Compendium.ptu.species.Item.MCifsHbAN4O8ULv7"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "species:clefable"
+        ],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.yjMXQVY5eXWyrlzG"
+      }
+    ],
+    "enabled": true,
+    "slug": "mega-evolve-clefable",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "TuFJ2nmx9i2k6KYk",
+  "ownership": {
+    "default": 0,
+    "izk1pNEkJuVFmrxW": 3
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.ptu.effects.Item.1Z7Pz0DppAV5TMLO",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ptu",
+    "systemVersion": "4.4.3.10",
+    "createdTime": 1776462964722,
+    "modifiedTime": 1776462964894,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
+  },
+  "_id": "1Z7Pz0DppAV5TMLO",
+  "sort": 50000
+}

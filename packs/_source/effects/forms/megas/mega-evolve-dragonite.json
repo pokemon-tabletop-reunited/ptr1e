@@ -1,0 +1,101 @@
+{
+  "name": "Mega Evolve: Dragonite",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "This effect will mega-evolve your Dragonite.",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:dragonite",
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/149s_MEGA.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            "species:dragonite",
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/149_MEGA.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:dragonite"
+        ],
+        "uuid": "Compendium.ptu.species.Item.WNiZhV2AuR3q69h9"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "species:dragonite"
+        ],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.notS9vQ0jOhImwqe"
+      }
+    ],
+    "enabled": true,
+    "slug": "mega-evolve-dragonite",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "folder": "TuFJ2nmx9i2k6KYk",
+  "ownership": {
+    "default": 0,
+    "izk1pNEkJuVFmrxW": 3
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.ptu.effects.Item.Wt3lHrDImRqc7skQ",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "ptu",
+    "systemVersion": "4.4.3.10",
+    "createdTime": 1776462473190,
+    "modifiedTime": 1776462495632,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW"
+  },
+  "_id": "Wt3lHrDImRqc7skQ",
+  "sort": 0
+}
