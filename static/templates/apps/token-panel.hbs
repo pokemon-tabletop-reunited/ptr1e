@@ -26,11 +26,15 @@
             {{#if show.actions}}
             {{#if (gt attacks.length 0)}}
             {{#each attacks as |attack|}}
-                <div class="action attack {{#if attack.rollable}}rollable{{/if}}" data-id="{{attack.id}}"
+                <div class="action attack {{#if attack.rollable}}rollable{{else}}sendtochat{{/if}}" data-id="{{attack.id}}"
                     data-tooltip="<div class='effect-popup'><div class='d-flex justify-content-center'><div class='effect-range'>{{attack.range}}</div>{{#each attack.keywords}}<div class='effect-range'>{{this}}</div>{{/each}}</div><div class='effect-effect'>{{attack.effect}}</div></div>" data-tooltip-direction="LEFT">
                     <div class="icon {{#if attack.category}}with-category{{/if}}">
                         <img class="icon" src="{{attack.img}}" alt="{{attack.name}}">
-                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{attack.name}}">
+                        {{#if attack.rollable}}
+                            <img class="dice" src="/icons/svg/d20.svg" title="Roll {{attack.name}}">
+                        {{else}}
+                            <img class="dice" src="systems/ptu/static/images/svg/chat.svg" title="Send {{attack.name}} to chat">
+                        {{/if}}
                         {{#if attack.category}}
                             <img class="icon category" src="{{attack.category}}" alt="{{attack.name}}">
                         {{/if}}
@@ -58,10 +62,14 @@
             {{/if}}
             {{#if (gt struggles.length 0)}}
             {{#each struggles as |struggle|}}
-            <div class="action struggle {{#if struggle.rollable}}rollable{{/if}}" data-id="{{struggle.id}}">
+            <div class="action struggle {{#if struggle.rollable}}rollable{{else}}sendtochat{{/if}}" data-id="{{struggle.id}}">
                 <div class="icon {{#if struggle.category}}with-category{{/if}}">
                     <img class="icon" src="{{struggle.img}}" alt="{{struggle.name}}">
-                    <img class="dice" src="/icons/svg/d20.svg" title="Roll {{struggle.name}}">
+                    {{#if struggle.rollable}}
+                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{struggle.name}}">
+                    {{else}}
+                        <img class="dice" src="systems/ptu/static/images/svg/chat.svg" title="Send {{struggle.name}} to chat">
+                    {{/if}}
                     {{#if struggle.category}}
                         <img class="icon category" src="{{struggle.category}}" alt="{{struggle.name}}">
                     {{/if}}
@@ -87,11 +95,15 @@
 
             {{#if (and (and (is actor.type "character") show.feats) (gt feats.length 0))}}
             {{#each feats as |feat|}}
-                <div class="action feat {{#if feat.rollable}}rollable{{/if}}" data-id="{{feat.id}}"
+                <div class="action feat {{#if feat.rollable}}rollable{{else}}sendtochat{{/if}}" data-id="{{feat.id}}"
                     data-tooltip="<div class='effect-popup'>{{#if feat.keywords}}<div class='d-flex justify-content-center'>{{#each feat.keywords}}<div class='effect-range'>{{this}}</div>{{/each}}</div>{{/if}}<div class='effect-effect'>{{feat.effect}}</div></div>" data-tooltip-direction="LEFT">
                     <div class="icon">
                         <img class="icon" src="{{feat.img}}" alt="{{feat.name}}">
-                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{feat.name}}">
+                        {{#if feat.rollable}}
+                            <img class="dice" src="/icons/svg/d20.svg" title="Roll {{feat.name}}">
+                        {{else}}
+                            <img class="dice" src="systems/ptu/static/images/svg/chat.svg" title="Send {{feat.name}} to chat">
+                        {{/if}}
                     </div>
                     <div class="name">
                         {{feat.name}}
@@ -109,11 +121,15 @@
 
             {{#if (and show.abilities (gt abilities.length 0))}}
             {{#each abilities as |ability|}}
-                <div class="action ability {{#if ability.rollable}}rollable{{/if}}" data-id="{{ability.id}}"
+                <div class="action ability {{#if ability.rollable}}rollable{{else}}sendtochat{{/if}}" data-id="{{ability.id}}"
                     data-tooltip="{{ability.effect}}" data-tooltip-direction="LEFT">
                     <div class="icon">
                         <img class="icon" src="{{ability.img}}" alt="{{ability.name}}">
-                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{ability.name}}">
+                        {{#if ability.rollable}}
+                            <img class="dice" src="/icons/svg/d20.svg" title="Roll {{ability.name}}">
+                        {{else}}
+                            <img class="dice" src="systems/ptu/static/images/svg/chat.svg" title="Send {{ability.name}} to chat">
+                        {{/if}}
                     </div>
                     <div class="name">
                         {{ability.name}}
@@ -130,11 +146,15 @@
 
             {{#if (and show.edges (gt edges.length 0))}}
             {{#each edges as |edge|}}
-                <div class="action edge {{#if edge.rollable}}rollable{{/if}}" data-id="{{edge.id}}"
+                <div class="action edge {{#if edge.rollable}}rollable{{else}}sendtochat{{/if}}" data-id="{{edge.id}}"
                     data-tooltip="{{edge.effect}}" data-tooltip-direction="LEFT">
                     <div class="icon">
                         <img class="icon" src="{{edge.img}}" alt="{{edge.name}}">
-                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{edge.name}}">
+                        {{#if edge.rollable}}
+                            <img class="dice" src="/icons/svg/d20.svg" title="Roll {{edge.name}}">
+                        {{else}}
+                            <img class="dice" src="systems/ptu/static/images/svg/chat.svg" title="Send {{edge.name}} to chat">
+                        {{/if}}
                     </div>
                     <div class="name">
                         {{edge.name}}
@@ -150,11 +170,15 @@
 
             {{#if (and show.capabilities (gt capabilities.length 0))}}
             {{#each capabilities as |capability|}}
-                <div class="action capability {{#if capability.rollable}}rollable{{/if}}" data-id="{{capability.id}}"
+                <div class="action capability {{#if capability.rollable}}rollable{{else}}sendtochat{{/if}}" data-id="{{capability.id}}"
                     data-tooltip="{{capability.effect}}" data-tooltip-direction="LEFT">
                     <div class="icon">
                         <img class="icon" src="{{capability.img}}" alt="{{capability.name}}">
-                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{capability.name}}">
+                        {{#if capability.rollable}}
+                            <img class="dice" src="/icons/svg/d20.svg" title="Roll {{capability.name}}">
+                        {{else}}
+                            <img class="dice" src="systems/ptu/static/images/svg/chat.svg" title="Send {{capability.name}} to chat">
+                        {{/if}}
                     </div>
                     <div class="name">
                         {{capability.name}}
@@ -171,11 +195,15 @@
             {{#if (and show.items (or (gt items.balls.length 0) (gt items.other.length 0)))}}
             {{#if (gt items.balls.length 0)}}
             {{#each items.balls as |ball|}}
-                <div class="action item pokeball {{#if ball.rollable}}rollable{{/if}}" data-id="{{ball.id}}"
+                <div class="action item pokeball {{#if ball.rollable}}rollable{{else}}sendtochat{{/if}}" data-id="{{ball.id}}"
                     data-tooltip="{{ball.system.effect}}" data-tooltip-direction="LEFT">
                     <div class="icon">
                         <img class="icon" src="{{ball.img}}" alt="{{ball.name}}">
-                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{ball.name}}">
+                        {{#if ball.rollable}}
+                            <img class="dice" src="/icons/svg/d20.svg" title="Roll {{ball.name}}">
+                        {{else}}
+                            <img class="dice" src="systems/ptu/static/images/svg/chat.svg" title="Send {{ball.name}} to chat">
+                        {{/if}}
                     </div>
                     <div class="name">
                         {{ball.name}}
@@ -185,11 +213,15 @@
             {{/if}}
             {{#if (gt items.other.length 0)}}
             {{#each items.other as |item|}}
-                <div class="action item other {{#if item.rollable}}rollable{{/if}}" data-id="{{item.id}}"
+                <div class="action item other {{#if item.rollable}}rollable{{else}}sendtochat{{/if}}" data-id="{{item.id}}"
                     data-tooltip="{{item.effect}}" data-tooltip-direction="LEFT">
                     <div class="icon">
                         <img class="icon" src="{{item.img}}" alt="{{item.name}}">
-                        <img class="dice" src="/icons/svg/d20.svg" title="Roll {{item.name}}">
+                        {{#if item.rollable}}
+                            <img class="dice" src="/icons/svg/d20.svg" title="Roll {{item.name}}">
+                        {{else}}
+                            <img class="dice" src="systems/ptu/static/images/svg/chat.svg" title="Send {{item.name}} to chat">
+                        {{/if}}
                     </div>
                     <div class="name">
                         {{item.name}}

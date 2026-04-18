@@ -180,7 +180,7 @@ export class TokenPanel extends Application {
                 const attack = this.actor.attacks.get(id);
                 if (!attack) return;
 
-                attack.roll?.({
+                if (attack.roll) attack.roll({
                     event, callback: async (rolls, targets, msg, event) => {
                         if (!game.settings.get("ptu", "autoRollDamage")) return;
 
@@ -197,6 +197,7 @@ export class TokenPanel extends Application {
                         }
                     }
                 });
+                else attack.item?.sendToChat?.();
             });
             action.addEventListener("contextmenu", (event) => {
                 const id = event.currentTarget.dataset.id;
@@ -211,11 +212,20 @@ export class TokenPanel extends Application {
                 const ball = this.actor.items.get(id);
                 if (!ball) return;
 
-                ball.roll?.({event});
+                if (ball.roll) ball.roll({event});
+                else ball.sendToChat?.();
             });
         }
 
         for (const action of $html.find(".action.item:not(.pokeball), .action.ability, .action.feat, .action.edge, .action.pokeedge, .action.capability")) {
+            action.addEventListener("click", (event) => {
+                const id = event.currentTarget.dataset.id;
+                const item = this.actor.items.get(id);
+                if (!item) return;
+
+                if (item.roll) item.roll({event});
+                else item.sendToChat?.();
+            });
             action.addEventListener("dblclick", (event) => {
                 const id = event.currentTarget.dataset.id;
                 const item = this.actor.items.get(id);
