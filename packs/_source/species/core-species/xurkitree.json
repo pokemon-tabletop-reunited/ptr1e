@@ -56,11 +56,13 @@
     },
     "evolutions": [
       {
+        "level": 1,
         "uuid": "Compendium.ptu.species.Item.pO7d1ShWu3I8iQEs",
         "slug": "xurkitree",
-        "level": 1,
         "other": {
-          "restrictions": []
+          "restrictions": [
+            ""
+          ]
         }
       }
     ],
@@ -92,7 +94,7 @@
       "highJump": 2,
       "longJump": 3,
       "power": 9,
-      "naturewalk": [],
+      "naturewalk": "",
       "other": [
         {
           "slug": "glow",
@@ -467,8 +469,15 @@
       "value": "PTR Core Dex"
     },
     "keywords": [
-      "Alola"
-    ]
+      "Alola",
+      "Ultra Beast"
+    ],
+    "type": {
+      "0": "Electric",
+      "1": ""
+    },
+    "stackSlugs": false,
+    "enabled": false
   },
   "img": "/systems/ptu/static/css/images/icons/dex_icon.png",
   "folder": "dljUGxtO8AR0tERN",
@@ -482,10 +491,10 @@
   "flags": {},
   "_stats": {
     "systemId": "ptu",
-    "systemVersion": "4.1.4",
-    "coreVersion": "13.350",
+    "systemVersion": "4.4.3.11",
+    "coreVersion": "13.351",
     "createdTime": 1689609527590,
-    "modifiedTime": 1708094889604,
+    "modifiedTime": 1776474930723,
     "lastModifiedBy": "ptubuilder000000",
     "duplicateSource": null,
     "exportSource": null
