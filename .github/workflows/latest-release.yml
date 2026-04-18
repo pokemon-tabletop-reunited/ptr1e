@@ -35,9 +35,10 @@ jobs:
                   npm install -g less
                   lessc less/main.less static/css/main.css
 
-            - name: Copy CSS to root
+            - name: Copy CSS and Images to root
               run: |
                   cp -r static/css css
+                  cp -r static/images images
   
             - name: Update Manifest
               run: |
