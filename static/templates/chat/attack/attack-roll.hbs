@@ -33,37 +33,37 @@
                         {{#if @root/outcome}}
                             {{#switch (lookup @root/outcome target._id)}}
                                 {{#case "hit"}}
-                                    <img src="/systems/ptu/images/icons/HitIcon.png">
+                                    <img src="/systems/ptu/static/images/icons/HitIcon.png">
                                 {{/case}}
                                 {{#case "crit-hit"}}
-                                    <img src="/systems/ptu/images/icons/CriticalHit.png">
+                                    <img src="/systems/ptu/static/images/icons/CriticalHit.png">
                                 {{/case}}
                                 {{#case "blocked-crit"}}
-                                    <img class="blocked tooltip" title="{{localize "PTU.CriticalImmunityLabel"}}" src="/systems/ptu/images/icons/HitIcon.png">
+                                    <img class="blocked tooltip" title="{{localize "PTU.CriticalImmunityLabel"}}" src="/systems/ptu/static/images/icons/HitIcon.png">
                                 {{/case}}
                                 {{#case "crit-miss"}}
-                                    <img src="/systems/ptu/images/icons/CriticalMiss.png">
+                                    <img src="/systems/ptu/static/images/icons/CriticalMiss.png">
                                 {{/case}}
                                 {{#case "miss"}}
-                                    <img src="/systems/ptu/images/icons/MissIcon.png">
+                                    <img src="/systems/ptu/static/images/icons/MissIcon.png">
                                 {{/case}}
                             {{/switch}}
                         {{else}}
                             {{#switch (lookup @root/outcomes target.uuid)}}
                                 {{#case "hit"}}
-                                    <img src="/systems/ptu/images/icons/HitIcon.png">
+                                    <img src="/systems/ptu/static/images/icons/HitIcon.png">
                                 {{/case}}
                                 {{#case "crit-hit"}}
-                                    <img src="/systems/ptu/images/icons/CriticalHit.png">
+                                    <img src="/systems/ptu/static/images/icons/CriticalHit.png">
                                 {{/case}}
                                 {{#case "blocked-crit"}}
-                                    <img class="blocked tooltip" title="{{localize "PTU.CriticalImmunityLabel"}}" src="/systems/ptu/images/icons/HitIcon.png">
+                                    <img class="blocked tooltip" title="{{localize "PTU.CriticalImmunityLabel"}}" src="/systems/ptu/static/images/icons/HitIcon.png">
                                 {{/case}}
                                 {{#case "crit-miss"}}
-                                    <img src="/systems/ptu/images/icons/CriticalMiss.png">
+                                    <img src="/systems/ptu/static/images/icons/CriticalMiss.png">
                                 {{/case}}
                                 {{#case "miss"}}
-                                    <img src="/systems/ptu/images/icons/MissIcon.png">
+                                    <img src="/systems/ptu/static/images/icons/MissIcon.png">
                                 {{/case}}
                             {{/switch}}
                         {{/if}}

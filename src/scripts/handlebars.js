@@ -157,7 +157,7 @@ function _registerPTUHelpers() {
     })
 
     //     Handlebars.registerHelper("calcFrequencyIconPath", function (frequency, currentUseCount) {
-    //         const basePath = "systems/ptu/images/icons/";
+    //         const basePath = "systems/ptu/static/images/icons/";
     //         const useCount = Number(currentUseCount);
     //         switch (frequency) {
     //             case "At-Will":

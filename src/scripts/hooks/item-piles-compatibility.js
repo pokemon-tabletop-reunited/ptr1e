@@ -45,7 +45,7 @@ export const ItemPilesHooks = {
             item_name = item_name.replace("Thrown ","").replace("Broken ","");
             let item_current_img = ptu_item?.img;
         
-            if((item_current_img == "icons/svg/mystery-man.svg") || (item_current_img == "icons/svg/item-bag.svg") || (item_current_img == "systems/ptu/images/item_icons/generic item.webp"))
+            if((item_current_img == "icons/svg/mystery-man.svg") || (item_current_img == "icons/svg/item-bag.svg") || (item_current_img == "systems/ptu/static/images/item_icons/generic item.webp"))
             {
                 let new_image = await GetItemArt(item_name)
         
