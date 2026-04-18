@@ -1,0 +1,100 @@
+{
+  "folder": "TuFJ2nmx9i2k6KYk",
+  "name": "Mega Evolve: Starmie-R",
+  "type": "effect",
+  "img": "/systems/ptu/static/css/images/icons/effect_icon.png",
+  "system": {
+    "origin": "",
+    "effect": "",
+    "snippet": "",
+    "rules": [
+      {
+        "key": "TokenImage",
+        "predicate": [
+          "species:starmie",
+          "self:pokemon:shiny"
+        ],
+        "value": "/systems/ptu/static/images/sprites/121_MEGA_R.webp"
+      },
+      {
+        "key": "TokenImage",
+        "predicate": {
+          "and": [
+            "species:starmie",
+            {
+              "not": "self:pokemon:shiny"
+            }
+          ]
+        },
+        "value": "/systems/ptu/static/images/sprites/121_MEGA_R.webp"
+      },
+      {
+        "key": "TemporarySpecies",
+        "predicate": [
+          "species:starmie"
+        ],
+        "uuid": "Compendium.ptu.species.Item.GhACTAIZ8snCaBcm"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "species:starmie"
+        ],
+        "allowDuplicate": false,
+        "uuid": "Compendium.ptu.abilities.Item.gPFOWD8FeI5TQrum"
+      }
+    ],
+    "enabled": true,
+    "slug": "mega-evolve-starmie",
+    "schema": {
+      "version": null,
+      "lastMigration": null
+    },
+    "referenceEffect": "",
+    "source": {
+      "value": "Homebrew"
+    },
+    "stackSlugs": false,
+    "keywords": [],
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "ptu": {
+      "showInTokenPanel": true
+    }
+  },
+  "_stats": {
+    "systemId": "ptu",
+    "systemVersion": "4.4.3.11",
+    "coreVersion": "13.351",
+    "createdTime": 1698190829165,
+    "modifiedTime": 1776486650885,
+    "lastModifiedBy": "izk1pNEkJuVFmrxW",
+    "duplicateSource": null,
+    "exportSource": null,
+    "compendiumSource": null
+  },
+  "_id": "rgUGPqu1a4RQBWVI",
+  "sort": 0
+}
