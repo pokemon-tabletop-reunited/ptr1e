@@ -33,7 +33,7 @@ async function extractEphemeralEffects({ affects, origin, target, item, domains,
     if (!(origin && target)) return [];
 
     const [effectsFrom, effectsTo] = affects === "target" ? [origin, target] : [target, origin];
-    const fullOptions = [...options, ...effectsTo.getSelfRollOptions(affects), ...item.getRollOptionsWithTarget(effectsFrom, domains)];
+    const fullOptions = [...options, ...effectsTo.getSelfRollOptions(affects), ...(item?.getRollOptionsWithTarget?.(effectsFrom, domains) ?? [])];
     const resolvables = item?.type == "move" ? { move: item } : {};
     return (
         await Promise.all(
@@ -48,7 +48,7 @@ async function extractApplyEffects({ affects, origin, target, item, domains, opt
     if (!(origin && target)) return [];
 
     const [effectsFrom, effectsTo] = affects === "target" ? [origin, target] : [target, origin];
-    const fullOptions = [...options, ...effectsTo.getSelfRollOptions(affects), ...item.getRollOptionsWithTarget(effectsFrom, domains)];
+    const fullOptions = [...options, ...effectsTo.getSelfRollOptions(affects), ...(item?.getRollOptionsWithTarget?.(effectsFrom, domains) ?? [])];
     const resolvables = item?.type == "move" ? { move: item } : {};
     return (
         await Promise.all(
