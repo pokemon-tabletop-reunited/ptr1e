@@ -93,6 +93,7 @@ class PTUMove extends PTUItem {
 
     /** @override */
     getRollOptionsWithTarget(target, domains = []) {
+        if (!target) return [];
         const toReturn = new Set();
         
         // calculate effectiveness

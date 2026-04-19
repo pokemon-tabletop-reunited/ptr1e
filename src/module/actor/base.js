@@ -1461,7 +1461,7 @@ class PTUActor extends Actor {
             return selfItem ?? null;
         })();
 
-        const itemOptions = originItem?.getRollOptions("item") ?? [];
+        const itemOptions = [...(originItem?.getRollOptions("item") ?? []), ...(originItem?.getRollOptionsWithTarget?.(targetToken?.actor, domains) ?? [])];
 
         const getTargetRollOptions = (actor) => {
             const targetOptions = actor?.getSelfRollOptions("target") ?? [];
