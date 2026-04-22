@@ -17,7 +17,7 @@ class EffectivenessRuleElement extends RuleElementPTU {
         return {
             ...super.defineSchema(),
             type: new fields.StringField({required: true, blank: false, initial: undefined}),
-            value: new fields.NumberField({required: true, blank: false, initial: 1})
+            value: new ResolvableValueField({required: true, nullable: false, initial: 1})
         };
     }
 
@@ -26,6 +26,9 @@ class EffectivenessRuleElement extends RuleElementPTU {
         if(this.ignored) return;
 
         const slug = this.slug ?? sluggify(this.reducedLabel);
+
+        const resolvedValue = Number(this.resolveValue(this.value, 1));
+        const resolvedType = this.resolveInjectedProperties(this.type);
 
         function isValidValue(num) {
             if (num === 1 || num === 0) return true;
@@ -36,7 +39,7 @@ class EffectivenessRuleElement extends RuleElementPTU {
             else return num === 0.5;
         }
 
-        if(!isValidValue(this.value)) {
+        if(!isValidValue(resolvedValue)) {
             return this.failValidation("Value must be base 0.5 or base 2");
         }
 
@@ -44,7 +47,7 @@ class EffectivenessRuleElement extends RuleElementPTU {
             return Object.keys(CONFIG.PTU.data.typeEffectiveness).includes(type.capitalize());
         }
 
-        if(!isValidType(this.type)) {
+        if(!isValidType(resolvedType)) {
             return this.failValidation("Type must be a valid type");
         }
 
@@ -55,11 +58,11 @@ class EffectivenessRuleElement extends RuleElementPTU {
             const test = predicate.test(options.test);
 
             if(!test) return null;
-            if(this.value === 1) return null;
+            if(resolvedValue === 1) return null;
 
-            if(this.value === 0) return new ImmunityData({type: this.type, source: this.item.uuid});
-            if(this.value > 1) return new WeaknessData({type: this.type, value: this.value, source: this.item.uuid});
-            if(this.value < 1) return new ResistanceData({type: this.type, value: this.value, source: this.item.uuid});
+            if(resolvedValue === 0) return new ImmunityData({type: resolvedType, source: this.item.uuid});
+            if(resolvedValue > 1) return new WeaknessData({type: resolvedType, value: resolvedValue, source: this.item.uuid});
+            if(resolvedValue < 1) return new ResistanceData({type: resolvedType, value: resolvedValue, source: this.item.uuid});
 
             return null;
         } 
