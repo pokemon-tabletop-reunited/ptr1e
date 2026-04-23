@@ -38,12 +38,16 @@ class FlatModifierRuleElement extends RuleElementPTU {
 
         for (const selector of selectors) {
             const construct = (options = {}) => {
+                options = { ...options };
+                options.injectables = {
+                    ...options.injectables,
+                    item: this.item,
+                }
                 const finalValue = (() => {
                     if (selector.includes("damage-dice")) {
                         options.evaluate = false;
                         return this.resolveValue(this.value, "", options);
                     }
-
                     const resolvedValue = Number(this.resolveValue(this.value, 0, options)) || 0;
                     const finalValue = Math.clamp(resolvedValue, this.min ?? resolvedValue, this.max ?? resolvedValue);
                     return finalValue;
