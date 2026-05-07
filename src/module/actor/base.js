@@ -202,10 +202,7 @@ class PTUActor extends Actor {
         const activeUsers = game.users.filter((u) => u.active);
 
         // 1. The first active GM, sorted by ID
-        const firstGM = activeUsers
-            .filter((u) => u.isGM)
-            .sort((a, b) => (a.id > b.id ? 1 : -1))
-            .shift();
+        const firstGM = game.users.activeGM;
         if (firstGM) return firstGM;
 
         // 2. The user with this actor assigned
@@ -213,7 +210,7 @@ class PTUActor extends Actor {
         if (primaryPlayer) return primaryPlayer;
 
         // 3. Anyone who can update the actor
-        const firstUpdater = game.users
+        const firstUpdater = activeUsers
             .filter((u) => this.canUserModify(u, "update"))
             .sort((a, b) => (a.id > b.id ? 1 : -1))
             .shift();
@@ -895,9 +892,24 @@ class PTUActor extends Actor {
     /* Event Handlers                               */
     /* -------------------------------------------- */
 
+    async _preUpdate(changed, options, userId) {
+        options.ptu ??= {};
+        options.ptu.oldMaxHp = this.system.health.max;
+        return super._preUpdate(changed, options, userId);
+    }
+
     /** @override */
     _onUpdate(data, options, userId) {
         super._onUpdate(data, options, userId);
+
+        // After a level-up, adjust current HP by the difference in max HP
+        console.log("PTU | Actor updated:", { data, options, userId, isPrimaryUpdater: this.primaryUpdater?.id === game.user.id });
+        if (options.ptu?.oldMaxHp !== undefined && this.primaryUpdater?.id === game.user.id) {
+            const diff = this.system.health.max - options.ptu.oldMaxHp;
+            if (diff !== 0 && this.system.health.value !== null) {
+                this.update({ "system.health.value": Math.max(0, this.system.health.value + diff) });
+            }
+        }
 
         if (data.system?.health?.value !== undefined) {
             if (data.system.health.value <= 0 && game.settings.get("ptu", "automation.autoFaint")) {
