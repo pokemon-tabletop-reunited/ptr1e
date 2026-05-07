@@ -199,9 +199,14 @@ class PTUActorSheet extends foundry.appv1.sheets.ActorSheet {
                     return false;
                 }
             }
-            
             // For other items, use the standard drop handling
-            return super._onDrop(event);
+            const fakeEvent = new Event("drop"); // For some reason, the event loses its data when passed to the item drop handler, so we have to create a new one and attach the data manually
+            Object.defineProperty(fakeEvent, "dataTransfer", {
+                value: {
+                    getData: () => JSON.stringify({ type: "Item", uuid: data.uuid }),
+                },
+            });
+            return super._onDrop(fakeEvent);
         }
         else {
             return super._onDrop(event);
