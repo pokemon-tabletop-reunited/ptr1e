@@ -94,23 +94,39 @@ class PTUCombat extends Combat {
             (id) => this.combatants.get(id) ?? []
         );
         const fightyCombatants = combatants.filter((c) => !!c.actor?.initiative);
+
+        // For boss combatants, always redirect to the primary turn and deduplicate so we only
+        // roll once per boss regardless of which turn's dice button was clicked.
+        const seenTokenIds = new Set();
+        const rollingCombatants = fightyCombatants.flatMap((combatant) => {
+            if (combatant.isBoss) {
+                const primary = combatant.bossTurns?.mainTurn ?? combatant;
+                const key = combatant.tokenId ?? combatant.actorId;
+                if (seenTokenIds.has(key)) return [];
+                seenTokenIds.add(key);
+                return [primary];
+            }
+            return [combatant];
+        });
+
         const rollResults = await Promise.all(
-            fightyCombatants.map(async (combatant) => {
-                return (
-                    combatant.actor.initiative?.roll({
-                        ...options,
-                        extraRollOptions,
-                        updateTracker: false,
-                        rollMode,
-                    }) ?? null
-                );
+            rollingCombatants.map(async (combatant) => {
+                const result = await combatant.actor.initiative?.roll({
+                    ...options,
+                    extraRollOptions,
+                    updateTracker: false,
+                    rollMode,
+                }) ?? null;
+                return { combatant, result };
             })
         );
 
-        const initiatives = rollResults.flatMap((result) => {
-            if (result?.combatant?.isPrimaryBossCombatant) {
-                const { otherTurns } = result.combatant.bossTurns;
-                const results = [{ id: result.combatant.id, value: result.roll.total }];
+        const initiatives = rollResults.flatMap(({ combatant, result }) => {
+            if (!result) return [];
+
+            if (combatant.isPrimaryBossCombatant) {
+                const { otherTurns } = combatant.bossTurns;
+                const results = [{ id: combatant.id, value: result.roll.total }];
 
                 // For each other turn, add an initiative value that is 5 less than the previous
                 // If the value is less than 0, instead start adding 5 more than the previous, restarting from 5 + base value
@@ -124,14 +140,8 @@ class PTUCombat extends Combat {
                 }
                 return results;
             }
-            return result
-                ? {
-                    id: result.combatant.id,
-                    value: result.roll.total,
-                }
-                : []
-        }
-        );
+            return [{ id: combatant.id, value: result.roll.total }];
+        });
 
         await this.setMultipleInitiatives(initiatives);
 
